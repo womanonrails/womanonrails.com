@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext,latin);
+
+$background-grey: #262626;
+$dark-red: #d2322d;
+$grey: #ddd;
+$link-grey: #67666a;
+$quote-grey: #c91b26;
+$text-white: #fff;
+
+body {
+  font-family: serif;
+
+  .btn, button {
+    font-family: serif;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+article p {
+  text-align: justify;
+}
+
+
+.lead {
+  line-height: 1.7em;
+}
+
+.brand img {
+  border: 1px solid $grey;
+  border-radius: 50%;
+}
+
+.cursive {
+  color: $dark-red;
+}
+
+button.menu-button:hover, a#slide:hover, a.language:hover, blockquote:before {
+  background-color: $dark-red;
+}
+
+pre {
+  border-width: 0;
+}
+
+.post-title {
+  a:visited, a:focus {
+    text-decoration: none;
+    color: $link-grey;
+  }
+}
+
+.status, .quote {
+  a, a:visited, a:focus{
+    color: $quote-grey;
+  }
+}
+
+blockquote p.lead {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
+
+#navigation ul {
+  padding-left: 0;
+}
+
+a#slide {
+  cursor: pointer;
+  &:after {
+    content: "M";
+  }
+}
+
+a.language {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  text-transform: uppercase;
+  padding-top: 5px;
+  background-color: $background-grey;
+  color: $text-white;
+  border-radius: 4px;
+}
+
+button.menu-button {
+  right: 60px;
+}

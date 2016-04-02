@@ -1,0 +1,89 @@
+title: Woman on Rails
+description:
+logo: womanonrails.jpg
+disqus_shortname:
+# disqus_shortname: womanonrails
+# Assign a default image for your site's header and footer
+default_bg:
+search:           true
+share:            true
+# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
+readtime:         true
+# Specify the average Words per minute. If not defined, 180 will be used
+wpm:              200
+# Turn on or off the fin animations in the header and footer
+triangleheader:   true
+animated_fins:    true
+# Specify the fin color in RGB value
+fin_color:        "255,255,255"
+# url: "http://womanonrails.com" # the base hostname & protocol for your site
+baseurl: ""
+
+owner:
+  name: Agnieszka Matysek
+  avatar: womanonrails.jpg
+  email: your-email@domain.com
+  description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
+  twitter: womanonrails
+  facebook: womanonrails
+  github: womanonrails
+  linkedin: https://linkedin.com/in/womanonrails
+  instagram: womanonrails
+  stackexchange: http://stackoverflow.com/users/2885676/womanonrails
+  flickr:
+  tumblr:
+  google_plus:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-62202006-3
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Categories
+    url: /categories
+  - title: Tags
+    url: /tags
+  - title: About
+    url: /about
+
+links_pl:
+  - title: Strona główna
+    url: /pl
+    external: false
+    icon: home
+  - title: Kategorie
+    url: /pl/categories
+  - title: Tagi
+    url: /pl/tags
+  - title: O mnie
+    url: /pl/about
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: pygments
+markdown:    redcarpet
+paginate:    6
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:title
+
+
+
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+gems:
+  - jekyll-paginate
+  - jekyll/multiple/languages/plugin
+
+languages: ["en", "pl"]
+exclude_from_localizations: ["javascript", "images", "css"]

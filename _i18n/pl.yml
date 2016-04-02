@@ -1,0 +1,10 @@
+language: en
+read_more: czytaj więcej...
+see_more: zobacz więcej...
+pagination:
+  newer_posts: Nowsze posty
+  page: Strona
+  of: z
+  older_posts: Starsze posty
+about:
+  image: Po prostu ja

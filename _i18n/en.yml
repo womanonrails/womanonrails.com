@@ -1,0 +1,10 @@
+language: pl
+read_more: read more...
+see_more: see more...
+pagination:
+  newer_posts: Newer Posts
+  page: Page
+  of: of
+  older_posts: Older Posts
+about:
+  image: Just me

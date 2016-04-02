@@ -1,0 +1,18 @@
+---
+layout: post
+type: video
+title: Global Game Jam
+video: https://www.youtube.com/watch?v=-g4BbTNCgck
+video_type: youtube
+description: How create game in 48h?
+headline: My code is getting worse, please send more chocolate
+categories: [events, workshops, travels]
+tags: [ggj, cieszyn]
+comments: true
+---
+
+<br>
+Date: *2016-01-29 17:00 – 2016-01-31 19:00*<br>
+Place: *Cieszyn, PL*
+
+I really love doing things connecting in technology. This time I was participant in [Global Game Jam](http://globalgamejam.org/) in Cieszyn. This was my third time. **What is Global Game Jam?** This is 48 hours hackaton for people which would like to create games. And each year I'm impressed of ideas, talent and projects realization. You can see more [here](https://www.youtube.com/watch?v=-g4BbTNCgck).
