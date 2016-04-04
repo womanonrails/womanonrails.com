@@ -6,7 +6,7 @@ photo: coderetreat/session5.jpg
 description: Coderetreat - programming workshop
 headline: My code is getting worse, please send more chocolate
 categories: [events, workshops, travels]
-tags: [coderetreat, event, crakow]
+tags: [coderetreat, event, Cracow]
 comments: true
 ---
 

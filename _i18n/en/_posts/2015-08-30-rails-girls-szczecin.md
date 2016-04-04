@@ -7,7 +7,7 @@ video_type: youtube
 description: Rails Girls Szczecin - video relation
 headline: My code is getting worse, please send more chocolate
 categories: [events, workshops, travels]
-tags: [hack4good, cracow]
+tags: [Rails Girls, Szczecin]
 comments: true
 ---
 

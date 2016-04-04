@@ -1,25 +1,25 @@
 ---
 layout: post
-title: WebSummit
-description: WebSummit adventure
+title: Web Summit
+description: Web Summit adventure
 headline: My code is getting worse, please send more chocolate
 categories: [events, workshops, travels]
-tags: [websummit, dublin]
+tags: [Web Summit, Dublin]
 comments: true
 ---
 
 Date: *October 30-31, 2013*<br>
 Place: *Dublin, IE*
 
-Today I will tell you something about [WebSummit](http://www.websummit.net/). This was the second event I participated in Dublin at the end of October.
+Today I will tell you something about [Web Summit](http://www.websummit.net/). This was the second event I participated in Dublin at the end of October.
 
 ## How did I get there?
 
-WebSummit announced, they have 50 free tickets for women interested or related with technologies. So I filled and sent the form. A few days later I received an email with congratulations. I won ticket to WebSummit in Dublin.
+Web Summit announced, they have 50 free tickets for women interested or related with technologies. So I filled and sent the form. A few days later I received an email with congratulations. I won ticket to Web Summit in Dublin.
 
 It was my first such big conference. Over 10 000 participants, 300 speakers, many workshops, 7 lecture halls and many start ups from different sectors and different countries.
 
-When I first came to RDS Main Hall (where WebSummit took place) it was an overwhelming view for me. So many people: exhibitors, speakers and attendees. Everything was happening so fast. I began to look for developer stage and workshops place. I decided to participate in this two things. It was hard for me to find anything in such big place but I succeed. ;]
+When I first came to RDS Main Hall (where Web Summit took place) it was an overwhelming view for me. So many people: exhibitors, speakers and attendees. Everything was happening so fast. I began to look for developer stage and workshops place. I decided to participate in this two things. It was hard for me to find anything in such big place but I succeed. ;]
 
 ## Developer Stage
 
@@ -58,5 +58,5 @@ Take care and see you soon.
   <a href="{{ site.baseurl_root }}/images/websummit-2013/websummit2.jpg"><img src="{{ site.baseurl_root }}/images/websummit-2013/websummit2.jpg"></a>
   <a href="{{ site.baseurl_root }}/images/websummit-2013/disnay.jpg"><img src="{{ site.baseurl_root }}/images/websummit-2013/disnay.jpg"></a>
   <a href="{{ site.baseurl_root }}/images/websummit-2013/websummit3.jpg"><img src="{{ site.baseurl_root }}/images/websummit-2013/websummit3.jpg"></a>
-  <figcaption>WebSummit memories</figcaption>
+  <figcaption>Web Summit memories</figcaption>
 </figure>

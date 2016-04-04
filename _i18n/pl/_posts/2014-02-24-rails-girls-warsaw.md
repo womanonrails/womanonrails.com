@@ -6,7 +6,7 @@ photo: rails-girls-warsaw-2014/team.jpg
 description: Ja jako Rails Girls Mentor
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [rails girls, warszawa]
+tags: [Rails Girls, Warszawa]
 comments: true
 ---
 

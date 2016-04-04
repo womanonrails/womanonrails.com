@@ -4,7 +4,7 @@ title: Wzorzec projektowy – MVC
 description: Kilka słów na temat MVC
 headline: My code is getting worse, please send more chocolate
 categories: [Ruby on Rails, wzorce projektowe]
-tags: [design pattern, mvc]
+tags: [design pattern, MVC]
 comments: true
 ---
 

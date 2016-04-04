@@ -7,7 +7,7 @@ video_type: youtube
 description: Wideo relacja z Rails Girls Szczecin
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [event, rails girls, szczecin]
+tags: [event, Rails Girls, Szczecin]
 comments: true
 ---
 

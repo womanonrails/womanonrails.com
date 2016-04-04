@@ -7,7 +7,7 @@ video_type: youtube
 description: CoderDojo jedna zasada - bądź fajny
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [coderdojo, event]
+tags: [CoderDojo, event]
 comments: true
 ---
 

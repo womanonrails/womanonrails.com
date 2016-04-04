@@ -7,7 +7,7 @@ video_type: youtube
 description: Jak stworzyć grę w 48h?
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [ggj, cieszyn]
+tags: [GGJ, Cieszyn]
 comments: true
 ---
 

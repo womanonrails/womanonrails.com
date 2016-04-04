@@ -6,7 +6,7 @@ photo: rails-girls-krakow-2014/rgkrakow1.jpg
 description: Rails Girls for young programmer
 headline: My code is getting worse, please send more chocolate
 categories: [events, workshops, travels]
-tags: [rails girls, warsaw]
+tags: [Rails Girls, Warsaw]
 comments: true
 ---
 

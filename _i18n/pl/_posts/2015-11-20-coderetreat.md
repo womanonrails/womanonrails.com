@@ -6,7 +6,7 @@ photo: coderetreat/session5.jpg
 description: Coderetreat - szlifowanie warsztatu programistycznego
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [coderetreat, event, kraków]
+tags: [coderetreat, event, Kraków]
 comments: true
 ---
 

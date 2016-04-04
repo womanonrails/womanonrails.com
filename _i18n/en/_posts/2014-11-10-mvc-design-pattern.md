@@ -4,7 +4,7 @@ title: MVC – design pattern
 description: Quick introduction to MVP
 headline: My code is getting worse, please send more chocolate
 categories: [design patterns, Ruby on Rails]
-tags: [design pattern, mvc]
+tags: [design pattern, MVC]
 comments: true
 ---
 

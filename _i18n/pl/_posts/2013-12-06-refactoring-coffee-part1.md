@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Coffee Script Refactoring – część 1
-description: Mały refactoring w Coffee Script
+title: CoffeeScript Refactoring – część 1
+description: Mały refactoring w CoffeeScript
 headline: My code is getting worse, please send more chocolate
-categories: [coffee script, refactoring]
-tags: [coffee script, refactoring]
+categories: [CoffeeScript, refactoring]
+tags: [CoffeeScript, refactoring]
 comments: true
 ---
 
 To będzie mój pierwszy wpis o refaktoringu. Uwielbiam refaktoring, więc bierzmy się do pracy.
 
-Myślę, że najlepszym sposobem by to zrobić będzie zapisanie na początku fragmentu kodu a później wprowadzenie zmian. Dzisiaj chciałabym zaprezentować Wam kilka linijek kodu w Coffee Script:
+Myślę, że najlepszym sposobem by to zrobić będzie zapisanie na początku fragmentu kodu a później wprowadzenie zmian. Dzisiaj chciałabym zaprezentować Wam kilka linijek kodu w CoffeeScript:
 
 ```coffee
 if checked_items == all_items

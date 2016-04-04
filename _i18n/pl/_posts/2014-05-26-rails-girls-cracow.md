@@ -6,7 +6,7 @@ photo: rails-girls-krakow-2014/rgkrakow1.jpg
 description: Rails Girls dla mołodych programistek
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [rails girls, warszawa]
+tags: [Rails Girls, Kraków]
 comments: true
 ---
 

@@ -7,7 +7,7 @@ video_type: youtube
 description: CoderDojo one rule - be cool
 headline: My code is getting worse, please send more chocolate
 categories: [events, workshops, travels]
-tags: [coderdojo, event]
+tags: [CoderDojo, event]
 comments: true
 ---
 

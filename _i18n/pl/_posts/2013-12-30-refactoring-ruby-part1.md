@@ -3,8 +3,8 @@ layout: post
 title: Ruby Refactoring – część 1
 description: Sumowanie elementów tablicy względem kolumny - Refactoring
 headline: My code is getting worse, please send more chocolate
-categories: [ruby, refactoring]
-tags: [ruby, refactoring]
+categories: [Ruby, refactoring]
+tags: [Ruby, refactoring]
 comments: true
 ---
 

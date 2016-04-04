@@ -1,25 +1,25 @@
 ---
 layout: post
-title: WebSummit
-description: Moja przygoda na konferencji WebSummit
+title: Web Summit
+description: Moja przygoda na konferencji Web Summit
 headline: My code is getting worse, please send more chocolate
 categories: [wydarzenia, warsztaty, podróże]
-tags: [websummit, dublin]
+tags: [Web Summit, Dublin]
 comments: true
 ---
 
 Data: *30-31 października 2013*<br>
 Miejsce: *Dublin, Irlandia*
 
-Dzisiaj chciałabym opowiedzieć Wam trochę o konferencji [WebSummit](http://www.websummit.net/). Było to drugie wydarzenie w jakim uczestniczyłam w Dublinie pod koniec października.
+Dzisiaj chciałabym opowiedzieć Wam trochę o konferencji [Web Summit](http://www.websummit.net/). Było to drugie wydarzenie w jakim uczestniczyłam w Dublinie pod koniec października.
 
 ## Jak się tam znalazłam?
 
-WebSummit ogłosił, że ma do rozdania 50 darmowych wejściówek na tą konferencję dla kobiet zainteresowanych lub związanych z szeroko pojętymi technologiami. Wypełniłam więc formularz i wysłałam. Kilka dni później otrzymałam wiadomość z gratulacjami. Wygrałam bilet na WebSummit w Dublinie.
+Web Summit ogłosił, że ma do rozdania 50 darmowych wejściówek na tą konferencję dla kobiet zainteresowanych lub związanych z szeroko pojętymi technologiami. Wypełniłam więc formularz i wysłałam. Kilka dni później otrzymałam wiadomość z gratulacjami. Wygrałam bilet na Web Summit w Dublinie.
 
 Była to dla mnie pierwsza tak ogromna konferencja. Ponad 10 000 odwiedzających, 300 prelegentów, wiele warsztatów, 7 sal wykładowych i wiele, wiele prezentowanych StartUpów z różnych dziedzin i różnych krajów.
 
-Kiedy po raz pierwszy weszłam do RDS Main Hall (gdzie WebSummit się odbywał) widok zrobił na mnie kolosalne wrażenie wręcz przytłaczające. Ogromna ilość ludzi: wystawców, prelegentów, odwiedzających. Wszystko działo się tak szybko. Zaczęłam rozglądać się za salą dla developerów i miejscem gdzie miały odbywać się warsztaty. Przede wszystkim zdecydowałam, że wezmę udział w tych dwóch elementach konferencji. Było ciężko się tam odnaleźć ale dałam radę. ;]
+Kiedy po raz pierwszy weszłam do RDS Main Hall (gdzie Web Summit się odbywał) widok zrobił na mnie kolosalne wrażenie wręcz przytłaczające. Ogromna ilość ludzi: wystawców, prelegentów, odwiedzających. Wszystko działo się tak szybko. Zaczęłam rozglądać się za salą dla developerów i miejscem gdzie miały odbywać się warsztaty. Przede wszystkim zdecydowałam, że wezmę udział w tych dwóch elementach konferencji. Było ciężko się tam odnaleźć ale dałam radę. ;]
 
 ## Sala dla developerów
 
