@@ -58,6 +58,12 @@ pre {
   }
 }
 
+.social-icons {
+  a:visited, a:focus {
+    text-decoration: none;
+  }
+}
+
 blockquote p.lead {
   font-family: 'Lato', sans-serif;
   font-style: italic;

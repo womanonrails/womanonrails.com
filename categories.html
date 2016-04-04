@@ -13,17 +13,17 @@ description: "An archive of posts sorted by categories."
 <ul class="tag-box inline">
   {% if categories.first[0] == null %}
     {% for tag in categories %}
-      <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+      <li><a href="#{{ tag }}">{{ tag}} <span>{{ site.tags[tag].size }}</span></a></li>
     {% endfor %}
   {% else %}
     {% for tag in categories %}
-      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+      <li><a href="#{{ tag[0] }}">{{ tag[0]}} <span>{{ tag[1].size }}</span></a></li>
     {% endfor %}
   {% endif %}
 </ul>
 
 {% for tag in categories %}
-  <h2 id="{{ tag[0] }}" style="color: #c91b26">{{ tag[0] | capitalize }}</h2>
+  <h2 id="{{ tag[0] }}" style="color: #c91b26">{{ tag[0] }}</h2>
   <ul class="post-list">
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
