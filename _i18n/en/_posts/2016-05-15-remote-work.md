@@ -1,6 +1,8 @@
 ---
 layout: post
+type: photo
 title: Working remote
+photo: remote/victoria.jpg
 description: How it is feel working remotely?
 headline: My code is getting worse, please send more chocolate
 categories: [work, remote, travels]
@@ -14,7 +16,7 @@ I only have experience in synchronic remote work. So this article will be about 
 
 ## Day by day work
 
-When I work remotly from my home or open space in most cases work looks like normaly day in office. But in my offce each person in team has separate room and we don't go to others rooms. One time per day we have meeing (Hangout or Sykpe). And that's it. Rest of my day it is normal work. I have my tasks to do and I do what I should. When I need to talk with someone I write a message on communicator (Slack or Skype). The most important thing in this kind of work is trust. Trust that each team member does what he/she should to get things done.
+When I work remotly from my home or open space in most cases work looks like normaly day in office. But in my offce each person in team has separate room and we don't go to others rooms. One time per day we have meeing (Hangout or Sykpe). And that's it. Rest of my day it is normal work. I have my tasks to do and I do what I should. When I need to talk with someone I write a message on communicator (Slack or Skype). The most important thing in this kind of work is **trust**. Trust that each team member does what he/she should to get things done.
 
 ### My observations:
 
@@ -42,6 +44,24 @@ When I work remotly from my home or open space in most cases work looks like nor
 As I say earlier in remote work I can work from every place in the world. So I decided to spend 6 weeks working remotely from Australia. Sometimes remote work from Australia was very easy. Time went quickly and very productive. But sometimes it was very hard. My team is working in Europe time zone so when I moved to Australia then my work time changed from 9am to 5pm to 6pm to 2am. I decided then to work only half time. (Big thank you for my team that this was possible). So I worked from 6pm to 10pm. Sometime I was tired after all day but I had work to do. I worked from different places mostly form my bedroom, but also from shopping center, couch in friends living room, hotels or cars. I don't recommend this last work place specially when you have motion sickness. Some of this places had trouble with Internet connection or didn't have any. Then I used mobile Internet. Yes I used mobile Internet for work. And the most important sometimes I just would like to have evening just for my self to meet friends and go out.
 
 Even that there was sometime many problems to deal with, this was my best time ever. I woke up at 7am Australian time. I did my exercises and some hobby stuff and then I have 8 hours to explore Australia. After that I used to sit with my computer and worked. This possibility to work remotely allowed me to visit lot of beautiful places. I felt like I was on holiday in some how. If someone will ask me if this is something worth to try I will say **YES**.
+
+<figure>
+  <a href="{{ site.baseurl_root }}/images/remote/duck.jpg"><img src="{{ site.baseurl_root }}/images/remote/duck.jpg"></a>
+</figure>
+<figure class="third">
+  <a href="{{ site.baseurl_root }}/images/remote/memo1.jpg"><img src="{{ site.baseurl_root }}/images/remote/memo1.jpg"></a>
+  <a href="{{ site.baseurl_root }}/images/remote/memo2.jpg"><img src="{{ site.baseurl_root }}/images/remote/memo2.jpg"></a>
+  <a href="{{ site.baseurl_root }}/images/remote/memo3.jpg"><img src="{{ site.baseurl_root }}/images/remote/memo3.jpg"></a>
+</figure>
+<figure>
+  <a href="{{ site.baseurl_root }}/images/remote/formula1.jpg"><img src="{{ site.baseurl_root }}/images/remote/formula1.jpg"></a>
+</figure>
+<figure class="third">
+  <a href="{{ site.baseurl_root }}/images/remote/memo4.jpg"><img src="{{ site.baseurl_root }}/images/remote/memo4.jpg"></a>
+  <a href="{{ site.baseurl_root }}/images/remote/memo5.jpg"><img src="{{ site.baseurl_root }}/images/remote/memo5.jpg"></a>
+  <a href="{{ site.baseurl_root }}/images/remote/victoria.jpg"><img src="{{ site.baseurl_root }}/images/remote/victoria.jpg"></a>
+  <figcaption>Memories of Australia</figcaption>
+</figure>
 
 ## Summary
 
