@@ -63,11 +63,11 @@ Tutaj wszystko ma swoje miejsce. Zmiany są pogrupowane w jakieś logiczne cało
 
 5. Możemy wrzucić zmiany na zdalne repozytorium
 
-  ```bash
-  git push
-  ```
+    ```bash
+    git push
+    ```
 
-Czasami gdy będziemy robić `git rebase`, git może nie dać sobie rady sam z rozwiązywaniem konfliktów (czyli łączeniem plików modyfikowanych przez kilka osób). Wtedy do akcji wkraczamy my. Poprawnie rozwiązujemy konlikty i dodajemy nasze zmiany, tak by gita je widział. Następnie możemy dalej kontynłować rebase.
+Czasami gdy będziemy robić `git rebase`, git może nie dać sobie rady sam z rozwiązywaniem konfliktów (czyli łączeniem plików modyfikowanych przez kilka osób). Wtedy do akcji wkraczamy my. Poprawnie rozwiązujemy konflikty i dodajemy nasze zmiany, tak by git je widział. Następnie możemy dalej kontynłować rebase.
 
 ```bash
 git rebase develop

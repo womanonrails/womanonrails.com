@@ -38,7 +38,7 @@ Pracując zdanie czy to z domu czy z biura, przez większość czasu praca wygl�
 
 ## Praca zdalna z Australii
 
-Tak jak już mówiłam, pracując zdalnie można pracować z każdego miejsca na świecie. Ja zdecydowałam, że spędzę prawie 2 miesiące w Australii i będę stamtąd pracować zdalnie. Były momenty, gdy praca z Australii była prosta. Czas płyną szybko i produktywnie. Ale były też momenty, gdy było bardzo ciężko. Mój zespół pracuje z Europy (czyli w czasie środkowoeuropejskim), kiedy więc przeniosłam się do Australii moje godziny pracy zmieniły się z 9 do 17 na od 18 do 2 nad ranem. Jak już mówiłam pracujemy w zespole synchronicznie. Zdecydowałam, że będę pracować tylko przez połowę czasu. Dziękuje bardzo mojemu zespołowi, że było to możliwe. Moimi nowymi godzinami pracy były 18 do 22. Czasami zdarzało się, że byłam zmęczona po całym dniu, ale trzeba było postawić się do pionu i zacząć pracować. Pracowałam z przeróżnych miejsc. Przez większość czasu pracowałam ze swojej sypialni, ale zdarzało się pracować z centrum handlowego, z kanapy w pokoju gościnnym znajomych, hoteli czy nawet samochodu. Tego ostatniego miejsca nie polecam osobą z chorobą lokomocyjną. Czasem zdarzały się problemy z Internetem lub po prostu jego brak. W takich sytuacjach pracowałam dzięki możliwością Internetu mobilnego. Tak Internetu mobilnego! A czasem po prostu chciałam spędzić wieczór z przyjaciółmi, jednak miałam obowiązki do wykonania.
+Tak jak już mówiłam, pracując zdalnie można pracować z każdego miejsca na świecie. Ja zdecydowałam, że spędzę prawie 2 miesiące w Australii i będę stamtąd pracować zdalnie. Były momenty, gdy praca z Australii była prosta. Czas płyną szybko i produktywnie. Ale były też momenty, gdy było bardzo ciężko. Mój zespół pracuje z Europy (czyli w czasie środkowoeuropejskim), kiedy więc przeniosłam się do Australii moje godziny pracy zmieniły się z 9 do 17 na od 18 do 2 nad ranem. Jak już mówiłam pracujemy w zespole synchronicznie. Zdecydowałam, że będę pracować tylko przez połowę czasu. Dziękuje bardzo mojemu zespołowi, że było to możliwe. Moimi nowymi godzinami pracy były 18 do 22. Czasami zdarzało się, że byłam zmęczona po całym dniu, ale trzeba było postawić się do pionu i zacząć pracować. Pracowałam z przeróżnych miejsc. Przez większość czasu pracowałam ze swojej sypialni, ale zdarzało się pracować z centrum handlowego, z kanapy w pokoju gościnnym znajomych, hoteli czy nawet z samochodu. Tego ostatniego miejsca nie polecam osobom z chorobą lokomocyjną. Czasem zdarzały się problemy z Internetem lub po prostu jego brak. W takich sytuacjach pracowałam przy pomocy Internetu mobilnego. Tak Internetu mobilnego! A czasem po prostu chciałam spędzić wieczór z przyjaciółmi, jednak miałam obowiązki do wykonania.
 
 Chociaż zdarzały się ciężkie chwile i problemy, to stwierdzam, że to był wspaniały czas. Dzień rozpoczynałam o 7 rano czasu australijskiego. Robiła szybkie ćwiczenia, poświęcałam trochę czasu na moje zainteresowania i miałam osiem godzin na odkrywanie Australii. Wieczorami siadałam przy moim komputerze i zaczynałam pracować. Dzięki pracy zdalnej mogła zwiedzić cudowne miejsca. Przez cały czas czułam się jak na wakacjach. Bardzo długich wakacjach. Jeżeli ktoś by mnie kiedyś zapytał czy było warto, stanowczo odpowiedziałabym **TAK**.
 
@@ -62,23 +62,20 @@ Chociaż zdarzały się ciężkie chwile i problemy, to stwierdzam, że to był 
 
 ## Podsumowując
 
-Praca zdalna daje mnóstwo możliwości. Można pracować z różnych miejsc na świecie i odkrywać je z zupełnie innej perspektywy, nie tylko z perspektywy turysty. Trzeba pamiętać, że taki sposób pracy nie jest dla wszystkich. Trzeba być pewnym, że jest się wstanie skupić i wykonywać swoje obowiązki konsekwentnie. Dzień po dniu. Dobra organizacja pracy, samozaparcie i konsekwencja to podstawa.
+Praca zdalna daje mnóstwo możliwości. Można pracować z różnych miejsc na świecie i odkrywać je z zupełnie innej perspektywy, nie tylko z perspektywy turysty. Trzeba pamiętać, że taki sposób pracy nie jest dla wszystkich. Trzeba być pewnym, że jest się wstanie skupić i wykonywać swoje obowiązki. Dzień po dniu. Dobra organizacja pracy, samozaparcie i konsekwencja to podstawa.
 
 Jeżeli zdecydujesz się na taki sposób pracy i będziesz chciała/chciał gdzieś wyjechać, to najpierw odpowiedz sobie na kilka pytań:
 
 - Czy w miejscu docelowym jest Internet? WiFi?
 - Czy masz wszystkie potrzebne rzeczy, oprogramowanie, projekty na swoim laptopie?
 - Czy zawsze będzie dostępny prąd?
-- Ile chce poświęcić czasu na pracę?
+- Ile chcę poświęcić czasu na pracę?
 - Co będę robić w ramach mojej pracy?
 - Gdzie będziesz pracować?
 - Jak bardzo zorganizowana/zorganizowany jestem?
 - Jak bardzo zmotywowana/zmotywowany jestem?
-- Jaka jest strefa czasowa na miejscu przeznaczenia?
+- Jaka jest strefa czasowa w miejscu przeznaczenia?
 
 <br>
-Z mojej perspektywy było to niesamowite doświadczenie. Jestem na prawdę szczęśliwa, że mogłam spróbować.
+Z mojej perspektywy było to niesamowite doświadczenie. Jestem naprawdę szczęśliwa, że mogłam spróbować.
 To wszystko na dziś. Mam nadzieje, że artykuł Wam się podobał. Jeżeli macie jakieś pytania, piszcie w komentarzach. Do następnego razu!
-
-- zdjęcia
-- wideo z yt fractalsoftu - link to playlisty

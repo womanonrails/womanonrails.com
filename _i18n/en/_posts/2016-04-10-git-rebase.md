@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git Rebase
-description: How can you do rebase?
+description: How can you do git rebase?
 headline: My code is getting worse, please send more chocolate
 categories: [environment, git, tools]
 tags: [git, tools]
@@ -42,7 +42,7 @@ Here everything is in order. Connected commits are in one group. We also see his
     git checkout develop
     ```
 
-2. Download all changes lacally
+2. Download all changes locally
 
     ```bash
     git pull

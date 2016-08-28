@@ -3,7 +3,7 @@ layout: post
 type: photo
 title: Working remote
 photo: remote/victoria.jpg
-description: How it is feel working remotely?
+description: How is it feel working remotely?
 headline: My code is getting worse, please send more chocolate
 categories: [work, remote, travels]
 tags: [work, remote]
@@ -16,18 +16,18 @@ I only have experience in synchronic remote work. So this article will be about 
 
 ## Day by day work
 
-When I work remotly from my home or open space in most cases work looks like normaly day in office. But in my offce each person in team has separate room and we don't go to others rooms. One time per day we have meeing (Hangout or Sykpe). And that's it. Rest of my day it is normal work. I have my tasks to do and I do what I should. When I need to talk with someone I write a message on communicator (Slack or Skype). The most important thing in this kind of work is **trust**. Trust that each team member does what he/she should to get things done.
+When I work remotly from my home or open space in most cases work looks like normaly day in office. But in my offce each person in team has separate room and we don't go to others rooms. One time per day we have meeting (Hangout or Sykpe). And that's it. Rest of my day it is normal work. I have to do my tasks and I do what I should. When I need to talk with someone I write a message on communicator (Slack or Skype). The most important thing in this kind of work is **trust**. Trust that each team member does what he/she should to get things done.
 
 ### My observations:
 
-1. **Less people around my desk, then better I can focus**
+1. **Less people around my desk, then I can better focus**
 
-    How many times do you waste your time on funny conversations? How many times someone interrupt you in your work to ask something? How many times you need to go to boring and useless meeting? There are many reasons for break.
+    How many times do you waste your time for funny conversations? How many times someone interrupt you in your work to ask something? How many times you need to go to boring and useless meeting? There are many reasons for break.
 
 
 2. **I can work from any place from office, from home, from Warsaw or Krakow. It doesn't matter.**
 
-    This is very nice I can work from home when I need this. Or I can go to my family and working from theirs house. Or go to another country.
+    This is very nice I can work from home when I need it. Or I can go to my family and working from theirs house. Or go to another country.
 
 
 3. **I need to be well organized to plan my work and my communication.**
@@ -41,7 +41,7 @@ When I work remotly from my home or open space in most cases work looks like nor
 
 ## Australia remote work
 
-As I say earlier in remote work I can work from every place in the world. So I decided to spend 6 weeks working remotely from Australia. Sometimes remote work from Australia was very easy. Time went quickly and very productive. But sometimes it was very hard. My team is working in Europe time zone so when I moved to Australia then my work time changed from 9am to 5pm to 6pm to 2am. I decided then to work only half time. (Big thank you for my team that this was possible). So I worked from 6pm to 10pm. Sometime I was tired after all day but I had work to do. I worked from different places mostly form my bedroom, but also from shopping center, couch in friends living room, hotels or cars. I don't recommend this last work place specially when you have motion sickness. Some of this places had trouble with Internet connection or didn't have any. Then I used mobile Internet. Yes I used mobile Internet for work. And the most important sometimes I just would like to have evening just for my self to meet friends and go out.
+As I said earlier in remote work I can work from every place in the world. So I decided to spend 6 weeks working remotely from Australia. Sometimes remote work from Australia was very easy. Time went quickly and very productive. But sometimes it was very hard. My team is working in Europe time zone so when I moved to Australia then my work time changed from 9am to 5pm to 6pm to 2am. I decided to work only half time. Big thank you for my team that this was possible. So I worked from 6pm to 10pm. Sometime I was tired after all day but I had work to do. I worked from different places mostly from my bedroom, but also from shopping center, couch in friends living room, hotels or cars. I don't recommend this last work place specially when you have motion sickness. Some of this places had trouble with Internet connection or didn't have any. Then I used mobile Internet. Yes I used mobile Internet for work. And the most important sometimes I just would like to have evening just for my self to meet friends and go out.
 
 Even that there was sometime many problems to deal with, this was my best time ever. I woke up at 7am Australian time. I did my exercises and some hobby stuff and then I have 8 hours to explore Australia. After that I used to sit with my computer and worked. This possibility to work remotely allowed me to visit lot of beautiful places. I felt like I was on holiday in some how. If someone will ask me if this is something worth to try I will say **YES**.
 
@@ -73,8 +73,8 @@ When you decide that you will be able to work like this, you need to find answer
 - Do I have everything what I need on my laptop?
 - Is there always access to electricity?
 - How much time do I have to work?
-- What I will do as my work?
-- Where I will be working?
+- What will I do as my work?
+- Where will I be working?
 - How organized am I?
 - How motivate to work am I?
 - What is time zone in my destination?
