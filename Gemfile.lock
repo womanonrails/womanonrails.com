@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin.git
-  revision: 05b4d4e0de0e5bf71483049849b08f8aa290d4a2
-  branch: v1_4_0
-  specs:
-    jekyll-multiple-languages-plugin (1.4.0)
-      colorator
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,6 +12,8 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-multiple-languages-plugin (1.5.1)
+      jekyll (>= 2.0, < 4.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
@@ -49,10 +43,10 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-multiple-languages-plugin!
+  jekyll-multiple-languages-plugin
   jekyll-paginate
   pygments.rb
   redcarpet
 
 BUNDLED WITH
-   1.10.5
+   1.13.0
