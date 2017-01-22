@@ -2,6 +2,8 @@
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+
 
 {% if site.owner.twitter %}<!-- Twitter Cards -->
 {% if page.imagefeature %}<meta name="twitter:card" content="summary_large_image">
