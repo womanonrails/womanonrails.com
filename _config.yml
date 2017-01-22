@@ -18,7 +18,6 @@ animated_fins:    true
 fin_color:        "255,255,255"
 # url: "http://womanonrails.com" # the base hostname & protocol for your site
 baseurl: ""
-url: http://womanonrails.com
 
 meta:
   title: Woman on Rails - web development from woman perspective
