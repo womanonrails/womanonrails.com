@@ -59,7 +59,7 @@
     <div class="inner">
         <div class="container">
             {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}{% endcapture %}
+              {% capture link %}{{ site.url }}/{% endcapture %}
             {% else %}
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
@@ -80,7 +80,7 @@
     <div class="inner">
         <div class="container">
             {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}{% endcapture %}
+              {% capture link %}{{ site.url }}/{% endcapture %}
             {% else %}
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}

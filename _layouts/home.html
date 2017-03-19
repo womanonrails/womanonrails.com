@@ -81,7 +81,7 @@ Description: Awesome dude, awesome life
     <div class="inner">
         <div class="container">
             {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}{% endcapture %}
+              {% capture link %}{{ site.url }}/{% endcapture %}
             {% else %}
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
@@ -102,7 +102,7 @@ Description: Awesome dude, awesome life
     <div class="inner">
         <div class="container">
             {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}{% endcapture %}
+              {% capture link %}{{ site.url }}/{% endcapture %}
             {% else %}
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
