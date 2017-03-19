@@ -66,7 +66,7 @@ Description: Awesome dude, awesome life
   </button>
 {% endif %}
 {% if site.lang == 'en' %}
-  {% capture link %}/pl{{ site.url }}{{ page.url }}{% endcapture %}
+  {% capture link %}{{ site.url }}/pl{{ page.url }}{% endcapture %}
   <a href="{{ link }}" class='language animated fade'>
     {% t language %}
   </a>
@@ -80,7 +80,12 @@ Description: Awesome dude, awesome life
 {% if site.description %}
     <div class="inner">
         <div class="container">
-            <a class="brand light" href="{{ site.url }}" role="banner" itemprop="url">
+            {% if site.lang == 'en' %}
+              {% capture link %}{{ site.url }}{% endcapture %}
+            {% else %}
+              {% capture link %}{{ site.url }}/pl{% endcapture %}
+            {% endif %}
+            <a class="brand light" href="{{ link }}" role="banner" itemprop="url">
                 {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
@@ -96,7 +101,12 @@ Description: Awesome dude, awesome life
     {% else %}
     <div class="inner">
         <div class="container">
-            <a class="brand" href="{{ site.url }}" role="banner" itemprop="url">
+            {% if site.lang == 'en' %}
+              {% capture link %}{{ site.url }}{% endcapture %}
+            {% else %}
+              {% capture link %}{{ site.url }}/pl{% endcapture %}
+            {% endif %}
+            <a class="brand" href="{{ link }}" role="banner" itemprop="url">
                     <img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />
 
             <h1 class="blog-title light" itemprop="name">
