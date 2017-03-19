@@ -64,7 +64,6 @@
               {% capture link %}{{ site.blog_url }}/pl{% endcapture %}
             {% endif %}
             <a class="brand light" href="{{ link }}" role="banner" itemprop="url">
-
                 {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
@@ -80,8 +79,12 @@
     {% else %}
     <div class="inner">
         <div class="container">
-            <a class="brand" href="{{ site.url }}" role="banner" itemprop="url">
-
+            {% if site.lang == 'en' %}
+              {% capture link %}{{ site.blog_url }}{% endcapture %}
+            {% else %}
+              {% capture link %}{{ site.blog_url }}/pl{% endcapture %}
+            {% endif %}
+            <a class="brand" href="{{ link }}" role="banner" itemprop="url">
                 {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
