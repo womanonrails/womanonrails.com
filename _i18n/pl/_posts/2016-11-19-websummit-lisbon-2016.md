@@ -6,7 +6,7 @@ video: https://vimeo.com/192149166
 video_type: vimeo
 description: Przygoda z Web Summit w Lizbonie
 headline: Premature optimization is the root of all evil.
-ategories: [wydarzenia, warsztaty, podróże]
+categories: [wydarzenia, warsztaty, podróże]
 tags: [Web Summit, Lizbona]
 comments: true
 ---
