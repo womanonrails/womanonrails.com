@@ -16,7 +16,7 @@ triangleheader:   true
 animated_fins:    true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
-# url: "http://womanonrails.com" # the base hostname & protocol for your site
+url: "http://womanonrails.com" # the base hostname & protocol for your site
 baseurl: ""
 
 meta:
