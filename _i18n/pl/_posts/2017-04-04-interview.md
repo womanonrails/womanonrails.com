@@ -50,7 +50,7 @@ Co to więc znaczy **być dobrze przygotowanym**. Co trzeba zrobić by **dobrze 
 
 9. Metodologie
 
-    Jeżeli pracowałaś lub pracowałeś już przy tworzeniu jakiegoś projektu, to na pewno wiesz coś na ten temat. Zastanów się jak pracujesz w zespole? Jaki duży był zespół? W jaki sposób organizujesz sobie pracę? Czy towarzyszyły temu jakieś procesy? Jak one się nazywają? Agile, Scrum, Waterfall, Lean? Czego używasz do komunikacji? Jak tworzysz nowe funkcjonalności? Jak naprawiasz błędy? W jaki sposób podchodzisz do klientów? Jak rozwiązujesz problemy? Co możesz powiedzieć o swoim procesie? Wady, zalety?
+    Jeżeli pracowałaś lub pracowałeś już przy tworzeniu jakiegoś projektu, to na pewno wiesz coś na ten temat. Zastanów się jak pracujesz w zespole? Jaki duży jest zespół? W jaki sposób organizujesz sobie pracę? Czy towarzyszą temu jakieś procesy? Jak one się nazywają? Agile, Scrum, Waterfall, Lean? Czego używasz do komunikacji? Jak tworzysz nowe funkcjonalności? Jak naprawiasz błędy? W jaki sposób podchodzisz do klientów? Jak rozwiązujesz problemy? Co możesz powiedzieć o swoim procesie? Wady, zalety?
 
 10. Pytania do mnie
 
