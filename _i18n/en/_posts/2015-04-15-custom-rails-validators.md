@@ -16,7 +16,7 @@ For a few days I worked on custom validators in Rails. First what are validators
 
 for all of this we use validators.
 
-Rails has many different validators already in side. Check the [documentation](http://guides.rubyonrails.org/active_record_validations.html#validation-helpers). But sometimes you want to do more. In my case I need validator for black list of words for string field. I know I can use [build-in validator](http://guides.rubyonrails.org/active_record_validations.html#exclusion). But I need much more customization:
+Rails has many different validators already in side. Check the [documentation](https://guides.rubyonrails.org/active_record_validations.html#validation-helpers). But sometimes you want to do more. In my case I need validator for black list of words for string field. I know I can use [build-in validator](https://guides.rubyonrails.org/active_record_validations.html#exclusion). But I need much more customization:
 
 1. The list of excluded words was very long.
 2. I didn’t want to have this words in my Ruby file.
@@ -24,7 +24,7 @@ Rails has many different validators already in side. Check the [documentation](h
 
 ## So I decide to do my own validator.
 
-I look to documentation and I find [this](http://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations). I choosed `ActiveModel::EachValidator` where I have access to whole record, specific attribute to check and the value of this attribute. This was all I needed. To do my custom validator I must only write one method: `validate_each`. It look like this:
+I look to documentation and I find [this](https://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations). I choosed `ActiveModel::EachValidator` where I have access to whole record, specific attribute to check and the value of this attribute. This was all I needed. To do my custom validator I must only write one method: `validate_each`. It look like this:
 
 ```ruby
 # app/validators/blacklist_validator.rb
@@ -96,7 +96,7 @@ validates :array, array_lenght: { minimum: 1 }
 
 It is one more think to say. **How put translation to our validators in `locales`?**
 
-We use Rails Convention. This is one but not only way to do this (all convention is explain in [http://guides.rubyonrails.org/i18n.html#error-message-scopes](http://guides.rubyonrails.org/i18n.html#error-message-scopes)):
+We use Rails Convention. This is one but not only way to do this (all convention is explain in [https://guides.rubyonrails.org/i18n.html#error-message-scopes](https://guides.rubyonrails.org/i18n.html#error-message-scopes)):
 
 ```
 en:

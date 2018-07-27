@@ -10,7 +10,7 @@ tags: [coderetreat, event, Cracow]
 comments: true
 ---
 
-In last Saturday I was on [Global Day of Coderetreat](http://coderetreat.org/) in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.
+In last Saturday I was on [Global Day of Coderetreat](https://www.coderetreat.org/) in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.
 
 ## How looks this Coderetreat day?
 
@@ -22,7 +22,7 @@ All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In 
 
 2. **Functional programming**
 
-    All code is not mutable. Every method get some argument and return results – like function in math. In this case methods cannot modifies object state. For me this session was session out of my comfort zone. First time in my life I wrote code in [LiveScript](http://livescript.net/). This language is very similar to [CoffeeScript](http://coffeescript.org/), so it was nice to try other alternative. After this session I realized how easy was testing code like that. You call methods and only check if result equal to something.
+    All code is not mutable. Every method get some argument and return results – like function in math. In this case methods cannot modifies object state. For me this session was session out of my comfort zone. First time in my life I wrote code in [LiveScript](http://livescript.net/). This language is very similar to [CoffeeScript](https://coffeescript.org/), so it was nice to try other alternative. After this session I realized how easy was testing code like that. You call methods and only check if result equal to something.
 
 3. **Tell don’t ask** – No getter, no setter, no properties
 

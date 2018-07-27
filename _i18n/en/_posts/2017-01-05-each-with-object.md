@@ -8,7 +8,7 @@ tags: [Ruby, tips]
 comments: true
 ---
 
-I worked in last a few days with `each_with_object` method. Every time when I would like to use some method in Ruby I try read documentation one more time and I look on some example of usage. This time I went through [APIdock](http://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method. I tried to add this missing part there, but without success. In meantime when I'm waiting for message from APIdoc support I decided to write short note here about this.
+I worked in last a few days with `each_with_object` method. Every time when I would like to use some method in Ruby I try read documentation one more time and I look on some example of usage. This time I went through [APIdock](https://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method. I tried to add this missing part there, but without success. In meantime when I'm waiting for message from APIdoc support I decided to write short note here about this.
 
 
 The most useful and I think the most popular usage of `each_with_object` is putting hash or array as an argument. You can do this like in example below:

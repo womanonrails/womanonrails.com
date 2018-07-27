@@ -18,7 +18,7 @@ Description: Awesome dude, awesome life
 <head>
 {% include head.html %}
 </head>
-<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+<body class="home-template" itemscope itemtype="https://schema.org/WebPage">
 <div id="fade"></div>
 <a id="slide" class="animated fade"></a>
 <aside id="sidebar">
@@ -48,7 +48,7 @@ Description: Awesome dude, awesome life
         {% endfor %}
       {% endif %}
       <li>
-        <a href="http://bemore.womanonrails.com/" title="Be more blog">Be more</a>
+        <a href="https://bemore.womanonrails.com/" title="Be more blog">Be more</a>
       </li>
       <li>
         <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">
@@ -59,9 +59,9 @@ Description: Awesome dude, awesome life
   </nav>
 </aside>
 
-{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="http://schema.org/Organization">
+{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="https://schema.org/Organization">
 {% else %}
-<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="http://schema.org/Organization">
+<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="https://schema.org/Organization">
 {% endif %}
 {% if site.search %}
   <button class="menu-button animated fade dosearch">
@@ -122,7 +122,7 @@ Description: Awesome dude, awesome life
     {% endif %}
     {% if site.animated_fins and site.triangleheader %}
     <div class="decor-wrapper">
-        <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba({{ site.fin_color }}, .1)"></path>
             <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba({{ site.fin_color }}, .1)"></path>
 
@@ -141,7 +141,7 @@ Description: Awesome dude, awesome life
     {% else %}
     {% if site.triangleheader %}
     <div class="decor-wrapper">
-        <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
 
             <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>

@@ -10,7 +10,7 @@ tags: [coderetreat, event, Kraków]
 comments: true
 ---
 
-W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu – [Global Day of Coderetreat](http://coderetreat.org/) w Krakowie. **Coderetreat** to szczególny dzień w roku, w którym programiści poświęcają swój czas nie tyle tworzeniu nowych funkcjonalności, ale skupiają się na **kodzie dobrej jakości**. Jest to dzień, w którym zatrzymujemy się na chwilę, by poświęcić czas na bycie lepszym programistą/programistką.
+W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu – [Global Day of Coderetreat](https://www.coderetreat.org/) w Krakowie. **Coderetreat** to szczególny dzień w roku, w którym programiści poświęcają swój czas nie tyle tworzeniu nowych funkcjonalności, ale skupiają się na **kodzie dobrej jakości**. Jest to dzień, w którym zatrzymujemy się na chwilę, by poświęcić czas na bycie lepszym programistą/programistką.
 
 ## Jak wygląda taki Coderetreat?
 
@@ -22,7 +22,7 @@ Cały dzień podzielony jest na 6-7 sesji kodowania. W naszym przypadku było ic
 
 2. **Programowanie funkcyjne**
 
-    Nasz cały kod nie mógł być mutowalny, to znaczy że stanu obiektu nie mógł się zmieniać wewnątrz metody. Czy pamiętacie funkcje z matematyki? One zawsze dostawały jakiś argument i zwracały wartość. Tak było też podczas tej sesji. Dodatkowo tym razem ustawiałam sobie poprzeczkę jeszcze wyżej. Nie programowałam w Ruby ale w [LiveScript](http://livescript.net/). Było to moje pierwsze zetknięcie z tym językiem. Jest on bardzo podobny do [CoffeeScript](http://coffeescript.org/), więc ciekawie było go spróbować. Podczas tej sesji zwróciłam szczególną uwagę na to, jak prosto testuje się takie matematyczne metody. Wystarczy sprawdzić, co zostaje zwrócone dla konkretnych argumentów i koniec.
+    Nasz cały kod nie mógł być mutowalny, to znaczy że stanu obiektu nie mógł się zmieniać wewnątrz metody. Czy pamiętacie funkcje z matematyki? One zawsze dostawały jakiś argument i zwracały wartość. Tak było też podczas tej sesji. Dodatkowo tym razem ustawiałam sobie poprzeczkę jeszcze wyżej. Nie programowałam w Ruby ale w [LiveScript](https://livescript.net/). Było to moje pierwsze zetknięcie z tym językiem. Jest on bardzo podobny do [CoffeeScript](https://coffeescript.org/), więc ciekawie było go spróbować. Podczas tej sesji zwróciłam szczególną uwagę na to, jak prosto testuje się takie matematyczne metody. Wystarczy sprawdzić, co zostaje zwrócone dla konkretnych argumentów i koniec.
 
 3. **Rozkazuj, nie proś** – brak właściwości, brak metod ustawiających i odczytujących pola obiektu (setter, getter)
 

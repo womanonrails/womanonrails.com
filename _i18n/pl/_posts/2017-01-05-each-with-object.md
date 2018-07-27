@@ -8,7 +8,7 @@ tags: [Ruby, tips]
 comments: true
 ---
 
-Ostatnio pracowałam z metodą `each_with_object`. Jak zazwyczaj w takich sytuacjach zawsze staram się przed użyciem jakiejś metody sprawdzić jej dokumentację. Weszłam więc na [APIdock](http://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) przeglądam zastosowanie oraz przykłady. Okazało się że nie było tam jednego z przypadków zastosowania. Chciałam go dodać, lecz bez powodzenia. Postanowiłam więc, że skoro czekam na rozwiązanie problemu ze strony APIdock mogę napisać krótką notatkę na temat metody `each_with_object` tutaj.
+Ostatnio pracowałam z metodą `each_with_object`. Jak zazwyczaj w takich sytuacjach zawsze staram się przed użyciem jakiejś metody sprawdzić jej dokumentację. Weszłam więc na [APIdock](https://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) przeglądam zastosowanie oraz przykłady. Okazało się że nie było tam jednego z przypadków zastosowania. Chciałam go dodać, lecz bez powodzenia. Postanowiłam więc, że skoro czekam na rozwiązanie problemu ze strony APIdock mogę napisać krótką notatkę na temat metody `each_with_object` tutaj.
 
 Najbardziej pożytecznym i wydaje mi się również popularnym użyciem tej metody jest podanie jako argumentu tablicy lub hasha (tablicy słownikowej). Można to zrobić przykładowo:
 

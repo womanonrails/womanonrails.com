@@ -35,9 +35,9 @@
     </nav>
 </aside>
 
-{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="http://schema.org/Organization">{% if page.imagecredit %}<span class="image-credit">Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a></span>{% endif %}
+{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">{% if page.imagecredit %}<span class="image-credit">Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a></span>{% endif %}
 {% else %}
-<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="http://schema.org/Organization">
+<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">
 {% endif %}
 {% if site.search %}
     <button class="menu-button animated fade dosearch">
@@ -97,7 +97,7 @@
     {% endif %}
     {% if site.animated_fins and site.triangleheader %}
     <div class="decor-wrapper">
-        <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba({{ site.fin_color }}, .1)"></path>
             <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba({{ site.fin_color }}, .1)"></path>
 
@@ -116,7 +116,7 @@
     {% else %}
     {% if site.triangleheader %}
     <div class="decor-wrapper">
-        <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
 
             <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
