@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: Who is really me?
-comments: false
+comments: true
 ---
 
 <figure>
@@ -42,7 +42,7 @@ This time I was completely terrified. My dream came true and this wasn't what I 
   <figcaption>Memories</figcaption>
 </figure>
 
-Fortunately, in my life one more thing appear, which was, and still is, exiting. It was mix of logic, puzzles, being precise, deduction and analytical thinking. It has lots of common with **Math**. In my life programming appear. I learned programming on my specialization, during my Math studies. I can say that this is my second love. The first love, of course, is math. It was a pleasure for me to resolve problems, during classes. So I decided to start studying Computer Science full time on my University as my second faculty.
+Fortunately, in my life one more thing appear, which was, and still is, exciting. It was mix of logic, puzzles, being precise, deduction and analytical thinking. It has lots of common with **Math**. In my life programming appear. I learned programming on my specialization, during my Math studies. I can say that this is my second love. The first love, of course, is math. It was a pleasure for me to resolve problems, during classes. So I decided to start studying Computer Science full time on my University as my second faculty.
 
 It was a great decision. I was delighted. Computers stopped being for me incomprehensible machines. Now I could talk with them in the same language. To be honest, in many languages. I could do and create whatever I imagine, using only the keyboard! An amazing feeling!
 
@@ -56,7 +56,7 @@ So I did that. Next workshops were organized in Poznan. I filled the form, the b
 
 After this workshop I got so much positive energy, that I decide to go step further and be a mentor on next polish Rails Girls workshops. I wanted to give something from my side to this new (at least for me) community. Then Rails Girls Warsaw come up. So I decided to be a mentor. I was a little bit scared, but also happy at the same time. I found my third love: **teaching programming** and **sharing knowledge**.
 
-This was it. I started traveling around a Poland and **teach programming**. I love to show people how IT is wonderful and you don't need to be afraid of it. I was showing a world of computers, programming and web applications. Then I organized my own Rials Girls' events: [Rails Girls Gliwice](http://railsgirls.com/silesia) and [Rails Girls Cieszyn](http://railsgirls.com/cieszyn). After that I started helping with CoderDojo organization and teach kids programming. I love watching when, after a long time of hard work a person understand the problem. When this person says that after all it is not so hard like he/she was thinking. This is the best reward for me.
+This was it. I started traveling around a Poland and **teach programming**. I love to show people how IT is wonderful and you don't need to be afraid of it. I was showing a world of computers, programming and web applications. Then I organized my own Rails Girls' events: [Rails Girls Gliwice](http://railsgirls.com/silesia) and [Rails Girls Cieszyn](http://railsgirls.com/cieszyn). After that I started helping with CoderDojo organization and teach kids programming. I love watching when, after a long time of hard work a person understand the problem. When this person says that after all it is not so hard like she/he was thinking. This is the best reward for me.
 
 Now **programming** is my life. Sharing knowledge and continuous learning is my mission. This is why I'm here on **Woman on Rails** blog. I can share my knowledge in more world wide way. I can reach to many people. I can reach also to you!
 
