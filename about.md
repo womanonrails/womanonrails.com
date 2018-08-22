@@ -46,7 +46,7 @@ Fortunately, in my life one more thing appear, which was, and still is, exiting.
 
 It was a great decision. I was delighted. Computers stopped being for me incomprehensible machines. Now I could talk with them in the same language. To be honest, in many languages. I could do and create whatever I imagine, using only the keyboard! An amazing feeling!
 
-In last year I started my internship in IT company [Fractal Soft](https://fractalsoft.org/). They focus on the creation of web applications using **Ruby language**. Ruby is beautiful, readable, simple and very flexible language. Writing in Ruby is pure pleasure. I started to learn more and more about Ruby.
+In last year I started my internship in IT company <a href="https://fractalsoft.org/" title="Ruby on Rails web applications">Fractal Soft</a>. They focus on the creation of web applications using **Ruby language**. Ruby is beautiful, readable, simple and very flexible language. Writing in Ruby is pure pleasure. I started to learn more and more about Ruby.
 
 But I still felt that there is something I miss. That feeling I need to learn more, that I'm not good enough in programming. That I need to develop my skills more. One of my friends sent me information about workshops called **Rails Girls**. Next workshops were planned in Wroclaw. You have to fill forms and best 30 people will get invitations to this workshop.
 
