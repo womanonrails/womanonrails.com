@@ -1,6 +1,8 @@
+{% capture meta_title %}{% if site.lang == 'en' %}{{ site.meta.en.title }}{% else %}{{ site.meta.pl.title }}{% endif %}{% endcapture %}
+{% capture meta_description %}{% if site.lang == 'en' %}{{ site.meta.en.description }}{% else %}{{ site.meta.pl.description }}{% endif %}{% endcapture %}
 <meta charset="utf-8">
-<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.meta.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.meta.description }}{% endif %}">
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ meta_title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ meta_description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
 {% if site.owner.twitter %}<!-- Twitter Cards -->
@@ -8,15 +10,15 @@
 <meta name="twitter:image" content="{{ site.url }}/images/{{ page.imagefeature }}">
 {% else %}<meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.meta.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.meta.description }}{% endif %}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ meta_title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ meta_description }}{% endif %}">
 <meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.meta.title }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.meta.description }}{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ meta_title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ meta_description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 {% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/{{ page.imagefeature }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/{{ site.meta.image }}">{% endif %}
