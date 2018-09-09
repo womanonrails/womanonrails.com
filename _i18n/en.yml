@@ -1,6 +1,7 @@
 language: pl
 read_more: read more...
 see_more: see more...
+search: Search
 pagination:
   newer_posts: Newer Posts
   page: Page
@@ -8,3 +9,6 @@ pagination:
   older_posts: Older Posts
 about:
   image: Just me
+meta:
+  title: Woman on Rails - web development from woman perspective
+  description: Ruby on Rails programmer fascinated by design patterns, building good application architecture, code refactoring and connecting web development with remote work and travels.

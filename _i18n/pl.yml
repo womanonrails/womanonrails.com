@@ -1,6 +1,7 @@
 language: en
 read_more: czytaj więcej...
 see_more: zobacz więcej...
+search: Wyszukaj
 pagination:
   newer_posts: Nowsze posty
   page: Strona
@@ -8,3 +9,6 @@ pagination:
   older_posts: Starsze posty
 about:
   image: Po prostu ja
+meta:
+  title: Woman on Rails - web development z kobiecej perspektywy
+  description: Programistka Ruby on Rails zafascynowana wzorcami projektowymi, budowaniem dobrej architektury aplikacji, refaktoringiem kodu i łącząca pracę zdalną z podróżowaniem.
