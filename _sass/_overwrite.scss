@@ -97,3 +97,18 @@ a.language {
 button.menu-button {
   right: 60px;
 }
+
+// this is only used in one article
+.table.refactoring-step-by-step {
+  tr:last-child {
+    border-bottom: 1px solid $grey;
+  }
+
+  tbody {
+    border-left: 1px solid $grey;
+  }
+
+  td:nth-child(even) {
+    border-right: 1px solid $grey;
+  }
+}
