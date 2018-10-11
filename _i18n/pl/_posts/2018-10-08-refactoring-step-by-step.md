@@ -339,3 +339,21 @@ W następnym artykule chciałabym wejść jeszcze głębiej w temat tego refakto
 - Budowaniu klas jako elementów wymiennych i takich, które można ze sobą łączyć
 
 Trzymaj się! Mój następny artykuł pojawi się już wkrótce! Jeżeli masz jakieś pytania lub przemyślenia, to podziel się nimi w komentarzach. Do zobaczenia następnym razem. Cześć!
+
+<hr>
+
+### Bibliografia
+
+#### Książki
+- <a href="https://helion.pl/view/10301k/refukv.htm#format/d" title="Refaktoryzacja. Ulepszanie struktury istniejącego kodu" target="_blank" rel="nofollow noopener noreferrer">Refaktoryzacja. Ulepszanie struktury istniejącego kodu - Martin Fowler</a>
+- <a href="https://helion.pl/view/10301k/czykov.htm#format/d" title="Czysty kod. Podręcznik dobrego programisty" target="_blank" rel="nofollow noopener noreferrer">Czysty kod. Podręcznik dobrego programisty - Robert C. Martin</a>
+- <a href="https://helion.pl/view/10301k/rubywz.htm#format/d" title="Ruby. Wzorce projektowe" target="_blank" rel="nofollow noopener noreferrer">Ruby. Wzorce projektowe - Russ Olsen</a>
+- <a href="https://helion.pl/view/10301k/tddszt.htm#format/d" title="Pragmatyczny programista. Od czeladnika do mistrza" target="_blank" rel="nofollow noopener noreferrer">TDD. Sztuka tworzenia dobrego kodu - Ken Beck</a>
+- <a href="https://helion.pl/view/10301k/pragpv.htm#format/d" title="Pragmatyczny programista. Od czeladnika do mistrza" target="_blank" rel="nofollow noopener noreferrer">Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas</a>
+- <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz [EN]</a>
+
+#### Prezentacje angielsko języczne
+- <a href="https://www.youtube.com/watch?v=8bZh5LMaSmE" title="All the Little Things by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">All the Little Things by Sandi Metz</a>
+- <a href="https://www.youtube.com/watch?v=5yX6ADjyqyE" title="Fat Models with Patterns by Bryan Helmkamp" target="_blank" rel="nofollow noopener noreferrer">LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
+- <a href="https://www.youtube.com/watch?v=OMPfEXIlTVE" title="Nothing is something by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">Nothing is something by Sandi Metz</a>
+- <a href="https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks" title="8 best Ruby on Rails refactoring talks" target="_blank" rel="nofollow noopener noreferrer">Best Ruby on Rails refactoring talks</a>
