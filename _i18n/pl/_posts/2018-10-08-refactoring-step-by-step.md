@@ -18,7 +18,12 @@ Do tego celu wykorzystam kod, który został napisany dawno temu przez jednego z
 
 Zaczęłam od zaktualizowania wszystkich gemów w projekcie oraz doinstalowania narzędzi takich jak Rubocop czy Reek. Są to **metryki czyli pewnego rodzaju wskaźniki jakości kodu**. Będą użyteczne, by sprawdzić na czym stoję i gdzie mogę zacząć porządki. Trzeba jednak pamiętać, że są to tylko narzędzia. A narzędzia mogą się mylić i można je łatwo oszukać, ale to temat na inny artykuł.
 
-Po tym kroku sprawdziłam, wszystkie testy przechodziły.
+## Statystyki (bazując na metrykach):
+- **LOC** (Line of code - liczba lini kodu) - 194
+- **LOT** (Line of tests - liczba lini testów) - 168
+- **Flog** - 112.8
+- **Flay** - 123
+- **Testy** - 12 examples, 0 failures (12 przypadków testowych, 0 nieprzechodzących)
 
 # Krok 2 - Pierwsze porządki
 
@@ -94,7 +99,12 @@ Dla każdej metody w tej klasie powtarzałam następujące kroki:
 
 Kod po moich zmianach możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb" title="Trzeci krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Podczas tego kroku usunęłam również za komentowany kod, komentarze po polsku i dodałam kilka testów, których moim zdaniem brakowało.
 
-Po tym kroku, wszystkie testy przechodziły.
+## Statystyki:
+- **LOC** - 73
+- **LOT** - 170
+- **Flog** - 76.3
+- **Flay** - 63
+- **Testy** - 12 examples, 0 failures
 
 # Krok 4 - Od kodu proceduralnego do obiektowego
 
@@ -218,7 +228,12 @@ end
 
 Usunęłam tutaj powtarzające się fragmenty kodu, używając stanu trzymanego w instancji klasy. Kod po tym kroku możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/83d230e969df4d27ffa5e5e34a2cf1aa43e76d90/lib/poker/hand.rb" title="Czwarty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Mała uwaga - dodatkowo zrobiłam refaktoring w testach. Postanowiłam przenieść wszystkie możliwe przypadki testowe do tablicy by uniknąć powtórzeń, jakie były widoczne również w testach.
 
-Po tym kroku, wszystkie testy przechodziły.
+## Statystyki:
+- **LOC** - 76
+- **LOT** - 190
+- **Flog** - 70.9
+- **Flay** - 57
+- **Testy** - 104 examples, 0 failures
 
 # Krok 5 - Usuwanie powtórzeń (duplikacji)
 
@@ -262,13 +277,23 @@ def four_of_a_kind?
 end
 ```
 
-Po tym kroku, wszystkie testy przechodziły.
+## Statystyki:
+- **LOC** - 76
+- **LOT** - 190
+- **Flog** - 61.0
+- **Flay** - 0
+- **Testy** - 104 examples, 0 failures
 
 # Krok 6 - mały publiczny interface
 
 Kiedy spojrzysz na kod z <a href="https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb" title="Piąty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">kroku 5</a>, to na pewno zauważysz, że mamy bardzo dużo metod dostępnych publicznie do wykorzystania na obiekcie naszej klasy. **Duży publiczny interface jest ciężki w utrzymaniu.** Jeżeli chciałybyśmy zastąpić naszą klasę `Hand` inną klasą, to będziemy potrzebować dokładnie tyle samo metod publicznych, jak w przypadku klasy `Hand`. Dodatkowo każda publicznie dostępna metoda może zostać wykorzystana przez inny fragment kodu, co może powodować niepotrzebne zależności między obiektami. W naszym przypadku, jak przyjrzymy się bliżej okaże się, że nawet testy nie sprawdzają wszystkich dostępnych metod. Zajmują się tylko sprawdzeniem metody `check`. Zdecydowałam więc, że jedyną publicznie dostępną metodą będzie metoda `check`. Pozostałe metody będą pomocniczymi metodami prywatnymi. Zmiany możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/ef117a56e3cc0fbfae9de4821ac61e5489f704fc/lib/poker/hand.rb" title="Szósty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>.
 
-Po tym kroku, wszystkie testy przechodziły.
+## Statystyki:
+- **LOC** - 77
+- **LOT** - 190
+- **Flog** - 59.9
+- **Flay** - 0
+- **Testy** - 104 examples, 0 failures
 
 # Krok 7 - Jeszcze więcej porządków
 
@@ -319,7 +344,12 @@ end
 
 Wszystkie zmiany możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb" title="Siódmy krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>.
 
-Po tym kroku, wszystkie testy przechodziły.
+## Statystyki:
+- **LOC** - 80
+- **LOT** - 190
+- **Flog** - 64.5
+- **Flay** - 0
+- **Testy** - 104 examples, 0 failures
 
 # Podsumowanie
 
@@ -337,6 +367,7 @@ W następnym artykule chciałabym wejść jeszcze głębiej w temat tego refakto
 - Meta-programowaniu jako sposobie na pisanie elastycznego kodu
 - Przygotowaniu małych niezależnych klas, zamiast jednej dużej klasy
 - Budowaniu klas jako elementów wymiennych i takich, które można ze sobą łączyć
+- Wyjaśnieniu po co podawałam metryki na każdym kroku i co one nam wlaściwie mówią
 
 Trzymaj się! Mój następny artykuł pojawi się już wkrótce! Jeżeli masz jakieś pytania lub przemyślenia, to podziel się nimi w komentarzach. Do zobaczenia następnym razem. Cześć!
 

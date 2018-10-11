@@ -18,7 +18,12 @@ I got a code which was written by a person on internship long time ago in my com
 
 I updated gems which were in the project and I installed gems like Rubocop or Reek to help myself start refactoring. Those tools are helpful to see where problem in code can be. To do this, first overview. But those are only tools sometimes they are right and sometimes not. And it is easy to cheat them. But this is another topic.
 
-After that all tests passed.
+## Stats (based on metrics):
+- **LOC** (Line of code) - 194
+- **LOT** (Line of tests) - 168
+- **Flog** - 112.8
+- **Flay** - 123
+- **Tests** - 12 examples, 0 failures
 
 # Step 2 - Start first clean ups
 
@@ -94,7 +99,12 @@ I repeat that approach over and over again for all methods.
 
 Code after this step you can find <a href="https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb" title="Code after 3rd step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. During that step I removed also commented code, polish comments and I added some tests, which for me were missing.
 
-After that all tests passed.
+## Stats:
+- **LOC**  - 73
+- **LOT**  - 170
+- **Flog** - 76.3
+- **Flay** - 63
+- **Tests** - 12 examples, 0 failures
 
 # Step 4 - From procedural to more object oriented code
 
@@ -218,7 +228,12 @@ end
 
 We remove some of duplication and use state of the class instance to improve our code. Code after this step you can find <a href="https://github.com/womanonrails/poker/blob/83d230e969df4d27ffa5e5e34a2cf1aa43e76d90/lib/poker/hand.rb" title="Code after 4th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. Quick note - I also did small refactoring in tests. I just moved test cases to array to also remove duplication there.
 
-After that all tests passed.
+## Stats:
+- **LOC**  - 76
+- **LOT**  - 190
+- **Flog** - 70.9
+- **Flay** - 57
+- **Tests** - 104 examples, 0 failures
 
 # Step 5 - Remove duplication
 
@@ -262,13 +277,23 @@ def four_of_a_kind?
 end
 ```
 
-After that all tests passed.
+## Stats:
+- **LOC**  - 76
+- **LOT**  - 190
+- **Flog** - 61.0
+- **Flay** - 0
+- **Tests** - 104 examples, 0 failures
 
 # Step 6 - small public interface
 
 When you will look at the code from <a href="https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb" title="Code after 5th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">step 5</a>, you will notice that all methods are public. **The big public interface is something hard to maintain.** If you will try to replace class `Hand` by other class you need to prepare class with the same big interface. If something is public you can use everywhere, what can provides also new dependencies in the code. In this case, when you look closer, you will see that even tests are checking only the method `check`. I decided to declare all others method as private. This change is visible <a href="https://github.com/womanonrails/poker/blob/ef117a56e3cc0fbfae9de4821ac61e5489f704fc/lib/poker/hand.rb" title="Code after 6th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>.
 
-After that all tests passed.
+## Stats:
+- **LOC**  - 77
+- **LOT**  - 190
+- **Flog** - 59.9
+- **Flay** - 0
+- **Tests** - 104 examples, 0 failures
 
 # Step 7 - more clean ups
 
@@ -319,7 +344,12 @@ end
 
 You can see all changes <a href="https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb" title="Code after 7th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>
 
-After that all tests passed.
+## Stats:
+- **LOC**  - 80
+- **LOT**  - 190
+- **Flog** - 64.5
+- **Flay** - 0
+- **Tests** - 104 examples, 0 failures
 
 # Summarize
 
@@ -336,7 +366,8 @@ In my next article I would like to go deeper with this refactoring and focus on:
 - Code which is more descriptive
 - Metaprograming as method to write more elastic code
 - Preparing small independent classes, then one big class
-- Build classes as elements which are replaceable and possible to combine
+- Building classes as elements which are replaceable and possible to combine
+- Explanation why I used metrics on each step and what they tell us
 
 Stay tune! My next article will come soon! If you like this article share your thoughts with my in the comments below. Thank you so much for being here. And see you next time. Bye!
 
