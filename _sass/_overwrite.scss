@@ -111,4 +111,8 @@ button.menu-button {
   td:nth-child(even) {
     border-right: 1px solid $grey;
   }
+
+  .red-text {
+    color: $dark-red;
+  }
 }

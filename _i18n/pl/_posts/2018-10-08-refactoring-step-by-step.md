@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Refactoring krok po kroku - część 1
+title: Refactoring w Ruby krok po kroku - część 1
 description: Jak zrobić refaktoring? <br> Od kodu proceduralnego do zorientowanego obiektowo.
 headline: Premature optimization is the root of all evil.
 categories: [Ruby, refactoring]
@@ -8,26 +8,26 @@ tags: [Ruby, refactoring]
 comments: true
 ---
 
-Dużo czasu minęło od mojego ostatniego artykułu technicznego. Przez ten czas próbowałam wielu nowych rzeczy. Założyłam blog <a href="https://bemore.womanonrails.com/" title="Be more - moje przemyślenia na temat życia" target="_blank">Be more</a>, który dotyczy moich przemyśleń na temat życia, <a href="https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ" title="Woman on Rails - kanał YouTube" target="_blank" rel="nofollow noopener noreferrer">Kanał Woman on Rails na YouTube</a> i <a href="https://vimeo.com/womanonrails" title="Woman on Rails - kanał Vimeo" target="_blank" rel="nonofollow noopener noreferrer">podróżniczy kanał na Vimeo</a>. To był czas odkrywania, co sprawia mi przyjemność a co nie. Ale wracając do tematu. Do tego artykułu przygotowywałam się naprawdę długo. Może nawet za długo. Pomysł pojawił się już 2015 roku, a teraz możesz zobaczyć jego rezultaty. Zaczynajmy!
+Dużo czasu minęło od mojego ostatniego artykułu technicznego. Przez ten czas próbowałam wielu nowych rzeczy. Założyłam blog <a href="https://bemore.womanonrails.com/" title="Be More - moje przemyślenia na temat życia" target="_blank">Be more</a>, który dotyczy moich przemyśleń na temat życia, <a href="https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ" title="Woman on Rails - kanał YouTube" target="_blank" rel="nofollow noopener noreferrer">Kanał Woman on Rails na YouTube</a> i <a href="https://vimeo.com/womanonrails" title="Woman on Rails - kanał Vimeo" target="_blank" rel="nonofollow noopener noreferrer">podróżniczy kanał na Vimeo</a>. To był czas odkrywania, co sprawia mi przyjemność a co nie. Ale wracając do tematu. Do tego artykułu przygotowywałam się naprawdę długo. Może nawet za długo. Pomysł pojawił się już 2015 roku, a teraz możesz zobaczyć jego rezultaty. Zaczynajmy!
 
-Refaktoring jest jednym z moich ulubionych tematów. Uwielbiam porządkować w prawdziwym życiu ale też w kodzie. Pracowałam i nadal pracuje w projektach dotyczących aplikacji internetowych. I wciąż poszukuje odpowiedzi na następujące pytania: Jak pisać dobry kod? Co powoduje, że po pewnym czasie nasz kod staje się brzydki i nieczytelny? Jak radzić sobie z rosnącą złożonością w projektach? Każdego dnia uczę się jak robić dobry refaktoring bazując na już zdobytym przeze mnie jak i przez innych doświadczeniu. Dziś chciałabym się podzielić z Tobą przykładem refaktoringu zrobionego krok po kroku.
+Refaktoring jest jednym z moich ulubionych tematów. Uwielbiam porządki w prawdziwym życiu, ale też w kodzie źródłowym. Pracowałam i nadal pracuję nad aplikacjami internetowymi. I wciąż poszukuje odpowiedzi na następujące pytania: Jak pisać dobry kod? Co powoduje, że po pewnym czasie nasz kod staje się brzydki i nieczytelny? Jak radzić sobie z rosnącą złożonością w projektach? Każdego dnia uczę się jak robić dobry refaktoring. Bazuję na zdobytym przeze mnie, jak i przez innych, doświadczeniu. Dziś chciałabym się podzielić z Tobą przykładem refaktoringu zrobionego krok po kroku.
 
-Do tego celu wykorzystam kod, który został napisany dawno temu przez jednego z praktykantów w mojej firmie. Plan był następujący - ulepszyć ten kod. W zasadzie cała logika to jedna klasa, którą możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb" title="Kod przed refaktoringiem" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. W tej klasie znajdują się wszystkie zasady potrzebne do sprawdzenia tego, co mamy w ręce grając w pokera, ale bez użycia jokera. Kod nie jest zły. Kiedy znasz logikę biznesową (w tym przypadku zasady pokera), jesteś wstanie poruszać się po tym kodzie. Ten kod posiada też testy, co jest jego zaletą. Będzie nam o wiele łatwiej zmienić cokolwiek w kodzie, gdy mamy testy pilnujące logiki. Jeżeli jednak nie cała logika jest przetestowana, to możemy zepsuć fragment funkcjonalności nie zdając sobie nawet z tego sprawy. Kod ten wygląda bardziej proceduralnie niż obiektowo i będę chciała się tym zająć w odpowiednim czasie. Posiada on też wiele powtórzeń. Czasami taki kod jest w zupełności wystarczający. Wszystko zależy od projektu i wymagań. Jeżeli kod został napisany raz, działa poprawnie i nikt do niego nie będzie musiał zaglądać, to może zostawienie go w takim stanie jest w jakiś sposób uzasadnione z biznesowego punku widzenia. Natomiast jeżeli zdarzy się, że zmienią się wymagania, to prawdopodobnie kod też ulegnie zmianie. To Ty musisz zdecydować, czy będziesz refaktoryzowała kod teraz czy później. Ja preferuje pierwszą opcję. Do puki pamiętam logikę i zależności łatwiej jest mi kod zmienić. Po pewnym czasie trzeba najpierw jeszcze raz zrozumieć strukturę, zanim zacznie się coś modyfikować. No to zaczynamy!
+Do tego celu wykorzystam kod, który został napisany dawno temu przez młodego programistę w <a href="https://fractalsoft.org/pl" title="Fractal Soft - Aplikacje internetowe w Ruby on Rails" target="_blank">mojej firmie</a>. Plan był następujący - ulepszyć ten kod źródłowy. W zasadzie cała logika to jedna klasa, którą możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb" title="Kod przed refaktoringiem" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. W tej klasie znajdują się wszystkie zasady potrzebne do sprawdzenia tego, co mamy w ręce grając w pokera, ale bez użycia jokera. Kod nie jest zły. Kiedy znasz logikę biznesową (w tym przypadku zasady pokera), jesteś wstanie poruszać się po tym kodzie. Ten fragment kodu posiada też testy, co jest jego zaletą. Będzie nam o wiele łatwiej zmienić cokolwiek, gdy mamy testy pilnujące logiki. Jeżeli jednak nie cała logika jest przetestowana, to możemy zepsuć fragment funkcjonalności nie zdając sobie nawet z tego sprawy. Kod ten wygląda bardziej proceduralnie niż obiektowo i będę chciała się tym zająć w odpowiednim czasie. Posiada on też wiele powtórzeń. Czasami taki fragment kodu jest w zupełności wystarczający. Wszystko zależy od projektu i wymagań. Jeżeli kod został napisany raz, działa poprawnie i nikt do niego nie będzie musiał zaglądać, to może zostawienie go w takim stanie jest w jakiś sposób uzasadnione z biznesowego punktu widzenia. Natomiast jeżeli zdarzy się, że zmienią się wymagania, to prawdopodobnie kod źródłowy też ulegnie zmianie. To Ty musisz zdecydować, czy będziesz refaktoryzowała kod teraz czy później. Ja preferuje pierwszą opcję. Dopóki pamiętam logikę i zależności łatwiej jest mi kod zmienić. Po pewnym czasie trzeba najpierw jeszcze raz zrozumieć strukturę, zanim zacznie się coś modyfikować. No to zaczynamy!
 
-# Krok 1 - przygotowanie środowiska
+# Krok 1 - Przygotowanie środowiska
 
-Zaczęłam od zaktualizowania wszystkich gemów w projekcie oraz doinstalowania narzędzi takich jak Rubocop czy Reek. Są to **metryki czyli pewnego rodzaju wskaźniki jakości kodu**. Będą użyteczne, by sprawdzić na czym stoję i gdzie mogę zacząć porządki. Trzeba jednak pamiętać, że są to tylko narzędzia. A narzędzia mogą się mylić i można je łatwo oszukać, ale to temat na inny artykuł.
+Zaczęłam od zaktualizowania wszystkich gemów w projekcie oraz doinstalowania narzędzi takich jak Rubocop czy Reek. Są to **metryki czyli pewnego rodzaju wskaźniki jakości kodu**. Pomogą nam sprawdzić na czym stoimy i gdzie można zacząć robić porządki. Trzeba jednak pamiętać, że są to tylko narzędzia. A narzędzia mogą się mylić i można je łatwo oszukać. Ale to temat na osobny artykuł.
 
 ## Statystyki (bazując na metrykach):
-- **LOC** (Line of code - liczba lini kodu) - 194
-- **LOT** (Line of tests - liczba lini testów) - 168
+- **LOC** (Line of code - liczba linii kodu) - 194
+- **LOT** (Line of tests - liczba linii testów) - 168
 - **Flog** - 112.8
 - **Flay** - 123
 - **Testy** - 12 examples, 0 failures (12 przypadków testowych, 0 nieprzechodzących)
 
 # Krok 2 - Pierwsze porządki
 
-Bazując na testach i metrykach, nie wchodząc w głębsze zrozumienie logiki zrobiłam pierwsze usprawnienia. Usunęłam niektóre warunki i uprościłam kod.
+Bazując na testach i metrykach, nie wchodząc w głębsze zrozumienie logiki, zrobiłam pierwsze usprawnienia. Usunęłam niektóre warunki i uprościłam kod.
 
 Kod przed zmianami:
 
@@ -49,13 +49,13 @@ def straight_flush?(array)
 end
 ```
 
-Cały kod możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/148429e4591638aef38b5b7abaab5e0198d805c0/lib/poker/hand.rb" title="Drugi krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Te zmiany moim zdanie poprawiły odrobinę czytelność kodu.
+Cały kod możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/148429e4591638aef38b5b7abaab5e0198d805c0/lib/poker/hand.rb" title="Drugi krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Te zmiany moim zdaniem poprawiły odrobinę czytelność kodu.
 
 Po tym kroku, wszystkie testy przechodziły.
 
 # Krok 3 - Zrozumienie logiki i dalsze uproszczenia
 
-Teraz gdy kod jest dla mnie bardziej przejrzysty, mogę przejść do prawdziwej zmiany logiki na lepsze. Mam testy, więc każda zmiana będzie polegała na testach. Wzięłam pierwszą metodę i usunęłam całe jej wnętrze. Oto co dostałam:
+Teraz gdy kod jest dla mnie bardziej przejrzysty, mogę przejść do właściwej zmiany logiki. Mam testy, więc każda zmiana będzie się na nich opierała. Cel polegała na ich spełnieniu, czyli sprawieniu, że testy przechodza. Wzięłam pierwszą metodę i usunęłam całe jej wnętrze. Oto co dostałam:
 
 Kod przed zmianą:
 
@@ -97,7 +97,7 @@ Dla każdej metody w tej klasie powtarzałam następujące kroki:
 3. Pisałam nowy kod w prostszy sposób
 4. Sprawdzałam czy wszystkie testy przechodzą
 
-Kod po moich zmianach możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb" title="Trzeci krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Podczas tego kroku usunęłam również za komentowany kod, komentarze po polsku i dodałam kilka testów, których moim zdaniem brakowało.
+Kod po moich zmianach możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb" title="Trzeci krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Podczas tego kroku usunęłam również zakomentowany kod, komentarze po polsku i dodałam kilka testów jednostkowych, których moim zdaniem brakowało.
 
 ## Statystyki:
 - **LOC** - 73
@@ -111,7 +111,7 @@ Kod po moich zmianach możesz znaleźć <a href="https://github.com/womanonrails
 Nie wiem czy to zauważyłaś, ale do każdej metody przekazujemy argument `array`. Kod jest zamknięty w klasę, ale nie używamy tam inicjalizera (metody inicjującej instancję klasy). Poza tym mamy wiele miejsc, gdzie używamy `array.each {|item| hash [item / 4] += 1}`. Zacznijmy od przeniesienia tego fragmentu do inicjalizera i użyjmy stanu obiektu do przechowania tej wartości, zamiast wyliczać ją wielokrotnie.
 
 #### Szybkie wyjaśnienie:
-Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod działa. Każdą kartę z talii reprezentuje jedna liczba od 0 do 51. Tak więc liczby od 0-3 reprezentują 2 we wszystkich kolorach, liczby 4-7 reprezentują 3 itd. Całość tej zależności przedstawiona jest w tabeli poniżej:
+Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod działa. Każdą kartę z talii reprezentuje jedna liczba od 0 do 51. Tak więc liczby od 0-3 reprezentują dwójki we wszystkich kolorach, liczby 4-7 reprezentują trójki itd. Całość tej zależności przedstawiona jest w tabeli poniżej:
 
 <table class='table refactoring-step-by-step'>
   <tbody>
@@ -133,7 +133,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
       <td>21</td> <td>7&clubs;</td>
       <td>25</td> <td>8&clubs;</td>
     </tr>
-    <tr>
+    <tr class='red-text'>
       <td>2 </td> <td class='red'>2&hearts;</td>
       <td>6 </td> <td class='red'>3&hearts;</td>
       <td>10</td> <td class='red'>4&hearts;</td>
@@ -142,7 +142,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
       <td>22</td> <td class='red'>7&hearts;</td>
       <td>26</td> <td class='red'>8&hearts;</td>
     </tr>
-    <tr>
+    <tr class='red-text'>
       <td>3 </td> <td class='red'>2&diams;</td>
       <td>7 </td> <td class='red'>3&diams;</td>
       <td>11</td> <td class='red'>4&diams;</td>
@@ -174,7 +174,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
       <td>45</td> <td>K&clubs;</td>
       <td>49</td> <td>A&clubs;</td>
     </tr>
-    <tr>
+    <tr class='red-text'>
       <td>30</td> <td class='red'>9&hearts;</td>
       <td>34</td> <td class='red'>10&hearts;</td>
       <td>38</td> <td class='red'>J&hearts;</td>
@@ -182,7 +182,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
       <td>46</td> <td class='red'>K&hearts;</td>
       <td>50</td> <td class='red'>A&hearts;</td>
     </tr>
-    <tr>
+    <tr class='red-text'>
       <td>31</td> <td class='red'>9&diams;</td>
       <td>35</td> <td class='red'>10&diams;</td>
       <td>39</td> <td class='red'>J&diams;</td>
@@ -193,7 +193,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
   </tbody>
 </table>
 
-Jeżeli mamy kod `array. map {|item| item / 4}` to tak naprawdę sprawdzamy jaką figurę od 2 do A reprezentuje liczba. Natomiast jeżeli mamy `array. map {|item| item % 4}` sprawdzamy jakiego koloru jest dana karta (&spades;, &clubs;, &hearts;, &diams;).
+Jeżeli mamy kod `array.map {|item| item / 4}` to tak naprawdę sprawdzamy jaką figurę od 2 do Asa reprezentuje liczba. Natomiast jeżeli mamy `array.map {|item| item % 4}` sprawdzamy jakiego koloru jest dana karta (&spades;, &clubs;, &hearts;, &diams;).
 
 Gdybyś potrzebowała dokładniejszego wytłumaczenia zasad pokera, to sprawdź <a href="https://en.wikipedia.org/wiki/List_of_poker_hands" title="Pokerowe ustawienia ręki" target="_blank" rel="nofollow noopener noreferrer">listę wszystkich pokerowych ustawień ręki na Wikipedii</a>.
 
@@ -284,7 +284,7 @@ end
 - **Flay** - 0
 - **Testy** - 104 examples, 0 failures
 
-# Krok 6 - mały publiczny interface
+# Krok 6 - Mały publiczny interface
 
 Kiedy spojrzysz na kod z <a href="https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb" title="Piąty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">kroku 5</a>, to na pewno zauważysz, że mamy bardzo dużo metod dostępnych publicznie do wykorzystania na obiekcie naszej klasy. **Duży publiczny interface jest ciężki w utrzymaniu.** Jeżeli chciałybyśmy zastąpić naszą klasę `Hand` inną klasą, to będziemy potrzebować dokładnie tyle samo metod publicznych, jak w przypadku klasy `Hand`. Dodatkowo każda publicznie dostępna metoda może zostać wykorzystana przez inny fragment kodu, co może powodować niepotrzebne zależności między obiektami. W naszym przypadku, jak przyjrzymy się bliżej okaże się, że nawet testy nie sprawdzają wszystkich dostępnych metod. Zajmują się tylko sprawdzeniem metody `check`. Zdecydowałam więc, że jedyną publicznie dostępną metodą będzie metoda `check`. Pozostałe metody będą pomocniczymi metodami prywatnymi. Zmiany możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/ef117a56e3cc0fbfae9de4821ac61e5489f704fc/lib/poker/hand.rb" title="Szósty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>.
 
@@ -297,7 +297,7 @@ Kiedy spojrzysz na kod z <a href="https://github.com/womanonrails/poker/blob/74c
 
 # Krok 7 - Jeszcze więcej porządków
 
-Ten krok jest podobny do kroku 5. Usuwam dodatkowe powtórzenia w kodzie i zmieniam nazwy na bardziej opisowe, by ułatwić późniejsze czytanie kodu. Stworzyłam nową metodę `cards_figures_and_colors`, która przygotuje dwie rzeczy: `figures` czyli figury i `colors` czyli kolory kart. Możesz teraz powiedzieć: _a gdzie jest zasada **pojedynczej odpowiedzialności**_ lub _**to jest mikro optymalizacja**_, ponieważ zamiast dwóch pętli masz tylko jedną. Moja intuicja podpowiada mi że to, co zrobiłam jest ok. Ale Ty możesz mieć inne zdanie i to jest ok. Szanuję je. Oto jak wygląda ta metoda:
+Ten krok jest podobny do kroku 5. Usuwam dodatkowe powtórzenia w kodzie i zmieniam nazwy na bardziej opisowe, by ułatwić późniejsze czytanie kodu. Stworzyłam nową metodę `cards_figures_and_colors`, która przygotuje dwie rzeczy: `figures` czyli figury i `colors` czyli kolory kart. Możesz teraz powiedzieć: _a gdzie jest zasada **pojedynczej odpowiedzialności**_ lub _**to jest mikro optymalizacja**_, ponieważ zamiast dwóch pętli masz tylko jedną. Moja intuicja podpowiada mi że to, co zrobiłam jest ok. Ale Ty możesz mieć inne zdanie i to też jest ok. Szanuję je. Oto jak wygląda ta metoda:
 
 ```ruby
 def cards_figures_and_colors
@@ -305,7 +305,7 @@ def cards_figures_and_colors
 end
 ```
 
-Jestem otwarta na dyskusję, czy moje podejście jest dobre czy nie. Ta miana pociąga za sobą także zmiany w metodzie `initialize`:
+Jestem otwarta na dyskusję, czy moje podejście jest dobre czy nie. Ta zmiana pociąga za sobą także zmiany w metodzie `initialize`:
 
 ```ruby
 def initialize(array)
@@ -315,7 +315,7 @@ def initialize(array)
 end
 ```
 
-W tym kroku postanowiłam zmienić również metodę `cards_frequency`. Zamiast używać `each` używam `each_with_object`. Jeżeli jesteś zainteresowana większą ilością informacji na temat `each_with_object` zachęcam Cię do przeczytania mojego artykułu: <a href="https://womanonrails.com/pl/each-with-object" title="Zastosowanie metody each_with_object w języku Ruby">Przykłady użycia metody each\_with\_object</a>. Oto jak teraz wygląda kod:
+W tym kroku postanowiłam zmienić również metodę `cards_frequency`. Zamiast używać `each` używam `each_with_object`. Jeżeli jesteś zainteresowana większą ilością informacji na temat `each_with_object` zachęcam Cię do przeczytania mojego artykułu o <a href="https://womanonrails.com/pl/each-with-object" title="Zastosowanie metody each_with_object w języku Ruby">użyciu metody each\_with\_object w Ruby</a>. Oto jak teraz wygląda kod:
 
 ```ruby
 def cards_frequency
