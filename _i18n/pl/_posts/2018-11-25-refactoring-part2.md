@@ -417,7 +417,7 @@ rule.check?
 
 Kiedy tworzyłam tą klasę nie przypuszczałam, że będę mogła ją wykorzystać w taki sposób. Nie myślałam, że będzie się ona nadawać do obsługi zarówno tablic jak i ciągów znaków. Wiem, że to poniekąd jest to zasługa samego języka Ruby i jego <a href="https://pl.wikipedia.org/wiki/Duck_typing" title="Duck typing in Ruby" target="_blank" rel="nofollow noopener noreferrer">**duck typing'u**</a> ale myślę, że też prostoty kodu.
 
-# Statystyki:
+## Statystyki:
 - **LOC**  - 94
 - **LOT**  - 171
 - **Flog** - 69.7
