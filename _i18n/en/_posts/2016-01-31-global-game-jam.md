@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=-g4BbTNCgck
 video_type: youtube
 description: How create game in 48h?
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [GGJ, Cieszyn]
+categories: [hackathon]
+tags: [Global Game Jam]
+place: Cieszyn
 comments: true
 ---
 

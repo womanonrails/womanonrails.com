@@ -3,8 +3,8 @@ layout: post
 title: Quick overview Ruby each_with_object method
 description: Tips about each_with_object
 headline: Premature optimization is the root of all evil.
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programming]
+tags: [Ruby]
 comments: true
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Własne walidatory w Ruby on Rails
 description: Jak napisać własny walidator?
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, Ruby on Rails]
-tags: [Ruby, Ruby on Rails, validators]
+categories: [programowanie]
+tags: [Ruby, Ruby on Rails]
 comments: true
 ---
 

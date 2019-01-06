@@ -3,8 +3,9 @@ layout: post
 title: Zasady Rails Girls
 description: Moja przygoda na warsztatach Rails Girls
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [Ruby, Ruby on Rails, Rails Girls, Poznań]
+categories: [warsztaty]
+tags: [Rails Girls, Ruby on Rails]
+place: Poznań
 date: 2013-09-08 00:00:00 +0100
 comments: true
 ---

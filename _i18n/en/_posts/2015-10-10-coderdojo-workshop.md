@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=G_tTBd_ei3s
 video_type: youtube
 description: CoderDojo one rule - be cool
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [CoderDojo, event]
+categories: [workshops]
+tags: [CoderDojo]
+place: Gliwice
 comments: true
 ---
 
@@ -18,4 +19,4 @@ Ones a week I’m teaching others at **CoderDojo** workshops. CoderDojo is a pla
 
 If you like to see how classes look like just come to us or watch our [video](https://www.youtube.com/watch?v=G_tTBd_ei3s).
 
-If you are intested in CoderDojo workshop you can also find more information on [https://coderdojo.com/](https://coderdojo.com/) or [https://coderdojo.org.pl/](https://coderdojo.org.pl/)
+If you are interested in CoderDojo workshop you can also find more information on [https://coderdojo.com/](https://coderdojo.com/) or [https://coderdojo.org.pl/](https://coderdojo.org.pl/)

@@ -3,8 +3,8 @@ layout: post
 title: Refaktoryzacja w SessionsController
 description: Jak można poprawić swój kod?
 headline: My code is getting worse, please send more chocolate
-categories: [refactoring, Ruby, Ruby on Rails]
-tags: [refactoring, Ruby, Ruby on Rails]
+categories: [refaktoring]
+tags: [Ruby, Ruby on Rails]
 comments: true
 ---
 

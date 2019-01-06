@@ -3,8 +3,8 @@ layout: post
 title: Triki dla obiektu Hash w Ruby
 description: Czego ciekawego dowiedziałam się o obiekcie Hash
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programowanie]
+tags: [Ruby]
 comments: true
 ---
 

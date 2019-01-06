@@ -3,8 +3,8 @@ layout: post
 title: Custom Rails Validators
 description: How can I create my own validator?
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, Ruby on Rails]
-tags: [Ruby, Ruby on Rails, validators]
+categories: [programming]
+tags: [Ruby, Ruby on Rails]
 comments: true
 ---
 

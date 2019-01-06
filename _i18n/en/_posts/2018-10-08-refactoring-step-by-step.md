@@ -3,8 +3,8 @@ layout: post
 title: Ruby Refactoring step by step - part 1
 description: How refactor your code? <br> From procedural to more object related code.
 headline: Premature optimization is the root of all evil.
-categories: [Ruby, refactoring]
-tags: [Ruby, refactoring]
+categories: [refactoring]
+tags: [Ruby]
 comments: true
 ---
 

@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=UVAF7ndEJyE
 video_type: youtube
 description: Wideo relacja z Rails Girls Szczecin
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [event, Rails Girls, Szczecin]
+categories: [warsztaty]
+tags: [Rails Girls, Ruby on Rails]
+place: Szczecin
 comments: true
 ---
 

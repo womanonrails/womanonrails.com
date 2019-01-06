@@ -3,8 +3,8 @@ layout: post
 title: Git Rebase
 description: How can you do git rebase?
 headline: My code is getting worse, please send more chocolate
-categories: [environment, git, tools]
-tags: [git, tools]
+categories: [tools]
+tags: [environment, git, version control system]
 comments: true
 ---
 

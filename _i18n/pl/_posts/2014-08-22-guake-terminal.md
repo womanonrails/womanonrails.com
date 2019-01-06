@@ -3,8 +3,8 @@ layout: post
 title: Guake – podręczny terminal
 description: Kilka słów o Guake - użytecznym terminalu
 headline: My code is getting worse, please send more chocolate
-categories: [narzędzia, środowisko]
-tags: [tools]
+categories: [narzędzia]
+tags: [środowisko programistyczne, Linuks]
 comments: true
 ---
 

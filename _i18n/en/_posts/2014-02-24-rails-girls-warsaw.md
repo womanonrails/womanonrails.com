@@ -5,8 +5,9 @@ title: Rails Girls welcome back!
 photo: rails-girls-warsaw-2014/team.jpg
 description: Me as a mentor on Rails Girls Warsaw
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [Rails Girls, Warsaw]
+categories: [workshops]
+tags: [Rails Girls, Ruby on Rails]
+place: Warsaw
 comments: true
 ---
 

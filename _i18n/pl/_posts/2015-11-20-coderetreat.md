@@ -5,8 +5,9 @@ title: Coderetreat 2015 Kraków
 photo: coderetreat/session5.jpg
 description: Coderetreat - szlifowanie warsztatu programistycznego
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [coderetreat, event, Kraków]
+categories: [warsztaty]
+tags: [coderetreat]
+place: Kraków
 comments: true
 ---
 

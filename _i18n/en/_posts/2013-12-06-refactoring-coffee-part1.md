@@ -3,8 +3,8 @@ layout: post
 title: CoffeeScript Refactoring – part 1
 description: Small refactoring in CoffeeScript
 headline: My code is getting worse, please send more chocolate
-categories: [CoffeeScript, refactoring]
-tags: [CoffeeScript, refactoring]
+categories: [refactoring]
+tags: [CoffeeScript, JavaScript]
 comments: true
 ---
 

@@ -6,8 +6,9 @@ video: https://vimeo.com/86457984
 video_type: vimeo
 description: Hack4Good w Polsce
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [hack4good, Kraków]
+categories: [hakaton]
+tags: [hack4good]
+place: Kraków
 comments: true
 ---
 

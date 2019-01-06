@@ -3,8 +3,8 @@ layout: post
 title: Ruby Array Tips
 description: 10 Ruby tips for Array
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programming]
+tags: [Ruby]
 comments: true
 ---
 

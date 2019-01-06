@@ -3,8 +3,8 @@ layout: post
 title: SessionsController refactoring
 description: How improve your code?
 headline: My code is getting worse, please send more chocolate
-categories: [refactoring, Ruby, Ruby on Rails]
-tags: [refactoring, Ruby, Ruby on Rails]
+categories: [refactoring]
+tags: [Ruby, Ruby on Rails]
 comments: true
 ---
 

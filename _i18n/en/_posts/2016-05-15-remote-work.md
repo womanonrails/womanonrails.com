@@ -5,8 +5,8 @@ title: Working remote
 photo: remote/victoria.jpg
 description: How is it feel working remotely?
 headline: My code is getting worse, please send more chocolate
-categories: [work, remote, travels]
-tags: [work, remote]
+categories: [work]
+tags: [remote]
 comments: true
 ---
 

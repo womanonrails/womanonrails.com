@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Triki dla Tablic w Ruby
+title: Triki dla tablic w Ruby
 description: 10 troków na tablicach w Ruby
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programowanie]
+tags: [Ruby]
 comments: true
 ---
 

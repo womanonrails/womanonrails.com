@@ -3,8 +3,8 @@ layout: post
 title: Rozmowa kwalifikacyjna
 description: Jak się dobrze przygotować?
 headline: Premature optimization is the root of all evil.
-categories: [rozmowa kwalifikacyjna, umiejętności]
-tags: [interview, umiejętności]
+categories: [praca]
+tags: [rozmowa kwalifikacyjna]
 comments: true
 ---
 

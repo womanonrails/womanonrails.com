@@ -5,8 +5,8 @@ title: Praca zdalna
 photo: remote/victoria.jpg
 description: Jak to jest pracować zdalnie?
 headline: My code is getting worse, please send more chocolate
-categories: [praca, praca zdalna, podróże]
-tags: [praca, praca zdalna]
+categories: [praca]
+tags: [praca zdalna]
 comments: true
 ---
 

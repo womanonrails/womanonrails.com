@@ -3,8 +3,8 @@ layout: post
 title: Zastosowanie metody each_with_object w Ruby
 description: Przykłady użycia each_with_object
 headline: Premature optimization is the root of all evil.
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programowanie]
+tags: [Ruby]
 comments: true
 ---
 

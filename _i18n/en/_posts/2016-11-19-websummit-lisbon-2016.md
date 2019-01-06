@@ -6,8 +6,9 @@ video: https://vimeo.com/192149166
 video_type: vimeo
 description: Web Summit adventure in Lisbon
 headline: Premature optimization is the root of all evil.
-categories: [events, workshops, travels]
-tags: [Web Summit, Lisbon]
+categories: [conference]
+tags: [Web Summit]
+place: Lisbon
 comments: true
 ---
 

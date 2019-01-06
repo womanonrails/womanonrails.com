@@ -4,7 +4,7 @@ type: quote
 title: Bądź sobą – Jak radzić sobie z brakiem pewności siebie
 description: Pewność siebie - praca na cały etat
 headline: My code is getting worse, please send more chocolate
-categories: [samoświadomość]
+categories: [praca]
 tags: [samoświadomość]
 comments: true
 ---

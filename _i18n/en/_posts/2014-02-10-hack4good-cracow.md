@@ -6,8 +6,9 @@ video: https://vimeo.com/86457984
 video_type: vimeo
 description: Hask4Good Poland
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [hack4good, Cracow]
+categories: [hackathon]
+tags: [hack4good]
+place: Cracow
 comments: true
 ---
 

@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=-g4BbTNCgck
 video_type: youtube
 description: Jak stworzyć grę w 48h?
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [GGJ, Cieszyn]
+categories: [hakaton]
+tags: [Global Game Jam]
+place: Cieszyn
 comments: true
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Good preparation for interview
 description: How prepare for interview?
 headline: Premature optimization is the root of all evil.
-categories: [interview, skills]
-tags: [interview, skills]
+categories: [work]
+tags: [interview]
 comments: true
 ---
 

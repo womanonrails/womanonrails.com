@@ -3,8 +3,8 @@ layout: post
 title: Guake terminal
 description: Guake - Useful terminal
 headline: My code is getting worse, please send more chocolate
-categories: [enviroment, tools]
-tags: [tools]
+categories: [tools]
+tags: [environment, Linux]
 comments: true
 ---
 

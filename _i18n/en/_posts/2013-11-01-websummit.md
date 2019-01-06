@@ -3,8 +3,9 @@ layout: post
 title: Web Summit
 description: Web Summit adventure
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [Web Summit, Dublin]
+categories: [conference]
+tags: [Web Summit]
+place: Dublin
 comments: true
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Git Rebase
 description: Jak używać git rebase?
 headline: My code is getting worse, please send more chocolate
-categories: [git, narzędzia, środowisko]
-tags: [git, tools]
+categories: [narzędzia]
+tags: [środowisko programistyczne, git, system kontroli wersji]
 comments: true
 ---
 

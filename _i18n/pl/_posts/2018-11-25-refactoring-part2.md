@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Refactoring w Ruby krok po kroku - część 2
+title: Refaktoring w Ruby krok po kroku - część 2
 description: Jak zrobić refaktoring? <br> Od kodu zorientowanego obiektowo do kompozycji.
 headline: Premature optimization is the root of all evil.
-categories: [Ruby, refactoring]
-tags: [Ruby, refactoring]
+categories: [refaktoring]
+tags: [Ruby]
 comments: true
 ---
 

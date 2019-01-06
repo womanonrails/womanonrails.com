@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=UVAF7ndEJyE
 video_type: youtube
 description: Rails Girls Szczecin - video relation
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [Rails Girls, Szczecin]
+categories: [workshops]
+tags: [Rails Girls, Ruby on Rails]
+place: Szczecin
 comments: true
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Ruby Hash Tips
 description: What I know about Hash?
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, tips]
-tags: [Ruby, tips]
+categories: [programming]
+tags: [Ruby]
 comments: true
 ---
 

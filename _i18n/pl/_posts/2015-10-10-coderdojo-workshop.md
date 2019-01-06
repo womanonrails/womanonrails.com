@@ -6,8 +6,9 @@ video: https://www.youtube.com/watch?v=G_tTBd_ei3s
 video_type: youtube
 description: CoderDojo jedna zasada - bądź fajny
 headline: My code is getting worse, please send more chocolate
-categories: [wydarzenia, warsztaty, podróże]
-tags: [CoderDojo, event]
+categories: [warsztaty]
+tags: [CoderDojo]
+place: Gliwice
 comments: true
 ---
 

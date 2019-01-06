@@ -1,10 +1,10 @@
 ---
 layout: post
 title: MVC – design pattern
-description: Quick introduction to MVP
+description: Quick introduction to Model-View-Controller
 headline: My code is getting worse, please send more chocolate
-categories: [design patterns, Ruby on Rails]
-tags: [design pattern, MVC]
+categories: [design patterns]
+tags: [Ruby on Rails]
 comments: true
 ---
 

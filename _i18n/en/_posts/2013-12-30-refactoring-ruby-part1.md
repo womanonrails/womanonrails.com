@@ -3,8 +3,8 @@ layout: post
 title: Ruby Refactoring – part 1
 description: Sum elements in array columns - Refactoring
 headline: My code is getting worse, please send more chocolate
-categories: [Ruby, refactoring]
-tags: [Ruby, refactoring]
+categories: [refactoring]
+tags: [Ruby]
 comments: true
 ---
 

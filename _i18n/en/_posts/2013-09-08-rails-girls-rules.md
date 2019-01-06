@@ -3,8 +3,9 @@ layout: post
 title: Rails Girls Rules
 description: My Rails Girls adventure
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [Ruby, Ruby on Rails]
+categories: [workshops]
+tags: [Rails Girls, Ruby on Rails]
+place: Poznan
 date: 2013-09-08 00:00:00 +0100
 comments: true
 ---

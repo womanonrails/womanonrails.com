@@ -1,12 +1,13 @@
 ---
 layout: post
 type: photo
-title: Coderetreat 2015 Crakow
+title: Coderetreat 2015 Cracow
 photo: coderetreat/session5.jpg
 description: Coderetreat - programming workshop
 headline: My code is getting worse, please send more chocolate
-categories: [events, workshops, travels]
-tags: [coderetreat, event, Cracow]
+categories: [workshops]
+tags: [coderetreat]
+place: Cracow
 comments: true
 ---
 
