@@ -26,7 +26,7 @@ end
 
 Na wejście kod dostawał tekst. Później następowało usunięcie białych znaków, w zasadzie tylko spacji. Dalej używając wyrażenia regularnego sprawdzaliśmy poprawność formatu danych i dzieliliśmy tekst na części na podstawie przecinków. Na koniec poprawne dane zostawały poddane dalszym działaniom. Przykładowo importowane do listy kontaktów użytkownika. Patrząc na ten kod można dostrzec dwa podstawowe problemy:
 
-  1. **Dzielenie tekstu względem przecinków** - Co stanie się gdy użytkownik nie będzie myślał tak jak my i oddzieli od siebie kolejne maile za pomocą średników, tylko spacji lub nowych linii? Jest to zwykłe pole tekstowe. Użytkownicy może to zrobić. My jednak nie obsługujemy tych przypadków.
+  1. **Dzielenie tekstu względem przecinków** - Co stanie się, gdy użytkownik nie będzie myślał tak jak my? I oddzieli od siebie kolejne maile za pomocą średników, samych spacji lub nowych linii? To jest zwykłe pole tekstowe typu `textarea`. Użytkownik może to zrobić. My jednak nie obsługujemy tych przypadków.
 
   2. **Walidacja tylko ostatniej części naszego tekstu** - Gdy przyjrzymy się bliżej zauważymy, że podając na wejście `"aaa@excom, bbb@ex.com"` dane zostaną potraktowane jako poprawne. Natomiast gdy odwrócimy kolejność `"bbb@ex.com, aaa@excom"` już nie.
 
@@ -59,7 +59,7 @@ emails.select { |email| email =~ /\b[A-Z0-9._%a-z\-\+]+@(?:[A-Z0-9a-z\-]+\.)+[A-
 
 Wszystko zależy od tego, czego potrzebujesz.
 
-Teraz możesz zapytać: po co to wszystko? Jaki był cel tego artykułu? Odpowiedź jest prosta. Ja widzę takie rzeczy bardzo często. Jako programiści, nie przywiązujemy zbyt dużej uwagi do naszego kodu lub może po prostu zbyt się śpieszymy przy tworzeniu rozwiązań. W ten sposób wprowadzając do aplikacji błędy. Czasami to nie jest duży problem, ale czy chciałabyś by operował Cię lekarz, który nie przywiązuje wagi do szczegółów Twojego stany zdrowia podczas operacji? Czasem oprogramowanie, które tworzymy służy do błahych celów, ale co w przypadku wypełniania dokumentów urzędowych, dawkowania leków lub sterowanie systemem hamowania w samochodzie? W _Małym Księciu_ lis powiedział: _"Stajesz się na zawsze odpowiedzialny za to co oswoiłeś"_. W tym przypadku ja mówię: _"Stajesz się na zawsze odpowiedzialny za to co wykodziłeś."_
+Teraz możesz zapytać: Po co to wszystko? Jaki był cel tego artykułu? Odpowiedź jest prosta. Ja widzę takie rzeczy bardzo często. Jako programiści, nie przywiązujemy zbyt dużej uwagi do naszego kodu lub może po prostu zbyt się śpieszymy przy tworzeniu rozwiązań. W ten sposób wprowadzając do aplikacji błędy. Czasami to nie jest duży problem, ale czy chciałabyś by operował Cię lekarz, który nie przywiązuje wagi do szczegółów Twojego stany zdrowia podczas operacji? Czasem oprogramowanie, które tworzymy służy do błahych celów, ale co w przypadku wypełniania dokumentów urzędowych, dawkowania leków lub sterowania systemem hamowania w samochodzie? W _Małym Księciu_ lis powiedział: _"Stajesz się na zawsze odpowiedzialny za to co oswoiłeś"_. W tym przypadku ja mówię: _"Stajesz się na zawsze odpowiedzialny za to co zaprogramowałeś."_
 
 Jeśli masz ochotę, to podziel się swoimi myślami w komentarzach. Dzięki za przeczytanie artykułu i do następnego razu. Pa!
 
