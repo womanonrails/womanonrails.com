@@ -1,7 +1,7 @@
 ---
 layout: post
 type: photo
-title: RailsGirls Kraków
+title: Rails Girls Kraków
 photo: rails-girls-krakow-2014/rgkrakow1.jpg
 description: Rails Girls dla mołodych programistek
 headline: My code is getting worse, please send more chocolate

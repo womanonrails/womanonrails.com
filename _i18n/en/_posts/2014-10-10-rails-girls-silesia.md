@@ -8,6 +8,7 @@ description: Organizing my first Rails Girls in Silesia
 headline: Premature optimization is the root of all evil.
 categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
+place: Gliwice
 comments: true
 ---
 
