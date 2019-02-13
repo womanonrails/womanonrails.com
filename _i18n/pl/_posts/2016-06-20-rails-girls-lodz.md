@@ -13,11 +13,10 @@ comments: true
 ---
 
 <br>
-Jestem szaloną miłościniczą warsztatów Rails Girls. Po weekendzie spędzonym na Rails Girls Warsaw oto jadę na następne warsztaty. Tym razem byłam mentorem na trzeciej już edycji **Rails Girls Łódź**. Uwielbiam atmosfęrę tych warsztatów a dzielenie się wiedzą to dla mnie czysta przyjemność. Najbardziej jednak lubię obserwować pasję z jaką przychodzą na warsztaty uczetniczki. Ich chęć do poznawania nowych rzeczy.
+Jestem szaloną miłośniczką warsztatów Rails Girls. Po weekendzie spędzonym na Rails Girls Warsaw oto jadę na następne warsztaty. Tym razem byłam mentorem na trzeciej już edycji **Rails Girls Łódź**. Uwielbiam atmosferę tych warsztatów, a dzielenie się wiedzą to dla mnie czysta przyjemność. Najbardziej jednak lubię obserwować pasję z jaką przychodzą na warsztaty uczestniczki. Ich chęć do poznawania nowych rzeczy.
 
-Warsztaty w Łodzi zaczęły się w piątek wieczorem. Był to czas na postawienie środowiska do pracy uczestniczką oraz na zastanowienie się co dokładnie chcą one stworzyć podczas drugie dnia warsztatów. Po tym tak zwanym _Installation Party_, wszyscy mentorzy wybrali się wspólnie na kolację. Mogliśmy na spokojnie porozmawiać o wyzwaniach jakie czekają na nas następnego dnia. Z samego rana w sobotę, zaraz po śniadaniu zajeliśmy się kodowaniem. Po południu po objedzie nastąpiła chwila przerwy, w której mogliśmy wysłuchać kródkich inspirujących prezentacji. A na deser połączyliśmy się z innymi trwającymi w tym samym czasie warsztatami Rails Girls. Jestem bardzo wdzięczna, że mogę być częścią tak wspaniałej społeczności jak Rails Girls.
+Warsztaty w Łodzi zaczęły się w piątek wieczorem. Był to czas na postawienie środowiska do pracy uczestniczkom oraz na zastanowienie się co dokładnie chcą one stworzyć podczas drugiego dnia warsztatów. Po tym tak zwanym _Installation Party_, wszyscy mentorzy wybrali się wspólnie na kolację. Mogliśmy na spokojnie porozmawiać o wyzwaniach jakie czekają na nas następnego dnia. Z samego rana w sobotę, zaraz po śniadaniu, zajęliśmy się właściwym programowaniem w Ruby. Po południu po objedzie nastąpiła chwila przerwy, w której mogliśmy wysłuchać krótkich, inspirujących prezentacji. A na deser połączyliśmy się z innymi trwającymi w tym samym czasie warsztatami Rails Girls. Jestem bardzo wdzięczna, że mogę być częścią tak wspaniałej społeczności jaką jest Rails Girls.
 
 W tym roku szykuje się więcej wydarzeń Rails Girls, w których będę mentorem i nie tylko. Dodatkowo pojawi się coś specjalnego. Ale o tym później!
 
 W międzyczasie zachęcam do obejrzenia wideo z warsztatów Rails Girls Łódź. Do zobaczenia!
-
