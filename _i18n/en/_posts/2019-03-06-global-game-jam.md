@@ -21,4 +21,3 @@ Global Game Jam in Cieszyn is one of my favorite hackathons. I love this coding 
 Finally, I have for you two videos from this year Global Game Jam in Cieszyn. One is showing my team working on our <a href="https://globalgamejam.org/2019/games/snailed-it" title="Snailed it - Global Game Jam profile" target="_blank" rel="nofollow noopener noreferrer">Snailed it</a> game. Second one is more about whole Cieszyn hackathon. Check out those videos! I'm still impressed about games, which were created during this game jam. Thanks for being here and see you next time!
 
 link to the video!!!
-
