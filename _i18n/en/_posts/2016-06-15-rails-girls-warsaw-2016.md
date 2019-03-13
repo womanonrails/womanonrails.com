@@ -1,7 +1,7 @@
 ---
 layout: post
 type: video
-video: ...
+video: https://www.youtube.com/watch?v=W6-Y56N9UvQ
 video_type: youtube
 title: Rails Girls Warsaw (11 - 12 June 2016)
 description: Video story from Rails Girls Warsaw
