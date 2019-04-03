@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Operator precedence in Ruby
-description: What do you need to know about order of mathematical operations and not only them?
+description: What do you need to know about order of mathematical operations and not only about them?
 headline: Premature optimization is the root of all evil.
 categories: [programming]
 tags: [Ruby]
 comments: true
 ---
 
-Order of math operations is very important in programming language. If you don't know it well, you can get completely different results, then you expect. And your code can be just wrong. You need to know the rules. Is the order similar like in math? Or maybe the algebraic expression is interpreted from left to right? Do you know how this looks like in Ruby? Let's check it.
+Order of math operations is very important in programming language. If you don't know it well, you can get completely different results, than you expect. And your code can be just wrong. You need to know the rules. Is the order similar like in math? Or maybe the algebraic expression is interpreted from left to right? Do you know how does this look like in Ruby? Let's check it.
 
 ```ruby
 2 + 2 * 2
  => 6
 ```
 
-This is not 8. It is 6. You can see here that multiplication is _stronger_ then addition. In this case we will say that multiplication has **higher operator precedence** then addition. This is exactly the same like we learned in school on Math classes. To show you this more precisely, we have:
+This is not 8. It is 6. You can see here that multiplication is _stronger_ then addition. In this case we will say that multiplication has **higher operator precedence** then addition. This is exactly the same like we have learned at school on Math classes. To show you this more precisely, we have:
 
 ```ruby
 2 + (2 * 2)
@@ -25,7 +25,7 @@ This is not 8. It is 6. You can see here that multiplication is _stronger_ then 
  => 8
 ```
 
-OK, but how I will know that? There are many different operators. Well, you need to remember the table of operators order, from <a href="https://ruby-doc.org/core-2.2.0/doc/syntax/precedence_rdoc.html" title="Ruby documentation - operators precedence" target="_blank" rel="nofollow noopener noreferrer">Ruby docs</a>:
+OK, but how will I know that? There are many different operators. Well, you need to remember the table of operators order, from <a href="https://ruby-doc.org/core-2.2.0/doc/syntax/precedence_rdoc.html" title="Ruby documentation - operators precedence" target="_blank" rel="nofollow noopener noreferrer">Ruby docs</a>:
 
 ```ruby
 !, ~, unary +
@@ -67,7 +67,7 @@ Let's start with something simple. Precedence hierarchy for boolean operators.
  => nil
 ```
 
-On the first look, logic is the same, but we get different results. But when you take a look closely, you will see the difference. Order of calculations. In first example order looks like `(1 || (2 && nil))`. We get `nil` from `2 && nil`. And then we have `1 || nil` so this is `1`. Well, I lied a little bit here. Our interpreter is smarter, than you can think of. Because we have this `||` operator. It has been truthy always when left hand side is truthy, so it checks only the first part of our expression. Check here:
+On the first look, logic is the same, but we get different results. But when you take a look closely, you will see the difference. Order of calculations. In the first example, the order looks like `(1 || (2 && nil))`. We get `nil` from `2 && nil`. And then we have `1 || nil` so this is `1`. Well, I lied a little bit here. Our interpreter is smarter, than you can think of. Because we have this `||` operator. It has been truthy always when left hand side is truthy, so it checks only the first part of our expression. Check here:
 
 ```ruby
 a = 0
@@ -92,7 +92,7 @@ a
 
 In the second example `1 or 2 and nil` order of operations is completely opposite: `((1 or 2) and nil)`. First,  we check `1 or 2`. We get `1` and then we check `1 and nil`, so the final result is `nil`.
 
-To better understand the differences between these two notations, let's check all possibilities here in table:
+To understand better the differences between these two notations, let's check all possibilities here in table:
 
 <table class='table'>
   <thead>
@@ -182,13 +182,13 @@ foo
  => 1
 ```
 
-Both of this logic expressions give us `2` as truthy result. But there is one difference here. In first case `foo` equal to `2` and in second example `foo` is `1`. This is related, of course, with operator precedence. Because `&&` has higher precedence than `=` in the first example we have:
+Both of this logic expressions give us `2` as truthy result. But there is one difference here. In first case `foo` equals to `2` and in second example `foo` is `1`. This is related, of course, with operator precedence. Because `&&` has higher precedence than `=` in the first example we have:
 
 ```ruby
 foo = (1 && 2)
 ```
 
-In second example order of those operations is different. `=` has higher precedence, then `and` so we have:
+In second example,  order of those operations is different. `=` has higher precedence, then `and` so we have:
 
 ```ruby
 (foo = 1) and 2
@@ -220,7 +220,7 @@ foo
  => 1
 ```
 
-I would like to explain, why we don't see any difference. For `foo = 1 || 2` we should set brackets like this `foo = (1 || 2)`. From logical condition `||`, we get `1` and we assign it to go`. In a second example `foo = 1 or 2`, first, we do the assignment and then we check the condition. The result is the same, but order of those operations is different. This is worth to be remember!
+I would like to explain, why we don't see any difference. For `foo = 1 || 2` we should set brackets like this `foo = (1 || 2)`. From logical condition `||`, we get `1` and we assign it to go`. In a second example `foo = 1 or 2`, first, we do the assignment and then we check the condition. The result is the same, but order of those operations is different. This is worth to be remembered!
 
 In the end of this section, I would like to show you one more example. I think, it is a very interesting one. It is more complex because it uses  `=`, `&&`, `and` and `<<`.
 
@@ -236,7 +236,7 @@ s = '1' and s << '3'
  => "13"
 ```
 
-Let's go step by step to understand, what is going on here. In the first example we have `&&`. We know that, it has quite high precedence, but predecence for `<<` is higher, than `&&`. So the order of calculations here looks like: `s = ('1' && (s << '3'))`. First, we concat `'3'` to string. We get `s = ('1' && '23')`. Now we do `&&`, so the result is `'23'`.
+Let's go step by step to understand, what is going on in here. In the first example we have `&&`. We know that, it has quite high precedence, but predecence for `<<` is higher, than `&&`. So the order of calculations here looks like: `s = ('1' && (s << '3'))`. First, we concat `'3'` to string. We get `s = ('1' && '23')`. Now we do `&&`, so the result is `'23'`.
 
 In the second example we have order like `(s = '1') and (s << '3')`. We start from assignments. So `s` is now `'1'` not `'2'`. Then we calculate right hand side part and we get `'1' and '13'`, so the final result is `'13'`.
 
@@ -278,7 +278,7 @@ My char id a
  => "b"
 ```
 
-In the example 3 you can notice different behavior. As we already know, the order will be `method('a') or 'b'`. This is why we see `'a'` in text, but then we need to finish this logical expression. Because our method return `nil` and this is _falsy_ value, we have `nil or 'b'`. In the end, we see `'b'` is returned, not from the method, but from all expression.
+In the example 3 you can notice a different behavior. As we already know, the order will be `method('a') or 'b'`. This is why we see `'a'` in text, but then we need to finish this logical expression. Because our method return `nil` and this is _falsy_ value, we have `nil or 'b'`. In the end, we see `'b'` is returned, not from the method, but from all expression.
 
 ```ruby
 # example 4
@@ -321,13 +321,13 @@ method1 || method2 'foo'
                    ^
 ```
 
-Something went wrong. We got an error. This is because of precedence. Order of operations in this case is: `(method1 || method2) 'foo'`. We can show it in a more descriptive way `(method1() || method2()) 'foo'`. Our interpreter don't now what to do because of two reasons. One, `method2` should have one argument and it didn't get any. And the second one, more important, which we see in the error message. Interpreter see some _free_ text `'foo'` without any operator in the same line with calling methods. To fix that, we need to say explicitly, what we want: `method1 || method2('foo')`
+Something went wrong. We got an error. This is because of precedence. Order of operations in this case is: `(method1 || method2) 'foo'`. We can show it in a more descriptive way `(method1() || method2()) 'foo'`. Our interpreter doesn't know what to do because of two reasons. One, `method2` should have one argument and it didn't get any. And the second one, more important, which we see in the error message. Interpreter see some _free_ text `'foo'` without any operator in the same line with calling methods. To fix that, we need to say explicitly, what we want: `method1 || method2('foo')`
 
 The same problem you will get when instead of `method2` you will use `raise` or `return` or any other method. If you like, just play a little bit with them.
 
 ### Blocks
 
-Time for blocks. We need to be aware that **blocks with `{}` have higher precedence than blocks `do ... end`**. This is not exactly specified in our order table, but in the documentation, you can find a small note about it. So, let's check this out. We will prepare two methods with blocks. In one we will call the block with `{}` and in second with `do ... end`.
+Time for blocks. We need to be aware that **blocks with `{}` have higher precedence than blocks `do ... end`**. This is not exactly specified in our order table, but in the documentation, you can find a small note about it. So, let's check this out. We will prepare two methods with blocks. In one we will call the block with `{}` and in the second with `do ... end`.
 
 ```ruby
 def foo(options = {}, &block)
@@ -351,7 +351,7 @@ Foo has block: true
 
 In the example one, the order is like here: `foo(a: (bar { 1 }))`. First, we will call `bar` method with a block. It will return `nil` and then we will call method `foo` with only hash parameter. It will look like this: `foo(a: nil)`. So, this is why we don't get a block in method `foo`.
 
-In second example order is different: `foo(a: bar) do 1 end`. It will be even better, to split it into separate lines. 
+In second example the order is different: `foo(a: bar) do 1 end`. It will be even better, to split it into separate lines.
 
 ```ruby
 foo(a: bar) do
@@ -359,9 +359,9 @@ foo(a: bar) do
 end
 ```
 
-At first we call method `bar`, but without any arguments and without block. This is why we see in text: `"Bar has block: false"`. Then we call method `foo` with hash `{ a: nil }` as `options` and with block. We could even omit this hash parameter in the call of these two methods. It will be working the same. At least for displaying text on a screen. You can try, to do that your own `foo bar { 1 }` and `foo bar do 1 end`.
+At first, we call method `bar`, but without any arguments and without a block. This is why we see this in the text: `"Bar has block: false"`. Then we call method `foo` with hash `{ a: nil }` as `options` and with block. We could even omit this hash parameter in the call of these two methods. It would be working the same. At least for displaying text on a screen. You can try to do that your own `foo bar { 1 }` and `foo bar do 1 end`.
 
-### Others examples
+### Other examples
 
 ```ruby
 array = []
@@ -410,7 +410,7 @@ This is like doing `1..(n - 1)`.
 ## Summary
 
 - Be aware of operators precedence in Ruby.
-- If you are not sure about precedence, put the right brackets or even better check in the documentation. Do tests also ;]
-- Sometimes, even I know precedences in Ruby, I like to leave brackets. It is more readable for me. Like here: `method('a' && 'b')`. I know that this notation `method 'a' && 'b'` is correct and do exactly, what I want, but I like to be more specific here. This is more **"Tell don't ask"** approach.
+- If you are not sure about precedence, put the right brackets or even better: check in the documentation.Also do the tests ;]
+- Sometimes, even if I know precedences in Ruby, I like to leave brackets. It is more readable for me. Like here: `method('a' && 'b')`. I know that this notation `method 'a' && 'b'` is correct and do exactly, what I want, but I like to be more specific here. This is more **"Tell, don't ask"** approach.
 
 That's it. If you have any other precedence examples, which were not mentioned here, feel free to share them in the comments. Thank you for reading and see you next time!
