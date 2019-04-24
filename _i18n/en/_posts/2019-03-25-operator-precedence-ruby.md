@@ -8,7 +8,7 @@ tags: [Ruby]
 comments: true
 ---
 
-Order of math operations is very important in programming language. If you don't know it well, you can get completely different results, than you expect. And your code can be just wrong. You need to know the rules. Is the order similar like in math? Or maybe the algebraic expression is interpreted from left to right? Do you know how does this look like in Ruby? Let's check it.
+The order of math operations is very important in programming language. If you don't know them well, you can get completely different results, than you expect. And your code can be just wrong. You need to know the rules. Is the order similar like in math? Or maybe the algebraic expression is interpreted from the left to the right? Do you know how does this look like in Ruby? Let's check it.
 
 ```ruby
 2 + 2 * 2
@@ -220,7 +220,7 @@ foo
  => 1
 ```
 
-I would like to explain, why we don't see any difference. For `foo = 1 || 2` we should set brackets like this `foo = (1 || 2)`. From logical condition `||`, we get `1` and we assign it to go`. In a second example `foo = 1 or 2`, first, we do the assignment and then we check the condition. The result is the same, but order of those operations is different. This is worth to be remembered!
+I would like to explain, why we don't see any difference. For `foo = 1 || 2` we should set brackets like this `foo = (1 || 2)`. From logical condition `||`, we get `1` and we assign it to `foo`. In a second example `foo = 1 or 2`, first, we do the assignment and then we check the condition. The result is the same, but order of those operations is different. This is worth to be remembered!
 
 In the end of this section, I would like to show you one more example. I think, it is a very interesting one. It is more complex because it uses  `=`, `&&`, `and` and `<<`.
 
