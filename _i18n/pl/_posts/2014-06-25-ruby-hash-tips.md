@@ -5,7 +5,7 @@ description: Czego ciekawego dowiedziałam się o obiekcie Hash
 headline: My code is getting worse, please send more chocolate
 categories: [programowanie]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Dzisiaj chciałabym opowiedzieć Wam trochę o obiekcie Hash i metodach, których często do niego wykorzystuje. Ale zanim o metodach to zacznijmy od tego co to jest właściwie Hash?

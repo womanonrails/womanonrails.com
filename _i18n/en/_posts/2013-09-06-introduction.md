@@ -4,8 +4,7 @@ type: status
 title: Introduction
 description: Programming from the beginning, how we can start?
 headline: My code is getting worse, please send more chocolate
-date: 2013-09-06 00:00:00 +0100
-comments: true
+lang: en
 ---
 
 Let's start blog's adventure. Feel free to read!
@@ -21,4 +20,3 @@ I really enjoyed writing this for you. Have a great time.
 See you next time. For now I go to Poznan. I’ll be learning Ruby on Rails with others girls on Rails Girls meeting. I can’t wait for it!
 
 Bye and see you soon ;*
-

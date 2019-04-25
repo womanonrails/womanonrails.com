@@ -9,7 +9,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]
 tags: [CoderDojo]
 place: Gliwice
-comments: true
+lang: pl
 ---
 
 <br>

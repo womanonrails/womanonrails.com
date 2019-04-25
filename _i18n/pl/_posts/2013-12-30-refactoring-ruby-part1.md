@@ -5,7 +5,7 @@ description: Sumowanie elementów tablicy względem kolumny - Refaktoring
 headline: My code is getting worse, please send more chocolate
 categories: [refaktoring]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Tym razem będę zmieniać kody Ruby. Mój mały potwór wygląda następująco:

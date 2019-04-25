@@ -6,7 +6,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [conference]
 tags: [Web Summit]
 place: Dublin
-comments: true
+lang: en
 ---
 
 Date: *October 30-31, 2013*<br>

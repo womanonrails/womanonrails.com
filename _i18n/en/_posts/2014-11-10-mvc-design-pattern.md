@@ -5,7 +5,7 @@ description: Quick introduction to Model-View-Controller
 headline: My code is getting worse, please send more chocolate
 categories: [design patterns]
 tags: [Ruby on Rails]
-comments: true
+lang: en
 ---
 
 One of my target is writing about Ruby on Rails. So today we start. This article will be about main software design pattern in Rails. We call it **MVC – Model View Controller**.

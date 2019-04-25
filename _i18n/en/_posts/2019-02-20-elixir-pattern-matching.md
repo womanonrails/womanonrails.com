@@ -5,7 +5,7 @@ description: What I learned about Elixir so far?
 headline: Premature optimization is the root of all evil.
 categories: [programming]
 tags: [Elixir]
-comments: true
+lang: en
 ---
 
 Elixir is a functional language, created by José Valim in 2012, runs on the Erlang virtual machine. If you want to know more about Elixir, go to its <a href="https://elixir-lang.org/" title="Elixir - official website" target="_blank" rel="nofollow noopener noreferrer">official website</a>. I would like to mention one more thing. It is Rails and Ruby reference here. José is one of the members of Rails Core Team.

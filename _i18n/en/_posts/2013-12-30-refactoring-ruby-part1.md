@@ -5,7 +5,7 @@ description: Sum elements in array columns - Refactoring
 headline: My code is getting worse, please send more chocolate
 categories: [refactoring]
 tags: [Ruby]
-comments: true
+lang: en
 ---
 
 This time I will change Ruby code. My little monster looks like this:

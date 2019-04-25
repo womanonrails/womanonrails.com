@@ -5,7 +5,7 @@ description: Niestandardowy czas i strefa czasowa w przeglądarce bez zmiany ust
 headline: Premature optimization is the root of all evil.
 categories: [narzędzia]
 tags: [TIL, przeglądarka, Linuks]
-comments: true
+lang: pl
 ---
 
 Nie przepadam za zmienianiem ustawień użytkownika, gdy wszystko działa dobrze. Tym razem potrzebowałam przetestować funkcjonalność, która wymagała zrobienia tego w różnych strefach czasowych. Znalazłam sposób by zrobić to bez zmiany moich standardowych ustawień.

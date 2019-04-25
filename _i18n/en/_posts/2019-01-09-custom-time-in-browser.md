@@ -5,7 +5,7 @@ description: Custom time in browser without changing your default setups.
 headline: Premature optimization is the root of all evil.
 categories: [tools]
 tags: [TIL, browser, Linux]
-comments: true
+lang: en
 ---
 
 I don't like changing my setups when they work fine. This time, I wanted to test some functionality in the project in different time zones. I found a way to do that independently to my existing setups.

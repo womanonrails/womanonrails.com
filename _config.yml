@@ -1,41 +1,61 @@
+# Main settings
+baseurl: ''
+url: https://womanonrails.com
+
+
+# Jekyll settings
+exclude: ['.keep', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+locale: en
+# include: ['_data', '_pages']
+markdown: kramdown
+permalink: /:title
+
+
+# Plugins settings
+gems:
+  - jekyll-multiple-languages-plugin
+  - jekyll-paginate
+
+
+# Author settings
 title: Woman on Rails
+logo: womanonrails-square.svg
+
+
 description:
-logo: womanonrails.jpg
 # disqus_shortname:
 disqus_shortname: womanonrails
 # Assign a default image for your site's header and footer
 default_bg:
 search:           true
 share:            true
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
-# Specify the average Words per minute. If not defined, 180 will be used
-wpm:              200
 # Turn on or off the fin animations in the header and footer
 triangleheader:   true
 animated_fins:    true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
-url: "https://womanonrails.com" # the base hostname & protocol for your site
-baseurl: ""
 
 meta:
-  image: womanonrails.jpg
+  image: womanonrails-1000x1000.jpg
 
 owner:
   name: Agnieszka Matysek
-  avatar: womanonrails.jpg
+  avatar: womanonrails-square.svg
   email: please-do-not-spam-me@womanonrails.com
   description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
   twitter: womanonrails
   facebook: womanonrails
   github: womanonrails
-  linkedin: https://linkedin.com/in/womanonrails
+  linkedin: womanonrails
   instagram: womanonrails
   stackexchange: https://stackoverflow.com/users/2885676/womanonrails
   flickr:
   tumblr:
-  google_plus:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-127731573-1
@@ -70,23 +90,42 @@ links_pl:
     url: /pl/about
 
 
+# Layout settings
+readtime: true
+wpm: 200
+
+
+defaults:
+  # _pages
+  - scope:
+      path: ''
+      type: pages
+    values:
+      comments: true
+      read_time: false
+  # _posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      comments: true
+      read_time: true
+      related: true
+      share: true
+
+
+sass:
+  style: :compressed
+
+
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
-future:      true
-highlighter: pygments
-markdown:    redcarpet
 paginate:    6
 paginate_path: "page:num"
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:title
 
-
-
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems:
-  - jekyll-paginate
-  - jekyll-multiple-languages-plugin
-
-languages: ["en", "pl"]
-exclude_from_localizations: ["javascript", "images", "css"]
+# Polyglot settings
+default_lang: en
+exclude_from_localizations: ['css', 'images', 'javascript']
+languages: ['en', 'pl']
+parallel_localization: true

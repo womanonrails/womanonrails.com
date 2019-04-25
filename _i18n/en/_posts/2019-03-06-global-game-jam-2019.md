@@ -9,7 +9,7 @@ headline: Premature optimization is the root of all evil.
 categories: [hackathon]
 tags: [Global Game Jam]
 place: Cieszyn
-comments: true
+lang: en
 ---
 
 <br>

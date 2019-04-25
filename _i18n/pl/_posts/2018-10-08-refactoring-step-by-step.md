@@ -5,7 +5,7 @@ description: Jak zrobić refaktoring? <br> Od kodu proceduralnego do zorientowan
 headline: Premature optimization is the root of all evil.
 categories: [refaktoring]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Dużo czasu minęło od mojego ostatniego artykułu technicznego. Przez ten czas próbowałam wielu nowych rzeczy. Założyłam blog <a href="https://bemore.womanonrails.com/" title="Be More - moje przemyślenia na temat życia" target="_blank">Be more</a>, który dotyczy moich przemyśleń na temat życia, <a href="https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ" title="Woman on Rails - kanał YouTube" target="_blank" rel="nofollow noopener noreferrer">Kanał Woman on Rails na YouTube</a> i <a href="https://vimeo.com/womanonrails" title="Woman on Rails - kanał Vimeo" target="_blank" rel="nonofollow noopener noreferrer">podróżniczy kanał na Vimeo</a>. To był czas odkrywania, co sprawia mi przyjemność a co nie. Ale wracając do tematu. Do tego artykułu przygotowywałam się naprawdę długo. Może nawet za długo. Pomysł pojawił się już 2015 roku, a teraz możesz zobaczyć jego rezultaty. Zaczynajmy!

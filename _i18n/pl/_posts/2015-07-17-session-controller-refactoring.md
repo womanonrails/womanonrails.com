@@ -5,7 +5,7 @@ description: Jak można poprawić swój kod?
 headline: My code is getting worse, please send more chocolate
 categories: [refaktoring]
 tags: [Ruby, Ruby on Rails]
-comments: true
+lang: pl
 ---
 
 Kilka tygodni temu pracowałam z następującym kodem:

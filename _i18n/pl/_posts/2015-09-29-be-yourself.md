@@ -6,7 +6,7 @@ description: Pewność siebie - praca na cały etat
 headline: My code is getting worse, please send more chocolate
 categories: [praca]
 tags: [samoświadomość]
-comments: true
+lang: pl
 ---
 
 >Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.

@@ -5,7 +5,7 @@ description: 10 troków na tablicach w Ruby
 headline: My code is getting worse, please send more chocolate
 categories: [programowanie]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Ruby ma naprawdę świetną dokumentację. Metody dla tablic też są dobrze opisane na przykład tutaj. Dziś chciałabym się skupić na kilku trikach jakie znam na tablicach w Ruby. No to zaczynamy:

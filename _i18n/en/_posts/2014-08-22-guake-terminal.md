@@ -5,7 +5,7 @@ description: Guake - Useful terminal
 headline: My code is getting worse, please send more chocolate
 categories: [tools]
 tags: [environment, Linux]
-comments: true
+lang: en
 ---
 
 This is first episode about programs which I use. I think, finally it will be few this kind entries. To day I would like to start talking about [Guake](http://guake.org/).

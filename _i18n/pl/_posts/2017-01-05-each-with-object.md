@@ -5,14 +5,14 @@ description: Przykłady użycia each_with_object
 headline: Premature optimization is the root of all evil.
 categories: [programowanie]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Ostatnio pracowałam z metodą `each_with_object`. Jak zazwyczaj w takich sytuacjach zawsze staram się przed użyciem jakiejś metody sprawdzić jej dokumentację. Weszłam więc na [APIdock](https://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) przeglądam zastosowanie oraz przykłady. Okazało się że nie było tam jednego z przypadków zastosowania. Chciałam go dodać, lecz bez powodzenia. Postanowiłam więc, że skoro czekam na rozwiązanie problemu ze strony APIdock mogę napisać krótką notatkę na temat metody `each_with_object` tutaj.
 
 Najbardziej pożytecznym i wydaje mi się również popularnym użyciem tej metody jest podanie jako argumentu tablicy lub hasha (tablicy słownikowej). Można to zrobić przykładowo:
 
-```
+```ruby
 [:foo, :bar, :jazz].each_with_object({}) do |item, hash|
   hash[item] = item.to_s.upcase
 end
@@ -21,7 +21,7 @@ end
 
 lub
 
-```
+```ruby
 (1..10).each_with_object([]) do |item, array|
   array << item ** 2
 end
@@ -30,7 +30,7 @@ end
 
 Wiem te przykłady są trywialne, ale chodzi o to by zrozumieć samą konstrukcję użycia. Dzięki tej metodzie nie musimy deklarować tablicy przed pętlą:
 
-```
+```ruby
 array = []
 (1..10).each do |item|
   array << item ** 2
@@ -41,7 +41,7 @@ array
 
 Oczywiście dla tego przykładu można by to zrobić z użyciem metody `map`:
 
-```
+```ruby
 (1..10).map { |item| item ** 2 }
  => [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
@@ -49,7 +49,7 @@ Oczywiście dla tego przykładu można by to zrobić z użyciem metody `map`:
 Innym ciekawym zastosowaniem `each_with_object` jest zliczanie częstotliwości występowania:
 
 
-```
+```ruby
 ['one', 'two', 'one', 'one'].each_with_object(Hash.new(0)) do |item, hash|
   hash[item] += 1
 end
@@ -58,7 +58,7 @@ end
 
 W tym przypadku ustawiamy domyślną wartość dla tablicy słownikowej na `0`. Dzięki temu zliczanie ilości wystąpień elementów w tablicy jest szybkie i proste. Nie potrzebujemy warunku `if` by zabezpieczyć się przed nieoczekiwaną wartością `nil`:
 
-```
+```ruby
 if hash[item]
   hash[item] += 1
 else
@@ -70,7 +70,7 @@ end
 
 W metodzie `each_with_object` nie można użyć niemutowalnych (inmutable) obiektów jak liczby. Przykład poniżej nie zwróci Wam 55 tylko 0.
 
-```
+```ruby
 (1..10).each_with_object(0) do |item, sum|
   sum += item
 end
@@ -79,21 +79,21 @@ end
 
 Możemy to zrobić też inaczej:
 
-```
+```ruby
 (1..10).reduce(:+)
  => 55
 ```
 
 lub
 
-```
+```ruby
 (1..10).inject(:+)
  => 55
 ```
 
 lub w Ruby on Rails:
 
-```
+```ruby
 (1..10).sum
  => 55
 ```
@@ -102,7 +102,7 @@ Przy okazji czy wiecie jaka jest różnica między metodą `reduce` a `inject`? 
 
 W tym momencie powinniśmy jeszcze wspomnieć o jednej rzeczy. Metodę `inject` możemy stosować też bardzo podobnie do `each_with_object`. Różnica jest w kolejności argumentów w bloku i tym że w ostatniej linii bloku dla metody `inject` zawsze musimy zwrócić naszą wartość agregującą (przykładowo sumującą). Popatrzcie tutaj:
 
-```
+```ruby
 (1..10).inject([]) do |array, item|
   array << item ** 2
 end
@@ -111,7 +111,7 @@ end
 
 lub
 
-```
+```ruby
 [:foo, :bar, :jazz].inject({}) do |hash, item|
   hash[item] = item.to_s.upcase
   hash
@@ -125,7 +125,7 @@ Kiedy używamy `array << item ** 2` zawsze zostaje tu zwrócona cała tablica, a
 
 A teraz brakujący przypadek. Metodę `each_with_object` można nie tylko używać na tablicy czy enumeratorze ale również na hashu (tablicy słownikowej). Taki przypadek wygląda troszkę inaczej. Zobaczcie sami:
 
-```
+```ruby
 { foo: 1, bar: 2, jazz: 3 }.each_with_object({}) do |(key, value), hash|
   hash[key] = value**2
 end
@@ -134,7 +134,7 @@ end
 
 lub
 
-```
+```ruby
 { foo: 1, bar: 2, jazz: 3 }.each_with_object([]) do |(key, value), array|
   array << { id: value, name: key }
 end

@@ -6,7 +6,7 @@ description: Self-confidence - full time job
 headline: My code is getting worse, please send more chocolate
 categories: [work]
 tags: [self-awareness]
-comments: true
+lang: en
 ---
 
 >Be who you are, say what you feel, those who mind don’t matter, those who matter don’t mind.

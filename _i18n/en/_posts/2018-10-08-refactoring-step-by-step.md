@@ -5,7 +5,7 @@ description: How refactor your code? <br> From procedural to more object related
 headline: Premature optimization is the root of all evil.
 categories: [refactoring]
 tags: [Ruby]
-comments: true
+lang: en
 ---
 
 It was a long break from the last technical article. During that time I was trying many different things. You can look here: <a href="https://bemore.womanonrails.com/" title="Be more - Life style blog" target="_blank">Be More - my lifestyle blog in Polish</a>, <a href="https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ" title="Woman on Rails YouTube channel" target="_blank" rel="nofollow noopener noreferrer">Woman on Rails YouTube channel</a> and my <a href="https://vimeo.com/womanonrails" title="Woman on Rails - Vimeo channel" target="_blank" rel="nonofollow noopener noreferrer">travel Vimeo channel</a>. It was a great time to discover what I like to do and what not. But back to the topic. I prepared this article for a long time. I can say even too long. I started in 2015 and now you will see the results. Let's get started.

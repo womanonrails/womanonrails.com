@@ -5,7 +5,7 @@ description: Co powinnaś wiedzieć o regułach opuszczania nawiasów w Ruby?
 headline: Premature optimization is the root of all evil.
 categories: [programowanie]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Kolejność działań matematycznych w programowaniu jest bardzo ważna. Jeżeli nie znasz ich dobrze, możesz dostać całkowicie inny wynik, niż się spodziewasz. Twój program może nawet przestać działać. Dlatego warto znać zasady, na jakich jest oparta kolejność działań w programowaniu. W tym przypadku w języku Ruby. Czy powinnyśmy postępować zgodnie z zasadami jakich nauczyłyśmy się w szkole na lekcjach matematyki? A może wystarczy stosować kolejność od lewej do prawej? Sprawdźmy.
@@ -327,7 +327,7 @@ To samo zachowanie interpretera możemy obserwować w przypadku konkretnych meto
 
 ### Bloki
 
-Czas na zajęcie się blokami (ang. blocks). Musimy być świadome, że **blok `{}` ma większy priorytet, niż blok `do ... end`**. Nie zobaczymy tego w naszej tabeli z kolejnością operacji w języku Ruby. W dokumentacji jest jednak mała informacja na ten temat. Sprawdźmy to! Zdefiniujemy dwie metody. Jedną z nich wywołamy z blokiem `{}` a drugą z `do ... end`. 
+Czas na zajęcie się blokami (ang. blocks). Musimy być świadome, że **blok `{}` ma większy priorytet, niż blok `do ... end`**. Nie zobaczymy tego w naszej tabeli z kolejnością operacji w języku Ruby. W dokumentacji jest jednak mała informacja na ten temat. Sprawdźmy to! Zdefiniujemy dwie metody. Jedną z nich wywołamy z blokiem `{}` a drugą z `do ... end`.
 
 ```ruby
 def foo(options = {}, &block)
@@ -349,7 +349,7 @@ Foo has block: true
  => nil
 ```
 
-W pierwszym przypadku kolejność jest: `foo(a: (bar { 1 }))`. Najpierw wywołujemy metodę `bar` z blokiem. Po wywołaniu zwróci ona `nil`. Nasze wyrażenie uprości się w tym momencie do `foo(a: nil)`. Metoda `foo` zostanie wywołana z argumentem w postaci hasha, ale bez bloku. 
+W pierwszym przypadku kolejność jest: `foo(a: (bar { 1 }))`. Najpierw wywołujemy metodę `bar` z blokiem. Po wywołaniu zwróci ona `nil`. Nasze wyrażenie uprości się w tym momencie do `foo(a: nil)`. Metoda `foo` zostanie wywołana z argumentem w postaci hasha, ale bez bloku.
 
 W drugim przypadku kolejność wygląda następująco: `foo(a: bar) do 1 end`. Będzie przejrzyściej, gdy podzielimy sobie to wyrażenie na osobne linie:
 

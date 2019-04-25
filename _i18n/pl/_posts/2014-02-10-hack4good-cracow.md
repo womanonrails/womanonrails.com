@@ -9,7 +9,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [hakaton]
 tags: [hack4good]
 place: Kraków
-comments: true
+lang: pl
 ---
 
 <br>

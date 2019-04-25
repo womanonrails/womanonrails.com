@@ -5,7 +5,7 @@ description: Kilka słów na temat MVC
 headline: My code is getting worse, please send more chocolate
 categories: [wzorce projektowe]
 tags: [Ruby on Rails]
-comments: true
+lang: pl
 ---
 
 Jednym z tematów, o którym chciałabym tutaj pisać jest framework Ruby on Rails. Dzisiaj nadeszła pora by zacząć. Ten artykuł będzie na temat jednego z wzorców projektowych zastosowanych w Ruby on Rails. Ten wzorzec to **MVC – Model View Controller**.

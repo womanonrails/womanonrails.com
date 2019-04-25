@@ -5,7 +5,7 @@ description: What do you need to know about order of mathematical operations and
 headline: Premature optimization is the root of all evil.
 categories: [programming]
 tags: [Ruby]
-comments: true
+lang: en
 ---
 
 The order of math operations is very important in programming language. If you don't know them well, you can get completely different results, than you expect. And your code can be just wrong. You need to know the rules. Is the order similar like in math? Or maybe the algebraic expression is interpreted from the left to the right? Do you know how does this look like in Ruby? Let's check it.

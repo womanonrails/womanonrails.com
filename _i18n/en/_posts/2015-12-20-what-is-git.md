@@ -5,7 +5,7 @@ description: Git - basic
 headline: My code is getting worse, please send more chocolate
 categories: [tools]
 tags: [environment, git, version control system]
-comments: true
+lang: en
 ---
 
 Today I would start quick series about **Git**. This will be 2-3 article about **basic of Git**. Internet has many different articles and tutorials about Git so I don’t want to do another one. If you like get know more about Git I can recommend 2 courses on CodeSchool about it. Start [here](https://www.codeschool.com/courses/try-git).

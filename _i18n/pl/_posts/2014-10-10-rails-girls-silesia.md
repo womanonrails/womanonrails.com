@@ -9,7 +9,7 @@ headline: Premature optimization is the root of all evil.
 categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Gliwice
-comments: true
+lang: pl
 ---
 
 <br>

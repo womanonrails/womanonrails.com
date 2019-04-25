@@ -5,7 +5,7 @@ description: Czego nauczyłam się o Elixirze do tej pory?
 headline: Premature optimization is the root of all evil.
 categories: [programowanie]
 tags: [Elixir]
-comments: true
+lang: pl
 ---
 
 Elixir to język funkcyjny, stworzony przez José Valim w 2012 roku. Uruchamia się on na maszynie wirtualne Erlanga. Jeżeli chciałabyś dowiedzieć się więcej o samym Elixirze, to odsyłam do <a href="https://elixir-lang.org/" title="Elixir - oficjalna strona" target="_blank" rel="nofollow noopener noreferrer">oficjalnej strony</a>. Warto na wstępie wspomnieć jeszcze jedną rzecz. W historii języka Elixir pojawia się pewne nawiązanie do Rubiego i Railsów. Otóż José jest członkiem Rails Core Team, czyli zespołu, który zajmuje się rozwijaniem frameworka Ruby on Rails.

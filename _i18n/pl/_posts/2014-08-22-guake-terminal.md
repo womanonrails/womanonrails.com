@@ -5,7 +5,7 @@ description: Kilka słów o Guake - użytecznym terminalu
 headline: My code is getting worse, please send more chocolate
 categories: [narzędzia]
 tags: [środowisko programistyczne, Linuks]
-comments: true
+lang: pl
 ---
 
 To jest pierwszy odcinek z cyklu: *“Programy, których używam”*. Myślę, że takich wpisów powstanie kilka. Dzisiaj chciałabym opowiedzieć kilka słów o programie [Guake](http://guake.org/).

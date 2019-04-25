@@ -9,7 +9,7 @@ headline: Premature optimization is the root of all evil.
 categories: [konferencja]
 tags: [Web Summit]
 place: Lizbona
-comments: true
+lang: pl
 ---
 
 <br>

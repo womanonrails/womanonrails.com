@@ -5,7 +5,7 @@ description: What I know about Hash?
 headline: My code is getting worse, please send more chocolate
 categories: [programming]
 tags: [Ruby]
-comments: true
+lang: en
 ---
 
 Today I will show you some Hash tips, which I like. But before that what really is this hash?

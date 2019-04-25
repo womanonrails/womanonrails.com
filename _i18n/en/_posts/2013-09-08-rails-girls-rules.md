@@ -6,8 +6,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
 place: Poznan
-date: 2013-09-08 00:00:00 +0100
-comments: true
+lang: en
 ---
 
 Date: *6-7 September 2013*<br>

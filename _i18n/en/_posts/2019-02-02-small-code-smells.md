@@ -5,7 +5,7 @@ description: We think about big architecture concepts, but we have problems with
 headline: Premature optimization is the root of all evil.
 categories: [refactoring]
 tags: [Visual Basic, code smells]
-comments: true
+lang: en
 ---
 
 I think every programmer, at least at some point, wanted to resolve some big problems, focus on big architecture and be the one, who will fix the entire world. Did you ever feel that way? I did, more than once. It's funny because at that moment I feel that I can change application completely, for the better of course ;] I can do some refactoring here and there. I can do that alone, without any help. I see the solution inside my head. It is almost done. But after this moment of excitement, I know that this is a daily base work. To have good architecture, we need to take care of each small line of code. This will not happen by night. It is hard work and sometimes we forget about it. It is much more fun to think about integration with Google Earth Engine then about naming of one small variable. Don't you think?
@@ -14,7 +14,7 @@ Here is what I would like to show you. I got Visual Basic code to rewrite it in 
 
 I will give you two small examples of this code, to show you the problem:
 
-```basic
+```visualbasic
 For i = 1 To m1
 For j = 1 To m1
 If i <> j Then
@@ -28,7 +28,7 @@ Next i
 
 Do you know what this code does? First look, first thought. No idea. You need to analyze it to understand it. OK, let me give you a hand here:
 
-```basic
+```visualbasic
 m1 = 2
 For i = 1 To m1
   For j = 1 To m1
@@ -43,7 +43,7 @@ Next i
 
 It is more readable, because we know which code is inside the other. And we see that `m1 = 2` so we have only 2 steps for each loop. But this `goto` breaks the flow of reading it. What if I told you that this code is no more than this:
 
-```basic
+```visualbasic
 array = [
   [1, 0],
   [0, 1]
@@ -52,7 +52,7 @@ array = [
 
 Much easier to understand. I can show you another solution just in case you want to stay with dynamic generation of this matrix based on size. In this Visual Basic code we use only the size of 2, so for me it does not make sense to do that dynamically, but who knows.
 
-```basic
+```visualbasic
 For i = 1 To m1
   For j = 1 To m1
     If i <> j Then s3(i, j) = 0
@@ -63,7 +63,7 @@ Next i
 
 The second example is quick. Do you know the difference between `n12` and `n1n2` variables? Maybe this is just a misspell? And after all what is this `n12`? What does it mean?
 
-```basic
+```visualbasic
 n12 = n1 ^ 2
 n1n2 = n1 * n2
 ```
@@ -73,4 +73,3 @@ It is not hard to do a mistake here. Names are so similar, that you can easily p
 If we want to have the overall good architecture, we should start small. We should put attention to each line of code. We should explicite show the meaning of our code. It is easy to make a mess, but good code needs more work and engagement.
 
 Thank you that you are here and that you want to improve your programming skills. Share your thoughts in the comments below. Once again, thank you and see you next time!
-

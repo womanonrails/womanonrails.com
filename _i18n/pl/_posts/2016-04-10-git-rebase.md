@@ -5,9 +5,8 @@ description: Jak używać git rebase?
 headline: My code is getting worse, please send more chocolate
 categories: [narzędzia]
 tags: [środowisko programistyczne, git, system kontroli wersji]
-comments: true
+lang: pl
 ---
-
 
 Poprzednie dwa artykuły wprowadzały do tego [co to jest git]({{ site.baseurl }}/what-is-git) i jak go [używać]({{ site.baseurl }}/git-usage). Możecie tam znaleźć podstawowe informacje na temat gita. Dzisiaj chciałabym skupić się na trochę bardziej zaawansowanych rzeczach związanych z gitem. W zeszłym tygodniu robiłam krótką prezentację dotyczącą funkcji `git rebase`, pomyślałam więc że to dobry pomysł by zrobić z tego krótką notatkę tutaj. Oto ona.
 
@@ -39,37 +38,37 @@ Tutaj wszystko ma swoje miejsce. Zmiany są pogrupowane w jakieś logiczne cało
 
 1. Przechodzimy na gałąź (branch) develop
 
-    ```bash
+    ```shell
     git checkout develop
     ```
 
 2. Dociągamy najnowsze zmiany
 
-    ```bash
+    ```shell
     git pull
     ```
 
 3. Przełączmy się na naszą gałąź (branch) gdzie wcześniej pracowałyśmy
 
-    ```bash
+    ```shell
     git checkout my-branch
     ```
 
 4. Robimy rebase
 
-    ```bash
+    ```shell
     git rebase develop
     ```
 
 5. Możemy wrzucić zmiany na zdalne repozytorium
 
-    ```bash
+    ```shell
     git push
     ```
 
 Czasami gdy będziemy robić `git rebase`, git może nie dać sobie rady sam z rozwiązywaniem konfliktów (czyli łączeniem plików modyfikowanych przez kilka osób). Wtedy do akcji wkraczamy my. Poprawnie rozwiązujemy konflikty i dodajemy nasze zmiany, tak by git je widział. Następnie możemy dalej kontynłować rebase.
 
-```bash
+```shell
 git rebase develop
 # rozwiązanie konfliktów
 git add -u # dodanie wszystkich zmian do śledzenia
@@ -78,7 +77,7 @@ git rebase --continue
 
 Musimy porozmawiać jeszcze o jedne rzeczy. Czasami nasze zmiany są już na zdalnym repozytorium a my musimy/chcemy zrobić rebase. Po zakończeniu całej operacji chcemy umieści zmiany z powrotem na zdalnym repozytorium. Jednak tym razem `git push` nam nie zadziała. W takie sytuacji możemy zrobić tak:
 
-```bash
+```shell
 git push -f origin my-branch
 ```
 
@@ -86,7 +85,7 @@ Uwaga! Z tym poleceniem trzeba być bardzo uważnym. Polecenie to nadpisze wszys
 
 Gdybyśmy chcieli zrezygnować z rebase, możemy do tego celu użyć polecenia:
 
-```bash
+```shell
 git rebase --abort
 ```
 

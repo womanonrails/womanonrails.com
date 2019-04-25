@@ -4,8 +4,7 @@ type: status
 title: Wprowadzenie
 description: Programowanie od kuchni, czyli z czym to się je
 headline: My code is getting worse, please send more chocolate
-date: 2013-09-06 00:00:00 +0100
-comments: true
+lang: pl
 ---
 
 Czas zacząć przygodę z blogowaniem. Zapraszam do czytania!

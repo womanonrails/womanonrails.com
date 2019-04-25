@@ -5,7 +5,7 @@ description: Myślimy o wielkich koncepcjach architektonicznych a czasem mamy pr
 headline: Premature optimization is the root of all evil.
 categories: [refaktoring]
 tags: [Visual Basic, code smells]
-comments: true
+lang: pl
 ---
 
 Myślę, że każdy programista, na pewnym etapie rozwoju, chciałby zająć się rozwiązywaniem dużych problemów. Chciałby tworzyć systemy o złożonej strukturze i być tą osobą, która za pomocą swoich rozwiązań zbawi świat. Czułaś się kiedyś w ten sposób? Ja tak, i to nie jeden raz. To zabawne, ale w chwilach gdy właśnie tak się czuje, chciałabym zmienić całkowicie architekturę aplikacji, oczywiście na lepsze. ;] Zrobić refaktoring to tu, to tam. Byłabym w stanie zrobić to zupełnie sama, bez żadnej pomocy. Już widzę to wspaniałe rozwiązanie w swojej głowie. Jest prawie gotowe do użycia. W takich chwilach zapominam całkowicie, że takie rzeczy nie dzieją się same. O architekturę swoje aplikacji trzeba dbać każdego dnia w każdej linijce kodu. To jest ciężka praca. O wiele fajniej jest myśleć o integracji z Google Earth Engine niż o nazwie jakieś mało istotnej zmiennej. Prawda?
@@ -14,7 +14,7 @@ Oto co chciałabym Ci dzisiaj pokazać. Dostałam kod napisany w Visual Basic. M
 
 Chciałabym Ci pokazać dwa przykłady prosto z tego kodu, by w pewien sposób zobrazować problem:
 
-```basic
+```visualbasic
 For i = 1 To m1
 For j = 1 To m1
 If i <> j Then
@@ -28,7 +28,7 @@ Next i
 
 Czy wiesz co ten kod robi? Pierwsza myśl, jaka przychodzi Ci do głowy po spojrzeniu na ten kod. Moja była muszę to przeanalizować, by zrozumieć. Dam Ci małą podpowiedź:
 
-```basic
+```visualbasic
 m1 = 2
 For i = 1 To m1
   For j = 1 To m1
@@ -43,7 +43,7 @@ Next i
 
 Czy to coś ułatwia? Kod jest odrobinę bardziej czytelny. Przynajmniej widać, które fragmenty kodu są gdzie wywoływane. Widać też, że te pętle są wywoływane tylko dla `m1 = 2`. Mamy, więc tylko dwa kroki dla każdej pętli. Jednak ten `goto` utrudnia czytanie tego kodu. A co jeśli Ci powiem że ten kod robi tylko tyle:
 
-```basic
+```visualbasic
 array = [
   [1, 0],
   [0, 1]
@@ -52,7 +52,7 @@ array = [
 
 Od razu widać, co się dzieje. Mogę podać jeszcze jedno rozwiązanie jeżeli chciałabyś, by ta macierz była generowana dynamicznie w zależności od wielkości. W przypadku tego kodu w Visual Basic nie ma to sensu, bo zawsze jest on wywoływany dla wielkości 2, ale może w innych przypadkach ma to sens:
 
-```basic
+```visualbasic
 For i = 1 To m1
   For j = 1 To m1
     If i <> j Then s3(i, j) = 0
@@ -63,7 +63,7 @@ Next i
 
 Drugi przykład jest znacznie krótszy. Czy wiesz czym różni się zmienna `n12` od `n1n2`? A może to po prostu pomyłka? No i co to w zasadzie znaczy to `n12`? Jaki jest sens tej zmiennej?
 
-```basic
+```visualbasic
 n12 = n1 ^ 2
 n1n2 = n1 * n2
 ```

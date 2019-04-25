@@ -9,7 +9,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [hakaton]
 tags: [Global Game Jam]
 place: Cieszyn
-comments: true
+lang: pl
 ---
 
 <br>

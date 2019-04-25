@@ -5,14 +5,14 @@ description: Mały refaktoring w CoffeeScript
 headline: My code is getting worse, please send more chocolate
 categories: [refaktoring]
 tags: [CoffeeScript, JavaScript]
-comments: true
+lang: pl
 ---
 
 To będzie mój pierwszy wpis o refaktoringu. Uwielbiam refaktoring, więc bierzmy się do pracy.
 
 Myślę, że najlepszym sposobem by to zrobić będzie zapisanie na początku fragmentu kodu a później wprowadzenie zmian. Dzisiaj chciałabym zaprezentować Wam kilka linijek kodu w CoffeeScript:
 
-```coffee
+```coffeescript
 if checked_items == all_items
   $('#myId').prop('checked', true)
 else
@@ -21,7 +21,7 @@ else
 
 Ten kod jest naprawdę prosty. Sprawdzam czy ilość zaznaczonych elementów jest równa ilości wszystkich elementów. I w zależności od odpowiedzi zaznaczam (lub nie) checkbox na stronie internetowej. Tak jak powiedziałam jest to prosty kod, ale może być ładniejszy:
 
-```coffee
+```coffeescript
 $('#myId').prop('checked', checked_items == all_items)
 ```
 

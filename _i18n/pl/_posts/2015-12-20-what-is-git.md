@@ -5,7 +5,7 @@ description: Git - podstawy
 headline: My code is getting worse, please send more chocolate
 categories: [narzędzia]
 tags: [środowisko programistyczne, git, system kontroli wersji]
-comments: true
+lang: pl
 ---
 
 Chciałabym z Wami zacząć dzisiaj krótką serię 2-3 artykułów na temat **Gita**. To będzie naprawdę podstawa. W Internecie jest wiele różnego rodzaju kursów na temat Gita. A ja nie chciałabym robić kolejnego. Jeżeli chciałybyście dowiedzieć się czegoś więcej na ten temat, osobiście mogę polecić 2 kursy na temat Gita z CodeSchool. Możecie zacząć [tutaj](https://www.codeschool.com/courses/try-git).

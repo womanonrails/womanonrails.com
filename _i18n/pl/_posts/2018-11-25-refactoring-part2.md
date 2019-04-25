@@ -5,7 +5,7 @@ description: Jak zrobić refaktoring? <br> Od kodu zorientowanego obiektowo do k
 headline: Premature optimization is the root of all evil.
 categories: [refaktoring]
 tags: [Ruby]
-comments: true
+lang: pl
 ---
 
 Ostatnim razem w artykule [Refactoring w Ruby krok po kroku - część 1](https://womanonrails.com/pl/refactoring-step-by-step) przeszłyśmy od kodu proceduralnego do kodu bardziej zorientowanego obiektowo. Tym razem będziemy kontynuować naszą podróż przez refaktoring. Będziemy mówić o małych obiektach zastępujących duże klasy, o kompozycji i o wstrzykiwaniu konkretnych zachowań do obiektów. Zaczynajmy!

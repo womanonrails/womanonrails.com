@@ -5,7 +5,6 @@ description: Co może pójść nie tak gdy korzystasz z workerów do wysyłania 
 headline: Przedwczesna optymalizacja to źródło wszelkiego zła.
 categories: [programowanie]
 tags: [Ruby]
-comments: true
 lang: pl
 ---
 

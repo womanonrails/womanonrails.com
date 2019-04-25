@@ -5,7 +5,7 @@ description: Jak napisać własny walidator?
 headline: My code is getting worse, please send more chocolate
 categories: [programowanie]
 tags: [Ruby, Ruby on Rails]
-comments: true
+lang: pl
 ---
 
 Przez kilka ostatnich dni pracowałam z walidatorami w Railsach. Ale zanim opowiem o tym, co zrobiłam kilka słów na temat tego czym są walidatory. Kiedy chcemy sprawdzić czy dane, które otrzymuje nasza aplikacja spełniają pewne założenia, wtedy używamy walidatorów. Przykładowo gdy chcemy sprawdzić:
@@ -98,7 +98,7 @@ Została jeszcze jedna kwestia do omówienia. **W jaki sposób dodać tłumaczen
 
 Używamy konwencji w Rails. Poniżej przedstawiam jeden ze sposobów (inne możliwości dostępne w dokumentacji [https://guides.rubyonrails.org/i18n.html#error-message-scopes](https://guides.rubyonrails.org/i18n.html#error-message-scopes)):
 
-```
+```yaml
 pl:
   activerecord:
     errors:

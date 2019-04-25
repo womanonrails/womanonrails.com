@@ -6,10 +6,10 @@ video_type: youtube
 title: Rails Girls Warszawa (11 - 12 Czerwiec 2016)
 description: Wideo relacja z warsztatów Rails Girls w Warszawie
 headline: My code is getting worse, please send more chocolate
-categories: [workshops]
+categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Warszawa
-comments: true
+lang: pl
 ---
 
 <br>

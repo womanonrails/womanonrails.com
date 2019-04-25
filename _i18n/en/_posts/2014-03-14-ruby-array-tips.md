@@ -5,7 +5,7 @@ description: 10 Ruby tips for Array
 headline: My code is getting worse, please send more chocolate
 categories: [programming]
 tags: [Ruby]
-comments: true
+lang: en
 ---
 
 Ruby have great documentation for Array method for example like this. To day I want to focus not on methods in documentation but some tips I know in Ruby with Array. Let’s start:

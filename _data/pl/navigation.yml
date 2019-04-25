@@ -1,0 +1,14 @@
+links:
+  - title: Strona główna
+    url: /
+    external: false
+    icon: home
+  - title: Kategorie
+    url: /pl/categories
+  - title: Tagi
+    url: /pl/tags
+  - title: O mnie
+    url: /pl/about
+  - title: Be more
+    url: https://bemore.womanonrails.com/
+    external: true

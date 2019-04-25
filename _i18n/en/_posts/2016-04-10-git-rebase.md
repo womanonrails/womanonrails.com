@@ -5,7 +5,7 @@ description: How can you do git rebase?
 headline: My code is getting worse, please send more chocolate
 categories: [tools]
 tags: [environment, git, version control system]
-comments: true
+lang: en
 ---
 
 I wrote 2 articles about git: [What is git]({{ site.baseurl }}/what-is-git) and [Git usage]({{ site.baseurl }}/git-usage). There are basic information about git. Today I would like to do something more advanced. Last week I did quick presentation/lighting talk about `git rebase`. After that I realize that this is good topic to do short note. So, there you have.
@@ -38,37 +38,37 @@ Here everything is in order. Connected commits are in one group. We also see his
 
 1. Switch to develop branch
 
-    ```bash
+    ```shell
     git checkout develop
     ```
 
 2. Download all changes locally
 
-    ```bash
+    ```shell
     git pull
     ```
 
 3. Switch to specific branch (branch on which you work)
 
-    ```bash
+    ```shell
     git checkout my-branch
     ```
 
 4. Do rebase
 
-    ```bash
+    ```shell
     git rebase develop
     ```
 
 5. Push changes to remote repository
 
-    ```bash
+    ```shell
     git push
     ```
 
 Sometimes when you use rebase, then it can show some conflicts. You need to resolved them and add changes. Then you can continue rebase.
 
-```bash
+```shell
 git rebase develop
 # resolve conflicts
 git add -u # add all changes
@@ -77,14 +77,15 @@ git rebase --continue
 
 We need to talk about one more thing. Sometimes we have our code on remote repository and after rebase we cannot do `git push`. In this case we can use:
 
-```bash
+```shell
 git push -f origin my-branch
 ```
+
 But! You need to be very **careful**. This command will override all history of change on remote repository for your branch. You must be sure that you don't lose any change. If you work on branch alone, it is safe but when you work on branch with others you need to be sure what you doing.
 
 If you like to abort rebase. You can do that in this way.
 
-```bash
+```shell
 git rebase --abort
 ```
 

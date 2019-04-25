@@ -5,7 +5,7 @@ description: How improve your code?
 headline: My code is getting worse, please send more chocolate
 categories: [refactoring]
 tags: [Ruby, Ruby on Rails]
-comments: true
+lang: en
 ---
 
 A few weeks ago I worked on code like this:

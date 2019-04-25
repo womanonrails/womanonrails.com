@@ -5,7 +5,7 @@ description: How can I create my own validator?
 headline: My code is getting worse, please send more chocolate
 categories: [programming]
 tags: [Ruby, Ruby on Rails]
-comments: true
+lang: en
 ---
 
 For a few days I worked on custom validators in Rails. First what are validators? When you want to check some data which comes to your application, you use validators. For example:
@@ -98,7 +98,7 @@ It is one more think to say. **How put translation to our validators in `locales
 
 We use Rails Convention. This is one but not only way to do this (all convention is explain in [https://guides.rubyonrails.org/i18n.html#error-message-scopes](https://guides.rubyonrails.org/i18n.html#error-message-scopes)):
 
-```
+```yaml
 en:
   activerecord:
     errors:

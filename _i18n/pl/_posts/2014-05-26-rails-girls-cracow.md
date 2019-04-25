@@ -8,7 +8,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Kraków
-comments: true
+lang: pl
 ---
 
 To będzie krótki wpis. Jakiś czas temu byłam mentorem na Rails Girls Kraków. Tym razem warsztaty wyglądały nieco inaczej – były przeznaczone dla dziewczyn bardzo młodych (13 – 18 lat) ale z ogromną motywacją. Miałam przyjemność uczyć wspaniałe dziewczyny z niesamowicie dużą ilością pozytywnej energii. Przez całe warsztaty wspierały mnie i świetnie się je uczyło. Oto kilka wniosków:

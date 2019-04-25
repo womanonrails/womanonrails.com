@@ -7,7 +7,7 @@ description: How is it feel working remotely?
 headline: My code is getting worse, please send more chocolate
 categories: [work]
 tags: [remote]
-comments: true
+lang: en
 ---
 
 For me, there are two types of remote work. **Synchronic** and **asynchronic** remote work. Synchronic remote work is work from different places but in the same time. For example I'm working from 9am to 5pm in Europe time zone. Second one - asynchronic remote work is when you are working from different places and in different times. So, it is possible to don't have chance to talk with anyone through all day work.
