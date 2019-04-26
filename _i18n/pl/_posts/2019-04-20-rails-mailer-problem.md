@@ -6,6 +6,7 @@ headline: Przedwczesna optymalizacja to źródło wszelkiego zła.
 categories: [programowanie]
 tags: [Ruby]
 lang: pl
+namespace: rails-mailer-problem
 ---
 
 Wysyłanie wiadomości email przez aplikację do jej użytkowników jest czymś bardzo powszechnym. Wysyłamy maile związane z rejestracją, nowymi zmianami w aplikacji, reklamami, ostatnimi aktywnościami czy z zaproszeniem do grona znajomych. Można powiedzieć, że jest to chleb powszedni dzisiejszych aplikacji internetowych. Pomimo tego, że tak często aplikacje posiadają tą funkcjonalność, zdarzają się w niej błędy. Dziś chciałabym się takim błędem z Tobą podzielić.

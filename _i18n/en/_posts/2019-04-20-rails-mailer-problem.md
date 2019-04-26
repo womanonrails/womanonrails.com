@@ -6,6 +6,7 @@ headline: Premature optimization is the root of all evil.
 categories: [programming]
 tags: [Ruby]
 lang: en
+namespace: rails-mailer-problem
 ---
 
 Sending emails in web application to users is very often process. We send emails related to registration, new changes in application, advertising, last activities or friends' invitations. This is very common. Even we create that functionality in ours apps frequently, we still have bugs there. I would like to share with you one of the bugs examples.

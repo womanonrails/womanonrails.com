@@ -11,24 +11,47 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 locale: en
-# include: ['_data', '_pages']
+include: ['_pages']
 markdown: kramdown
 permalink: /:title
 
 
 # Plugins settings
-gems:
+plugins:
+  - jekyll-include-cache
   - jekyll-multiple-languages-plugin
   - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-redirect-from
 
 
 # Author settings
-title: Woman on Rails
+author: &author womanonrails
 logo: womanonrails-square.svg
+title: Woman on Rails
 
 
-description:
-# disqus_shortname:
+owner:
+  name: Agnieszka Matysek
+  avatar: womanonrails-square.svg
+  email: please-do-not-spam-me@womanonrails.com
+  description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
+  twitter: *author
+  facebook: *author
+  github: *author
+  linkedin: *author
+  instagram: *author
+  stackexchange: https://stackoverflow.com/users/2885676/womanonrails
+  flickr:
+  tumblr:
+
+
+
+
 disqus_shortname: womanonrails
 # Assign a default image for your site's header and footer
 default_bg:
@@ -42,20 +65,6 @@ fin_color:        "255,255,255"
 
 meta:
   image: womanonrails-1000x1000.jpg
-
-owner:
-  name: Agnieszka Matysek
-  avatar: womanonrails-square.svg
-  email: please-do-not-spam-me@womanonrails.com
-  description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
-  twitter: womanonrails
-  facebook: womanonrails
-  github: womanonrails
-  linkedin: womanonrails
-  instagram: womanonrails
-  stackexchange: https://stackoverflow.com/users/2885676/womanonrails
-  flickr:
-  tumblr:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-127731573-1

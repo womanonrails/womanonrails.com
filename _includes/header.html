@@ -64,7 +64,7 @@
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
             <a class="brand" href="{{ link }}" role="banner" itemprop="url">
-                {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
+              {% include logo.html %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
@@ -85,7 +85,7 @@
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
             <a class="brand" href="{{ link }}" role="banner" itemprop="url">
-                {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
+              {% include logo.html %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}

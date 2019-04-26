@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __
-   / / / /  |/  / ____/   \ \/ / ___//   |  / /
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+---
+layout: default
+---
 
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
-<head>
-{% include head.html %}
-</head>
-<body class="home-template" itemscope itemtype="https://schema.org/WebPage">
 <div id="fade"></div>
 <a id="slide" class="animated fade"></a>
 <aside id="sidebar">
@@ -89,7 +72,7 @@ Description: Awesome dude, awesome life
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
             <a class="brand light" href="{{ link }}" role="banner" itemprop="url">
-                {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
+              {% include logo.html %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
@@ -110,7 +93,7 @@ Description: Awesome dude, awesome life
               {% capture link %}{{ site.url }}/pl{% endcapture %}
             {% endif %}
             <a class="brand" href="{{ link }}" role="banner" itemprop="url">
-                    <img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />
+              {% include logo.html %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
@@ -166,5 +149,3 @@ Description: Awesome dude, awesome life
 {% include footer.html %}
 
 {% include scripts.html %}
-</body>
-</html>

@@ -32,6 +32,13 @@ article p {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .brand img {
+    max-height: 90px;
+    max-width: 90px;
+  }
+}
+
 .cursive {
   color: $dark-red;
 }
