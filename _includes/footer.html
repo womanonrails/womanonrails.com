@@ -2,45 +2,15 @@
 
     <div class="inner">
         <div class="container">
-
-            <ul class="social-icons">
-            {% if site.owner.twitter %}<li>
-                <a href="https://twitter.com/{{ site.owner.twitter }}" data-toggle="tooltip" title="{{ site.owner.name}} on Twitter" target="_blank" rel="noopener">
-                    <i class="icon-twitter"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.facebook %}<li>
-                <a href="https://facebook.com/{{ site.owner.facebook }}" data-toggle="tooltip" title="{{ site.owner.name}} on Facebook" target="_blank" rel="noopener">
-                    <i class="icon-facebook"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.stackexchange %}<li>
-                <a href="{{ site.owner.stackexchange }}" data-toggle="tooltip" title="{{ site.owner.name}} on StackExchange" target="_blank" rel="noopener">
-                    <i class="icon-stackexchange"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.linkedin %}<li>
-                <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" data-toggle="tooltip" title="{{ site.owner.name}} on LinkedIn" target="_blank" rel="noopener">
-                    <i class="icon-linkedin"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.instagram %}<li>
-                <a href="https://instagram.com/{{ site.owner.instagram }}" data-toggle="tooltip" title="{{ site.owner.name}} on Instagram" target="_blank" rel="noopener">
-                    <i class="icon-instagram"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.flickr %}<li>
-                <a href="https://www.flickr.com/photos/{{ site.owner.flickr }}" data-toggle="tooltip" title="{{ site.owner.name}} on Flickr" target="_blank" rel="noopener">
-                    <i class="icon-flickr"></i>
-                </a>
-            </li>{% endif %}
-            {% if site.owner.github %}<li>
-                <a href="https://github.com/{{ site.owner.github }}" data-toggle="tooltip" title="{{ site.owner.name}} on Github" target="_blank" rel="noopener">
-                    <i class="icon-github"></i>
-                </a>
-            </li>{% endif %}
-        </ul>
-            <div>
+          <ul class="social-icons">
+            {% include icons/icon-in-footer--twitter.html %}
+            {% include icons/icon-in-footer--facebook.html %}
+            {% include icons/icon-in-footer--stackoverflow.html %}
+            {% include icons/icon-in-footer--linkedin.html %}
+            {% include icons/icon-in-footer--instagram.html %}
+            {% include icons/icon-in-footer--github.html %}
+          </ul>
+        <div>
               <a href="{% translate_link about %}">{{ site.owner.name }}</a>
               &copy; {{ site.time | date: '%Y' }}
               &bull; All rights reserved.

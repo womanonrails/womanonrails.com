@@ -127,3 +127,22 @@ button.menu-button {
 .red-text {
   color: $dark-red;
 }
+
+.social-icons {
+  height: 148px;
+
+  li {
+    padding-top: 32px;
+    vertical-align: middle;
+
+    svg {
+      fill: #fff;
+      height: 72px;
+      transform: scale(0.64);
+    }
+
+    .svg--github svg {
+      transform: scale(1.0);
+    }
+  }
+}

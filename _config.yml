@@ -45,11 +45,7 @@ owner:
   github: *author
   linkedin: *author
   instagram: *author
-  stackexchange: https://stackoverflow.com/users/2885676/womanonrails
-  flickr:
-  tumblr:
-
-
+  stackoverflow: https://stackoverflow.com/users/2885676/womanonrails
 
 
 disqus_shortname: womanonrails

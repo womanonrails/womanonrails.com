@@ -1,0 +1,20 @@
+{% if site.lang == 'en' %}
+{% assign homepage = site.baseurl_root | append: '/' %}
+{% elsif site.lang == 'pl' %}
+{% assign homepage = site.baseurl_root | append: '/pl' %}
+{% endif %}
+<div class='inner'>
+  <div class='container'>
+    <a class='brand' href='{{ homepage }}' itemprop='url' role='banner'>
+      {% include logo.html %}
+      <h1 class='blog-title light' itemprop='name'>
+        {{ site.title }}
+      </h1>
+    </a>
+    {% if include.description %}
+    <h2 class='blog-description light bordered bordered-top' itemprop='description'>
+      {{ include.description }}
+    </h2>
+    {% endif %}
+  </div>
+</div>

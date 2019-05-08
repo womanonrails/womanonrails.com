@@ -1,0 +1,11 @@
+{% for item in site.data[site.lang].navigation.links %}
+{% if item.external %}{% assign url = item.url %}{% else %}{% assign url = item.url | prepend: site.url %}{% endif %}
+<li>
+  <a href="{{ url }}">{{ item.title }}</a>
+</li>
+{% endfor %}
+<li>
+  <a href="{{ site.baseurl }}/feed.xml" title='Atom/RSS feed'>
+    <i class='icon-rss'></i> Feed
+  </a>
+</li>

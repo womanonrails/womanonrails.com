@@ -1,0 +1,8 @@
+{% if site.lang == 'en' %}
+{% assign alternative_language = site.baseurl_root | append: '/pl' | append: page.url %}
+{% elsif site.lang == 'pl' %}
+{% assign alternative_language = site.baseurl_root | append: page.url %}
+{% endif %}
+<a href="{{ alternative_language }}" class='language animated fade'>
+  {% t language %}
+</a>

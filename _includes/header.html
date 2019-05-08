@@ -5,97 +5,21 @@
     <h2>MENU</h2>
     <hr>
     <ul>
-      {% if site.lang == 'en' %}
-        {% for link in site.links %}
-          <li>
-            {% if link.external %}
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            {% else %}
-              <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      {% else %}
-        {% for link in site.links_pl %}
-          <li>
-            {% if link.external %}
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            {% else %}
-              <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      {% endif %}
-      <li>
-        <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">
-          <i class="icon-rss"></i> Feed
-        </a>
-      </li>
+      {% include navigation.html %}
     </ul>
-    </nav>
+  </nav>
 </aside>
 
 {% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">{% if page.imagecredit %}<span class="image-credit">Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a></span>{% endif %}
 {% else %}
 <header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">
 {% endif %}
-{% if site.search %}
-    <button class="menu-button animated fade dosearch" title="{% t search %}">
-        <i class="icon-search"></i>
-    </button>
-{% endif %}
-{% if site.lang == 'en' %}
-  {% capture link %}{{ site.url }}/pl{{ page.url }}{% endcapture %}
-  <a href="{{ link }}" class='language animated fade'>
-    {% t language %}
-  </a>
-{% else %}
-  {% capture link %}{{ site.url }}{{ page.url }}{% endcapture %}
-  <a href="{{ link }}" class='language animated fade'>
-    {% t language %}
-  </a>
-{% endif %}
-{% if page.headline %}
-    <div class="inner">
-        <div class="container">
-            {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}/{% endcapture %}
-            {% else %}
-              {% capture link %}{{ site.url }}/pl{% endcapture %}
-            {% endif %}
-            <a class="brand" href="{{ link }}" role="banner" itemprop="url">
-              {% include logo.html %}
 
-            <h1 class="blog-title light" itemprop="name">
-                {{ site.title }}
-            </h1>
+{% include search.html %}
+{% include language.html %}
+{% include brand.html description=page.headline %}
 
-            </a>
-            <h2 class="blog-description light bordered bordered-top" itemprop="description">
-                {{ page.headline }}
-            </h2>
-        </div>
-    </div>
-    {% else %}
-    <div class="inner">
-        <div class="container">
-            {% if site.lang == 'en' %}
-              {% capture link %}{{ site.url }}/{% endcapture %}
-            {% else %}
-              {% capture link %}{{ site.url }}/pl{% endcapture %}
-            {% endif %}
-            <a class="brand" href="{{ link }}" role="banner" itemprop="url">
-              {% include logo.html %}
-
-            <h1 class="blog-title light" itemprop="name">
-                {{ site.title }}
-            </h1>
-
-            </a>
-        </div>
-    </div>
-    {% endif %}
-    {% if site.animated_fins and site.triangleheader %}
+{% if site.animated_fins and site.triangleheader %}
     <div class="decor-wrapper">
         <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba({{ site.fin_color }}, .1)"></path>
@@ -113,7 +37,7 @@
 
         </svg>
     </div>
-    {% else %}
+{% else %}
     {% if site.triangleheader %}
     <div class="decor-wrapper">
         <svg id="header-decor" class="decor bottom" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -124,5 +48,5 @@
         </svg>
     </div>
     {% endif %}
-    {% endif %}
+{% endif %}
 </header>
