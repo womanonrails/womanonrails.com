@@ -8,7 +8,7 @@ tags: [Ruby]
 lang: pl
 ---
 
-Ostatnim razem w artykule [Refactoring w Ruby krok po kroku - część 1](https://womanonrails.com/pl/refactoring-step-by-step) przeszłyśmy od kodu proceduralnego do kodu bardziej zorientowanego obiektowo. Tym razem będziemy kontynuować naszą podróż przez refaktoring. Będziemy mówić o małych obiektach zastępujących duże klasy, o kompozycji i o wstrzykiwaniu konkretnych zachowań do obiektów. Zaczynajmy!
+Ostatnim razem w artykule [Refactoring w Ruby krok po kroku - część 1](/pl/refactoring-step-by-step) przeszłyśmy od kodu proceduralnego do kodu bardziej zorientowanego obiektowo. Tym razem będziemy kontynuować naszą podróż przez refaktoring. Będziemy mówić o małych obiektach zastępujących duże klasy, o kompozycji i o wstrzykiwaniu konkretnych zachowań do obiektów. Zaczynajmy!
 
 # Krok 8 - Bardziej opisowe wyniki
 
@@ -579,11 +579,31 @@ To wszystko. W tym artykule zamieściłam kilka pomysłów na refaktoring. Może
 ### Bibliografia
 
 #### Książki
-- <a href="https://helion.pl/view/10301k/refukv.htm#format/d" title="Refaktoryzacja. Ulepszanie struktury istniejącego kodu" target="_blank" rel="nofollow noopener noreferrer">Refaktoryzacja. Ulepszanie struktury istniejącego kodu - Martin Fowler</a>
-- <a href="https://helion.pl/view/10301k/czykov.htm#format/d" title="Czysty kod. Podręcznik dobrego programisty" target="_blank" rel="nofollow noopener noreferrer">Czysty kod. Podręcznik dobrego programisty - Robert C. Martin</a>
-- <a href="https://helion.pl/view/10301k/rubywz.htm#format/d" title="Ruby. Wzorce projektowe" target="_blank" rel="nofollow noopener noreferrer">Ruby. Wzorce projektowe - Russ Olsen</a>
-- <a href="https://helion.pl/view/10301k/tddszt.htm#format/d" title="TDD. Sztuka tworzenia dobrego kodu" target="_blank" rel="nofollow noopener noreferrer">TDD. Sztuka tworzenia dobrego kodu - Ken Beck</a>
-- <a href="https://helion.pl/view/10301k/pragpv.htm#format/d" title="Pragmatyczny programista. Od czeladnika do mistrza" target="_blank" rel="nofollow noopener noreferrer">Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas</a>
+- {% include helion_book.html
+     key='refukv'
+     name='Refaktoryzacja. Ulepszanie struktury istniejącego kodu - Martin Fowler'
+     title='Refaktoryzacja. Ulepszanie struktury istniejącego kodu'
+  %}
+- {% include helion_book.html
+     key='czykov'
+     name='Czysty kod. Podręcznik dobrego programisty - Robert C. Martin'
+     title='Czysty kod. Podręcznik dobrego programisty'
+  %}
+- {% include helion_book.html
+     key='rubywz'
+     name='Ruby. Wzorce projektowe - Russ Olsen'
+     title='Ruby. Wzorce projektowe'
+  %}
+- {% include helion_book.html
+     key='tddszt'
+     name='TDD. Sztuka tworzenia dobrego kodu - Ken Beck'
+     title='TDD. Sztuka tworzenia dobrego kodu'
+  %}
+- {% include helion_book.html
+     key='pragpv'
+     name='Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas'
+     title='Pragmatyczny programista. Od czeladnika do mistrza'
+  %}
 - <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz [EN]</a>
 
 #### Prezentacje angielskojęzyczne
@@ -591,8 +611,3 @@ To wszystko. W tym artykule zamieściłam kilka pomysłów na refaktoring. Może
 - <a href="https://www.youtube.com/watch?v=5yX6ADjyqyE" title="Fat Models with Patterns by Bryan Helmkamp" target="_blank" rel="nofollow noopener noreferrer">LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
 - <a href="https://www.youtube.com/watch?v=OMPfEXIlTVE" title="Nothing is something by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">Nothing is something by Sandi Metz</a>
 - <a href="https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks" title="8 best Ruby on Rails refactoring talks" target="_blank" rel="nofollow noopener noreferrer">Best Ruby on Rails refactoring talks</a>
-
-
-
-
-

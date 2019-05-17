@@ -240,11 +240,23 @@ Kiedy tworzysz swoje klasy, warto pamiętać o takich prostych zasadach:
 - Używaj **metod prywatnych** zamiast **zmiennych instancji** - dostaniesz jaśniejszy komunikat błędu
 - Używaj paradygmatu programowania funkcyjnego (jeżeli to możliwe) - używaj nie mutowanego stanu w swojej klasie
 - Używaj **zasady open/closed** - Klasa (ale nie tylko) ma być otwarta na rozszerzenia, ale zamknięta na modyfikację
-- Używaj **zasady jednej odpowiedzialności (single responsibility)** - Nie wspominałam o tych dwóch ostatnich zasadach w tym artykule, ale są one jednak bardzo użyteczne. Mówiłam o nich w krótkiej serii artykułów o <a href="{{ site.baseurl }}refactoring-part2" title="Refaktoring w języku Ruby - krok po kroku">refaktoryzacji na przykładzie logiki do pokera</a>.
+- Używaj **zasady jednej odpowiedzialności (single responsibility)** - Nie wspominałam o tych dwóch ostatnich zasadach w tym artykule, ale są one jednak bardzo użyteczne. Mówiłam o nich w krótkiej serii artykułów o <a href="{{ site.baseurl }}/refactoring-part2" title="Refaktoring w języku Ruby - krok po kroku">refaktoryzacji na przykładzie logiki do pokera</a>.
 
-Jeżeli jesteś zainteresowana innymi dobrymi praktykami to zachęcam do zerknięcia do tych książek:
+Jeżeli jesteś zainteresowana innymi dobrymi praktykami to zachęcam do zerknięcia na poniższe książki:
 
-- <a href="https://helion.pl/view/10301k/rubywz.htm#format/d" title="Ruby. Wzorce projektowe" target="_blank" rel="nofollow noopener noreferrer">Ruby. Wzorce projektowe - Russ Olsen</a>
-- <a href="https://helion.pl/view/10301k/tddszt.htm#format/d" title="TDD. Sztuka tworzenia dobrego kodu" target="_blank" rel="nofollow noopener noreferrer">TDD. Sztuka tworzenia dobrego kodu - Ken Beck</a>
+- {% include helion_book.html
+     key='rubywz'
+     name='Ruby. Wzorce projektowe - Russ Olsen'
+     title='Ruby. Wzorce projektowe'
+  %}
+- {% include helion_book.html
+     key='tddszt'
+     name='TDD. Sztuka tworzenia dobrego kodu - Ken Beck'
+     title='TDD. Sztuka tworzenia dobrego kodu'
+  %}
 - <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz [EN]</a>
-- <a href="https://helion.pl/view/10301k/pragpv.htm#format/d" title="Pragmatyczny programista. Od czeladnika do mistrza" target="_blank" rel="nofollow noopener noreferrer">Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas</a>
+- {% include helion_book.html
+     key='pragpv'
+     name='Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas'
+     title='Pragmatyczny programista. Od czeladnika do mistrza'
+  %}
