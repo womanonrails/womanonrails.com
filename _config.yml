@@ -75,6 +75,8 @@ links:
     url: /
     external: false
     icon: home
+  - title: Programming courses
+    url: /workshops
   - title: Categories
     url: /categories
   - title: Tags
@@ -87,6 +89,8 @@ links_pl:
     url: /pl
     external: false
     icon: home
+  - title: Kursy programowania
+    url: /workshops
   - title: Kategorie
     url: /pl/categories
   - title: Tagi

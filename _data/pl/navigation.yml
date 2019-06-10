@@ -3,6 +3,8 @@ links:
     url: /
     external: false
     icon: home
+  - title: Kursy programowania
+    url: /pl/workshops
   - title: Kategorie
     url: /pl/categories
   - title: Tagi
