@@ -10,9 +10,9 @@ lang: en
 
 Some time ago I wrote an article about <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - How to fit to the pattern?">Pattern matching in Elixir</a>. I really like this idea. Now from Ruby version 2.7 we have **pattern matching in Ruby**!!! It is not the same like in Elixir, but it is a nice feature to have. Keep in mind that this is still an experimental feature, so it can change in the future versions of Ruby. Let's check out what we can do with pattern matching in Ruby.
 
-Before we start, let's remind ourselves **what is pattern matching?** Pattern matching is a way to specify some pattern for our data and if data are matched to the pattern we can deconstruct them according to this pattern. In other words: Pattern matching is choosing specific elements from data, based on defined rules. We can also say that pattern matching is like _regular expressions_ with multiple assignments not only for strings.
+Before we start, let's remind ourselves **what is pattern matching?** Pattern matching is a way to specify a pattern for our data and if data are matched to the pattern we can deconstruct them according to this pattern. In other words: Pattern matching is choosing specific elements from data, based on defined rules. We can also say that pattern matching is like _regular expressions_ with multiple assignments not only for strings.
 
-In the beginning of _Pattern Matching in Elixir_ article, I started from **basic match operator** in Elixir. Because Ruby was created based on different concepts, then Elixir, we will not have anything like **match operator** in Ruby. We have normal **assignment**. So when in Elixir we can do:
+In the beginning of _Pattern Matching in Elixir_ article, I started from **basic match operator** in Elixir. Because Ruby was created based on different concepts than Elixir, we will not have anything like **match operator** in Ruby. We have normal **assignment**. So when in Elixir we can do:
 
 ```elixir
 iex> x = 4
@@ -37,7 +37,7 @@ SyntaxError ((irb):2: syntax error, unexpected '=', expecting end-of-input)
   ^
 ```
 
-I don't say that Ruby is worst then Elixir. I show you this to explain how big challenge was to put pattern matching in Ruby. I want you to be forgiving if something is not working like you would like to. There is still work to do, questions to answer and decision to take. Be patient and celebrate with me this first step of pattern matching in Ruby.
+I don't say that Ruby is worse then Elixir. I'm showing you this to explain how big of a challenge was to put pattern matching in Ruby. I want you to be forgiving if something is not working like you would like to. There is still work to do, questions to answer and decisions to take. Be patient and celebrate with me this first step of pattern matching in Ruby.
 
 ## Pattern matching in Ruby - basics
 
@@ -109,7 +109,7 @@ irb> a
  => [2]
 ```
 
-Splat operator will always return you an array. You can use `_` to skip some values in your pattern:
+Splat operator will always return to you an array. You can use `_` to skip some values in your pattern:
 
 ```ruby
 case [1, 2, 3]
@@ -237,7 +237,7 @@ irb> foo
  => 1
 ```
 
-It can be confusing at the beginning, but I see that during my tests of Ruby pattern matching I used that quite often in my code. In case that this will change in the future, I can used to this syntax too:
+It can be confusing at the beginning, but I see that during my tests of Ruby pattern matching I used that quite often in my code. In case that this will change in the future, I can get used to this syntax too:
 
 ```ruby
 case { foo: 1, bar: 2 }
@@ -312,7 +312,7 @@ end
 
 #### Variables
 
-We can also use variable, what we already saw in the previous examples. The only thing which I would like to add is that we always do assignment in this case:
+We can also use variables which we already saw in the previous examples. The only thing which I would like to add is that we always do assignment in this case:
 
 ```ruby
 irb> array = [1, 2, 3]
@@ -360,7 +360,7 @@ end
 
 #### As pattern
 
-We can also bind variable to a value using **as pattern**. It can be useful when we need more complex assignments.
+We can also bind  the variable to a value using **as pattern**. It can be useful when we need more complex assignments.
 
 ```ruby
 case [1, 2, [3, 4]]
@@ -393,7 +393,7 @@ irb> longitude
  => 18.666200637817383
 ```
 
-If you want to use pattern matching for another object, you need to add method `deconstruct` or `deconstruct_keys` for your class. Depends on which method you choose, your object will behave during pattern matching like `Array` or like `Hash`. In the example above, we see that `Struct` behave like `Array` when it comes to pattern matching. Below  I have added a very simple use case for `Hash` type of pattern matching:
+If you want to use pattern matching for another object, you need to add method `deconstruct` or `deconstruct_keys` to your class. Depends on what method you choose, your object will behave during pattern matching like `Array` or like `Hash`. In the example above, we see that `Struct` behave like `Array` when it comes to pattern matching. I have added a very simple use case for `Hash` type of pattern matching below:
 
 ```ruby
 class Date
@@ -473,7 +473,7 @@ You can see the difference.
 
 ## Scope strange behavior
 
-Right now you can see the value of variable even match of pattern failed. This is something Ruby core knows about and they will change that in future.
+Right now you can see the value of the variable even match of pattern failed. This is something Ruby core knows about and they will change that in future.
 
 ```ruby
 case[1, 2]
@@ -496,13 +496,13 @@ irb> y
 
 ## What I would like to see more?
 
-When I play around pattern matching in Ruby, I found some case which are not a part of this new feature, but it will be nice to have:
+When I play around pattern matching in Ruby, I found some cases which are not a part of this new feature, but it will be nice to have:
 
 - one line pattern matching - We have one line `each`, so it will be good to have one line pattern matching. Something like `case [1, 2, [3, 4]] { [1, 2, [3, b] => a] }` just for assignments.
 - calculations in patterns - Sometimes we would like to do some quick calculations like `in (1..3).to_a` in pattern, but this is not possible. We can do some work around and assign this to variable `array = (1..3).to_a` then use `array` in pattern `in ^array`.
 - allowed variables in alternative pattern - It will be great to be able to do `[1, 2] | [1, 2, c]`.
 
-I know that some of my ideas can be not possible or hard to do, but this is my wish list. ;]
+I know that some of my ideas could be not possible or hard to do, but this is my wish list. ;]
 
 ## Summary
 
