@@ -24,7 +24,7 @@ Myślisz tylko o pieniądzach, które zarobisz? - Programowanie nie jest dla Cie
 Myślisz, że to łatwe i że można nic nie robić przez cały dzień? - Programowanie nie jest dla Ciebie.
 Myślisz, że to czego się nauczysz lub już nauczyłaś wystarczy Ci na najbliższe 10 lat lub więcej? - Programowanie nie jest dla Ciebie.
 
-Kiedy organizowałam warsztaty Rails Girls Cieszyn z 24 uczestniczek tylko 5 kontynuowało naukę w ramach dalszych spotkań. Po pierwszym spotkaniu zostały tylko 2. Tylko dwie osoby miały tyle samo zaparcia i motywacji by poświęcać swój czas na naukę programowania. I tylko jedna (z tego co mi wiadomo) zmieniła swoje życie i jest programistą. Co chciałabym przez to przekazać?
+Kiedy organizowałam <a href="{{ site.baseurl }}/rails-girls-cieszyn" title="Rails Girls Cieszyn">warsztaty Rails Girls Cieszyn</a> z 24 uczestniczek tylko 5 kontynuowało naukę w ramach dalszych spotkań. Po pierwszym spotkaniu zostały tylko 2. Tylko dwie osoby miały tyle samo zaparcia i motywacji by poświęcać swój czas na naukę programowania. I tylko jedna (z tego co mi wiadomo) zmieniła swoje życie i jest programistą. Co chciałabym przez to przekazać?
 
 **Programowanie to ciężka praca**. Jestem z Tobą szczera. Wymaga ono wiele czasu i zaangażowania. Uczysz się mnóstwa nowych rzeczy, ciągle rozwijasz swoje umiejętności i wiedzę. I będzie to trwało do końca życia. W trakcie pracy pojawia się zwątpienie i momenty załamania. Czasem będziesz znudzona lub zdenerwowana, bo coś nie działa. Jeżeli jednak ciągle czujesz, że jest to dla Ciebie, to powiem Ci, że będą też momenty zwycięstwa. Dumy z tego co się osiągnęło i jaki się rozwiązało problem. Chwile szczęścia i satysfakcji z możliwości nauczenia się czegoś nowego.
 

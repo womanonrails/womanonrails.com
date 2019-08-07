@@ -24,7 +24,7 @@ If you think only about money, which you earn. - Programming isn't for you.
 If you think, that this is easy and you can do nothing almost all the day. - Programming isn't for you.
 If you think you learn something and your knowledge stays the same for next 10 years. - Programming isn't for you.
 
-When I was organizing Rails Girls workshops in Cieszyn for 24 participants, only 5 of them were interested in continuing learning. After first classes only 2 of them staid. Only 2 of them took their time, energy and engagement to learn programming with me. And only one (as far as I know) changed her life and she is now programmer. What I would like to say by that example is that...
+When I was organizing <a href="{{ site.baseurl }}/rails-girls-cieszyn" title="Rails Girls Cieszyn">Rails Girls workshops in Cieszyn</a> for 24 participants, only 5 of them were interested in continuing learning. After first classes only 2 of them staid. Only 2 of them took their time, energy and engagement to learn programming with me. And only one (as far as I know) changed her life and she is now programmer. What I would like to say by that example is that...
 
 **Programming is hard work.** I'm really honest with you. It will take a lot of your time. You will learn new things, improve your skill and knowledge till end of your life. You will have doubts and moments of break downs. You will be bored sometimes or angry that something is not working, but if you still want to try and you feel deep in your heart, this is for you. You will also have moments of victory. You will be proud of yourself and your code. You will be happy to learn new things. This job will bring you satisfaction.
 
