@@ -44,7 +44,7 @@ Nie pokazuje tego by udowodnić, że Elixir jest lepszym językiem niż Ruby. M�
 Na początku zapoznajmy się z nową składnią dla `case` jaką mamy dostępną:
 
 ```ruby
-case exprestion
+case expression
 in pattern [if|unless condition]
   ...
 in pattern [if|unless condition]
@@ -479,7 +479,7 @@ W obecnej wersji pattern matching w Ruby 2.7 ma pewne dziwne zachowanie, o któr
 case[1, 2]
 in x, y if y > 3
   :no_match
-in x, z if y < 3
+in x, z if z < 3
   :match
 end
  => :match

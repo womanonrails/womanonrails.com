@@ -44,7 +44,7 @@ I don't say that Ruby is worse then Elixir. I'm showing you this to explain how 
 For pattern matching in Ruby, we have new syntax for `case`. It looks like this:
 
 ```ruby
-case exprestion
+case expression
 in pattern [if|unless condition]
   ...
 in pattern [if|unless condition]
@@ -479,7 +479,7 @@ Right now you can see the value of the variable even match of pattern failed. Th
 case[1, 2]
 in x, y if y > 3
   :no_match
-in x, z if y < 3
+in x, z if z < 3
   :match
 end
  => :match
