@@ -18,16 +18,13 @@ permalink: /:title
 
 # Plugins settings
 plugins:
+  - jekyll-feed
   - jekyll-include-cache
   - jekyll-multiple-languages-plugin
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-
-whitelist:
-  - jekyll-redirect-from
-
 
 # Author settings
 author: &author womanonrails
@@ -138,3 +135,6 @@ default_lang: en
 exclude_from_localizations: ['css', 'images', 'javascript']
 languages: ['en', 'pl']
 parallel_localization: true
+
+feed:
+  excerpt_only: true
