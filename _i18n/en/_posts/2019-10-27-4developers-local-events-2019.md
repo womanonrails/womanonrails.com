@@ -39,3 +39,6 @@ You can send your answers untill 5th of November 2019. After that I will choose 
 
 If you are going to 4Developers anyway I hope we can meet there. At least in Wroclaw edition. See you soon! And good luck!
 
+<hr>
+
+The winner is: **Szymon Czembor**. Congratulations!

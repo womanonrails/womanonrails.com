@@ -38,3 +38,7 @@ Jeżeli chcesz wziąć udział w konkursie, to oznacz swój komentarz tagiem **#
 Swoją odpowiedź możesz wysłać do 5-go listopada 2019 roku włącznie. Po tym czasie wybiorę osobę, która otrzyma wejściówkę na **4Developers w Poznaniu**. Imię i nazwisko lub nick zwyciężczyni lub zwycięscy umieszczę na końcu tego artykułu oraz pod komentarzem.
 
 Jeżeli niezależnie od konkursu wybierasz się na 4Developers mam nadzieję, że się spotkamy. Ja będę na pewno na wrocławskiej edycji. Do zobaczenia! Powodzenia!
+
+<hr>
+
+Bilet na konferencje 4Developers w Poznaniu wygrywa: **Szymon Czembor**. Gratulacje!
