@@ -80,7 +80,7 @@ Warsztaty trwały dwa dni. Naszym celem było pokazać, wyjaśnić i przede wszy
     <img src="{{ site.baseurl_root }}/images/rails-girls-warsaw-2019/thumbs/12-please-send-more-chocolate.jpg"
          alt='Pusta sala po pierwszym dniu warsztatów, plakat z prośbą o czekoladę'>
   </a>
-  <figcaption>Wspomnienia z warsztatów Rails Girls w Warszawie uchwicone przez Anks</figcaption>
+  <figcaption>Wspomnienia z warsztatów Rails Girls w Warszawie uchwycone przez Anks</figcaption>
 </figure>
 
 ----
