@@ -1,0 +1,12 @@
+{% if site.readtime %}
+{% assign words = content | strip_html | number_of_words %}
+{% assign words_per_minute = site.words_per_minute | default: 180 %}
+{% assign number_of_minutes = words | divided_by: words_per_minute %}
+&nbsp;
+<span class='post-tags reading-time'>
+<!-- <i class='icon-time'></i> -->
+🕰️
+&nbsp;
+<span class='time'>{{ number_of_minutes }}</span> min.
+</span>
+{% endif %}
