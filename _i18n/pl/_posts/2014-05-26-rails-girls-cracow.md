@@ -9,6 +9,7 @@ categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Kraków
 lang: pl
+show_date: true
 ---
 
 To będzie krótki wpis. Jakiś czas temu byłam mentorem na Rails Girls Kraków. Tym razem warsztaty wyglądały nieco inaczej – były przeznaczone dla dziewczyn bardzo młodych (13 – 18 lat) ale z ogromną motywacją. Miałam przyjemność uczyć wspaniałe dziewczyny z niesamowicie dużą ilością pozytywnej energii. Przez całe warsztaty wspierały mnie i świetnie się je uczyło. Oto kilka wniosków:

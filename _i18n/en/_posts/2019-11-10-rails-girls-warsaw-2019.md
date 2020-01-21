@@ -10,6 +10,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Warsaw
 lang: en
 imagefeature: rails-girls-warsaw-2019/og_image.jpg
+show_date: true
 ---
 
 There it is! The Rails Girls Warsaw 2019 edition! Rails Girls workshops in Warsaw are one of my favorites in Poland. They are always close to my heart. First time I was a mentor at <a href="{{ site.baseurl }}/rails-girls-warsaw" title="Rails Girls Warsaw - first time as a mentor">Rails Girls Warsaw in 2014</a>. Now I go around Poland to share my programming knowledge. This time in Warsaw.

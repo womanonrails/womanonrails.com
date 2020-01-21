@@ -99,7 +99,7 @@ links_pl:
 # Layout settings
 read_time: true
 words_per_minute: 200
-show_date: true
+show_date: false
 
 defaults:
   # _pages

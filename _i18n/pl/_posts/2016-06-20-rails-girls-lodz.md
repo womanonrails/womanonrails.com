@@ -10,6 +10,7 @@ categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Łódź
 lang: pl
+show_date: true
 ---
 
 <br>

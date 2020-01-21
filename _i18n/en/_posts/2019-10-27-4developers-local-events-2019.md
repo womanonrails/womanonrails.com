@@ -9,6 +9,7 @@ categories: [conference]
 tags: [4Developers]
 lang: en
 imagefeature: 4developers/4developers-2019-local-editions-header.jpg
+show_date: true
 ---
 
 In one of my last articles I have written about my new challenge. To be a speaker at a conference. This happened two times at local editions of 4Developers in Krakow and in Katowice. It was for me interesting experience, especially that this audience doesn't know Ruby as programming language too well. I had a chance to share my knowledge about Ruby and good programming practices with them. In the near future there are going to be two more local editions of 4Developers. And because of that I have a surprise for you which is prepared together with 4Developers organizers. I have for you a discount for these two events and one free ticket which you can win. But let's start from the beginning.

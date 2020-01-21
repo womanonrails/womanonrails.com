@@ -9,6 +9,7 @@ categories: [workshops]
 tags: [coderetreat]
 place: Cracow
 lang: en
+show_date: true
 ---
 
 In last Saturday I was on [Global Day of Coderetreat](https://www.coderetreat.org/) in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.

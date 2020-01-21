@@ -10,6 +10,7 @@ categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
 place: Cieszyn
 comments: true
+show_date: true
 ---
 
 <br>

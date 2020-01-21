@@ -10,6 +10,7 @@ categories: [hackathon]
 tags: [hack4good]
 place: Cracow
 lang: en
+show_date: true
 ---
 
 <br>

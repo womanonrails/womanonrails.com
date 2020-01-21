@@ -10,6 +10,7 @@ categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
 place: Poznań
 comments: true
+show_date: true
 ---
 
 <br>

@@ -10,6 +10,7 @@ categories: [hackathon]
 tags: [Global Game Jam]
 place: Cieszyn
 lang: en
+show_date: true
 ---
 
 <br>

@@ -7,6 +7,7 @@ categories: [konferencja]
 tags: [Web Summit]
 place: Dublin
 lang: pl
+show_date: true
 ---
 
 Data: *30-31 października 2013*<br>

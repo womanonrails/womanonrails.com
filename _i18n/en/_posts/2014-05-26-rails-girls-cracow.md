@@ -9,6 +9,7 @@ categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
 place: Cracow
 lang: en
+show_date: true
 ---
 
 This will be short note. A few weeks ago I was a coach on Rails Girls Kraków. This time workshops were differently. Girls were very young but with big motivation. I thought wonderful girls, with so much positive energy. They support me and I felt great teaching them. After all I have some new tips:

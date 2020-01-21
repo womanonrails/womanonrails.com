@@ -10,6 +10,7 @@ categories: [hakaton]
 tags: [Global Game Jam]
 place: Cieszyn
 lang: pl
+show_date: true
 ---
 
 <br>

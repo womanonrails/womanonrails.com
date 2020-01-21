@@ -7,6 +7,7 @@ categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Poznań
 lang: pl
+show_date: true
 ---
 
 Czas: *6-7 września 2013*<br>

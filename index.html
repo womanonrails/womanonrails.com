@@ -3,6 +3,7 @@ layout: home
 ---
 {% if site.paginate %}
   {% for post in paginator.posts %}
+      {% assign categories = post.categories | categories_filter %}
       {% if post.type == 'quote' %}
       <div class="row">
               <article class="post col-md-10 col-md-offset-1">
@@ -67,7 +68,6 @@ layout: home
                           </li>
                       </ul>
                       <div class="post-info text-center small">
-                          {% assign categories = post.categories | categories_filter %}
                           {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
                           {% assign posttime = post.date | date: "%Y%m%d" %}
                           Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
