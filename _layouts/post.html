@@ -19,7 +19,6 @@ Description: Awesome dude, awesome life
 {% include head.html %}
 </head>
 <body class="post-template" itemscope itemtype="https://schema.org/WebPage">
-
 {% include header.html %}
 <div id="main" class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Blog">
     <div class="container">
@@ -36,9 +35,20 @@ Description: Awesome dude, awesome life
                         {% endif %}
                         <div class="cursive" style="color: #000; font-style:italic;">{{ page.description }}</div>
                         <div class="post-info text-center small">
-                            {% if page.modified %}<span class="entry-date date published">{% else %}<span class="entry-date date published updated">{% endif %}<time datetime="{{ page.date | date_to_xmlschema }}" class="post-time" itemprop="datePublished">{{ page.date | date: "%d %b %Y" }}</time><span>{% if page.modified %}{% if modifiedtime != posttime %} and <code>last modified on <span class="entry-date date updated"><time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%d %b %Y" }}</time></code></span>{% endif %}{% endif %}
-                            in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
-                            {% include read-time.html %}
+                          {% assign show_date = site.show_date %}
+                          {% unless page.show_date == nil or page.show_date == empty %}
+                          {% assign show_date = page.show_date %}
+                          {% endunless %}
+                          {% if show_date %}
+                          <span class='entry-date date published'>
+                            <time class='post-time'
+                                  datetime="{{ page.date | date_to_xmlschema }}"
+                                  itemprop='datePublished'>{{ page.date | date: "%d %b %Y" }}</time>
+                          </span>
+                          |
+                          {% endif %}
+                          {% include category-link.html %}
+                          {% include read-time.html %}
                         </div>
                     </header>
                     <div class="post-body bordered-bottom" itemprop="description">

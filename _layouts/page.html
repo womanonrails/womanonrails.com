@@ -16,8 +16,7 @@ layout: default
                         {% endif %}
                         <div class="cursive" style="color: #000; font-style:italic;">{{ page.description }}</div>
                         <div class="post-info text-center small">
-                            {% if page.modified %}Last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%d %b %Y" }}</time>{% endif %}
-                            {% include read-time.html %}
+                          {% include read-time.html %}
                         </div>
                     </header>
                     <div class="page-body" itemprop="description">
