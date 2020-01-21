@@ -1,0 +1,9 @@
+<span class='post-tags'>
+{% for tag in categories %}
+  <a data-toggle='tooltip'
+     href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}"
+     title="Other posts from the {{ tag | capitalize }} category"
+     rel="tag">{{ tag | capitalize }}</a>
+{% endfor %}
+</span>
+|

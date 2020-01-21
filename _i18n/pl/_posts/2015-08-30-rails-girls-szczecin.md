@@ -10,6 +10,7 @@ categories: [warsztaty]
 tags: [Rails Girls, Ruby on Rails]
 place: Szczecin
 lang: pl
+show_date: true
 ---
 
 <br>

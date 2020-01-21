@@ -97,9 +97,9 @@ links_pl:
 
 
 # Layout settings
-readtime: true
-wpm: 200
-
+read_time: true
+words_per_minute: 200
+show_date: false
 
 defaults:
   # _pages

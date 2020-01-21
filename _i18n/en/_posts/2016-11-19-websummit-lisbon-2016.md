@@ -10,6 +10,7 @@ categories: [conference]
 tags: [Web Summit]
 place: Lisbon
 lang: en
+show_date: true
 ---
 
 <br>

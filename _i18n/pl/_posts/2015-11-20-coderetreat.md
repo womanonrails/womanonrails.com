@@ -9,6 +9,7 @@ categories: [warsztaty]
 tags: [coderetreat]
 place: Kraków
 lang: pl
+show_date: true
 ---
 
 W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu – [Global Day of Coderetreat](https://www.coderetreat.org/) w Krakowie. **Coderetreat** to szczególny dzień w roku, w którym programiści poświęcają swój czas nie tyle tworzeniu nowych funkcjonalności, ale skupiają się na **kodzie dobrej jakości**. Jest to dzień, w którym zatrzymujemy się na chwilę, by poświęcić czas na bycie lepszym programistą/programistką.

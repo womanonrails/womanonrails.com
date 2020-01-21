@@ -3,14 +3,7 @@ layout: home
 ---
 {% if site.paginate %}
   {% for post in paginator.posts %}
-    {% assign categories = post.categories | categories_filter %}
-    {% if site.wpm %}
-    {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
-    {% else %}
-    {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
-    {% endif %}
-    {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
-    {% assign posttime = post.date | date: "%Y%m%d" %}
+      {% assign categories = post.categories | categories_filter %}
       {% if post.type == 'quote' %}
       <div class="row">
               <article class="post col-md-10 col-md-offset-1">
@@ -75,6 +68,8 @@ layout: home
                           </li>
                       </ul>
                       <div class="post-info text-center small">
+                          {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
+                          {% assign posttime = post.date | date: "%Y%m%d" %}
                           Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
                           in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
                           <div class="post-body bordered-bottom"></div>
@@ -97,8 +92,8 @@ layout: home
                 {% endif %}
                 </h2>
                 <div class="post-info text-center small">
-                    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                    in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                  {% include category-link.html %}
+                  {% include read-time.html %}
                 </div>
               </header>
               <div class="post-body bordered-bottom">
@@ -143,8 +138,8 @@ layout: home
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
-                          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                        {% include category-link.html %}
+                        {% include read-time.html %}
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
@@ -178,8 +173,8 @@ layout: home
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
-                          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                        {% include category-link.html %}
+                        {% include read-time.html %}
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
@@ -237,9 +232,6 @@ layout: home
 {% endif %}
 {% else %}
   {% for post in site.posts %}
-    {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
-    {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
-    {% assign posttime = post.date | date: "%Y%m%d" %}
       {% if post.type == 'quote' %}
       <div class="row">
               <article class="post col-md-10 col-md-offset-1">
@@ -304,6 +296,8 @@ layout: home
                           </li>
                       </ul>
                       <div class="post-info text-center small">
+                          {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
+                          {% assign posttime = post.date | date: "%Y%m%d" %}
                           Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
                           in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
                           <div class="post-body bordered-bottom"></div>
@@ -325,8 +319,8 @@ layout: home
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
-                          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                        {% include category-link.html %}
+                        {% include read-time.html %}
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
@@ -372,8 +366,8 @@ layout: home
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
-                          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                        {% include category-link.html %}
+                        {% include read-time.html %}
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
@@ -407,8 +401,8 @@ layout: home
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
-                          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
+                        {% include category-link.html %}
+                        {% include read-time.html %}
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">

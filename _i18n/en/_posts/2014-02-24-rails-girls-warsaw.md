@@ -9,6 +9,7 @@ categories: [workshops]
 tags: [Rails Girls, Ruby on Rails]
 place: Warsaw
 lang: en
+show_date: true
 ---
 
 Date: *2014-02-22 – 2014-02-23*<br>

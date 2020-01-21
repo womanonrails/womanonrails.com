@@ -10,6 +10,7 @@ categories: [konferencja]
 tags: [Web Summit]
 place: Lizbona
 lang: pl
+show_date: true
 ---
 
 <br>

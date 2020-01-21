@@ -10,6 +10,7 @@ categories: [hakaton]
 tags: [hack4good]
 place: Kraków
 lang: pl
+show_date: true
 ---
 
 <br>
