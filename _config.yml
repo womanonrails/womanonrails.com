@@ -33,7 +33,7 @@ title: Woman on Rails
 
 
 owner:
-  name: Agnieszka Matysek
+  name: Agnieszka Małaszkiewicz
   avatar: womanonrails-square.svg
   email: please-do-not-spam-me@womanonrails.com
   description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
@@ -44,6 +44,9 @@ owner:
   instagram: *author
   stackoverflow: https://stackoverflow.com/users/2885676/womanonrails
 
+affiliate_links:
+  amazon: womanonrails-21
+  helion: 10301k
 
 disqus_shortname: womanonrails
 # Assign a default image for your site's header and footer

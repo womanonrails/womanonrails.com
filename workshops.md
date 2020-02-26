@@ -51,11 +51,11 @@ I will share my knowledge and experience with you. I will show you what a good c
 <div class="row">
   <div class="col-md-6">
     <figure>
-      <img src="/images/workshops/agnieszka_matysek.jpg" alt="Agnieszka Matysek - Woman on Rails">
+      <img src="/images/workshops/agnieszka.jpg" alt="{{ site.owner.name }} - Woman on Rails">
     </figure>
   </div>
   <div class="col-md-6">
-    <h4>Agnieszka Matysek</h4>
+    <h4>{{ site.owner.name }}</h4>
     <p class='text-justify'>
       Mathematician and computer specialist from education perspective. Programmer with passion. I have been working in IT since 2011. I teach others and also develop my own skills to be even better, in what I'm doing right now. During the workshops like <a href="tags/#Rails%20Girls" title='Rails Girls workshops'>Rails Girls</a> or <a href="/tags/#CoderDojo" title="Programming classes CoderDojo">CoderDojo</a> I share my passion with others. I also write technical blog <a href="/" title="Programming from woman perspective">Woman on Rails</a>, where in simple words I explain different programming topics. If you like to know more about me, go to my blog post about <a href="/about" title="How do I became a programmer?"> my way of programming</a>.
     </p>
@@ -152,11 +152,11 @@ Podzielę się z Tobą moim wieloletnim doświadczeniem. Pokażę Ci co sprawia,
 <div class="row">
   <div class="col-md-6">
     <figure>
-      <img src="/images/workshops/agnieszka_matysek.jpg" alt="Agnieszka Matysek - Woman on Rails">
+      <img src="/images/workshops/agnieszka.jpg" alt="{{ site.owner.name }} - Woman on Rails">
     </figure>
   </div>
   <div class="col-md-6">
-    <h4>Agnieszka Matysek</h4>
+    <h4>{{ site.owner.name }}</h4>
     <p class='text-justify'>
       Z wykształcenia matematyk i informatyk, z pasji programistka. Od 2011 roku pracuję w IT, uczę innych i sama rozwijam się, by być jeszcze lepsza w tym co robię. Na warsztatach takich jak <a href="tags/#Rails%20Girls" title='Warsztaty Rails Girls'>Rails Girls</a> czy <a href="/tags/#CoderDojo" title="Zajęcia z programowania CoderDojo">CoderDojo</a> dzielę się swoją pasją z innymi. Prowadzę też bloga technicznego <a href="/pl/" title="Programowanie z kobiecej perspektywy">Woman on Rails</a> gdzie prostymi słowami wyjaśniam różne zagadnienia programistyczne. Chcesz poznać mnie lepiej, to zajrzyj do wpisu o <a href="/pl/about" title="Jak zostałam programistką?">mojej drodze do programowania</a>.
     </p>
