@@ -244,7 +244,7 @@ When I create my classes I try to stick to those rules (and not only them):
 
 If you what to know more about a **good patterns in Ruby** (and not only) check out those books:
 
-- <a href="https://www.amazon.com/Design-Patterns-Ruby-Russ-Olsen/dp/0321490452" title="Design Patterns in Ruby" target="_blank" rel="nofollow noopener noreferrer">Design Patterns in Ruby - Russ Olsen</a>
-- <a href="https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530" title="Test Driven Development: By Example" target="_blank" rel="nofollow noopener noreferrer">Test Driven Development: By Example - Ken Beck</a>
-- <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz</a>
-- <a href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" title="The Pragmatic Programmer: From Journeyman to Master" target="_blank" rel="nofollow noopener noreferrer">The Pragmatic Programmer: From Journeyman to Master - Andrew Hund, David Thomas</a>
+- {% include books/en/design_patterns_in_ruby-russ_olsen.html %}
+- {% include books/en/test_driven_development-ken_beck.html %}
+- {% include books/en/practical_object_oriented_design_in_ruby-sandi_metz.html %}
+- {% include books/en/pragmatic_programmer-andrew_hund_david_thomas.html %}

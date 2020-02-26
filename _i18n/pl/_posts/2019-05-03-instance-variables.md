@@ -244,19 +244,7 @@ Kiedy tworzysz swoje klasy, warto pamiętać o takich prostych zasadach:
 
 Jeżeli jesteś zainteresowana innymi dobrymi praktykami to zachęcam do zerknięcia na poniższe książki:
 
-- {% include helion_book.html
-     key='rubywz'
-     name='Ruby. Wzorce projektowe - Russ Olsen'
-     title='Ruby. Wzorce projektowe'
-  %}
-- {% include helion_book.html
-     key='tddszt'
-     name='TDD. Sztuka tworzenia dobrego kodu - Ken Beck'
-     title='TDD. Sztuka tworzenia dobrego kodu'
-  %}
-- <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz [EN]</a>
-- {% include helion_book.html
-     key='pragpv'
-     name='Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas'
-     title='Pragmatyczny programista. Od czeladnika do mistrza'
-  %}
+- {% include books/pl/design_patterns_in_ruby-russ_olsen.html %}
+- {% include books/pl/test_driven_development-ken_beck.html %}
+- {% include books/pl/practical_object_oriented_design_in_ruby-sandi_metz.html %}
+- {% include books/pl/pragmatic_programmer-andrew_hund_david_thomas.html %}

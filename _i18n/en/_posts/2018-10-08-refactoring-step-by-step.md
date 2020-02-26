@@ -376,15 +376,27 @@ Stay tuned! My next article will come soon! If you like this article share your 
 ### Bibliography
 
 #### Books
-- <a href="https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672" title="Refactoring: Improving the Design of Existing Code" target="_blank" rel="nofollow noopener noreferrer">Refactoring: Improving the Design of Existing Code - Martin Fowler</a>
-- <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" title="Clean Code: A Handbook of Agile Software Craftsmanship" target="_blank" rel="nofollow noopener noreferrer">Clean Code: A Handbook of Agile Software Craftsmanship - Robert C. Martin</a>
-- <a href="http://www.amazon.com/Design-Patterns-Ruby-Russ-Olsen/dp/0321490452" title="Design Patterns in Ruby" target="_blank" rel="nofollow noopener noreferrer">Design Patterns in Ruby - Russ Olsen</a>
-- <a href="https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530" title="Test Driven Development: By Example" target="_blank" rel="nofollow noopener noreferrer">Test Driven Development: By Example - Ken Beck</a>
-- <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz</a>
-- <a href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" title="The Pragmatic Programmer: From Journeyman to Master" target="_blank" rel="nofollow noopener noreferrer">The Pragmatic Programmer: From Journeyman to Master - Andrew Hund, David Thomas</a>
+- {% include books/en/refactoring-martin_fowler.html %}
+- {% include books/en/clean_code-robert_martin.html %}
+- {% include books/en/design_patterns_in_ruby-russ_olsen.html %}
+- {% include books/en/test_driven_development-ken_beck.html %}
+- {% include books/en/practical_object_oriented_design_in_ruby-sandi_metz.html %}
+- {% include books/en/pragmatic_programmer-andrew_hund_david_thomas.html %}
 
 #### Presentations
-- <a href="https://www.youtube.com/watch?v=8bZh5LMaSmE" title="All the Little Things by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">All the Little Things by Sandi Metz</a>
-- <a href="https://www.youtube.com/watch?v=5yX6ADjyqyE" title="Fat Models with Patterns by Bryan Helmkamp" target="_blank" rel="nofollow noopener noreferrer">LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
-- <a href="https://www.youtube.com/watch?v=OMPfEXIlTVE" title="Nothing is something by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">Nothing is something by Sandi Metz</a>
-- <a href="https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks" title="8 best Ruby on Rails refactoring talks" target="_blank" rel="nofollow noopener noreferrer">Best Ruby on Rails refactoring talks</a>
+- <a href='https://www.youtube.com/watch?v=8bZh5LMaSmE'
+     rel='nofollow noopener noreferrer'
+     title='All the Little Things by Sandi Metz'
+     target='_blank'>All the Little Things by Sandi Metz</a>
+- <a href='https://www.youtube.com/watch?v=5yX6ADjyqyE'
+     rel='nofollow noopener noreferrer'
+     title='Fat Models with Patterns by Bryan Helmkamp'
+     target='_blank'>LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
+- <a href='https://www.youtube.com/watch?v=OMPfEXIlTVE'
+     rel='nofollow noopener noreferrer'
+     title='Nothing is something by Sandi Metz'
+     target='_blank'>Nothing is something by Sandi Metz</a>
+- <a href='https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks'
+     rel='nofollow noopener noreferrer'
+     title='8 best Ruby on Rails refactoring talks'
+     target='_blank'>Best Ruby on Rails refactoring talks</a>

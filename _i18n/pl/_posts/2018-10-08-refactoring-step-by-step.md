@@ -376,35 +376,27 @@ Trzymaj się! Mój następny artykuł pojawi się już wkrótce! Jeżeli masz ja
 ### Bibliografia
 
 #### Książki
-- {% include helion_book.html
-     key='refukv'
-     name='Refaktoryzacja. Ulepszanie struktury istniejącego kodu - Martin Fowler'
-     title='Refaktoryzacja. Ulepszanie struktury istniejącego kodu'
-  %}
-- {% include helion_book.html
-     key='czykov'
-     name='Czysty kod. Podręcznik dobrego programisty - Robert C. Martin'
-     title='Czysty kod. Podręcznik dobrego programisty'
-  %}
-- {% include helion_book.html
-     key='rubywz'
-     name='Ruby. Wzorce projektowe - Russ Olsen'
-     title='Ruby. Wzorce projektowe'
-  %}
-- {% include helion_book.html
-     key='tddszt'
-     name='TDD. Sztuka tworzenia dobrego kodu - Ken Beck'
-     title='TDD. Sztuka tworzenia dobrego kodu'
-  %}
-- {% include helion_book.html
-     key='pragpv'
-     name='Pragmatyczny programista. Od czeladnika do mistrza - Andrew Hund, David Thomas'
-     title='Pragmatyczny programista. Od czeladnika do mistrza'
-  %}
-- <a href="https://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330" title="Practical Object-Oriented Design in Ruby: An Agile Primer" target="_blank" rel="nofollow noopener noreferrer">Practical Object-Oriented Design in Ruby: An Agile Primer - Sandi Metz [EN]</a>
+- {% include books/pl/refactoring-martin_fowler.html %}
+- {% include books/pl/clean_code-robert_martin.html %}
+- {% include books/pl/design_patterns_in_ruby-russ_olsen.html %}
+- {% include books/pl/test_driven_development-ken_beck.html %}
+- {% include books/pl/practical_object_oriented_design_in_ruby-sandi_metz.html %}
+- {% include books/pl/pragmatic_programmer-andrew_hund_david_thomas.html %}
 
-#### Prezentacje angielsko języczne
-- <a href="https://www.youtube.com/watch?v=8bZh5LMaSmE" title="All the Little Things by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">All the Little Things by Sandi Metz</a>
-- <a href="https://www.youtube.com/watch?v=5yX6ADjyqyE" title="Fat Models with Patterns by Bryan Helmkamp" target="_blank" rel="nofollow noopener noreferrer">LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
-- <a href="https://www.youtube.com/watch?v=OMPfEXIlTVE" title="Nothing is something by Sandi Metz" target="_blank" rel="nofollow noopener noreferrer">Nothing is something by Sandi Metz</a>
-- <a href="https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks" title="8 best Ruby on Rails refactoring talks" target="_blank" rel="nofollow noopener noreferrer">Best Ruby on Rails refactoring talks</a>
+#### Prezentacje angielskojęzyczne
+- <a href='https://www.youtube.com/watch?v=8bZh5LMaSmE'
+     rel='nofollow noopener noreferrer'
+     title='All the Little Things by Sandi Metz'
+     target='_blank'>All the Little Things by Sandi Metz</a>
+- <a href='https://www.youtube.com/watch?v=5yX6ADjyqyE'
+     rel='nofollow noopener noreferrer'
+     title='Fat Models with Patterns by Bryan Helmkamp'
+     target='_blank'>LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
+- <a href='https://www.youtube.com/watch?v=OMPfEXIlTVE'
+     rel='nofollow noopener noreferrer'
+     title='Nothing is something by Sandi Metz'
+     target='_blank'>Nothing is something by Sandi Metz</a>
+- <a href='https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks'
+     rel='nofollow noopener noreferrer'
+     title='8 best Ruby on Rails refactoring talks'
+     target='_blank'>Best Ruby on Rails refactoring talks</a>
