@@ -76,7 +76,7 @@ b => 2
 c => [3, 4]
 ```
 
-- Suma wszystkich elementów tablicy:
+- Suma wszystkich elementów tablicy (metody `inject` i `reduce` to aliasy):
 
 ```ruby
 array = [1, 2, 3, 4]

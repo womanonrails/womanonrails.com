@@ -76,7 +76,7 @@ b => 2
 c => [3, 4]
 ```
 
-- Sum all elements in Array:
+- Sum all elements in Array (`inject` and `reduce` methods are aliases):
 
 ```ruby
 array = [1, 2, 3, 4]
@@ -87,7 +87,7 @@ array.inject(&:+)
 or
 
 ```ruby
-array.reduce(&:+) (for parallel calculations)
+array.reduce(&:+)
  => 10
 ```
 
