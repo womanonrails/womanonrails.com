@@ -16,28 +16,28 @@ Problem, który opisałam powyżej można rozwiązać na wiele sposobów. Ja om�
 Jest jednak inne rozwiązanie. Możemy użyć komendy `git rebase --onto`. Pozwoli nam ona zrobić dokładnie to czego oczekujemy, czyli pozwoli nam zamienić gałąź rodzicielską od której wyszła nasza bieżąca gałąź. Na schemacie poniżej możesz zobaczyć ułożenie naszych gałęzi przed wywołaniem komendy `git rebase --onto`:
 
 ```
-    A---B---C---D  master
-                \
-                  E---F---G  feature-branch
-                          \
-                            H---I---J current-feature-branch (HEAD)
+A---B---C---D  master
+            \
+              E---F---G  feature-branch
+                      \
+                        H---I---J current-feature-branch (HEAD)
 ```
 
 oraz po jej wywołaniu:
 
 ```
-    A---B---C---D  master
-                |\
-                | E---F---G  feature-branch
-                |
-                 \
-                  H'---I'---J' current-feature-branch (HEAD)
+A---B---C---D  master
+            |\
+            | E---F---G  feature-branch
+            |
+             \
+              H'---I'---J' current-feature-branch (HEAD)
 ```
 
 By zamienić gałąź rodzicielską na gałąź `master` musimy się przełączyć na gałąź `current-feature-branch` (to jest właśnie nasza problematyczna gałąź) i wywołać następującą komendę:
 
 ```bash
-$ git rebase --onto master feature-branch
+git rebase --onto master feature-branch
 ```
 
 I to wszystko. Nasza gałąź `current-feature-branch` wywodzi się teraz od gałęzi `master`, właśnie o to nam chodziło.
@@ -45,7 +45,7 @@ I to wszystko. Nasza gałąź `current-feature-branch` wywodzi się teraz od ga�
 Na koniec chciałabym jeszcze powiedzieć dwie rzeczy. Po pierwsze: Jeżeli chcesz dostosować polecenie `git rebase --onto` do swoich potrzeb, to tak wygląda jego ogólne wytłumaczenie dla pokazanego problemu:
 
 ```bash
-$ git rebase --onto new-parent old-parent
+git rebase --onto new-parent old-parent
 ```
 
 Po drugie, jak pewnie zauważyłaś na schemacie po wykonaniu polecenia `git rebase --onto` nie mamy dostępu do dokładnie tych samych zmian co przedtem. Kod w naszych zatwierdzonych zmianach pozostaje taki sam, jednak zmienia się unikalny identyfikator każdej zmiany, czyli jego **SHA** (np. `2d4698b`). Wszystko będzie dobrze jeżeli sama pracujesz na problematycznej gałęzi. Tak było w moim przypadku. Sprawa zaczyna się komplikować, gdy na gałęzi pracują też inne osoby w zespole. Może to powodować problemy. Identyfikatory zmian u Ciebie lokalnie, a także na zdalnym repozytorium, będą inne niż u reszty Twojego zespołu. Pamiętaj o tym, zanim użyjesz polecenia `git rebase --onto`, ponieważ przykładowo może to doprowadzić do zniknięcia części zmian z repozytorium.

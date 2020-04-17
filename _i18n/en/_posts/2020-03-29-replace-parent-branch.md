@@ -16,22 +16,22 @@ The problem which I described above, can be resolved in at least two ways. First
 There is another solution. We can use `git rebase --onto` command. It can do exactly what we need. Replace the old parent branch with new parent branch. In our case with master branch. This is like our branches tree looks like:
 
 ```
-    A---B---C---D  master
-                \
-                  E---F---G  feature-branch
-                          \
-                            H---I---J current-feature-branch (HEAD)
+A---B---C---D  master
+            \
+              E---F---G  feature-branch
+                      \
+                        H---I---J current-feature-branch (HEAD)
 ```
 
 and this is what we would like to achieve:
 
 ```
-    A---B---C---D  master
-                |\
-                | E---F---G  feature-branch
-                |
-                 \
-                  H'---I'---J' current-feature-branch (HEAD)
+A---B---C---D  master
+            |\
+            | E---F---G  feature-branch
+            |
+             \
+              H'---I'---J' current-feature-branch (HEAD)
 ```
 
 To replace parent branch with `master`, we need to be on `current-feature-branch` branch and do:
