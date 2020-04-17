@@ -8,7 +8,8 @@ tags: [environment, Linux]
 lang: en
 ---
 
-This is first episode about programs which I use. I think, finally it will be few this kind entries. To day I would like to start talking about [Guake](http://guake.org/).
+This is first episode about programs which I use. I think, finally it will be few this kind entries. To day I would like to start talking about
+{% include links/external-link.html name='Guake' url='http://guake-project.org/' %}.
 
 ## But first what is Guake?
 

@@ -15,7 +15,7 @@ show_date: true
 
 <br>
 
-Zajęło mi trochę czasu od ostatniego postu. Tak wiele się wydarzyło: eventy, warsztaty, podróże. Na szczęście jestem z powrotem! Dzisiaj chciałabym się podzielić w Wami moimi spostrzeżeniami dotyczącymi wydarzenia [Web Summit](https://websummit.net/). Jest to ogromna konferencja (a w zasadzie wystawa/targi nowych pomysłów). Kilka lat temu miałam przyjemność uczestniczyć w tej konferencji w [Dublinie]({{ site.baseurl }}/websummit). Tym razem Web Summit odbywał się w Lizbonie. Zdecydowałam się przyjechać ze względu na darmowy bilet, który dostałam jako kobieta w IT. Może właśnie z tego powodu nie powinnam mówić o tym, co mi się nie podobało. Choć jak się tak nad tym dłużej zastanowić, to w jaki sposób można coś poprawić, jeżeli nie wie się, co było nie tak?
+Zajęło mi trochę czasu od ostatniego postu. Tak wiele się wydarzyło: eventy, warsztaty, podróże. Na szczęście jestem z powrotem! Dzisiaj chciałabym się podzielić w Wami moimi spostrzeżeniami dotyczącymi wydarzenia {% include links/external-link.html name='Web Summit' url='https://websummit.net/' %}. Jest to ogromna konferencja (a w zasadzie wystawa/targi nowych pomysłów). Kilka lat temu miałam przyjemność uczestniczyć w tej konferencji w [Dublinie]({{ site.baseurl }}/websummit). Tym razem Web Summit odbywał się w Lizbonie. Zdecydowałam się przyjechać ze względu na darmowy bilet, który dostałam jako kobieta w IT. Może właśnie z tego powodu nie powinnam mówić o tym, co mi się nie podobało. Choć jak się tak nad tym dłużej zastanowić, to w jaki sposób można coś poprawić, jeżeli nie wie się, co było nie tak?
 
 1. **Za duża konferencja dla mnie**
 

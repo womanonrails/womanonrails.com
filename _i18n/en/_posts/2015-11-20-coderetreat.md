@@ -12,11 +12,15 @@ lang: en
 show_date: true
 ---
 
-In last Saturday I was on [Global Day of Coderetreat](https://www.coderetreat.org/) in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.
+In last Saturday I was on
+{% include links/external-link.html name='Global Day of Coderetreat' url='https://www.coderetreat.org/' %}
+in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.
 
 ## How looks this Coderetreat day?
 
-All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In each session we try resolved [Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) problem. This is very simple problem but in Coderetreat main goal is not solving this problem but focus on process and code quality. One session take 45 minutes and then we have 15 minutes to discuss and sum what we did and how we did. Through all sessions we do **ping pong pair programing** with some constrains. Pair programming because we work in pairs, ping pong because we change keyboard between people. One person writes test, second writes code and first one does refactoring. Now it is time to say something about constrains. They can be very different. Some of them are easy, some are very hard. Below are all constrains form Coderetreat day in this year.
+All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In each session we try resolved
+{% include links/external-link.html name='Game of life' url='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' %}
+problem. This is very simple problem but in Coderetreat main goal is not solving this problem but focus on process and code quality. One session take 45 minutes and then we have 15 minutes to discuss and sum what we did and how we did. Through all sessions we do **ping pong pair programing** with some constrains. Pair programming because we work in pairs, ping pong because we change keyboard between people. One person writes test, second writes code and first one does refactoring. Now it is time to say something about constrains. They can be very different. Some of them are easy, some are very hard. Below are all constrains form Coderetreat day in this year.
 
 1. **No primitives** – Wrap all primitives and strings
 
@@ -24,7 +28,11 @@ All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In 
 
 2. **Functional programming**
 
-    All code is not mutable. Every method get some argument and return results – like function in math. In this case methods cannot modifies object state. For me this session was session out of my comfort zone. First time in my life I wrote code in [LiveScript](http://livescript.net/). This language is very similar to [CoffeeScript](https://coffeescript.org/), so it was nice to try other alternative. After this session I realized how easy was testing code like that. You call methods and only check if result equal to something.
+    All code is not mutable. Every method get some argument and return results – like function in math. In this case methods cannot modifies object state. For me this session was session out of my comfort zone. First time in my life I wrote code in
+    {% include links/external-link.html name='LiveScript' url='https://livescript.net/' %}.
+    This language is very similar to
+    {% include links/external-link.html name='CoffeeScript' url='https://coffeescript.org/' %},
+    so it was nice to try other alternative. After this session I realized how easy was testing code like that. You call methods and only check if result equal to something.
 
 3. **Tell don’t ask** – No getter, no setter, no properties
 
@@ -32,11 +40,13 @@ All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In 
 
 4. **3 minutes circles**
 
-    We had only 3 minutes for finish one TDD circle. Test, code, refactoring. If we don’t finish at time we must remove all code for this one circle. This session helps me to understand that in work we sometime think about one big problem. We have lot of useless code, which don’t work because “it is not finished yet”. I can say that in this session we worked in small [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) (Minimum Viable Product) session. After each 3 minutes we have working functionality. It was small functionality but it’s working.
+    We had only 3 minutes for finish one TDD circle. Test, code, refactoring. If we don’t finish at time we must remove all code for this one circle. This session helps me to understand that in work we sometime think about one big problem. We have lot of useless code, which don’t work because “it is not finished yet”. I can say that in this session we worked in small
+    {% include links/external-link.html name='MVP' url='https://en.wikipedia.org/wiki/Minimum_viable_product' %}
+    (Minimum Viable Product) session. After each 3 minutes we have working functionality. It was small functionality but it’s working.
 
 5. **No loops, no conditions**
 
-    In this session I wrote code in [JavaScript ES6](http://es6-features.org/) (out of my comfort zone). We don’t suppose to use any loops and any conditions. This session was the hardest session for me. We use loops and condition many time per day. We even don’t realize how often we use this two tools. You can use recursion instead of loops but how stop recursion without conditions? This wasn’t easy task. I really liked this challenge. This was out of the box thinking session.
+    In this session I wrote code in JavaScript ES6 (out of my comfort zone). We don’t suppose to use any loops and any conditions. This session was the hardest session for me. We use loops and condition many time per day. We even don’t realize how often we use this two tools. You can use recursion instead of loops but how stop recursion without conditions? This wasn’t easy task. I really liked this challenge. This was out of the box thinking session.
 
 6. **Silent session**
 

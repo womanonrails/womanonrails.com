@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'cgi'
+require 'html-proofer'
 
 DOMAIN = File.read('CNAME').strip.freeze
 URL = "https://#{DOMAIN}"
@@ -66,14 +67,20 @@ desc 'Notify various services about new content'
 task notify: %i[pingomatic sitemapgoogle sitemapbing pingpubsubhubbub] do
 end
 
-# rake html
-task :html do
-  require 'html-proofer'
-  sh 'htmlproofer --assume-extension ./_site'
+desc 'Run htmlproofer'
+task :htmlproofer do
+  sh 'htmlproofer --assume-extension --empty-alt-ignore ./_site'
   # options = { assume_extension: true }
   # HTMLProofer.check_directory('./_site', options).run
 rescue
-  puts '...'
+  puts 'OK'
+end
+
+desc 'Run htmlproofer and check external links'
+task :external_links do
+  sh 'htmlproofer --external_only ./_site'
+rescue
+  puts 'OK'
 end
 
 task default: [:notify]

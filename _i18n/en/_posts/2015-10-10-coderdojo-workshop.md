@@ -17,6 +17,10 @@ Ones a week I’m teaching others at **CoderDojo** workshops. CoderDojo is a pla
 
 **BTW we are looking for new mentors.** All people which like this CoderDojo idea are welcome to come. You don’t have to know all this IT staff. All you need is to be positive and want to learn new skill and teach others. **I encourage everyone to try.** I truly recommend to see what this young people can do. It is amazing. They are even smarter then we are. They have their own passion and want to share this with others. And this is beautiful.
 
-If you like to see how classes look like just come to us or watch our [video](https://www.youtube.com/watch?v=G_tTBd_ei3s).
+If you like to see how classes look like just come to us or watch our
+{% include links/youtube-link.html name='video' video_id='G_tTBd_ei3s' %}.
 
-If you are interested in CoderDojo workshop you can also find more information on [https://coderdojo.com/](https://coderdojo.com/) or [https://coderdojo.org.pl/](https://coderdojo.org.pl/)
+If you are interested in CoderDojo workshop you can also find more information on
+{% include links/external-link.html name='coderdojo.com' url='https://coderdojo.com/' %}
+or
+{% include links/external-link.html name='coderdojo.org.pl' url='https://coderdojo.org.pl/' %}.

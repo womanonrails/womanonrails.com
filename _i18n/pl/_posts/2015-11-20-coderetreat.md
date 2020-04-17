@@ -12,11 +12,15 @@ lang: pl
 show_date: true
 ---
 
-W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu – [Global Day of Coderetreat](https://www.coderetreat.org/) w Krakowie. **Coderetreat** to szczególny dzień w roku, w którym programiści poświęcają swój czas nie tyle tworzeniu nowych funkcjonalności, ale skupiają się na **kodzie dobrej jakości**. Jest to dzień, w którym zatrzymujemy się na chwilę, by poświęcić czas na bycie lepszym programistą/programistką.
+W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu –
+{% include links/external-link.html name='Global Day of Coderetreat' url='https://www.coderetreat.org/' %}
+w Krakowie. **Coderetreat** to szczególny dzień w roku, w którym programiści poświęcają swój czas nie tyle tworzeniu nowych funkcjonalności, ale skupiają się na **kodzie dobrej jakości**. Jest to dzień, w którym zatrzymujemy się na chwilę, by poświęcić czas na bycie lepszym programistą/programistką.
 
 ## Jak wygląda taki Coderetreat?
 
-Cały dzień podzielony jest na 6-7 sesji kodowania. W naszym przypadku było ich dokładnie 6. W każdej z tych sesji staramy się rozwiązać problem [Gry w życie](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Jest to dość prosty problem, ale rozwiązanie go nie jest głównym celem Coderetreat. Ważniejszy jest sposób dojścia do rozwiązania. Każda sesja trwa 45 minut, po czym następuje 15 minut podsumowania tego, co zostało zrobione i w jaki sposób. Przez wszystkie sesje procujemy w trybie **ping pong pair porgramming** z narzuconymi pewnymi ograniczeniami. Pair programming ponieważ pracujemy w parach, ping pong bo zmieniamy się przy klawiaturze. Pierwsza osoba pisze test, druga pisze kod a później pierwsza robi refaktoryzację. Teraz nadszedł czas by powiedzieć coś na temat ograniczeń. Mogą być one na prawdę różne. Jedne są prostsze a inne trudniejsze. Poniżej zamieszczam Wam ograniczenia, jakie mieliśmy podczas naszych sesji.
+Cały dzień podzielony jest na 6-7 sesji kodowania. W naszym przypadku było ich dokładnie 6. W każdej z tych sesji staramy się rozwiązać problem
+{% include links/external-link.html name='Gry w życie' url='https://pl.wikipedia.org/wiki/Gra_w_%C5%BCycie' %}.
+Jest to dość prosty problem, ale rozwiązanie go nie jest głównym celem Coderetreat. Ważniejszy jest sposób dojścia do rozwiązania. Każda sesja trwa 45 minut, po czym następuje 15 minut podsumowania tego, co zostało zrobione i w jaki sposób. Przez wszystkie sesje procujemy w trybie **ping pong pair porgramming** z narzuconymi pewnymi ograniczeniami. Pair programming ponieważ pracujemy w parach, ping pong bo zmieniamy się przy klawiaturze. Pierwsza osoba pisze test, druga pisze kod a później pierwsza robi refaktoryzację. Teraz nadszedł czas by powiedzieć coś na temat ograniczeń. Mogą być one na prawdę różne. Jedne są prostsze a inne trudniejsze. Poniżej zamieszczam Wam ograniczenia, jakie mieliśmy podczas naszych sesji.
 
 1. **Bez typów prymitywnych** – opakuj wszystkie typy prymitywne i ciągi znaków
 
@@ -24,7 +28,11 @@ Cały dzień podzielony jest na 6-7 sesji kodowania. W naszym przypadku było ic
 
 2. **Programowanie funkcyjne**
 
-    Nasz cały kod nie mógł być mutowalny, to znaczy że stanu obiektu nie mógł się zmieniać wewnątrz metody. Czy pamiętacie funkcje z matematyki? One zawsze dostawały jakiś argument i zwracały wartość. Tak było też podczas tej sesji. Dodatkowo tym razem ustawiałam sobie poprzeczkę jeszcze wyżej. Nie programowałam w Ruby ale w [LiveScript](https://livescript.net/). Było to moje pierwsze zetknięcie z tym językiem. Jest on bardzo podobny do [CoffeeScript](https://coffeescript.org/), więc ciekawie było go spróbować. Podczas tej sesji zwróciłam szczególną uwagę na to, jak prosto testuje się takie matematyczne metody. Wystarczy sprawdzić, co zostaje zwrócone dla konkretnych argumentów i koniec.
+    Nasz cały kod nie mógł być mutowalny, to znaczy że stanu obiektu nie mógł się zmieniać wewnątrz metody. Czy pamiętacie funkcje z matematyki? One zawsze dostawały jakiś argument i zwracały wartość. Tak było też podczas tej sesji. Dodatkowo tym razem ustawiałam sobie poprzeczkę jeszcze wyżej. Nie programowałam w Ruby ale w
+    {% include links/external-link.html name='LiveScript' url='https://livescript.net/' %}.
+    Było to moje pierwsze zetknięcie z tym językiem. Jest on bardzo podobny do
+    {% include links/external-link.html name='CoffeeScript' url='https://coffeescript.org/' %},
+    więc ciekawie było go spróbować. Podczas tej sesji zwróciłam szczególną uwagę na to, jak prosto testuje się takie matematyczne metody. Wystarczy sprawdzić, co zostaje zwrócone dla konkretnych argumentów i koniec.
 
 3. **Rozkazuj, nie proś** – brak właściwości, brak metod ustawiających i odczytujących pola obiektu (setter, getter)
 
@@ -32,11 +40,13 @@ Cały dzień podzielony jest na 6-7 sesji kodowania. W naszym przypadku było ic
 
 4. **3 minutowe cykle**
 
-    W bieżącej sesji mieliśmy tylko 3 minuty by zakończyć jeden cykl TDD. Test, kod, refaktoring. Jeżeli nie udało nam się zakończyć całego cyklu, musieliśmy usunąć wszystko, co w tym cyklu zrobiliśmy i zacząć cykl od nowa. Ta sesja pozwoliła mi zrozumieć, że często w pracy chcemy od razu ogarnąć cały problem. Tworzymy ogrom jeszcze nie użytecznego kodu, tu trochę tam trochę, wszędzie panuje bałagan bo przecież “to nie jest jeszcze skończone”. Czasem jednak warto podejść do problemy za pomocą [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) (Minimum Vable Product). Małe elementy, które działają już teraz. Tak było właśnie w tej sesji. Po każdych 3 minutach mieliśmy gotową działającą małą cząstkę oprogramowania. Malutką ale działającą.
+    W bieżącej sesji mieliśmy tylko 3 minuty by zakończyć jeden cykl TDD. Test, kod, refaktoring. Jeżeli nie udało nam się zakończyć całego cyklu, musieliśmy usunąć wszystko, co w tym cyklu zrobiliśmy i zacząć cykl od nowa. Ta sesja pozwoliła mi zrozumieć, że często w pracy chcemy od razu ogarnąć cały problem. Tworzymy ogrom jeszcze nie użytecznego kodu, tu trochę tam trochę, wszędzie panuje bałagan bo przecież “to nie jest jeszcze skończone”. Czasem jednak warto podejść do problemy za pomocą
+    {% include links/external-link.html name='MVP' url='https://en.wikipedia.org/wiki/Minimum_viable_product' %}
+    (Minimum Vable Product). Małe elementy, które działają już teraz. Tak było właśnie w tej sesji. Po każdych 3 minutach mieliśmy gotową działającą małą cząstkę oprogramowania. Malutką ale działającą.
 
 5. **Brak pętli, brak warunków**
 
-    Podczas tej sesji pisałam kod w [JavaScript ES6](http://es6-features.org/) (poza moją strefą komfortu). Tym razem nie mogliśmy używać ani warunków ani pętli. To była dla mnie najtrudniejsza sesja. Każdego dnia podczas pisania kodu wielokrotnie korzystamy z pętli i warunków. Nawet nie zdajemy sobie sprawy, jak często. Zamiast pętli można wykorzystać rekurencję tylko jak wyznaczyć warunek zatrzymania? To nie było takie trywialne. Bardzo przydało się w tym momencie myślenie całkowicie poza schematem. Sesja ta dała mi dużo do myślenia.
+    Podczas tej sesji pisałam kod w JavaScript ES6 (poza moją strefą komfortu). Tym razem nie mogliśmy używać ani warunków ani pętli. To była dla mnie najtrudniejsza sesja. Każdego dnia podczas pisania kodu wielokrotnie korzystamy z pętli i warunków. Nawet nie zdajemy sobie sprawy, jak często. Zamiast pętli można wykorzystać rekurencję tylko jak wyznaczyć warunek zatrzymania? To nie było takie trywialne. Bardzo przydało się w tym momencie myślenie całkowicie poza schematem. Sesja ta dała mi dużo do myślenia.
 
 6. **Milcząca sesja**
 

@@ -49,8 +49,8 @@ Kiedy nasz umysł jest naszym wrogiem:
 <br>
 Mam nadzieję, że czytanie tego wpisu sprawiło wam przyjemność. Jeżeli macie jakieś pytania lub sugestie – napiszcie komentarz. Dziękuję za poświęcony czas. Na koniec zamieszczam jeszcze odnośniki do prezentacji, które ciągle mnie inspirują w tym temacie.
 
-- [Lavendaire](https://www.youtube.com/watch?v=yIxjC4T_f0U)
-- [Mimi Ikonn](https://www.youtube.com/watch?v=M1LZqN9O-cA)
-- [Life is easy. Why do we make it so hard?](https://www.youtube.com/watch?v=21j_OCNLuYg)
-- [Unconditional positive regard](https://www.youtube.com/watch?v=4tkkL9w2pw8)
-- [Imposter syndrome [PL]](https://www.youtube.com/watch?v=lK-_D2QikME)
+- {% include links/youtube-link.html name='Lavendaire [EN]' video_id='yIxjC4T_f0U' %}
+- {% include links/youtube-link.html name='Mimi Ikonn [EN]' video_id='M1LZqN9O-cA' %}
+- {% include links/youtube-link.html name='Life is easy. Why do we make it so hard? [EN]' video_id='21j_OCNLuYg' %}
+- {% include links/youtube-link.html name='Unconditional positive regard [EN]' video_id='4tkkL9w2pw8' %}
+- {% include links/youtube-link.html name='Imposter syndrome' video_id='lK-_D2QikME' %}

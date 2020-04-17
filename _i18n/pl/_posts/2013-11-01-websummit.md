@@ -13,7 +13,8 @@ show_date: true
 Data: *30-31 października 2013*<br>
 Miejsce: *Dublin, Irlandia*
 
-Dzisiaj chciałabym opowiedzieć Wam trochę o konferencji [Web Summit](https://websummit.com/). Było to drugie wydarzenie w jakim uczestniczyłam w Dublinie pod koniec października.
+Dzisiaj chciałabym opowiedzieć Wam trochę o konferencji Web Summit.
+Było to drugie wydarzenie w jakim uczestniczyłam w Dublinie pod koniec października.
 
 ## Jak się tam znalazłam?
 

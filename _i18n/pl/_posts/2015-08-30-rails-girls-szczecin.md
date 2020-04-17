@@ -20,7 +20,7 @@ W poprzedni weekend miałam przyjemność być trzeci raz mentorem na **Rails Gi
 
 OK, ale przecież wielokrotnie byłam już mentorem na warsztatach **Rails Girls**. Dlaczego właśnie o tych warsztatach piszę?
 
-To było dla mnie ciekawe doświadczenie ponieważ oprócz mentorowania zrobiłam coś jeszcze. Stworzyłam swój pierwszy filmik. Rezultaty mojej twórczości możesz zobaczyć [tutaj](https://www.youtube.com/watch?v=UVAF7ndEJyE).
+To było dla mnie ciekawe doświadczenie ponieważ oprócz mentorowania zrobiłam coś jeszcze. Stworzyłam swój pierwszy filmik. Rezultaty mojej twórczości możesz zobaczyć
+{% include links/youtube-link.html name='tutaj' video_id='UVAF7ndEJyE' %}.
 
 Jeżeli masz jakieś pytania lub komentarze zostaw je poniżej. Pozdrawiam i do następnego razu!
-

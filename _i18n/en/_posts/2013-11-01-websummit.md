@@ -13,7 +13,8 @@ show_date: true
 Date: *October 30-31, 2013*<br>
 Place: *Dublin, IE*
 
-Today I will tell you something about [Web Summit](http://www.websummit.net/). This was the second event I participated in Dublin at the end of October.
+Today I will tell you something about Web Summit.
+This was the second event I participated in Dublin at the end of October.
 
 ## How did I get there?
 

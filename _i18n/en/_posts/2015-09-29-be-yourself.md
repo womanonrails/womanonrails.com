@@ -49,8 +49,8 @@ When you mind is your enemy:
 <br>
 I hope you enjoy reading this article. If you have some questions or suggestions, please live your comments below. Thank you for your time. On the end I set links connect to this topic, which inspire me all the time.
 
-- [Lavendaire](https://www.youtube.com/watch?v=yIxjC4T_f0U)
-- [Mimi Ikonn](https://www.youtube.com/watch?v=M1LZqN9O-cA)
-- [Life is easy. Why do we make it so hard?](https://www.youtube.com/watch?v=21j_OCNLuYg)
-- [Unconditional positive regard](https://www.youtube.com/watch?v=4tkkL9w2pw8)
-- [Imposter syndrome [PL]](https://www.youtube.com/watch?v=lK-_D2QikME)
+- {% include links/youtube-link.html name='Lavendaire' video_id='v=yIxjC4T_f0U' %}
+- {% include links/youtube-link.html name='Mimi Ikonn' video_id='M1LZqN9O-cA' %}
+- {% include links/youtube-link.html name='Life is easy. Why do we make it so hard?' video_id='21j_OCNLuYg' %}
+- {% include links/youtube-link.html name='Unconditional positive regard' video_id='4tkkL9w2pw8' %}
+- {% include links/youtube-link.html name='Imposter syndrome [PL]' video_id='lK-_D2QikME' %}

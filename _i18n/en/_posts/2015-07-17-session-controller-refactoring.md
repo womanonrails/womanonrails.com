@@ -147,7 +147,9 @@ Next we can think about
 @user && @user.authenticate(user_params[:password])
 ```
 
-If you not seen I recommend to look on **Sandi Metz** presentation about **Null Object Pattern** ([RailsConf 2015 – Nothing is Something](https://www.youtube.com/watch?v=29MAL8pJImQ)). We can here create something like `TrustedUser` and use everywhere objects without checking `nil`. Then we can come back to simply `render` and set token in `create` method. Let’s we see how this can look.
+If you not seen I recommend to look on **Sandi Metz** presentation about **Null Object Pattern**
+({% include links/youtube-link.html name='RailsConf 2015 – Nothing is Something' video_id='29MAL8pJImQ' %}).
+We can here create something like `TrustedUser` and use everywhere objects without checking `nil`. Then we can come back to simply `render` and set token in `create` method. Let’s we see how this can look.
 
 ```ruby
 class SessionsController < ApplicationController

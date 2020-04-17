@@ -149,7 +149,9 @@ Natępnie możemy zastanowić się nad warunkiem:
 @user && @user.authenticate(user_params[:password])
 ```
 
-Jeżeli nie widzieliście prezentacji **Sandi Metz** na temat **Null Object Pattern** to polecam ([RailsConf 2015 – Nothing is Something](https://www.youtube.com/watch?v=29MAL8pJImQ)). Możemy stworzyć klasę `TrustedUser` i używać wszędzie tego obiektu bez sprawdzania czy mamy przyjemność z `nil`. Dalej możemy przenieść z powrotem metodę `render` i ustawiania tokenu do metody `create`. Zobaczmy jak nasz kod wygląda po zmianach:
+Jeżeli nie widzieliście prezentacji **Sandi Metz** na temat **Null Object Pattern** to polecam
+({% include links/youtube-link.html name='RailsConf 2015 – Nothing is Something' video_id='29MAL8pJImQ' %}).
+Możemy stworzyć klasę `TrustedUser` i używać wszędzie tego obiektu bez sprawdzania czy mamy przyjemność z `nil`. Dalej możemy przenieść z powrotem metodę `render` i ustawiania tokenu do metody `create`. Zobaczmy jak nasz kod wygląda po zmianach:
 
 ```ruby
 class SessionsController < ApplicationController

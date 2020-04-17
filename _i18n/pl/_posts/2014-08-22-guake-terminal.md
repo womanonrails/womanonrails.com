@@ -8,7 +8,8 @@ tags: [środowisko programistyczne, Linuks]
 lang: pl
 ---
 
-To jest pierwszy odcinek z cyklu: *“Programy, których używam”*. Myślę, że takich wpisów powstanie kilka. Dzisiaj chciałabym opowiedzieć kilka słów o programie [Guake](http://guake.org/).
+To jest pierwszy odcinek z cyklu: *“Programy, których używam”*. Myślę, że takich wpisów powstanie kilka. Dzisiaj chciałabym opowiedzieć kilka słów o programie
+{% include links/external-link.html name='Guake' url='http://guake-project.org/' %}.
 
 ## Na początek co to jest?
 
