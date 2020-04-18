@@ -1,12 +1,14 @@
 ---
 layout: post
+type: photo
+photo: git-rebase-onto/git-rebase-onto-header.png
 title: Jak używać git rebase --onto?
 description: Usuwanie zmian z bieżącej gałęzi lub zmiana gałęzi rodzicielskiej
 headline: Premature optimization is the root of all evil.
 categories: [narzędzia]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
-imagefeature: (...)
+imagefeature: git-rebase-onto/git-rebase-onto.png
 ---
 
 W artykule o <a href="{{ site.baseurl }}/replace-parent-branch" title="Jak podmienić gałąź rodzica w git-cie?">podmianie gałęzi rodzica w git-cie</a> pokazałam Ci jedno z zastosowań komendy `git rebase --onto`. Dziś skupimy się na zgłębieniu tematu, bo jest o czym mówić. Im lepiej zrozumiesz to polecenie tym łatwiej będzie Ci go w przyszłości użyć. Zapraszam!
@@ -17,7 +19,7 @@ Istnieją dwa przypadki, w których `git rebase --onto` może się przydać:
 
 Oczywiście możesz te dwa powody ze sobą połączyć i podmienić gałąź rodzica w tym samym momencie, gdy usuwasz zmiany. Dojdziemy do tego. Najpierw jednak ważne jest zrozumienie różnicy w wywołaniu `git rebase --onto` z dwoma lub trzeba argumentami.
 
-Zacznijmy jednak od małej powtórki. Omówimy sobie pokrótce czym jest `git rebase`. Jeśli będziesz zainteresowana dodatkowymi informacjami o <a href="{{ site.baseurl }}/git-rebase" title="Jak używać git rebase?">git rebase</a>, to odsyłam Cię do mojego osobnego artykuł na ten temat.
+Zacznijmy jednak od małej powtórki. Omówimy sobie pokrótce czym jest `git rebase`. Jeśli będziesz zainteresowana dodatkowymi informacjami o <a href="{{ site.baseurl }}/git-rebase" title="Jak używać git rebase?">git rebase</a>, to odsyłam Cię do osobnego artykułu na ten temat.
 
 ## Git rebase
 
@@ -40,7 +42,7 @@ A---B---C---F---G (HEAD master)   A---B---C---F---G (master)
 
 Jak widać powyżej po wykonaniu komendy `git rebase` nasz `HEAD` wędruje zawsze na gałąź, która była zdefiniowana jako ostatni argument. W naszym przypadku jest to gałąź `next-feature`. Możemy powiedzieć, że przełączyłyśmy się na gałąź `next-feature`. Po wykonaniu `git rebase` dalej mamy dostęp do wszystkich zmian jakie były na gałęzi `next-feature` przed jej wykonaniem, jednak nie są to dokładnie te same zmiany. Kod, który się tam znajduje jest identyczny. Zmieniły się natomiast identyfikatory zmian wygenerowane przez kryptograficzną funkcję skrótu **SHA-1** (`dce79fd`), które często w skrócie  określamy jako **SHA**. To dlatego na schemacie powyżej zmiany te zostały zaznaczone jako `D'` i `E'`.
 
-Gdy jesteśmy na gałęzi, na której chcemy wykonać `git rebase` możemy pominąć drugi argument komendy a efekt końcowy będzie taki sam. Komenda:
+Gdy jesteśmy na gałęzi, na której chcemy wykonać `git rebase` możemy pominąć drugi argument komendy, a efekt końcowy będzie taki sam. Komenda:
 
 <pre>
 git rebase master
@@ -55,7 +57,7 @@ A---B---C---F---G (master)          A---B---C---F---G (master)
           D---E (HEAD next-feature)                   D'---E' (HEAD next-feature)
 </pre>
 
-W obu przypadkach na gałęzi `master` były dwie dodatkowe zmiany `F` i `G`, które nie były dostępne z poziomu gałęzi `next-feature`. Wykonując polecenie `git rebase` bierzemy zmianę `D`, która jest pierwszą zmiana na gałęzi `next-feature` wraz z resztą zmian na tej gałęzi i przenosimy/przesuwamy je ponad/powyżej ostatnią zmianę na gałęzi `master`, czyli ponad zmianę `G`. W przypadku schematów pokazywanych w tym artykule lepiej będzie użyć sformułowania _przesuwamy zmiany na koniec gałęzi `master`_. Warto jednak pamiętać, że korzystając z narzędzi takich jak `git log` nasze zmiany będziemy widzieć nad zmianami z gałęzi `master`. Mówiąc jeszcze inaczej zmieniamy rodzica naszej gałęzi `next-feature` ze zmiany `C` na zmianę `G`.
+W obu przypadkach na gałęzi `master` były dwie dodatkowe zmiany `F` i `G`, które nie były dostępne z poziomu gałęzi `next-feature`. Wykonując polecenie `git rebase` bierzemy zmianę `D`, która jest pierwszą zmianą na gałęzi `next-feature` wraz z resztą zmian na tej gałęzi i przenosimy/przesuwamy je ponad/powyżej ostatnią zmianę na gałęzi `master`, czyli ponad zmianę `G`. W przypadku schematów pokazywanych w tym artykule lepiej będzie użyć sformułowania _przesuwamy zmiany na koniec gałęzi `master`_. Warto jednak pamiętać, że korzystając z narzędzi takich jak `git log` nasze zmiany będziemy widzieć nad zmianami z gałęzi `master`. Mówiąc jeszcze inaczej zmieniamy rodzica naszej gałęzi `next-feature` ze zmiany `C` na zmianę `G`.
 
 ## Git rebase --onto
 

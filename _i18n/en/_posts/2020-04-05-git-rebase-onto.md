@@ -1,12 +1,14 @@
 ---
 layout: post
+type: photo
+photo: git-rebase-onto/git-rebase-onto-header.png
 title: Git rebase --onto an overview
 description: Removing commits from a current branch or changing parent branch.
 headline: Premature optimization is the root of all evil.
 categories: [tools]
 tags: [environment, git, version control system]
 lang: en
-imagefeature: (...)
+imagefeature: git-rebase-onto/git-rebase-onto.png
 ---
 
 In article <a href="{{ site.baseurl }}/replace-parent-branch" title="How to set git parent pointer to a different parent?">How to change parent branch in git?</a> I talked quickly about using `git rebase --onto` in a case when you want to replace the current parent branch. But `git rebase --onto` is more than just replacing parent branch. We can do much more with `git rebase --onto` help. It's a good topic to take a look closely. To use it freely first, you need to understand it.
