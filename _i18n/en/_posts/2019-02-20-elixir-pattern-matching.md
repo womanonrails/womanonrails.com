@@ -8,7 +8,9 @@ tags: [Elixir]
 lang: en
 ---
 
-Elixir is a functional language, created by José Valim in 2012, runs on the Erlang virtual machine. If you want to know more about Elixir, go to its <a href="https://elixir-lang.org/" title="Elixir - official website" target="_blank" rel="nofollow noopener noreferrer">official website</a>. I would like to mention one more thing. It is Rails and Ruby reference here. José is one of the members of Rails Core Team.
+Elixir is a functional language, created by José Valim in 2012, runs on the Erlang virtual machine. If you want to know more about Elixir, go to its
+{% include links/external-link.html name='Elixir - official website' url='https://elixir-lang.org/' %}.
+I would like to mention one more thing. It is Rails and Ruby reference here. José is one of the members of Rails Core Team.
 
 The first time when I've heard about Elixir, I was on Euruko 2016 in Sofia. José, before his presentation, talked a little bit about Elixir. Then I saw that Ruby community started to be more interested in Elixir. Even in Silesia, people started doing projects in Elixir and Phoenix. And in the end of 2018, I had a possibility to be a participant on first Elixir Girls in Poland. This workshop took a place in Poznan. It was a fantastic experience. I can say - mind opening. But I wouldn't like to talk about the workshops them self. The structure is very similar to <a href="{{ site.baseurl }}/tags/#Rails%20Girls" title="My previous Rails Girls articles">Rails Girls</a>, but you use Elixir and Phoenix instead of Ruby and Rails. I would like to show you what I really like about Eilixir - **pattern matching**. It provides reducing numbers of "if" statements in the code and simplify the code structure.
 

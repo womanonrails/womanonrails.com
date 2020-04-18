@@ -30,7 +30,11 @@ Na wejście kod dostawał tekst. Później następowało usunięcie białych zna
 
   2. **Walidacja tylko ostatniej części naszego tekstu** - Gdy przyjrzymy się bliżej zauważymy, że podając na wejście `"aaa@excom, bbb@ex.com"` dane zostaną potraktowane jako poprawne. Natomiast gdy odwrócimy kolejność `"bbb@ex.com, aaa@excom"` już nie.
 
-Co tu się dzieje? By lepiej zrozumieć problem dobrze jest sprawdzić różne przypadki zachowania danych wejściowych dla wybranego przez nas wyrażenia regularnego. Można to zrobić za pomocą interaktywnej konsoli Rubiego lub używając jakiegoś narzędzia. Ja często używam i również polecam <a href="https://rubular.com/" title="Rubular - regular expressions" target="_blank" rel="nofollow noopener noreferrer">Rubular</a>. Jest to prosta stronka internetowa, gdzie łatwo można sprawdzić działanie swoich wyrażeń regularnych.
+Co tu się dzieje? By lepiej zrozumieć problem dobrze jest sprawdzić różne przypadki zachowania danych wejściowych dla wybranego przez nas wyrażenia regularnego. Można to zrobić za pomocą interaktywnej konsoli Rubiego lub używając jakiegoś narzędzia. Ja często używam i również polecam
+{% include links/external-link.html
+   name='Rubular - Ruby regular expression editor'
+   url='https://rubular.com/' %}.
+Jest to prosta stronka internetowa, gdzie łatwo można sprawdzić działanie swoich wyrażeń regularnych.
 
 <figure>
   <a href="{{ site.baseurl_root }}/images/email-regular-expressions/rubular.png"><img src="{{ site.baseurl_root }}/images/email-regular-expressions/rubular.png" title="Rubular - wyrażenia regularne" alt="Dopasowywanie do wyrażenia regularnego"></a>

@@ -143,7 +143,8 @@ array
 
 You will use `each` iterator each time when the calculations are the most important part of your code. You are not interested in what `each` will return and in most cases you don't want to change an initial object.
 
-At the end of this section I will add one more thing. There are different types of `each`. For example: `each_char`, `each_line`, `each_with_index` or <a href="{{ site.baseurl }}/each-with-object" title="How to use each_with_object method?">`each_with_object`</a>. You can use them in a different context for specific purposes. If you are interested in more details, please check <a href='https://ruby-doc.org/' title='Documentation for the Ruby programming language' target='_blank' rel='nofollow noopener'>Ruby documentation</a>.
+At the end of this section I will add one more thing. There are different types of `each`. For example: `each_char`, `each_line`, `each_with_index` or <a href="{{ site.baseurl }}/each-with-object" title="How to use each_with_object method?">`each_with_object`</a>. You can use them in a different context for specific purposes. If you are interested in more details, please check
+{% include links/external-link.html name='Ruby documentation' url='https://ruby-doc.org/' %}.
 
 ### Map / collect
 

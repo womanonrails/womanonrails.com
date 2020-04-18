@@ -152,7 +152,16 @@ OK, so what we can do about burnout syndrome? How we can help ourselves or our f
 Now I would like to ask you: Did you ever had burnout syndrome? How did you deal with it? Maybe you have someone around you that suffer from it? Feel free to share your thoughts with me in a comment section below. If you think this article can help someone you know, spread it around the world. It will also help me a lot to hit the right people. Thanks!
 
 #### Bibliography
-- <a href="https://www.who.int/mental_health/evidence/burn-out/en/" title="World Health Organization about burnout syndrome" target="_blank" rel="nofollow noopener noreferrer">WHO - Burn-out an "occupational phenomenon"</a>
-- <a href="https://en.wikipedia.org/wiki/Occupational_burnout" title="Wikipedia about burnout syndrome" target="_blank" rel="nofollow noopener noreferrer">Wikipedia - Occupational burnout</a>
-- <a href="http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html" title="Instytut Psychologii Zdrowia about burnout syndrome" target="_blank" rel="nofollow noopener noreferrer">[PL] Jak Feniks z popiołów czyli syndrom wypalenia zawodowego</a>
-- <a href="https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/" title="Programmer about burnout syndrome" target="_blank" rel="nofollow noopener noreferrer">[PL] Podcast episode about occupation burnout syndrome by Maciej Aniserowicz</a>
+
+- {% include links/external-link.html
+     name='World Health Organization about burn-out an "occupational phenomenon"'
+     url='https://www.who.int/mental_health/evidence/burn-out/en/' %}
+- {% include links/external-link.html
+     name='Wikipedia about burnout syndrome'
+     url='https://en.wikipedia.org/wiki/Occupational_burnout' %}
+- {% include links/external-link.html
+     name='Jak Feniks z popiołów czyli syndrom wypalenia zawodowego [PL]'
+     url='http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html' %}
+- {% include links/external-link.html
+     name='Podcast episode about occupation burnout syndrome by Maciej Aniserowicz [PL]'
+     url='https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/' %}

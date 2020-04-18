@@ -154,8 +154,16 @@ Teraz chyba najważniejsze pytanie. Co możemy zrobić by zapobiec lub poradzić
 Na koniec chciałabym Ci zadać kilka pytań: Czy kiedykolwiek zmagałaś się z syndromem wypalenia zawodowego? Jak sobie poradziłaś? Co pomogło? A może masz kogoś bliskiego kogo wypalenie zawodowe dotknęło? Podziel się swoimi przemyśleniami w komentarzach poniżej. A jeżeli uznasz, że ten artykuł może pomóc komuś z Twojego otoczenia, po prostu podziel nim z tą osobą. Dziękuje!
 
 #### Bibliografia
-- <a href="https://www.who.int/mental_health/evidence/burn-out/en/" title="Międzynarodowa Ogranizacja Zdrowia na temat syndromu wypalenia zawodowego" target="_blank" rel="nofollow noopener noreferrer">[EN] WHO - Burn-out an "occupational phenomenon"</a>
-- <a href="https://en.wikipedia.org/wiki/Occupational_burnout" title="Wikipedia na temat syndromu wypalenia zawodowego" target="_blank" rel="nofollow noopener noreferrer">[EN] Wikipedia - Occupational burnout</a>
-- <a href="http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html" title="Instytut Psychologii Zdrowia na temat syndromu wypalenia zawodowego" target="_blank" rel="nofollow noopener noreferrer">Jak Feniks z popiołów czyli syndrom wypalenia zawodowego</a>
-- <a href="https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/" title="Syndrom wypalenia zawodowego z perspektywy programisty" target="_blank" rel="nofollow noopener noreferrer">DevTalk #63: O Wypaleniu Zawodowym z Arturem Królem</a>
 
+- {% include links/external-link.html
+     name='World Health Organization about burn-out an "occupational phenomenon" [EN]'
+     url='https://www.who.int/mental_health/evidence/burn-out/en/' %}
+- {% include links/external-link.html
+     name='Wikipedia about burnout syndrome [EN]'
+     url='https://en.wikipedia.org/wiki/Occupational_burnout' %}
+- {% include links/external-link.html
+     name='Jak Feniks z popiołów czyli syndrom wypalenia zawodowego'
+     url='http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html' %}
+- {% include links/external-link.html
+     name='DevTalk #63: O Wypaleniu Zawodowym z Arturem Królem'
+     url='https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/' %}

@@ -17,4 +17,7 @@ show_date: true
 Date: *2016-01-29 17:00 – 2016-01-31 19:00*<br>
 Place: *Cieszyn, PL*
 
-I really love doing things connecting in technology. This time I was participant in [Global Game Jam](https://globalgamejam.org/) in Cieszyn. This was my third time. **What is Global Game Jam?** This is 48 hours hackaton for people which would like to create games. And each year I'm impressed of ideas, talent and projects realization. You can see more [here](https://www.youtube.com/watch?v=-g4BbTNCgck).
+I really love doing things connecting in technology. This time I was participant in
+{% include links/external-link.html name='Global Game Jam' url='https://globalgamejam.org/' %}
+in Cieszyn. This was my third time. **What is Global Game Jam?** This is 48 hours hackathon for people which would like to create games. And each year I'm impressed of ideas, talent and projects realization. You can see more
+{% include links/youtube-link.html name='here' video_id='-g4BbTNCgck' %}.

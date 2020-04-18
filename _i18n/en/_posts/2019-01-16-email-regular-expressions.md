@@ -30,7 +30,11 @@ The input for this code was just a string. We remove all space between parts of 
 
   2. **Validation only the last part of string** - When we look closely we will see this problem. When we put as input: `"aaa@excom, bbb@ex.com"` it will be valid. And when we put `"bbb@ex.com, aaa@excom"` it won't.
 
-What is going on? To see that kind of problems, it is good to check how our regular expression behaves for different edge cases in console or in some tool. I use and recommend <a href="https://rubular.com/" title="Rubular - regular expressions" target="_blank" rel="nofollow noopener noreferrer">Rubular</a>. At least for Ruby people. It is simple, but very useful website where you can check your regular expression.
+What is going on? To see that kind of problems, it is good to check how our regular expression behaves for different edge cases in console or in some tool. I use and recommend
+{% include links/external-link.html
+   name='Rubular - Ruby regular expression editor'
+   url='https://rubular.com/' %}.
+At least for Ruby people. It is simple, but very useful website where you can check your regular expression.
 
 <figure>
   <a href="{{ site.baseurl_root }}/images/email-regular-expressions/rubular.png"><img src="{{ site.baseurl_root }}/images/email-regular-expressions/rubular.png" title="Rubular - regular expressions" alt="Matching of regular expression"></a>

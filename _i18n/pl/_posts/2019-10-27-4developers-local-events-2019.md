@@ -29,7 +29,11 @@ Tak jak pisałam na wstępie, mam dla Ciebie dobra wiadomość. Zniżkę na zaku
 
 #### Jak wygrać darmowy bilet na 4Developer w Poznaniu?
 
-Jesteś gotowa na jeszcze jedną dobra wiadomość? Możesz wygrać darmową wejściówkę na lokalną edycję 4Developers w Poznaniu, która odbędzie się 18-go listopada w hotelu Novotel & ibis Poznań. Więcej informacji na temat wydarzenia <a href='https://4developers.org.pl/poznan-2019/' title='4Developers Poznań 2019' target='_blank' rel='nofollow noopener'>tutaj</a>. By wziąć udział w konkursie należy:
+Jesteś gotowa na jeszcze jedną dobra wiadomość? Możesz wygrać darmową wejściówkę na lokalną edycję 4Developers w Poznaniu, która odbędzie się 18-go listopada w hotelu Novotel & ibis Poznań. Więcej informacji na temat wydarzenia
+{% include links/external-link.html
+   name='tutaj'
+   url='https://4developers.org.pl/poznan-2019/' %}.
+By wziąć udział w konkursie należy:
 
 1. Polubić stronę <a href='https://www.facebook.com/107403177317825/' title='Woman on Rails Facebook page' target='_blank' rel='nofollow noopener'>Woman on Rails na Facebooku</a>
 2. W komentarzu do tego artykułu odpowiedz na pytanie: **Dlaczego chcesz wziąć udział w 4Developers w Poznaniu?** Minimalna ilość znaków to 512.

@@ -25,7 +25,10 @@ This is not 8. It is 6. You can see here that multiplication is _stronger_ then 
  => 8
 ```
 
-OK, but how will I know that? There are many different operators. Well, you need to remember the table of operators order, from <a href="https://ruby-doc.org/core-2.2.0/doc/syntax/precedence_rdoc.html" title="Ruby documentation - operators precedence" target="_blank" rel="nofollow noopener noreferrer">Ruby docs</a>:
+OK, but how will I know that? There are many different operators. Well, you need to remember the table of operators order, from
+{% include links/external-link.html
+   name='Ruby documentation - operators precedence'
+   url='https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html' %}:
 
 ```ruby
 !, ~, unary +

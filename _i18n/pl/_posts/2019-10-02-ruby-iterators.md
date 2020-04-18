@@ -143,7 +143,8 @@ array
 
 Iteratora `each` będziesz używać za każdym razem, gdy najważniejszą rzeczą w Twoim fragmencie logiki będą same kalkulacje. Nie będzie dla Ciebie istotne, co zostaje zwrócone z `each` i nie chcesz zmieniać początkowego obiektu na jakim iterator `each` został wywołany.
 
-Na koniec tej sekcji chciałabym powiedzieć jeszcze jedną rzecz. W języku Ruby występuje wiele typów iteratora `each` dla różnych obiektów. Przykładowo: `each_char`, `each_line`, `each_with_index` czy <a href="{{ site.baseurl }}/each-with-object" title="Jak używać metody each_with_object?">`each_with_object`</a>. Możesz ich używać w różnych kontekstach. Jeżeli jesteś zainteresowana większą ilością informacji na ich temat, to zachęcam do skorzystania z <a href='https://ruby-doc.org/' title='Dokumentacja dla języka Ruby' target='_blank' rel='nofollow noopener'>dokumentacji języka Ruby</a>.
+Na koniec tej sekcji chciałabym powiedzieć jeszcze jedną rzecz. W języku Ruby występuje wiele typów iteratora `each` dla różnych obiektów. Przykładowo: `each_char`, `each_line`, `each_with_index` czy <a href="{{ site.baseurl }}/each-with-object" title="Jak używać metody each_with_object?">`each_with_object`</a>. Możesz ich używać w różnych kontekstach. Jeżeli jesteś zainteresowana większą ilością informacji na ich temat, to zachęcam do skorzystania z
+{% include links/external-link.html name='dokumentacji języka Ruby' url='https://ruby-doc.org/' %}.
 
 ### Map / collect
 

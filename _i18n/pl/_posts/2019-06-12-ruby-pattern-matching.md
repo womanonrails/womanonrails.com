@@ -151,7 +151,11 @@ irb> c
 
 ## Pattern matching dla klasy Hash w Ruby
 
-Kiedy mówimy o dopasowaniu do wzorca dla klasy `Hash` musimy pamiętać, że obecnie istnieje tylko wsparcie dla tablic słownikowych o kluczach w postaci symboli. Klucze w postaci łańcuchów znaków lub bardziej skomplikowanych obiektów nie są jeszcze wspierane. Jeżeli chciałabyś wiedzieć więcej na temat problemów dotyczących klasy `Hash` odsyłam Cię do <a href="https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7" title="Pattern matching w Ruby 2.7" target="_blank" rel="nofollow noopener noreferrer">prezentacji Kazuki Tsujimoto</a> na temat _Pattern matching w Ruby_.
+Kiedy mówimy o dopasowaniu do wzorca dla klasy `Hash` musimy pamiętać, że obecnie istnieje tylko wsparcie dla tablic słownikowych o kluczach w postaci symboli. Klucze w postaci łańcuchów znaków lub bardziej skomplikowanych obiektów nie są jeszcze wspierane. Jeżeli chciałabyś wiedzieć więcej na temat problemów dotyczących klasy `Hash` odsyłam Cię do
+{% include links/external-link.html
+   name='prezentacji Kazuki Tsujimoto'
+   url='https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7' %}
+na temat _Pattern matching w Ruby_.
 
 Zacznijmy od prostego przykładu:
 

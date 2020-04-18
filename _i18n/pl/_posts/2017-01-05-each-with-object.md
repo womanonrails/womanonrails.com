@@ -8,7 +8,11 @@ tags: [Ruby]
 lang: pl
 ---
 
-Ostatnio pracowałam z metodą `each_with_object`. Jak zazwyczaj w takich sytuacjach zawsze staram się przed użyciem jakiejś metody sprawdzić jej dokumentację. Weszłam więc na [APIdock](https://apidock.com/ruby/v1_9_2_180/Enumerable/each_with_object) przeglądam zastosowanie oraz przykłady. Okazało się że nie było tam jednego z przypadków zastosowania. Chciałam go dodać, lecz bez powodzenia. Postanowiłam więc, że skoro czekam na rozwiązanie problemu ze strony APIdock mogę napisać krótką notatkę na temat metody `each_with_object` tutaj.
+Ostatnio pracowałam z metodą `each_with_object`. Jak zazwyczaj w takich sytuacjach zawsze staram się przed użyciem jakiejś metody sprawdzić jej dokumentację. Weszłam więc na
+{% include links/external-link.html
+   name='APIdock'
+   url='https://apidock.com/ruby/Enumerable/each_with_object' %}
+przeglądam zastosowanie oraz przykłady. Okazało się że nie było tam jednego z przypadków zastosowania. Chciałam go dodać, lecz bez powodzenia. Postanowiłam więc, że skoro czekam na rozwiązanie problemu ze strony APIdock mogę napisać krótką notatkę na temat metody `each_with_object` tutaj.
 
 Najbardziej pożytecznym i wydaje mi się również popularnym użyciem tej metody jest podanie jako argumentu tablicy lub hasha (tablicy słownikowej). Można to zrobić przykładowo:
 
@@ -98,7 +102,10 @@ lub w Ruby on Rails:
  => 55
 ```
 
-Przy okazji czy wiecie jaka jest różnica między metodą `reduce` a `inject`? Nie ma różnicy. Te dwie metody to tak naprawdę jedna i ta sama metoda, ale mająca dwie nazwy tzw. [alias](http://ruby-doc.org/core-2.4.0/Enumerable.html#method-i-inject).
+Przy okazji czy wiecie jaka jest różnica między metodą `reduce` a `inject`? Nie ma różnicy. Te dwie metody to tak naprawdę jedna i ta sama metoda, ale mająca dwie nazwy tzw.
+{% include links/external-link.html
+   name='alias'
+   url='http://ruby-doc.org/core/Enumerable.html#method-i-inject' %}.
 
 W tym momencie powinniśmy jeszcze wspomnieć o jednej rzeczy. Metodę `inject` możemy stosować też bardzo podobnie do `each_with_object`. Różnica jest w kolejności argumentów w bloku i tym że w ostatniej linii bloku dla metody `inject` zawsze musimy zwrócić naszą wartość agregującą (przykładowo sumującą). Popatrzcie tutaj:
 

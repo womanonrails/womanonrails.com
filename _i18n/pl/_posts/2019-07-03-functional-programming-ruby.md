@@ -626,13 +626,24 @@ irb> (1..Float::INFINITY).lazy.select(&:even?).first(5)
  => [2, 4, 6, 8, 10]
 ```
 
-Jeżeli chciałabyś dowiedzieć się o nich czegoś więcej, to odsyłam Cię do <a href="https://ruby-doc.org/core-2.5.0/Enumerator/Lazy.html" title="Dokumentacja języka Ruby dla leniwych enumeratorów [EN]" target="_blank" rel="nofollow noopener noreferrer">dokumentacji leniwych enumeratorów</a>
+Jeżeli chciałabyś dowiedzieć się o nich czegoś więcej, to odsyłam Cię do
+{% include links/external-link.html
+   name='dokumentacji leniwych enumeratorów'
+   url='https://ruby-doc.org/core/Enumerator/Lazy.html' %}.
 
 To wszystko na dzisiaj. Mam nadzieję, że Cię to zainteresowało. Jeżeli masz jakieś pytania, to umieść je w komentarzu na dole. Do zobaczenia!
 
 ## Bibliografia:
 
-- <a href="https://www.youtube.com/watch?v=VBC-G6hahWA" title="Wideo o programowaniu funkcyjnym w Ruby" target="_blank" rel="nofollow noopener noreferrer">An Introduction to Procs, Lambdas and Closures in Ruby - Wideo</a>
-- <a href="https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242" title="Prezentacja o programowaniu funkcyjnym w Ruby" target="_blank" rel="nofollow noopener noreferrer">Functional Programming with Ruby</a>
-- <a href="https://innig.net/software/ruby/closures-in-ruby" title="Artykuł na temat domknięć w Ruby" target="_blank" rel="nofollow noopener noreferrer">Closures in Ruby</a>
-- <a href="https://ruby-doc.org/" title="Dokumentacja języka Ruby" target="_blank" rel="nofollow noopener noreferrer">Dokumentacja Ruby</a>
+- {% include links/youtube-link.html
+     name='Wideo o programowaniu funkcyjnym (Proc, Lambda, Closure) w Ruby [EN]'
+     video_id='VBC-G6hahWA' %}
+- {% include links/external-link.html
+     name='Prezentacja o programowaniu funkcyjnym w Ruby [EN]'
+     url='https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242' %}
+- {% include links/external-link.html
+     name='Artykuł na temat domknięć w Ruby [EN]'
+     url='https://innig.net/software/ruby/closures-in-ruby' %}
+- {% include links/external-link.html
+     name='Dokumentacja Ruby [EN]'
+     url='https://ruby-doc.org/' %}

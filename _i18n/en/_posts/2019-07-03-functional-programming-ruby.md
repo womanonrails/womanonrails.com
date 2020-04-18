@@ -626,14 +626,24 @@ irb> (1..Float::INFINITY).lazy.select(&:even?).first(5)
  => [2, 4, 6, 8, 10]
 ```
 
-If you want more information about them, check out <a href="https://ruby-doc.org/core-2.5.0/Enumerator/Lazy.html" title="Ruby documentation for lazy enumerators" target="_blank" rel="nofollow noopener noreferrer">Lazy enumerator documentation</a>.
-
+If you want more information about them, check out
+{% include links/external-link.html
+   name='Lazy enumerator documentation'
+   url='https://ruby-doc.org/core/Enumerator/Lazy.html' %}.
 
 That's all for today. I hope you like it. If you have any questions put them in the comments below. I will try to answer them. See you next time!
 
 ## Bibliography
 
-- <a href="https://www.youtube.com/watch?v=VBC-G6hahWA" title="Video about functional programming concepts in Ruby" target="_blank" rel="nofollow noopener noreferrer">An Introduction to Procs, Lambdas and Closures in Ruby - Video</a>
-- <a href="https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242" title="Presentation about functional programming in Ruby" target="_blank" rel="nofollow noopener noreferrer">Functional Programming with Ruby</a>
-- <a href="https://innig.net/software/ruby/closures-in-ruby" title="Article about closures in Ruby" target="_blank" rel="nofollow noopener noreferrer">Closures in Ruby</a>
-- <a href="https://ruby-doc.org/" title="Ruby documentation" target="_blank" rel="nofollow noopener noreferrer">Ruby documentation</a>
+- {% include links/youtube-link.html
+     name='An Introduction video about Procs, Lambdas and Closures in Ruby'
+     video_id='VBC-G6hahWA' %}
+- {% include links/external-link.html
+     name='Presentation about functional programming in Ruby'
+     url='https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242' %}
+- {% include links/external-link.html
+     name='Article about closures in Ruby'
+     url='https://innig.net/software/ruby/closures-in-ruby' %}
+- {% include links/external-link.html
+     name='Ruby documentation'
+     url='https://ruby-doc.org/' %}

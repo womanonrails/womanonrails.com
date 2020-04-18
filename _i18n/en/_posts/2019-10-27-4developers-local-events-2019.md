@@ -29,7 +29,9 @@ As I mention in the beginning I had good news for you. I have a discount for bot
 
 #### How to win a free ticket for 4Developers in Poznan?
 
-Do you want even more good news? You can win a free ticket for the Poznan edition of the 4Developers conference. The conference is on 18th of November in Novotel & ibis Poznan Hotel. You can find more details about the event <a href='https://4developers.org.pl/poznan-2019/' title='4Developers Poznan 2019' target='_blank' rel='nofollow noopener'>here</a>. To take a part in this contest you need to:
+Do you want even more good news? You can win a free ticket for the Poznan edition of the 4Developers conference. The conference is on 18th of November in Novotel & ibis Poznan Hotel. You can find more details about the event
+{% include links/external-link.html name='here' url='https://4developers.org.pl/poznan-2019/' %}.
+To take a part in this contest you need to:
 
 1. Like <a href="https://www.facebook.com/107403177317825/" title='Woman on Rails Facebook page' target='_blank' rel='nofollow noopener'>Woman on Rails page on Facebook</a>
 2. Answer the question: **Why do you want to go to 4Developers in Poznan?** in the Polish comments section for <a href="{{ site.baseurl }}/pl/4developers-local-events-2019" title='4Developers - local events'>Lokalne edycje konferencji 4Developers 2019</a> article. With a minimum of 512 characters.

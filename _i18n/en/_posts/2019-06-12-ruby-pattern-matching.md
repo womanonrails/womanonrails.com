@@ -151,7 +151,11 @@ irb> c
 
 ## Pattern matching in Hash
 
-When we talk about pattern matching in Hash, you need to know that right now it will work only for **Hashes where keys are symbols**. It will not work for strings. You can find more about the reasons and problems related with string syntax for hashes in <a href="https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7" title="Pattern matching in Ruby 2.7" target="_blank" rel="nofollow noopener noreferrer">Kazuki Tsujimoto presenation</a> about _Pattern matching in Ruby_.
+When we talk about pattern matching in Hash, you need to know that right now it will work only for **Hashes where keys are symbols**. It will not work for strings. You can find more about the reasons and problems related with string syntax for hashes in
+{% include links/external-link.html
+   name='Kazuki Tsujimoto presenation'
+   url='https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7' %}
+about _Pattern matching in Ruby_.
 
 Let's start with something simple:
 
