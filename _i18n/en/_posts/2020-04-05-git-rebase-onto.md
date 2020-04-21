@@ -77,7 +77,7 @@ The effect will look like this:
 Before                                    After
 A---B---C---F---G (branch)                A---B---C---F---G (branch)
          \                                             \
-          D---E---H---I (HEAD my-branch)                E'---H' (HEAD my-branch)
+          D---E---H---I (HEAD my-branch)                E'---H'---I' (HEAD my-branch)
 </pre>
 
 We rebase the commit reachable from `HEAD` (`my-branch`) where parent commit is `D` on top of the `F` commit. So, we can say that we change the parent of commit `E` from `D` to `F`.
@@ -85,7 +85,6 @@ We rebase the commit reachable from `HEAD` (`my-branch`) where parent commit is 
 The same effect, we will get when we call:
 
 <pre>
-git rebase --onto F D HEAD
 git rebase --onto F D my-branch
 </pre>
 
@@ -107,6 +106,12 @@ A---B---C---F---G (branch)                A---B---C---F---G (branch)
 </pre>
 
 As in the normal `git rebase` we switch `HEAD` to the last argument of `git rebase --onto` command. In this case, this is a commit `I'`. We see that our branch `my-branch` stayed like it was before. Nothing has changed on the `my-branch`. But we have new _branch_ which is our new `HEAD`. Right now it is not the real branch, but we can name it. What happened here? We told git that we change the parent of commit `E`. You can think: _"But, why commit `E`? We don't have the commit `E` in our command."_ Since the current parent is the commit `D`, then its child is the commit `E`. So we change the parent of commit `E` from `D` to `F`, but we also switch `HEAD` from branch `my-branch` to the new commit `I'`.
+
+The same effect, we will get when we call:
+
+<pre>
+git rebase --onto F D HEAD
+</pre>
 
 A similar situation is when we want to switch `HEAD` to commit `H`. We will use the command:
 

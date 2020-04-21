@@ -77,15 +77,14 @@ A tak wygląda to na schemacie:
 Before                                    After
 A---B---C---F---G (branch)                A---B---C---F---G (branch)
          \                                             \
-          D---E---H---I (HEAD my-branch)                E'---H' (HEAD my-branch)
+          D---E---H---I (HEAD my-branch)                E'---H'---I' (HEAD my-branch)
 </pre>
 
 Przesuwamy zmiany dostępne z poziomu `HEAD`, czyli naszego `my-branch`, gdzie starą zmianą rodzicielską było `D`, na nową zmianę rodzicielską `F`.  Możemy też powiedzieć, że zmieniamy rodzica zmiany `E` z `D` na `F`.
 
-Taki sam efekt uzyskamy korzystając z poleceń:
+Taki sam efekt uzyskamy korzystając z polecenia:
 
 <pre>
-git rebase --onto F D HEAD
 git rebase --onto F D my-branch
 </pre>
 
@@ -107,6 +106,12 @@ A---B---C---F---G (branch)                A---B---C---F---G (branch)
 </pre>
 
 Podobnie jak w przypadku `git rebase` bez dodatkowych parametrów, tu też przełączamy `HEAD` na ostatni argument wywołania komendy `git rebase --onto`. Widzimy, że nasza gałąź `my-branch` pozostała nienaruszona, natomiast `HEAD` znajduje się na nowej wersji zmiany `I`. Nie jest to jeszcze nazwana gałąź, ale jeżeli chcemy możemy ją nazwać. Zastanówmy się teraz, co tu się stało. Nasze polecenie `git rebase --onto F D I` sprawia, że zmieniamy rodzica zmiany `E`. Można tu się zastanowić dlaczego właściwie zmiany `E`? Przecież zmiana ta nie występuje nigdzie w poleceniu. Jest to pewnego rodzaju podmiot domyślny. Skoro bieżącym rodzicem jest zmiana `D`, to jest ona rodzicem dla zmiany `E`. W skrócie możemy powiedzieć, że `git rebase --onto F D I` zmieni rodzica zmiany `E` ze zmiany `D` na `F`. Dodatkowo przełączy nasz `HEAD` na zmianę `I`.
+
+Taki sam efekt uzyskamy korzystając z polecenia:
+
+<pre>
+git rebase --onto F D HEAD
+</pre>
 
 Podobna sytuacja ma miejsce, gdy chcemy na przykład przełączyć `HEAD` na zmianę `H`. Tak będzie wtedy wyglądać komenda:
 
