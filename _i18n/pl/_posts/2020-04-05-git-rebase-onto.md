@@ -150,8 +150,8 @@ git rebase --onto B D
 Co daje nam:
 
 <pre>
-Before                                    After
-A---B---C---D---E---F (HEAD my-branch)    A---B---E'---F' (HEAD)
+Before                                 After
+A---B---C---D---E---F (HEAD branch)    A---B---E'---F' (HEAD branch)
 </pre>
 
 W tym przypadku mówimy _przenieś `HEAD` nad zmianę `B`, gdzie starą zmianą rodzicielską była zmiana `D`_. Taki sam efekt uzyskamy za pomocą:
