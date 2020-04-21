@@ -157,7 +157,6 @@ A---B---C---D---E---F (HEAD my-branch)    A---B---E'---F' (HEAD)
 In this example, we say rebase `HEAD` on top of commit `B`, where the old parent branch was a commit `D`. The same effect, we will get for:
 
 <pre>
-git rebase --onto B D HEAD
 git rebase --onto B D my-branch
 </pre>
 
