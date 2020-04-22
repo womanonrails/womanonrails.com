@@ -1,28 +1,34 @@
 ---
 layout: post
 title: Co to jest git?
-description: Git - podstawy
+description: Podstawy narzedzia Git. Dlaczego używamy git-a?
 headline: My code is getting worse, please send more chocolate
 categories: [narzędzia]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
 ---
 
-Chciałabym z Wami zacząć dzisiaj krótką serię 2-3 artykułów na temat **Gita**. To będzie naprawdę podstawa. W Internecie jest wiele różnego rodzaju kursów na temat Gita. A ja nie chciałabym robić kolejnego. Jeżeli chciałybyście dowiedzieć się czegoś więcej na ten temat, osobiście mogę polecić 2 kursy na temat Gita z CodeSchool. Możecie zacząć [tutaj](https://www.codeschool.com/courses/try-git).
+Jeżeli interesuje Cię programowanie, to prawdopodobnie słyszałaś już nazwę **Git** przynajmniej kilka razy. Może nawet więcej niż kilka razy. Git to narzędzie, którego używają programiści i programistki niezależnie od tego w jakim języku programowania pracują. To jedno z tych podstawowych narzędzi, które naprawdę warto znać. Między innymi dlatego napisałam cykl artykułów na temat narzędzia git. W Internecie możesz znaleźć wiele kursów czy artykułów mówiących o tym jak używać git-a. Ja chciałabym się skupić przede wszystkim na zrozumieniu dlaczego warto go stosować, jak on działa i co można za jego pomocą zrobić. Nie przedłużając, dziś zajmiemy się  zrozumieniem czym jest git i jak może nam pomóc w codziennej, programistycznej pracy. No to zaczynamy!
 
-Nie będę tutaj podawać definicji tego czym jest Git, bo możecie ją znaleźć na [wiki](https://en.wikipedia.org/wiki/Git_(software)) czy w [dokumentacji Gita](https://git-scm.com/documentation). Powiem tylko, że git to **system kontroli wersji**. Teraz zajmiemy się zrozumieniem do czego można wykorzystać Gita i dlaczego jest to naprawdę świetne narzędzie.
+## Co to jest git?
 
-Czy zdarzają się Wam sytuacje, w których pracujecie wspólnie z innymi nad tymi samymi plikami? Sytuacje takie jak: projekt zespołowy w szkole, na uczelni? Może jakaś duża aplikacja internetowa? Prezentacja lub raport dla szefa? Lub inne zadanie, gdzie każdy w zespole ma dostęp do tych samych plików? Ja spotykam się z taką sytuacją każdego dnia w swojej pracy. Pracuję w zespole składającym się z około 8 osób. A może pracujecie tylko dla siebie, ale nie możecie sobie pozwolić na utratę Waszych danych? Może jesteście pisarzami i przykładowo piszecie książkę?
+Git to **rozproszony system kontroli wersji**, czyli narzędzie do zarządzania różnymi wersjami systemu lub aplikacji. Tak więc, możesz mieć różne wersje swojego systemu i dodatkowo mogą one być rozproszone pomiędzy różnymi komputerami. Jedna wersja może być na Twoim laptopie, a inna wersja może być na komputerze stacjonarnym w pracy.
 
-## Praca tylko dla siebie
+Możesz myśleć o narzędziu git trochę jak o graniu w grę komputerową. Zaczynasz grać, aż w pewnym momencie gry chcesz zapisać jej stan, tak na wszelki wypadek zanim stoczysz ostateczną walkę z bossem. Nie chcesz przecież stracić informacji o tych wszystkich poziomach (levelach), które już udało Ci się przejść. To mogło by być dość frustrujące zaczynać od nowa. Tak samo jest właśnie z git-em. Zapisujesz stan swojej pracy, by jej nie stracić. Plus, prawdopodobnie będziesz chciała później porównać swoje zmiany ze zmianami innych osób w zespole.
 
-Załóżmy, że pracujemy sami. Piszemy książkę. Pracujemy nad nią od dwóch lat. Nagle komputer się zepsuł, przypadkowo usunęliśmy plik z danymi lub po prostu chcemy wrócić do poprzedniej wersji, bo była znacznie lepsza, niż ta po ostatnich poprawkach. Co teraz? Wiem dzisiaj istnieje już wiele sposobów, dzięki którym możemy zapobiec tego typu sytuacją. Mamy Dropbox, dyski zewnętrzne czy pocztę internetową (na którą wysyłamy koleją wersję naszych danych). Nawet programy, takie jak LibreOffice potrafią zapamiętywać ostatnie dokonane zmiany. Git też to potrafi. Pamięta on historię wszystkich zapisanych zmian. Można dzięki temu wrócić do dowolnej starszej wersji plików.
+## Gdzie używać git-a?
 
-Jeżeli przykład ten nie przekonał Cię, że Git może być użytecznym narzędziem, to zapraszam do kolejnego przykładu.
+W skrócie - wszędzie. No dobrze, prawie wszędzie. Używaj git-a w projektach, w których zależy Ci przede wszystkim na współpracy z innymi oraz pewności, że nie stracisz swoich danych. Może pracujesz sama dla siebie. Przykładowo jesteś pisarką i piszesz książkę. Albo zdarzają Ci się sytuacje, w których pracujesz wspólnie z innymi nad tymi samymi plikami? Sytuacje takie jak: projekt zespołowy w szkole, na uczelni? Może jakaś duża aplikacja internetowa? Prezentacja lub raport dla szefa? Lub jakieś inne zadanie, gdzie każdy w zespole ma dostęp do tych samych plików? To właśnie są sytuacje, do których git jest stworzony. Ja spotykam się z takimi sytuacjami w swojej pracy na co dzień. Pracuję w zespole składającym się z około 8 osób.
 
-## Praca zespołowa
+### Praca tylko dla siebie
 
-Każdy w naszym zespole ma dostęp do projektu na swoim własnym komputerze. Przykładowo mamy jeden plik. Kochamy język Ruby, więc plik będzie pisany właśnie w tym języku. A wygląda on tak:
+Pracujesz sama. Piszesz książkę. Jesteś pochłonięta tym projektem już od dwóch lat. Nagle Twój komputer się zepsuł, przypadkowo usunęłaś plik z danymi lub po prostu chcesz wrócić do poprzedniej wersji rozdziału. Co teraz? Wiem, dzisiaj istnieje wiele sposobów, które pozwalają zapobiec tego typu sytuacjom. Mamy Dropbox, Google Docs, dyski zewnętrzne czy pocztę internetową (na którą wysyłamy koleją wersję projektu). Nawet programy, takie jak LibreOffice potrafią zapamiętać ostatnio dokonane zmiany. Git też to potrafi. Pamięta on historię wszystkich zapisanych zmian. Można dzięki temu wrócić do dowolnej wersji wybranego pliku lub plików.
+
+Jeżeli ten przykład nie przekonał Cię, że Git może być użytecznym narzędziem, to mam w zanadrzu jeszcze jeden. ;]
+
+### Praca zespołowa
+
+Pracujesz nad projektem zespołowym. Każdy w zespole ma dostęp do projektu na swoim własnym komputerze. Przykładowo w projekcie masz jeden plik. Kocham język Ruby, więc kod będzie napisany właśnie w tym języku. A wygląda on tak:
 
 ```ruby
 # hello_world.rb
@@ -31,7 +37,7 @@ def hello
 end
 ```
 
-Każdym ma ten plik lokalnie na swoim komputerze. Teraz ja dostaję zadanie, by zmienić napisaną w nim metodę, tak by zwracała nie `hello` tylko `hello world`. Po zmianie plik wygląda następująco:
+Każdy w zespole ma ten plik lokalnie na swoim komputerze. Dostajesz zadanie, by zmienić napisaną w nim metodę, tak by zwracała nie `hello` a `hello world`. Po zmianie plik wygląda następująco:
 
 ```ruby
 # hello_world.rb
@@ -40,9 +46,9 @@ def hello
 end
 ```
 
-Teraz w jakiś sposób muszę podzielić się tą zmianą z innymi osobami w zespole. Ale jak? Przez e-mail? Dropbox? Pendrive? Każde z tych rozwiązań jest dość bolesne w tym przypadku. Nasz pierwszy problem to: **1. Aktualizacja projektu (jak mieć dostęp do bieżącej wersji projektu)**
+Teraz w jakiś sposób musisz podzielić się tą zmianą z innymi osobami w zespole. Ale jak? Przez e-mail? Dropbox? Pendrive? Każde z tych rozwiązań jest dość czasochłonne. Pojawia się pierwszy problem. **Aktualizacja projektu (jak mieć dostęp do najnowszej wersji projektu).**
 
-Ten problem jest możliwy do rozwiązania. Czasem rozwiązanie może być pracochłonne i nużące, ale jesteśmy w stanie sobie z nim poradzić. Natomiast, co zrobimy w przypadku, gdy dwie osoby zmieniają dokładnie ten sam fragment kodu? Przykładowo druga osoba zmienia nazwę metody, nad którą ja w tym czasie pracuje. Kod tej osoby wygląda następująco:
+Ten problem da się jeszcze jakoś rozwiązać. Może być to pracochłonne i nużące, ale jesteś w stanie sobie z nim poradzić. Natomiast, co zrobisz w przypadku, gdy dwie osoby zmieniają dokładnie ten sam fragment kodu? Przykładowo druga osoba w zespole zmienia nazwę metody, nad którą Ty właśnie pracujesz. Kod tej drugiej osoby wygląda następująco:
 
 ```ruby
 # hello_world.rb
@@ -51,7 +57,7 @@ def say_hi
 end
 ```
 
-Teraz ja wysyłam moje zmiany do wszystkich, druga osoba robi to samo. Które zmiany powinny zostać? Które zmiany są ważniejsze? A może zależy nam na czymś takim:
+Nadchodzi czas synchronizacji wersji projektu. Ty wysyłasz swoje zmiany do wszystkich, to samo robi ta druga osoba. Które zmiany powinny zostać? Które zmiany są ważniejsze? A może zależy nam na czymś takim:
 
 ```ruby
 # hello_world.rb
@@ -60,11 +66,11 @@ def say_hi
 end
 ```
 
-Połączone zmiany. W jaki sposób możemy ten problem rozwiązać? Moglibyśmy mieć taką osobę w zespole, która by to dla nas przygotowywała. Rozmawialibyśmy z tą osobą o zmianach, jakie wprowadziliśmy i ona starałaby się rozwiązywać takie konflikty za nas. Czy myślicie tak jak ja że to bardzo zły pomysł? Jeżeli tak do dobrze, bo to katastrofalny pomysł. No i kto chciałby być taką osobą w zespole? Pojawia się nam drugi chyba jeszcze ważniejszy problem: **2. W jaki sposób łatwo łączyć zmiany wprowadzone przez różne osoby?**
+Połączone zmiany. W jaki sposób możesz ten problem rozwiązać? No cóż, w zespole mogłaby być taka osoba, która zajmowała by się rozwiązywaniem tego typu problemów. Inne osoby w zespole rozmawiałyby z tym śmiałkiem o zmianach, jakie wprowadziły. A nasz śmiałek starałaby się rozwiązać konflikty w kodzie za nas. Czy też uważasz, że to nie jest dobry pomysł? To katastrofalny pomysł. No i kto chciałby być taką osobą w zespole? Pojawia się nam drugi, ważniejszy problem: **Jak w łatwy sposób łączyć zmiany wprowadzane przez różne osoby w zespole?** Tu z pomocą przychodzi nam Git. Jest to narzędzie, które w wielu przypadkach automatycznie łączy zmiany pochodzące od różnych osób. **Git jest narzędziem przydatnym przy pracy w projektach zespołowych**. Ale czy zawsze jest tak różowo?
 
-Git jest takim narzędziem, które w wielu przypadkach automatycznie łączy zmiany pochodzące od różnych osób. Jest to bardzo przydatne narzędzie zwłaszcza przy zespołowych projektach. Ale! (zawsze musi być jakieś ale). O ile w bardzo przystępny sposób za pomocą Gita można poruszać się po plikach tekstowych (programy, książki, artykuły) i ich zmianach. To znacznie ciężej jest poruszać się po plikach graficznych. Obrazki to pliki binarne (w większości przypadków, za wyjątkiem np. svg). Kiedy zmienimy coś w takim pliku ciężko jest nam obserwować zmiany.
+### Pliki binarne w git-cie
 
-Przykładowo, nasz obrazek może dla komputera wyglądać następująco:
+Zawsze musi być jakieś ale. O ile w bardzo przystępny sposób za pomocą git-a można zarządzać zmianami w plikach tekstowych (kod źródłowy programów, tekst książki czy artykułu). To znacznie ciężej jest poruszać się po plikach graficznych, plikach wideo i innych plikach binarnych. Problem polega na tym w jaki sposób git zapamiętuje zmiany w naszych plikach. Git pamięta zmiany, jakie zostały wprowadzone w kolejnych liniach. I właśnie dlatego tak dobrze sprawdza się w przypadku plików tekstowych, bo one są złożone z linii tekstu/kodu. Gdy zmienimy coś w jakiejś linijce, to od razu możemy zobaczyć jak ta linijka wyglądała przed i po zmianie. W przypadku plików binarnych, czyli plików zawierających sekwencję bitów, nie jest to takie łatwe. Gdybyśmy taki plik otworzyły bezpośrednio, to mógłby on wyglądać następująco:
 
 ```
 00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
@@ -78,6 +84,10 @@ Przykładowo, nasz obrazek może dla komputera wyglądać następująco:
 ...
 ```
 
-Nasz komputer w łatwy sposób jest wstanie zinterpretować ciągi tych liczb i literek w postaci kształtów i kolorów. My niestety nie. Więc gdy zmienimy coś na naszym obrazku, nie potrafimy po jakimś czasie stwierdzić co to była za zmiana. Chyba, że otworzymy ten obrazek w odpowiednim programie. Rozumiecie co mam na myśli? Nie chodzi o to, że nigdy nie dodajemy plików graficznych do Gita. Chodzi o to, że bez dodatkowych narzędzi ciężko nam śledzić na takich plikach zmiany.
+Jest to fragment pliku graficznego PNG, który jest plikiem binarnym. Nasz komputer w łatwy sposób jest w stanie zinterpretować ciągi tych liczb i literek w postaci kształtów i kolorów. My niestety nie. Gdy wiec zmienimy coś w naszym obrazku (kilka bitów), nie jesteśmy w stanie w łatwy sposób stwierdzić, co to była za zmiana. Chyba, że otworzymy ten obrazek w odpowiednim programie. Nie chodzi o to, że nigdy nie dodajemy plików graficznych do git-a. Chodzi o to, że bez dodatkowych narzędzi ciężko nam śledzić zmiany w takich plikach.
 
-Mam nadzieję, że ten artykuł był dla Was pomocny, w zrozumieniu tego po co przydaje się takie narzędzie jak Git. W następnym artykule chciałabym opisać podstawowe użycie tego narzędzia. Jeżeli macie jakieś pytania lub sugestie, dajcie znać w komentarzach. Do zobaczenia następnym razem. Pa!
+### Następne artykuły w cyklu:
+- <a href="{{ site.baseurl }}/git-usage" title="Jak zacząć używać git-a?">Podstawowe komendy narzędzia Git</a>
+- <a href="{{ site.baseurl }}/git-rebase" title="Jaka jest różnica między git merge a git rebase?">Jak używać git rebase?</a>
+- <a href="{{ site.baseurl }}/replace-parent-branch" title="Ustawienie innej gałęźi rodzicielckiej za pomoca git-a.">Jak zmienić gałąź rodzicielską w git-cie?</a>
+- <a href="{{ site.baseurl }}/git-rebase-onto" title="Zrozumienie komendy  git rebase --onto.">Jak użyć komendy git rebase --onto?</a>

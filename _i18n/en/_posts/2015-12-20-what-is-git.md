@@ -1,28 +1,34 @@
 ---
 layout: post
 title: What is git?
-description: Git - basic
+description: Git basics - Why we use git?
 headline: My code is getting worse, please send more chocolate
 categories: [tools]
 tags: [environment, git, version control system]
 lang: en
 ---
 
-Today I would start quick series about **Git**. This will be 2-3 article about **basic of Git**. Internet has many different articles and tutorials about Git so I don’t want to do another one. If you like get know more about Git I can recommend 2 courses on CodeSchool about it. Start [here](https://www.codeschool.com/courses/try-git).
+If you are interested in IT or you are already a programmer, you should hear the name **Git** at least a couple of times. Maybe even more. This tool is common to many teams no matter what programming language they use. This is the base and it is good to know git. Today, I would like to start a short series about **Git basics**. On the Internet, you can find many articles and tutorials about how to use git. I would focus more on what is the purpose of using git and how it works. In this article, I will explain to you what git is and why it is important to have that tool in your toolbox. Let's get started!
 
-I don’t give you definition of Git because you can find definition in [wiki](https://en.wikipedia.org/wiki/Git_(software)) or [Git documentation](https://git-scm.com/documentation). I only say that, this is **version control system** and I give you info for what cases or problems we can use Git and why is it great tool.
+## What is git?
 
-Do you have sometimes situations where you need to work on the same files with many people. Situations such as: group project in school, university or maybe big web application? Presentation or report for boss? Or other work to do when every one of team members need to share the same files. And everyone can change any files in this project. I have this situation all the time in my work. I work on web application where I cooperate with about 8 people. Or maybe you work just by your self but you don’t want to loose your changes. Maybe you are writer and you write book. So what can it goes wrong?
+Git is a **distributed version-control system**. It's a tool for managing different versions of your system/application. So you can have a different version of your system and they don't need to be in one central place. The version of your system can be distributed/spread to many computers. One version can be on your laptop and another one can be on your colleague computer.
 
-## Only my work
+You can think about git as it is a game playing. You start playing a game and at some point in the game, you would like to save the stage, just in case you lose your life when you will fight with the boss. You don't want to lose the levels you already achieved. This can be boring and irritating to do the same work twice. The same with git. You save a stage of your current work, to not lose it. And also probably to compare with other team members.
 
-We work alone. For example we are writing book. We are working on this project through last 2 years. And something happened: computer breaks down, we removed file through mistake, or we change something and the previous version was better and we want get back this version. What then? I know we have many choices: Dropbox, hard drive (just in case), send emails to my self. Even programs do this easy for us. They remember history of last changes and so on. But Git can handle this too. Git remember all yours files changes history. You can get back to any of your files version.
+## When we should use git?
 
-If you don’t now why Git can be better solution for some problems, we have second example. ;]
+In short - everywhere. Just kidding, almost everywhere ;] Use git in projects where very important is the teamwork and the confidence that you don't lose your data. Maybe you work just by yourself. You are a writer and you write a book. Or maybe you have situations where you need to work on the same files with many people? Situations such as group projects in school, university, or maybe big web application? Presentation or report for a boss? Or other work where everyone in a team needs to share the same files and change them? Those are situations where git is very useful. I have those situations all the time in my work. I work on web applications where I cooperate with about 8 people.
 
-## Team case
+### Work alone
 
-Every one in team has they own computer so they have locally on computer copy of our project. For example we have one file. We love Ruby so this file has Ruby code:
+You work alone. For example, you're writing a book. You're working on this project over the last 2 years. And something happened: computer breaks down, you removed the file by accident or you change something and the previous version was better, so you want to get back this old version. What then? I know we have many choices: Dropbox, Google docs, hard drive (just in case), or sending emails to yourself. These programs do our life easier. They remember the history of the last changes and so on. But git can handle this too. Git remembers the history of all your changes. You can get back any version of your files, you want.
+
+If you don’t know why git can be a better solution for some problems, I have the second example - team working. ;]
+
+### Work with a team
+
+Everyone in a team has a computer. They have a copy of the project locally. For example, you have one file. I love Ruby, so this file is written in Ruby:
 
 ```ruby
 # hello_world.rb
@@ -31,7 +37,7 @@ def hello
 end
 ```
 
-So every one have this file locally on this computer. Now I have task to change this method to return no `hello` but `hello world`. So I change this file:
+Everyone has this file locally on their computers. Now you have a task to change this method to return no `hello` but `hello world`. So you change this file:
 
 ```ruby
 # hello_world.rb
@@ -40,9 +46,9 @@ def hello
 end
 ```
 
-Now I need to send to all of team members this new code. How do this? E-mail? Dropbox? Pendrive? Each of this solutions can be painful. So we have problem one. **1. Actualization of our project (how have access to current version).**
+Now you need to send this new code to all of your team members. How to do that? E-mail? Dropbox? Pen drive (USB flash drive)? Each of these solutions can be painful. So we have the first problem. **Project synchronization. How to have access to the last version of the project?**
 
-This problem we can somehow resolved. But what happened in this situation. Someone in team change something in the same file as I. For example change method name but he/she don’t know that I working on this file in the same time. So his/her code looks like this:
+This problem we can solve somehow, even if the solution can be time-consuming. But what happened in the next situation. Someone in your team changed the same file as you changed. For example, your colleague changed the method name but he doesn’t know, that you were working on this file at the same time. So his code looks like this:
 
 ```ruby
 # hello_world.rb
@@ -51,7 +57,7 @@ def say_hi
 end
 ```
 
-Now I send my change to everyone (somehow) and the other person sends his/her changes also. Which changes are last changes? My or the other person? Or maybe we would like to have something like that:
+Now you send your changes to everyone and your colleague does the same. Which changes are the last ones? Yours or the other person? Or maybe you would like to have something like that:
 
 ```ruby
 # hello_world.rb
@@ -60,14 +66,11 @@ def say_hi
 end
 ```
 
-All changes together. How we can resolve this problem? We can have some one in team who will take care of this. We can talk with this person, tell what we changed and then this person need to go though all files check and figure out how fix conflicts. Do you also think that this is not good idea? Even worse. This is catastrophically bad idea and who wants to be this person? So second and I think the most important problem **2. how merge all changes together easily?**
+All changes together. How we can resolve this problem? We can have someone on the team, who will take care of this problem. We can talk with this person, tell her what we changed. Then this person needs to go through all files check them and figure out how to fix these conflicts. Do you think that this is a bad idea? Me too. This is even worse, then you expect. This is a catastrophic idea and who wants to be this person? Do you see how painful this can be? Even more than in the first example. So second and I think the most important problem is: **How to merge all changes easily?** So git can resolve these problems for us in most cases automatically. So **Git is a tool to help with cooperative projects**.
 
-Do you see that this is painful? Even more than the first example. Yes? I think that too.
+### Binary files in git
 
-So Git can resolved this problems for us in most cases automatically. So Git is tool to help with cooperative projects. But! (there is always some but) It is good for text files (programs, books, articles) but not good for images. Image is binary file no text file (in most cases excluded for example svg). When we change something in this file we can not read in easy way those changes.
-
-Example:
-Our image have this inside:
+Is git created to work with all file types? Not exactly. There is an exception. Git is good for text files (source code, the text of books, or articles) but it isn't good for images, videos, or any other binary files. This is related to the git way of handling changes. Git remembers changes in lines, so this is why it is good for text files. Each text is composed of many lines. When you change one line you just see how the line was looking before and after the change. In the case of binary files, files that are composed of bits, it's more difficult. For example, when we open our image directly, inside it can look like this:
 
 ```
 00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
@@ -81,6 +84,10 @@ Our image have this inside:
 ...
 ```
 
-Our computer can interpret this in colors and shapes but we can’t. So when we change something on this image (one or more bits), we don’t even know what was this change. Do you know what I mean? I don’t say that we never put images to git. I say that we can not see what changed (in simple way).
+Our computer can interpret this in colors and shapes but we can’t. So when we change something in this image (one or more bits), we don’t even know what the change was. Although we have a specific program, that will interpret these bits for us, like image explorer. I don’t say that we never put images to git. I say that we can not see what changed easily.
 
-I hope that this article help you to understand for what we use git and why it is helpful. In next article I describe how we can use it. If you have some question or suggestion please let me know in comments. See you next time. Bye!
+### Next articles in this series:
+- <a href="{{ site.baseurl }}/git-usage" title="How to start using git?">Basic commands in git</a>
+- <a href="{{ site.baseurl }}/git-rebase" title="What is a difference between git merge and git rebase?">How can I use git rebase?</a>
+- <a href="{{ site.baseurl }}/replace-parent-branch" title="Setting git parent pointer to a different parent.">How to replace parent branch in git?</a>
+- <a href="{{ site.baseurl }}/git-rebase-onto" title="Git rebase --onto an overview.">How to use git rebase --onto?</a>
