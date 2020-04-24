@@ -72,20 +72,11 @@ layout: home
           <div class="row">
             <article class="post post col-md-8 col-md-offset-2">
               <header class="post-header">
-                {% if post.link %}
-                <h2 class="post-title text-center super lighter">
-                  <a href="{{ site.baseurl }}{{ post.url }}"
-                     style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                    {{ post.title }}
-                  </a>
-                </h2>
-                {% else %}
                 <h2 class="post-title text-center super lighter bordered-bottom">
                   <a href="{{ site.baseurl }}{{ post.url }}">
                     {{ post.title }}
                   </a>
                 </h2>
-                {% endif %}
                 <div class="post-info text-center small">
                   {% include category-link.html %}
                 </div>
@@ -120,18 +111,10 @@ layout: home
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
                     {% if post.photo %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
-                      {% if post.link %}
-                      <h2 class="post-title text-center super lighter">
-                        <a href="{{ site.baseurl }}{{ post.url }}"
-                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                          {{ post.title }}
-                        </a>
-                      {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
                         <a href="{{ site.baseurl }}{{ post.url }}">
                           {{ post.title }}
                         </a>
-                      {% endif %}
                       </h2>
                       <div class="post-info text-center small">
                         {% include category-link.html %}
@@ -156,18 +139,10 @@ layout: home
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
                  {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
-                    {% if post.link %}
-                      <h2 class="post-title text-center super lighter">
-                        <a href="{{ site.baseurl }}{{ post.url }}"
-                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                          {{ post.title }}
-                        </a>
-                    {% else %}
-                      <h2 class="post-title text-center super lighter bordered-bottom">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                          {{ post.title }}
-                        </a>
-                    {% endif %}
+                    <h2 class="post-title text-center super lighter bordered-bottom">
+                      <a href="{{ site.baseurl }}{{ post.url }}">
+                        {{ post.title }}
+                      </a>
                     </h2>
                     <div class="post-info text-center small">
                       {% include category-link.html %}
@@ -293,18 +268,10 @@ layout: home
           <div class="row">
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
-                      {% if post.link %}
-                      <h2 class="post-title text-center super lighter">
-                        <a href="{{ site.baseurl }}{{ post.url }}"
-                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                          {{ post.title }}
-                        </a>
-                      {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
                         <a href="{{ site.baseurl }}{{ post.url }}">
                           {{ post.title }}
                         </a>
-                      {% endif %}
                       </h2>
                       <div class="post-info text-center small">
                         {% include category-link.html %}
@@ -341,18 +308,10 @@ layout: home
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
                     {% if post.photo %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl_root }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl_root }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
-                      {% if post.link %}
-                      <h2 class="post-title text-center super lighter">
-                        <a href="{{ site.baseurl }}{{ post.url }}"
-                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                          {{ post.title }}
-                        </a>
-                      {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
                         <a href="{{ site.baseurl }}{{ post.url }}">
                           {{ post.title }}
                         </a>
-                      {% endif %}
                       </h2>
                       <div class="post-info text-center small">
                         {% include category-link.html %}
@@ -377,16 +336,8 @@ layout: home
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
                  {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
-                      {% if post.link %}
-                      <h2 class="post-title text-center super lighter">
-                        <a href="{{ site.baseurl }}{{ post.url }}"
-                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
-                          {{ post.title }}
-                        </a>
-                      {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
                         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                      {% endif %}
                       </h2>
                       <div class="post-info text-center small">
                         {% include category-link.html %}
