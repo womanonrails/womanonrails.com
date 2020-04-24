@@ -45,12 +45,12 @@ $("a#click-pages").click(function(){
 
   (function( $, window, undefined ) {
 
-     var bs = {
-          close: $(".icon-remove-sign"),
-          searchform: $(".search-form"),
-          canvas: $("body"),
-          dothis: $('.dosearch')
-      };
+    var bs = {
+      close: $(".js-remove-sign"),
+      searchform: $(".search-form"),
+      canvas: $("body"),
+      dothis: $('.dosearch')
+    };
 
     bs.dothis.on('click', function() {
       $('.search-wrapper').css({ display: "block" });

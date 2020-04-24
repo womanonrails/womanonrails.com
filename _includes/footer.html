@@ -1,35 +1,43 @@
-<footer id="footer"  class="blog-background overlay text-center align-middle animated from-top">
-
-    <div class="inner">
-        <div class="container">
-          <ul class="social-icons">
-            {% include icons/icon-in-footer--twitter.html %}
-            {% include icons/icon-in-footer--facebook.html %}
-            {% include icons/icon-in-footer--stackoverflow.html %}
-            {% include icons/icon-in-footer--linkedin.html %}
-            {% include icons/icon-in-footer--instagram.html %}
-            {% include icons/icon-in-footer--github.html %}
-          </ul>
-        <div>
-              <a href="{% translate_link about %}">{{ site.owner.name }}</a>
-              &copy; {{ site.time | date: '%Y' }}
-              &bull; All rights reserved.
-            </div>
-            <ul class="menu-items">
-            {% for link in site.links %}
-            <li>
-                {% if link.external %}
-                    <a href="{{ link.url }}">{% if link.icon %}<i class="icon-{{ link.icon }}"></i>{% else %}{{ link.title }}{% endif %}</a>&nbsp;&bull;
-                {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{% if link.icon %}<i class="icon-{{ link.icon }}"></i>{% else %}{{ link.title }}{% endif %}</a>&nbsp;&bull;
-                {% endif %}
-            </li>
-            {% endfor %}
-            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-        </ul>
-        </div>
-        {% include donations.html %}
+<footer id='footer' class='blog-background overlay text-center align-middle animated from-top'>
+  <div class='inner'>
+    <div class='container'>
+      <ul class='social-icons'>
+        {% include icons/icon-in-footer--twitter.html %}
+        {% include icons/icon-in-footer--facebook.html %}
+        {% include icons/icon-in-footer--stackoverflow.html %}
+        {% include icons/icon-in-footer--linkedin.html %}
+        {% include icons/icon-in-footer--instagram.html %}
+        {% include icons/icon-in-footer--github.html %}
+      </ul>
+      <div>
+        <a href="{% translate_link about %}">{{ site.owner.name }}</a>
+          &copy; {{ site.time | date: '%Y' }}
+          &bull; All rights reserved.
+      </div>
+      <ul class='menu-items'>
+      {% for link in site.links %}
+        <li>
+        {% assign url = link.url %}
+        {% if link.external %}{% assign url = site.url | concat: link.url %}{% endif %}
+        <a href="{{ url }}">
+          {% if link.icon %}
+            {% include icons/icon-svg.html icon=link.icon %}
+          {% else %}
+            {{ link.title }}
+          {% endif %}
+        </a>&bull;
+        </li>
+      {% endfor %}
+        <li>
+          <a href="{{ site.url }}/feed.xml" title='Atom/RSS feed'>
+            {% include icons/icon-svg.html icon='rss' %}
+            Feed
+          </a>
+        </li>
+      </ul>
     </div>
+    {% include donations.html %}
+  </div>
     {% if site.animated_fins and site.triangleheader %}
         <div class="decor-wrapper">
             <svg id="footer-decor" class="decor top" xmlns="https://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">

@@ -39,10 +39,14 @@
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/style.css" />
 <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl_root }}">
 
-{% if site.search %}<div class="search-wrapper">
-    <div class="search-form">
-        <input type="text" class="search-field" placeholder="Search...">
-        <i class="icon-remove-sign"></i>
-        <ul class="search-results post-list"></ul><!-- /.search-results -->
-    </div><!-- /.search-form -->
-</div><!-- ./search-wrapper -->{% endif %}
+{% if site.search %}
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <span class='js-remove-sign'>
+    {% include icons/icon-svg.html icon='cancel' %}
+    </span>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+{% endif %}

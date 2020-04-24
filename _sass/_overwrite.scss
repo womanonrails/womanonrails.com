@@ -4,6 +4,7 @@ $background-grey: #262626;
 $dark-red: #d2322d;
 $grey: #ddd;
 $link-grey: #67666a;
+$link-light-grey: #807f83;
 $quote-grey: #c91b26;
 $text-white: #fff;
 
@@ -22,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 article p {
   text-align: justify;
 }
-
 
 .lead {
   line-height: 1.7em;
@@ -47,7 +47,10 @@ ol li .lead {
   color: $dark-red;
 }
 
-button.menu-button:hover, a#slide:hover, a.language:hover, blockquote:before {
+a#slide:hover,
+a.language:hover,
+blockquote:before,
+button.menu-button:hover {
   background-color: $dark-red;
 }
 
@@ -133,7 +136,7 @@ button.menu-button {
 }
 
 .social-icons {
-  height: 148px;
+  min-height: 148px;
 
   li {
     padding-top: 32px;
@@ -148,5 +151,71 @@ button.menu-button {
     .svg--github svg {
       transform: scale(1.0);
     }
+  }
+}
+
+.social-mini {
+  li {
+    margin: 6px;
+    width: 16px;
+
+    svg {
+      display: block;
+      fill: $link-light-grey;
+      height: 16px;
+    }
+  }
+}
+
+.svg--cancel svg {
+  fill: #fff;
+  height: 16px;
+
+  .js-remove-sign & {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    top: .6rem;
+    width: 16px;
+    z-index: 1;
+  }
+}
+
+.svg--home {
+  vertical-align: middle;
+
+  svg {
+    display: inline;
+    fill: #fff;
+    height: 20px;
+  }
+}
+
+.svg--rss svg {
+  height: 16px;
+
+  #footer &,
+  #navigation a:hover & {
+    fill: #fff;
+  }
+
+  #navigation a & {
+    fill: #b3b3b1;
+  }
+}
+
+.svg--search svg {
+  stroke: #fff;
+  transform: scale(0.5);
+}
+
+.svg--tags {
+  vertical-align: middle;
+
+  svg {
+    height: 16px;
+    fill: #424143;
   }
 }

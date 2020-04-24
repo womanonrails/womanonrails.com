@@ -3,41 +3,44 @@ layout: home
 ---
 {% if site.paginate %}
   {% for post in paginator.posts %}
-      {% assign categories = post.categories | categories_filter %}
+    {% capture url %}{{ site.url }}{{ post.url }}{% endcapture %}
+    {% assign categories = post.categories | categories_filter %}
       {% if post.type == 'quote' %}
       <div class="row">
               <article class="post col-md-10 col-md-offset-1">
                 <header class="post-header">
                       <h2 class="post-title text-center super lighter quote">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-quote-left"></i> {{ post.excerpt | strip_html }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.excerpt | strip_html }}
+                        </a>
                       </h2>
                       <p class="light small text-center">
-                          Share this Quote
+                        Share this Quote
                       </p>
                       <ul class="social-mini text-center">
-                          <li>
-                              <a href="https://twitter.com/intent/tweet?text=&quot;{{ post.title }}&quot;%20{{ site.baseurl }}{{ post.url }}%20via%20&#64;{{ site.owner.twitter }}"
-                              onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter">
-                                  <i class="icon-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ post.url }}"
-                              onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook">
-                                  <i class="icon-facebook"></i>
-                              </a>
-                          </li>
+                        <li>
+                          {% include links/share/share-on-twitter.html title=post.title url=url %}
+                        </li>
+                        <li>
+                          {% include links/share/share-on-facebook.html url=url %}
+                        </li>
                       </ul>
                   <div class="post-body bordered-bottom text-center">
-                      {% if post.description %}
-                      <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                          <i class="icon-link"></i> {% t read_more %}
-                      </a>
-                      {% else %}
-                      <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                          <i class="icon-link"></i> {% t read_more %}
-                      </a>
-                      {% endif %}
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
+                    </a>
+                    {% else %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
+                    </a>
+                    {% endif %}
                   </div>
                   </header>
               </article>
@@ -48,24 +51,20 @@ layout: home
               <article class="post col-md-10 col-md-offset-1">
                  <header class="post-header">
                       <h2 class="post-title text-center super lighter status">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-retweet"></i> "{{ post.excerpt | strip_html }}"</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          "{{ post.excerpt | strip_html }}"
+                        </a>
                       </h2>
                       <p class="light small text-center">
-                          Share this Status
+                        Share this Status
                       </p>
                       <ul class="social-mini text-center">
-                          <li>
-                              <a href="https://twitter.com/intent/tweet?text=&quot;{{ post.title }}&quot;%20{{ site.baseurl }}{{ post.url }}%20via%20&#64;{{ site.owner.twitter }}"
-                              onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter">
-                                  <i class="icon-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ post.url }}"
-                              onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook">
-                                  <i class="icon-facebook"></i>
-                              </a>
-                          </li>
+                        <li>
+                          {% include links/share/share-on-twitter.html title=post.title url=url %}
+                        </li>
+                        <li>
+                          {% include links/share/share-on-facebook.html url=url %}
+                        </li>
                       </ul>
                       <div class="post-info text-center small">
                           {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
@@ -83,14 +82,19 @@ layout: home
             <article class="post post col-md-8 col-md-offset-2">
               <header class="post-header">
                 {% if post.link %}
-                  <h2 class="post-title text-center super lighter">
-                      <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-play-circle"></i> {{ post.title }}</a>
-                  </h2>
-                {% else %}
-                  <h2 class="post-title text-center super lighter bordered-bottom">
-                    <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-play-circle"></i> {{ post.title }}</a>
-                {% endif %}
+                <h2 class="post-title text-center super lighter">
+                  <a href="{{ site.baseurl }}{{ post.url }}"
+                     style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                    {{ post.title }}
+                  </a>
                 </h2>
+                {% else %}
+                <h2 class="post-title text-center super lighter bordered-bottom">
+                  <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                </h2>
+                {% endif %}
                 <div class="post-info text-center small">
                   {% include category-link.html %}
                 </div>
@@ -110,12 +114,18 @@ layout: home
                 {% endif %}
                 <div class="text-center">
                   {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                      <i class="icon-link"></i> {% t see_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t see_more %}
                     </a>
                   {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                      <i class="icon-link"></i> {% t see_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t see_more %}
                     </a>
                   {% endif %}
                 </div>
@@ -130,10 +140,15 @@ layout: home
                     {% if post.photo %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
                       {% if post.link %}
                       <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-picture"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}"
+                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                          {{ post.title }}
+                        </a>
                       {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-picture"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.title }}
+                        </a>
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
@@ -141,15 +156,21 @@ layout: home
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
-                      <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-                      <div class="text-center">
-                      {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
+                    <div class="text-center">
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% endif %}
                     </div>
@@ -162,30 +183,41 @@ layout: home
               <article class="post post col-md-8 col-md-offset-2">
                  <header class="post-header">
                  {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
-                      {% if post.link %}
+                    {% if post.link %}
                       <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-link"></i> {{ post.title }}</a>
-                      {% else %}
+                        <a href="{{ site.baseurl }}{{ post.url }}"
+                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                          {{ post.title }}
+                        </a>
+                    {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
-                          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                      {% endif %}
-                      </h2>
-                      <div class="post-info text-center small">
-                        {% include category-link.html %}
-                      </div>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.title }}
+                        </a>
+                    {% endif %}
+                    </h2>
+                    <div class="post-info text-center small">
+                      {% include category-link.html %}
+                    </div>
                   </header>
                   <div class="post-body bordered-bottom">
                   {% assign excerptsize = post.excerpt | number_of_words %}
                   {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
                       <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
                       <div class="text-center">
-                      {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% endif %}
                     </div>
@@ -234,33 +266,35 @@ layout: home
               <article class="post col-md-10 col-md-offset-1">
                 <header class="post-header">
                       <h2 class="post-title text-center super lighter quote">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-quote-left"></i> {{ post.excerpt | strip_html }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.excerpt | strip_html }}
+                        </a>
                       </h2>
                       <p class="light small text-center">
-                          Share this Quote
+                        Share this Quote
                       </p>
                       <ul class="social-mini text-center">
-                          <li>
-                              <a href="https://twitter.com/intent/tweet?text=&quot;{{ post.title }}&quot;%20{{ site.baseurl }}{{ post.url }}%20via%20&#64;{{ site.owner.twitter }}"
-                              onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter">
-                                  <i class="icon-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ post.url }}"
-                              onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook">
-                                  <i class="icon-facebook"></i>
-                              </a>
-                          </li>
+                        <li>
+                          {% include links/share/share-on-twitter.html title=post.title url=url %}
+                        </li>
+                        <li>
+                          {% include links/share/share-on-facebook.html url=url %}
+                        </li>
                       </ul>
                   <div class="post-body bordered-bottom text-center">
                       {% if post.description %}
-                      <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                          <i class="icon-link"></i> {% t read_more %}
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                         data-toggle="tooltip"
+                         title="{{ post.description }}"
+                         class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
                       </a>
                       {% else %}
-                      <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                          <i class="icon-link"></i> {% t read_more %}
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                         data-toggle="tooltip"
+                         title="Read more about {{ post.title }}"
+                         class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
                       </a>
                       {% endif %}
                   </div>
@@ -272,25 +306,22 @@ layout: home
           <div class="row">
               <article class="post col-md-10 col-md-offset-1">
                  <header class="post-header">
-                      <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #c91b26"><i class="icon-retweet"></i> "{{ post.excerpt | strip_html }}"</a>
-                      </h2>
-                      <p class="light small text-center">
-                          Share this Status
-                      </p>
+                    <h2 class="post-title text-center super lighter">
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                         style="color: #c91b26">
+                        "{{ post.excerpt | strip_html }}"
+                      </a>
+                    </h2>
+                    <p class="light small text-center">
+                      Share this Status
+                    </p>
                       <ul class="social-mini text-center">
-                          <li>
-                              <a href="https://twitter.com/intent/tweet?text=&quot;{{ post.title }}&quot;%20{{ site.baseurl }}{{ post.url }}%20via%20&#64;{{ site.owner.twitter }}"
-                              onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter">
-                                  <i class="icon-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ post.url }}"
-                              onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook">
-                                  <i class="icon-facebook"></i>
-                              </a>
-                          </li>
+                        <li>
+                          {% include links/share/share-on-twitter.html title=post.title url=url %}
+                        </li>
+                        <li>
+                          {% include links/share/share-on-facebook.html url=url %}
+                        </li>
                       </ul>
                       <div class="post-info text-center small">
                           {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
@@ -309,10 +340,15 @@ layout: home
                  <header class="post-header">
                       {% if post.link %}
                       <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-play-circle"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}"
+                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                          {{ post.title }}
+                        </a>
                       {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-play-circle"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.title }}
+                        </a>
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
@@ -334,13 +370,19 @@ layout: home
                   <p class="lead">{{ post.excerpt }}&hellip;</p>
                   {% endif %}
                   <div class="text-center">
-                      {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t see_more %}
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t see_more %}
                     </a>
                     {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t see_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t see_more %}
                     </a>
                     {% endif %}
                 </div>
@@ -355,10 +397,15 @@ layout: home
                     {% if post.photo %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl_root }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl_root }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
                       {% if post.link %}
                       <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-picture"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}"
+                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                          {{ post.title }}
+                        </a>
                       {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
-                          <a href="{{ site.baseurl }}{{ post.url }}"><i class="icon-picture"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                          {{ post.title }}
+                        </a>
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
@@ -368,13 +415,19 @@ layout: home
                   <div class="post-body bordered-bottom">
                       <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
                       <div class="text-center">
-                      {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% endif %}
                     </div>
@@ -389,10 +442,13 @@ layout: home
                  {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
                       {% if post.link %}
                       <h2 class="post-title text-center super lighter">
-                          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px"><i class="icon-link"></i> {{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}"
+                           style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
+                          {{ post.title }}
+                        </a>
                       {% else %}
                       <h2 class="post-title text-center super lighter bordered-bottom">
-                          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                       {% endif %}
                       </h2>
                       <div class="post-info text-center small">
@@ -404,13 +460,19 @@ layout: home
                   {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
                       <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
                       <div class="text-center">
-                      {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    {% if post.description %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="{{ post.description }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-                        <i class="icon-link"></i> {% t read_more %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                       data-toggle="tooltip"
+                       title="Read more about {{ post.title }}"
+                       class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
                     </a>
                     {% endif %}
                     </div>
