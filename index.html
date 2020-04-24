@@ -26,23 +26,14 @@ layout: home
                         </li>
                       </ul>
                   <div class="post-body bordered-bottom text-center">
-                    {% if post.description %}
                     <a href="{{ site.baseurl }}{{ post.url }}"
                        data-toggle="tooltip"
                        title="{{ post.description }}"
                        class="more-link btn btn-danger btn-large">
                       {% t read_more %}
                     </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% endif %}
                   </div>
-                  </header>
+                </header>
               </article>
           </div>
           {% endif %}
@@ -113,21 +104,12 @@ layout: home
                   <p class="lead">{{ post.excerpt }}&hellip;</p>
                 {% endif %}
                 <div class="text-center">
-                  {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t see_more %}
-                    </a>
-                  {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t see_more %}
-                    </a>
-                  {% endif %}
+                  <a href="{{ site.baseurl }}{{ post.url }}"
+                      data-toggle="tooltip"
+                      title="{{ post.description }}"
+                      class="more-link btn btn-danger btn-large">
+                    {% t see_more %}
+                  </a>
                 </div>
               </div>
             </article>
@@ -158,21 +140,12 @@ layout: home
                   <div class="post-body bordered-bottom">
                     <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
                     <div class="text-center">
-                    {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% endif %}
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                        data-toggle="tooltip"
+                        title="{{ post.description }}"
+                        class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
+                      </a>
                     </div>
                   </div>
               </article>
@@ -203,23 +176,14 @@ layout: home
                   <div class="post-body bordered-bottom">
                   {% assign excerptsize = post.excerpt | number_of_words %}
                   {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
-                      <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
-                      <div class="text-center">
-                    {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% endif %}
+                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
+                    <div class="text-center">
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                        data-toggle="tooltip"
+                        title="{{ post.description }}"
+                        class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
+                      </a>
                     </div>
                   </div>
               </article>
@@ -282,21 +246,12 @@ layout: home
                         </li>
                       </ul>
                   <div class="post-body bordered-bottom text-center">
-                      {% if post.description %}
-                      <a href="{{ site.baseurl }}{{ post.url }}"
-                         data-toggle="tooltip"
-                         title="{{ post.description }}"
-                         class="more-link btn btn-danger btn-large">
-                        {% t read_more %}
-                      </a>
-                      {% else %}
-                      <a href="{{ site.baseurl }}{{ post.url }}"
-                         data-toggle="tooltip"
-                         title="Read more about {{ post.title }}"
-                         class="more-link btn btn-danger btn-large">
-                        {% t read_more %}
-                      </a>
-                      {% endif %}
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                        data-toggle="tooltip"
+                        title="{{ post.description }}"
+                        class="more-link btn btn-danger btn-large">
+                      {% t read_more %}
+                    </a>
                   </div>
                   </header>
               </article>
@@ -370,23 +325,14 @@ layout: home
                   <p class="lead">{{ post.excerpt }}&hellip;</p>
                   {% endif %}
                   <div class="text-center">
-                    {% if post.description %}
                     <a href="{{ site.baseurl }}{{ post.url }}"
                        data-toggle="tooltip"
                        title="{{ post.description }}"
                        class="more-link btn btn-danger btn-large">
                       {% t see_more %}
                     </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t see_more %}
-                    </a>
-                    {% endif %}
-                </div>
                   </div>
+                </div>
               </article>
           </div>
           {% endif %}
@@ -413,23 +359,14 @@ layout: home
                       </div>
                   </header>
                   <div class="post-body bordered-bottom">
-                      <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-                      <div class="text-center">
-                    {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% endif %}
+                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
+                    <div class="text-center">
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                        data-toggle="tooltip"
+                        title="{{ post.description }}"
+                        class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
+                      </a>
                     </div>
                   </div>
               </article>
@@ -458,23 +395,14 @@ layout: home
                   <div class="post-body bordered-bottom">
                   {% assign excerptsize = post.excerpt | number_of_words %}
                   {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
-                      <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
-                      <div class="text-center">
-                    {% if post.description %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       data-toggle="tooltip"
-                       title="Read more about {{ post.title }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                    {% endif %}
+                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
+                    <div class="text-center">
+                      <a href="{{ site.baseurl }}{{ post.url }}"
+                        data-toggle="tooltip"
+                        title="{{ post.description }}"
+                        class="more-link btn btn-danger btn-large">
+                        {% t read_more %}
+                      </a>
                     </div>
                   </div>
               </article>
