@@ -44,7 +44,11 @@ ol li .lead {
 }
 
 .cursive {
-  color: $dark-red;
+  color: #000;
+  font-family: 'Sacramento', cursive;
+  font-size: 34px;
+  font-style: italic;
+  text-align: center;
 }
 
 a#slide:hover,
