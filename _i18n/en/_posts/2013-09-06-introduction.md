@@ -1,6 +1,5 @@
 ---
 layout: post
-type: status
 title: Introduction
 description: Programming from the beginning, how we can start?
 headline: My code is getting worse, please send more chocolate

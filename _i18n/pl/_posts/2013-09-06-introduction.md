@@ -1,6 +1,5 @@
 ---
 layout: post
-type: status
 title: Wprowadzenie
 description: Programowanie od kuchni, czyli z czym to się je
 headline: My code is getting worse, please send more chocolate

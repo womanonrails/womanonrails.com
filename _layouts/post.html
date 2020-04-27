@@ -66,13 +66,11 @@ Description: Awesome dude, awesome life
                     </header>
                     <div class="post-body bordered-bottom" itemprop="description">
                         {% if page.video %}
-                        {% if page.video_type == 'vimeo' %}
-                            {% assign video_embed = page.video | remove:'https://vimeo.com/' %}
-                            <iframe src="https://player.vimeo.com/video/{{ video_embed }}" width="940" height="529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        {% else %}
-                            {% assign video_embed = page.video | remove:'https://www.youtube.com/watch?v=' %}
-                            <iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe>
-                        {% endif %}
+                          {% if page.video_type == 'vimeo' %}
+                            {% include video/vimeo-iframe.html url=page.video %}
+                          {% else %}
+                            {% include video/youtube-iframe.html url=page.video %}
+                          {% endif %}
                         {% endif %}
                         {{ content }}
                         <br>

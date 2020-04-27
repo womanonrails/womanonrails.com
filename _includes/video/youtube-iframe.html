@@ -1,0 +1,7 @@
+{% assign video_id = include.url | remove: 'https://www.youtube.com/watch?v=' %}
+<iframe allowfullscreen
+        frameborder='0'
+        height='529'
+        src='https://www.youtube.com/embed/{{ video_id }}?theme=light&amp;color=white'
+        width='940'>
+</iframe>

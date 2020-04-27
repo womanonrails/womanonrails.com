@@ -1,0 +1,9 @@
+{% assign video_id = include.url | remove: 'https://vimeo.com/' %}
+<iframe allowfullscreen
+        frameborder='0'
+        height='529'
+        mozallowfullscreen
+        src='https://player.vimeo.com/video/{{ video_id }}'
+        webkitallowfullscreen
+        width='940'>
+</iframe>

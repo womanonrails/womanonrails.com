@@ -4,150 +4,68 @@ layout: home
 {% for post in paginator.posts %}
 {% assign post_url = post.url | absolute_url %}
 {% assign categories = post.categories | categories_filter %}
+{% assign post_excerpt = post.excerpt | strip_html %}
+{% assign post_excerpt_size = post.excerpt | number_of_words %}
+{% assign post_first_100_words = post.content | strip_html | truncatewords: 100 %}
+{% assign post_time = post.date | date: "%Y%m%d" %}
 <div class='row'>
   <article class='post col-md-8 col-md-offset-2'>
     <header class='post-header'>
-    {% if post.type == 'quote' %}
-                      <h2 class="post-title text-center super lighter {{post.type}}">
-                        <a href="{{ post_url }}">
-                          {{ post.excerpt | strip_html }}
-                        </a>
-                      </h2>
-                      <p class="light small text-center">
-                        Share this Quote
-                      </p>
-                      <ul class="social-mini text-center">
-                        <li>
-                          {% include links/share/share-on-twitter.html title=post.title url=post_url %}
-                        </li>
-                        <li>
-                          {% include links/share/share-on-facebook.html url=post_url %}
-                        </li>
-                      </ul>
-                  <div class="post-body bordered-bottom text-center">
-                    <a href="{{ post_url }}"
-                       data-toggle="tooltip"
-                       title="{{ post.description }}"
-                       class="more-link btn btn-danger btn-large">
-                      {% t read_more %}
-                    </a>
-                  </div>
+      <h2 class='post-title text-center super lighter {{post.type}}'>
+        <a href='{{ post_url }}'>
+          {{ post.title }}
+        </a>
+      </h2>
+
+      {% if post.type == 'photo' %}
+        {% if post.photo %}
+          {% assign post_image = post.photo %}
+        {% else %}
+          {% assign post_image = post.imagefeature %}
+        {% endif %}
+        {% capture post_image_url %}{{ site.url }}/images/{{ post_image }}{% endcapture %}
+      <figure>
+        <a href='{{ post_url }}'>
+          <img alt='{{ post.title }}'
+               itemprop='image'
+               src='{{ post_image_url }}'>
+        </a>
+      </figure>
+      {% endif %}
+
+      {% if post.type == 'video' %}
+      <p>
+        {% if post.video_type == 'vimeo' %}
+          {% include video/vimeo-iframe.html url=post.video %}
+        {% else %}
+          {% include video/youtube-iframe.html url=post.video %}
+        {% endif %}
+      </p>
+      {% endif %}
+
+      <div class='post-info text-center small'>
+        {% include category-link.html %}
+      </div>
     </header>
-    {% endif %}
-    {% if post.type == 'status' %}
-                      <h2 class="post-title text-center super lighter {{post.type}}">
-                        <a href="{{ post_url }}">
-                          "{{ post.excerpt | strip_html }}"
-                        </a>
-                      </h2>
-                      <p class="light small text-center">
-                        Share this Status
-                      </p>
-                      <ul class="social-mini text-center">
-                        <li>
-                          {% include links/share/share-on-twitter.html title=post.title url=post_url %}
-                        </li>
-                        <li>
-                          {% include links/share/share-on-facebook.html url=post_url %}
-                        </li>
-                      </ul>
-                      <div class="post-info text-center small">
-                          {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
-                          {% assign posttime = post.date | date: "%Y%m%d" %}
-                          Status posted @ <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>{% endif %}{% endif %}
-                          in <span class="post-tags">{% for tag in categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
-                          <div class="post-body bordered-bottom"></div>
-                      </div>
-    </header>
-    {% endif %}
-    {% if post.type == 'video' %}
-                <h2 class="post-title text-center super lighter bordered-bottom">
-                  <a href="{{ post_url }}">
-                    {{ post.title }}
-                  </a>
-                </h2>
-                <div class="post-info text-center small">
-                  {% include category-link.html %}
-                </div>
-    </header>
+
     <div class='post-body bordered-bottom'>
-                  {% if post.video_type == 'vimeo' %}
-                    {% assign video_embed = post.video | remove:'https://vimeo.com/' %}
-                    <p><iframe src="https://player.vimeo.com/video/{{ video_embed }}" width="940" height="529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
-                  {% else %}
-                    {% assign video_embed = post.video | remove:'https://www.youtube.com/watch?v=' %}
-                    <p><iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe></p>
-                  {% endif %}
-                  <p class="lead">{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-                <div class="text-center">
-                  <a href="{{ post_url }}"
-                     data-toggle="tooltip"
-                     title="{{ post.description }}"
-                     class="more-link btn btn-danger btn-large">
-                    {% t see_more %}
-                  </a>
-                </div>
+      <p class='lead'>
+      {% if post_excerpt_size <= 100 and post_excerpt_size >= 50 %}
+        {{ post_excerpt }}
+      {% else %}
+        {{ post_first_100_words }}
+      {% endif %}
+      </p>
+      <div class='text-center'>
+        <a href="{{ post_url }}"
+           data-toggle='tooltip'
+           title="{{ post.description }}"
+           class='more-link btn btn-danger btn-large'>
+          {% t read_more %}
+        </a>
+        {% include social-mini-list.html title=post.title url=post_url %}
+      </div>
     </div>
-    {% endif %}
-    {% if post.type == 'photo' %}
-                    <figure>
-                      <a href="{{ post_url }}">
-                      {% if post.photo %}
-                        <img alt="{{ post.title }}"
-                             itemprop='image'
-                             src="{{ site.url }}/images/{{ post.photo }}">
-                      {% else %}
-                        <img alt="{{ post.title }}"
-                             itemprop='image'
-                             src="{{ site.url }}/images/{{ post.imagefeature }}">
-                      {% endif %}
-                      </a>
-                    </figure>
-                      <h2 class="post-title text-center super lighter bordered-bottom">
-                        <a href="{{ post_url }}">
-                          {{ post.title }}
-                        </a>
-                      </h2>
-                      <div class="post-info text-center small">
-                        {% include category-link.html %}
-                      </div>
-    </header>
-    <div class='post-body bordered-bottom'>
-                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-                    <div class="text-center">
-                      <a href="{{ post_url }}"
-                         data-toggle="tooltip"
-                         title="{{ post.description }}"
-                         class="more-link btn btn-danger btn-large">
-                        {% t read_more %}
-                      </a>
-                    </div>
-    </div>
-    {% endif %}
-    {% if post.type != 'video' and post.type != 'status' and post.type != 'quote' and post.type != 'photo' %}
-                    <h2 class="post-title text-center super lighter bordered-bottom">
-                      <a href="{{ post_url }}">
-                        {{ post.title }}
-                      </a>
-                    </h2>
-                    <div class="post-info text-center small">
-                      {% include category-link.html %}
-                    </div>
-    </header>
-    <div class='post-body bordered-bottom'>
-                  {% assign excerptsize = post.excerpt | number_of_words %}
-                  {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
-                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
-                    <div class="text-center">
-                      <a href="{{ post_url }}"
-                         data-toggle="tooltip"
-                         title="{{ post.description }}"
-                         class="more-link btn btn-danger btn-large">
-                        {% t read_more %}
-                      </a>
-                    </div>
-    </div>
-    {% endif %}
   </article>
 </div>
 {% endfor %}
