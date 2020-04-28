@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: CoderDojo workshops
 video: https://www.youtube.com/watch?v=G_tTBd_ei3s
 description: CoderDojo one rule - be cool

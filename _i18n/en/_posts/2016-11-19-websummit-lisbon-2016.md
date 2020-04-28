@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Web Summit Lisbon 2016
 video: https://vimeo.com/192149166
 description: Web Summit adventure in Lisbon

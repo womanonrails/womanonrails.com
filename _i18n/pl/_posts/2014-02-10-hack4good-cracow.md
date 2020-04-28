@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Hack4Good Kraków
 video: https://vimeo.com/86457984
 description: Hack4Good w Polsce

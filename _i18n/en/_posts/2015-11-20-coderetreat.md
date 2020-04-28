@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Coderetreat 2015 Cracow
 photo: coderetreat/session5.jpg
 description: Coderetreat - programming workshop

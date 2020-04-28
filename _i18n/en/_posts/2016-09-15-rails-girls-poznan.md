@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Rails Girls Poznań (02 – 03 September 2016)
 video: https://vimeo.com/182355471
 description: Rails Girls Poznań - video story

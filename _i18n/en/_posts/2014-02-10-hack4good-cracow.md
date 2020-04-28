@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Hack4Good Cracow
 video: https://vimeo.com/86457984
 description: Hask4Good Poland

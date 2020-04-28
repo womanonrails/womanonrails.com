@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Praca zdalna
 photo: remote/victoria.jpg
 description: Jak to jest pracować zdalnie?

@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Global Game Jam
 video: https://www.youtube.com/watch?v=-g4BbTNCgck
 description: How create game in 48h?

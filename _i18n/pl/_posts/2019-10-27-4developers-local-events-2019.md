@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Lokalne edycje 4Developers 2019
 photo: 4developers/4developers-2019-local-editions-header.jpg
 description: Jak wziąć udział w lokalnym wydarzeniu 4Developers?

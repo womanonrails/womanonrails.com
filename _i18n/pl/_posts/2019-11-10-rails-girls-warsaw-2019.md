@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 photo: rails-girls-warsaw-2019/photo.jpg
 title: Rails Girls Warszawa (19 - 20 Październik 2019)
 description: Fotorelacja z Rails Girls Warszawa

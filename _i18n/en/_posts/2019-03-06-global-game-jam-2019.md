@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Global Game Jam Cieszyn 2019
 video: https://vimeo.com/313649514
 description: How to prepare fully functional game in 48h?

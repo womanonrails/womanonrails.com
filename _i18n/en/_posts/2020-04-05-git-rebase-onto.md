@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 photo: git-rebase-onto/git-rebase-onto-header.png
 title: Git rebase --onto an overview
 description: Removing commits from a current branch or changing parent branch.

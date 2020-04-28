@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Rails Girls witaj z powrotem!
 photo: rails-girls-warsaw-2014/team.jpg
 description: Ja jako Rails Girls Mentor

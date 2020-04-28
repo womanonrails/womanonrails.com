@@ -15,13 +15,13 @@ layout: home
         </a>
       </h2>
 
-      {% if post.type == 'photo' %}
+      {% if post.photo != nil %}
         {% include link-to-post-with-image.html
                    alt=post.title
                    image=post.photo
                    url=post_url
         %}
-      {% elsif post.type == 'video' %}
+      {% elsif post.video != nil %}
       <p>
         {% include video/autodetect.html url=post.video %}
       </p>

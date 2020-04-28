@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 photo: git-rebase-onto/git-rebase-onto-header.png
 title: Jak używać git rebase --onto?
 description: Usuwanie zmian z bieżącej gałęzi lub zmiana gałęzi rodzicielskiej

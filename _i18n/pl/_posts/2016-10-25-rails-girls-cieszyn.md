@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Rails Girls Cieszyn (15 – 16 Październik 2016)
 video: https://vimeo.com/189199542
 description: Wideo relacja z warsztatów Rails Girls Cieszyn

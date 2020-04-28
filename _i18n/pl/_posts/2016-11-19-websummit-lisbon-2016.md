@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Web Summit - Lizbona 2016
 video: https://vimeo.com/192149166
 description: Przygoda z Web Summit w Lizbonie

@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Rails Girls Szczecin (22 – 23 August 2015)
 video: https://www.youtube.com/watch?v=UVAF7ndEJyE
 description: Rails Girls Szczecin - video relation

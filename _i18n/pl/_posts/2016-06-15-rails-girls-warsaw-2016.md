@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 video: https://www.youtube.com/watch?v=W6-Y56N9UvQ
 title: Rails Girls Warszawa (11 - 12 Czerwiec 2016)
 description: Wideo relacja z warsztatów Rails Girls w Warszawie

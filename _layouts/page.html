@@ -3,29 +3,29 @@ layout: default
 ---
 
 {% include header.html %}
-<div id="main" class="content" role="main" itemprop="mainContentOfPage">
-    <div class="container">
-
-        <div class="row">
-            <article class="page col-md-8 col-md-offset-2">
-                    <header class="post-header">
-                        {% if page.link %}
-                        <h1 class="post-title text-center hyper lighter"><a href="{{ page.link }}" data-toggle="tooltip" title="Go to {{ page.link }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">{{ page.title }} <span class="link-arrow">&rarr;</span></a></h1>
-                        {% else %}
-                        <h1 class="post-title text-center hyper lighter bordered-bottom">{{ page.title }}</h1>
-                        {% endif %}
-                        <div class='cursive'>{{ page.description }}</div>
-                        <div class="post-info text-center small">
-                          {% include read-time.html %}
-                        </div>
-                    </header>
-                    <div class="page-body" itemprop="description">
-                        {{ content }}
-                    </div>
-                    </footer>
-            </article>
+<div class='content'
+     id='main'
+     itemprop='mainContentOfPage'
+     role='main'>
+  <div class='container'>
+    <div class='row'>
+      <article class='page col-md-8 col-md-offset-2'>
+        <header class='post-header'>
+          <h1 class='post-title text-center hyper lighter bordered-bottom'>
+            {{ page.title }}
+          </h1>
+          <div class='cursive'>{{ page.description }}</div>
+          <div class='post-info text-center small'>
+            {% include read-time.html %}
+          </div>
+        </header>
+        <div class='page-body'
+             itemprop='description'>
+          {{ content }}
         </div>
+      </article>
     </div>
+  </div>
 </div>
 {% include footer.html %}
 

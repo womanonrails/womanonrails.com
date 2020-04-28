@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: 4Developers Wrocław - 2019
 photo: 4developers-wroclaw-2019/photo.jpg
 description: Moje wrażenia po konferencji 4Developers we Wrocławiu

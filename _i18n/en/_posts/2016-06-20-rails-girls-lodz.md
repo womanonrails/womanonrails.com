@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title: Rails Girls Łódź (16 – 17 June 2016)
 video: https://www.youtube.com/watch?v=VmNY-nrOYbM
 description: Rails Girls Łódź - video story

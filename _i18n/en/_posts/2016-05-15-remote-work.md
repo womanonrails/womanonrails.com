@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Working remote
 photo: remote/victoria.jpg
 description: How is it feel working remotely?

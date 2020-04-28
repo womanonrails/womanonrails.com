@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: Rails Girls Kraków
 photo: rails-girls-krakow-2014/rgkrakow1.jpg
 description: Rails Girls dla mołodych programistek

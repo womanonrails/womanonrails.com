@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 title: 4Developers Wroclaw - 2019
 photo: 4developers-wroclaw-2019/photo.jpg
 description: My impression after 4Developers in Wroclaw

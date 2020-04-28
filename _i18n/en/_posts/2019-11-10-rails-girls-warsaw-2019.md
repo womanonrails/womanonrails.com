@@ -1,6 +1,5 @@
 ---
 layout: post
-type: photo
 photo: rails-girls-warsaw-2019/photo.jpg
 title: Rails Girls Warsaw (19 - 20 October 2019)
 description: Photo story from Rails Girls Warsaw

@@ -1,6 +1,5 @@
 ---
 layout: post
-type: quote
 title: Be yourself – How deal with low self-confidence
 description: Self-confidence - full time job
 headline: My code is getting worse, please send more chocolate
