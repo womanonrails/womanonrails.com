@@ -5,7 +5,6 @@ $dark-red: #d2322d;
 $grey: #ddd;
 $link-grey: #67666a;
 $link-light-grey: #807f83;
-$quote-grey: #c91b26;
 $text-white: #fff;
 
 body {
@@ -66,12 +65,6 @@ pre {
   a:visited, a:focus {
     text-decoration: none;
     color: $link-grey;
-  }
-}
-
-.status, .quote {
-  a, a:visited, a:focus{
-    color: $quote-grey;
   }
 }
 

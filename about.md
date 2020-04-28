@@ -50,7 +50,7 @@ Fortunately, in my life one more thing appear, which was, and still is, exciting
 
 It was a great decision. I was delighted. Computers stopped being for me incomprehensible machines. Now I could talk with them in the same language. To be honest, in many languages. I could do and create whatever I imagine, using only the keyboard! An amazing feeling!
 
-In last year I started my internship in IT company <a href="https://fractalsoft.org/" title="Ruby on Rails web applications">Fractal Soft</a>. They focus on the creation of web applications using **Ruby language**. Ruby is beautiful, readable, simple and very flexible language. Writing in Ruby is pure pleasure. I started to learn more and more about Ruby.
+In last year I started my internship in IT company <a href='https://fractalsoft.org/' title='Ruby on Rails web applications'>Fractal Soft</a>. They focus on the creation of web applications using **Ruby language**. Ruby is beautiful, readable, simple and very flexible language. Writing in Ruby is pure pleasure. I started to learn more and more about Ruby.
 
 But I still felt that there is something I miss. That feeling I need to learn more, that I'm not good enough in programming. That I need to develop my skills more. One of my friends sent me information about workshops called **Rails Girls**. Next workshops were planned in Wroclaw. You have to fill forms and best 30 people will get invitations to this workshop.
 
@@ -97,7 +97,7 @@ Tym razem byłam naprawdę przerażona. Tyle czasu spędziłam na dotarciu do te
   <a href="{{ baseurl }}/images/about/work.jpg"><img src="{{ baseurl }}/images/about/work.jpg"></a>
   <a href="{{ baseurl }}/images/about/rg-poznan.jpg"><img src="{{ baseurl }}/images/about/rg-poznan.jpg"></a>
   <a href="{{ baseurl }}/images/about/rg-silesia.jpg"><img src="{{ baseurl }}/images/about/rg-silesia.jpg"></a>
-  <figcaption>Memories</figcaption>
+  <figcaption>Wspomnienia</figcaption>
 </figure>
 
 Na szczęście w moim życiu pojawiła się jeszcze jedna rzecz. Takie połączenie precyzji, logiki, dokładności, rozwiązywania łamigłówek i umiejętności analitycznego myślenia. Elementów, za które zawsze kochałam i dalej kocham matematykę. W moim życiu pojawiło się programowanie.
@@ -106,7 +106,7 @@ Programowanie poznałam na swojej specjalizacji podczas studiów. Mogę powiedzi
 
 Okazało się to strzałem w dziesiątkę. Byłam zachwycona. Komputery przestały być dla mnie niezrozumiałymi maszynami. A stały się otwarta księgą, w której mogłam zapisać, co tylko chciałam. Z którymi mogłam rozmawiać różnymi językami i stworzyć coś praktycznie z niczego. Przy użyciu klawiatury i myszy. Niesamowite uczucie!
 
-Na ostatnim roku (moich drugich studiów) znalazłam praktyki w firmie <a href="https://fractalsoft.org/" title="Aplikacje internetowe">Fractal Soft</a>, która specjalizuje się w tworzeniu aplikacji internetowych w **języku Ruby**. Ten język programowania jest niesamowicie piękny, czytelny, prosty i do tego elastyczny. Pisanie w nim to czysta przyjemność. Postanowiłam, że z przyjemnością poznam go bliżej.
+Na ostatnim roku (moich drugich studiów) znalazłam praktyki w firmie <a href='https://fractalsoft.org/pl' title='Aplikacje internetowe'>Fractal Soft</a>, która specjalizuje się w tworzeniu aplikacji internetowych w **języku Ruby**. Ten język programowania jest niesamowicie piękny, czytelny, prosty i do tego elastyczny. Pisanie w nim to czysta przyjemność. Postanowiłam, że z przyjemnością poznam go bliżej.
 
 Jednak cały czas towarzyszył mi jakiś niedosyt. Takie poczucie, że jeszcze wiele muszę się nauczyć, że ciągle potrzebuje się rozwijać. Pewien kolega podesłał mi informację o warsztatach z programowania, które nazywają się **Rails Girls**. Najbliższe takie warsztaty miały odbyć się we Wrocławiu. Trzeba było wypełnić formularz. 30 osób z  najlepszymi zgłoszeniami miało dostać możliwość wzięcia udziału w warsztatach.
 
