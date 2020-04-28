@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Cieszyn (15 – 16 October 2016)
 video: https://vimeo.com/189199542
-video_type: vimeo
 description: Rails Girls Cieszyn - video story
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

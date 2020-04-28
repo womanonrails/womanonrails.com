@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Szczecin (22 – 23 Sierpień 2015)
 video: https://www.youtube.com/watch?v=UVAF7ndEJyE
-video_type: youtube
 description: Wideo relacja z Rails Girls Szczecin
 headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]

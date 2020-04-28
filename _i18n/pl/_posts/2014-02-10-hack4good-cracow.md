@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Hack4Good Kraków
 video: https://vimeo.com/86457984
-video_type: vimeo
 description: Hack4Good w Polsce
 headline: My code is getting worse, please send more chocolate
 categories: [hakaton]

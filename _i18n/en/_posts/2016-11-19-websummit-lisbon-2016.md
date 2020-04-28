@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Web Summit Lisbon 2016
 video: https://vimeo.com/192149166
-video_type: vimeo
 description: Web Summit adventure in Lisbon
 headline: Premature optimization is the root of all evil.
 categories: [conference]

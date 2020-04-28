@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Poznań (02 – 03 Wrzesień 2016)
 video: https://vimeo.com/182355471
-video_type: vimeo
 description: Wideorelacja z Rails Girls Poznań
 headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]

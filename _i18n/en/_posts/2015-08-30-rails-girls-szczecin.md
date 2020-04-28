@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Szczecin (22 – 23 August 2015)
 video: https://www.youtube.com/watch?v=UVAF7ndEJyE
-video_type: youtube
 description: Rails Girls Szczecin - video relation
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

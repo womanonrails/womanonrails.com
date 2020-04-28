@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Łódź (16 – 17 June 2016)
 video: https://www.youtube.com/watch?v=VmNY-nrOYbM
-video_type: youtube
 description: Rails Girls Łódź - video story
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

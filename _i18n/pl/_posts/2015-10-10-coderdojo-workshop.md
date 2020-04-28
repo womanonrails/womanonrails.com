@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Warsztaty CoderDojo
 video: https://www.youtube.com/watch?v=G_tTBd_ei3s
-video_type: youtube
 description: CoderDojo jedna zasada - bądź fajny
 headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]

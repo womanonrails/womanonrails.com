@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Rails Girls Silesia 2014
 video: https://vimeo.com/114024898
-video_type: vimeo
 description: Organizing my first Rails Girls in Silesia
 headline: Premature optimization is the root of all evil.
 categories: [workshops]

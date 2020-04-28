@@ -3,7 +3,6 @@ layout: post
 type: video
 title: Global Game Jam Cieszyn 2019
 video: https://vimeo.com/313649514
-video_type: vimeo
 description: Jak przygotować działającą grę w 48 godzin?
 headline: Premature optimization is the root of all evil.
 categories: [hakaton]
