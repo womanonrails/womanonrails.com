@@ -3,11 +3,9 @@ layout: home
 ---
 {% for post in paginator.posts %}
 {% assign post_url = post.url | absolute_url %}
-{% assign categories = post.categories | categories_filter %}
 {% assign post_excerpt = post.excerpt | strip_html %}
 {% assign post_excerpt_size = post.excerpt | number_of_words %}
 {% assign post_first_100_words = post.content | strip_html | truncatewords: 100 %}
-{% assign post_time = post.date | date: "%Y%m%d" %}
 <div class='row'>
   <article class='post col-md-8 col-md-offset-2'>
     <header class='post-header'>
@@ -18,28 +16,14 @@ layout: home
       </h2>
 
       {% if post.type == 'photo' %}
-        {% if post.photo %}
-          {% assign post_image = post.photo %}
-        {% else %}
-          {% assign post_image = post.imagefeature %}
-        {% endif %}
-        {% capture post_image_url %}{{ site.url }}/images/{{ post_image }}{% endcapture %}
-      <figure>
-        <a href='{{ post_url }}'>
-          <img alt='{{ post.title }}'
-               itemprop='image'
-               src='{{ post_image_url }}'>
-        </a>
-      </figure>
-      {% endif %}
-
-      {% if post.type == 'video' %}
+        {% include link-to-post-with-image.html
+                   alt=post.title
+                   image=post.photo
+                   url=post_url
+        %}
+      {% elsif post.type == 'video' %}
       <p>
-        {% if post.video_type == 'vimeo' %}
-          {% include video/vimeo-iframe.html url=post.video %}
-        {% else %}
-          {% include video/youtube-iframe.html url=post.video %}
-        {% endif %}
+        {% include video/autodetect.html url=post.video %}
       </p>
       {% endif %}
 
@@ -59,7 +43,7 @@ layout: home
       <div class='text-center'>
         <a href="{{ post_url }}"
            data-toggle='tooltip'
-           title="{{ post.description }}"
+           title='{{ post.description }}'
            class='more-link btn btn-danger btn-large'>
           {% t read_more %}
         </a>

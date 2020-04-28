@@ -65,15 +65,9 @@ Description: Awesome dude, awesome life
                         </div>
                     </header>
                     <div class="post-body bordered-bottom" itemprop="description">
-                        {% if page.video %}
-                          {% if page.video_type == 'vimeo' %}
-                            {% include video/vimeo-iframe.html url=page.video %}
-                          {% else %}
-                            {% include video/youtube-iframe.html url=page.video %}
-                          {% endif %}
-                        {% endif %}
-                        {{ content }}
-                        <br>
+                      {% include video/autodetect.html url=page.video %}
+                      {{ content }}
+                      <br>
                     {% assign tagsize = page.tags.size %}
                     {% if tagsize != 0 %}
                     <div class="entry-tags text-center">

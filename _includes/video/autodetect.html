@@ -1,0 +1,7 @@
+{% if include.url contains 'vimeo.com' %}
+  {% include video/vimeo-iframe.html url=include.url %}
+{% elsif include.url contains 'youtube.com' %}
+  {% include video/youtube-iframe.html url=include.url %}
+{% elsif include.url != '' and include.url != nil %}
+  {% include video/video-url.html url=include.url %}
+{% endif %}
