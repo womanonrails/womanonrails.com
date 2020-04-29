@@ -1,5 +1,6 @@
 ---
 layout: home
+namespace: homepage
 ---
 {% for post in paginator.posts %}
 {% assign post_url = post.url | absolute_url %}
@@ -45,7 +46,7 @@ layout: home
            data-toggle='tooltip'
            title='{{ post.description }}'
            class='more-link btn btn-danger btn-large'>
-          {% t read_more %}
+          {{ site.locales[page.lang].read_more }}
         </a>
         {% include social-mini-list.html title=post.title url=post_url %}
       </div>
@@ -55,6 +56,7 @@ layout: home
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
+{% assign pagination = site.locales[page.lang].pagination %}
         <div class="row text-center text-caps">
             <div class="col-md-8 col-md-offset-2">
                 <nav class="pagination" role="navigation">
@@ -62,25 +64,32 @@ layout: home
   {% if paginator.previous_page == 1 %}
     {% if site.lang == 'en' %}
       <a class="newer-posts" href="/">
-        &larr; {% t pagination.newer_posts %}
+        &larr;
+        {{ pagination.newer_posts }}
       </a>
     {% else %}
       <a class="newer-posts" href="/{{ site.lang }}">
-        &larr; {% t pagination.newer_posts %}
+        &larr;
+        {{ pagination.newer_posts }}
       </a>
     {% endif %}
   {% else %}
     <a class="newer-posts" href="{{ site.baseurl }}/page{{ paginator.previous_page }}">
-      &larr; {% t pagination.newer_posts %}
+      &larr;
+      {{ pagination.newer_posts }}
     </a>
   {% endif %}
 {% endif %}
 <span class="page-number">
-  {% t pagination.page %} {{ paginator.page }} {% t pagination.of %} {{ paginator.total_pages }}
+  {{ pagination.page }}
+  {{ paginator.page }}
+  {{ pagination.of }}
+  {{ paginator.total_pages }}
 </span>
 {% if paginator.next_page %}
   <a class="older-posts" href="{{ site.baseurl }}/page{{ paginator.next_page }}">
-    {% t pagination.older_posts %} &rarr;
+    {{ pagination.older_posts }}
+    &rarr;
   </a>
 {% endif %}
 </nav>

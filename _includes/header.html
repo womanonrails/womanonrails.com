@@ -10,10 +10,10 @@
   </nav>
 </aside>
 
-{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">{% if page.imagecredit %}<span class="image-credit">Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a></span>{% endif %}
-{% else %}
-<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom" itemscope itemtype="https://schema.org/Organization">
-{% endif %}
+<header class='blog-background overlay align-center align-middle animated from-bottom'
+        id='masthead'
+        itemscope
+        itemtype='https://schema.org/Organization'>
 
 {% include search.html %}
 {% include language.html %}

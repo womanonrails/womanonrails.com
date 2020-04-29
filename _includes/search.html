@@ -1,5 +1,6 @@
 {% if site.search %}
-<button class='menu-button animated fade dosearch' title='{% t search %}'>
+<button class='menu-button animated fade dosearch'
+        title='{{ site.locales[page.lang].search }}'>
   {% include icons/icon-svg.html icon='search' %}
 </button>
 {% endif %}

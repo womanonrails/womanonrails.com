@@ -1,21 +1,42 @@
+{% assign meta = site.locales[page.lang].meta %}
+{% capture title %}{% if page.title %}{{ page.title }} - {% endif %}{{ meta.title }}{% endcapture %}
+
+{% if page.description %}
+  {% assign description = page.description %}
+{% else %}
+  {% assign description = meta.description %}
+{% endif %}
+
+{% if page.imagefeature %}
+  {% assign og_image_name = page.imagefeature %}
+  {% assign twitter_card = 'summary_large_image' %}
+  {% assign twitter_image_name = page.imagefeature %}
+{% else %}
+  {% assign og_image_name = site.meta.image %}
+  {% assign twitter_card = 'summary' %}
+  {% assign twitter_image_name = site.logo %}
+{% endif %}
+
+{% capture og_image %}{{ site.url }}/images/{{ og_image_name }}{% endcapture %}
+{% capture twitter_image %}{{ site.url }}/images/{{ twitter_image_name }}{% endcapture %}
+
 <meta charset='utf-8'>
-<title>{% if page.title %}{{ page.title }} - {% endif %}{% t meta.title %}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% t meta.description %}{% endif %}">
+<title>{{ title }}</title>
+<meta name='description' content='{{ description }}'>
 
 {% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.imagefeature %}<meta name='twitter:card' content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/images/{{ page.imagefeature }}">
-{% else %}<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{% t meta.title %}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{% t meta.description %}{% endif %}">
-<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+<meta name='twitter:card' content='{{ twitter_card }}'>
+<meta name='twitter:creator' content='@{{ site.owner.twitter }}'>
+<meta name='twitter:description' content='{{ description }}'>
+<meta name='twitter:image' content='{{ twitter_image }}'>
+<meta name='twitter:title' content='{{ title }}'>
+{% endif %}
 
 <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{% t meta.title %}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{% t meta.description %}{% endif %}">
-{% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/{{ page.imagefeature }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/{{ site.meta.image }}">{% endif %}
+<meta property='og:description' content='{{ description }}'>
+<meta property='og:image' content='{{ og_image }}'>
+<meta property='og:title' content='{{ title }}'>
+<meta property='og:type' content='website'>
 
 <link rel='shortcut icon' href="{{ site.url }}/favicon.ico">
 <link rel='shortcut icon' href="{{ site.url }}/favicon.png">

@@ -10,9 +10,9 @@
         {% include icons/icon-in-footer--github.html %}
       </ul>
       <div>
-        <a href="{% translate_link about %}">{{ site.owner.name }}</a>
-          &copy; {{ site.time | date: '%Y' }}
-          &bull; All rights reserved.
+        {{ site.owner.name }}
+        &copy; {{ site.time | date: '%Y' }}
+        &bull; All rights reserved.
       </div>
       <ul class='menu-items'>
       {% for link in site.links %}
