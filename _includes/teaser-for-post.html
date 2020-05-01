@@ -1,0 +1,50 @@
+{% assign post_url = post.url | absolute_url %}
+{% assign post_excerpt = post.excerpt | strip_html %}
+{% assign post_excerpt_size = post.excerpt | number_of_words %}
+{% assign post_first_100_words = post.content | strip_html | truncatewords: 100 %}
+<div class='row'>
+  <article class='post col-md-8 col-md-offset-2'>
+    <header class='post-header'>
+      <h2 class='post-title text-center super lighter {{post.type}}'>
+        <a href='{{ post_url }}'>
+          {{ post.title }}
+        </a>
+      </h2>
+
+      {% if post.photo != nil %}
+        {% include link-to-post-with-image.html
+                   alt=post.title
+                   image=post.photo
+                   url=post_url
+        %}
+      {% elsif post.video != nil %}
+      <p>
+        {% include video/autodetect.html url=post.video %}
+      </p>
+      {% endif %}
+
+      <div class='post-info text-center small'>
+        {% include category-link.html %}
+      </div>
+    </header>
+
+    <div class='post-body bordered-bottom'>
+      <p class='lead'>
+      {% if post_excerpt_size <= 100 and post_excerpt_size >= 50 %}
+        {{ post_excerpt }}
+      {% else %}
+        {{ post_first_100_words }}
+      {% endif %}
+      </p>
+      <div class='text-center'>
+        <a href="{{ post_url }}"
+           data-toggle='tooltip'
+           title='{{ post.description }}'
+           class='more-link btn btn-danger btn-large'>
+          {% t read_more %}
+        </a>
+        {% include social-mini-list.html title=post.title url=post_url %}
+      </div>
+    </div>
+  </article>
+</div>
