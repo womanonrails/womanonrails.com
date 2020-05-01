@@ -5,11 +5,16 @@
 <div class='row'>
   <article class='post col-md-8 col-md-offset-2'>
     <header class='post-header'>
-      <h2 class='post-title text-center super lighter {{post.type}}'>
+      <h2 class='post-title text-center super lighter bordered-bottom'>
         <a href='{{ post_url }}'>
           {{ post.title }}
         </a>
       </h2>
+
+      <div class='post-info small text-center'>
+        {% assign categories = post.categories | categories_filter %}
+        {% include category-link.html %}
+      </div>
 
       {% if post.photo != nil %}
         {% include link-to-post-with-image.html
@@ -22,10 +27,6 @@
         {% include video/autodetect.html url=post.video %}
       </p>
       {% endif %}
-
-      <div class='post-info text-center small'>
-        {% include category-link.html %}
-      </div>
     </header>
 
     <div class='post-body bordered-bottom'>
@@ -41,6 +42,7 @@
            data-toggle='tooltip'
            title='{{ post.description }}'
            class='more-link btn btn-danger btn-large'>
+          {% include icons/icon-svg.html icon='link' %}
           {% t read_more %}
         </a>
         {% include social-mini-list.html title=post.title url=post_url %}
