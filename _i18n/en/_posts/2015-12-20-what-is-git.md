@@ -2,7 +2,7 @@
 layout: post
 title: What is git?
 description: Git basics - Why we use git?
-headline: My code is getting worse, please send more chocolate
+headline: Premature optimization is the root of all evil.
 categories: [tools]
 tags: [environment, git, version control system]
 lang: en
