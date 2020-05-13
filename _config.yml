@@ -127,6 +127,8 @@ compress_html:
   blanklines: false
   clippings: all
   comments: all
+  ignore:
+    envs: development
   # endings: all
   # profile: true
   # startings: all
@@ -139,6 +141,7 @@ timezone:    America/New_York
 paginate:    6
 paginate_path: "page:num"
 
+applause: true
 
 # Polyglot settings
 default_lang: en

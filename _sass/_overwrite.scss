@@ -226,3 +226,28 @@ button.menu-button {
     fill: #424143;
   }
 }
+
+.applause {
+  display: inline-block;
+  position: sticky;
+  right: 90%;
+  top: 60px;
+  width: 60px;
+
+  .count-container {
+    display: block;
+    height: 82px;
+    position: relative;
+    top: 0;
+    width: 64px;
+  }
+
+  .count {
+    bottom: 0;
+    color: #807f83;
+    font-family: sans-serif;
+    padding: 0 3px;
+    position: absolute;
+    right: 0;
+  }
+}

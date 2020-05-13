@@ -1,0 +1,8 @@
+{% if site.applause %}
+<div class='applause hidden-xs hidden-sm'>
+  <applause-button color='#c33'
+                   multiclap='true'
+                   style='width: 58px; height: 58px;'
+                   url='{{ page.url | absolute_url }}' />
+</div>
+{% endif %}

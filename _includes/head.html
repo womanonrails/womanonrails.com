@@ -56,6 +56,11 @@
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
+{% if site.applause %}
+<link href='{{ "/assets/css/applause-button.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
+<script src='{{ "/assets/js/applause-button.js" | prepend: site.baseurl_root }}'></script>
+{% endif %}
+
 {% if site.search %}
 <div class="search-wrapper">
   <div class="search-form">
