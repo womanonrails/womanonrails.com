@@ -1,13 +1,4 @@
----
-comments: true
-description: Who is really me?
-lang: en
-layout: page
-namespace: about
-permalink: /about
-title: About
----
-{% assign baseurl = site.baseurl_root %}
+{% assign baseurl = site.url %}
 
 <figure>
   <a href="{{ baseurl }}/images/about/me.jpg">

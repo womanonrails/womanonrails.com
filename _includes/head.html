@@ -1,5 +1,15 @@
-{% assign meta = site.locales[page.lang].meta %}
-{% capture title %}{% if page.title %}{{ page.title }} - {% endif %}{{ meta.title }}{% endcapture %}
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.lang %}
+{% endif %}
+
+{% assign meta = site.locales[lang].meta %}
+{% if page.title %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = meta.title %}
+{% endif %}
 
 {% if page.description %}
   {% assign description = page.description %}
@@ -23,7 +33,8 @@
 <meta charset='utf-8'>
 <title>{{ title }}</title>
 <meta name='description' content='{{ description }}'>
-
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+{% seo title=false %}
 {% if site.owner.twitter %}<!-- Twitter Cards -->
 <meta name='twitter:card' content='{{ twitter_card }}'>
 <meta name='twitter:creator' content='@{{ site.owner.twitter }}'>
@@ -31,31 +42,19 @@
 <meta name='twitter:image' content='{{ twitter_image }}'>
 <meta name='twitter:title' content='{{ title }}'>
 {% endif %}
-
 <!-- Open Graph -->
 <meta property='og:description' content='{{ description }}'>
 <meta property='og:image' content='{{ og_image }}'>
 <meta property='og:title' content='{{ title }}'>
 <meta property='og:type' content='website'>
-
-<link rel='shortcut icon' href="{{ site.url }}/favicon.ico">
-<link rel='shortcut icon' href="{{ site.url }}/favicon.png">
-
+<link href='{{ "/favicon.ico" | prepend: site.url }}' rel='shortcut icon' type='image/x-icon' />
+<link href='{{ "/favicon.png" | prepend: site.url }}' rel='shortcut icon' type='image/png' />
+<link href='{{ "/feed.xml" | relative_url }}' rel='alternate' title='{{ site.title }} Feed' type='application/atom+xml' />
+<link href='{{ "/assets/css/bootstrap.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
+<link href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
+<link href='{{ "/css/main.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
-
-<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-{% seo title=false %}
-
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/style.css" />
-<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl_root }}">
 
 {% if site.search %}
 <div class="search-wrapper">

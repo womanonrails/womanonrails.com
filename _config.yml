@@ -2,16 +2,15 @@
 baseurl: ''
 url: https://womanonrails.com
 
-
 # Jekyll settings
-exclude: ['.keep', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['.keep', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_pages', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 highlighter: rouge
 kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
-locale: en
-include: ['_pages']
+lang: &lang en
+locale: *lang
 markdown: kramdown
 permalink: /:title
 
@@ -29,7 +28,7 @@ plugins:
 # Author settings
 author: &author womanonrails
 logo: womanonrails-square.svg
-title: Woman on Rails
+title: &title Woman on Rails
 
 
 owner:
@@ -121,10 +120,19 @@ defaults:
       related: true
       share: true
 
+feed:
+  excerpt_only: true
+
+compress_html:
+  blanklines: false
+  clippings: all
+  comments: all
+  # endings: all
+  # profile: true
+  # startings: all
 
 sass:
   style: :compressed
-
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
@@ -137,10 +145,6 @@ default_lang: en
 exclude_from_localizations: ['css', 'images', 'javascript']
 languages: ['en', 'pl']
 parallel_localization: true
-
-feed:
-  excerpt_only: true
-
 
 locales:
   en:

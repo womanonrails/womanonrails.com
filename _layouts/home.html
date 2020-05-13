@@ -13,10 +13,16 @@ layout: default
   </nav>
 </aside>
 
-{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="https://schema.org/Organization">
+{% if page.imagefeature %}
+  {% assign background_image = page.imagefeature %}
 {% else %}
-<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="https://schema.org/Organization">
+  {% assign background_image = site.default_bg %}
 {% endif %}
+<header class='blog-background overlay align-center align-middle animated from-bottom'
+        id='masthead'
+        itemscope
+        itemtype='https://schema.org/Organization'
+        style='background-image: url({{ site.url }}/images/{{ background_image }})'>
 
 {% include search.html %}
 {% include language.html %}

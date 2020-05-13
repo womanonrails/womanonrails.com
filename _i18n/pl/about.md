@@ -1,13 +1,4 @@
----
-comments: true
-description: Kim naprawdę jestem?
-lang: pl
-layout: page
-namespace: about
-permalink: /pl/o-mnie
-title: O mnie
----
-{% assign baseurl = site.baseurl_root %}
+{% assign baseurl = site.url %}
 
 <figure>
   <a href="{{ baseurl }}/images/about/me.jpg">
