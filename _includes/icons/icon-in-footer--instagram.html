@@ -1,6 +1,8 @@
-{% if site.owner.instagram %}
+{% if page.lang %}{% assign lang = page.lang %}{% else %}{% assign lang = site.lang %}{% endif %}
+{% if lang == 'pl' %}{% assign instagram = site.owner.instagram_pl %}{% else %}{% assign instagram = site.owner.instagram %}{% endif %}
+{% if instagram %}
 <li>
-  <a href='https://instagram.com/{{ site.owner.instagram }}' rel='nofollow noopener noreferrer' target='_blank'>
+  <a href='https://instagram.com/{{ instagram }}' rel='nofollow noopener noreferrer' target='_blank'>
     <span class='svg--linkedin'>{% include icons/svg/instagram.svg %}</span>
   </a>
 </li>

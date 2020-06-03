@@ -1,6 +1,8 @@
-{% if site.owner.facebook %}
+{% if page.lang %}{% assign lang = page.lang %}{% else %}{% assign lang = site.lang %}{% endif %}
+{% if lang == 'pl' %}{% assign facebook = site.owner.facebook_pl %}{% else %}{% assign facebook = site.owner.facebook %}{% endif %}
+{% if facebook %}
 <li>
-  <a href='https://facebook.com/{{ site.owner.facebook }}' rel='nofollow noopener noreferrer' target='_blank'>
+  <a href='https://facebook.com/{{ facebook }}' rel='nofollow noopener noreferrer' target='_blank'>
     <span class='svg--facebook'>{% include icons/svg/facebook.svg %}</span>
   </a>
 </li>

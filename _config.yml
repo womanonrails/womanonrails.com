@@ -38,9 +38,11 @@ owner:
   description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
   twitter: *author
   facebook: *author
+  facebook_pl: 107403177317825
   github: *author
   linkedin: *author
   instagram: *author
+  instagram_pl: womanonrails_programuje
   stackoverflow: https://stackoverflow.com/users/2885676/womanonrails
 
 affiliate_links:
@@ -127,8 +129,8 @@ compress_html:
   blanklines: false
   clippings: all
   comments: all
-  ignore:
-    envs: development
+  # ignore:
+  #   envs: development
   # endings: all
   # profile: true
   # startings: all
