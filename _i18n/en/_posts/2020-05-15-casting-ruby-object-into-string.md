@@ -47,9 +47,9 @@ This is the moment when the most important question pops up. Why `join` and `put
 
 So, my logical part of the brain says: _After method `join` I should get `"[:symbol] string"` and this is not what I have. Hmm... why?_. I started my research. In the beginning, I focused on a difference between the `to_s` method and the `join` method.
 
-## Join method under the hoot
+## Join method under the hood
 
-First, what I discovered was that the `join` method doesn't use `to_s` under the hoot. At least this was my first understanding of this problem. It uses the `to_str` method. Let me show this in the example. I will declare a new object and I will check how it behaves in `join`.
+First, what I discovered was that the `join` method doesn't use `to_s` under the hood. At least this was my first understanding of this problem. It uses the `to_str` method. Let me show this in the example. I will declare a new object and I will check how it behaves in `join`.
 
 ```ruby
 class RubyStringTest
@@ -215,7 +215,7 @@ string_test.to_s
  => "it #<RubyStringTest:0x000055567edb0bd0> method"
 ```
 
-We see that in this case, the `join` method uses the `to_s` method under the hoot. When we override the `to_s` method, we will see our implementation:
+We see that in this case, the `join` method uses the `to_s` method under the hood. When we override the `to_s` method, we will see our implementation:
 
 ```ruby
 class RubyStringTest
