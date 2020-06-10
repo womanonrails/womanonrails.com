@@ -8,7 +8,7 @@ description: "An archive of posts sorted by categories."
 
 ---
 
-{% assign categories = site.categories | hash_filter %}
+{% assign categories = site.categories | sort | hash_filter %}
 
 <ul class="tag-box inline">
   {% if categories.first[0] == null %}

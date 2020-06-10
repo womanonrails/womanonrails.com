@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails Girls welcome back!
-photo: rails-girls-warsaw-2014/rails-girls-warsaw-2014.jpg
+photo: /images/rails-girls-warsaw-2014/rails-girls-warsaw-2014
 description: Me as a mentor on Rails Girls Warsaw
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

@@ -1,0 +1,6 @@
+{% assign image_path = include.image_name | append: '.' | append: include.image_extension %}
+{% for static_file in site.static_files %}
+{% if static_file.path contains image_path %}
+<source srcset='{{ image_path }}' type='image/{{ include.image_type }}'>
+{% endif %}
+{% endfor %}

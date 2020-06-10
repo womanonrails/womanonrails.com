@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: rails-girls-warsaw-2019/photo.jpg
+photo: /images/rails-girls-warsaw-2019/photo
 title: Rails Girls Warszawa (19 - 20 Październik 2019)
 description: Fotorelacja z Rails Girls Warszawa
 headline: My code is getting worse, please send more chocolate

@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: casting-ruby-object-into-string/chain-to_s-vs-to_str.jpg
+photo: /images/casting-ruby-object-into-string/chain-to_s-vs-to_str
 title: Jak Ruby rzutuje obiekty na łańcuchy znaków?
 description: Różnica między metodą to_s a to_str
 headline: Premature optimization is the root of all evil.

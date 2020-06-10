@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: git-rebase-onto/git-rebase-onto-header.png
+photo: /images/git-rebase-onto/git-rebase-onto-header
 title: Git rebase --onto an overview
 description: Removing commits from a current branch or changing parent branch.
 headline: Premature optimization is the root of all evil.

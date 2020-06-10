@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: casting-ruby-object-into-string/chain-to_s-vs-to_str.jpg
+photo: /images/casting-ruby-object-into-string/chain-to_s-vs-to_str
 title: How Ruby casts object into a string?
 description: Difference between to_s and to_str
 headline: Premature optimization is the root of all evil.

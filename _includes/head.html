@@ -50,15 +50,16 @@
 <link href='{{ "/favicon.ico" | prepend: site.url }}' rel='shortcut icon' type='image/x-icon' />
 <link href='{{ "/favicon.png" | prepend: site.url }}' rel='shortcut icon' type='image/png' />
 <link href='{{ "/feed.xml" | relative_url }}' rel='alternate' title='{{ site.title }} Feed' type='application/atom+xml' />
-<link href='{{ "/assets/css/bootstrap.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
-<link href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
-<link href='{{ "/css/main.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
+<link async href='{{ "/assets/css/bootstrap.css" | prepend: site.baseurl_root }}' media='all' rel='stylesheet' />
+<link href='{{ "/assets/css/style.css" | prepend: site.baseurl_root }}' media='all' rel='stylesheet' />
+<link href='{{ "/css/main.css" | prepend: site.baseurl_root }}' media='all' rel='stylesheet' />
+{% if site.disqus_shortname %}<link href='https://womanonrails.disqus.com' rel='dns-prefetch'>{% endif %}
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
 {% if site.applause %}
 <link href='{{ "/assets/css/applause-button.css" | prepend: site.baseurl_root }}' rel='stylesheet' />
-<script src='{{ "/assets/js/applause-button.js" | prepend: site.baseurl_root }}'></script>
+<script defer src='{{ "/assets/js/applause-button.js" | prepend: site.baseurl_root }}'></script>
 {% endif %}
 
 {% if site.search %}

@@ -1,0 +1,27 @@
+{% assign image_jpg = include.image_name | append: '.jpg' %}
+{% assign image_png = include.image_name | append: '.png' %}
+{% assign image_gif = include.image_name | append: '.gif' %}
+{% for static_file in site.static_files %}
+  {% if static_file.path == image_jpg %}{% assign jpg = true %}{% endif %}
+  {% if static_file.path == image_png %}{% assign png = true %}{% endif %}
+  {% if static_file.path == image_gif %}{% assign gif = true %}{% endif %}
+{% endfor %}
+
+{% if jpg == true %}
+  {% assign image_path = image_jpg %}
+{% elsif png == true %}
+  {% assign image_path = image_png %}
+{% elsif gif == true %}
+  {% assign image_path = image_gif %}
+{% else %}
+  {% assign image_path = null %}
+{% endif %}
+
+{% if image_path %}
+<img alt='{{ include.alt }}'
+     itemprop='image'
+     loading='lazy'
+     src='{{ image_path }}'>
+{% else %}
+<!-- No images matching the mask: {{ include.image_name }}.* -->
+{% endif %}

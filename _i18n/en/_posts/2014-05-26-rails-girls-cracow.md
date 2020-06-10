@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails Girls Cracow
-photo: rails-girls-krakow-2014/rails-girls-krakow-2014.jpg
+photo: /images/rails-girls-krakow-2014/rails-girls-krakow-2014
 description: Rails Girls for young programmer
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

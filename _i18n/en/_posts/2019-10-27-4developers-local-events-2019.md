@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local editions of 4Developers 2019
-photo: 4developers/4developers-2019-local-editions-header.jpg
+photo: /images/4developers/4developers-2019-local-editions-header
 description: How be a part of local event of 4Developers?
 headline: Premature optimization is the root of all evil.
 categories: [conference]

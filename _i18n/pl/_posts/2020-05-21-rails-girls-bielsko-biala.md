@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: rails-girls-bielsko-biala/rails-girls-bielsko-biala.jpg
+photo: /images/rails-girls-bielsko-biala/rails-girls-bielsko-biala
 title: Rails Girls Bielsko-Biała (7 marca 2020)
 description: Krótka historia Rails Girls Bielsko-Biała
 headline: My code is getting worse, please send more chocolate

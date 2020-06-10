@@ -1,6 +1,6 @@
 ---
 layout: post
-photo: rails-girls-warsaw-2019/photo.jpg
+photo: /images/rails-girls-warsaw-2019/photo
 title: Rails Girls Warsaw (19 - 20 October 2019)
 description: Photo story from Rails Girls Warsaw
 headline: My code is getting worse, please send more chocolate

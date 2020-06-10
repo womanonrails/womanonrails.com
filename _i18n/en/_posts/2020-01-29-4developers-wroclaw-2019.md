@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4Developers Wroclaw - 2019
-photo: 4developers-wroclaw-2019/photo.jpg
+photo: /images/4developers-wroclaw-2019/photo
 description: My impression after 4Developers in Wroclaw
 headline: Premature optimization is the root of all evil.
 categories: [conference]

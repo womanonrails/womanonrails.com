@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Praca zdalna
-photo: remote/remote-work.jpg
+photo: /images/remote/remote-work
 description: Jak to jest pracować zdalnie?
 headline: My code is getting worse, please send more chocolate
 categories: [praca]
