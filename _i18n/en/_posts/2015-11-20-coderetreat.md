@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coderetreat 2015 Cracow
-photo: coderetreat/session5.jpg
+photo: coderetreat/code-retreat.jpg
 description: Coderetreat - programming workshop
 headline: My code is getting worse, please send more chocolate
 categories: [workshops]

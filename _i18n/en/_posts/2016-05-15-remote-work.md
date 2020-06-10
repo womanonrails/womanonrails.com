@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working remote
-photo: remote/victoria.jpg
+photo: remote/remote-work.jpg
 description: How is it feel working remotely?
 headline: My code is getting worse, please send more chocolate
 categories: [work]

@@ -1,7 +1,19 @@
 {% if site.lang == 'en' %}
-{% assign alternative_language = site.baseurl_root | append: '/pl' | append: page.url %}
+  {% if page.layout == 'category' %}
+    {% assign urls = site.pages | where: 'namespace', page.namespace | where: 'lang', 'pl' %}
+    {% assign url = urls[0].url | append: '/' %}
+  {% else %}
+    {% assign url = page.url | replace: 'index.html', '/' | replace: '//', '/' %}
+  {% endif %}
+  {% assign alternative_language = site.baseurl_root | append: '/pl' | append: url %}
 {% elsif site.lang == 'pl' %}
-{% assign alternative_language = site.baseurl_root | append: page.url %}
+  {% if page.layout == 'category' %}
+    {% assign urls = site.pages | where: 'namespace', page.namespace | where: 'lang', 'en' %}
+    {% assign url = urls[0].url | append: '/' %}
+  {% else %}
+    {% assign url = page.url | replace: 'index.html', '/' | replace: '//', '/' %}
+  {% endif %}
+  {% assign alternative_language = site.baseurl_root | append: url %}
 {% endif %}
 <a href="{{ alternative_language }}" class='language animated fade'>
   {% t language %}

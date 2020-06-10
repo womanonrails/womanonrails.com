@@ -3,7 +3,7 @@ layout: post
 title: Co to jest git?
 description: Podstawy narzedzia Git. Dlaczego używamy git-a?
 headline: Premature optimization is the root of all evil.
-categories: [narzędzia]
+categories: [narzędzia, git]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
 ---

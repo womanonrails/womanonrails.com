@@ -4,7 +4,7 @@ photo: git-rebase-onto/git-rebase-onto-header.png
 title: Jak używać git rebase --onto?
 description: Usuwanie zmian z bieżącej gałęzi lub zmiana gałęzi rodzicielskiej
 headline: Premature optimization is the root of all evil.
-categories: [narzędzia]
+categories: [narzędzia, git]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
 imagefeature: git-rebase-onto/git-rebase-onto.png

@@ -3,7 +3,7 @@ layout: post
 title: How change parent branch in git?
 description: Setting git parent pointer to a different parent with git rebase --onto.
 headline: Premature optimization is the root of all evil.
-categories: [tools]
+categories: [tools, git]
 tags: [environment, git, version control system]
 lang: en
 imagefeature: git-rebase/git.png

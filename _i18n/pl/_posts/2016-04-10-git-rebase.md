@@ -3,7 +3,7 @@ layout: post
 title: Git Rebase
 description: Jak używać git rebase?
 headline: Premature optimization is the root of all evil.
-categories: [narzędzia]
+categories: [narzędzia, git]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
 ---

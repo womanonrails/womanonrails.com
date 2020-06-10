@@ -3,7 +3,7 @@ layout: post
 title: Wzorzec projektowy – MVC
 description: Kilka słów na temat MVC
 headline: My code is getting worse, please send more chocolate
-categories: [wzorce projektowe]
+categories: [wzorce-projektowe]
 tags: [Ruby on Rails]
 lang: pl
 ---

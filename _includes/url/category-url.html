@@ -1,0 +1,1 @@
+{% assign category_namespace = include.namespace | prepend: 'category-' %}{% assign category_urls = site.pages | where: 'category', include.namespace | where: 'lang', include.lang %}{{ category_urls[0].url }}

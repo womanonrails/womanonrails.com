@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coderetreat 2015 Kraków
-photo: coderetreat/session5.jpg
+photo: coderetreat/code-retreat.jpg
 description: Coderetreat - szlifowanie warsztatu programistycznego
 headline: My code is getting worse, please send more chocolate
 categories: [warsztaty]

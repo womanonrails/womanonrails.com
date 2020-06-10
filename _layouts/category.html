@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% assign posts = site.posts | where: "categories", page.category | where: 'lang', page.lang | sort: 'date' %}
+{% if page.sort_order == 'desc' %}
+{% assign posts = posts | reverse %}
+{% endif %}
+
+{% include header.html %}
+
+<div id='main' class='content' role='main' itemprop='mainContentOfPage'>
+  <div class='container'>
+    <div class='row'>
+      <div class='page-body col-md-8 col-md-offset-2' itemprop='description'>
+        <h1 class='text-center'>{{ page.category_name }}</h1>
+        {{ content }}
+      </div>
+    </div>
+
+    <br>
+
+    {% for post in posts %}
+    {% include teaser-for-post.html lang=page.lang %}
+    {% endfor %}
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+{% include scripts.html %}

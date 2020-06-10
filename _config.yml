@@ -34,7 +34,6 @@ title: &title Woman on Rails
 owner:
   name: Agnieszka Małaszkiewicz
   avatar: womanonrails-square.svg
-  email: please-do-not-spam-me@womanonrails.com
   description: 'Woman, programmer, mentor, speaker, photographer and dancer with passion.'
   twitter: *author
   facebook: *author
@@ -112,6 +111,14 @@ defaults:
     values:
       comments: true
       read_time: false
+  - scope:
+      path: '/category/*'
+    values:
+      sitemap: false
+  - scope:
+      path: '/kategoria/*'
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ''
@@ -147,7 +154,7 @@ applause: true
 
 # Polyglot settings
 default_lang: en
-exclude_from_localizations: ['css', 'images', 'javascript']
+exclude_from_localizations: ['css', 'images', 'javascript', 'category', 'kategoria']
 languages: ['en', 'pl']
 parallel_localization: true
 

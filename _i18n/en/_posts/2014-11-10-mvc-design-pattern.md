@@ -3,7 +3,7 @@ layout: post
 title: MVC – design pattern
 description: Quick introduction to Model-View-Controller
 headline: My code is getting worse, please send more chocolate
-categories: [design patterns]
+categories: [design-patterns]
 tags: [Ruby on Rails]
 lang: en
 ---

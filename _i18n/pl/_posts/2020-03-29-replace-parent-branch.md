@@ -3,7 +3,7 @@ layout: post
 title: Jak podmienić gałąź rodzica w git-cie?
 description: Ustawienie nowej gałęzi rodzica przy pomocy git rebase --onto.
 headline: Premature optimization is the root of all evil.
-categories: [narzędzia]
+categories: [narzędzia, git]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
 imagefeature: git-rebase/git.png
