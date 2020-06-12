@@ -2,5 +2,9 @@
 {% include image/source-if-exists.html image_name=include.image_name image_extension='webp' image_type='webp' %}
 {% include image/source-if-exists.html image_name=include.image_name image_extension='jpg' image_type='jpeg' %}
 {% include image/source-if-exists.html image_name=include.image_name image_extension='png' image_type='png' %}
-{% include image/image-fallback.html alt=include.alt image_name=include.image_name %}
+{% include image/image-fallback.html
+           alt=include.alt
+           image_name=include.image_name
+           image_width=include.image_width
+%}
 </picture>

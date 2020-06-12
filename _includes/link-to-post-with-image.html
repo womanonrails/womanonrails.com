@@ -1,5 +1,9 @@
 <figure>
   <a href='{{ include.url }}'>
-  {% include image/autodetect.html alt=include.alt image_name=include.image %}
+  {% include image/autodetect.html
+             alt=include.alt
+             image_name=include.image
+             image_width=include.image_width
+  %}
   </a>
 </figure>

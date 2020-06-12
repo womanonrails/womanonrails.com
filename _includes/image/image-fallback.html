@@ -21,7 +21,8 @@
 <img alt='{{ include.alt }}'
      itemprop='image'
      loading='lazy'
-     src='{{ image_path }}'>
+     src='{{ image_path }}'
+     {% if include.image_width %}width='{{ include.image_width }}'{% endif %} >
 {% else %}
 <!-- No images matching the mask: {{ include.image_name }}.* -->
 {% endif %}
