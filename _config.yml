@@ -3,7 +3,7 @@ baseurl: ''
 url: https://womanonrails.com
 
 # Jekyll settings
-exclude: ['.keep', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_pages', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['.keep', '.jekyll-cache', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_pages', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 highlighter: rouge
 kramdown:
   input: GFM
