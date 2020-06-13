@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.1'
 
-group :jekyll_plugins do
+# group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.13'
   gem 'jekyll-include-cache', '~> 0.2'
   gem 'jekyll-multiple-languages-plugin', '~> 1.6.1'
@@ -13,7 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '~> 0.16'
   gem 'jekyll-seo-tag', '~> 2.6.1'
   gem 'jekyll-sitemap', '~> 1.4'
-end
+# end
 
 group :development do
   gem 'html-proofer'
