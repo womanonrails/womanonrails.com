@@ -14,7 +14,7 @@ permalink: /:title
 
 # Polyglot settings
 default_lang: &default_lang en
-exclude_from_localization: &exclude_from_localization ['_drafts', 'assets', 'category', 'css', 'images', 'javascript', 'kategoria', 'CNAME', 'README.md']
+exclude_from_localization: &exclude_from_localization ['_drafts', 'category', 'css', 'images', 'javascript', 'kategoria', 'CNAME', 'README.md']
 exclude_from_localizations: *exclude_from_localization
 lang: *default_lang
 languages: ['en', 'pl']

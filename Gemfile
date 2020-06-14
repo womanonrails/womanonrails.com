@@ -14,7 +14,3 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '~> 2.6.1'
   gem 'jekyll-sitemap', '~> 1.4'
 end
-
-group :development do
-  gem 'html-proofer'
-end
