@@ -20,4 +20,5 @@ jobs:
 
     - uses: helaili/jekyll-action@2.0.3
       env:
+        JEKYLL_ENV: production
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}

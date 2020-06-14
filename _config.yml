@@ -9,11 +9,17 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
-lang: &lang en
-locale: *lang
 markdown: kramdown
 permalink: /:title
 
+# Polyglot settings
+default_lang: &default_lang en
+exclude_from_localization: &exclude_from_localization ['_drafts', 'assets', 'category', 'css', 'images', 'javascript', 'kategoria', 'CNAME', 'README.md']
+exclude_from_localizations: *exclude_from_localization
+lang: *default_lang
+languages: ['en', 'pl']
+locale: *default_lang
+parallel_localization: true
 
 # Plugins settings
 plugins:
@@ -136,8 +142,8 @@ compress_html:
   blanklines: false
   clippings: all
   comments: all
-  # ignore:
-  #   envs: development
+  ignore:
+    envs: development
   # endings: all
   # profile: true
   # startings: all
@@ -151,12 +157,6 @@ paginate:    6
 paginate_path: "page:num"
 
 applause: true
-
-# Polyglot settings
-default_lang: en
-exclude_from_localizations: ['css', 'images', 'javascript', 'category', 'kategoria']
-languages: ['en', 'pl']
-parallel_localization: true
 
 locales:
   en:
