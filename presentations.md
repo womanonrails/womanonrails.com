@@ -1,6 +1,7 @@
 ---
 description: All presentations of Woman on Rails in one place
 layout: page
+permalink: /presentations/
 title: Woman on Rails Presentations
 ---
 
