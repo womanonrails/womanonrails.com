@@ -1,9 +1,11 @@
 ---
 layout: home
 namespace: list-of-posts
+pagination:
+  enabled: true
 ---
 {% for post in paginator.posts %}
 {% include teaser-for-post.html lang=page.lang %}
 {% endfor %}
 
-{% include page-numbering.html lang=page.lang %}
+{% include pagination.html %}

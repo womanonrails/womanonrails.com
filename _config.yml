@@ -26,7 +26,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-multiple-languages-plugin
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -148,13 +148,20 @@ compress_html:
   # profile: true
   # startings: all
 
+pagination:
+  debug: false
+  enabled: true
+  per_page: 6
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  title: ':title (:num/:max)'
+
 sass:
   style: :compressed
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
-paginate:    6
-paginate_path: "page:num"
 
 applause: true
 

@@ -2,8 +2,12 @@ language: en
 read_more: czytaj więcej...
 search: Wyszukaj
 pagination:
+  first: Pierwsza
+  last: Ostatnia
   newer_posts: Nowsze posty
+  next: Następna
   page: Strona
+  previous: Poprzednia
   of: z
   older_posts: Starsze posty
 about:
