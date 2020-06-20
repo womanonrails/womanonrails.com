@@ -250,3 +250,11 @@ button.menu-button {
     right: 0;
   }
 }
+
+.pagination {
+  .selected a {
+    background-color: $dark-red;
+    border-color: $dark-red;
+    color: $text-white;
+  }
+}
