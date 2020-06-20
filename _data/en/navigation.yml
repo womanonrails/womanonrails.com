@@ -8,5 +8,7 @@ links:
     url: /categories
   - title: Tags
     url: /tags
-  - title: About
+  - title: Presentations
+    url: /presentations/
+  - title: About me
     url: /about
