@@ -4,12 +4,8 @@ search: Search
 pagination:
   first: First
   last: Last
-  newer_posts: Newer Posts
   next: Next
-  page: Page
   previous: Previous
-  of: of
-  older_posts: Older Posts
 about:
   image: Just me
 meta:

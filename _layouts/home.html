@@ -13,16 +13,10 @@ layout: default
   </nav>
 </aside>
 
-{% if page.imagefeature %}
-  {% assign background_image = page.imagefeature %}
-{% else %}
-  {% assign background_image = site.default_bg %}
-{% endif %}
 <header class='blog-background overlay align-center align-middle animated from-bottom'
         id='masthead'
         itemscope
-        itemtype='https://schema.org/Organization'
-        style='background-image: url({{ site.url }}/images/{{ background_image }})'>
+        itemtype='https://schema.org/Organization'>
 
 {% include search.html %}
 {% include language.html %}

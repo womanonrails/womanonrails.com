@@ -1,4 +1,4 @@
 ---
 permalink: /page10/
-redirect_to: /page/10/
+redirect_to: /page/8/
 ---

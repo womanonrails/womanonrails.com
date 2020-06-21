@@ -56,7 +56,6 @@ affiliate_links:
 
 disqus_shortname: womanonrails
 # Assign a default image for your site's header and footer
-default_bg:
 search:           true
 # Turn on or off the fin animations in the header and footer
 triangleheader:   true
@@ -151,7 +150,7 @@ compress_html:
 pagination:
   debug: false
   enabled: true
-  per_page: 6
+  per_page: 8
   permalink: '/page/:num/'
   sort_field: 'date'
   sort_reverse: true
@@ -173,21 +172,11 @@ locales:
     meta:
       description: Ruby on Rails programmer fascinated by design patterns, building good application architecture, code refactoring and connecting web development with remote work and travels.
       title: Woman on Rails - web development from woman perspective
-    pagination:
-      newer_posts: Newer Posts
-      of: of
-      older_posts: Older Posts
-      page: Page
     read_more: read more...
     search: Search
   pl:
     meta:
       description: Programistka Ruby on Rails zafascynowana wzorcami projektowymi, budowaniem dobrej architektury aplikacji, refaktoringiem kodu i łącząca pracę zdalną z podróżowaniem.
       title: Woman on Rails - web development z kobiecej perspektywy
-    pagination:
-      newer_posts: Nowsze posty
-      of: z
-      older_posts: Starsze posty
-      page: Strona
     read_more: czytaj więcej...
     search: Wyszukaj

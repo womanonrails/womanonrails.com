@@ -8,7 +8,7 @@
       <ul class='pagination pagination-lg justify-content-center'>
       {% if paginator.page >= left_arrows_from && paginator.previous_page %}
         <li class='page-item first'>
-          <a aria-label='First'
+          <a aria-label='{{ t pagination.first }}'
             class='page-link'
             href='{{ paginator.first_page_path | prepend: site.baseurl }}'>
             <span aria-hidden='true'>
@@ -17,7 +17,7 @@
           </a>
         </li>
         <li class='page-item previous'>
-          <a aria-label='Previous'
+          <a aria-label='{{ t pagination.previous }}'
             class='page-link'
             href='{{ paginator.previous_page_path | prepend: site.baseurl }}'>
             <span aria-hidden='true'>
@@ -43,7 +43,7 @@
 
       {% if paginator.page <= right_arrows_to && paginator.next_page %}
         <li class='page-item next'>
-          <a aria-label='Next'
+          <a aria-label='{{ t pagination.next }}'
             class='page-link'
             href='{{ paginator.next_page_path | prepend: site.baseurl }}'>
             <span aria-hidden='true'>
@@ -52,7 +52,7 @@
           </a>
         </li>
         <li class='page-item last'>
-          <a aria-label='Last'
+          <a aria-label='{{ t pagination.last }}'
             class='page-link'
             href='{{ paginator.last_page_path | prepend: site.baseurl }}'>
             <span aria-hidden='true'>
