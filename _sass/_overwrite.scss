@@ -252,9 +252,14 @@ button.menu-button {
 }
 
 .pagination {
-  .selected a {
-    background-color: $dark-red;
+  .page-item.selected .page-link {
+    background-color: lighten($dark-red, 10%);
     border-color: $dark-red;
     color: $text-white;
+
+    &:hover {
+      background-color: $dark-red;
+      color: $text-white;
+    }
   }
 }

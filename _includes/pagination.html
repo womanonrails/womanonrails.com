@@ -1,10 +1,12 @@
 {% if paginator.total_pages > 1 %}
+{% assign left_arrows_from = paginator.first_page | plus: site.pagination.trail.before %}
+{% assign right_arrows_to = paginator.last_page | minus: site.pagination.trail.after %}
 <div class='row'>
   <div class='col-md-5 col-md-offset-4'>
     <nav aria-label='Page navigation'
          role='navigation'>
       <ul class='pagination pagination-lg justify-content-center'>
-      {% if paginator.previous_page %}
+      {% if paginator.page >= left_arrows_from && paginator.previous_page %}
         <li class='page-item first'>
           <a aria-label='First'
             class='page-link'
@@ -39,7 +41,7 @@
         {% endfor %}
       {% endif %}
 
-      {% if paginator.next_page %}
+      {% if paginator.page <= right_arrows_to && paginator.next_page %}
         <li class='page-item next'>
           <a aria-label='Next'
             class='page-link'
