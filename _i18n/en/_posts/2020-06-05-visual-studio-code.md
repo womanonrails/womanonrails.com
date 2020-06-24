@@ -1,10 +1,12 @@
 ---
 layout: post
+photo: /images/visual-studio-code/visual-studio-code
 title: Visual Studio Code
 description: My favourite shortcuts
 headline: Premature optimization is the root of all evil.
 categories: [tools]
 tags: [IDE, text editor]
+imagefeature: visual-studio-code/og_image-visual-studio-code.png
 lang: en
 ---
 
