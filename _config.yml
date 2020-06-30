@@ -14,6 +14,7 @@ permalink: /:title
 
 # Polyglot settings
 default_lang: &default_lang en
+# default_locale_in_subfolder: true
 exclude_from_localization: &exclude_from_localization ['_drafts', 'category', 'css', 'images', 'javascript', 'kategoria', 'CNAME', 'README.md']
 exclude_from_localizations: *exclude_from_localization
 lang: *default_lang
@@ -136,6 +137,7 @@ defaults:
 
 feed:
   excerpt_only: true
+  posts_limit: 3
 
 compress_html:
   blanklines: false
@@ -161,6 +163,8 @@ pagination:
 
 sass:
   style: :compressed
+
+seo_paginator_message: "%<current>s / %<total>s | "
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
