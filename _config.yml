@@ -5,12 +5,13 @@ url: https://womanonrails.com
 # Jekyll settings
 exclude: ['.keep', '.jekyll-cache', '.ruby-gemset', '.ruby-version', '.sass-cache', '_drafts', '_pages', '_templates', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
-markdown: kramdown
 permalink: /:title
+
+# Markdown settings
+markdown: CommonMark
+commonmark:
+  extensions: ['autolink', 'strikethrough', 'table', 'tagfilter', 'tasklist']
+  options: ['FOOTNOTES', 'GITHUB_PRE_LANG', 'SMART', 'UNSAFE']
 
 # Polyglot settings
 default_lang: &default_lang en
