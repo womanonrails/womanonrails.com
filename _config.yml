@@ -10,8 +10,18 @@ permalink: /:title
 # Markdown settings
 markdown: CommonMark
 commonmark:
-  extensions: ['autolink', 'strikethrough', 'table', 'tagfilter', 'tasklist']
-  options: ['FOOTNOTES', 'GITHUB_PRE_LANG', 'SMART', 'UNSAFE']
+  extensions:
+    - autolink
+    - strikethrough
+    - table
+    - tagfilter
+    - tasklist
+  options:
+    - FOOTNOTES
+    - GITHUB_PRE_LANG
+    - SMART
+    - STRIKETHROUGH_DOUBLE_TILDE
+    - UNSAFE
 
 # Polyglot settings
 default_lang: &default_lang en
