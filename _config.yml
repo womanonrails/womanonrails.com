@@ -8,20 +8,31 @@ highlighter: rouge
 permalink: /:title
 
 # Markdown settings
-markdown: CommonMark
-commonmark:
-  extensions:
-    - autolink
-    - strikethrough
-    - table
-    - tagfilter
-    - tasklist
-  options:
-    - FOOTNOTES
-    - GITHUB_PRE_LANG
-    - SMART
-    - STRIKETHROUGH_DOUBLE_TILDE
-    - UNSAFE
+# * disable CommonMark
+# markdown: CommonMark
+# commonmark:
+#   extensions:
+#     - autolink
+#     - strikethrough
+#     - table
+#     - tagfilter
+#     - tasklist
+#   options:
+#     - FOOTNOTES
+#     - GITHUB_PRE_LANG
+#     - SMART
+#     - STRIKETHROUGH_DOUBLE_TILDE
+#     - UNSAFE
+# * enable Kramdown
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: false
+    line_numbers: false
+
 
 # Polyglot settings
 default_lang: &default_lang en
