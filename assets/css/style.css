@@ -1726,17 +1726,6 @@ tt,code,kbd,samp,pre {
     font-family: 'source-code-pro',monospace;
 }
 
-p code,li code {
-    padding: 0 5px;
-    margin: 0 2px;
-    white-space: nowrap;
-    background-color: #f2f2f2;
-    border: 1px solid #e6e6e6;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
 pre {
     white-space: pre;
     overflow-x: auto;
