@@ -6,7 +6,7 @@ description: Jak dobra nazwa może wpłynać pozytywnie na projekt?
 headline: Premature optimization is the root of all evil.
 categories: [refaktoring]
 tags: []
-imagefeature: names-have-meaning/names-have-meaning.png
+imagefeature: names-have-meaning/og_image-names-have-meaning.png
 lang: en
 ---
 
