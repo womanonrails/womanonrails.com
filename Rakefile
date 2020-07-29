@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'cgi'
-require 'html-proofer'
 
 DOMAIN = File.read('CNAME').strip.freeze
 URL = "https://#{DOMAIN}"
@@ -69,6 +68,7 @@ end
 
 desc 'Run htmlproofer'
 task :htmlproofer do
+  require 'html-proofer'
   sh 'htmlproofer --assume-extension --empty-alt-ignore ./_site'
   # options = { assume_extension: true }
   # HTMLProofer.check_directory('./_site', options).run
@@ -78,6 +78,7 @@ end
 
 desc 'Run htmlproofer and check external links'
 task :external_links do
+  require 'html-proofer'
   sh 'htmlproofer --external_only ./_site'
 rescue
   puts 'OK'
