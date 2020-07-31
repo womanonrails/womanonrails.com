@@ -4,8 +4,8 @@ photo: /images/visual-studio-code/visual-studio-code
 title: Visual Studio Code - edytor tekstowy
 description: Moje ulubione skróty klawiszowe
 headline: Premature optimization is the root of all evil.
-categories: [narzędzia]
-tags: [IDE, edytor tekstowy]
+categories: [narzędzia, skróty klawiszowe]
+tags: [IDE, edytor tekstowy, skróty klawiszowe]
 imagefeature: visual-studio-code/og_image-visual-studio-code.png
 lang: pl
 ---
