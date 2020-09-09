@@ -32,6 +32,8 @@ If you like to use Guake without mouse, like I do, check out Guake keyboard shor
 - `Ctrl + Shift + T` - open new cart
 - `Ctrl + Shift + W` - close current cart
 - `Ctrl + Shift + Q` - close Guake
+- `Ctrl + Shift + R` - rename current cart
+- `Ctrl + ↑, ↓` - resize Guake
 - `Ctrl + Pg Up/Pg Dn` - change current cart to left/right site cart
 - `Ctrl + Shift + C` - copy selected text from console
 - `Ctrl + Shift + V` - paste selected text to console

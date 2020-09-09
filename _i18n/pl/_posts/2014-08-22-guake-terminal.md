@@ -32,6 +32,8 @@ Jeżeli podoba Ci się to narzędzie, to zachęcam Cię do zapoznania się z jeg
 - `Ctrl + Shift + T` - otwiera nową kartę
 - `Ctrl + Shift + W` - zamyka bieżącą kartę
 - `Ctrl + Shift + Q` - zamyka program
+- `Ctrl + Shift + R` - zmiana nazwy bieżącej karty
+- `Ctrl + ↑, ↓` - zmiana wielkości okna
 - `Ctrl + Pg Up/Pg Dn` - zmienia bieżącą kartę na lewą/prawą
 - `Ctrl + Shift + C` - kopiuje zaznaczony tekst z konsoli
 - `Ctrl + Shift + V` - wkleja wybrany tekst do konsoli
