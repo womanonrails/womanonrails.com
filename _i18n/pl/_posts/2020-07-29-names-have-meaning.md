@@ -7,7 +7,7 @@ headline: Premature optimization is the root of all evil.
 categories: [refaktoring]
 tags: []
 imagefeature: names-have-meaning/og_image-names-have-meaning.png
-lang: en
+lang: pl
 ---
 
 Jako programiści często rozmawiamy o wysokopoziomowej architekturze. Mam tu na myśli DDD, architekturę heksagonalną i tym podobne. Chcemy wprowadzić choć część tych koncepcji do naszego projektu. I to najlepiej, teraz! Nowa architektura, nowy język programowania, nowy framework. Wpadamy w taką pułapkę nowinek technologicznych. Są one jak narkotyk. Chcemy więcej i więcej. Trochę nie myśląc przy tym o konsekwencjach. Cel jest szczytny. Chcemy mieć nowoczesny, dobrej jakości projekt, który łatwo da się dalej rozwijać. Niestety, trochę gubimy się w tym jak to osiągnąć. Nasz projekt potrzebuje ewolucji, a nie rewolucji. Dążenia małymi kroczkami do dobrej architektury. Jest to istotne, ale trudne do osiągnięcia. Potrzeba tu przede wszystkim cierpliwości i jasnego celu. Dziś zajmę się tematem, który jest właśnie takim małym kroczkiem do zbudowania dobrej architektury. Jest to odpowiednie **nazywanie rzeczy**.
