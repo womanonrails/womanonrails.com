@@ -4,7 +4,7 @@ title: Guake – podręczny terminal
 description: Kilka słów o Guake - użytecznym terminalu
 headline: My code is getting worse, please send more chocolate
 categories: [narzędzia, skróty klawiszowe]
-tags: [środowisko programistyczne, Linux, skróty klawiszowe]
+tags: [środowisko programistyczne, Linuks, skróty klawiszowe]
 lang: pl
 ---
 

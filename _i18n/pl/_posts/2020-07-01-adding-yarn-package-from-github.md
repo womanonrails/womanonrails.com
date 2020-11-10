@@ -5,7 +5,7 @@ title: Jak dodać pakiet yarna z repozytorium GitHuba?
 description: Szybkie wskazówki użytkowania yarn-a
 headline: Premature optimization is the root of all evil.
 categories: [narzędzia]
-tags: [yarn, TIL]
+tags: [yarn, TIL, JavaScript]
 imagefeature: adding-yarn-package-from-github/og_image-adding-yarn-package-from-github.png
 lang: pl
 excerpt: Do zarządzania pakietami JavaScript używam w projekcie yarn-a. Kilka dni temu potrzebowałam dodać bardzo konkretną wersję pakietu z repozytorium znajdującego się na GitHub-ie. Tą krótką notatkę tworzę przede wszystkim by nie zapomnieć jak dodać pakiet z GitHub-a przy pomocy yarn-a. Mam nadzieję, że dla Ciebie też okaże się użyteczna. W przyszłości planuje więcej takich krótkich wpisów z cylku "Today I learned".

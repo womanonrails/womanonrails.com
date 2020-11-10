@@ -4,7 +4,7 @@ title: Good preparation for interview
 description: How prepare for interview?
 headline: Premature optimization is the root of all evil.
 categories: [work]
-tags: [interview]
+tags: [interview, career]
 lang: en
 ---
 
