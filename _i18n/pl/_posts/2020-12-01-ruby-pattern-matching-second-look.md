@@ -262,7 +262,7 @@ end
 
 ### 8. Wyrażenia regularne w dopasowaniu do wzorca
 
-Na koniec zostawiłam możliwość wykorzystania wyrażeń regularnych jako wzorca w pattern maching-u:
+Na koniec zostawiłam możliwość wykorzystania wyrażeń regularnych jako wzorca w pattern matching-u:
 
 ```ruby
 website = 'womanonrails.com'
