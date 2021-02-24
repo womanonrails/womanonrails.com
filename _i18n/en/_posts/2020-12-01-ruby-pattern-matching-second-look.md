@@ -14,58 +14,99 @@ Sometimes I like new changes, new features, or improvements in Ruby and sometime
 
 ### 1. One-line Pattern Matching
 
-It's the Pattern Matching feature I didn't notice before when I was testing it the first time. Anyway, now we can do pattern matching in one line. Here are examples:
+It's the Pattern Matching feature I didn't notice before when I was testing it the first time. Anyway, now we can do pattern matching in one line.
+
+In Ruby 3.0 we have two ways of doing one-line pattern matching: `in` and `=>`. The behavior is different in both cases. When we use `in` the result will be `true` or `false`. There will be no exception. This behavior allows us to use `in` one-line pattern matching inside of blocks like `any?` or `all?`. I will tell you more about it later. In the case of `=>`, we will get an assignment to the variable or an exception. Here are examples:
 
 ##### One-line Pattern Matching with Hash
 
+When we have a match for `in`
+
 ```ruby
 { foo: 1, bar: 2 } in { foo: f }
- => nil
+ => true
 
-2.7.1> f
+3.0.0> f
  => 1
 ```
 
-or without a variable declaration
+without match
+
+```ruby
+{ foo: 1, bar: 2 } in { baz: b }
+ => false
+
+3.0.0> b
+ => nil
+```
+
+The same we can do without a variable declaration
 
 ```ruby
 { foo: 1, bar: 2 } in { foo: }
+ => true
+
+3.0.0> foo
+ => 1
+```
+
+In the case of `=>` match we have
+
+```ruby
+{ foo: 1, bar: 2 } => { foo: f }
  => nil
 
-2.7.1> foo
+3.0.0> f
  => 1
+```
+
+without a match, we will get an exception
+
+```ruby
+{ foo: 1, bar: 2 } => { baz: }
+
+Traceback (most recent call last):
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):7:in `<main>'
+NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
 ##### One-line Pattern Matching with Array
 
+A similar thing we get for Array using `in`
+
 ```ruby
 [1, 2, 3] in [a, 2, 3]
- => nil
+ => true
 
-2.7.1> a
+3.0.0> a
  => 1
 ```
 
-**Notice:** In Ruby 3.0, instead of using `in` in one-line pattern matching as an experimental feature, we will be using hash rocket `=>`. So our code will look like this:
+and using `=>`
 
 ```ruby
-{ a: '2', b: 5 } => { a: }
-```
+[1, 2, 3] => [a, 2, 3]
+ => nil
 
-Unfortunately, in Ruby 3.0 preview 1, this approach is not working yet. So we need to wait a bit.
+3.0.0> a
+ => 1
+```
 
 ### 2. Pattern matching for specific beginning and end of Array
 
 ```ruby
 [1, 2, 3, 4, 5, 6] in [first, *middle, last]
 
-2.7.1> first
+3.0.0> first
  => 1
 
-2.7.1> middle
+3.0.0> middle
  => [2, 3, 4, 5]
 
-2.7.1> last
+3.0.0> last
  => 6
 ```
 
@@ -74,10 +115,10 @@ or when we don't care about the middle part of Array
 ```ruby
 [1, 2, 3, 4, 5, 6] in [first, *, last]
 
-2.7.1> first
+3.0.0> first
  => 1
 
-2.7.1> last
+3.0.0> last
  => 6
 ```
 
@@ -94,10 +135,10 @@ in [1]
 end
 
 Traceback (most recent call last):
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        2: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
-        1: from (irb):33
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):12:in `<main>'
 NoMatchingPatternError ([1, 2])
 ```
 
@@ -110,7 +151,7 @@ in foo:
 end
  => :match
 
-2.7.1> foo
+3.0.0> foo
  => 1
 ```
 
@@ -123,10 +164,11 @@ in foo:, **rest if rest.empty?
 end
 
 Traceback (most recent call last):
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        2: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
-        1: from (irb):37
+        5: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):15:in `<main>'
+        1: from (irb):16:in `rescue in <main>'
 NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
@@ -139,11 +181,11 @@ in foo:, **nil
 end
 
 Traceback (most recent call last):
-        5: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.2.3/exe/irb:11:in `<top (required)>'
-        2: from (irb):49
-        1: from (irb):50:in `rescue in irb_binding'
+        5: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):19:in `<main>'
+        1: from (irb):20:in `rescue in <main>'
 NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
@@ -174,11 +216,28 @@ in [*, 2, a, *]
 end
  => :match
 
-3.0.0-preview1> a
+3.0.0> a
  => 3
 ```
 
-It's more visible on data like this:
+We can even name our `*`
+
+```ruby
+case [1, 2, 3, 4]
+in [*first, 2, a, *last]
+  :match
+end
+ => :match
+
+3.0.0> a
+ => 3
+3.0.0> first
+ => [1]
+3.0.0> last
+ => [4]
+```
+
+This feature is more visible on data like this:
 
 ```ruby
 json = {
@@ -187,7 +246,7 @@ json = {
 }
 json in { name: "Woman on Rails", friends: [*, { name: "Alex", age: age }, *] }
 
-3.0.0-preview1> age
+3.0.0> age
  => 24
 ```
 
@@ -215,8 +274,21 @@ in [1, 3] | [1, _]
 end
  => :match
 
-2.7.1> _
+3.0.0> _
  => :match
+```
+
+We can even name it:
+
+```ruby
+case [1, 2]
+in [1, 3] | [1, _last]
+  :match
+end
+ => :match
+
+3.0.0> _last
+ => 2
 ```
 
 ### 6. Assign the same variable in our pattern many times
@@ -230,9 +302,9 @@ in name:, people: [*, {age:, name: ^name}]
 end
 
  => :match
-2.7.1> name
+3.0.0> name
  => "Woman on Rails"
-2.7.1> age
+3.0.0> age
  => 25
 ```
 
@@ -247,7 +319,7 @@ in a: 0.. => first
 end
 
 :match
-2.7.1> first
+3.0.0> first
  => 1
 
 case { a: 1, b: 2 }
@@ -256,7 +328,7 @@ in b: ..3 => first
 end
 
  => :match
-2.7.1> first
+3.0.0> first
  => 2
 ```
 
@@ -269,8 +341,22 @@ case website
   in /\w*\.com/ => favorite_website
 end
 
-2.7.1> favorite_website
+3.0.0> favorite_website
  => "womanonrails.com"
+```
+
+### 9. Pattern Matching in blocks
+
+We can use `in` one-line pattern matching in blocks like `any?`, `'all?`, `select` or `find`.
+
+```ruby
+users = [{ name: "Woman on Rails", age: 22 }, { name: "Alex", age: 23 }]
+
+users.any? { |user| user in { name: /C/, age: 20.. } }
+ => false
+
+users.any? { |user| user in { name: /A/, age: 20.. } }
+ => true
 ```
 
 That's all that I have today for you. Do you know more pattern matching tricks and tips? Share them in the comment below.

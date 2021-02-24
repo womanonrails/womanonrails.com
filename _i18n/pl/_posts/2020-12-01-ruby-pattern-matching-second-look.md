@@ -14,58 +14,99 @@ Gdy pojawiają się nowości w naszym języku programowania czasami jesteśmy z 
 
 ### 1. Jednolinijkowe dopasowanie do wzorca w Ruby
 
-Jest to jedna z tych rzeczy, których brakowało mi w dopasowaniu do wzorca w Ruby, a o istnieniu której nie wiedziałam. Oto jak wyglądają przykłady:
+Jest to jedna z tych rzeczy, których brakowało mi w dopasowaniu do wzorca w Ruby, a o istnieniu której nie wiedziałam.
+
+W Ruby 3.0 mamy dwa sposoby na użycie jednolinijkowego dopasowania do wzorca. Są to `in` oraz `=>`. Warto zwrócić uwagę, że zachowują się one trochę inaczej. W przypadku `in` zostanie zwrócone `true` bądź `false`. Nie dostaniemy wyjątku. Dzięki temu możemy wykorzystywać to dopasowanie do wzorca w blokach takich jak `any?` czy `all?`. Opowiem o tym trochę później. W drugim przypadku, czyli przy wykorzystaniu `=>` dostaniemy albo przypisanie do wzorca, a więc również przypisanie do zmiennych, albo wyjątek. Oto jak wyglądają przykłady:
 
 ##### Jednolinijkowy Pattern Matching dla tablicy słownikowej (Hash)
 
+Kiedy mamy dopasowanie do wzorca dla `in`
+
 ```ruby
 { foo: 1, bar: 2 } in { foo: f }
- => nil
+ => true
 
-2.7.1> f
+3.0.0> f
  => 1
 ```
 
-lub bez deklaracji zmiennej
+bez dopasowania
+
+```ruby
+{ foo: 1, bar: 2 } in { baz: b }
+ => false
+
+3.0.0> b
+ => nil
+```
+
+Podobnie wygląda to bez deklaracji zmiennej
 
 ```ruby
 { foo: 1, bar: 2 } in { foo: }
+ => true
+
+3.0.0> foo
+ => 1
+```
+
+Dla `=>` mamy natomiast
+
+```ruby
+{ foo: 1, bar: 2 } => { foo: f }
  => nil
 
-2.7.1> foo
+3.0.0> f
  => 1
+```
+
+oraz wyjątek przy braku dopasowania
+
+```ruby
+{ foo: 1, bar: 2 } => { baz: }
+
+Traceback (most recent call last):
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):7:in `<main>'
+NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
 ##### Jednolinikowy Pattern Matching dla tablicy
 
+Analogiczne zachowanie możemy zaobserwować dla tablic. W przypadku `in` mamy
+
 ```ruby
 [1, 2, 3] in [a, 2, 3]
- => nil
+ => true
 
-2.7.1> a
+3.0.0> a
  => 1
 ```
 
-**Uwaga!** W Ruby 3.0 zamiast używać słowa kluczowego `in` dla jednolinikowego dopasowania do wzorca eksperymentalnie będzie można używać `=>`. Kod będzie wtedy wyglądał następująco:
+a w przypadku `=>` mamy
 
 ```ruby
-{ a: '2', b: 5 } => { a: }
-```
+[1, 2, 3] => [a, 2, 3]
+ => nil
 
-Niestety w wersji Ruby 3.0 preview 1, to podejście jeszcze nie działa, więc na jego przetestowanie trzeba będzie trochę poczekać.
+3.0.0> a
+ => 1
+```
 
 ### 2. Pattern matching dla dopasowania tablicy z zadeklarowanym początkiem i końcem
 
 ```ruby
 [1, 2, 3, 4, 5, 6] in [first, *middle, last]
 
-2.7.1> first
+3.0.0> first
  => 1
 
-2.7.1> middle
+3.0.0> middle
  => [2, 3, 4, 5]
 
-2.7.1> last
+3.0.0> last
  => 6
 ```
 
@@ -74,10 +115,10 @@ lub w przypadku gdy nie interesuje nas środkowa część tablicy
 ```ruby
 [1, 2, 3, 4, 5, 6] in [first, *, last]
 
-2.7.1> first
+3.0.0> first
  => 1
 
-2.7.1> last
+3.0.0> last
  => 6
 ```
 
@@ -94,10 +135,10 @@ in [1]
 end
 
 Traceback (most recent call last):
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        2: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
-        1: from (irb):33
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):12:in `<main>'
 NoMatchingPatternError ([1, 2])
 ```
 
@@ -110,7 +151,7 @@ in foo:
 end
  => :match
 
-2.7.1> foo
+3.0.0> foo
  => 1
 ```
 
@@ -123,10 +164,11 @@ in foo:, **rest if rest.empty?
 end
 
 Traceback (most recent call last):
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        2: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
-        1: from (irb):37
+        5: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):15:in `<main>'
+        1: from (irb):16:in `rescue in <main>'
 NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
@@ -139,11 +181,11 @@ in foo:, **nil
 end
 
 Traceback (most recent call last):
-        5: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `<main>'
-        4: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/bin/irb:23:in `load'
-        3: from /home/agnieszka/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/irb-1.2.3/exe/irb:11:in `<top (required)>'
-        2: from (irb):49
-        1: from (irb):50:in `rescue in irb_binding'
+        5: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        4: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):19:in `<main>'
+        1: from (irb):20:in `rescue in <main>'
 NoMatchingPatternError ({:foo=>1, :bar=>2})
 ```
 
@@ -174,8 +216,25 @@ in [*, 2, a, *]
 end
  => :match
 
-3.0.0-preview1> a
+3.0.0> a
  => 3
+```
+
+Możemy nawet nazwać `*`
+
+```ruby
+case [1, 2, 3, 4]
+in [*first, 2, a, *last]
+  :match
+end
+ => :match
+
+3.0.0> a
+ => 3
+3.0.0> first
+ => [1]
+3.0.0> last
+ => [4]
 ```
 
 Przydatność tego rozwiązania jest na pewno bardziej widoczna na danych z przykładu poniżej:
@@ -187,7 +246,7 @@ json = {
 }
 json in { name: "Woman on Rails", friends: [*, { name: "Alex", age: age }, *] }
 
-3.0.0-preview1> age
+3.0.0> age
  => 24
 ```
 
@@ -215,8 +274,21 @@ in [1, 3] | [1, _]
 end
  => :match
 
-2.7.1> _
+3.0.0> _
  => :match
+```
+
+Możemy to podkreślenie nazwać:
+
+```ruby
+case [1, 2]
+in [1, 3] | [1, _last]
+  :match
+end
+ => :match
+
+3.0.0> _last
+ => 2
 ```
 
 ### 6. Kilkukrotne przypisanie tej samej zmiennej we wzorcu
@@ -230,9 +302,9 @@ in name:, people: [*, {age:, name: ^name}]
 end
 
  => :match
-2.7.1> name
+3.0.0> name
  => "Woman on Rails"
-2.7.1> age
+3.0.0> age
  => 25
 ```
 
@@ -247,7 +319,7 @@ in a: 0.. => first
 end
 
 :match
-2.7.1> first
+3.0.0> first
  => 1
 
 case { a: 1, b: 2 }
@@ -256,7 +328,7 @@ in b: ..3 => first
 end
 
  => :match
-2.7.1> first
+3.0.0> first
  => 2
 ```
 
@@ -271,8 +343,22 @@ case website
   in /\w*\.com/ => favorite_website
 end
 
-2.7.1> favorite_website
+3.0.0> favorite_website
  => "womanonrails.com"
+```
+
+### 9. Zastosowanie dopasowania do wzorca wewnątrz bloku
+
+W blokach takich jak `any?`, `'all?`, `select` czy `find` możemy użyć jednolinijkowego dopasowania do wzorca `in`.
+
+```ruby
+users = [{ name: "Woman on Rails", age: 22 }, { name: "Alex", age: 23 }]
+
+users.any? { |user| user in { name: /C/, age: 20.. } }
+ => false
+
+users.any? { |user| user in { name: /A/, age: 20.. } }
+ => true
 ```
 
 To wszystko co przygotowałam na dzisiaj. Znasz jeszcze więcej ciekawostek dotyczących dopasowania do wzorca w języku Ruby? Podziel się nimi w komentarzach.
