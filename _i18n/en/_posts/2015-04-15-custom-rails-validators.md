@@ -96,7 +96,7 @@ class ArrayLenghtValidator < ActiveModel::EachValidator
 end
 ```
 
-## What happed here?
+## What happened here?
 
 I check if `:minimum` parameter is set. I count number of elements in array. If `array_size` is lower then `minimum` size, I add error `:too_short_array` to record.
 
