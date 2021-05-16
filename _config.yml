@@ -137,7 +137,7 @@ defaults:
       path: ''
       type: pages
     values:
-      comments: true
+      comments: false
       read_time: false
   - scope:
       path: '/category/*'
@@ -152,7 +152,7 @@ defaults:
       path: ''
       type: posts
     values:
-      comments: true
+      comments: false
       read_time: true
       related: true
       share: true
