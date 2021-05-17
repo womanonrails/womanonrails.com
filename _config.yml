@@ -77,7 +77,7 @@ affiliate_links:
   amazon: womanonrails-21
   helion: 10301k
 
-disqus_shortname: womanonrails
+# disqus_shortname: womanonrails
 # Assign a default image for your site's header and footer
 search:           true
 # Turn on or off the fin animations in the header and footer
