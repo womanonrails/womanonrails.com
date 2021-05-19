@@ -28,7 +28,7 @@ To była niesamowita przygoda. Nauczyłam się mnóstwa nowych rzeczy. Spotkała
 
 ## Pisanie kodu nie musi być nudne.
 
-Może sprawiać wiele przyjemności. Jeżeli robimy to z właściwymi osobami, w odpowiednim czasie i miejscu. Co mam na myśli? Na warsztatach ma się w pobliżu ludzi, którzy chętnie podzielą się swoim wiedzą i doświadczeniem. Pomogą w problemach. Wesprą w ciężkich chwilach. Chwilach zwątpienia. Ma się dwa dni by nauczyć się czegoś nowego. Dodatkowo warsztaty odbywają się w takich miejscach, gdzie można siedzieć razem. To wszystko powoduje, że zapał do pracy rośnie. Motywacja jest ogromna. Uczestniczki dzielą wspólną pasję i mają z tego dużo frajdy. Dla mnie warsztaty były niesamowite.
+Może sprawiać wiele przyjemności. Jeżeli robimy to z właściwymi osobami, w odpowiednim czasie i miejscu. Co mam na myśli? Na warsztatach ma się w pobliżu ludzi, którzy chętnie podzielą się swoją wiedzą i doświadczeniem. Pomogą w problemach. Wesprą w ciężkich chwilach. Chwilach zwątpienia. Ma się dwa dni by nauczyć się czegoś nowego. Dodatkowo warsztaty odbywają się w takich miejscach, gdzie można siedzieć razem. To wszystko powoduje, że zapał do pracy rośnie. Motywacja jest ogromna. Uczestniczki dzielą wspólną pasję i mają z tego dużo frajdy. Dla mnie warsztaty były niesamowite.
 
 Chciałabym polecić Wam Rails Girls. Nawet jeżeli po warsztatach nie zdecydujecie się na dalszą pracę w tym kierunku. Jest to niezwykła społeczność. Można tam spotkać nowych ludzi i być częścią czegoś naprawdę wyjątkowego.
 

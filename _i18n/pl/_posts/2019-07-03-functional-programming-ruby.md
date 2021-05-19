@@ -26,7 +26,7 @@ Teraz gdy już wiemy trochę o samej koncepcji programowania funkcyjnego możemy
 
 ## Bloki w Ruby
 
-**Blok jest funkcją bez nazwy w języku Ruby.** Funkcją anonimową, o których powiem więcej w części dotyczących lambdy. Taki blok możemy podać, jako ostatni argument do innej funkcji i może być on **tylko jeden**. W języku Ruby bloki są też związane z funkcjami wyższego rzędu. Często wykorzystywanym blokiem kodu jest `each`:
+**Blok jest funkcją bez nazwy w języku Ruby.** Funkcją anonimową, o której powiem więcej w części dotyczącej lambdy. Taki blok możemy podać, jako ostatni argument do innej funkcji i może być on **tylko jeden**. W języku Ruby bloki są też związane z funkcjami wyższego rzędu. Często wykorzystywanym blokiem kodu jest `each`:
 
 ```ruby
 [1, 2, 3, 4].each do |item|
@@ -65,7 +65,7 @@ irb> my_own_block { p 5 }
  => "after
 ```
 
-By wywołać nasz blok kodu jako argument funkcji, potrzebujemy użyć nawiasów klamrowych `{}` lub klauzuli `do end`. Nie możemy użyć naturalnych dla nas w takim przypadku nawiasów okrągłych `()`. Gdybyś my tak zrobiły, dostałybyśmy błąd:
+By wywołać nasz blok kodu jako argument funkcji, potrzebujemy użyć nawiasów klamrowych `{}` lub klauzuli `do end`. Nie możemy użyć naturalnych dla nas w takim przypadku nawiasów okrągłych `()`. Gdybyśmy tak zrobiły, dostałybyśmy błąd:
 
 ```ruby
 irb> my_own_block(p 5)
