@@ -37,8 +37,12 @@ title: Woman on Rails Presentations
 ### [Occupational Burnout Syndrome - How to still feel passion, even after years of programming?][occupational-burnout-syndrome]
 [![Occupational Burnout Syndrome][occupational-burnout-syndrome-image]{:class='img-presentation'}][occupational-burnout-syndrome]
 
+### [How to focus? - Improve your efficiency at work][how-to-focus]
+[![How to focus?][how-to-focus-image]{:class='img-presentation'}][how-to-focus]
+
 
 [are-you-egoistic-programmer]: https://womanonrails.github.io/presentations/are-you-egoistic-programmer.html
+[how-to-focus]: https://womanonrails.github.io/presentations/15min-about-how-to-focus.html
 [occupational-burnout-syndrome]: https://womanonrails.github.io/presentations/occupational-burnout-syndrome.html
 [quality-assurance-tdd-example]: https://womanonrails.github.io/presentations/quality-assurance-tdd-example.html
 [ruby-pattern-matching]: https://womanonrails.github.io/presentations/ruby-pattern-matching.html
@@ -46,6 +50,7 @@ title: Woman on Rails Presentations
 [you-can-love-tdd]: https://womanonrails.github.io/presentations/you-can-love-tdd.html
 
 [are-you-egoistic-programmer-image]: /images/presentations/are-you-egoistic-programmer.png "Are you an Egoistic Programmer? Mysterious presentation"
+[how-to-focus-image]: /images/presentations/how-to-focus.png "How to focus? How developer can improve everyday work?"
 [occupational-burnout-syndrome-image]: /images/presentations/occupational-burnout-syndrome.png "Presentation how to still feel passion, even after years of programming?"
 [quality-assurance-tdd-example-image]: /images/presentations/quality-assurance-tdd-example.png "Presentation about Quality Assurance and TDD"
 [ruby-pattern-matching-image]: /images/presentations/ruby-pattern-matching.jpg "Presentation about Ruby way of pattern matching"
