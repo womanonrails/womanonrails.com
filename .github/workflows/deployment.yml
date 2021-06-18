@@ -21,6 +21,5 @@ jobs:
     - uses: helaili/jekyll-action@v2
       env:
         JEKYLL_ENV: production
-        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
       with:
-        token: ${{ secrets.JEKYLL_PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
