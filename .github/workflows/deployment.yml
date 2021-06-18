@@ -22,4 +22,4 @@ jobs:
       env:
         JEKYLL_ENV: production
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.JEKYLL_TOKEN }}
