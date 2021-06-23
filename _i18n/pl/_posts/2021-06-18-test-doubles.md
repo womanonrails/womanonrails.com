@@ -298,7 +298,7 @@ end
 
 ## Obiekt spy
 
-W moim rozumieniu obiektu **spy**, jest on pewnym szczególnym przypadkiem obiektem typu stub. Poza zwracaniem określonej wartości może zapamiętać pewne dodatkowe informacje o tym jak został wywołany. Jest to fragment kodu, który przejmuje pewne wywołania skierowane do prawdziwego obiektu i weryfikuje je bez zastępowania całego oryginalnego obiektu. Może to brzmieć bardzo podobnie do obiektu typu fake, ale dla mnie obiekt typu fake jest bardziej transparentną warstwą służącą do uproszczenia środowiska testowego. Natomiast spy to obiekt służący do weryfikacji pewnych informacji. Powiedziałabym, że **celem obiektu typu spy jest pomoc w sprawdzeniu informacji dotyczących prawdziwego obiektu, które są normalnie trudne do weryfikacji**.
+W moim rozumieniu obiektu **spy**, jest on pewnym szczególnym przypadkiem obiektu typu stub. Poza zwracaniem określonej wartości może zapamiętać pewne dodatkowe informacje o tym jak został wywołany. Jest to fragment kodu, który przejmuje pewne wywołania skierowane do prawdziwego obiektu i weryfikuje je bez zastępowania całego oryginalnego obiektu. Może to brzmieć bardzo podobnie do obiektu typu fake, ale dla mnie obiekt typu fake jest bardziej transparentną warstwą służącą do uproszczenia środowiska testowego. Natomiast spy to obiekt służący do weryfikacji pewnych informacji. Powiedziałabym, że **celem obiektu typu spy jest pomoc w sprawdzeniu informacji dotyczących prawdziwego obiektu, które są normalnie trudne do weryfikacji**.
 
 Uwaga! W narzędziu RSpec istnieje coś takiego jak metoda **spy**. Moim zdaniem zachowaniem bliżej jej do obiektu typu <a href="#obiekt-mock">mock</a> omówionego poniżej.
 
