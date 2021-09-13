@@ -10,13 +10,13 @@ imagefeature: logitech-g915-tkl/og_image-logitech-g915-tkl.png
 lang: en
 ---
 
-I bought a **Logitech G915 TKL keyboard** at a beginning of the 2021 year. This keyboard works pretty well with Windows and Logitech G Hub software. There is a ton of ways to customize it. It can be fun. The problem comes when you cannot normally install G Hub software on your system, like on Ubuntu. Since I use the Logitech G915 TKL keyboard for a while with my Ubuntu, I would like to share what I already know about customizing it on Linux.
+I bought a **Logitech G915 TKL keyboard** at a beginning of the 2021 year. This keyboard works pretty well on Windows and Logitech G Hub software. There is a ton of ways to customize it. It can be fun. The problem comes when you cannot normally install G Hub software on your system, like on Ubuntu. Since I use the Logitech G915 TKL keyboard for a while with my Ubuntu, I would like to share what I already know about customizing it on Linux.
 
 First of all, this article is not a review of the Logitech G915 TKL keyboard. I won't talk about features, advantages or disadvantages. The only thing I will tell is that the Logitech G915 TKL keyboard is a lightspeed, wireless, RGB, mechanical, gaming keyboard with low profile switches. I choose the linear type of switches. One more note, I did not have any problem with media buttons, game mode, or volume control on Ubuntu. Everything works fine. The main problem was with the lighting theme. It was annoying for me. That's all. Now let's move to the core of this article - the customization.
 
-## Defaults
+## Default settings
 
-The keyboard comes with a default preset RGB theme - a breathing rainbow theme - how I call it. It's awesome for the first 15 minutes, but when I tried to do some programming, it was pretty distracting. So, I start the search for others possibilities. By default, the keyboard has 10 preset themes. Here you can find the way how to use it:
+The keyboard comes with a default preset RGB theme - a breathing rainbow theme - how I call it. It's awesome for the first 15 minutes, but when I tried to do some programming, it was pretty distracting. So, I start the search for others possibilities. By default, the G915 TKL keyboard has 10 themes. Here you can find the way how to use it:
 
 - `☀` (brightness button) - cycles through brightness levels
 - `☀ + 1` - the lightning effect: Colorwave (left to right)
@@ -40,9 +40,9 @@ G Hub software looks nice, and you can set almost every small detail of your cus
 
 ## Libratbag and Ratbagctl
 
-When the easiest solutions failed, I tried to search for some open source projects. I looked for something that will give me the possibility to configure my keyboard, at least from the terminal level. And I found **Libratbag**. It provides **Ratbagd**, a DBus daemon to configure input devices, mainly gaming mice. Luckily it supports not only mice but also keyboards, including the Logitech G915 TKL keyboard. In the case of my keyboard, I wasn't able to use a graphical tool, but the command line works just fine.
+When the easiest solutions failed, I tried to search for some open source projects. I looked for something that will give me the possibility to configure my keyboard, at least from the terminal level. And I found **Libratbag**. It provides **Ratbagd**, a DBus daemon to configure input devices, mainly gaming mice. Luckily it supports not only mice but also keyboards, including the Logitech G915 TKL keyboard. In the case of my keyboard, I wasn't able to use a graphical tool, but the CLI (command line interface) works just fine.
 
-To use Ratbagctl, I installed a specific package for my Ubuntu (all needed links on the bottom of this article). Then I connected my keyboard using wire to my laptop. I turn on the keyboard and start to use the `ratbagctl` command.
+To use Ratbagctl, I installed a specific package for my Ubuntu (all links on the bottom of this article). Then I connected my keyboard using wire to my laptop. I turn on the keyboard and start to use the `ratbagctl` command.
 
 To display a list of devices, use:
 
@@ -193,7 +193,7 @@ I won't show you all possibilities. Instead of that, I recommend you to check ou
 
 **Important!** All commands above are working only in the wireless mode. The wire connection is not supported for now.
 
-One more note here. I was not able to save the selected setups. Each time when the keyboard turns the lighting off, the lighting effect goes back to keyboard defaults. Even I use the `-c` parameter, which should allow me to commit the setups for longer. Nevertheless, I had a lot of fun using this project.
+One more note. I was not able to save the selected setups. Each time when the keyboard turns the lighting off, the lighting effect goes back to keyboard defaults. Even I use the `-c` parameter, which should allow me to commit the setups for longer. Nevertheless, I had a lot of fun using this project.
 
 ## Keyleds
 

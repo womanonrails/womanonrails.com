@@ -2,7 +2,7 @@
 layout: post
 photo: /images/logitech-g915-tkl/logitech-g915-tkl
 title: Klawiatura Logitech G915 TKL używana z Ubuntu
-description: Jak skonfigurować klawiaturę Logitech G915 TKL na Linuxie?
+description: Jak skonfigurować klawiaturę Logitech G915 TKL na Linuksie?
 headline: Premature optimization is the root of all evil.
 categories: [narzędzia]
 tags: [klawiatura]
@@ -10,13 +10,13 @@ imagefeature: logitech-g915-tkl/og_image-logitech-g915-tkl.png
 lang: en
 ---
 
-Na początku roku 2021 kupiłam klawiaturę **Logitech G915 TKL**. Klawiatura ta współpracuje z systemem operacyjnym Windows i oprogramowaniem Logitech G Hub. Ma wiele możliwości personalizacji, co trzeba przyznać sprawia frajdę. Problem pojawia się gdy klawiaturę Logitech G915 TKL chce się użyć z Linuxem. Nie działa tam G Hub. W tym artykule pokaże jak, przynajmniej częściowo, da się skonfigurować klawiaturę Logitech G915 TKL używając Linuxa a dokładnie Ubuntu.
+Na początku roku 2021 kupiłam klawiaturę **Logitech G915 TKL**. Klawiatura ta współpracuje z systemem operacyjnym Windows i oprogramowaniem Logitech G Hub. Ma wiele możliwości personalizacji, co trzeba przyznać sprawia frajdę. Problem pojawia się gdy klawiaturę Logitech G915 TKL chce się użyć z Linuxem. Nie działa tam oprogramowanie G Hub. W tym artykule pokaże jak, przynajmniej częściowo, skonfigurować klawiaturę Logitech G915 TKL używając Linuxa, a dokładnie Ubuntu.
 
 Na początku chciałabym zaznaczyć, że to nie będzie recenzja klawiatury Logitech G915 TKL. Nie będę mówić tu o jej właściwościach, zaletach czy wadach. Powiem tylko, że Logitech G915 TKL to bezprzewodowa, mechaniczna klawiatura gamingowa z podświetleniem RGB i niskim profilem przełączników. W moim przypadku to przełączniki liniowe. Jeszcze jedna uwaga. Używając tej klawiatury z Ubuntu nie miałam żadnych problemów z przyciskami multimedialnymi czy trybem gamingowym. Wszystko działało i działa dobrze. Główny problem w moim przypadku to było podświetlenie klawiatury i na tym przede wszystkim się skupię.
 
 ## Ustawienia domyślne
 
-Klawiatura po włączeniu domyślnie ma ustawiony tryb podświetlania klawiszy, który ja nazywam oddychającą tęczą. Osoba, która widziała jak to wygląda na pewno zrozumie, co mam na myśli. Ten tryb wygląda imponująco przez pierwsze 15 minut. Później, gdy człowiek chce się skupić na pracy działa po prostu rozpraszająco. Zaczęłam więc szukać innych możliwości. Logitech G915 TKL ma na starcie zdefiniowane 10 przykładowych trybów podświetlenia klawiatury. Oto jak można sobie je ustawić:
+Klawiatura po włączeniu domyślnie ma ustawiony tryb podświetlania klawiszy, który ja nazywam oddychającą tęczą. Każdy kto widział jak to wygląda, rozumie co mam na myśli. Ten tryb wygląda imponująco przez pierwsze 15 minut. Później, gdy człowiek chce się skupić na pracy działa po prostu rozpraszająco. Zaczęłam więc szukać innych opcji. Logitech G915 TKL ma na starcie zdefiniowane 10 przykładowych trybów podświetlenia klawiatury. Oto jak można sobie je ustawić:
 
 - `☀` (przycisk jasności) - cyklicznie pozwala ustawiać poziom podświetlenia klawiszy od maksymalnego podświetlenia do jego braku.
 - `☀ + 1` - efekt kolorowej fali (od lewej do prawej)
@@ -40,7 +40,7 @@ Oprogramowanie G Hub wygląda OK. Można tam ustawić niemal każdy najmniejszy 
 
 ## Libratbag i Ratbagctl
 
-Kiedy zawiodły przewidziane przez producenta sposoby konfiguracji klawiatury zaczęłam szukać projektów Open Source, które pozwoliłyby mi na dostosowanie ustawień klawiatury z poziomu Ubuntu. W ten sposób znalazłam **Libratbag**. Biblioteka ta dostarcza **Ratbagd**. To DBus daemon do konfiguracji urządzeń wejścia, przede wszystkim myszy. Na szczęście projekt ten obsługuje również klawiatury w tym Logitech G915 TKL. W moim przypadku nie byłam w stanie uruchomić graficznej wersji tego oprogramowania, ale wersja konsolowa działa dobrze.
+Kiedy zawiodły przewidziane przez producenta sposoby konfiguracji klawiatury zaczęłam szukać projektów Open Source, które pozwoliłyby mi na dostosowanie ustawień klawiatury z poziomu Ubuntu. W ten sposób znalazłam **Libratbag**. Biblioteka ta dostarcza **Ratbagd**. To DBus daemon do konfiguracji urządzeń wejścia, przede wszystkim myszy. Na szczęście projekt ten obsługuje również klawiatury, w tym Logitech G915 TKL. W moim przypadku nie byłam w stanie uruchomić graficznej wersji tego oprogramowania, ale wersja konsolowa działa dobrze.
 
 By użyć Ratbagctl zainstalowałam odpowiedni pakiet przygotowany dla Ubuntu (wszystkie linki na dole artykułu). Podłączyłam klawiaturę do komputera przy użyciu kabla i mogłam już bez problemu używać polecenia `ratbagctl`.
 
@@ -153,7 +153,7 @@ $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboar
 $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" led 1 set color 0000FF
 ```
 
-Narzędzie `ratbagctl` umożliwia konfigurację też innych opcji, nie tylko podświetlenia. Dlatego zachęcam do zapoznania się z instrukcją. W moim przypadku można ją znaleźć używając polecenia: `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. Jest tam możliwość konfiguracji profili czy też makr.
+Narzędzie `ratbagctl` umożliwia konfigurację też innych opcji, nie tylko podświetlenia. Dlatego zachęcam do zapoznania się z instrukcją. W moim przypadku można ją znaleźć używając polecenia `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. Jest tam możliwość konfiguracji profili czy też makr.
 
 ## G810-led
 
@@ -165,19 +165,19 @@ $ sudo g810-led -dv 046d -dp c545 -tuk 5 -a 0000ff
 
 To polecenie pozwala ustawić wszystkie klawisze na jeden kolor. Czasami jednak nie działa prawidłowo - część klawiszy pozostaje w poprzednim kolorze. Najwidoczniej ten PR nie do końca działa z klawiaturą Logitech G915 TLK. Można ten problem ominąć dwa razy uruchamiając to samo polecenie lub przez osobne ustawianie brakujących klawiszy lub grup klawiszy.
 
-Do ustawienia pojedynczego klawisza (w tym przypadku `w`) użyjemy:
+Do ustawienia pojedynczego klawisza (na przykład `w`) użyjemy:
 
 ```bash
 $ sudo g810-led -dv 046d -dp c545 -tuk 5 -k w ff0000
 ```
 
-Do ustawienia grupy klawiszy (w tym przypadku klawiszy `F1-F12`) użyjemy:
+Do ustawienia grupy klawiszy (przykładowo klawiszy funkcyjnych -  `F1-F12`) użyjemy:
 
 ```bash
 $ sudo g810-led -dv 046d -dp c545 -tuk 5 -g fkeys ff00ff
 ```
 
-Natomiast do poznania odpowiedniej nazwy klawisza służy parametr `--help-keys`:
+Do wyświetlenia listy dostępnych klawiszy służy parametr `--help-keys`:
 
 ```bash
 $ sudo g810-led -dv 046d -dp c545 -tuk 5 --help-keys
@@ -185,22 +185,22 @@ $ sudo g810-led -dv 046d -dp c545 -tuk 5 --help-keys
 
 Nie będę pokazywać tutaj wszystkich możliwości tego narzędzia, zachęcam do zajrzenia na stronę główną projektu g810-led.
 
-**Ważne!** Wszystkie podane powyżej polecenia działają tylko przy użyciu adaptera bezprzewodowego. Połączenie po kablu nie jest na tą chwilę wspierane.
+**Ważne!** Wszystkie podane powyżej polecenia działają tylko przy użyciu adaptera bezprzewodowego. Połączenie po kablu nie jest na tę chwilę wspierane.
 
 Na zakończenie tej sekcji chciałabym dodać jeszcze jedną rzecz. Próbowałam na różne sposoby, ale nie udało mi się zapisać moich ustawień na stałe. Za każdym razem gdy klawiatura przechodziła w stan czuwania, po jej przebudzeniu pojawiały się domyślne ustawienia. Nie pomagał nawet parametr `-c`, który miał zatwierdzać wybraną konfigurację. Niemniej jednak miałam dużo frajdy bawiąc się różnymi sposobami podświetlania klawiatury.
 
 ## Keyleds
 
-Jest jeszcze jeden projekt, o którym chciałabym wspomnieć. To **Keyleds**. Co prawda główny projekt nie wspiera klawiatury Logitech G915 TKL, ale istnieje fork z gałęzią G915, który już takie wsparcie częściowo oferuje. Po kompilacji tego projektu lokalnie, byłam wstanie użyć go z poziomu linii poleceń. Na tę chwilę funkcjonalność nie jest imponująca, ale może w przyszłości będzie dostępne całkowite wsparcie dla klawiatury Logitech G915 TKL.
+Jest jeszcze jeden projekt, o którym chciałabym wspomnieć. To **Keyleds**. Co prawda główny projekt nie wspiera klawiatury Logitech G915 TKL, ale istnieje fork z gałęzią G915, który już takie wsparcie częściowo oferuje. Po kompilacji tego projektu lokalnie, byłam w stanie użyć go z poziomu linii poleceń. Na tę chwilę funkcjonalność nie jest imponująca, ale może w przyszłości będzie dostępne całkowite wsparcie dla klawiatury Logitech G915 TKL.
 
-By uruchomić to narzędzie użyjemy:
+By uruchomić projekt Keyleds użyjemy:
 
 ```bash
 $ killall keyledsd
 $ keyledsd --verbose
 ```
 
-Aby zobaczyć dokładne informacje o urządzeniu (ja miałam tylko jedno urządzenie) uruchomimy:
+Aby zobaczyć dokładne informacje o urządzeniu (ja mam tylko jedno urządzenie) uruchom:
 
 ```bash
 $ keyledsctl info
@@ -221,7 +221,7 @@ Report rates:   [1ms] 2ms 4ms 8ms
 
 Jeżeli masz więcej niż jedno urządzenie dostępne, skorzystaj z polecenia `keyledsctl list` i wybierz interesujące Cię urządzenie.
 
-W tym momencie za pomocą projektu Keyleds byłam wstanie skonfigurować tylko tryb gamingowy:
+W tym momencie za pomocą projektu Keyleds byłam w stanie skonfigurować tylko tryb gamingowy:
 
 ```bash
 $ keyledsctl gamemode h
