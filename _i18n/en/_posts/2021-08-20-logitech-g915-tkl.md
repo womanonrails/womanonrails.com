@@ -8,6 +8,7 @@ categories: [tools]
 tags: [keyboard]
 imagefeature: logitech-g915-tkl/og_image-logitech-g915-tkl.png
 lang: en
+last_modified_at: 2021-10-06 15:00:00 +0200
 ---
 
 I bought a **Logitech G915 TKL keyboard** at a beginning of the 2021 year. This keyboard works pretty well on Windows and Logitech G Hub software. There is a ton of ways to customize it. It can be fun. The problem comes when you cannot normally install G Hub software on your system, like on Ubuntu. Since I use the Logitech G915 TKL keyboard for a while with my Ubuntu, I would like to share what I already know about customizing it on Linux.
@@ -16,7 +17,7 @@ First of all, this article is not a review of the Logitech G915 TKL keyboard. I 
 
 ## Default settings
 
-The keyboard comes with a default preset RGB theme - a breathing rainbow theme - how I call it. It's awesome for the first 15 minutes, but when I tried to do some programming, it was pretty distracting. So, I start the search for others possibilities. By default, the G915 TKL keyboard has 10 themes. Here you can find the way how to use it:
+The keyboard comes with a default preset RGB theme - a breathing rainbow theme - how I call it. It's awesome for the first 15 minutes, but when I tried to do some programming, it was pretty distracting. So, I start the search for other possibilities. By default, the G915 TKL keyboard has 10 themes. Here you can find the way how to use it:
 
 - `☀` (brightness button) - cycles through brightness levels
 - `☀ + 1` - the lightning effect: Colorwave (left to right)
@@ -161,6 +162,10 @@ $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboar
 
 To discover all possible commands, I recommend you to read the manual. In my case, it can be found here: `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. There is a possibility to configure profiles or create your macros too.
 
+**Tip from <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>**, who is the person responsible for Logitech G915 pull request on g810-leds (more about that below):
+
+> You should be careful with ratbag. When you set LED from ratbagctl, it writes that configuration to onboard flash. Basically, it overwrites the stored profile (you can even select which of the 3 profiles you want to write to). I've had some issues when I tried to set some colours. I've also noticed that it messed up power saving settings, and the keyboard backlight doesn't timeout at all (only the G logo blinks for a moment after ~ 30 seconds of inactivity).
+
 ## G810-led
 
 Another project which tries to support Logitech keyboards on Linux is **G810-led**. It supports keyboards like Logitech G213, G410, G413, G512, G513, G610, G810, G815, G910, and GPRO. During I'm writing this article, there is a pull request including changes for Logitech G915. The Logitech G915 TKL keyboard should be 100% compatible with the full G915. When I tried this PR for the first time, I couldn't connect with my keyboard. After all the command which works:
@@ -191,9 +196,23 @@ $ sudo g810-led -dv 046d -dp c545 -tuk 5 --help-keys
 
 I won't show you all possibilities. Instead of that, I recommend you to check out the main page of the g810-led project.
 
+Now, I would like to shortly talk about the `-c` parameter, which I misunderstood at the beginning. In Logitech's HID API, setting LED colors is a two steps process. First, you send colors for individual keys. This step has no visible effect on the keyboard. It only stores setups in the keyboard's RAM. The second step is to commit all your color changes. It outputs colors stored in RAM onto physical LEDs. `-c` parameter is responsible for committing all changes.
+
+For g810-led switches parameters `-a`, `-g` and `-k` always sends commit automatically. There are `-an`, `-gn`, and `-kn` variants of these switches, which don't send commit. If you use them, you won't see any difference on the keyboard unless you call `g810-leds -c` after that.
+
 **Important!** All commands above are working only in the wireless mode. The wire connection is not supported for now.
 
-One more note. I was not able to save the selected setups. Each time when the keyboard turns the lighting off, the lighting effect goes back to keyboard defaults. Even I use the `-c` parameter, which should allow me to commit the setups for longer. Nevertheless, I had a lot of fun using this project.
+One more note. I was not able to save the selected setups. Each time when the keyboard turns the lighting off, the lighting effect goes back to keyboard defaults. It's because g810-led don't mess with the onboard flash. Similar to the keyleds tool described below. They only change a runtime configuration. That's why there is an issue with that. The LED configuration resets after the keyboard wakes up from the power save function. Unfortunately, non of the current software implements detecting the wake-up to reapply the configuration. Nevertheless, I had a lot of fun using this project.
+
+**Tip from <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>**, who is the person responsible for Logitech G915 pull request on g810-leds:
+
+> There's a workaround for this. You can switch the keyboard into software mode, which disables onboard features like power-saving, backlight control, etc, and then control everything from the software. After that, the keyboard immediately will go dark (but it's still working - only the backlight turns off). Then you can set whatever colors you like using g810-led. But remember that the power saving is disabled in this mode. It is the software that should control dimming the keyboard, but there's no software for Linux right now that does that. Also, the mode is back to "board" mode after you power cycle the keyboard.
+
+The command for this looks like that:
+
+```bash
+$ sudo g810-led -dv 046d -dp c545 -tuk 5 --on-board-mode software
+```
 
 ## Keyleds
 
@@ -233,6 +252,10 @@ Right now, the only thing you can do using this project is setting up game mode:
 $ keyledsctl gamemode h
 $ keyledsctl gamemode
 ```
+
+## Thanks
+
+I would like to thanks <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>, who read this article and add some addtional thoughts.
 
 ## Links
 - <a href="https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf" title="Logitech user manual for G915 TKL" target='_blank' rel='nofollow'>Logitech user manual for Logitech G915 TKL keyboard</a>

@@ -7,7 +7,8 @@ headline: Premature optimization is the root of all evil.
 categories: [narzędzia]
 tags: [klawiatura]
 imagefeature: logitech-g915-tkl/og_image-logitech-g915-tkl.png
-lang: en
+lang: pl
+last_modified_at: 2021-10-06 15:00:00 +0200
 ---
 
 Na początku roku 2021 kupiłam klawiaturę **Logitech G915 TKL**. Klawiatura ta współpracuje z systemem operacyjnym Windows i oprogramowaniem Logitech G Hub. Ma wiele możliwości personalizacji, co trzeba przyznać sprawia frajdę. Problem pojawia się gdy klawiaturę Logitech G915 TKL chce się użyć z Linuxem. Nie działa tam oprogramowanie G Hub. W tym artykule pokaże jak, przynajmniej częściowo, skonfigurować klawiaturę Logitech G915 TKL używając Linuxa, a dokładnie Ubuntu.
@@ -155,6 +156,10 @@ $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboar
 
 Narzędzie `ratbagctl` umożliwia konfigurację też innych opcji, nie tylko podświetlenia. Dlatego zachęcam do zapoznania się z instrukcją. W moim przypadku można ją znaleźć używając polecenia `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. Jest tam możliwość konfiguracji profili czy też makr.
 
+**Tip <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-a</a>**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds (więcej na ten temat poniżej):
+
+> Trzeba uważać przy używaniu ratbag. Kiedy ustawia się LEDy za pomocą ratbagctl, to konfiguracja jest zapisywana na onboard flash. Co powoduje nadpisanie istniejących tam profili użytkownika (można nawet wybrać, który z 3 profili chcemy nadpisać). Ja miałem pewne trudności przy ustawianiu niektórych kolorów. Dodatkowo zauważyłem, że to polecenie namieszało w moich ustawieniach oszczędzania baterii oraz podświetleniu klawiatury (po około 30 sekundach braku aktywności świeciło tylko logo G).
+
 ## G810-led
 
 Innym projektem, który stara się obsłużyć klawiatury Logitech pod Linuksem jest **G810-led**. Oferuje on wsparcie dla klawiatur takich jak: G213, G410, G413, G512, G513, G610, G810, G815, G910 i GPRO. W chwili gdy piszę ten artykuł istnieje pull request oferujący wsparcie dla klawiatury Logitech G915. Klawiatura Logitech G915 TKL powinna być kompatybilna z G915. Kiedy pierwszy raz próbowałam uruchomić ten projekt ze zmianami z PR nie miałam szczęścia. Nie mogłam się połączyć z klawiaturą. Jednak koniec końców udało się za pomocą polecenia:
@@ -185,10 +190,23 @@ $ sudo g810-led -dv 046d -dp c545 -tuk 5 --help-keys
 
 Nie będę pokazywać tutaj wszystkich możliwości tego narzędzia, zachęcam do zajrzenia na stronę główną projektu g810-led.
 
+Teraz na chwilę chciałabym się skupić na parametrze `-c`, który początkowo źle zrozumiałam. Proces ustawiania kolorów dla LEDów przy pomocy Logitech's HID API jest dwu etapowy. Pierwszy etap to ustawianie konkretnych kolorów dla klawiszy. Ten krok nie powoduje żadnych widocznych efektów na klawiaturze. Zapisuje tylko zmiany w pamięci RAM klawiatury. Drugi krok to zatwierdzenie tych zmian. To właśnie zadanie parametru `-c`. Po zatwierdzeniu zmiany nowe podświetlenie jest widoczne na klawiaturze.
+
+Gdy ustawiamy podświetlenie za pomocą parametrów `-a`, `-g` lub `-k`, zmiany te są automatycznie zatwierdzane. Istnieją też odpowiedniki powyższych parametrów ale bez automatycznego zatwierdzenia. To `-an`, `-gn` oraz `-kn`. Po ich użyciu trzeba zmiany jeszcze zatwierdzić używając polecania `g810-leds -c`.
+
 **Ważne!** Wszystkie podane powyżej polecenia działają tylko przy użyciu adaptera bezprzewodowego. Połączenie po kablu nie jest na tę chwilę wspierane.
 
-Na zakończenie tej sekcji chciałabym dodać jeszcze jedną rzecz. Próbowałam na różne sposoby, ale nie udało mi się zapisać moich ustawień na stałe. Za każdym razem gdy klawiatura przechodziła w stan czuwania, po jej przebudzeniu pojawiały się domyślne ustawienia. Nie pomagał nawet parametr `-c`, który miał zatwierdzać wybraną konfigurację. Niemniej jednak miałam dużo frajdy bawiąc się różnymi sposobami podświetlania klawiatury.
+Na zakończenie tej sekcji chciałabym dodać jeszcze jedną rzecz. Próbowałam na różne sposoby, ale nie udało mi się zapisać moich ustawień na stałe. Za każdym razem gdy klawiatura przechodziła w stan czuwania, po jej przebudzeniu pojawiały się domyślne ustawienia. Wynika to ze sposobu zapisu ustawień za pomocą g810-led. Nie są one zapisywane w onboard flash. Podobnie zachowuje się narzędzie keyleds opisane poniżej. W obu przypadkach nadpisujemy tylko chwilowo stan bieżących ustawień. A te ustawienia są resetowane za każdym razem po wybudzeniu klawiatury z funkcji oszczędzania baterii. Niestety, żadne z obecnie istniejących rozwiązań nie wspiera detekcji wybudzenia klawiatury, by można było na nowo przypisać wybrane ustawienia. Niemniej jednak miałam dużo frajdy bawiąc się różnymi sposobami podświetlania klawiatury.
 
+**Kolejny tip <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-a</a>**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds:
+
+> Istnieje pewne obejście tego problemu. Można przełączyć klawiaturę w tryb software, który wyłącza takie ustawienia jak oszczędzanie baterii czy zarządzanie podświetleniem i pozwala na kontrolowanie tego za pomocą oprogramowania. Po ustawieniu tego trybu klawiatura od razu przestaje być podświetlana, ale dalej działa. Teraz można ustawić dowolną kolorystykę podświetlenia używając do tego g810-led. Trzeba jednak pamiętać że tryb oszczędzania baterii jest wyłączony. To oprogramowanie powinno sterować ściemnianiem klawiatury. Niestety nie ma na razie takiego oprogramowania dla Linuksa. Dodatkowo po wyłączeniu i ponownym włączeniu klawiatury przechodzimy z powrotem to trybu board zamiast software.
+
+Komenda pozwalająca na skorzystanie z tego obejścia to:
+
+```bash
+$ sudo g810-led -dv 046d -dp c545 -tuk 5 --on-board-mode software
+```
 ## Keyleds
 
 Jest jeszcze jeden projekt, o którym chciałabym wspomnieć. To **Keyleds**. Co prawda główny projekt nie wspiera klawiatury Logitech G915 TKL, ale istnieje fork z gałęzią G915, który już takie wsparcie częściowo oferuje. Po kompilacji tego projektu lokalnie, byłam w stanie użyć go z poziomu linii poleceń. Na tę chwilę funkcjonalność nie jest imponująca, ale może w przyszłości będzie dostępne całkowite wsparcie dla klawiatury Logitech G915 TKL.
@@ -227,6 +245,10 @@ W tym momencie za pomocą projektu Keyleds byłam w stanie skonfigurować tylko 
 $ keyledsctl gamemode h
 $ keyledsctl gamemode
 ```
+
+## Podziękowania
+
+Chciałabym podziękować <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-owi</a> za przeczytanie tego artykułu i podzielenie się swoimi przemyśleniami.
 
 ## Linki
 - <a href="https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf" title="[EN] Logitech user manual for G915 TKL" target='_blank' rel='nofollow'>Instrukcja obsługi klawiatury Logitech G915 TKL</a>
