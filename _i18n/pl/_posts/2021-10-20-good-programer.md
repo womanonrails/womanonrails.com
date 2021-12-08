@@ -6,7 +6,7 @@ description: Co programistki i programiści powinni wiedzieć? Moja subiektywna 
 headline: Premature optimization is the root of all evil.
 categories: [praca]
 tags: [kariera, samoświadomość]
-imagefeature: ..
+imagefeature: programmers-skills/og_image-programmer-skills.png
 lang: pl
 ---
 

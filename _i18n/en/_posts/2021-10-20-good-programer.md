@@ -6,7 +6,7 @@ description: What programmer should know? My subjective opinion.
 headline: Premature optimization is the root of all evil.
 categories: [work]
 tags: [career, self-awareness]
-imagefeature: ..
+imagefeature: programmers-skills/og_image-programmer-skills.png
 lang: en
 ---
 
