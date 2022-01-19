@@ -8,6 +8,7 @@ categories: [programowanie]
 tags: [Ruby]
 imagefeature: pattern-matching/og_image-pattern-matching.png
 lang: pl
+last_modified_at: 2022-01-19 16:00:00 +0200
 ---
 
 Gdy pojawiają się nowości w naszym języku programowania czasami jesteśmy z tego powodu zadowolone, a czasami nie. Dziś chciałabym porozmawiać o zmianach, z których ja osobiście bardzo się cieszę. Mam na myśli **dopasowanie do wzorca**  w języku Ruby, czyli pattern matching. Jakiś czas temu napisałam artykuł na temat <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Podstawy dopasowania do wrorca w języku Ruby">Pattern Matching-u w języku Ruby</a>. Zachęcam do zapoznania się z nim, ponieważ będę odwoływała się do omawianych tam przykładów. A teraz zanurzmy się jeszcze bardziej w świat dopasowania do wzorca w języku Ruby. Zaczynamy!
@@ -94,6 +95,41 @@ a w przypadku `=>` mamy
 3.0.0> a
  => 1
 ```
+
+##### Jednolinikowy Pattern Matching w Ruby 3.1
+
+Po pierwsze, jednolinijkowe dopasowanie do wzorca w Ruby 3.1 nie jest już eksperymentalne. Po drugie, możemy pominąć nawiasy dla tablic i tablic słownikowych, co nie było możliwe we wcześniejszych wersjach Ruby.
+
+Do tej pory w Ruby 3.0 działał pattern matching:
+
+```ruby
+3.0.0> [0, 1] => [_, x]
+3.0.0> x
+ => 1
+```
+
+Ale nie można było pominąć nawiasów. Wtedy pojawiał się błąd składniowy:
+
+```ruby
+3.0.0> [0, 1] => _, x
+Traceback (most recent call last):
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        1: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+SyntaxError ((irb):6: syntax error, unexpected ',', expecting end-of-input)
+[0, 1] => _, x
+```
+
+W wersji Ruby 3.1 jest to możliwe.
+
+```ruby
+3.1.0> [0, 1] => _, x
+ => nil
+3.1.0> x
+ => 1
+```
+
+Analogicznie wygląda sytuacja dla tablic słownikowych czyli _hash-y_.
 
 ### 2. Pattern matching dla dopasowania tablicy z zadeklarowanym początkiem i końcem
 
@@ -359,6 +395,62 @@ users.any? { |user| user in { name: /C/, age: 20.. } }
 
 users.any? { |user| user in { name: /A/, age: 20.. } }
  => true
+```
+
+### 10. Pin operator (^)  i złożone wyrażenia
+
+Od Ruby 3.1 mamy możliwość korzystania ze złożonych wyrażeń przy pomocy pin operatora `^`. W poprzednich wersjach Ruby była możliwość używania tylko stałych, literałów i zmiennych lokalnych.
+
+Przykładowo, w Ruby 3.0 można było użyć obiektu typu `Range` z liczbami całkowitymi:
+
+```ruby
+3.0.0> { version: 12 } in { version: 10..15 }
+ => true
+```
+
+ale nie z bardziej skomplikowanymi obiektami:
+
+```ruby
+3.0.0> { version: 12 } in { version: (BigDecimal('10')..BigDecimal('15')) }
+Traceback (most recent call last):
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        1: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+SyntaxError ((irb):19: syntax error, unexpected .., expecting ')')
+...n {version: (BigDecimal('10')..BigDecimal('15'))}
+...                             ^~
+(irb):19: syntax error, unexpected ')', expecting end-of-input
+...ecimal('10')..BigDecimal('15'))}
+...                              ^
+```
+
+Teraz w Ruby 3.1 te obliczenia są możliwe dzięki zastosowaniu pin operatora `^`:
+
+```ruby
+3.1.0> require 'bigdecimal'
+ => true
+3.1.0> { version: 12 } in { version: ^(BigDecimal('10')..BigDecimal('15')) }
+ => true
+```
+
+Jak widać złożone wyrażenia są teraz poprawnie interpretowane. Trzeba tylko pamiętać, że **nawiasy przy stosowaniu pin operatora `^` są obowiązkowe**. Nie można zrobić:
+
+```ruby
+3.1.0> Time.now.year in ^rand(2021..2023)
+/home/agnieszka/.rvm/rubies/ruby-3.1.0/lib/ruby/3.1.0/irb/workspace.rb:119:in `eval': (irb):16: rand: no such local variable (SyntaxError)
+(irb):16: syntax error, unexpected '(', expecting end-of-input
+Time.now.year in ^rand(2021..2023)
+                      ^
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/bin/irb:25:in `load'
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/bin/irb:25:in `<main>'
+```
+
+ale za to działa:
+
+```ruby
+3.1.0 :017 > Time.now.year in ^(rand(2021..2023))
+ => false
 ```
 
 To wszystko co przygotowałam na dzisiaj. Znasz jeszcze więcej ciekawostek dotyczących dopasowania do wzorca w języku Ruby? Podziel się nimi w komentarzach.

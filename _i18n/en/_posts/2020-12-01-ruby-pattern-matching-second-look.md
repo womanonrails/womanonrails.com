@@ -8,6 +8,7 @@ categories: [programming]
 tags: [Ruby]
 imagefeature: pattern-matching/og_image-pattern-matching.png
 lang: en
+last_modified_at: 2022-01-19 16:00:00 +0200
 ---
 
 Sometimes I like new changes, new features, or improvements in Ruby and sometimes not. Today I would like to tell you more about the changes that I'm very excited about. I mean the **Pattern Matching**. I wrote a separate article about <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Pattern Matching in Ruby basics">Pattern Matching in Ruby</a> some time ago. Now it's the time to go deeper into the Pattern Matching news. So let's get started!
@@ -92,6 +93,39 @@ and using `=>`
  => nil
 
 3.0.0> a
+ => 1
+```
+
+##### One-line Pattern in Ruby 3.1
+
+First of all, one-line pattern matching in Ruby 3.1 is no longer experimental. The second news is related to parentheses. They can be omitted for array or hash in one-line pattern matching.
+
+Code with parentheses:
+
+```ruby
+3.0.0> [0, 1] => [_, x]
+3.0.0> x
+ => 1
+```
+
+In Ruby 3.0, we have a syntax error when we omit parentheses.
+
+```ruby
+3.0.0> [0, 1] => _, x
+Traceback (most recent call last):
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        1: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+SyntaxError ((irb):6: syntax error, unexpected ',', expecting end-of-input)
+[0, 1] => _, x
+```
+
+In Ruby 3.1, everything is working.
+
+```ruby
+3.1.0> [0, 1] => _, x
+ => nil
+3.1.0> x
  => 1
 ```
 
@@ -357,6 +391,62 @@ users.any? { |user| user in { name: /C/, age: 20.. } }
 
 users.any? { |user| user in { name: /A/, age: 20.. } }
  => true
+```
+
+### 10. Pattern Matching pin operator (^) with expression
+
+Since Ruby 3.1, expressions and non-local variables are allowed in pin operator `^`. In the previous Ruby version, only constants, literals, and pinned local variables were allowed.
+
+So, for example, in Ruby 3.0, there was a possibility to use range with numbers:
+
+```ruby
+3.0.0> { version: 12 } in { version: 10..15 }
+ => true
+```
+
+but not with more complex objects:
+
+```ruby
+3.0.0> { version: 12 } in { version: (BigDecimal('10')..BigDecimal('15')) }
+Traceback (most recent call last):
+        3: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `<main>'
+        2: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/bin/irb:23:in `load'
+        1: from /home/agnieszka/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/irb-1.3.0/exe/irb:11:in `<top (required)>'
+SyntaxError ((irb):19: syntax error, unexpected .., expecting ')')
+...n {version: (BigDecimal('10')..BigDecimal('15'))}
+...                             ^~
+(irb):19: syntax error, unexpected ')', expecting end-of-input
+...ecimal('10')..BigDecimal('15'))}
+...                              ^
+```
+
+Now in Ruby 3.1, we can do those calculations using pin operator `^`:
+
+```ruby
+3.1.0> require 'bigdecimal'
+ => true
+3.1.0> { version: 12 } in { version: ^(BigDecimal('10')..BigDecimal('15')) }
+ => true
+```
+
+It's now valid for any complex expression. Remember that **parenthesis are mandatory**. You cannot do:
+
+```ruby
+3.1.0> Time.now.year in ^rand(2021..2023)
+/home/agnieszka/.rvm/rubies/ruby-3.1.0/lib/ruby/3.1.0/irb/workspace.rb:119:in `eval': (irb):16: rand: no such local variable (SyntaxError)
+(irb):16: syntax error, unexpected '(', expecting end-of-input
+Time.now.year in ^rand(2021..2023)
+                      ^
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/bin/irb:25:in `load'
+        from /home/agnieszka/.rvm/rubies/ruby-3.1.0/bin/irb:25:in `<main>'
+```
+
+instead, you need to do:
+
+```ruby
+3.1.0 :017 > Time.now.year in ^(rand(2021..2023))
+ => false
 ```
 
 That's all that I have today for you. Do you know more pattern matching tricks and tips? Share them in the comment below.
