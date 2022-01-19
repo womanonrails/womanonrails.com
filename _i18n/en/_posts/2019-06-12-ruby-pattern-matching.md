@@ -6,6 +6,7 @@ headline: Premature optimization is the root of all evil.
 categories: [programming]
 tags: [Ruby]
 lang: en
+last_modified_at: 2022-01-19 10:00:00 +0200
 ---
 
 Some time ago I wrote an article about <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - How to fit to the pattern?">Pattern matching in Elixir</a>. I really like this idea. Now from Ruby version 2.7 we have **pattern matching in Ruby**!!! It is not the same like in Elixir, but it is a nice feature to have. Keep in mind that this is still an experimental feature, so it can change in the future versions of Ruby. Let's check out what we can do with pattern matching in Ruby.
@@ -38,6 +39,15 @@ SyntaxError ((irb):2: syntax error, unexpected '=', expecting end-of-input)
 ```
 
 I don't say that Ruby is worse then Elixir. I'm showing you this to explain how big of a challenge was to put pattern matching in Ruby. I want you to be forgiving if something is not working like you would like to. There is still work to do, questions to answer and decisions to take. Be patient and celebrate with me this first step of pattern matching in Ruby.
+
+Since Ruby 3.0, there is a new way to do the above pattern matching:
+
+```ruby
+3.0.0 > 4 => x
+ => nil
+3.0.0 > x
+ => 4
+```
 
 ## Pattern matching in Ruby - basics
 
@@ -507,6 +517,8 @@ When I play around pattern matching in Ruby, I found some cases which are not a 
 - allowed variables in alternative pattern - It will be great to be able to do `[1, 2] | [1, 2, c]`.
 
 I know that some of my ideas could be not possible or hard to do, but this is my wish list. ;]
+
+From Ruby 3.0, we have more pattern matching features available. If you want to know more check out my article: <a href="{{ site.baseurl }}/ruby-pattern-matching-second-look" title="News about pattern matching in Ruby">Second look at pattern matching in Ruby</a>.
 
 ## Summary
 

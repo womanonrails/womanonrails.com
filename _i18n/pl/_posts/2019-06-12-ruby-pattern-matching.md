@@ -6,6 +6,7 @@ headline: Premature optimization is the root of all evil.
 categories: [programowanie]
 tags: [Ruby]
 lang: pl
+last_modified_at: 2022-01-19 10:00:00 +0200
 ---
 
 Jakiś czas temu napisałam artykuł o <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - Dopasowanie do wzorca">podstawach pattern matchingu w Elixirze</a>. Bardzo spodobała mi się idea dopasowywania do wzorca. Teraz możemy się nią cieszyć również w najnowszej wersji Ruby 2.7!!! Nie jest to co prawda ten sam pattern matching co w Elixirze, ale jest to ciekawa funkcjonalność. Trzeba też pamiętać, że **pattern matching w Ruby** jest funkcjonalnością eksperymentalną, więc może się zmieniać dynamicznie w następnych wersjach Rubiego. Nie zmienia to faktu, że już teraz możemy ją przetestować.
@@ -38,6 +39,15 @@ SyntaxError ((irb):2: syntax error, unexpected '=', expecting end-of-input)
 ```
 
 Nie pokazuje tego by udowodnić, że Elixir jest lepszym językiem niż Ruby. Mówię o tym, by zaznaczyć, jak trudne zadanie stało przed twórcami języka Ruby, gdy postanowili wprowadzić pattern matching do języka. Tak jak wspominałam na początku, jest to funkcjonalność eksperymentalna, więc potrzeba czasu na jej dopracowanie, odpowiedzenie na wszystkie pojawiające się pytania i podjęcie decyzji w jakim kierunku dalej rozwijać pattern matching. Na tę chwilę możemy już teraz wypróbować to, co nam oferuje pattern maching w Ruby.
+
+Od Ruby 3.0 istnieje nowy sposób na skorzystanie z powyższego dopasowania do wzorca:
+
+```ruby
+3.0.0 > 4 => x
+ => nil
+3.0.0 > x
+ => 4
+```
 
 ## Pattern matching w Ruby - podstawy
 
@@ -507,6 +517,8 @@ Kiedy testowałam sobie pattern matching w Ruby, przyszły mi do głowy pewne do
 - pozwolić na używanie zmiennych w wzorcach alternatywnych - byłoby fajnie móc zrobić `[1, 2] | [1, 2, c]`.
 
 Wiem że moje pomysły mogą być trudne do osiągnięcia lub może nawet niemożliwe, ale jest to moja taka mała lista życzeń. ;]
+
+Od Ruby 3.0 mamy dostęp do większej liczby funkcjonalności związanej z dopasowaniem do wzorca. Jeżeli chcesz wiedzieć więcej na ten temat, zapraszam na mój artykuł: <a href="{{ site.baseurl }}/ruby-pattern-matching-second-look" title="Pattern matching w Ruby - nowości">Drugie spojrzenie na pattern matching w Ruby</a>.
 
 ## Podsumowanie
 
