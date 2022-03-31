@@ -12,7 +12,7 @@ lang: en
 
 Często powtarzam słowa: _Przedwczesna optymalizacja to źródło wszelkiego zła_ i całkowicie się z nimi zgadzam. Nie zmienia to faktu, że dziś chciałabym poruszyć temat optymalizacji (ale nie przedwczesnej). **Optymalizacja środowiska pracy**, czy mówiąc inaczej **efektywność** jest bardzo ważna. Kto nie chciałby pracować szybciej i mieć więcej wolnego czasu dla siebie? Ja na pewno tak. Z tego właśnie powodu dziś podzielę się z Tobą komendami i skrótami klawiszowymi przyśpieszającymi pracę z narzędziem **Slack**.
 
-W moich poprzednich artykułach mówiłam już o efektywnym korzystaniu z takich narzędzi jak: <a href="{{ site.baseurl }}/guake-terminal" title="Guake - podręczny terminal">Guake</a>, <a href="{{ site.baseurl }}/visual-studio-code" title="Skróty klawiszowe w Visual Studio Code">VS Code<a>, <a href="{{ site.baseurl }}/sublime" title="Skróty klawiszowe w Sublime Text Editor">Sublime Text Editor</a> czy nawet <a href="{{ site.baseurl }}/kategoria/git" title="Git - porady i wskazówki">Git</a>. Teraz nadszedł czas na komunikator **Slack**. Slack jest narzędziem często wykorzystywanym w komunikacji zespołowej, a ponieważ praca zdalna staje się coraz bardziej popularna, to tym większe jest znaczenie sprawnego posługiwania się takim narzędziem jak Slack. Ja skupie się na dwóch rzeczach: przydatnych komendach i skrótach klawiszowych.
+W moich poprzednich artykułach mówiłam już o efektywnym korzystaniu z takich narzędzi jak: <a href="{{ site.baseurl }}/guake-terminal" title="Guake - podręczny terminal">Guake</a>, <a href="{{ site.baseurl }}/visual-studio-code" title="Skróty klawiszowe w Visual Studio Code">VS Code<a>, <a href="{{ site.baseurl }}/sublime" title="Skróty klawiszowe w Sublime Text Editor">Sublime Text Editor</a> czy nawet <a href="{{ site.baseurl }}/kategoria/git" title="Git - porady i wskazówki">Git</a>. Teraz nadszedł czas na komunikator **Slack**. Slack jest narzędziem często wykorzystywanym w komunikacji zespołowej. Ponieważ praca zdalna staje się coraz bardziej popularna, to tym większe jest znaczenie sprawnego posługiwania się takim narzędziem jak Slack. Ja skupię się na dwóch rzeczach: przydatnych komendach i skrótach klawiszowych.
 
 ## Slack - komendy
 
@@ -28,7 +28,7 @@ W moich poprzednich artykułach mówiłam już o efektywnym korzystaniu z takich
 
 - Kiedy przygotowujesz jakąś wiadomość możesz ustawić jej **wysłanie na późniejszy czas**.
 - Slack connect - to funkcjonalność zapraszania osób do danego obszaru roboczego Slacka, nawet jeżeli dana osoba jest z poza Twojej organizacji.
-- Integracja z wieloma innymi narzędziami - Slack może być połączony z takimi narzędziami jak Trello, kalendarz Google czy Google Drive. Wszystko zależy od tego jakich narzędzi używasz.
+- Integracja z wieloma innymi narzędziami - Slack może być połączony z takimi narzędziami jak: Trello, kalendarz Google czy Google Drive. Wszystko zależy od tego jakich narzędzi używasz.
 
 ## Slack - skróty klawiszowe
 
@@ -53,7 +53,7 @@ Najważniejszy, przynajmniej na początku, skrót klawiszowy to ten do listy skr
 - `Ctrl + Shift + A` - pokazuje listę nieprzeczytanych wiadomości
 - `Ctrl + Shift + T` - pokazuje listę wątków (używając strzałek można się po nich poruszać)
 - `Ctrl + Shift + K` - pokazuje listę wiadomości bezpośrednich (DM)
-- `Ctrl + Shift + M` - pokazuje listę wiadomości gdzie zostaliśmy wspomnieni lub dodana została reakcja
+- `Ctrl + Shift + M` - pokazuje listę wiadomości, gdzie zostaliśmy wspomnieni lub dodana została reakcja
 - `Ctrl + Shift + S` - pokazuje listę zapisanych wiadomości
 - `Alt + ↑,↓` - przenosi do poprzedniej/następnej wiadomości bezpośredniej lub kanału
 - `Alt + Shift + ↑,↓` - przenosi do poprzedniej/następnej nieprzeczytanej wiadomości bezpośredniej lub na kanale
@@ -68,7 +68,7 @@ Najważniejszy, przynajmniej na początku, skrót klawiszowy to ten do listy skr
 
 #### Focus
 - `F6` - zaznaczenie następnej sekcji (kilkukrotne klikanie pozwala przenosić zaznaczenie na kolejne panele)
-- `Shift + F6` - zaznaczenie poprzednie sekcji
+- `Shift + F6` - zaznaczenie poprzedniej sekcji
 
 Kiedy zaznaczona jest już odpowiednia wiadomość, możesz:
 
@@ -77,7 +77,7 @@ Kiedy zaznaczona jest już odpowiednia wiadomość, możesz:
 - `T` or `→` - otworzyć wątek
 - `↑` - zmienić zaznaczenie na następną wiadomość (kiedy pole tekstowe jest puste)
 - `M` - ustawić przypomnienie dotyczące wybranej wiadomości
-- `A` - zapisać lub usunąć z zapisanych wiadomość
+- `A` - zapisać lub usunąć wiadomość w zapisanych wiadomościach
 - `S` - podzielić się z innymi wiadomością
 - `P` - przypiąć lub odpiąć wiadomość
 - `Delete` - usunąć wiadomość
@@ -87,11 +87,11 @@ Kiedy zaznaczona jest już odpowiednia wiadomość, możesz:
 - otaczając tekst `*` - można pogrubić tekst
 - otaczając tekst `_` - można pochylić tekst
 - otaczając tekst `~` - można przekreślić tekst
-- otaczając tekst <code class="highlighter-rouge">`</code> - można wstawić w linie kod
+- otaczając tekst <code class="highlighter-rouge">`</code> - można wstawić w linie fragment kodu
 - używając <code class="highlighter-rouge">```</code> - można wstawić blok kodu
 - używając `>` - można zacytować inną wiadomość
 
-Po za używaniem składni markdown możemy też używać skrótów klawiszowych podobnie, jak to się odbywa w edytorach tekstowych. Na przykład pogrubienie uzyskamy za pomocą skrótu `Ctrl + B`. Wszystko zależy od wybranych preferencji w ustawieniach Slacka.
+Poza używaniem składni markdown możemy też używać skrótów klawiszowych podobnie, jak to się odbywa w edytorach tekstowych. Na przykład pogrubienie uzyskamy za pomocą skrótu `Ctrl + B`. Wszystko zależy od wybranych preferencji w ustawieniach Slacka.
 
 #### Wyszukiwanie
 - `Crtl + G` - przeszukiwanie całego obszaru roboczego (Slack ma bardzo dobre wsparcie wyszukiwania, które jest podpowiadane w trakcie korzystania z niego)
