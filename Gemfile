@@ -6,7 +6,7 @@ gem 'jekyll', '~> 4.0.1'
 gem 'liquid-c', '~> 4.0'
 
 group :jekyll_plugins do
-  gem 'jekyll-commonmark', github: 'jekyll/jekyll-commonmark'
+  gem 'jekyll-commonmark', '~> 1.4'
   gem 'jekyll-feed', '~> 0.16'
   gem 'jekyll-include-cache', '~> 0.2'
   gem 'jekyll-multiple-languages-plugin', '~> 1.8.0'
