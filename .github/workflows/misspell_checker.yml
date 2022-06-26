@@ -1,0 +1,24 @@
+name: Misspell checker
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['_i18n/en/**']
+  push:
+    paths: ['_i18n/en/**']
+
+jobs:
+  misspell:
+    name: Misspell
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Check misspell
+        uses: reviewdog/action-misspell@v1
+        with:
+          fail_on_error: true
+          filter_mode: diff_context
+          level: error
+          locale: US
+          pattern: "*.md"
+          reporter: github-check
