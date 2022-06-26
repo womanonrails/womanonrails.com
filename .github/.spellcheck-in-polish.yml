@@ -1,0 +1,22 @@
+matrix:
+- name: Markdown
+  aspell:
+    d: pl
+    ignore-case: true
+    lang: pl
+  default_encoding: utf-8
+  dictionary:
+    encoding: utf-8
+    wordlists:
+    - .github/.wordlist-in-polish.txt
+  hunspell:
+    d: pl
+    ignore-case: true
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+      comments: false
+      ignores:
+      - code
+      - pre
+  sources: ['_i18n/pl/**/*.md']
