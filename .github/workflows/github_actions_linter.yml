@@ -1,0 +1,21 @@
+name: GitHub Actions linter
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/**']
+  push:
+    paths: ['.github/workflows/**']
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Check GitHub Actions syntax
+        uses: reviewdog/action-actionlint@v1
+        with:
+          fail_on_error: true
+          filter_mode: diff_context
+          level: error
+          reporter: github-check
