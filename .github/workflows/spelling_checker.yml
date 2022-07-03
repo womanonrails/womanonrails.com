@@ -3,12 +3,10 @@ on:
   workflow_call:
     inputs:
       config:
-        default: .spellcheck.yml
         description: Config file
         required: true
         type: string
       spellchecker:
-        default: aspell
         description: Spellchecker (aspell / hunspell)
         required: true
         type: string
