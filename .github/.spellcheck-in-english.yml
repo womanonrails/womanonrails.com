@@ -9,6 +9,9 @@ matrix:
     encoding: utf-8
     wordlists:
     - .github/.wordlist-in-english.txt
+    - .github/.wordlist-persons.txt
+    - .github/.wordlist-places.txt
+    - .github/.wordlist-technical.txt
   hunspell:
     d: en_US
     ignore-case: true
