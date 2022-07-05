@@ -11,6 +11,8 @@ Code
 CoderDojo
 CoffeeScript
 DDD
+ENV
+ERB
 Emmet
 Euruko
 GeoJSON
@@ -41,6 +43,7 @@ Vimeo
 YAML
 branch
 config
+gemset
 jpg
 png
 rdoc

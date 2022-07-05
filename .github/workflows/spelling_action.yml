@@ -4,7 +4,7 @@ on:
     types: [opened, synchronize]
     paths: ['_i18n/**']
   push:
-    paths: ['_i18n/**', '.github/.wordlist-in-english.txt', '.github/.wordlist-in-polish.txt']
+    paths: ['_i18n/**', '.github/*wordlist*.txt']
   workflow_dispatch:
 
 jobs:
