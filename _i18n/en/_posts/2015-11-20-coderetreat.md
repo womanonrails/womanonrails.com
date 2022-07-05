@@ -21,7 +21,7 @@ All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In 
 {% include links/external-link.html
    name='Game of life'
    url='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' %}
-problem. This is very simple problem but in Coderetreat main goal is not solving this problem but focus on process and code quality. One session take 45 minutes and then we have 15 minutes to discuss and sum what we did and how we did. Through all sessions we do **ping pong pair programing** with some constrains. Pair programming because we work in pairs, ping pong because we change keyboard between people. One person writes test, second writes code and first one does refactoring. Now it is time to say something about constrains. They can be very different. Some of them are easy, some are very hard. Below are all constrains form Coderetreat day in this year.
+problem. This is very simple problem but in Coderetreat main goal is not solving this problem but focus on process and code quality. One session take 45 minutes and then we have 15 minutes to discuss and sum what we did and how we did. Through all sessions we do **ping pong pair programming** with some constrains. Pair programming because we work in pairs, ping pong because we change keyboard between people. One person writes test, second writes code and first one does refactoring. Now it is time to say something about constrains. They can be very different. Some of them are easy, some are very hard. Below are all constrains form Coderetreat day in this year.
 
 1. **No primitives** – Wrap all primitives and strings
 
@@ -69,4 +69,3 @@ problem. This is very simple problem but in Coderetreat main goal is not solving
 </figure>
 
 Ok, this is it. This was very productive day for me. I learn new things. Coderetreat one more time open my eyes how important is good quality code. I wish every programmer to be part of this event. See you soon. All best! Bye.
-
