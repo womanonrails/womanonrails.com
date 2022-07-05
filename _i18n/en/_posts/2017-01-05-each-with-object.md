@@ -12,7 +12,7 @@ I worked in last a few days with `each_with_object` method. Every time when I wo
 {% include links/external-link.html
    name='APIdock'
    url='https://apidock.com/ruby/Enumerable/each_with_object' %}
-and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method. I tried to add this missing part there, but without success. In meantime when I'm waiting for message from APIdoc support I decided to write short note here about this.
+and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method. I tried to add this missing part there, but without success. In meantime when I'm waiting for message from APIdock support I decided to write short note here about this.
 
 
 The most useful and I think the most popular usage of `each_with_object` is putting hash or array as an argument. You can do this like in example below:
