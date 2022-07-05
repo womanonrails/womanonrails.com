@@ -32,7 +32,7 @@ It is a pleasure, when you do this with right people, on the right time and in t
 You have two days to learn something new.
 And you have place where all of you can sit together. All of these bring you a lot of motivation to develop your code. You can share your passion with others people (also with men). For me, it was awesome and I had a lot of fun.
 
-I recommend you Rails Girls. Even if you decide after all, that programing is not for you. It is a great girls community. You can meet new friends there and be a part of something special.
+I recommend you Rails Girls. Even if you decide after all, that programming is not for you. It is a great girls community. You can meet new friends there and be a part of something special.
 
 ## At the end
 
