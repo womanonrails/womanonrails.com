@@ -5,6 +5,7 @@ ApplicationController
 ArgumentError
 BDD
 BitBucket
+CLI
 CQRS
 CoderDojo
 CoffeeScript
@@ -25,10 +26,19 @@ RVM
 RailsConf
 RuPy
 RuboCop
+SDK
+SHA
 Smalltalk
+StackOverflow
 SublimeText
 TruffleRuby
 URI
 VSCode
 Vimeo
 YAML
+config
+jpg
+png
+rdoc
+rebase
+yml
