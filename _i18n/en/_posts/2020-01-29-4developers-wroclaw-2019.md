@@ -11,7 +11,7 @@ imagefeature: 4developers-wroclaw-2019/photo.jpg
 show_date: true
 ---
 
-In 2019 I had an opportunity to be a speaker and participant on three local 4Deveopers events. In Krakow and in Katowice I was presenting my two speeches. I wrote about them an article <a href="{{ site.baseurl }}/4developers-2019" title="My presentations on 4Developers 2019">Speaker at 4Developers 2019</a>. One of my presentations you can watch on YouTube:
+In 2019 I had an opportunity to be a speaker and participant on three local 4Developers events. In Krakow and in Katowice I was presenting my two speeches. I wrote about them an article <a href="{{ site.baseurl }}/4developers-2019" title="My presentations on 4Developers 2019">Speaker at 4Developers 2019</a>. One of my presentations you can watch on YouTube:
 {% include links/youtube-link.html
    name='Are you an Egoistic Programmer? - Step by step refactoring [PL]'
    video_id='4vqXSUcmBQE' %}.
