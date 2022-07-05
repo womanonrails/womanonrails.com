@@ -1,5 +1,8 @@
+assign
 baseurl
 https
 imagefeature
+include
 og
 repo
+site

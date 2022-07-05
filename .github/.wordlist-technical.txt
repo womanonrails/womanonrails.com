@@ -7,6 +7,7 @@ BDD
 BitBucket
 CLI
 CQRS
+Code
 CoderDojo
 CoffeeScript
 DDD
@@ -19,6 +20,7 @@ InstaStory
 Irb
 JSON
 MVC
+Markdown
 Minitest
 RGB
 RSpec
@@ -31,11 +33,13 @@ SHA
 Smalltalk
 StackOverflow
 SublimeText
+TDD
 TruffleRuby
 URI
 VSCode
 Vimeo
 YAML
+branch
 config
 jpg
 png
