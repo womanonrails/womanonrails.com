@@ -13,7 +13,7 @@ show_date: true
 
 <br>
 
-Since 2013, when I found the **Rails Girls** event in <a href="{{ site.baseurl }}/rails-girls-rules" title="Rails Girls Poznań - Me as a participant">Poznań</a>, I have always supported this initiative. In this year I was already on <a href="{{ site.baseurl }}/rails-girls-warsaw-2016" title="Rails Girls Warsaw - video story">Rails Girls Warsaw</a>, <a href="{{ site.baseurl }}/rails-girls-lodz" title="Rails Girls Łódź - video story">Rails Girls Łódź</a> and <a href="{{ site.baseurl }}/rails-girls-poznan" title="Rails Girls Poznań - video story">Rails Girls Poznań</a> as a mentor. Nowaday it was time for Cieszyn!
+Since 2013, when I found the **Rails Girls** event in <a href="{{ site.baseurl }}/rails-girls-rules" title="Rails Girls Poznań - Me as a participant">Poznań</a>, I have always supported this initiative. In this year I was already on <a href="{{ site.baseurl }}/rails-girls-warsaw-2016" title="Rails Girls Warsaw - video story">Rails Girls Warsaw</a>, <a href="{{ site.baseurl }}/rails-girls-lodz" title="Rails Girls Łódź - video story">Rails Girls Łódź</a> and <a href="{{ site.baseurl }}/rails-girls-poznan" title="Rails Girls Poznań - video story">Rails Girls Poznań</a> as a mentor. Nowadays it was time for Cieszyn!
 
 **Rails Girls Cieszyn** was for me a very special event. First of all, I organized it. Second, it was my first international Rails Girls event ever. Third, we prepared this event in the Castle of Cieszyn.
 
