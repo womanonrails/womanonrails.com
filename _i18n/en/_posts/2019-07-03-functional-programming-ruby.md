@@ -4,7 +4,7 @@ title: Functional programming in Ruby
 description: Short introduction to blocks, procs, lambdas and closures.
 headline: Premature optimization is the root of all evil.
 categories: [programming]
-tags: [Ruby]
+tags: [Ruby, functional programming]
 lang: en
 ---
 

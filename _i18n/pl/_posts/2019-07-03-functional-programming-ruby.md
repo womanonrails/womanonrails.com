@@ -4,7 +4,7 @@ title: Programowanie funkcyjne w Ruby
 description: Krótkie wprowadzenie do bloków, lambd, domknięć i obiektów typu Proc.
 headline: Premature optimization is the root of all evil.
 categories: [programowanie]
-tags: [Ruby]
+tags: [Ruby, programowanie funkcyjne]
 lang: pl
 ---
 
