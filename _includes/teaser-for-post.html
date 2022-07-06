@@ -1,4 +1,8 @@
-{% assign post_url = post.url | absolute_url %}
+{% if site.baseurl == "/pl" %}
+  {% capture post_url %}{{ site.baseurl }}{{ post.url }}{% endcapture %}
+{% else %}
+  {% assign post_url = post.url | absolute_url %}
+{% endif %}
 {% assign post_excerpt = post.excerpt | strip_html %}
 {% assign post_excerpt_size = post.excerpt | number_of_words %}
 {% assign post_first_100_words = post.content | strip_html | truncatewords: 100 %}
