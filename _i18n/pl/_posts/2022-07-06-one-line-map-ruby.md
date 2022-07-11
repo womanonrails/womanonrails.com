@@ -67,7 +67,7 @@ ale tak naprawdę jest to krótsza wersja
 # => [2, 3, 4, 5, 6]
 ```
 
-Powyższy przykład może dalej nie być jasny pod względem tego, co się dzieje w metodzie `map(&...)`. Dlatego by dobrze to zrozumieć, przeanalizujmy ten kod krok po kroku. Gdy `[1, 2, 3, 4, 5].map(&:next)` jest wywołana, przekazujemy do metody `map` blokowy argument `&:next`. O tym blokowym argumencie powiem troszkę więcej później. Teraz skupmy się na tym, co dzieje się dalej. Ruby będzie starać się zamienić nasz `&:next` na `Proc`. By to zrobić zostanie wywołane `&:next.to_proc`. Jest to możliwe dlatego, że `:next` to obiekt typy Symbol, który ma zaimplementowaną metodę `Symbol#to_proc`. Dalej nasz `map` wyśle wiadomość `call` do obiektu Proc jakim jest `&:next.to_proc` z argumentem `1`. Czyli zostanie wywołane `:next.to_proc.call(1)`. Ze sposobu w jaki jest zaimplementowana metoda `to_proc` w obiekcie Symbol wiemy, że do obiektu `1` zostanie wysłana metoda `send` z argumentem `:next`, więc wywołany zostanie kod `1.send(:next)`. Ten sam proces będzie wykonany dla pozostałych elementów tablicy `[1, 2, 3, 4, 5]`.
+Powyższy przykład może dalej nie być jasny pod względem tego, co się dzieje w metodzie `map(&...)`. Dlatego by dobrze to zrozumieć, przeanalizujmy ten kod krok po kroku. Gdy `[1, 2, 3, 4, 5].map(&:next)` jest wywołana, przekazujemy do metody `map` blokowy argument `&:next`. O tym blokowym argumencie powiem troszkę więcej później. Teraz skupmy się na tym, co dzieje się dalej. Ruby będzie starać się zamienić nasz `&:next` na `Proc`. By to zrobić zostanie wywołane `&:next.to_proc`. Jest to możliwe dlatego, że `:next` to obiekt typu Symbol, który ma zaimplementowaną metodę `Symbol#to_proc`. Dalej nasz `map` wyśle wiadomość `call` do obiektu Proc jakim jest `&:next.to_proc` z argumentem `1`. Czyli zostanie wywołane `:next.to_proc.call(1)`. Ze sposobu w jaki jest zaimplementowana metoda `to_proc` w obiekcie Symbol wiemy, że do obiektu `1` zostanie wysłana metoda `send` z argumentem `:next`, więc wywołany zostanie kod `1.send(:next)`. Ten sam proces będzie wykonany dla pozostałych elementów tablicy `[1, 2, 3, 4, 5]`.
 
 ## Blokowy argument dla metody map
 
@@ -190,7 +190,7 @@ Gdzie kod `->(item) { item + 2 }` to nasza lambda, która zachowuje się bardzo 
 
 #### Deklaracja własnej metody
 
-Ten przykład jest bardzo podobny do rozwiązania z `method`, ale tu mamy pełną kontrolę nas tym, co dzieje się w metodzie `double`. Nie zależymy od interfejsu obiektu `2`.
+Ten przykład jest bardzo podobny do rozwiązania z `method`, ale tu mamy pełną kontrolę nad tym, co dzieje się w metodzie `double`. Nie zależymy od interfejsu obiektu `2`.
 
 ```ruby
 def double(x)
@@ -212,7 +212,7 @@ Zatrzymamy się tu na chwile, by lepiej zrozumieć, co się dzieje. Na początku
 
 ## Curring czyli rozwijanie funkcji
 
-To teraz porozmawiajmy chwilę o **rozwijaniu funkcji**. **Curring** jest matematycznym terminem używanym też w programowaniu. To technika pozwalająca na zamianę konkretnej funkcji posiadającej wiele argumentów na sekwencje wielu funkcji, z których każda posiada tylko jeden argument. Pokażmy to na naszym przykładzie. Metoda `:+` potrzebuje 2 argumentów. Zamienimy ją na dwie metody (funkcje) posiadające po jednym argumencie.
+To teraz porozmawiajmy chwilę o **rozwijaniu funkcji**. **Curring** jest matematycznym terminem używanym też w programowaniu. To technika pozwalająca na zamianę konkretnej funkcji posiadającej wiele argumentów na sekwencję wielu funkcji, z których każda posiada tylko jeden argument. Pokażmy to na naszym przykładzie. Metoda `:+` potrzebuje 2 argumentów. Zamienimy ją na dwie metody (funkcje) posiadające po jednym argumencie.
 
 ```ruby
 adding_method = :+.to_proc.curry(2)

@@ -35,7 +35,7 @@ Or even shorter:
 # => [2, 3, 4, 5, 6]
 ```
 
-The `map(&...)` looks nice and brings me to some questions. Is it a shortcut for already shown examples? Or maybe it's something different? Can we put an argument to method inside `map`? How can we use it creatively? And the most important question is what is going on there when we call `map(&...)`?
+The `map(&...)` looks nice and brings me to some questions. Is it a shortcut for already shown examples? Or maybe it's something different? Can we put an argument to method inside `map`? How can we use it creatively? And the most important question is what's going on there when we call `map(&...)`?
 
 #### Disclaimers
 
@@ -67,7 +67,7 @@ but it's not true. It's shorthand for
 # => [2, 3, 4, 5, 6]
 ```
 
-The example above doesn't give us a full understanding of this code, so let's go step by step. When `[1, 2, 3, 4, 5].map(&:next)` is executed, the `&:next` is given to the `map`. Since the `&:next` is passed to the `map` as a block argument (I will explain it more in a moment) Ruby will try to make a `Proc` from it. It's why the `&:next.to_proc` is called. `:next` is a Symbol object so that we can call on it the `Symbol#to_proc` method. Then `map` sends `call` message to the `&:next.to_proc` with first parameter `1`. The `:next.to_proc.call(1)` is executed. From the implementation of the `to_proc` method, we know `to_proc` procedure for `Symbol` object sends a `send` method to a `1` object with argument `:next` (so, `1.send(:next)` is executed). The whole process is repeated on the rest of the elements in `[1, 2, 3, 4, 5]`.
+The example above doesn't give us a full understanding of this code, so let's go step by step. When `[1, 2, 3, 4, 5].map(&:next)` is executed, the `&:next` is given to the `map`. Since the `&:next` is passed to the `map` as a block argument (I will explain it more in a moment) Ruby will try to make a `Proc` from it. It's why the `&:next.to_proc` is called. The `:next` is a Symbol object so that we can call on it the `Symbol#to_proc` method. Then `map` sends `call` message to the `&:next.to_proc` with first parameter `1`. The `:next.to_proc.call(1)` is executed. From the implementation of the `to_proc` method, we know `to_proc` procedure for `Symbol` object sends a `send` method to a `1` object with argument `:next` (so, `1.send(:next)` is executed). The whole process is repeated on the rest of the elements in `[1, 2, 3, 4, 5]`.
 
 ## Block argument in map
 
@@ -119,7 +119,7 @@ check_arguments_method(&my_proc)
 # block: #<Proc:0x00005588aa81c468 (irb):14>
 ```
 
-We see that the `my_proc` object is passed as a block argument into our `check_arguments_method`, and inside this method, we see the same object (based on its object id). Let's check one more thing. What happened when we omit the `&` before `my_proc`?
+We see that the `my_proc` object is passed as a block argument into our `check_arguments_method`, and inside this method, we see the same object (based on its object id). Let's check one more thing. What happens if we omit the `&` before `my_proc`?
 
 ```ruby
 check_arguments_method(my_proc)
