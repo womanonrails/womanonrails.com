@@ -186,40 +186,40 @@ last_name = 'Małaszkiewicz'
 name = first_name + ' ' + last_name
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = first_name << ' ' << last_name
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = "#{first_name} #{last_name}"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = [first_name, last_name].join(' ')
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 Istnieje jeszcze jeden dość ciekawy sposób na łączenie łańcuchów znaków:
 
 ```ruby
-name = "Agnieszka" " " "Młaszkiewicz"
+name = "Agnieszka" " " "Małaszkiewicz"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 lub trochę prościej by załapać ideę:
 
 ```ruby
-name = "Agnieszka " "Młaszkiewicz"
+name = "Agnieszka " "Małaszkiewicz"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 Na początku wygląda to dość dziwnie. I tu może pojawić się pytanie: _Czy to naprawdę działa w Ruby?_ Jednak jeżeli zastanowimy się przez chwilę to na pewno zdarzało Ci się podzielić łańcuch znaków pomiędzy dwie linie. Ja czasem używam tego w testach:

@@ -186,40 +186,40 @@ last_name = 'Małaszkiewicz'
 name = first_name + ' ' + last_name
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = first_name << ' ' << last_name
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = "#{first_name} #{last_name}"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 
 name = [first_name, last_name].join(' ')
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 We have one more way to join strings. We can use space between strings like this:
 
 ```ruby
-name = "Agnieszka" " " "Młaszkiewicz"
+name = "Agnieszka" " " "Małaszkiewicz"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 or simpler to see the pattern:
 
 ```ruby
-name = "Agnieszka " "Młaszkiewicz"
+name = "Agnieszka " "Małaszkiewicz"
 name
 
-# => "Agnieszka Młaszkiewicz"
+# => "Agnieszka Małaszkiewicz"
 ```
 
 At first look, it can be strange that something like this can work in Ruby, but how many times did you split the line with a string? I use that for example in the test description. For example:
