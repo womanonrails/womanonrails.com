@@ -2,13 +2,13 @@
 
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.2'
+gem 'jekyll', '~> 4.3'
 gem 'liquid', '~> 4.0'
-gem 'webrick', '~> 1.7'
+gem 'webrick', '~> 1.8'
 
 group :jekyll_plugins do
   gem 'jekyll-commonmark', '~> 1.4'
-  gem 'jekyll-feed', '~> 0.16'
+  gem 'jekyll-feed', '~> 0.17'
   gem 'jekyll-include-cache', '~> 0.2'
   gem 'jekyll-multiple-languages-plugin', '~> 1.8.0'
   gem 'jekyll-paginate-v2', '~> 3.0'
