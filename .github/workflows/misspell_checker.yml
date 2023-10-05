@@ -3,8 +3,6 @@ on:
   pull_request:
     types: [opened, synchronize]
     paths: ['_i18n/en/**']
-  push:
-    paths: ['_i18n/en/**']
 
 jobs:
   misspell:
@@ -12,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Check misspell
         uses: reviewdog/action-misspell@v1
         with:
+          exclude: ['./.git/*', './.jekyll-cache/*']
           fail_on_error: true
           filter_mode: diff_context
+          ignore: cancelled
           level: error
           locale: US
+          path: ['_i18n/en']
           pattern: "*.md"
-          reporter: github-check
+          reporter: github-pr-check
