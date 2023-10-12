@@ -19,6 +19,7 @@ updates:
     directory: "/"
     labels:
       - ci
+      - dependencies
     open-pull-requests-limit: 2
     pull-request-branch-name:
       separator: "-"
