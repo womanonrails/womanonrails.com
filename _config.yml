@@ -159,7 +159,7 @@ defaults:
 
 feed:
   excerpt_only: true
-  posts_limit: 3
+  posts_limit: 20
 
 compress_html:
   blanklines: false
