@@ -11,38 +11,42 @@ title: Woman on Rails Presentations
 ## Testing
 
 ### [You can love TDD][you-can-love-tdd]
+
 [![You can test][you-can-love-tdd-image]{:class='img-presentation'}][you-can-love-tdd]
 
 ### [Quality Assurance - Based on TDD example][quality-assurance-tdd-example]
+
 [![Quality based on TDD][quality-assurance-tdd-example-image]{:class='img-presentation'}][quality-assurance-tdd-example]
 
 ### [TDD - Back to the Future][tdd-back-to-the-future]
-[![TDD - Back to the Future][tdd-back-to-the-future-image]{:class='img-presentation'}][tdd-back-to-the-future]
 
+[![TDD - Back to the Future][tdd-back-to-the-future-image]{:class='img-presentation'}][tdd-back-to-the-future]
 
 ## Ruby
 
 ### [Pattern matching in Ruby][ruby-pattern-matching]
+
 [![Pattern matching in Ruby][ruby-pattern-matching-image]{:class='img-presentation'}][ruby-pattern-matching]
 
 ### [Ruby Rendezvous - Method Call, Proc, and Beyond][ruby-rendezvous]
-[![Ruby Rendezvous - Method Call, Proc, and Beyond][ruby-rendezvous-image]{:class='img-presentation'}][ruby-rendezvous]
 
+[![Ruby Rendezvous - Method Call, Proc, and Beyond][ruby-rendezvous-image]{:class='img-presentation'}][ruby-rendezvous]
 
 ## Refactoring
 
 ### [Are you an Egoistic Programmer?][are-you-egoistic-programmer]
-[![Refactoring][are-you-egoistic-programmer-image]{:class='img-presentation'}][are-you-egoistic-programmer]
 
+[![Refactoring][are-you-egoistic-programmer-image]{:class='img-presentation'}][are-you-egoistic-programmer]
 
 ## About IT
 
 ### [Occupational Burnout Syndrome - How to still feel passion, even after years of programming?][occupational-burnout-syndrome]
+
 [![Occupational Burnout Syndrome][occupational-burnout-syndrome-image]{:class='img-presentation'}][occupational-burnout-syndrome]
 
 ### [How to focus? - Improve your efficiency at work][how-to-focus]
-[![How to focus?][how-to-focus-image]{:class='img-presentation'}][how-to-focus]
 
+[![How to focus?][how-to-focus-image]{:class='img-presentation'}][how-to-focus]
 
 [are-you-egoistic-programmer]: https://womanonrails.github.io/presentations/are-you-egoistic-programmer.html
 [how-to-focus]: https://womanonrails.github.io/presentations/15min-about-how-to-focus.html
