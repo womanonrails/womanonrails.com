@@ -1,8 +1,8 @@
 {% assign baseurl = site.url %}
 
 <figure>
-  <a href="{{ baseurl }}/images/about/me.jpg">
-    <img src="{{ baseurl }}/images/about/me.jpg">
+  <a href="{{ baseurl }}/images/about/just-me.jpg">
+    <img src="{{ baseurl }}/images/about/just-me.jpg">
   </a>
   <figcaption>Po prostu ja</figcaption>
 </figure>
