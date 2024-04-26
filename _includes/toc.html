@@ -1,0 +1,15 @@
+{% if site.lang == 'en' %}
+{% assign title = 'Table of contents' %}
+{% elsif site.lang == 'pl' %}
+{% assign title = 'Spis treści' %}
+{% endif %}
+
+<nav class="toc" markdown="1">
+  <header>
+    <h4 class="nav__title">
+      {{ title }}
+    </h4>
+  </header>
+*  Auto generated table of contents
+{:toc .toc__menu}
+</nav>
