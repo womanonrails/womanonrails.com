@@ -18,7 +18,7 @@ Bądźmy szczerzy: w większości przypadków artykuły te trafnie określają p
 
 ## Czym jest `default_scope`?
 
-Na podstawie <a href='https://api.rubyonrails.org/v7.1.3.2/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope' title='Dokumentacja Ruby on Rails - default_scope' target='_blank' rel='nofollow'>dokumentacji api.rubyonrails.org</a> dla Rails 7.1 `default_scope` to marko w modelu ustawiające domyślny zakres dla wszystkich operacji na modelu. Jest to więc zawężenie wyników wszystkich operacji na modelu do określonego zapytania, warunku lub kolejności elementów.
+Na podstawie <a href='https://api.rubyonrails.org/v7.1.3.2/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope' title='Dokumentacja Ruby on Rails - default_scope' target='_blank' rel='nofollow'>dokumentacji api.rubyonrails.org</a> dla Rails 7.1 `default_scope` to makro w modelu ustawiające domyślny zakres dla wszystkich operacji na modelu. Jest to więc zawężenie wyników wszystkich operacji na modelu do określonego zapytania, warunku lub kolejności elementów.
 
 ## Jak stworzyć default scope?
 
@@ -43,7 +43,7 @@ Article.all
 # SELECT "articles".* FROM "articles" WHERE "articles"."published" = true
 ```
 
-Ze względu na poniższa definicję default scope:
+Ze względu na poniższą definicję default scope:
 
 ```ruby
 def default_scope(scope = nil, all_queries: nil, &block)
@@ -250,7 +250,7 @@ Załóżmy, że mamy dwa modele: `Article` i `Author`. Każdy artykuł ma jedneg
 
 ```ruby
 class Author < ActiveRecord::Base
-  has_many :atricles, dependent: :destroy
+  has_many :articles, dependent: :destroy
 end
 
 class Article < ActiveRecord::Base
@@ -263,7 +263,7 @@ Jeżeli zechcemy wybrać wszystkie artykuły danego autora default scope spowodu
 
 ```ruby
 author.articles
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."published" = ? AND "atricles"."author_id" = ? [["published", true], ["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."published" = ? AND "articles"."author_id" = ? [["published", true], ["author_id", 1]]
 ```
 
 Załóżmy teraz, że chcemy usunąć autora wraz z wszystkimi jego artykułami. W przypadku braku domyślnego zakresu w modelu moglibyśmy po prostu wywołać `author.destroy`, ale gdy artykuł ma default scope oczekiwane zachowanie będzie inne niż to co naprawdę zostanie wykonane. Wywołując `author.destroy` zaczniemy usuwanie tylko artykułów, które są `published`, ale artykuły nieopublikowane nie zostaną usunięte. To spowoduje wyjątek po stronie bazy danych dotyczący naruszenia klucza obcego. W przeciwnym wypadku w bazie danych zostałyby rekordy odwołujące się do nieistniejącego autora.
@@ -305,7 +305,7 @@ class Article < ActiveRecord::Base
 end
 ```
 
-Jeżeli użyjesze metody `unscoped` usuniesz wszystkie zakresy.
+Jeżeli użyjesz metody `unscoped` usuniesz wszystkie zakresy.
 
 ```ruby
 Articles.all
@@ -343,7 +343,7 @@ Interesujący przypadek z `unscoped` dostaniemy dla asocjacji.
 
 ```ruby
 class Author < ActiveRecord::Base
-  has_many :atricles
+  has_many :articles
 end
 
 class Article < ActiveRecord::Base
@@ -356,13 +356,13 @@ Tak jak już wspominałam wcześniej, gdy pytamy o artykuły konkretnego autora,
 
 ```ruby
 Author.first.articles
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."published" = ? AND "atricles"."author_id" = ? [["published", true], ["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."published" = ? AND "articles"."author_id" = ? [["published", true], ["author_id", 1]]
 ```
 
 ale gdy użyjemy `unscoped`, nawet warunek dotyczący autora zostanie usunięty.
 
 ```ruby
-Autor.first.atricles.unscoped
+Autor.first.articles.unscoped
 # SELECT "articles".* FROM articles
 ```
 
@@ -372,7 +372,7 @@ By pozbyć się niechcianego default scope musimy użyć metody `unscope` i wybr
 
 ```ruby
 Author.first.articles.unscope(where: :published)
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."author_id" = ? [["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."author_id" = ? [["author_id", 1]]
 ```
 
 ## Sposoby na nadpisanie default scope

@@ -250,7 +250,7 @@ Let's say we have two models: `Article` which can be created by `Author`. Each a
 
 ```ruby
 class Author < ActiveRecord::Base
-  has_many :atricles, dependent: :destroy
+  has_many :articles, dependent: :destroy
 end
 
 class Article < ActiveRecord::Base
@@ -263,7 +263,7 @@ If we try to select all articles for a specific author, the default scope will a
 
 ```ruby
 author.articles
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."published" = ? AND "atricles"."author_id" = ? [["published", true], ["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."published" = ? AND "articles"."author_id" = ? [["published", true], ["author_id", 1]]
 ```
 
 Let's say we want to remove author and all of his articles. Without default scope we could just do `author.destroy`, but if the articles have default scope the expected behavior will be different than what actually happens. Calling `author.destroy` will delete all articles that are `published`, but it won't delete articles that are `unpublished`. Therefore, the database will throw a foreign key violation because it contains records that reference the author we want to remove. It's important to keep this in mind.
@@ -343,7 +343,7 @@ Interesting case we can get with unscope while using asociations.
 
 ```ruby
 class Author < ActiveRecord::Base
-  has_many :atricles
+  has_many :articles
 end
 
 class Article < ActiveRecord::Base
@@ -356,13 +356,13 @@ As we discussed earlier, when we use articles for specific authors, those articl
 
 ```ruby
 Author.first.articles
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."published" = ? AND "atricles"."author_id" = ? [["published", true], ["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."published" = ? AND "articles"."author_id" = ? [["published", true], ["author_id", 1]]
 ```
 
 but when we try to unscope articles, we no longer have the author condition.
 
 ```ruby
-Autor.first.atricles.unscoped
+Autor.first.articles.unscoped
 # SELECT "articles".* FROM articles
 ```
 
@@ -372,7 +372,7 @@ To do this unscope in a correct way we need to unscope only the `published` scop
 
 ```ruby
 Author.first.articles.unscope(where: :published)
-# SELECT "atricles".* FROM "atricles" WHERE "atricles"."author_id" = ? [["author_id", 1]]
+# SELECT "articles".* FROM "articles" WHERE "articles"."author_id" = ? [["author_id", 1]]
 ```
 
 ## Several ways to override the default scope
