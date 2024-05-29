@@ -294,6 +294,8 @@ Article.unscoped.order(updated_at: :desc).limit(10)
 
 But be aware that `unscoped` can be tricky. See below.
 
+**One note**. If you are interested in specific order of your records check the `implicit_order_column` method in Rails.
+
 ## Default scope vs. `unscoped`
 
 Unscope allows us to remove unwanted scopes that are already defined on a chain of scopes. This means that if you only want to remove one scope, you can do that, but you can also remove all of them at once.
@@ -311,7 +313,7 @@ So if you use `unscoped` you will remove all scopes.
 Articles.all
 # SELECT "articles".* FROM "articles" WHERE "articles"."published" = true AND "articles"."archived" = true
 
-Articles.unscope.all
+Articles.unscoped.all
 # SELECT "articles".* FROM "articles"
 ```
 

@@ -294,6 +294,8 @@ Article.unscoped.order(updated_at: :desc).limit(10)
 
 Pamiętaj jednak, że `unscoped` może być zdradliwy. Spójrz poniżej.
 
+**Mała uwaga**. Jeżeli interesuje Cię kolejność rekordów Twojego modelu, to zerknij na metodę `implicit_order_column` w Railsach.
+
 ## Default scope a `unscoped`
 
 `Unscope` pozwala nam usunąć niechciane zakresy, które są już zdefiniowane w modelu. To znaczy, że możemy usunąć wybrany scope, ale też możemy usunąć wszystkie zakresy.
@@ -311,7 +313,7 @@ Jeżeli użyjesz metody `unscoped` usuniesz wszystkie zakresy.
 Articles.all
 # SELECT "articles".* FROM "articles" WHERE "articles"."published" = true AND "articles"."archived" = true
 
-Articles.unscope.all
+Articles.unscoped.all
 # SELECT "articles".* FROM "articles"
 ```
 
