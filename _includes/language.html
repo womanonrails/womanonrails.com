@@ -15,6 +15,9 @@
   {% endif %}
   {% assign alternative_language = site.baseurl_root | append: url %}
 {% endif %}
+
+{% if page.one_lang == nil %}
 <a href="{{ alternative_language }}" class='language animated fade'>
   {% t language %}
 </a>
+{% endif %}
