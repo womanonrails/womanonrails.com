@@ -90,7 +90,7 @@ gem 'rails_event_store'
 
 Run migration for PostgreSQL with `jsonb` data type:
 
-```bash
+```console
 $ rails generate rails_event_store_active_record:migration --data-type=jsonb
 $ rails db:migrate
 ```
