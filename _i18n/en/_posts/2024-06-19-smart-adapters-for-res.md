@@ -1,21 +1,21 @@
 ---
 layout: post
-photo: ..
+photo: /images/rails-event-store/rails-event-store-adapters-header
 title: Smart adapters for RailsEventStore
 description: Managing layer of events abstraction
 headline: Premature optimization is the root of all evil.
 categories: [programming]
-tags: [Ruby, Ruby on Rails, Rails Event Store]
-imagefeature: ..
+tags: [Ruby, Ruby on Rails, RailsEventStore]
+imagefeature: rails-event-store/og_image_adapters.png
 lang: en
 one_lang: true
 ---
 
-It's a good practice to be independent from external tools, gems or libraries. Of course, in many cases we relay on external code and it's normal. In other way, we need to do thinks by our selfs. We focus on handling http requests or user authentication instead of the true client needs. So, the balance between external tools and custom solutions is important. The real question is how to use external tools, but still have enough flexibility in our code? This is the topic, we focus on today on example of integration with RailsEventStore.
+It's a good practice to remain independent of external tools, gems, or libraries. Of course, in many cases, we do rely on external code, and that's normal. Otherwise, we'd end up doing things like HTTP requests or user authentication ourselves, and that would distract us from the real needs of our customers. So the balance between using external tools and creating custom solutions is crucial. The real question is how can we use external tools and still have enough flexibility in our code? That's what we'll focus on today, using our integration with RailsEventStore as an example.
 
-In my last article, I described how we moved the [first event to the RailsEventStore](/first-event-in-res). It wouldn't be so easy to do without separation between the `wisper` gem and our application, without layer of abstraction - the adapters we wrote. So today, I will focus on showing them to you. We will talk about:
-- `emit` method, we use for publishing the event
-- basic handler class for event subscription
+In my last article, I described how we moved the <a href="{{ site.baseurl }}/first-event-in-res" title="First Event in RailsEventStore">first event to the RailsEventStore</a>. This would not have been so easy without the separation between the `wisper` gem and our application, without a layer of abstraction - the adapters we wrote. Today, I will focus on showing you these adapters. We will discuss:
+- the `emit` method we use to publish events
+- the basic handler class for event subscription
 - YAML configuration for matching publishers and subscribers
 - event data type check
 - and grouping events by using streams.
@@ -24,9 +24,11 @@ In my last article, I described how we moved the [first event to the RailsEventS
 
 ## Directory structure and convention
 
-I often see that the logic in the application is splited by domains. So, you have domain and there all logic related to it no matter if this is event, handler or something else. I think this is good approach. You can focus on one directory where you have all you need to understand the domain specific logic. In our case we have different approach and I will not say it's better. It's different. We have all events in one directory split by domain, the same convention we have for event handlers. We can say the first approach is more domain focus. The second one more pattern focus.
+I often see application logic organized by domains, where each domain contains all the related logic, whether it's an event, a handler, or something else. I think this is a good approach because it allows you to focus on a single directory to understand the domain-specific logic. In our case, we use a different approach, not necessarily better, just different.
 
-```console
+We keep all events in one directory, separated by domains. We use the same convention we use for event handlers. You could say that the first approach is more domain oriented, while our approach is more pattern oriented.
+
+```bash
 ├── event_handlers
 │   ├── housekeeping
 │   │   ├── inventory__unit_became_dirty_handler.rb
@@ -45,11 +47,13 @@ I often see that the logic in the application is splited by domains. So, you hav
 ├── ...
 ```
 
-The next part - the convention - suffix added to the event and handler name. So event file will have name `something_happened_event.rb` and handler/subscriber file will have name `incoming_domain__something_happened_handler.rb`. And the handler file will be included in the subscriber domain. In the example above `housekeeping` domain have subscriber in file `inventory__unit_became_dirty_handler.rb`, which will react on `unit_become_dirty` event from `inventory` domain.
+The next part of our convention involves the suffixes added to the event and handler names. Event files will have names like  `something_happened_event.rb` while handler/subscriber files will have names like `incoming_domain__something_happened_handler.rb`. The handler file is included in the subscriber domain.
+
+For example, the `housekeeping` domain has a subscriber file named `inventory__unit_became_dirty_handler.rb`, that responds to the `unit_become_dirty` event from the `inventory` domain.
 
 ## Emit method
 
-In previous post, I put the event emission code directly in webhooks to event translation logic.
+In the previous post, I put the event emission code directly in webhooks to event translation logic.
 
 ```ruby
 # app/lib/webhooks/snt/emit_events_for_webhook_payload.rb
@@ -66,7 +70,7 @@ def call
 end
 ```
 
-As you can see, instead of using one method `emit`, we now have there `if` condition. It's good for proof of concept, but not for long term solution. Instead of this condition, we would like to keep the code here very simple, like this:
+As you can see, instead of using a single `emit` method, we have an `if` condition in place. This approach is fine for a proof of concept but not suitable for a long-term solution. Instead of this condition, we want to keep the code simple, like this:
 
 ```ruby
 # app/lib/webhooks/snt/emit_events_for_webhook_payload.rb
@@ -78,7 +82,7 @@ end
 
 ### Prepare one emit method for both ways RailsEventStore and Wisper
 
-We move the responsibility for the event emission logic out of the webhooks translator and put it into `emit` method. Since everywhere in the application, we use exactly `emit` method, we don't need to change the code, we need to change the `emit` method. This is how the `emit` method looks like during the transition phase:
+We move the responsibility for the event emission logic out of the webhooks translator and put it into the `emit` method. Since we use the `emit` method consistently throughout the application, we don't need to change the application code, we just change the `emit` method itself. Here’s what the emit method looks like  during the transition:
 
 ```ruby
 def emit(event_name, explicit_payload = {})
@@ -97,9 +101,9 @@ def emit(event_name, explicit_payload = {})
 end
 ```
 
-The `if` condition is now here in the `emit` method, but it's _smart_. We check the class we inheritance from. If this is the RailsEventStore event, we use its method to call the event. In other case we use `wisper` gem flow. Part of the logic is splitted into smaller classes for readability. Those classes are:
-- `EventClassFactory` - to search for the right event class based on event name and domain
-- `EventEmission` - class emits the right event with the right payload. Now `EventEmission` class cover `wisper` solution.
+The `if` condition is now within the `emit` method, but it's _smarter_. We check the class we inherit from. If it's a RailsEventStore event, we use its method to call the event. Otherwise, we use `wisper` gem flow. For readability, we split part of the logic into smaller classes. These classes are:
+- `EventClassFactory` - searches for the right event class based on the event name and domain.
+- `EventEmission` - emits the right event with the correct payload. Currently, the `EventEmission` class covers the wisper solution.
 
 ### Final emit method
 
@@ -114,20 +118,23 @@ def emit(event_name, explicit_payload = {})
     abstract_event_class:
   )
 
-  EventEmission.new(abstract_event_class, event_class, event_name, explicit_payload, self).call
+  EventEmission.new(
+    abstract_event_class, event_class, event_name, explicit_payload, self
+  ).call
 end
 ```
 
-Here the `EventEmission` class changed and now covers RailsEventStore way of emitting events.
+Here the `EventEmission` class covers the RailsEventStore way of emitting events.
 
 ## Handler class
 
-In case of handlers we just changed the class handler it inherit from.
+In the case of handlers, we just change the class that handler inherits from.
 
 Before:
 
 ```ruby
 # app/event_handlers/inventory/snt_room_status_handler.rb
+
 module Inventory
   class SntRoomStatusHandler < Wisper::DomainEventHandler
     # ...
@@ -139,6 +146,7 @@ After:
 
 ```ruby
 # app/event_handlers/inventory/snt_room_status_handler.rb
+
 module Inventory
   class SntRoomStatusHandler < RailsEventStore::DomainEventHandler
     # ...
@@ -146,7 +154,7 @@ module Inventory
 end
 ```
 
-And this is the code adjusting RailsEventStore interface to our needs:
+And this is the code that adapts the RailsEventStore interface to our needs:
 
 ```ruby
 # app/lib/rails_event_store/domain_event_handler.rb
@@ -180,14 +188,15 @@ module RailsEventStore
 end
 ```
 
-So, this class allows us to process event only when some conditions in the domain are fullfil like property has integration with housekeeping service. Adjust the way of calling event data. Insead of `event.data[:room_id]` we can use `event_data.room_id`.
+So, this class allows us to process events only when certain conditions in the domain are met, such as a property having integration with the housekeeping service. In addition, we can access event data more easily. Instead of `event.data[:room_id]` we can use `event_data.room_id`.
 
 ## Adapter class
 
-`EventHandlerBuilder` class allows us to translate the way RailsEventStore need to call subscribers to our existing way we call them in the app. The class will allow us to use the same interface we have right now for all handlers.
+The `EventHandlerBuilder` class allows us to translate the way RailsEventStore calls subscribers to the way we call them in our application. This class allows us to use the same interface for all handlers:
 
 ```ruby
 # app/builders/event_handler_builder.rb
+
 class EventHandlerBuilder
   def initialize(class_name, subscription_type = :sync)
     @class_name = class_name
@@ -218,32 +227,37 @@ class EventHandlerBuilder
 end
 ```
 
-We use that in `rails_event_store.rb` initializer for now only for one event:
+We will use this in the `rails_event_store.rb` initializer for only one event for now:
 
 ```ruby
 # config/initializers/rails_event_store.rb
 
 event_store.subscribe(
-  EventHandlerBuilder.new(Inventory::SntRoomStatusHandler), to: [Snt::RoomStatusEvent]
+  EventHandlerBuilder.new(Inventory::SntRoomStatusHandler),
+  to: [Snt::RoomStatusEvent]
 )
 ```
 
-Base on the code, you can notice that we are prepared for handling events in a sync and async way. The `EventWorker` is our worker prepared to take care of handling the events in a async way.
+Based on the code, you can see that we are prepared to handle events both synchronously and asynchronously. The `EventWorker` is our worker designed to handle events asynchronously.
 
 ```ruby
+# workers/event_worker.rb
+
 class EventWorker < SidekiqWorker
   sidekiq_options backtrace: 20, dead: true, retry: 100, queue: 'events'
   sidekiq_retry_in { |count| count > 100 ? 120 : 60 }
 
   def perform(class_name, event_id)
-    class_name.constantize.new(Rails.configuration.event_store.read.event(event_id)).call!
+    class_name.constantize.new(
+      Rails.configuration.event_store.read.event(event_id)
+    ).call!
   end
 end
 ```
 
 ## YAML configuration
 
-As I mention before, for the proof of concept we putted the event subscriber into the `rails_event_store.rb`:
+As I mentioned before, we put the event subscriber into the `rails_event_store.rb` as a proof of concept:
 
 ```ruby
 # config/initializers/rails_event_store.rb
@@ -252,14 +266,15 @@ Rails.configuration.to_prepare do
   # ...
 
   event_store.subscribe(
-    EventHandlerBuilder.new(Inventory::SntRoomStatusHandler), to: [Snt::RoomStatusEvent]
+    EventHandlerBuilder.new(Inventory::SntRoomStatusHandler),
+    to: [Snt::RoomStatusEvent]
   )
 end
 ```
 
 ### Extract subscriptions from RailsEventStore configuration file
 
-We didn't want to declare all the new subscribers in the `rails_event_store.rb` it would be a big file, which was one of the most common changed files. To avoid this situation we extracted the event subscription to separate config YAML file. The first version of logic related to this was hardcoded in the `rails_event_store.rb` file:
+We wanted to avoid declaring all the new subscribers directly in the `rails_event_store.rb` file, as this would become a large and frequently modified file. To solve this problem, we extracted the event subscriptions into a separate YAML configuration file. The first version of this logic was hardcoded into the `rails_event_store.rb` file:
 
 ```ruby
 # config/initializers/rails_event_store.rb
@@ -274,14 +289,18 @@ Rails.configuration.to_prepare do
     subscriptions.each do |event_name, subscription_type|
       event_domain, name = event_name.split('__').map(&:classify)
       event_class = "#{event_domain}::#{name}Event".constantize
-      handler_class = "#{domain_name.classify}::#{event_domain}#{name}Handler".constantize
-      event_store.subscribe(EventHandlerBuilder.new(handler_class, subscription_type), to: [event_class])
+      handler_class =
+        "#{domain_name.classify}::#{event_domain}#{name}Handler".constantize
+      event_store.subscribe(
+        EventHandlerBuilder.new(handler_class, subscription_type),
+        to: [event_class]
+      )
     end
   end
 end
 ```
 
-We load `YAML` file and for each domain we create subscribers based on the names in the `YAML` file. Here is the example of `YAML` file:
+We load the `YAML` file and for each domain we create subscribers based on the names in the `YAML` file. Here is the an example of a `YAML` file:
 
 ```yaml
 # config/subscriptions.yml
@@ -290,11 +309,11 @@ inventory:
   snt__room_status: async
 ```
 
-We can translate this into: _Inventory domain has subscriber SntRoomStatusHandler, which asyncrocously handle the RoomStatusEvent from Snt domain_.
+We can translate this to: _The Inventory domain has a SntRoomStatusHandler subscriber that asynchronously handles the RoomStatusEvent from the Snt domain_.
 
 ### Handling streams for events
 
-We wanted too to handle events in multiple streams. To allow that in a simple way, we created one subscriber for all events which link events to specific streams. More information about that you can find later in this article in the [Event stream section](#event-streams). Here I only show the logic needed from configuration perspective. This solution could be also used in other cases, when we want to do something for all triggered events like additional logs or something like that.
+We also wanted to be able to handle events in multiple streams. To do this in a simple way, we created a single subscriber for all events that associates events with specific streams. More information about this can be found later in this article in the <a href="{{ site.baseurl }}/smart-adapters-for-res#event-streams" title="Event streams">Event streams section</a>. Here, I'll show the necessary logic from a configuration perspective. This solution can also be used in other cases where we want to perform an action on all triggered events, such as additional logs or something similar.
 
 ```ruby
 # config/initializers/rails_event_store.rb
@@ -312,9 +331,11 @@ Rails.configuration.to_prepare do
       else
         event_domain, name = event_name.split('__').map(&:classify)
         event_class = "#{event_domain}::#{name}Event".constantize
-        handler_class = "#{domain_name.classify}::#{event_domain}#{name}Handler".constantize
+        handler_class =
+          "#{domain_name.classify}::#{event_domain}#{name}Handler".constantize
         event_store.subscribe(
-          EventHandlerBuilder.new(handler_class, subscription_type), to: [event_class]
+          EventHandlerBuilder.new(handler_class, subscription_type),
+          to: [event_class]
         )
       end
     end
@@ -322,7 +343,7 @@ Rails.configuration.to_prepare do
 end
 ```
 
-So now logic take care of two different cases. One which will handle all events the same way and other which will cover only specific event. Here is how the `subscriptions.yml` file will looks like. We have additional `all_events` type in specific _domain_.
+So now the logic takes care of two different cases: one that handles all events in the same way, and another that covers only specific events. Here is what the `subscriptions.yml` file will look like, with additional `all_events` type in specific _domain_.
 
 ```ruby
 # config/subscriptions.yml
@@ -336,28 +357,33 @@ streams:
 
 ### Final solution for subscription file
 
-After migration all logic related to mapping together events and subscribers to separate class `SubscriptionsList` the code in  `rails_event_store.rb` file looks:
+After migrating all the logic related to mapping events and subscribers to the separate class `SubscriptionsList`, the code in the `rails_event_store.rb` file looks like this:
 
 ```ruby
 # config/initializers/rails_event_store.rb
 
 Rails.configuration.to_prepare do
-  Rails.configuration.event_store = event_store = RailsEventStore::Client.new(
-    repository: RailsEventStoreActiveRecord::EventRepository.new(serializer: RubyEventStore::NULL)
-  )
+  Rails.configuration.event_store = event_store =
+    RailsEventStore::Client.new(
+      repository: RailsEventStoreActiveRecord::EventRepository.new(
+        serializer: RubyEventStore::NULL
+      )
+    )
 
   SubscriptionsList.config_path = Rails.root.join('config/subscriptions.yml')
   SubscriptionsList.load!(event_store)
 end
 ```
 
-I like this clean solution.
+With this setup, you can manage event subscriptions in a separate YAML file, keeping the `rails_event_store.rb` file clean and maintainable. I really like this solution.
 
 ## Event Data Type Check
 
-We had in our own event system check for event data types. We used for that `Dry::Struct`.  To not loose this functionality, we prepared our own version of RailsEventStore event class `EventWithType`.
+We had in our own event system a check for event data types. We used `Dry::Struct` for that. To not lose this functionality, we prepared our own version of the RailsEventStore event class `EventWithType`.
 
 ```ruby
+# lib/event_with_type.rb
+
 class EventWithType < RailsEventStore::Event
   def initialize(event_id: SecureRandom.uuid, metadata: nil, data: {})
     super(
@@ -382,6 +408,8 @@ end
 All our events are inherit from this class and have data type check:
 
 ```ruby
+# events/snt/room_status_event.rb
+
 class RoomStatusEvent < RailsEventStore::EventWithType
   VALID_STATUSES = ['clean', 'inspected', 'dirty', 'pickup', 'do_not_disturb']
 
@@ -404,15 +432,15 @@ class RoomStatusEvent < RailsEventStore::EventWithType
 end
 ```
 
-It's allow us in a simply way check if the data are in the right format. We don't need to think if the type of `room_id` is a string, integer or something else. We see that in the declaration, so it's give us a live documentation and quick validation benefit. We know what we can expect in the even, which is very usefull. This information will be always uptodate becasue its a part of the running code.
+It allows us to easily check if the data is in the correct format. We don't have to worry about whether the type of `room_id` is a string, an integer, or something else. We see it in the declaration. This gives us live documentation and quick validation benefits. We know what to expect in the event, which is very useful. This information is always up to date because it's a part of the running code.
 
 ## Event streams
 
-Thanks to RailsEventStore, we can group our events into streams. We decided to create two different types of streams. The default one, where we need only data the event have, and custom streams which need some calculations to link to the right stream.
+Thanks to RailsEventStore, we can group our events into streams. We decided to create two different types of streams. The default one, where we just need the data the event has, and custom streams, which require some calculations to link to the right stream.
 
 ### Handling default streams for events
 
-We handle all default streams in stream handler, you can get more info about configuration of default streams in the section about [Handling streams for events](...). Here you can see the `StreamsHandler` class.
+We handle all default streams in the stream handler. You can get more information about the configuration of default streams in the <a href="{{ site.baseurl }}/smart-adapters-for-res#handling-streams-for-events" title="Handling streams for events">Handling streams for events</a> section. Here you can see the `StreamsHandler` class.
 
 ```ruby
 # app/event_handlers/streams_handler.rb
@@ -420,7 +448,11 @@ We handle all default streams in stream handler, you can get more info about con
 class StreamsHandler < RailsEventStore::DomainEventHandler
   def call
     event.stream_names.each do |stream_name|
-      event_store.link(event.event_id, stream_name: stream_name, expected_version: :any)
+      event_store.link(
+        event.event_id,
+        stream_name: stream_name,
+        expected_version: :any
+      )
     end
   end
 
@@ -432,9 +464,11 @@ class StreamsHandler < RailsEventStore::DomainEventHandler
 end
 ```
 
-To add event to default stream we have `stream_names` method in the event class:
+To add an event to the default stream, we have the `stream_names` method in the event class:
 
 ```ruby
+# events/snt/room_status_event.rb
+
 module Snt
   class RoomStatusEvent < RailsEventStore::BaseEvent
     # ...
@@ -449,18 +483,20 @@ module Snt
 end
 ```
 
-As you can see we will be able to find the `RoomStatusEvent` in the `snt__timeline` stream and in the stream to specyfic room for example `room_123`. Additional by default we will add this event also to `snt__room_status` stream. It result of `emit` method declaration.
+As you can see, we will be able to find the `RoomStatusEvent` in the `snt__timeline` stream and in the specific room stream, for example, `room_123`. In addition, by default we will add this event to the `snt__room_status` stream. This is the result of the `emit` method declaration.
 
 ### Handling custom streams for events
 
-In case we need more custom solution to link event to specific stream, we can use custom streams. The good example will be reservation timeline. For each reservation, we wanted to map together all events related with specific reservation:
-- all the changes realted to status, dates and type of the room for reservation
+If we need a more customized solution to link events to specific streams, we can use custom streams. A good example is the reservation timeline. For each reservation, we wanted to aggregate all events related to that specific reservation:
+- all changes related to the status, dates, and type of the room
 - all changes in the guest data
-- all changes in the room but only in the time of the reservation
-- all information about notifications and messages for the reservation
-- and even more
+- all changes in the room, but only during the reservation period
+- all information about notifications and messages related to reservation
+- and much more
 
-Those data give us full knowlage about what is going on the specific reservation. So we get access to full reservation history. The timeline take all the information from different domains which can be related to selected reservation and display them in one place. To get the right data, we need to do some calculations. For example, events related to room status changes don't know about reservations, so to be sure that we connect the right room in the right time to right reservation we need to check some logic. To do that we decided to create separate domain, `reservation_timeline` domain. It's allow us to listen to all interesting for us events and link the right events with right reservation. Some of events we link to reservation timeline you can see in the subscription configuration file below:
+This data gives us full knowledge of what is happening with a specific reservation. We get access to the complete reservation history. The timeline aggregates information from different domains related to the selected reservation and displays them in one place.
+
+To get this data, we need to perform some calculations. For example, events related to room status changes don't know anything about reservations. To ensure that we connect the right room at the right time to the correct reservation, we need to apply some logic. To do this, we have created a separate domain, the `reservation_timeline` domain. This domain allows us to listen to all relevant events and link the right events to the right reservation. Some of the events we link to reservation timeline can be seen in the subscription configuration file below:
 
 ```yaml
 # config/subscriptions.yml
@@ -478,9 +514,11 @@ reservation_timeline:
   # ...
 ```
 
-Example of custom logic for one of the event:
+Example of custom logic for one of the events:
 
 ```ruby
+# event_handlers/reservation_timeline/reservations_identity_document_added_handler.rb
+
 module ReservationTimeline
   class ReservationsIdentityDocumentAddedHandler < TimelineHandler
     def call
@@ -500,26 +538,27 @@ module ReservationTimeline
 end
 ```
 
-As you can see here, when we get information about new guest ID added to reservation, we need to map external PMS (Property Management System) reservation id with our internal reservation id. It's somethig easy to do, but sometimes the logic is more difficult, as in the `remote_locks__first_guest_entry` which has no information about reservation, it have information about guest and room. Based on that data, we are finding the right reservation at right time. The output is worth the effort. To get the history of the reservation we just need to do:
+As you can see here, when we receive information about a new guest ID added to the reservation, we need to map the external PMS (Property Management System) reservation ID to our internal reservation ID. This is relatively simple, but sometimes the logic is more complex, as in the case of `remote_locks__first_guest_entry`. This event has no information about the reservation, it just contains data about the guest and the room. Based on this data we find the right reservation at the right time. The output is worth the effort. To get the history of the reservation, we just need to do the following:
 
 ```ruby
-Rails.configuration.event_store.read.stream("reservation_timeline__#{booking.id}").to_a
+Rails.configuration.event_store.read.stream(
+  "reservation_timeline__#{booking.id}"
+).to_a
 ```
 
-All the calculations were done before dispaling the events collection, so this code is fast. Just displays the collection. And collection have less the 100, even 50 events.
+All the calculations were done before displaying the events collection, so this code is fast. Just display the collection. And collection have less than 100, even 50 events.
 
-## Final thought
+## Final thoughts
 
-I know this can be a lot of additional code to take care of RailsEventStore, which is preatty simple in usege, but in our case effrort for introduction all of this solutions was profitable for us. Thanks to this we get:
-- easy way to change the events provider
-- well structurized, separated code
-- easy access to needed data, grouped in usefull streams
-- documentation about strucure of events in the code
-- readable list of events and subscribers, where in one file you can check who is taking to who
-- DSL adjusted to our need
+I understand that adding so much code to integrate RailsEventStore may seem overwhelming, especially since it is easy to use on its own. However, in our case, the effort we put into implementing these solutions has been well worth it. Here's what we get:
+- an easy way to switch event provider
+- well-structurized, modular code
+- easy access to the data we need, grouped into useful streams
+- documentation of event structure embedded in the code
+- an easy-to-read list of events and subscribers, allowing a clear overview of interactions in a single file
+- a DSL tailored to our specific needs
 
-The advantage of this solution was visible later, when we were able to prepare new functionality to our client faster and with better quality. I hope that this approach will inspire you to search for your own solutions that give you the power of effective and pleasent work.
+The benefits of this solution became apparent later, as we were able to develop new functionality for our customers faster and with better quality. I hope that this approach inspires you to find your own solutions that will make your work more effective and enjoyable.
 
 TODO:
-- zdjęcie adaptera do prądu
-- poprawić linki w poprzednim artykule tak by były tooltipy!!! i no follow
+- zdjęcie adaptera do prądu (amend)
