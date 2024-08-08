@@ -55,7 +55,7 @@ We analyzed our current situation and the solutions available on the market and 
 - We cannot stop development while migrating to a new solution.
 - We don't want a long-lived branch with features duplicated from the main branch, but implemented in the new way.
 
-Based on these guidelines, we decided to choose [RailsEventStore](https://railseventstore.org/docs/v2/install/). This solution is supported by [Arkency](https://blog.arkency.com/), a company that uses RailsEventStore in their projects. This gives us greater assurance for maintenance and potential support if needed. Other benefits of this decision include:
+Based on these guidelines, we decided to choose <a href="https://railseventstore.org/docs/v2/install/" title="Rails Event Store - Installation" target='_blank' rel='nofollow'>RailsEventStore</a>. This solution is supported by <a href="https://blog.arkency.com/" title="Arkency blog" target='_blank' rel='nofollow'>Arkency</a>, a company that uses RailsEventStore in their projects. This gives us greater assurance for maintenance and potential support if needed. Other benefits of this decision include:
 - Persistence of events in the database - In the wisper-based solution, events were only logged in the AWS CloudWatch. RailsEventStore keeps events in the database.
 - Easier Re-running of Handlers/Subscribers - Previously, we only relied on the Sidekiq retry mechanism. Re-running a handler later required extracting JSON logs from CloudWatch, which took some effort. With RailsEventStore, all we need is a record from the database.
 - Open way for Domain-Driven Design (DDD) and Event Sourcing - If we decide to adopt DDD or Event Sourcing in the future, RailsEventStore will help us with that.

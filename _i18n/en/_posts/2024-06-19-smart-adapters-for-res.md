@@ -559,6 +559,3 @@ I understand that adding so much code to integrate RailsEventStore may seem over
 - a DSL tailored to our specific needs
 
 The benefits of this solution became apparent later, as we were able to develop new functionality for our customers faster and with better quality. I hope that this approach inspires you to find your own solutions that will make your work more effective and enjoyable.
-
-TODO:
-- zdjęcie adaptera do prądu (amend)
