@@ -4,7 +4,7 @@ photo: /images/rails-event-store/rails-event-store-adapters-header
 title: Smart adapters for RailsEventStore
 description: Managing layer of events abstraction
 headline: Premature optimization is the root of all evil.
-categories: [programming]
+categories: [programming, rails-event-store]
 tags: [Ruby, Ruby on Rails, RailsEventStore]
 imagefeature: rails-event-store/og_image_adapters.png
 lang: en

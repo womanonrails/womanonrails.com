@@ -4,7 +4,7 @@ photo: /images/rails-event-store/rails-event-store-header
 title: First Event in RailsEventStore
 description: Migration from Wisper to RailsEventStore
 headline: Premature optimization is the root of all evil.
-categories: [programming]
+categories: [programming, rails-event-store]
 tags: [Ruby, Ruby on Rails, RailsEventStore]
 imagefeature: rails-event-store/og_image.png
 lang: en
