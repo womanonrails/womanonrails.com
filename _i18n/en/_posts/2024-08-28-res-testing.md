@@ -19,7 +19,7 @@ This article is part three of the <a href="{{ site.baseurl }}/category/rails-eve
 
 ## What do we use directly from the Rails Event Store?
 
-The Rails Event Store provides its own <a href="https://railseventstore.org/docs/v2/rspec/" title="Rails Event Store matchers for RSpec" target='_blank' rel='nofollow'>matchers for RSpec</a>, some of which we use in our project. The most commonly used ones are:
+The Rails Event Store provides its own <a href="https://railseventstore.org/docs/rspec/" title="Rails Event Store matchers for RSpec" target='_blank' rel='nofollow'>matchers for RSpec</a>, some of which we use in our project. The most commonly used ones are:
 - `have_published`
 - `have_subscribed_to_events` - we build our own matchers on top of these
 - `publish`
@@ -69,7 +69,7 @@ As you can see, we also use additional methods like:
 - `with_data`
 - `in`
 
-For more details on these methods, I recommend reading the <a href="https://railseventstore.org/docs/v2/rspec/" title="Rails Event Store matchers for RSpec" target='_blank' rel='nofollow'>Rails Event Store documentation</a>.
+For more details on these methods, I recommend reading the <a href="https://railseventstore.org/docs/rspec/" title="Rails Event Store matchers for RSpec" target='_blank' rel='nofollow'>Rails Event Store documentation</a>.
 
 ## Our custom matchers
 
@@ -226,13 +226,82 @@ end
 
 Although it's not directly related to testing, this step occurs before the tests are run. We have a linter that runs before the tests. If our codebase passes the linter checks, the tests continue. However, if the linter fails, we get an alert and the tests are not run until the problem is fixed. While this may seem extreme, we've found it to be quite useful.
 
-The linter we created is called `SubscriptionsList`. It iterates through all the domains and the events that each domain should be listening for, and checks to see if the appropriate handler class exists. This ensures that there's no way to have a defined connection between a domain and an event without handling it. We always get an alert if something is missing. All the information about events and subscribers is set in the `subscriptions.yml` file, that I described in <a href="{{ site.baseurl }}/smart-adapters-for-res#yaml-configuration" title="Our YAML convention for subscriptions">previous article</a>.
+The linter we created is called `SubscriptionsList`. It iterates through all the domains and the events that each domain should be listening for, and checks to see if the appropriate handler file exists. This ensures that there's no way to have a defined connection between a domain and an event without handling it. We always get an alert if something is missing. All the information about events and subscribers is set in the `subscriptions.yml` file, that I described in <a href="{{ site.baseurl }}/smart-adapters-for-res#yaml-configuration" title="Our YAML convention for subscriptions">previous article</a>.
+
+```ruby
+class SubscriptionsList
+  include Singleton
+
+  cattr_accessor :config_path
+  self.config_path = 'config/subscriptions.yml'
+
+  def self.lint!
+    instance.lint!
+  end
+
+  def lint!
+    SubscriptionsLinter.new(domain_subscriptions).lint!
+  end
+
+  def initialize
+    @domain_subscriptions = YAML.load_file(self.class.config_path)
+  end
+
+  private
+
+  attr_reader :domain_subscriptions
+end
+```
+
+```ruby
+class SubscriptionsLinter
+  MissingSubscriptions = Class.new(StandardError)
+
+  def initialize(subscriptions)
+    @subscriptions = subscriptions
+  end
+
+  def lint!
+    raise MissingSubscriptions, error_message if missing_subscriptions.present?
+  end
+
+  private
+
+  attr_reader :subscriptions
+
+  def error_message
+    "The following subscriptions are missing: \n#{missing_subscriptions.join("\n")}"
+  end
+
+  def missing_subscriptions
+    (handled_subscription_names - all_subscription_names)
+  end
+
+  def handled_subscription_names
+    Dir[Rails.root.join('app/event_handlers/*/*.rb')].map do |file_path|
+      file_path.
+        sub(Rails.root.join('app/event_handlers/').to_s, '').
+        sub('_handler.rb', '')
+    end
+  end
+
+  def all_subscription_names
+    subscriptions.flat_map do |domain_name, subscriptions|
+      subscriptions.keys.map do |event_name|
+        "#{domain_name}/#{event_name.sub('__', '_')}"
+      end
+    end
+  end
+end
+```
 
 We add this linter to `spec/rails_helper.rb` so that every time we run the `rspec spec/` command, the linter is also run.
 
 ```ruby
 SubscriptionsList.lint!
 ```
+
+In version 7 of Rails, we will get a similar thing thanks to the Zeitwerk, but without our custom message.
 
 ## Event factories
 
@@ -266,7 +335,7 @@ FactoryBot.define do
   factory :accounts__account_scheduled_for_deletion_event,
           parent: :accounts__account_created_event,
           class: Accounts::AccountScheduledForDeletionEvent do
-    by { 'john@bode.co' }
+    by { 'john@example.com' }
   end
 end
 ```
@@ -285,14 +354,14 @@ module Accounts
     describe '#primary_source_name' do
       context 'when account exists' do
         it 'returns creator name' do
-          account = create(:account, creator_email: 'john@bode.co')
+          account = create(:account, creator_email: 'john@example.com')
 
           event = build(
             :accounts__remote_lock_account_created_event,
             account_id: account.id
           )
 
-          expect(event.primary_source_name).to eq('john@bode.co')
+          expect(event.primary_source_name).to eq('john@example.com')
         end
       end
 
@@ -415,14 +484,14 @@ module Accounts
         account = create(
           :account,
           first_name: 'Tom',
-          last_name: 'Crouse',
+          last_name: 'Cruise',
           email: 'tom@example.com',
           job_title: 'Event manager'
         )
         allow(FacebookApi::Wrapper).to receive(:create_account).
           with({
             email: 'tom@example.com',
-            name: 'Tom Crouse',
+            name: 'Tom Cruise',
             title: 'Event manager'
           }).
           and_return('facebook-id')
@@ -436,14 +505,14 @@ module Accounts
         account = create(
           :account,
           first_name: 'Tom',
-          last_name: 'Crouse',
+          last_name: 'Cruise',
           job_title: 'staff',
           email: 'tom@example.com'
         )
         allow(FacebookApi::Wrapper).to receive(:create_account).
           with({
             email: 'tom@example.com',
-            name: 'Tom Crouse',
+            name: 'Tom Cruise',
             title: 'staff'
           }).
           and_return('facebook-id')
@@ -543,7 +612,7 @@ module Accounts
       account = create(
         :account,
         first_name: 'Tom',
-        last_name: 'Crouse',
+        last_name: 'Cruise',
         email: 'tom@example.com',
         ops_role: 'staff',
         ops_permissions: ['charging_cc_on_file'],
@@ -586,7 +655,7 @@ module Accounts
       account = create(
         :account,
         first_name: 'Tom',
-        last_name: 'Crouse',
+        last_name: 'Cruise',
         email: 'tom@example.com',
         ops_role: 'staff',
         ops_permissions: ['charging_cc_on_file'],
@@ -595,7 +664,7 @@ module Accounts
       event = build(
         :accounts__account_scheduled_for_deletion_event,
         account_id: account.id,
-        by: 'john@bode.co'
+        by: 'john@example.com'
       )
 
       AccountsAccountScheduledForDeletionHandler.new(event).call!
@@ -619,7 +688,7 @@ module Accounts
       account = create(
         :account,
         first_name: 'Tom',
-        last_name: 'Crouse',
+        last_name: 'Cruise',
         email: 'tom@example.com',
         ops_role: 'staff',
         ops_permissions: ['charging_cc_on_file'],
@@ -628,12 +697,12 @@ module Accounts
       event = build(
         :accounts__account_scheduled_for_deletion_event,
         account_id: account.id,
-        by: 'john@bode.co'
+        by: 'john@example.com'
       )
 
       AccountsAccountScheduledForDeletionHandler.new(event).call!
 
-      expect(account.reload.remover_email).to eq('john@bode.co')
+      expect(account.reload.remover_email).to eq('john@example.com')
     end
   end
 end
