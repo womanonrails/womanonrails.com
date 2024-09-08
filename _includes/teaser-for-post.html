@@ -3,9 +3,9 @@
 {% else %}
   {% assign post_url = post.url | absolute_url %}
 {% endif %}
-{% assign post_excerpt = post.excerpt | strip_html %}
+{% assign post_excerpt = post.excerpt | markdownify | strip_newlines %}
 {% assign post_excerpt_size = post.excerpt | number_of_words %}
-{% assign post_first_100_words = post.content | strip_html | truncatewords: 100 %}
+{% assign post_first_100_words = post.content | markdownify | strip_html | truncatewords: 100 %}
 <div class='row'>
   <article class='post col-md-8 col-md-offset-2'>
     <header class='post-header'>
@@ -36,10 +36,12 @@
 
     <div class='post-body bordered-bottom'>
       <p class='lead'>
-      {% if post_excerpt_size <= 100 and post_excerpt_size >= 50 %}
+      {% if post_excerpt_size <= 250 and post_excerpt_size >= 50 %}
         {{ post_excerpt }}
+        <span class="excerpt"></span>
       {% else %}
         {{ post_first_100_words }}
+        <span class="first-100-words"></span>
       {% endif %}
       </p>
       <div class='text-center'>
