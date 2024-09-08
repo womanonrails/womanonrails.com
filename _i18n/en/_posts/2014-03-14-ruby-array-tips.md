@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Ruby have great documentation for Array methods.
+  Today I want to focus not on methods in documentation but some tips I know in Ruby with Array.
+  Create Array with strings:
+  `%w{ 1 2 3 4 } => ["1", "2", "3", "4"]`
+  Create Array with the same number:
+  `[2]*5 => [2, 2, 2, 2, 2]`
+  Create Array with ordered numbers:
+  `(1..4).to_a => [1, 2, 3, 4]`
+  Create Array with even numbers:
+  `(2..10).step(2).to_a => [2, 4, 6, 8, 10]`
 layout: post
 title: Ruby Array Tips
 description: 10 Ruby tips for Array

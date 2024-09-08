@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  Dzisiaj chciałabym opowiedzieć Wam trochę o obiekcie Hash i metodach,
+  których często do niego wykorzystuje.
+  Ale zanim o metodach to zacznijmy od tego co to jest właściwie Hash?
+  Hash to bardzo specyficzna tablica.
+  Jako klucz możemy użyć cokolwiek i przyporządkować mu odpowiednią wartość lub wartości...
 layout: post
 title: Triki dla obiektu Hash w Ruby
 description: Czego ciekawego dowiedziałam się o obiekcie Hash

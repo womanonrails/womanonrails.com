@@ -1,4 +1,19 @@
 ---
+excerpt: >
+  One of my target is writing about Ruby on Rails.
+  So today we start.
+  This article will be about main software design pattern in Rails.
+  We call it **MVC – Model View Controller**.
+  But from the beginning.
+  What is software design pattern?
+  Hmm... it is like good recipe for chocolate cake.
+  Many people do chocolate cake.
+  Some of them do it better, others worse.
+  But when we have good recipe we share it with others.
+  They try and tell what they think about it.
+  If it really good many people started using.
+  The same is with software design pattern.
+  It is some of good...
 layout: post
 title: MVC – design pattern
 description: Quick introduction to Model-View-Controller

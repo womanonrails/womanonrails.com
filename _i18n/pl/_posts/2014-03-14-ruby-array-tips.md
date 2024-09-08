@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  Ruby ma naprawdę świetną dokumentację.
+  Metody dla tablic też są dobrze opisane.
+  Dziś chciałabym się skupić na kilku trikach jakie znam na tablicach w Ruby.
+  Tworzenie tablicy składającej się z napisów:
+  `%w{ 1 2 3 4 } => ["1", "2", "3", "4"]`
+  Tworzenie tablicy składającej się z tej samej liczby:
+  `[2]*5 => [2, 2, 2, 2, 2]`
+  Tworzenie tablicy z kolejnych liczb naturalnych:
+  `(1..4).to_a => [1, 2, 3, 4]`
+  Tworzenie tablicy z kolejnych liczb parzystych:
+  `(2..10).step(2).to_a => [2, 4, 6, 8, 10]`
 layout: post
 title: Triki dla tablic w Ruby
 description: 10 troków na tablicach w Ruby

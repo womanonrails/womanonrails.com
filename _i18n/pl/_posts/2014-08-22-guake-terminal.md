@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Dziś chciałabym Ci opowiedzieć o pewnym narzędziu, którego używam od wielu lat.
+  W swojej prostocie i użyteczności moim zdaniem jest niezastąpione.
+  Jest to narzędzie
+  [Guake](https://guake.github.io/).
+  Co to jest Guake?
+  Guake jest wysuwanym z góry ekranu terminalem dostępnym
+  dla systemów Linux z środowiskiem graficznym **GNOME**.
+  Jeżeli używasz środowiska **KDE** możesz wypróbować program Yakuake.
+  Jest on podobny do programu Guake...
 layout: post
 title: Guake – podręczny terminal
 description: Kilka słów o Guake - użytecznym terminalu
@@ -8,7 +18,7 @@ tags: [środowisko programistyczne, Linuks, skróty klawiszowe]
 lang: pl
 ---
 
-Dziś chciałabym Ci opowiedzieć o pewnym narzędziu, którego używam od wielu lat. W swojej prostocie i użyteczności moim zdaniem jest niezastąpione. Jest to narzędzie {% include links/external-link.html name='Guake' url='http://guake-project.org/' %}.
+Dziś chciałabym Ci opowiedzieć o pewnym narzędziu, którego używam od wielu lat. W swojej prostocie i użyteczności moim zdaniem jest niezastąpione. Jest to narzędzie [Guake](https://guake.github.io/).
 
 ## Co to jest Guake?
 

@@ -1,4 +1,9 @@
 ---
+excerpt: >
+  Today I will show you some Hash tips, which I like.
+  But before that what really is this hash?
+  Hash is a very specific Array where as a key we can use anything we want
+  and order to this key some value or values...
 layout: post
 title: Ruby Hash Tips
 description: What I know about Hash?

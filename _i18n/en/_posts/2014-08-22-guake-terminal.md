@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  This is first episode about programs which I use.
+  I think, finally it will be few this kind entries.
+  To day I would like to start talking about
+  [Guake](https://guake.github.io/) terminal.
+  What is Guake?
+  It is drop-down terminal for Linux with **GNOME** Desktop Environment.
+  When you use **KDE** Desktop Environment, you can have Yakuake terminal.
+  It is similar to Guake...
 layout: post
 title: Guake terminal
 description: Guake - Useful terminal
@@ -8,7 +17,7 @@ tags: [environment, Linux, keyboard shortcuts]
 lang: en
 ---
 
-Today, I would love to share with you a very simple, but useful tool. I use it for years now, and I think it is irreplaceable. This is {% include links/external-link.html name='Guake' url='http://guake-project.org/' %} terminal.
+Today, I would love to share with you a very simple, but useful tool. I use it for years now, and I think it is irreplaceable. This is [Guake](https://guake.github.io/) terminal.
 
 ## What is Guake?
 

@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  This was second Hack4Good for me.
+  Previous was in [Dublin](/hack4good) and this was in Krakow, Poland.
+  I was there with my 3 friends from work (Ula, Alek, Grzesiu)
+  and one from [Rails Girls Poznan](/rails-girls-rules) (Przemek).
+  We created one team and worked in Rails of course...
 layout: post
 title: Hack4Good Cracow
 video: https://vimeo.com/86457984

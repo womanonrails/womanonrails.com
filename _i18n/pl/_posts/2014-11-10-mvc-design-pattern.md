@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  Jednym z tematów, o którym chciałabym tutaj pisać jest framework Ruby on Rails.
+  Dzisiaj nadeszła pora by zacząć.
+  Ten artykuł będzie na temat jednego z wzorców projektowych zastosowanych w Ruby on Rails.
+  Ten wzorzec to **MVC – Model View Controller**.
+  Zacznijmy od początku.
+  Co to jest wzorzec projektowy?
+  Hmm... jest on jak dobry przepis na ciasto czekoladowe.
+  Wielu ludzi robi ciasto czekoladowe, jedni lepiej, inni gorzej.
+  Jednak gdy dany przepis jest naprawdę dobry,
+  ludzie zaczynają sobie go nawzajem polecać i używać.
+  Tak samo jest z wzorcami projektowymi.
+  Są to pewnego rodzaju dobre praktyki lub rozwiązania.
 layout: post
 title: Wzorzec projektowy – MVC
 description: Kilka słów na temat MVC

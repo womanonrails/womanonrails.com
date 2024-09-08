@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Couple months ago was participate in
+  [Rails Girls Poznan](/rails-girls-rules).
+  It was great experience for my.
+  And now I had big challenge.
+  I was coach in Rails Girls Warsaw.
+  I was so nervous.
+  I couldn’t say anything snuffly.
+  I was afraid that girl don’t understand what I want to say then.
+  But then I had wonderful team.
+  Ewa, Magda and Patrycja are very smart, beautiful and motivated women...
 layout: post
 title: Rails Girls welcome back!
 photo: /images/rails-girls-warsaw-2014/rails-girls-warsaw-2014

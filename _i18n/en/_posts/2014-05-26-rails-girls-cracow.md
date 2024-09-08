@@ -1,4 +1,9 @@
 ---
+excerpt: >
+  A few weeks ago I was a coach on Rails Girls Kraków.
+  This time workshops were differently.
+  Girls were very young but with big motivation.
+  I thought wonderful girls, with so much positive energy...
 layout: post
 title: Rails Girls Cracow
 photo: /images/rails-girls-krakow-2014/rails-girls-krakow-2014

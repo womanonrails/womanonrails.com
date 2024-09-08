@@ -1,4 +1,11 @@
 ---
+excerpt: >
+  Jakiś czas temu byłam mentorem na Rails Girls Kraków.
+  Tym razem warsztaty wyglądały nieco inaczej
+  -- były przeznaczone dla dziewczyn bardzo młodych (13 – 18 lat),
+  ale z ogromną motywacją.
+  Miałam przyjemność uczyć wspaniałe dziewczyny
+  z niesamowicie dużą ilością pozytywnej energii...
 layout: post
 title: Rails Girls Kraków
 photo: /images/rails-girls-krakow-2014/rails-girls-krakow-2014

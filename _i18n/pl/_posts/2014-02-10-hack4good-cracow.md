@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  To był mój drugi Hack4Good, w którym uczestniczyłam.
+  Pierwszy, odbył się w [Dublinie](/pl/hack4good), a tym razem znalazłam się w Krakowie.
+  Byłam tam wraz z trójką moich znajomych z pracy (Ulą, Alkiem i Grzesiem)
+  oraz z naszym znajomym z [Rails Girls Poznań](/pl/rails-girls-rules) (Przemkiem).
+  Zdecydowaliśmy się pracować razem oczywiście w Rails’ach...
 layout: post
 title: Hack4Good Kraków
 video: https://vimeo.com/86457984

@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Kilka miesięcy temu byłam uczestniczą na warsztatach
+  [Rails Girls Poznań](/pl/rails-girls-rules).
+  To było dla mnie niesamowite doświadczenie.
+  Teraz stanęło przede mną nowe wyzwanie.
+  Byłam coachem na Rails Girls Warsaw.
+  Byłam bardzo podenerwowana.
+  Nie potrafiłam poskładać poprawnie zdania.
+  Bałam się, że dziewczyny nie zrozumieją co będę chciała im przekazać.
+  Ale okazało się, że pod opiekę dostałam wspaniały zespół.
+  Ewa, Magda i Patrycja to bardzo mądre, piękne i zmotywowane kobiety...
 layout: post
 title: Rails Girls witaj z powrotem!
 photo: /images/rails-girls-warsaw-2014/rails-girls-warsaw-2014
