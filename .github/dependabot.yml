@@ -3,7 +3,8 @@ updates:
   - package-ecosystem: bundler
     allow:
       - dependency-type: "all"
-    assignees: "womanonrails"
+    assignees:
+      - womanonrails
     directory: "/"
     labels:
       - dependencies
