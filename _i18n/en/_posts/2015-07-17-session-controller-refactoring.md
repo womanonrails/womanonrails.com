@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  A few weeks ago, I worked on one controller class in the Rails app.
+  When you see this code, you can say, it's pretty OK.
+  It's quite short, readable, just fine.
+  But there is a bug in this code.
+  You can overlook it at the very beginning.
+  Because I had this bug and I needed to change the class anyway,
+  I decided to do refactoring here.
+  Let's checkout the full process.
 layout: post
 title: SessionsController refactoring
 description: How improve your code?

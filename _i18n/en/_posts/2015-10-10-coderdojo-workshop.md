@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Ones a week I'm teaching others at **CoderDojo** workshops.
+  CoderDojo is a place for young people (not only young by age
+  but also young by mind) which like to learn Computer Science.
+  When I say **Computer Science** I mean:
+  programming, game and website creation, graphic design,
+  3D printing, animations, video creation, robots and many many more.
+  Only yours imagination can limit your skills connected to Computer.
+  On this classes is only one rule:
+  **Just be cool!**
+  CoderDojo is places where everyone feel good and can learn new things.
 layout: post
 title: CoderDojo workshops
 video: https://www.youtube.com/watch?v=G_tTBd_ei3s
@@ -19,6 +30,6 @@ If you like to see how classes look like just come to us or watch our
 {% include links/youtube-link.html name='video' video_id='G_tTBd_ei3s' %}.
 
 If you are interested in CoderDojo workshop you can also find more information on
-{% include links/external-link.html name='coderdojo.com' url='https://coderdojo.com/' %}
+[coderdojo.com](https://coderdojo.com/)
 or
-{% include links/external-link.html name='coderdojo.org.pl' url='https://coderdojo.org.pl/' %}.
+[coderdojo.com.pl](#).

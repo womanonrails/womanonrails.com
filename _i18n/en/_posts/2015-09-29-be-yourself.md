@@ -1,4 +1,21 @@
 ---
+excerpt: >
+  _Be who you are, say what you feel,
+  those who mind don't matter,
+  those who matter don't mind._
+
+  Today I would write about very important for me topic.
+  About **self-confidence**.
+  I don’t know if you have some problems with it but I do.
+  I went through this many times. And I went back to this topic because I change project at my work.
+
+  About 4 weeks ago I started work on new project
+  (for me of course, because rest of the team work on this project about 2 years).
+  Project has very complex logic.
+  On the beginning I felt like lost child
+  (sometimes event now I feel this way).
+  Everything was hard to understand.
+  Everything was so difficult.
 layout: post
 title: Be yourself – How deal with low self-confidence
 description: Self-confidence - full time job
@@ -8,7 +25,7 @@ tags: [self-awareness]
 lang: en
 ---
 
->Be who you are, say what you feel, those who mind don’t matter, those who matter don’t mind.
+> Be who you are, say what you feel, those who mind don’t matter, those who matter don’t mind.
 
 Today I would write about very important for me topic. About **self-confidence**. I don’t know if you have some problems with it but I do. I went through this many times. And I went back to this topic because I change project at my work.
 
@@ -28,7 +45,7 @@ My own mind was hurting me and was telling me that I’m not enough. How can I f
 
 This is only first step. It will be long way to be self-confidence. I’m still working on me. I’m still going this way. Now you must think why you are so nervous in this kind of situation? Maybe You want to show others that you are right person in right place. Or you afraid to disappoint someone (family, boss, friends). Or you afraid losing your job. Think now, If bad thing will happen so what? You should not pretend someone else. You should not prove something to someone. If your family, friends or even boss really know you, they will not disappointed. They accept you with all yours imperfection.
 
->Be who you are, say what you feel, those who mind don’t matter, those who matter don’t mind.
+> Be who you are, say what you feel, those who mind don’t matter, those who matter don’t mind.
 
 If they don’t, maybe they wasn’t right person/people in your life. If you lose your job, you will find new one and this situation will be new experience in your life.
 

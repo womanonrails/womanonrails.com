@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  If you are interested in IT or you are already a programmer,
+  you should hear the name **Git** at least a couple of times.
+  Maybe even more.
+  This tool is common to many teams no matter what programming language they use.
+  This is the base and it is good to know git.
+  Today, I would like to start a short series about **Git basics**.
+  On the Internet, you can find many articles and tutorials about how to use git.
+  I would focus more on what is the purpose of using git and how it works.
+  In this article, I will explain to you what git is
+  and why it is important to have that tool in your toolbox.
+  Let's get started!
 layout: post
 title: What is git?
 description: Git basics - Why we use git?
@@ -87,7 +99,8 @@ Is git created to work with all file types? Not exactly. There is an exception. 
 Our computer can interpret this in colors and shapes but we can’t. So when we change something in this image (one or more bits), we don’t even know what the change was. Although we have a specific program, that will interpret these bits for us, like image explorer. I don’t say that we never put images to git. I say that we can not see what changed easily.
 
 ### Next articles in this series:
-- <a href="{{ site.baseurl }}/git-usage" title="How to start using git?">Basic commands in git</a>
-- <a href="{{ site.baseurl }}/git-rebase" title="What is a difference between git merge and git rebase?">How can I use git rebase?</a>
-- <a href="{{ site.baseurl }}/replace-parent-branch" title="Setting git parent pointer to a different parent.">How to replace parent branch in git?</a>
-- <a href="{{ site.baseurl }}/git-rebase-onto" title="Git rebase --onto an overview.">How to use git rebase --onto?</a>
+
+- [Basic commands in git]({{ site.baseurl }}/git-usage "How to start using git?")
+- [How can I use git rebase?]({{ site.baseurl }}/git-rebase "What is a difference between git merge and git rebase?")
+- [How to replace parent branch in git?]({{ site.baseurl }}/replace-parent-branch "Setting git parent pointer to a different parent")
+- [How to use git rebase --onto?]({{ site.baseurl }}/git-rebase-onto "Git rebase --onto an overview")

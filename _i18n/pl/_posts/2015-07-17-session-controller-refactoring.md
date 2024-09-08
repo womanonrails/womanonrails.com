@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Kilka tygodni temu pracowałam nad klasą kontrolera w aplikacji Railsowej.
+  Na pierwszy rzut oka kod wyglądał przyzwoicie.
+  Był całkiem zwięzły, czytelny, nie było się do czego przyczepić.
+  Jednak był w nim pewien błąd,
+  który przy pobieżnym czytaniu mógł zostać przeoczony.
+  Ponieważ i tak musiałam zmienić tę klasę,
+  ze względu na znajdujący się w niej błąd,
+  postanowiłam, że zrobię tam trochę porządków.
+  Pokrótce przedstawię jak to wyglądało.
 layout: post
 title: Refaktoryzacja w SessionsController
 description: Jak można poprawić swój kod?

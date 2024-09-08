@@ -1,4 +1,18 @@
 ---
+excerpt: >
+  Jeżeli interesuje Cię programowanie, to prawdopodobnie słyszałaś już
+  nazwę **Git** przynajmniej kilka razy.
+  Może nawet więcej niż kilka razy.
+  Git to narzędzie, którego używają programiści i programistki
+  niezależnie od tego w jakim języku programowania pracują.
+  To jedno z tych podstawowych narzędzi, które naprawdę warto znać.
+  Między innymi dlatego napisałam cykl artykułów na temat narzędzia git.
+  W Internecie możesz znaleźć wiele kursów czy artykułów mówiących o tym jak używać git-a.
+  Ja chciałabym się skupić przede wszystkim na zrozumieniu dlaczego warto go stosować,
+  jak on działa i co można za jego pomocą zrobić.
+  Nie przedłużając, dziś zajmiemy się  zrozumieniem czym jest git
+  i jak może nam pomóc w codziennej, programistycznej pracy.
+  No to zaczynamy!
 layout: post
 title: Co to jest git?
 description: Podstawy narzedzia Git. Dlaczego używamy git-a?
@@ -87,7 +101,8 @@ Zawsze musi być jakieś ale. O ile w bardzo przystępny sposób za pomocą git-
 Jest to fragment pliku graficznego PNG, który jest plikiem binarnym. Nasz komputer w łatwy sposób jest w stanie zinterpretować ciągi tych liczb i literek w postaci kształtów i kolorów. My niestety nie. Gdy wiec zmienimy coś w naszym obrazku (kilka bitów), nie jesteśmy w stanie w łatwy sposób stwierdzić, co to była za zmiana. Chyba, że otworzymy ten obrazek w odpowiednim programie. Nie chodzi o to, że nigdy nie dodajemy plików graficznych do git-a. Chodzi o to, że bez dodatkowych narzędzi ciężko nam śledzić zmiany w takich plikach.
 
 ### Następne artykuły w cyklu:
-- <a href="{{ site.baseurl }}/git-usage" title="Jak zacząć używać git-a?">Podstawowe komendy narzędzia Git</a>
-- <a href="{{ site.baseurl }}/git-rebase" title="Jaka jest różnica między git merge a git rebase?">Jak używać git rebase?</a>
-- <a href="{{ site.baseurl }}/replace-parent-branch" title="Ustawienie innej gałęźi rodzicielckiej za pomoca git-a.">Jak zmienić gałąź rodzicielską w git-cie?</a>
-- <a href="{{ site.baseurl }}/git-rebase-onto" title="Zrozumienie komendy  git rebase --onto.">Jak użyć komendy git rebase --onto?</a>
+
+- [Podstawowe komendy narzędzia Git]({{ site.baseurl }}/git-usage "Jak zacząć używać git-a?")
+- [Jak używać git rebase?]({{ site.baseurl }}/git-rebase "Jaka jest różnica między git merge a git rebase?")
+- [Jak zmienić gałąź rodzicielską w git?]({{ site.baseurl }}/replace-parent-branch "Ustawienie innej gałęźi rodzicielckiej za pomoca git-a.")
+- [Jak użyć komendy git rebase --onto?]({{ site.baseurl }}/git-rebase-onto "Zrozumienie komendy  git rebase --onto.")

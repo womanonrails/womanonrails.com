@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  In last Saturday I was on "Global Day of Coderetreat" in Krakow.
+  **Coderetreat** is one day in year when programmers focus not on delivery new functionality
+  but focus on **good code quality**.
+  I think this is very important to stop for a moment and think how to be better programmer.
+  And Coderetreat is that moment.
 layout: post
 title: Coderetreat 2015 Cracow
 photo: /images/coderetreat/code-retreat
@@ -12,15 +18,13 @@ show_date: true
 ---
 
 In last Saturday I was on
-{% include links/external-link.html name='Global Day of Coderetreat' url='https://www.coderetreat.org/' %}
+[Global Day of Coderetreat](https://www.coderetreat.org/)
 in Krakow. **Coderetreat** is one day in year when programmers focus not on delivery new functionality but focus on **good code quality**. I think this is very important to stop for a moment and think how to be better programmer. And Coderetreat is that moment.
 
 ## How looks this Coderetreat day?
 
 All day is divide for 6-7 sessions of coding. In our case it was 6 sessions. In each session we try resolved
-{% include links/external-link.html
-   name='Game of life'
-   url='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' %}
+[Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 problem. This is very simple problem but in Coderetreat main goal is not solving this problem but focus on process and code quality. One session take 45 minutes and then we have 15 minutes to discuss and sum what we did and how we did. Through all sessions we do **ping pong pair programming** with some constrains. Pair programming because we work in pairs, ping pong because we change keyboard between people. One person writes test, second writes code and first one does refactoring. Now it is time to say something about constrains. They can be very different. Some of them are easy, some are very hard. Below are all constrains form Coderetreat day in this year.
 
 1. **No primitives** – Wrap all primitives and strings
@@ -30,9 +34,9 @@ problem. This is very simple problem but in Coderetreat main goal is not solving
 2. **Functional programming**
 
     All code is not mutable. Every method get some argument and return results – like function in math. In this case methods cannot modifies object state. For me this session was session out of my comfort zone. First time in my life I wrote code in
-    {% include links/external-link.html name='LiveScript' url='https://livescript.net/' %}.
+    [LiveScript](https://livescript.net/).
     This language is very similar to
-    {% include links/external-link.html name='CoffeeScript' url='https://coffeescript.org/' %},
+    [CoffeeScript](https://coffeescript.org/),
     so it was nice to try other alternative. After this session I realized how easy was testing code like that. You call methods and only check if result equal to something.
 
 3. **Tell don’t ask** – No getter, no setter, no properties
@@ -42,10 +46,8 @@ problem. This is very simple problem but in Coderetreat main goal is not solving
 4. **3 minutes circles**
 
     We had only 3 minutes for finish one TDD circle. Test, code, refactoring. If we don’t finish at time we must remove all code for this one circle. This session helps me to understand that in work we sometime think about one big problem. We have lot of useless code, which don’t work because “it is not finished yet”. I can say that in this session we worked in small
-    {% include links/external-link.html
-       name='MVP'
-       url='https://en.wikipedia.org/wiki/Minimum_viable_product' %}
-    (Minimum Viable Product) session. After each 3 minutes we have working functionality. It was small functionality but it’s working.
+    [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product "Minimum Viable Product")
+    session. After each 3 minutes we have working functionality. It was small functionality but it’s working.
 
 5. **No loops, no conditions**
 

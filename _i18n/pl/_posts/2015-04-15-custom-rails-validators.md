@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Przez kilka ostatnich dni pracowałam z walidatorami w Railsach.
+  Ale zanim opowiem o tym, co zrobiłam kilka słów na temat tego czym są walidatory.
+  Kiedy chcemy sprawdzić czy dane,
+  które otrzymuje nasza aplikacja spełniają pewne założenia,
+  wtedy używamy walidatorów.
+  Przykładowo gdy chcemy sprawdzić
+  czy dane mają odpowiedni format,
+  czy liczba jest parzysta,
+  lub po prostu czy nazwa jest wymagana
+  dla wszystkich tych przypadków korzystamy właśnie z walidatorów.
 layout: post
 title: Własne walidatory w Ruby on Rails
 description: Jak napisać własny walidator?
@@ -17,13 +28,9 @@ Przez kilka ostatnich dni pracowałam z walidatorami w Railsach. Ale zanim opowi
 dla wszystkich tych przypadków korzystamy właśnie z walidatorów.
 
 Railsy mają wbudowane wiele walidatorów. Jeżeli jesteście zainteresowani poznaniem ich to zajrzyjcie do
-{% include links/external-link.html
-   name='dokumentacji'
-   url='https://guides.rubyonrails.org/active_record_validations.html#validation-helpers' %}.
+[dokumentacji](https://guides.rubyonrails.org/active_record_validations.html#validation-helpers).
 Czasem jednak to nie wystarcza, potrzeba czegoś więcej. W moim przypadku chciałam sprawdzić, czy konkretne pole tekstowe nie zawiera słów będących na czarnej liście. Wiem, że istnieje
-{% include links/external-link.html
-   name='wbudowany walidator'
-   url='https://guides.rubyonrails.org/active_record_validations.html#exclusion' %},
+[wbudowany walidator](https://guides.rubyonrails.org/active_record_validations.html#exclusion),
 który mógłby mi pomóc, ale zależało mi na czymś więcej:
 
 1. Moja czarna lista słów była dość długa.
@@ -33,9 +40,7 @@ który mógłby mi pomóc, ale zależało mi na czymś więcej:
 ## Zdecydowałam, więc że stworze swój własny walidator.
 
 Zajrzałam do dokumentacji i znalazłam
-{% include links/external-link.html
-   name='this'
-   url='https://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations' %}.
+[this](https://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations).
 Wybrałam `ActiveModel::EachValidator`, gdzie mam dostęp do całego weryfikowanego rekordu, nazwy atrybutu, który podlega walidacji i wartości tego atrybutu. To było wszystko czego potrzebowałam. Jedyne, co trzeba było zrobić, to napisać jedną metodę: `validate_each`. Całość wyglądała następująco:
 
 ```ruby
@@ -109,9 +114,7 @@ validates :array, array_lenght: { minimum: 1 }
 Została jeszcze jedna kwestia do omówienia. **W jaki sposób dodać tłumaczenia błędów w katalogu `locales`?**
 
 Używamy konwencji w Rails. Poniżej przedstawiam jeden ze sposobów (inne możliwości dostępne w dokumentacji
-{% include links/external-link.html
-   name='https://guides.rubyonrails.org/i18n.html#error-message-scopes'
-   url='https://guides.rubyonrails.org/i18n.html#error-message-scopes' %}):
+[guides.rubyonrails.org/i18n.html#error-message-scopes](https://guides.rubyonrails.org/i18n.html#error-message-scopes):
 
 ```yaml
 pl:

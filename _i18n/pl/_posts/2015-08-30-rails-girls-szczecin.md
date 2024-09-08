@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Tym razem nie będę pisać o żadnych technicznych rzeczach.
+  Tym razem chciałabym podzielić się z Tobą czymś, co było dla mnie ciekawym doświadczeniem.
+  Czymś co przyniosło mi dużo radości i zabawy.
+  W poprzedni weekend miałam przyjemność być trzeci raz mentorem na **Rails Girls Szczecin**.
+  Z warsztatami Rails Girls w Szczecinie wiążą się dla mnie zawsze bardzo miłe wspomnienia.
+  Ludzie są niesamowicie mili i pomocni.
+  Atmosfera jest cudowna.
+  Jeżeli kiedykolwiek będziesz chciała brać udział w warsztatach Rails Girls to polecam Szczecin.
+  To naprawdę świetne miejsce żeby zacząć swoją przygodę z programowaniem.
 layout: post
 title: Rails Girls Szczecin (22 – 23 Sierpień 2015)
 video: https://www.youtube.com/watch?v=UVAF7ndEJyE

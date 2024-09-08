@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Raz w tygodniu pomagam w organizacji warsztatów **CoderDojo**.
+  Warsztaty te przeznaczone są dla osób młodych (nie tylko wiekiem, ale także duchem),
+  które chcą nauczyć się czegoś o **Informatyce**.
+  Mówiąc Informatyka mam na myśli programowanie, tworzenie stron internetowych,
+  gier, grafikę, druk 3D, animacje, wideo, roboty i wiele innych.
+  Tak naprawdę tylko wyobraźnia ogranicza nasze możliwości.
+  Na CoderDojo obowiązuje tylko jedna zasada: **Bądź fajny**.
+  CoderDojo to miejsce gdzie każdy może czuć się dobrze i uczyć się nowych rzeczy.
 layout: post
 title: Warsztaty CoderDojo
 video: https://www.youtube.com/watch?v=G_tTBd_ei3s
@@ -19,6 +28,6 @@ Jeżeli chciałbyś/chciałabyś zobaczyć jak wyglądają zajęcia odwiedź nas
 {% include links/youtube-link.html name='filmik' video_id='G_tTBd_ei3s' %}.
 
 Jeżeli zainteresowała Cię ta inicjatywa to po więcej informacji zapraszam na
-{% include links/external-link.html name='coderdojo.com' url='https://coderdojo.com/' %}
+[coderdojo.com](https://coderdojo.com/)
 lub
-{% include links/external-link.html name='coderdojo.org.pl' url='https://coderdojo.org.pl/' %}.
+[coderdojo.org.pl](#).

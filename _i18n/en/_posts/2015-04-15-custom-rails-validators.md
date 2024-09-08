@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  For a few days I worked on custom validators in Rails.
+  First what are validators?
+  When you want to check some data which comes to your application, you use validators.
+  For example
+  if email has specific format,
+  if number is odd,
+  or if you simply want to check if name is required,
+  for all of this we use validators.
 layout: post
 title: Custom Rails Validators
 description: How can I create my own validator?
@@ -17,13 +26,9 @@ For a few days I worked on custom validators in Rails. First what are validators
 for all of this we use validators.
 
 Rails has many different validators already in side. Check the
-{% include links/external-link.html
-   name='documentation'
-   url='https://guides.rubyonrails.org/active_record_validations.html#validation-helpers' %}.
+[documentation](https://guides.rubyonrails.org/active_record_validations.html#validation-helpers).
 But sometimes you want to do more. In my case I need validator for black list of words for string field. I know I can use
-{% include links/external-link.html
-   name='build-in validator'
-   url='https://guides.rubyonrails.org/active_record_validations.html#exclusion' %}.
+[build-in validator](https://guides.rubyonrails.org/active_record_validations.html#exclusion).
 But I need much more customization:
 
 1. The list of excluded words was very long.
@@ -33,9 +38,7 @@ But I need much more customization:
 ## So I decide to do my own validator.
 
 I look to documentation and I find
-{% include links/external-link.html
-   name='this'
-   url='https://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations' %}.
+[this](https://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations).
 I choosed `ActiveModel::EachValidator` where I have access to whole record, specific attribute to check and the value of this attribute. This was all I needed. To do my custom validator I must only write one method: `validate_each`. It look like this:
 
 ```ruby
@@ -109,9 +112,7 @@ validates :array, array_lenght: { minimum: 1 }
 It is one more think to say. **How put translation to our validators in `locales`?**
 
 We use Rails Convention. This is one but not only way to do this (all convention is explain in
-{% include links/external-link.html
-   name='https://guides.rubyonrails.org/i18n.html#error-message-scopes'
-   url='https://guides.rubyonrails.org/i18n.html#error-message-scopes' %}):
+[guides.rubyonrails.org/i18n.html#error-message-scopes](https://guides.rubyonrails.org/i18n.html#error-message-scopes):
 
 ```yaml
 en:
@@ -137,4 +138,3 @@ Then we put names of our errors: `on_blacklist:` and `too_short_array:`. For `on
 
 This is it. I hope this was useful for you. Please live your comments,
 questions or any suggestions below. To next time! Bye!
-

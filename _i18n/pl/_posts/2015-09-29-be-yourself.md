@@ -1,4 +1,20 @@
 ---
+excerpt: >
+  _Bądź sobą, mów co czujesz bo tym,
+  który się liczą nie będzie to przeszkadzać a Ci,
+  którym będzie to przeszkadzać nie są ważni._
+
+  Dzisiaj chciałabym poruszyć bardzo ważny dla mnie temat.
+  Temat dotyczący **pewności siebie**.
+  Nie wiem jak Wy, ale ja często mam z tym problem.
+  Temat ten powrócił do mnie ostatnio, gdy tylko zmieniłam projekt.
+
+  Od około 4 tygodni pracuję w nowym projekcie.
+  Nowym dla mnie, bo reszta zespołu pracuje nad tym projektem od około 2 lat.
+  Projekt ten ma dość mocno złożoną logikę biznesową.
+  Jak tylko zaczęłam nad nim pracować czułam się jak dziecko we mgle.
+  Nawet teraz zdarzają mi się jeszcze takie sytuacje.
+  Wszystko jest dla mnie nowe i ciężkie do zrozumienia.
 layout: post
 title: Bądź sobą – Jak radzić sobie z brakiem pewności siebie
 description: Pewność siebie - praca na cały etat
@@ -8,7 +24,7 @@ tags: [samoświadomość]
 lang: pl
 ---
 
->Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.
+> Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.
 
 Dzisiaj chciałabym poruszyć bardzo ważny dla mnie temat. Temat dotyczący **pewności siebie**. Nie wiem jak Wy ale ja często mam z tym problem. Temat ten powrócił do mnie ostatnio (gdy tylko zmieniłam projekt).
 
@@ -28,7 +44,7 @@ Mój własny mózg krzywdzi mnie i mówi mi, że nie jestem wystarczająco dobra
 
 To dopiero pierwszy krok by zyskać więcej pewności siebie. Przed nami daleka droga z wieloma niebezpieczeństwami. Teraz musimy zejść głębiej. Zastanówmy się dlaczego tak myślę? Dlaczego tak bardzo mnie stresują takie sytuacje? Czy chcemy komuś coś udowodnić? Czy nie chcemy nikogo rozczarować? A może boimy się utracić pracę? To teraz zastanówmy się co się stanie jeżeli, któraś z tych obaw się spełni? Nie powinniśmy nikogo udawać. Nie musimy nikomu niczego udowadniać. Jeżeli osoby dla nas ważne czy to rodzina, przyjaciele czy nawet szef naprawdę nas znają, nie będą zawiedzeni, jeżeli coś się nam nie uda. W takie sytuacji oni powinni akceptować nas takimi jakimi jesteśmy wraz z naszymi niedoskonałościami. Stosujmy zasadę, która w wolnym tłumaczeniu brzmi:
 
->Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.
+> Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.
 
 Po prostu jeżeli komuś przeszkadza to kim jesteśmy to może nie jest to odpowiednia osoba, której warto poświęcać swój czas. Jeżeli stracimy pracę to znajdziemy koleją. A naukę którą dzięki temu otrzymaliśmy będziemy mogli wykorzystać w przyszłości.
 
