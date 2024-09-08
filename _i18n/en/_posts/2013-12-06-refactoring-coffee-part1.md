@@ -1,6 +1,11 @@
 ---
+excerpt: >
+  This will be the first article about refactoring.
+  I love refactoring, so let’s start.
+  I think that the best way to do this is to put some code on the beginning and then change it.
+  Today I would like to show you a piece of CoffeeScript code...
 layout: post
-title: CoffeeScript Refactoring – part 1
+title: CoffeeScript Refactoring
 description: Small refactoring in CoffeeScript
 headline: My code is getting worse, please send more chocolate
 categories: [refactoring]

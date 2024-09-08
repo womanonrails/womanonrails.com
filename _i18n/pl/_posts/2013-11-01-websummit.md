@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  Dzisiaj chciałabym opowiedzieć Wam trochę o konferencji Web Summit.
+  Było to drugie wydarzenie w jakim uczestniczyłam w Dublinie pod koniec października.
+  Jak się tam znalazłam?
+  Web Summit ogłosił, że ma do rozdania 50 darmowych wejściówek
+  na tą konferencję dla kobiet zainteresowanych
+  lub związanych z szeroko pojętymi technologiami.
+  Wypełniłam więc formularz i wysłałam.
+  Kilka dni później otrzymałam wiadomość z gratulacjami.
+  Wygrałam bilet na Web Summit w Dublinie.
+  Była to dla mnie pierwsza tak ogromna konferencja.
+  Ponad 10 000 odwiedzających, 300 prelegentów, wiele warsztatów,
+  7 sal wykładowych i wiele, wiele prezentowanych StartUpów z różnych dziedzin i różnych krajów...
 layout: post
 title: Web Summit
 description: Moja przygoda na konferencji Web Summit

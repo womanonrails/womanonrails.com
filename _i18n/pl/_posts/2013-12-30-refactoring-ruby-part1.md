@@ -1,6 +1,11 @@
 ---
+excerpt: >
+  Tym razem będę zmieniać kody w Ruby.
+  Napisałam małego potworka.
+  I teraz stwierdziłam, że ten kod jest tak straszny, że muszę coś z nim zrobić.
+  Dobrze, ale zacznijmy od początku...
 layout: post
-title: Ruby refaktoring – część 1
+title: Refaktoryzacja Ruby
 description: Sumowanie elementów tablicy względem kolumny - Refaktoring
 headline: My code is getting worse, please send more chocolate
 categories: [refaktoring]

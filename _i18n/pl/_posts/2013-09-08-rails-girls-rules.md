@@ -1,5 +1,20 @@
 ---
+excerpt: >
+  Po pierwsze, co to jest
+  [Rails Girls](https://railsgirls.com/)?
+  Są to warsztaty dla dziewczyn.
+  Dziewczyny uczą się tam, jak pisać kod w **Ruby on Rails**.
+  W ciągu dwóch dni można dowiedzieć się jak przygotować środowisko
+  i stworzyć swoją pierwszą aplikację w Railsach.
+  Plusem warsztatów jest praca w małych grupach wraz z opiekunem (coachem).
+  Po drugie, czym było dla mnie uczestnictwo w Rails Girls?
+  To była niesamowita przygoda.
+  Nauczyłam się mnóstwa nowych rzeczy.
+  Spotkałam wielu nowych ludzi i dodatkowo naprawdę dobrze się bawiłam.
+  Pisanie kodu nie musi być nudne.
+  Może sprawiać wiele przyjemności.
 layout: post
+photo: /images/rails-girls-rules/rails-girls-rules
 title: Zasady Rails Girls
 description: Moja przygoda na warsztatach Rails Girls
 headline: My code is getting worse, please send more chocolate

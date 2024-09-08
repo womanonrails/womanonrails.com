@@ -1,4 +1,18 @@
 ---
+excerpt: >
+  Let's start blog's adventure. Feel free to read!
+
+  I think that my first post should be original and interesting, but also feminine.
+  I hit on an idea to create recipe.
+  Well, my cooking skills are none too good so the recipe will be short.
+
+  Take a **Ruby on Rails** baking tin.
+  Then add **Ruby**, **HTML 5** and little piece of **JavaScript** into it.
+  Mix all ingredients together and add **CSS** icing.
+  Finally our new application is ready.
+  Fast, easy, and with lot of fun.
+
+  I would like to divide my blog entries to some categories...
 layout: post
 title: Introduction
 description: Programming from the beginning, how we can start?

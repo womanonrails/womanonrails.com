@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Today I will tell you something about Web Summit.
+  This was the second event I participated in Dublin at the end of October.
+  How did I get there?
+  Web Summit announced, they have 50 free tickets for women interested or related with technologies.
+  So I filled and sent the form.
+  A few days later I received an email with congratulations.
+  I won ticket to Web Summit in Dublin.
+  It was my first such big conference.
+  Over 10 000 participants, 300 speakers, many workshops, 7 lecture halls
+  and many start ups from different sectors and different countries...
 layout: post
 title: Web Summit
 description: Web Summit adventure

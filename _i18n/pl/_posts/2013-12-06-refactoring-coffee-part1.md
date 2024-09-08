@@ -1,6 +1,12 @@
 ---
+excerpt: >
+  To będzie mój pierwszy wpis o refaktoringu.
+  Uwielbiam refaktoring, więc bierzmy się do pracy.
+  Myślę, że najlepszym sposobem by to zrobić będzie zapisanie
+  na początku fragmentu kodu a później wprowadzenie zmian.
+  Dzisiaj chciałabym zaprezentować Wam kilka linijek kodu w CoffeeScript...
 layout: post
-title: CoffeeScript refaktoring – część 1
+title: Refaktoryzacja CoffeeScript
 description: Mały refaktoring w CoffeeScript
 headline: My code is getting worse, please send more chocolate
 categories: [refaktoring]

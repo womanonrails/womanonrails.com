@@ -1,6 +1,11 @@
 ---
+excerpt: >
+  This time I will change Ruby code.
+  I wrote this a "little monster" code but it’s terrible.
+  I must do something with it.
+  OK, lets start from the beginning...
 layout: post
-title: Ruby Refactoring – part 1
+title: Ruby Refactoring
 description: Sum elements in array columns - Refactoring
 headline: My code is getting worse, please send more chocolate
 categories: [refactoring]

@@ -1,5 +1,18 @@
 ---
+excerpt: >
+  Firstly, what is
+  [Rails Girls](https://railsgirls.com/)?
+  These are workshops for girls. They learn how write code in **Ruby on Rails**.
+  During this two-days event they prepare environment and create first application in Rails.
+  They work with coach in small groups.
+  Secondly, what was Rails Girls for me?
+  It was an amazing adventure.
+  I have learned many things.
+  I met so many people and also had lot of fun.
+  Coding is not a boring thing.
+  It is a pleasure, when you do this with right people, on the right time...
 layout: post
+photo: /images/rails-girls-rules/rails-girls-rules
 title: Rails Girls Rules
 description: My Rails Girls adventure
 headline: My code is getting worse, please send more chocolate

@@ -1,4 +1,22 @@
 ---
+excerpt: >
+  Czas zacząć przygodę z blogowaniem.
+  Zapraszam do czytania!
+
+  Wymyśliłam sobie, że ten pierwszy wpis będzie oryginalny i ciekawy,
+  a na dodatek taki hmmm... powiedzmy sobie kobiecy.
+  No cóż, do głowy wpadł mi pewien pomysł by wyglądał on jak przepis kulinarny.
+  Ale że moje zdolności w tym kierunku są dość ograniczone,
+  więc będzie to raczej prosty przepis.
+
+  Wyciągamy formę z **Ruby on Rails**.
+  Do niej wrzucamy **Ruby**, **HTML 5** i odrobinę **JavaScript**.
+  Wszystko dobrze mieszamy, aż do powstania jednolitej konsystencji.
+  Na koniec dodajemy lukier z **CSS**.
+  I oto przepiękna aplikacja internetowa gotowa.
+  Szybko. Łatwo. I przyjemnie.
+
+  W planach mam kilka kategorii wpisów...
 layout: post
 title: Wprowadzenie
 description: Programowanie od kuchni, czyli z czym to się je
