@@ -1,4 +1,20 @@
 ---
+excerpt: >
+  The Programmer's Dilemma: As a dedicated developer,
+  you care deeply about your project.
+  You actively perform updates,
+  refactor code, write tests, and more.
+  At some point, however, you realize that
+  a gem you rely on at the core of your system has become obsolete.
+  Its last update was several years ago,
+  and it no longer supports the latest version of Ruby.
+  What do you do?
+  Do you pressure the gem's maintainer to fix the problem?
+  Do you take over maintenance of the gem yourself?
+  Do you switch to an alternative solution, or even create your own?
+  In this RailsEventStore series,
+  I will show how we transitioned from the `wisper` gem
+  to the `rails_event_store` gem in just three months.
 layout: post
 photo: /images/rails-event-store/rails-event-store-header
 title: First Event in RailsEventStore
@@ -55,7 +71,7 @@ We analyzed our current situation and the solutions available on the market and 
 - We cannot stop development while migrating to a new solution.
 - We don't want a long-lived branch with features duplicated from the main branch, but implemented in the new way.
 
-Based on these guidelines, we decided to choose <a href="https://railseventstore.org/docs/v2/install/" title="Rails Event Store - Installation" target='_blank' rel='nofollow'>RailsEventStore</a>. This solution is supported by <a href="https://blog.arkency.com/" title="Arkency blog" target='_blank' rel='nofollow'>Arkency</a>, a company that uses RailsEventStore in their projects. This gives us greater assurance for maintenance and potential support if needed. Other benefits of this decision include:
+Based on these guidelines, we decided to choose [RailsEventStore](https://railseventstore.org/docs/v2/install/ "Rails Event Store - Installation"). This solution is supported by [Arkency](https://blog.arkency.com/ "Arkency blog"), a company that uses RailsEventStore in their projects. This gives us greater assurance for maintenance and potential support if needed. Other benefits of this decision include:
 - Persistence of events in the database - In the wisper-based solution, events were only logged in the AWS CloudWatch. RailsEventStore keeps events in the database.
 - Easier Re-running of Handlers/Subscribers - Previously, we only relied on the Sidekiq retry mechanism. Re-running a handler later required extracting JSON logs from CloudWatch, which took some effort. With RailsEventStore, all we need is a record from the database.
 - Open way for Domain-Driven Design (DDD) and Event Sourcing - If we decide to adopt DDD or Event Sourcing in the future, RailsEventStore will help us with that.

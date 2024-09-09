@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  Do a quick online search for "Rails Default Scope"
+  and you will get a ton of articles:
+  why you should not use default scope at all,
+  why default scope is the root of all evil,
+  how to remove default scope from your project.
+  These articles often have a strong negative opinion
+  about default scope.
+  But is default scope really that bad?
+  The default scope discussion has been going on since at least 2015,
+  almost a decade of Rails development,
+  and people are still talking about it.
 layout: post
 photo: /images/default-scope/default-scope-header
 title: Rails Default Scope Overview
@@ -18,7 +30,7 @@ Let's face it: in most cases, these articles make good points about why default 
 
 ## What is the `default_scope`?
 
-Based on <a href='https://api.rubyonrails.org/v7.1.3.2/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope' title='Ruby on Rails documentation - default_scope' target='_blank' rel='nofollow'>api.rubyonrails.org documentation</a> for Rails 7.1 `default_scope` is a macro in a model to set a default scope for all operations on the model. So, we can narrow down all operations on the model to a specific order or query.
+Based on [api.rubyonrails.org documentation](https://api.rubyonrails.org/v7.1.3.2/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope "Ruby on Rails documentation - default_scope") for Rails 7.1 `default_scope` is a macro in a model to set a default scope for all operations on the model. So, we can narrow down all operations on the model to a specific order or query.
 
 ## How to create a default scope?
 
@@ -55,8 +67,8 @@ def default_scope(scope = nil, all_queries: nil, &block)
 end
 ```
 
-We can have a little fun with creating a default scope. First, we can create <a href="{{ site.baseurl }}/functional-programming-ruby#proc-object" title="
-Proc object in Ruby">`Proc` object</a> and provide it as an argument to `default_scope` in two ways:
+We can have a little fun with creating a default scope. First, we can create [`Proc` object]({{ site.baseurl }}/functional-programming-ruby#proc-object "
+Proc object in Ruby") and provide it as an argument to `default_scope` in two ways:
 
 ```ruby
 class Article < ActiveRecord::Base
@@ -67,7 +79,7 @@ class Article < ActiveRecord::Base
 end
 ```
 
-It's possible because when <a href="{{ site.baseurl }}/functional-programming-ruby#blocks-in-ruby" title="Blocks in Ruby">block</a> is provided it is assigned as scope inside `default_scope` definition. The second trick we can do is to prepare a class that has a `call` method. It's the only condition we need to fulfill to be able to create our `default_scope`.
+It's possible because when [block]({{ site.baseurl }}/functional-programming-ruby#blocks-in-ruby "Blocks in Ruby") is provided it is assigned as scope inside `default_scope` definition. The second trick we can do is to prepare a class that has a `call` method. It's the only condition we need to fulfill to be able to create our `default_scope`.
 
 ```ruby
 class PublishedScope
@@ -417,15 +429,15 @@ If your scope uses order, you can use the `reorder` method.
 
 - If you don't understand how default scope works, it can bring you a lot of trouble: long debugging time, unexpected behavior, strange problems, lack of readability, and more.
 - Default scope can get really complicated, especially when used with associations or inheritance.
-- The `default_scope` behaves similarly to the <a href='https://github.com/ActsAsParanoid/acts_as_paranoid' title='Gem ActsAsParanoid' target='_blank' rel='nofollow'>ActsAsParanoid gem</a>, so in case of this gem I also suggest caution. Think twice before using it.
+- The `default_scope` behaves similarly to the [ActsAsParanoid gem](https://github.com/ActsAsParanoid/acts_as_paranoid "Gem ActsAsParanoid"), so in case of this gem I also suggest caution. Think twice before using it.
 - We can also think of `defaul_scope` as being similar to global state or singleton. We have to be sure what we are doing. These are useful tools, but used without enough caution can be dangerous ;)
 - The `default_scope` is in my opinion a tool that should be used in very specific and rare cases, but I can't agree that it is the root of all evil ;)
 - In my opinion, the biggest problem with `default_scope` is using it implicitly - hidden in code. When we do that, all the problems with understanding the logic, debugging, and strange behavior start. So I think it is more of a communication problem. Use `default_scope` explicitly.
 
 ## Sources
 
-- <a href='https://stackoverflow.com/questions/25087336/why-is-using-the-rails-default-scope-often-recommend-against' title='Stack Overflow thread about default_scope' target='_blank' rel='nofollow'>Why is using the rails default_scope often recommend against?</a>
-- <a href='https://blog.jasonmeridth.com/posts/using-default-scope-and-unscoped-in-rails/' title='Jason Meridth article about default_scope and unscoped' target='_blank' rel='nofollow'>Using Default Scope and Unscoped in Rails</a>
-- <a href='https://singlebrook.com/2015/12/18/how-to-carefully-remove-a-default-scope-in-rails/' title='Jared Beck article about removing default_scope' target='_blank' rel='nofollow'>How to Carefully Remove a Default Scope in Rails</a>
-- <a href='https://coderwall.com/p/khht6a/beware-of-using-default-scope' title='Interesting facts about default_scope' target='_blank' rel='nofollow'>Beware of using default scope</a>
-- <a href='https://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope' title='Ruby on Rails documentation - default_scope' target='_blank' rel='nofollow'>default_scope - Ruby on Rails documentation</a>
+- [Why is using the rails default_scope often recommend against?](https://stackoverflow.com/questions/25087336/why-is-using-the-rails-default-scope-often-recommend-against "Stack Overflow thread about default_scope")
+- [Using Default Scope and Unscoped in Rails](https://blog.jasonmeridth.com/posts/using-default-scope-and-unscoped-in-rails/ "Jason Meridth article about default_scope and unscoped")
+- [How to Carefully Remove a Default Scope in Rails](https://singlebrook.com/2015/12/18/how-to-carefully-remove-a-default-scope-in-rails/ "Jared Beck article about removing default_scope")
+- [Beware of using default scope](https://coderwall.com/p/khht6a/beware-of-using-default-scope "Interesting facts about default_scope")
+- [`default_scope` - Ruby on Rails documentation](https://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope "Ruby on Rails documentation - default_scope")
