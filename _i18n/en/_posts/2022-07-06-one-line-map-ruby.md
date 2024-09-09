@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  A few days ago, I worked on a customer project,
+  and I wanted to use one line `map`
+  but with an argument for a method inside this `map`.
+  I never had this need before.
+  Normally in one line `map`,
+  I do something like `.map(&:next)`.
+  This time I needed something else.
+  So, I did a short research on how can I do that.
+  The results of this research were so interesting to me that
+  I decided to create an article about this topic.
+  So let's get started!
 layout: post
 photo: /images/ruby-and-map/ruby-map
 title: Ruby map(&:method) syntax - meaning & usage
@@ -39,9 +51,9 @@ The `map(&...)` looks nice and brings me to some questions. Is it a shortcut for
 
 #### Disclaimers
 
-1. First of all, everything I will cover today, you can use for other <a href="{{ site.baseurl }}/ruby-iterators" title="Ruby iterators overview">Ruby iterators</a> as well. Like: `each`, `inject`, `select`, and so on. Of course, not always do those tricks make sense, but they are possible.
+1. First of all, everything I will cover today, you can use for other [Ruby iterators]({{ site.baseurl }}/ruby-iterators "Ruby iterators overview") as well. Like: `each`, `inject`, `select`, and so on. Of course, not always do those tricks make sense, but they are possible.
 2. The main focus here is on understanding `map(&...)`. Some of the solutions can be less readable than a normal `map` with a block. You, as a developer, decide what approach is the best for your code.
-3. Since I will cover a lot of Ruby proc, lambdas and block topic, I recommend you to read also my article about <a href="{{ site.baseurl }}/functional-programming-ruby" title="Functional programming in Ruby">functional programming in Ruby</a>. It will help you to better understand what is going on.
+3. Since I will cover a lot of Ruby proc, lambdas and block topic, I recommend you to read also my article about [functional programming in Ruby]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby"). It will help you to better understand what is going on.
 4. I write this article for fun and to better understand the basic concepts of the Ruby language. I hope you will like it too.
 
 ## What does the `map(&...)` do?
@@ -252,9 +264,9 @@ The `map` method in Ruby is definitely an interesting one, similar to other bloc
 
 ## Links
 
-- <a href="{{ site.baseurl }}/ruby-iterators" title="Ruby iterators overview">Ruby iterators</a>
-- <a href="{{ site.baseurl }}/functional-programming-ruby" title="Functional programming in Ruby">Block, proc and lambda in Ruby</a>
-- <a href="https://stackoverflow.com/questions/23695653/can-you-supply-arguments-to-the-mapmethod-syntax-in-ruby" title="Stack Overflow question about map(&:method) arguments" target='_blank' rel='nofollow'>Can you supply arguments to the map(&:method) syntax in Ruby?</a>
-- <a href="https://stackoverflow.com/questions/1217088/what-does-mapname-mean-in-ruby" title="Stack Overflow question about map(&:method) meaning" target='_blank' rel='nofollow'>What does map(&:name) mean in Ruby?</a>
-- <a href="https://medium.com/@cesargralmeida/currying-a-ruby-approach-b459e32d355c" title="Medium article about curring basics" target='_blank' rel='nofollow'>Currying: A Ruby approach</a>
-- <a href="https://stackoverflow.com/questions/53620881/understanding-the-arity-parameter-of-the-method-proc-curry-in-ruby" title="Stack Overview question about Proc.curry method" target='_blank' rel='nofollow'>Understanding the arity parameter of the method Proc.curry in Ruby</a>
+- [Ruby iterators]({{ site.baseurl }}/ruby-iterators "Ruby iterators overview")
+- [Block, proc and lambda in Ruby]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby")
+- [Can you supply arguments to the map(&:method) syntax in Ruby?](https://stackoverflow.com/questions/23695653/can-you-supply-arguments-to-the-mapmethod-syntax-in-ruby "Stack Overflow question about map(&:method) arguments")
+- [What does map(&:name) mean in Ruby?](https://stackoverflow.com/questions/1217088/what-does-mapname-mean-in-ruby "Stack Overflow question about map(&:method) meaning")
+- [Currying: A Ruby approach](https://medium.com/@cesargralmeida/currying-a-ruby-approach-b459e32d355c "Medium article about curring basics")
+- [Understanding the arity parameter of the method Proc.curry in Ruby](https://stackoverflow.com/questions/53620881/understanding-the-arity-parameter-of-the-method-proc-curry-in-ruby "Stack Overview question about Proc.curry method")

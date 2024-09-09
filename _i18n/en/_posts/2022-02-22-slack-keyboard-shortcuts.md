@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  I often say: _Premature optimization is the root of all evil._
+  and this is true.
+  Nevertheless, I will talk today about optimization.
+  The **optimization of work environment** or,
+  in other words, **efficiency** is very important.
+  Who doesn't want to work faster?
+  Do the work and have more time for yourself?
+  For sure, I want.
+  So, today I will share some tips and keyboard shortcuts for **Slack**.
 layout: post
 photo: /images/slack-keyboard-shortcuts/slack-keyboard-shortcuts
 title: Slack - a communication tool
@@ -12,7 +22,7 @@ lang: en
 
 I often say: _Premature optimization is the root of all evil._ and this is true. Nevertheless, I will talk today about optimization. The **optimization of work environment** or, in other words, **efficiency** is very important. Who doesn't want to work faster? Do the work and have more time for yourself? For sure, I want. So, today I will share some tips and keyboard shortcuts for **Slack**.
 
-In my prevous aticles, I already talk about other tools which can impove your efficiency like: <a href="{{ site.baseurl }}/guake-terminal" title="Guake - handy terminal">Guake</a>, <a href="{{ site.baseurl }}/visual-studio-code" title="Shortcuts in Visual Studio Code">VS Code<a>, <a href="{{ site.baseurl }}/sublime" title="Shortcuts in Sublime Text Editor">Sublime Text Editor</a> or even <a href="{{ site.baseurl }}/category/git" title="Tips & tricks for Git">Git</a>. Now is time for **Slack**. Slack is the communication tool and since the remote work is more popular those days, the meaning of communication tools is even more visible and important. Becasue of that it's good to know tips and tricks which can speed up you work. I will focus on 2 things: the nice and usefull commands and shortcuts.
+In my prevous aticles, I already talk about other tools which can impove your efficiency like: [Guake]({{ site.baseurl }}/guake-terminal "Guake - handy terminal"), [VS Code]({{ site.baseurl }}/visual-studio-code "Shortcuts in Visual Studio Code"), [Sublime Text Editor]({{ site.baseurl }}/sublime "Shortcuts in Sublime Text Editor") or even [Git]({{ site.baseurl }}/category/git "Tips & tricks for Git"). Now is time for **Slack**. Slack is the communication tool and since the remote work is more popular those days, the meaning of communication tools is even more visible and important. Becasue of that it's good to know tips and tricks which can speed up you work. I will focus on 2 things: the nice and usefull commands and shortcuts.
 
 ## Slack commands
 

@@ -1,4 +1,11 @@
 ---
+excerpt: >
+  From time to time, when I create a code, people ask me:
+  _Is this working?_ , or they tell me: _I didn't know that._
+  Being in those situations allows me to understand
+  that something normal for me can be new for someone else.
+  So, today I would like to share with you some Ruby tips and tricks.
+  I hope you will like them.
 layout: post
 photo: /images/ruby-tricks/ruby-tricks
 title: Things you didn't know about Ruby
@@ -104,7 +111,7 @@ array.tap { |a| a += [4, 5, 6] }
 # => [1, 2, 3]
 ```
 
-What happened here? First, we need to understand the method `tap`. Base on the definition from  <a href="https://ruby-doc.org/core-2.6.1/Object.html#method-i-tap" title="Ruby documentation Object#tap" target='_blank' rel='nofollow'>documentation</a> we have:
+What happened here? First, we need to understand the method `tap`. Base on the definition from [documentation](https://ruby-doc.org/core-2.6.1/Object.html#method-i-tap "Ruby documentation Object#tap") we have:
 
 > `tap` - Yields `self` to the `block`, and then returns `self`. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
 
@@ -138,7 +145,7 @@ array.object_id
 
 As you can see here, `concat` returns the same object which was in the beginning. So, to summarize `concat` **append** the new elements to the existing array, while `+=` creates a **new array** with elements from both the original and additional array.
 
-The last thing for the `+=` method. To get the same result for `+=` as we get for `concat`, we can use the `then` method instead of `tap`. Definition for `then` based on the <a href="https://ruby-doc.org/core-2.6.1/Object.html#method-i-then" title="Ruby documentation Object#then" target='_blank' rel='nofollow'>documentation</a> is:
+The last thing for the `+=` method. To get the same result for `+=` as we get for `concat`, we can use the `then` method instead of `tap`. Definition for `then` based on the [documentation](https://ruby-doc.org/core-2.6.1/Object.html#method-i-then "Ruby documentation Object#then") is:
 
 > `then` - Yields `self` to the `block` and returns the result of the `block`.
 
@@ -231,13 +238,13 @@ it 'calls DeliverCheckInInstructionsForProperty service for properties ' \
 end
 ```
 
-Now the question: **Why is it working?** Based on what I found, it is related to <a href="https://github.com/ruby/ruby/blob/eab191040e9356a8ed4aaa418a7904d6f94064b9/parse.y#L3889-L3891" title="Ruby source code: tCHAR" target='_blank' rel='nofollow'>Ruby source code</a> in `parse.y`. Based on the answer from <a href="https://stackoverflow.com/a/23811744" title="Stack Overflow - Why do two strings separated by space concatenate in Ruby?" target='_blank' rel='nofollow'>Stack Overflow</a> we have:
+Now the question: **Why is it working?** Based on what I found, it is related to [Ruby source code](https://github.com/ruby/ruby/blob/eab191040e9356a8ed4aaa418a7904d6f94064b9/parse.y#L3889-L3891 "Ruby source code: tCHAR") in `parse.y`. Based on the answer from [Stack Overflow](https://stackoverflow.com/a/23811744 "Stack Overflow - Why do two strings separated by space concatenate in Ruby?") we have:
 
 > A Ruby string is either a `tCHAR` (e.g. `?q`), a `string1` (e.g. `"q"`, `'q'`, or `%q{q}`), or a recursive definition of the concatenation of `string1` and `string` itself, which results in string expressions like `"foo" "bar"`, `'foo' "bar"` or `?f "oo" 'bar'` being concatenated.
 
 ## 6. Create a hash with a default value
 
-I write about this topic in <a href="{{ site.baseurl }}/ruby-hash-tips" title="Ruby tips for hash object">Ruby Hash article</a> in more detail, right now I want to mention two common uses of this feature.
+I write about this topic in [Ruby Hash article]({{ site.baseurl }}/ruby-hash-tips "Ruby tips for hash object") in more detail, right now I want to mention two common uses of this feature.
 
 First, you can declare the same default value for all keys in a hash. It's pretty useful when we want to count something.
 
@@ -272,7 +279,7 @@ hash[35]
 
 ## 7. Use `proc` in `case`
 
-`proc` is one of the classes in Ruby, which helps us with <a href="{{ site.baseurl }}/functional-programming-ruby" title="Functional programming in Ruby">functional programming</a>. One interesting usage of `proc`, which is not often known, is using `proc` in `case`. We can create a `proc` and put it directly to the `when` condition of the `case`. See the example below:
+`proc` is one of the classes in Ruby, which helps us with [functional programming]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby"). One interesting usage of `proc`, which is not often known, is using `proc` in `case`. We can create a `proc` and put it directly to the `when` condition of the `case`. See the example below:
 
 ```ruby
 payload_1 = {
@@ -313,7 +320,7 @@ payload_object(payload_3)
 
 ## 8. Call method in different ways
 
-Ruby is an awesome programming language. We can call a method in many different ways. If you are interested in how many ways we can find for calling method, I recommend you to read Gregory Witek's article <a href="https://www.notonlycode.org/12-ways-to-call-a-method-in-ruby/" title="12 ways to call a method in Ruby" target='_blank' rel='nofollow'>12 ways to call a method in Ruby</a>. I know two more ways to call a method, and I would like to share them with you. To be consistent with Gregory's article, I will use the same example:
+Ruby is an awesome programming language. We can call a method in many different ways. If you are interested in how many ways we can find for calling method, I recommend you to read Gregory Witek's article [12 ways to call a method in Ruby](https://www.notonlycode.org/12-ways-to-call-a-method-in-ruby/ "12 ways to call a method in Ruby"). I know two more ways to call a method, and I would like to share them with you. To be consistent with Gregory's article, I will use the same example:
 
 ```ruby
 class User
@@ -331,7 +338,7 @@ class User
 end
 ```
 
-The first way, I discover in Nick Schwaderer's presentation from RailsConf 2022 <a href="https://www.youtube.com/watch?v=VPXHclib7X4" title="RailsConf 2022 - Ruby Archaeology by Nick Schwaderer" target='_blank' rel='nofollow'>Ruby Archaeology</a>:
+The first way, I discover in Nick Schwaderer's presentation from RailsConf 2022 [Ruby Archaeology](https://www.youtube.com/watch?v=VPXHclib7X4 "RailsConf 2022 - Ruby Archaeology by Nick Schwaderer"):
 
 ```ruby
 user = User.new('Agnieszka')
@@ -351,4 +358,4 @@ user = User.new('Agnieszka')
 # => nil
 ```
 
-If you want to know more about calling `proc` by `===`, I recommend you to check my article about <a href="{{ site.baseurl }}/functional-programming-ruby" title="Functional programming in Ruby">functional programming</a>.
+If you want to know more about calling `proc` by `===`, I recommend you to check my article about [functional programming]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby").
