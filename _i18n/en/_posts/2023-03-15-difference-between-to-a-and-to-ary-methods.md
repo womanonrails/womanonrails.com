@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Have you ever thought about the `to_a`
+  and `to_ary` methods for the `Array` class?
+  Are they the same?
+  Why do we have two similar methods?
+  What is the difference?
+  What about implementations of these methods
+  in classes other than `Array`?
+  In this article I want to answer these questions.
+  So let's get started!
 layout: post
 photo: /images/ruby-to-ary/ruby-to-ary
 title: What's the difference between to_a and to_ary in Ruby?
@@ -12,7 +22,7 @@ lang: en
 
 Have you ever thought about the `to_a` and `to_ary` methods for the `Array` class? Are they the same? Why do we have two similar methods? What is the difference? What about implementations of these methods in classes other than `Array`? In this article I want to answer these questions. So let's get started!
 
-Let's start with the definition of the `to_a` and `to_ary` methods in the `Array` class. On the <a href='https://ruby-doc.org/current/Array.html#method-i-to_a' title='Ruby documentation' target='_blank' rel='nofollow'>Ruby Doc</a> website we can see that
+Let's start with the definition of the `to_a` and `to_ary` methods in the `Array` class. On the [Ruby Doc](https://ruby-doc.org/current/Array.html#method-i-to_a "Ruby documentation") website we can see that
 
 >`to_a` - When `self` is an instance of `Array`, returns `self`. Otherwise, returns a new `Array` containing the elements of `self`.
 
@@ -81,7 +91,7 @@ As a next step, we will check what happened when we use `each` on points collect
 
 In the first example, nothing happened. We iterated through the collection in the normal way. In the second example we see that the method `to_ary` is called. This is because we're doing variable assignments. It's worth mentioning that in the implementation of the `Point` class, the point components are private, but thanks to the `to_ary` method used in `each` (or another iterator), we can get access to them.
 
-Some time ago, in the article <a href="{{ site.baseurl }}/casting-ruby-object-into-string" title="Difference between to_s and to_str methods in Ruby">How Ruby casts object into a string?</a>, I described how the `puts` method works on the array. Now let's see which method `to_a` or `to_ary` is used to print the array.
+Some time ago, in the article [How Ruby casts object into a string?]({{ site.baseurl }}/casting-ruby-object-into-string "Difference between to_s and to_str methods in Ruby"), I described how the `puts` method works on the array. Now let's see which method `to_a` or `to_ary` is used to print the array.
 
 ```ruby
 puts point
@@ -180,6 +190,6 @@ point_2 = Point.new(1, 5)
 5. The `flatten` and `join` methods behave similarly to `puts`. They try to use the `to_ary` method under the hood when it is implemented.
 
 ## Links
-- <a href="{{ site.baseurl }}/casting-ruby-object-into-string" title="Difference between to_s and to_str methods in Ruby">How Ruby casts an object into a string?</a>
-- <a href='https://ruby-doc.org/current/Array.html#method-i-to_a' title='Array Ruby documentation' target='_blank' rel='nofollow'>Array Ruby Doc</a>
-- <a href='https://stackoverflow.com/questions/9467395/whats-the-difference-between-to-a-and-to-ary' title='Stack Overflow thread about to_a and to_ary methods' target='_blank' rel='nofollow'>What's the difference between to_a and to_ary? - Stack Overflow</a>
+- [How Ruby casts an object into a string?]({{ site.baseurl }}/casting-ruby-object-into-string "Difference between to_s and to_str methods in Ruby")
+- [Array Ruby Doc](https://ruby-doc.org/current/Array.html#method-i-to_a "Array Ruby documentation")
+- [What's the difference between to_a and to_ary? - Stack Overflow](https://stackoverflow.com/questions/9467395/whats-the-difference-between-to-a-and-to-ary "Stack Overflow thread about to_a and to_ary methods")
