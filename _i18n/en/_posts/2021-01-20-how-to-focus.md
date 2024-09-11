@@ -1,4 +1,18 @@
 ---
+excerpt: >
+  In times of full connections and online life,
+  we have a problem staying focused.
+  We need to focus, to **feel the flow**.
+  One of the most important feelings in our work time.
+  Flow is the mental state in which we do some activity fully immersed
+  and engaged in the process of the activity.
+  It's a very positive and energized feeling,
+  which brings us a lot of satisfaction.
+  But how can we have flow in a world full of distractions?
+  Now, since a lot of us work from home,
+  the situation can be even more challenging.
+  This time, I would like to share with you some of my tips,
+  which help me to stay focus and experience more flow.
 layout: post
 photo: /images/how-to-focus/how-to-focus
 title: How to focus as a programmer?
@@ -43,7 +57,7 @@ I use Ubuntu LTS with an Ambiance theme, where I can have multiple workspaces. I
 3. My text editor - VS Code
 4. My communicator - Slack
 
-You can ask: _OK, but where is your terminal?_ As a terminal, I use <a href="{{ site.baseurl }}/guake-terminal" title="Introduction to Guake Terminal">Guake Terminal</a>. It's a very nice tool, which allows me to use the terminal on any workspace just by clicking the `F12` key. There is one more thing I would like to mention in this section. I don't use multiple screens, just one. I notice that it provides fewer distractions for me.
+You can ask: _OK, but where is your terminal?_ As a terminal, I use [Guake Terminal]({{site.baseurl}}/guake-terminal "Introduction to Guake Terminal"). It's a very nice tool, which allows me to use the terminal on any workspace just by clicking the `F12` key. There is one more thing I would like to mention in this section. I don't use multiple screens, just one. I notice that it provides fewer distractions for me.
 
 ### 5. Work triggers
 
@@ -64,7 +78,7 @@ Rules are something that helps me a lot when it comes to creating a space for ef
 - I start my workday as soon as I can. The best time for me is 7 am.
 - I clean my workspace during the day. I remove not-needed papers, books, and so on. I check my notes, and I clean them up. I close unused tabs in the text editor or browser. The most important tabs are for me: time tracker, remote repository, tasks board, bug tracker, and CI.
 - I split my text editor into two vertical parts. One is for code, one for tests.
-- I try to don't switch context too often. One task at one time. I try to group similar tasks. I also try to not switch between mouse and keyboard. <a href="{{ site.baseurl }}/visual-studio-code" title="Shortcuts in VSCode">Keyboard shortcuts</a> in a text editor like VSCode are very helpful for that.
+- I try to don't switch context too often. One task at one time. I try to group similar tasks. I also try to not switch between mouse and keyboard. [Keyboard shortcuts]({{site.baseurl}}/visual-studio-code "Shortcuts in VSCode") in a text editor like VSCode are very helpful for that.
 - I don't check my mailbox till noon.
 - **5 minutes rule.** If something took less than 5 minutes to do, it is better to do that immediately. It can be put a meeting into a calendar, set up a new task for tomorrow, or just grab a snack.
 - After I finish my work, I create a list of tasks for the next day. So I decide the day before what is the most important in next day. It's very useful. When I start my work in the morning the next day, I don't need to decide what I should do. I already know that.

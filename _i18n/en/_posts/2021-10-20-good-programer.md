@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  People often ask me what they should do to be a programmer.
+  In most cases, they expect advice like:
+  read this book, learn this technology or do this course.
+  They want the silver bullet answer, but it's not so simple.
+  Of course, you can graduate and feel more confident in programming.
+  Even then, you can be a bad programmer.
+  Programming is one of these fields, where you always evolving,
+  improving your skills, your mindset, and learning new things.
+  Today, I would like to show you some skills, which are, in my opinion,
+  important for a programmer.
 layout: post
 photo: /images/programmers-skills/programmers-skills
 title: Good programmer skills
@@ -14,7 +25,7 @@ People often ask me what they should do to be a programmer. In most cases, they 
 
 ## Precision
 
-In most cases, we always have a lot to do. Everything is important, a high priority. We do too much stuff at the same time. It's hard to focus. This behavior is bad for our precision. Features aren't fully done or done with only a happy path. When you start a task, you should <a href="{{ site.baseurl }}/how-to-focus" title="How to focus?">focus only on this one thing</a>. Do the best you can. Think about the whole flow. Ask the right questions. Try to predict customers' behavior. Understand what your code does. There is a lot to consider during the task. To be more precise, I suggest doing a checklist of what should be done before accepting the task. The definition of done (the overview - the same for all tasks) and the specifications for the current task. You can also ask yourself:
+In most cases, we always have a lot to do. Everything is important, a high priority. We do too much stuff at the same time. It's hard to focus. This behavior is bad for our precision. Features aren't fully done or done with only a happy path. When you start a task, you should [focus only on this one thing]({{site.baseurl}}/how-to-focus "How to focus?"). Do the best you can. Think about the whole flow. Ask the right questions. Try to predict customers' behavior. Understand what your code does. There is a lot to consider during the task. To be more precise, I suggest doing a checklist of what should be done before accepting the task. The definition of done (the overview - the same for all tasks) and the specifications for the current task. You can also ask yourself:
 - Is this functionality doing exactly what it should do?
 - Is it checked? (Code review)
 - Is it tested? (Automated tests, QA)
@@ -36,7 +47,7 @@ When there is a problem, we need to learn to search for solutions. Sometimes it'
 
 ## Communication
 
-Communication is a big topic, especially in remote teams. The goal is to communicate proactively. In other words: _Tell, don't ask._ Try to accumulate all needed information in one message. Instead of doing a lot of short messages. It can be annoying and distracting. Of course, you don't need to talk about all the small details. Just give the overview. What is working, what not, where are the problems or uncertainties, on what you stuck. Communication is not only meetings or messages on the communicator. It's also how code is written, <a href="{{ site.baseurl }}/names-have-meaning" title="How to improve your names in the code?">naming convention</a>, comments, commit messages, PR/MR (pull requests/merge requests), tasks, or issue description. The idea is to know what was done, even after a few months or years later. You read all information you have, and you don't need to ask what is going on. You know that based on existing documentation.
+Communication is a big topic, especially in remote teams. The goal is to communicate proactively. In other words: _Tell, don't ask._ Try to accumulate all needed information in one message. Instead of doing a lot of short messages. It can be annoying and distracting. Of course, you don't need to talk about all the small details. Just give the overview. What is working, what not, where are the problems or uncertainties, on what you stuck. Communication is not only meetings or messages on the communicator. It's also how code is written, [naming convention]({{site.baseurl}}/names-have-meaning "How to improve your names in the code?"), comments, commit messages, PR/MR (pull requests/merge requests), tasks, or issue description. The idea is to know what was done, even after a few months or years later. You read all information you have, and you don't need to ask what is going on. You know that based on existing documentation.
 
 ## Curiosity
 
@@ -49,11 +60,11 @@ Nothing in the programming world is working magically. It's why logical thinking
 #### Additional useful skills
 
 In the end, I would like to share with you some additional tips, which can help to increase your programming skills:
-- <a href="{{ site.baseurl }}/what-is-git" title="What is Git?">learn Git</a> - Git is a powerful tool, which allows you to store the whole history of your project changes. When you know how to use it, it can speed up your work with code. If you want to know more about Git, you can check my series of <a href="{{ site.baseurl }}/category/git" title="Articles about git">articles about git</a>
-- <a href="{{ site.baseurl }}/tdd-basic" title="Test-Driven Development for beginners">learn how to test</a> - I know that in some teams, there are testers, who test the functionality, but even this is your team, you should write automated tests, at least for your code. It gives you faster information that something is not working right. It speeds up the development process, and you can be more sure that the code is working as it should. Good test cases are precious.
-- learn about project/architecture patterns - It will help you improve your project architecture and structure. And it will help you with team communication. When you have a common language in your team, you can communicate on a specific level of abstraction. You don't need to explain everything. You just say _"Let's use <a href="{{ site.baseurl }}/mvc-design-pattern" title="Introduction to Model-View-Controller design pattern">MVC</a> here."_ and people will know what you're talking about.
+- [learn Git]({{site.baseurl}}/what-is-git "What is Git?") - Git is a powerful tool, which allows you to store the whole history of your project changes. When you know how to use it, it can speed up your work with code. If you want to know more about Git, you can check my series of [articles about git]({{site.baseurl}}/category/git "Articles about git")
+- [learn how to test]({{site.baseurl}}/tdd-basic "Test-Driven Development for beginners") - I know that in some teams, there are testers, who test the functionality, but even this is your team, you should write automated tests, at least for your code. It gives you faster information that something is not working right. It speeds up the development process, and you can be more sure that the code is working as it should. Good test cases are precious.
+- learn about project/architecture patterns - It will help you improve your project architecture and structure. And it will help you with team communication. When you have a common language in your team, you can communicate on a specific level of abstraction. You don't need to explain everything. You just say _"Let's use [MVC]({{site.baseurl}}/mvc-design-pattern "Introduction to Model-View-Controller design pattern") here."_ and people will know what you're talking about.
 - use **Linters** - When you start working in a new programming language or project, the formatting rules can be difficult to remember. Using Linters can help you to adjust to the new convention. You don't need to actively think about that. Linter will show you how the code structure should look.
-- use shortcuts - to speed up your work, you can use keyboard shortcuts for your <a href="{{ site.baseurl }}/visual-studio-code" title="Visual Studio Code - shortcuts">text editor</a>, <a href="{{ site.baseurl }}/guake-terminal" title="Guake terminal - shortcuts">terminal</a>, or even browser. In this case, you don't need to switch between mouse and keyboard all the time. You just use one tool every effectively.
+- use shortcuts - to speed up your work, you can use keyboard shortcuts for your [text editor]({{site.baseurl}}/visual-studio-code "Visual Studio Code - shortcuts"), [terminal]({{site.baseurl}}/guake-terminal "Guake terminal - shortcuts"), or even browser. In this case, you don't need to switch between mouse and keyboard all the time. You just use one tool every effectively.
 - improve your environment - to seep up your work, you can prepare your script, shortcuts, aliases and so on to automated manual repeatable work. It will allow you to focus on more important things and will improve your efficiency
 - improve your English skills - this is very important, to be able to communicate in English. In most cases, the knowledge is available only in English. It's also good practice to document the project in English. It will be easier to add a new team member. English is the standard language for IT communication.
 

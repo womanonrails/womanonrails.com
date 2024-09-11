@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  In the testing world, we have **stubs**, **mocks**,
+  **dummy objects**, and so on.
+  It can be confusing what to use and when to use it.
+  I would like to organize all of those terms in a more accessible way.
+  There is one problem.
+  In many different sources, we have discrepancies regards to those terms.
+  I will show you my understanding of this topic.
+  Of course, based on chosen sources.
 layout: post
 photo: /images/test-doubles/test-doubles
 title: Test doubles - the difference between stubs and mocks
@@ -10,9 +19,9 @@ imagefeature: test-doubles/og_image-test-doubles.png
 lang: en
 ---
 
-In the testing world, we have **stubs**, **mocks**, **dummy objects**, and so on. It can be confusing what to use and when to use it. I would like to organize all of those terms in a more accessible way. There is one problem.  In many different sources, we have discrepancies regards to those terms. I will show you my understanding of this topic. Of course, based on chosen sources.
+In the testing world, we have **stubs**, **mocks**, **dummy objects**, and so on. It can be confusing what to use and when to use it. I would like to organize all of those terms in a more accessible way. There is one problem. In many different sources, we have discrepancies regards to those terms. I will show you my understanding of this topic. Of course, based on chosen sources.
 
-First of all, what is **test double**? The test double is any object used for testing purposes, which replaces the real object. So, this test double pretends to be some real object in a test. Here are different types of test doubles: <a href="#dummy-object">dummy</a>, <a href="#fake-object">fake</a>, <a href="#stub-object">stub</a>, <a href="#spy-object">spy</a>, or <a href="#mock-object">mock</a>. Now we can go through all of those specific terms.
+First of all, what is **test double**? The test double is any object used for testing purposes, which replaces the real object. So, this test double pretends to be some real object in a test. Here are different types of test doubles: [dummy](#dummy-object), [fake](#fake-object), [stub](#stub-object), [spy](#spy-object), or [mock](#mock-object). Now we can go through all of those specific terms.
 
 ## Dummy object
 
@@ -186,7 +195,7 @@ RSpec.describe UserDuplicates do
 end
 ```
 
-Alert! If for some reason, we will stop using `TypeOfUserMatch`, this test can still pass. For example, in case the logic will be fulfilled. The test won't tell us that we don't use `TypeOfUserMatch`. It's important. Keep it in mind. I will come back to this information in the <a href="#mock-object">mock section</a>.
+Alert! If for some reason, we will stop using `TypeOfUserMatch`, this test can still pass. For example, in case the logic will be fulfilled. The test won't tell us that we don't use `TypeOfUserMatch`. It's important. Keep it in mind. I will come back to this information in the [mock section](#mock-object).
 
 I'd like to mention one more thing here. By doing some adjustments in the code, like dependency injection, we could use different RSpec mechanisms. A `class_double` to stub the class state. The `class_double` is similar to `instance_double`. Both are useful because they verify if we are compatible with the class/object interface. In case we change the name of a method or remove it, the test will fail. Below you can find a possible look for the test.
 
@@ -301,7 +310,7 @@ end
 
 In my understanding of spy, **spy** is a specific type of stub that can also record some information based on how it was called.  Spy takes over some calls to the real objects and verifies those calls without replacing the entire original object. At some point, it can sound similar to a fake. For me, the fake object is more of a transparent layer. We use it to simplify the tests. The spy object allows us to verify some information. I'd say that **the purpose of a spy is to help us with verifying some information on an object normally hard to verify**.
 
-Alert! In RSpec we can find **spy** method. In my opinion, from its behavior point of view, it's more like <a href="#mock-object">mock object</a>.
+Alert! In RSpec we can find **spy** method. In my opinion, from its behavior point of view, it's more like [mock object](#mock-object).
 
 For example, when you want to verify sending an email, depends on the spy type, you can get information about: sending a message, the number of sent messages, or even what is in the email body.
 
@@ -414,9 +423,9 @@ In my opinion, a stub is an object that returns a hard-coded answer. So it repre
 - problem with refactoring - since tests with mocks can be coupled to your code implementation, it can impact the refactoring in your system.
 
 ## Bibliography
-- <a href="https://martinfowler.com/articles/mocksArentStubs.html" title="Martin Fowler - Mocks Aren't Stubs" target='_blank' rel='nofollow'>Mocks Aren't Stubs - Martin Fowler</a>
-- <a href="https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html" title="Robert C. Martin - The Little Mocker" target='_blank' rel='nofollow'>The Little Mocker - Robert C. Martin</a>
-- <a href="https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub" title="What's the difference between a mock & stub?" target='_blank' rel='nofollow'>What's the difference between a mock & stub?</a>
-- <a href="https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing" title="What's the difference between faking, mocking, and stubbing?" target='_blank' rel='nofollow'>What's the difference between faking, mocking, and stubbing?</a>
-- <a href="https://relishapp.com/rspec/rspec-mocks/docs" title="RSpec Mocks" target='_blank' rel='nofollow'>RSpec Mocks</a>
-- <a href="https://relishapp.com/rspec/rspec-mocks/docs/verifying-doubles" title="RSpec verifying doubles" target='_blank' rel='nofollow'>RSpec verifying doubles</a>
+- [Mocks Aren't Stubs - Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html "Martin Fowler - Mocks Aren't Stubs")
+- [The Little Mocker - Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html "Robert C. Martin - The Little Mocker")
+- [What's the difference between a mock & stub?](https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub "What's the difference between a mock & stub?")
+- [What's the difference between faking, mocking, and stubbing?](https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing "What's the difference between faking, mocking, and stubbing?")
+- [RSpec Mocks](https://rspec.info/documentation/3.13/rspec-mocks/RSpec/Mocks.html "RSpec Mocks")
+- [RSpec verifying doubles](https://rspec.info/documentation/3.13/rspec-mocks/RSpec/Mocks/ExampleMethods.html#instance_double-instance_method "RSpec verifying doubles")

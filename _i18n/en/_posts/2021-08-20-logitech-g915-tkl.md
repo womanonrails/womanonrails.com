@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  I bought a **Logitech G915 TKL keyboard**
+  at a beginning of the 2021 year.
+  This keyboard works pretty well on Windows
+  and Logitech G Hub software.
+  There is a ton of ways to customize it.
+  It can be fun.
+  The problem comes when you cannot normally install
+  G Hub software on your system, like on Ubuntu.
+  Since I use the Logitech G915 TKL keyboard
+  for a while with my Ubuntu,
+  I would like to share what
+  I already know about customizing it on Linux.
 layout: post
 photo: /images/logitech-g915-tkl/logitech-g915-tkl
 title: Logitech G915 TKL with Ubuntu
@@ -162,7 +175,7 @@ $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboar
 
 To discover all possible commands, I recommend you to read the manual. In my case, it can be found here: `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. There is a possibility to configure profiles or create your macros too.
 
-**Tip from <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>**, who is the person responsible for Logitech G915 pull request on g810-leds (more about that below):
+**Tip from [@yawor](https://github.com/yawor "@yawor GitHub page")**, who is the person responsible for Logitech G915 pull request on g810-leds (more about that below):
 
 > You should be careful with ratbag. When you set LED from ratbagctl, it writes that configuration to onboard flash. Basically, it overwrites the stored profile (you can even select which of the 3 profiles you want to write to). I've had some issues when I tried to set some colours. I've also noticed that it messed up power saving settings, and the keyboard backlight doesn't timeout at all (only the G logo blinks for a moment after ~ 30 seconds of inactivity).
 
@@ -204,7 +217,7 @@ For g810-led switches parameters `-a`, `-g` and `-k` always sends commit automat
 
 One more note. I was not able to save the selected setups. Each time when the keyboard turns the lighting off, the lighting effect goes back to keyboard defaults. It's because g810-led don't mess with the onboard flash. Similar to the keyleds tool described below. They only change a runtime configuration. That's why there is an issue with that. The LED configuration resets after the keyboard wakes up from the power save function. Unfortunately, non of the current software implements detecting the wake-up to reapply the configuration. Nevertheless, I had a lot of fun using this project.
 
-**Tip from <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>**, who is the person responsible for Logitech G915 pull request on g810-leds:
+**Tip from [@yawor](https://github.com/yawor "@yawor GitHub page")**, who is the person responsible for Logitech G915 pull request on g810-leds:
 
 > There's a workaround for this. You can switch the keyboard into software mode, which disables onboard features like power-saving, backlight control, etc, and then control everything from the software. After that, the keyboard immediately will go dark (but it's still working - only the backlight turns off). Then you can set whatever colors you like using g810-led. But remember that the power saving is disabled in this mode. It is the software that should control dimming the keyboard, but there's no software for Linux right now that does that. Also, the mode is back to "board" mode after you power cycle the keyboard.
 
@@ -255,17 +268,17 @@ $ keyledsctl gamemode
 
 ## Thanks
 
-I would like to thanks <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor</a>, who read this article and add some addtional thoughts.
+I would like to thanks [@yawor](https://github.com/yawor "@yawor GitHub page"), who read this article and add some addtional thoughts.
 
 ## Links
-- <a href="https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf" title="Logitech user manual for G915 TKL" target='_blank' rel='nofollow'>Logitech user manual for Logitech G915 TKL keyboard</a>
-- <a href="https://www.reddit.com/r/linuxhardware/comments/k76ruy/remarks_on_the_logitech_g915_with_ubuntu_2004/" title="Remarks on the Logitech G915 with Ubuntu 20.04" target='_blank' rel='nofollow'>Reddit thread about Logitech G915 TKL keyboard</a>
-- <a href="https://askubuntu.com/questions/1300455/how-to-control-logitech-g915-tkl-keyboard-lightning-in-linux-ubuntu" title="How to control Logitech G915 TKL keyboard lightning in Linux Ubuntu?" target='_blank' rel='nofollow'>Ask Ubuntu thread about Logitech G915 TKL keyboard</a>
-- <a href="https://github.com/libratbag/libratbag/wiki/ratbagctl" title="Short manual for Ratbagctl" target='_blank' rel='nofollow'>Manual and installation proces for Ratbagctl</a>
-- <a href="https://github.com/libratbag/libratbag/issues/172" title="Add support in libratbag for a subset of gaming keyboards" target='_blank' rel='nofollow'>Github thread about gaming keyboard and possible solutions</a>
-- <a href="https://github.com/MatMoul/g810-led" title="G810-led project" target='_blank' rel='nofollow'>G810-led project</a>
-- <a href="https://github.com/MatMoul/g810-led/issues/198" title="G810-led issue about Logitech G915 keyboard" target='_blank' rel='nofollow'>G810-led issue about Logitech G915 keyboard</a>
-- <a href="https://github.com/MatMoul/g810-led/pull/267" title="G810-led pull request for Logitech G915 keyboard support" target='_blank' rel='nofollow'>G810-led pull request for Logitech G915 keyboard support</a>
-- <a href="https://github.com/keyleds/keyleds" title="Keyleds project" target='_blank' rel='nofollow'>Keyleds project</a>
-- <a href="https://github.com/keyleds/keyleds/wiki/Installing" title="How to install Keyleds project?" target='_blank' rel='nofollow'>Manual for Keyleds project</a>
-- <a href="https://github.com/yawor/keyleds/tree/g915" title="G915 fork of Keyleds project" target='_blank' rel='nofollow'>Logitech G915 TKL fork of Keyleds project</a>
+- [Logitech user manual for Logitech G915 TKL keyboard](https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf "Logitech user manual for G915 TKL")
+- [Reddit thread about Logitech G915 TKL keyboard](https://www.reddit.com/r/linuxhardware/comments/k76ruy/remarks_on_the_logitech_g915_with_ubuntu_2004/ "Remarks on the Logitech G915 with Ubuntu 20.04")
+- [Ask Ubuntu thread about Logitech G915 TKL keyboard](https://askubuntu.com/questions/1300455/how-to-control-logitech-g915-tkl-keyboard-lightning-in-linux-ubuntu "How to control Logitech G915 TKL keyboard lightning in Linux Ubuntu?")
+- [Manual and installation proces for Ratbagctl](https://github.com/libratbag/libratbag/wiki/ratbagctl "Short manual for Ratbagctl")
+- [Github thread about gaming keyboard and possible solutions](https://github.com/libratbag/libratbag/issues/172 "Add support in libratbag for a subset of gaming keyboards")
+- [G810-led project](https://github.com/MatMoul/g810-led "G810-led project")
+- [G810-led issue about Logitech G915 keyboard](https://github.com/MatMoul/g810-led/issues/198 "G810-led issue about Logitech G915 keyboard")
+- [G810-led pull request for Logitech G915 keyboard support](https://github.com/MatMoul/g810-led/pull/267 "G810-led pull request for Logitech G915 keyboard support")
+- [Keyleds project](https://github.com/keyleds/keyleds "Keyleds project")
+- [Manual for Keyleds project](https://github.com/keyleds/keyleds/wiki/Installing "How to install Keyleds project?")
+- [Logitech G915 TKL fork of Keyleds project](https://github.com/yawor/keyleds/tree/g915 "G915 fork of Keyleds project")
