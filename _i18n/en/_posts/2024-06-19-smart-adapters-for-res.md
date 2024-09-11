@@ -28,7 +28,7 @@ one_lang: true
 
 It's a good practice to remain independent of external tools, gems, or libraries. Of course, in many cases, we do rely on external code, and that's normal. Otherwise, we'd end up doing things like HTTP requests or user authentication ourselves, and that would distract us from the real needs of our customers. So the balance between using external tools and creating custom solutions is crucial. The real question is how can we use external tools and still have enough flexibility in our code? That's what we'll focus on today, using our integration with RailsEventStore as an example.
 
-In my last article, I described how we moved the [first event to the RailsEventStore]({{ site.baseurl }}/first-event-in-res "First Event in RailsEventStore"). This would not have been so easy without the separation between the `wisper` gem and our application, without a layer of abstraction - the adapters we wrote. Today, I will focus on showing you these adapters. We will discuss:
+In my last article, I described how we moved the [first event to the RailsEventStore]({{site.baseurl}}/first-event-in-res "First Event in RailsEventStore"). This would not have been so easy without the separation between the `wisper` gem and our application, without a layer of abstraction - the adapters we wrote. Today, I will focus on showing you these adapters. We will discuss:
 - the `emit` method we use to publish events
 - the basic handler class for event subscription
 - YAML configuration for matching publishers and subscribers
@@ -328,7 +328,7 @@ We can translate this to: _The Inventory domain has a SntRoomStatusHandler subsc
 
 ### Handling streams for events
 
-We also wanted to be able to handle events in multiple streams. To do this in a simple way, we created a single subscriber for all events that associates events with specific streams. More information about this can be found later in this article in the [Event streams section]({{ site.baseurl }}/smart-adapters-for-res#event-streams "Event streams"). Here, I'll show the necessary logic from a configuration perspective. This solution can also be used in other cases where we want to perform an action on all triggered events, such as additional logs or something similar.
+We also wanted to be able to handle events in multiple streams. To do this in a simple way, we created a single subscriber for all events that associates events with specific streams. More information about this can be found later in this article in the [Event streams section]({{site.baseurl}}/smart-adapters-for-res#event-streams "Event streams"). Here, I'll show the necessary logic from a configuration perspective. This solution can also be used in other cases where we want to perform an action on all triggered events, such as additional logs or something similar.
 
 ```ruby
 # config/initializers/rails_event_store.rb
@@ -455,7 +455,7 @@ Thanks to RailsEventStore, we can group our events into streams. We decided to c
 
 ### Handling default streams for events
 
-We handle all default streams in the stream handler. You can get more information about the configuration of default streams in the [Handling streams for events]({{ site.baseurl }}/smart-adapters-for-res#handling-streams-for-events "Handling streams for events") section. Here you can see the `StreamsHandler` class.
+We handle all default streams in the stream handler. You can get more information about the configuration of default streams in the [Handling streams for events]({{site.baseurl}}/smart-adapters-for-res#handling-streams-for-events "Handling streams for events") section. Here you can see the `StreamsHandler` class.
 
 ```ruby
 # app/event_handlers/streams_handler.rb

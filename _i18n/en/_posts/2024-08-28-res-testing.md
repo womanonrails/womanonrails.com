@@ -21,7 +21,7 @@ one_lang: true
 
 Testing is critical in any system, especially asynchronous applications. It's important to test each component in isolation, while carefully managing the communication between them. It is essential to ensure that everything works together seamlessly. For this reason, I would like to share with you the approach we take to testing in our Event-Driven system.
 
-This article is part three of the [Rails Event Store]({{ site.baseurl }}/category/rails-event-store "RailsEventStore series") series. If you want to learn more, feel free to check out the previous articles. They also explain the [application convetions]({{ site.baseurl }}/smart-adapters-for-res#directory-structure-and-convention "Our directory convention around RailsEventStore") we use, which may help you better understand our setup and what we want to test. Keep in mind that this is not a testing tutorial, but rather a case study of our experience.
+This article is part three of the [Rails Event Store]({{site.baseurl}}/category/rails-event-store "RailsEventStore series") series. If you want to learn more, feel free to check out the previous articles. They also explain the [application convetions]({{site.baseurl}}/smart-adapters-for-res#directory-structure-and-convention "Our directory convention around RailsEventStore") we use, which may help you better understand our setup and what we want to test. Keep in mind that this is not a testing tutorial, but rather a case study of our experience.
 
 {% include toc.html %}
 
@@ -234,7 +234,7 @@ end
 
 Although it's not directly related to testing, this step occurs before the tests are run. We have a linter that runs before the tests. If our codebase passes the linter checks, the tests continue. However, if the linter fails, we get an alert and the tests are not run until the problem is fixed. While this may seem extreme, we've found it to be quite useful.
 
-The linter we created is called `SubscriptionsList`. It iterates through all the domains and the events that each domain should be listening for, and checks to see if the appropriate handler file exists. This ensures that there's no way to have a defined connection between a domain and an event without handling it. We always get an alert if something is missing. All the information about events and subscribers is set in the `subscriptions.yml` file, that I described in [previous article]({{ site.baseurl }}/smart-adapters-for-res#yaml-configuration "Our YAML convention for subscriptions").
+The linter we created is called `SubscriptionsList`. It iterates through all the domains and the events that each domain should be listening for, and checks to see if the appropriate handler file exists. This ensures that there's no way to have a defined connection between a domain and an event without handling it. We always get an alert if something is missing. All the information about events and subscribers is set in the `subscriptions.yml` file, that I described in [previous article]({{site.baseurl}}/smart-adapters-for-res#yaml-configuration "Our YAML convention for subscriptions").
 
 ```ruby
 class SubscriptionsList
@@ -352,7 +352,7 @@ In most cases, these events are fairly straightforward - we just need to populat
 
 ## Testing events
 
-Events are simple objects that, in most cases, hold data without any logic. In our case, we don't test the event schema in our tests. For event schema validation, we use `Dry::Struct`, and you can learn more about how we do that [here]({{ site.baseurl }}/smart-adapters-for-res#event-data-type-check "Data type check for events"). We also don't test specific data types. Instead, we focus on testing any additional methods added to the event object, such as `primary_source_name`. This method returns information about the source of the event.
+Events are simple objects that, in most cases, hold data without any logic. In our case, we don't test the event schema in our tests. For event schema validation, we use `Dry::Struct`, and you can learn more about how we do that [here]({{site.baseurl}}/smart-adapters-for-res#event-data-type-check "Data type check for events"). We also don't test specific data types. Instead, we focus on testing any additional methods added to the event object, such as `primary_source_name`. This method returns information about the source of the event.
 
 ```ruby
 require 'rails_helper'
@@ -723,6 +723,6 @@ In this example, you can see both types of event handler tests. The first test d
 That's all I wanted to share with you about testing event-driven logic. We've created some additional matchers and configurations to make testing easier for ourselves. We also have a special approach to testing event subscriptions and handlers. All of these tweaks are for our convenience, to make test creation more enjoyable, and to provide flexibility in the testing process. It's all about making our lives easier. I hope some of these examples inspire your own journey down the Rails Event Store highway.
 
 Please check out my previous Rails Event Store articles:
-- [First Event in Rails Event Store]({{ site.baseurl }}/first-event-in-res "How did we build first event RailsEventStore?")
-- [Smart adapters for the Rails Event Store]({{ site.baseurl }}/smart-adapters-for-res "Additional adapters around RailsEventStore")
+- [First Event in Rails Event Store]({{site.baseurl}}/first-event-in-res "How did we build first event RailsEventStore?")
+- [Smart adapters for the Rails Event Store]({{site.baseurl}}/smart-adapters-for-res "Additional adapters around RailsEventStore")
 

@@ -244,7 +244,7 @@ Now the question: **Why is it working?** Based on what I found, it is related to
 
 ## 6. Create a hash with a default value
 
-I write about this topic in [Ruby Hash article]({{ site.baseurl }}/ruby-hash-tips "Ruby tips for hash object") in more detail, right now I want to mention two common uses of this feature.
+I write about this topic in [Ruby Hash article]({{site.baseurl}}/ruby-hash-tips "Ruby tips for hash object") in more detail, right now I want to mention two common uses of this feature.
 
 First, you can declare the same default value for all keys in a hash. It's pretty useful when we want to count something.
 
@@ -279,7 +279,7 @@ hash[35]
 
 ## 7. Use `proc` in `case`
 
-`proc` is one of the classes in Ruby, which helps us with [functional programming]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby"). One interesting usage of `proc`, which is not often known, is using `proc` in `case`. We can create a `proc` and put it directly to the `when` condition of the `case`. See the example below:
+`proc` is one of the classes in Ruby, which helps us with [functional programming]({{site.baseurl}}/functional-programming-ruby "Functional programming in Ruby"). One interesting usage of `proc`, which is not often known, is using `proc` in `case`. We can create a `proc` and put it directly to the `when` condition of the `case`. See the example below:
 
 ```ruby
 payload_1 = {
@@ -358,4 +358,4 @@ user = User.new('Agnieszka')
 # => nil
 ```
 
-If you want to know more about calling `proc` by `===`, I recommend you to check my article about [functional programming]({{ site.baseurl }}/functional-programming-ruby "Functional programming in Ruby").
+If you want to know more about calling `proc` by `===`, I recommend you to check my article about [functional programming]({{site.baseurl}}/functional-programming-ruby "Functional programming in Ruby").

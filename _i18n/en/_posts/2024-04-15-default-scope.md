@@ -67,7 +67,7 @@ def default_scope(scope = nil, all_queries: nil, &block)
 end
 ```
 
-We can have a little fun with creating a default scope. First, we can create [`Proc` object]({{ site.baseurl }}/functional-programming-ruby#proc-object "
+We can have a little fun with creating a default scope. First, we can create [`Proc` object]({{site.baseurl}}/functional-programming-ruby#proc-object "
 Proc object in Ruby") and provide it as an argument to `default_scope` in two ways:
 
 ```ruby
@@ -79,7 +79,7 @@ class Article < ActiveRecord::Base
 end
 ```
 
-It's possible because when [block]({{ site.baseurl }}/functional-programming-ruby#blocks-in-ruby "Blocks in Ruby") is provided it is assigned as scope inside `default_scope` definition. The second trick we can do is to prepare a class that has a `call` method. It's the only condition we need to fulfill to be able to create our `default_scope`.
+It's possible because when [block]({{site.baseurl}}/functional-programming-ruby#blocks-in-ruby "Blocks in Ruby") is provided it is assigned as scope inside `default_scope` definition. The second trick we can do is to prepare a class that has a `call` method. It's the only condition we need to fulfill to be able to create our `default_scope`.
 
 ```ruby
 class PublishedScope
