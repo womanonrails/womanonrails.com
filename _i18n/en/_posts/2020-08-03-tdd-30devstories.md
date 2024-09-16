@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Some time ago,
+  I was participating in an Instagram challenge called #30devstories.
+  During that challenge,
+  I create a lot of nice and short materials related to programming.
+  I would like to share them with you using a more permanent way then InstaStory.
+  I will start with **TDD - Test Driven Development**.
+  In more details, I described this topic in the article [TDD - Basics](/tdd-basic "Process TDD by example").
+  Today I will focus only on a very short introduction to TDD.
 layout: post
 photo: /images/tdd-30devstories/tdd-30devstories
 title: TDD in a nutshell
@@ -10,7 +19,7 @@ lang: en
 imagefeature: tdd-30devstories/og_image-tdd-30devstories.jpg
 ---
 
-Some time ago, I was participating in an Instagram challenge called #30devstories. During that challenge, I create a lot of nice and short materials related to programming. I would like to share them with you using a more permanent way then InstaStory. I will start with **TDD - Test Driven Development**. In more details, I described this topic in the article <a href="{{ site.baseurl }}/tdd-basic" title="Process TDD by example">TDD - Basics</a>. Today I will focus only on a very short introduction to TDD.
+Some time ago, I was participating in an Instagram challenge called #30devstories. During that challenge, I create a lot of nice and short materials related to programming. I would like to share them with you using a more permanent way then InstaStory. I will start with **TDD - Test Driven Development**. In more details, I described this topic in the article [TDD - Basics]({{site.baseurl}}/tdd-basic "Process TDD by example"). Today I will focus only on a very short introduction to TDD.
 
 ## What is TDD?
 

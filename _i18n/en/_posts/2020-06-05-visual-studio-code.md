@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Some time ago,
+  I was using [Sublime Text Editor](/sublime "Sublime Text editor - useful functionality")
+  for my programming work.
+  For a very long time, I was satisfied with this text editor.
+  But after some time,
+  Sublime Text didn't fit me as well as at the beginning anymore.
+  So, I started research on something new.
+  I found **Visual Studio Code** - free,
+  built on an open-source text editor.
+  Today, I will tell you more about this tool.
 layout: post
 photo: /images/visual-studio-code/visual-studio-code
 title: Visual Studio Code
@@ -10,7 +21,7 @@ imagefeature: visual-studio-code/og_image-visual-studio-code.png
 lang: en
 ---
 
-Some time ago, I was using <a href="{{ site.baseurl }}/sublime" title="Sublime Text editor - useful functionality">Sublime Text Editor</a> for my programming work. For a very long time, I was satisfied with this text editor. But after some time, Sublime Text didn't fit me as well as at the beginning anymore. So, I started research on something new. I found **Visual Studio Code** - free, built on an open-source text editor. Today, I will tell you more about this tool.
+Some time ago, I was using [Sublime Text Editor]({{site.baseurl}}/sublime "Sublime Text editor - useful functionality") for my programming work. For a very long time, I was satisfied with this text editor. But after some time, Sublime Text didn't fit me as well as at the beginning anymore. So, I started research on something new. I found **Visual Studio Code** - free, built on an open-source text editor. Today, I will tell you more about this tool.
 
 ## Why I don't use Sublime Text anymore?
 
@@ -20,7 +31,7 @@ As I told you in the beginning, I liked Sublime Text. But after some time, when 
 
 When I was looking for a new tool, a new text editor, I search for something like Sublime Text. I wanted to have similar functionality, but faster than Sublime Text. Visual Studio Code is exactly that kind of tool. Let's check it:
 
-1. **I can split my editor to as many panels as I need** - this is a pretty cool feature. For me, two panels at the same time are enough. One is for code and one is for tests. This gives me the boost of productivity in my <a href="{{ site.baseurl }}/tdd-basic" title="How to work using TDD?">TDD flow</a>.
+1. **I can split my editor to as many panels as I need** - this is a pretty cool feature. For me, two panels at the same time are enough. One is for code and one is for tests. This gives me the boost of productivity in my [TDD flow]({{site.baseurl}}/tdd-basic "How to work using TDD?").
 
 2. **VS Code in command line** - VS Code has its command-line interface (CLI), which allows you to customize how the editor is launched. You can have different VS Code workspaces prepared for different folders. Each time you work on a specific project, you have setups adjusted to what you do (open files, chosen language, explorer sidebar). This is something that allows me to save me time when I switch between projects. My favourites commands are:
 

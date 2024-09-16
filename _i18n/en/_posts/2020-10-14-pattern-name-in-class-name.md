@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  In one of my last articles,
+  I was writing about [improving names in the project](/names-have-meaning "How to create names with meaning? 13 ideas how to improve names.").
+  One of the tips was **tell what pattern you use**.
+  Then I read a newsletter from Sandi Metz
+  _"Don't Name Classes After Patterns. Mostly."_
+  which have a different opinion about patterns in names.
+  I think it is a good topic to write about it.
+  There is no one silver bullet rule on how to do programming or create names.
+  We have some tips, but those are the signpost.
+  There are always some pros and cons,
+  so it is good to have a wider perspective.
 layout: post
 photo: /images/pattern-name-in-class-name/pattern-name-in-class-name
 title: Pattern name in class name. Good or bad practice?
@@ -10,7 +22,7 @@ imagefeature: pattern-name-in-class-name/og_image-pattern-name-in-class-name.jpg
 lang: en
 ---
 
-In one of my last articles, I was writing about <a href="{{ site.baseurl }}/names-have-meaning" title="How to create names with meaning? 13 ideas how to improve names.">improving names in the project</a>. One of the tips was **tell what pattern you use**. Then I read a newsletter from Sandi Metz _"Don't Name Classes After Patterns. Mostly."_ which have a different opinion about patterns in names. I think it is a good topic to write about it. There is no one silver bullet rule on how to do programming or create names. We have some tips, but those are the signpost. There are always some pros and cons, so it is good to have a wider perspective.
+In one of my last articles, I was writing about [improving names in the project]({{site.baseurl}}/names-have-meaning "How to create names with meaning? 13 ideas how to improve names."). One of the tips was **tell what pattern you use**. Then I read a newsletter from Sandi Metz _"Don't Name Classes After Patterns. Mostly."_ which have a different opinion about patterns in names. I think it is a good topic to write about it. There is no one silver bullet rule on how to do programming or create names. We have some tips, but those are the signpost. There are always some pros and cons, so it is good to have a wider perspective.
 
 Let's start briefly from my hint: _Tell what pattern you use_. I still think that telling the pattern name can help with understanding the architecture. When you have class `User`, and then you create a class `UserDecorator` you know exactly which pattern you use. You know, that this is a `User` with some additional or changed behavior. This name shows the architecture decision you take. When this is what you want to focus on, I think it is OK to give a name for a class like `UserDecorator`. Pattern names are here to help the programmer to communicate in a short and precise way. They are meaningful, so we add them to class names.
 

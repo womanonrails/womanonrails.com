@@ -3,7 +3,7 @@ excerpt: >
   From time to time using Ruby or even more often using Ruby on Rails,
   I need additional configuration with some secret API keys.
   I don't want to save those data in the
-  [git repository]({{site.baseurl}}/what-is-git "Introduction to Git distributed version-control system"),
+  [git repository](/what-is-git "Introduction to Git distributed version-control system"),
   but it is too early to put them in the database.
   In this case, environment variables can do the trick.
   You put sensitive data to the `.env` file,

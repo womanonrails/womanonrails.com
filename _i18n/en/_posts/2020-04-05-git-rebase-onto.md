@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  In article [How to change parent branch in git?](/replace-parent-branch "How to set git parent pointer to a different parent?")
+  I talked quickly about using `git rebase --onto` in a case
+  when you want to replace the current parent branch.
+  But `git rebase --onto` is more than just replacing parent branch.
+  We can do much more with `git rebase --onto` help.
+  It's a good topic to take a look closely.
+  To use it freely first, you need to understand it.
 layout: post
 photo: /images/git-rebase-onto/git-rebase-onto-header
 title: Git rebase --onto an overview
@@ -10,7 +18,7 @@ lang: en
 imagefeature: git-rebase-onto/git-rebase-onto.png
 ---
 
-In article <a href="{{ site.baseurl }}/replace-parent-branch" title="How to set git parent pointer to a different parent?">How to change parent branch in git?</a> I talked quickly about using `git rebase --onto` in a case when you want to replace the current parent branch. But `git rebase --onto` is more than just replacing parent branch. We can do much more with `git rebase --onto` help. It's a good topic to take a look closely. To use it freely first, you need to understand it.
+In article [How to change parent branch in git?]({{site.baseurl}}/replace-parent-branch "How to set git parent pointer to a different parent?") I talked quickly about using `git rebase --onto` in a case when you want to replace the current parent branch. But `git rebase --onto` is more than just replacing parent branch. We can do much more with `git rebase --onto` help. It's a good topic to take a look closely. To use it freely first, you need to understand it.
 
 There are two cases when you can go for `git rebase --onto`:
 1. You have a branch, where you want to change its parent branch.
@@ -18,7 +26,7 @@ There are two cases when you can go for `git rebase --onto`:
 
 Of course, you can combine these two reasons. You can change the parent branch and remove some commits at the same time. We will get to this point. But before we go there, we need to understand the differences between `git rebase --onto` with two and three arguments.
 
-Let's start from the beginning. First, we will focus on just a simple `git rebase`. I wrote a separate article about <a href="{{ site.baseurl }}/git-rebase" title="How can you do git rebase?">git rebase</a>. So if you want to know more about `git rebase` go there. Right now, we will cover it very quickly.
+Let's start from the beginning. First, we will focus on just a simple `git rebase`. I wrote a separate article about [git rebase]({{site.baseurl}}/git-rebase "How can you do git rebase?"). So if you want to know more about `git rebase` go there. Right now, we will cover it very quickly.
 
 ## Git rebase
 

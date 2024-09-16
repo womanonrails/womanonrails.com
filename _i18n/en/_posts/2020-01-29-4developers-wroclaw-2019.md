@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  In 2019 I had an opportunity to be a speaker and
+  participant on three local 4Developers events.
+  In Krakow and in Katowice I was presenting my two speeches.
+  I wrote about them an article
+  [Speaker at 4Developers 2019](/4developers-2019 "My presentations on 4Developers 2019").
+  One of my presentations you can watch on YouTube:
+  [Are you an Egoistic Programmer? - Step by step refactoring [PL]](https://www.youtube.com/watch?v=4vqXSUcmBQE).
+  The last event was in Wroclaw. This time I was a participant.
+  It was a nice feeling to be there only as a participant.
+  I could focus on conference its self without stressing out.
+  How in few words I can describe 4Developers in Wroclaw?
+  Presentations, discussion with people and a little bit of fun.
 layout: post
 title: 4Developers Wroclaw - 2019
 photo: /images/4developers-wroclaw-2019/photo
@@ -11,7 +24,7 @@ imagefeature: 4developers-wroclaw-2019/photo.jpg
 show_date: true
 ---
 
-In 2019 I had an opportunity to be a speaker and participant on three local 4Developers events. In Krakow and in Katowice I was presenting my two speeches. I wrote about them an article <a href="{{ site.baseurl }}/4developers-2019" title="My presentations on 4Developers 2019">Speaker at 4Developers 2019</a>. One of my presentations you can watch on YouTube:
+In 2019 I had an opportunity to be a speaker and participant on three local 4Developers events. In Krakow and in Katowice I was presenting my two speeches. I wrote about them an article [Speaker at 4Developers 2019]({{site.baseurl}}/4developers-2019 "My presentations on 4Developers 2019"). One of my presentations you can watch on YouTube:
 {% include links/youtube-link.html
    name='Are you an Egoistic Programmer? - Step by step refactoring [PL]'
    video_id='4vqXSUcmBQE' %}.
@@ -59,14 +72,10 @@ In most cases when I go to the conference I really like to focus on very technic
   <figcaption>4Developers Wroclaw</figcaption>
 </figure>
 
-My favorite one was about the **impostor syndrome** by Anita Przybył - "Syndrom oszusta, czyli hamulec rozwoju.". Our confidence and believing in our self is very important. Stress and perfectionism related with impostor syndrome can have a big impact on our lives. The same as <a href="{{ site.baseurl }}/occupational-burnout" title="Occupational burnout syndrome">burnout syndrome</a>. I think it is good to speak about those topics, even if we think that they are hard. Maybe we should talk even more about those topics because they are so hard and people afraid to admit that this is problematic for them. 
+My favorite one was about the **impostor syndrome** by Anita Przybył - "Syndrom oszusta, czyli hamulec rozwoju.". Our confidence and believing in our self is very important. Stress and perfectionism related with impostor syndrome can have a big impact on our lives. The same as [burnout syndrome]({{site.baseurl}}/occupational-burnout "Occupational burnout syndrome"). I think it is good to speak about those topics, even if we think that they are hard. Maybe we should talk even more about those topics because they are so hard and people afraid to admit that this is problematic for them. 
 
-I enjoyed the 4Deveropers event in Wroclaw, even it was very different then my experiences with other conferences. Normally when I go to the conference there is one or maybe two paths strongly focused on some technology. For example, like <a href="{{ site.baseurl }}/wrocloverb-2019" title="Wroclove.rb 2019 - summary">Wroclove.rb</a> where we focus on Ruby. Here on 4Developers event we had 6 paths from very different technologies and not only, because there were also soft skills presentations. We can say that it was a mixture of many different topics. Sometimes was even harder to decide which presentation to choose when two of them were at the same time. Well, that’s life...
+I enjoyed the 4Deveropers event in Wroclaw, even it was very different then my experiences with other conferences. Normally when I go to the conference there is one or maybe two paths strongly focused on some technology. For example, like [Wroclove.rb]({{site.baseurl}}/wrocloverb-2019 "Wroclove.rb 2019 - summary") where we focus on Ruby. Here on 4Developers event we had 6 paths from very different technologies and not only, because there were also soft skills presentations. We can say that it was a mixture of many different topics. Sometimes was even harder to decide which presentation to choose when two of them were at the same time. Well, that’s life...
 
 ## Call for papers - 4Developers 2020
 
-In the conferences the best things is to talk with people who attend the event. You can talk with speakers and also participants. This is a very good way to exchange the knowledge and explore new points of view on specific topics. And when we talk about exchanging the knowledge, till the middle of February last CFT (Call For Papers) for the main 4Developers conference in Warsaw in year 2020. CFT is the time when you can send your presentations propositions to the organizers of the conference. This time 4Developers organizers encourage participants to give a presentation in English. If you want to share your knowledge and passion with others programmer, then I recommend to you to go to
-{% include links/external-link.html
-   name='4Developers 2020 - Call For Papers'
-   url='https://bit.ly/femalespeaker4developers2020' %}
-for more information. In case you need more incentive, check out some photos from 4Developers 2019 in Wroclaw. I hope you like them. See you, bye! 
+In the conferences the best things is to talk with people who attend the event. You can talk with speakers and also participants. This is a very good way to exchange the knowledge and explore new points of view on specific topics. And when we talk about exchanging the knowledge, till the middle of February last CFT (Call For Papers) for the main 4Developers conference in Warsaw in year 2020. CFT is the time when you can send your presentations propositions to the organizers of the conference. This time 4Developers organizers encourage participants to give a presentation in English. If you want to share your knowledge and passion with others programmer, then I recommend to you to go to 4Developers - Call For Papers for more information. In case you need more incentive, check out some photos from 4Developers 2019 in Wroclaw. I hope you like them. See you, bye! 

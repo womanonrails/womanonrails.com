@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  A few days ago, I created new branch.
+  I did some commits there, but after a while I noticed,
+  that I created this new branch from the wrong parent branch.
+  I created it from some feature branch not from the master.
+  What I should do in this situation?
+  I need to merge my current branch before
+  I will merge this other feature branch and
+  I don't want to add not needed commits to mater branch.
+  How can I handle it? Well, here is the time for git.
 layout: post
 title: How change parent branch in git?
 description: Setting git parent pointer to a different parent with git rebase --onto.

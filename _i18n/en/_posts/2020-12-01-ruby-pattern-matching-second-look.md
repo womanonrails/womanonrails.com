@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Sometimes I like new changes, new features,
+  or improvements in Ruby and sometimes not.
+  Today I would like to tell you more about the changes
+  that I'm very excited about.
+  I mean the **Pattern Matching**.
+  I wrote a separate article about
+  [Pattern Matching in Ruby](/ruby-pattern-matching "Pattern Matching in Ruby basics")
+  some time ago.
+  Now it's the time to go deeper into the Pattern Matching news.
+  So let's get started!
 layout: post
 photo: /images/pattern-matching/pattern-matching
 title: Second look at pattern matching in Ruby
@@ -11,7 +22,7 @@ lang: en
 last_modified_at: 2022-01-19 16:00:00 +0200
 ---
 
-Sometimes I like new changes, new features, or improvements in Ruby and sometimes not. Today I would like to tell you more about the changes that I'm very excited about. I mean the **Pattern Matching**. I wrote a separate article about <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Pattern Matching in Ruby basics">Pattern Matching in Ruby</a> some time ago. Now it's the time to go deeper into the Pattern Matching news. So let's get started!
+Sometimes I like new changes, new features, or improvements in Ruby and sometimes not. Today I would like to tell you more about the changes that I'm very excited about. I mean the **Pattern Matching**. I wrote a separate article about [Pattern Matching in Ruby]({{site.baseurl}}/ruby-pattern-matching "Pattern Matching in Ruby basics") some time ago. Now it's the time to go deeper into the Pattern Matching news. So let's get started!
 
 ### 1. One-line Pattern Matching
 
@@ -452,8 +463,7 @@ instead, you need to do:
 That's all that I have today for you. Do you know more pattern matching tricks and tips? Share them in the comment below.
 
 ### Bibliography
-- <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Pattern Matching in Ruby basics">Patter Matching in Ruby</a>
-- <a href="https://docs.ruby-lang.org/en/2.7.0/NEWS.html#label-Pattern+matching" title="News for Ruby 2.7.0" target='_blank' rel='nofollow'>Ruby lang docs - news for Ruby 2.7.0</a>
-- <a href="https://docs.ruby-lang.org/en/master/doc/syntax/pattern_matching_rdoc.html" title="News in Pattern Matching" target='_blank' rel='nofollow'>Ruby lang docs - news for Pattern Matching</a>
-- <a href="https://blog.saeloun.com/2020/08/17/find-pattern-in-pattern-matching" title="Find pattern in pattern matching - Ruby" target='_blank' rel='nofollow'>Ruby introduces find pattern in pattern matching</a>
-
+- [Patter Matching in Ruby]({{site.baseurl}}/ruby-pattern-matching "Pattern Matching in Ruby basics")
+- [Ruby lang docs - news for Ruby 2.7.0](https://docs.ruby-lang.org/en/2.7.0/NEWS.html#label-Pattern+matching "News for Ruby 2.7.0")
+- [Ruby lang docs - news for Pattern Matching](https://docs.ruby-lang.org/en/master/doc/syntax/pattern_matching_rdoc.html "News in Pattern Matching")
+- [Ruby introduces find pattern in pattern matching](https://blog.saeloun.com/2020/08/17/find-pattern-in-pattern-matching "Find pattern in pattern matching - Ruby")

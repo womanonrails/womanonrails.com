@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  When you are web developer,
+  sometimes you need to do a screenshot of your work.
+  In most cases, you just use the `Print Screen` key for that.
+  Then, of course when you use Linux operating system,
+  you open a graphic editor like GIMP to cut an important part.
+  Or maybe you need to do a screenshot of the entire website?
+  Then you use a couple of times `Print Screen`,
+  or you use some extension in the browser.
+  But there is an easier way to do that.
+  You can use a screenshot built in your browser.
+  Let's check out how to do that.
 layout: post
 photo: /images/screenshot-in-the-browser/screenshot-in-the-browser
 title: Screenshot directly in the browser

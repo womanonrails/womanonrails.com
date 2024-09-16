@@ -1,4 +1,23 @@
 ---
+excerpt: >
+  As developers, we are often talking about high-level architecture.
+  I mean DDD, hexagonal architecture, and so on.
+  We want to introduce those concepts to our project.
+  We want to do that now!
+  The new concept, new architecture, new language, new framework.
+  We fall into a trap.
+  Technical news is for us like drugs.
+  We want more and more.
+  And we don't think about the consequences.
+  The goal is noble.
+  We want to have a good quality project
+  which can easily adjust to new requirements.
+  Unfortunately, the way we do that is not always the best.
+  We need evolution, not revolution.
+  We need small, conscious steps.
+  Today I would like to discuss one of those kinds of steps.
+  Very important and also very hard.
+  I would like to talk with you about **naming thing**.
 layout: post
 photo: /images/names-have-meaning/names-have-meaning
 title: 'Names have meaning: 13&nbsp;ideas on how to improve names in the project'

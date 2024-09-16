@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  There was a very simple code to implemented.
+  It brings me a lot of fun when I started the research.
+  I had an array of different objects and
+  I wanted to join them into one string in a special way.
+  An important question here was:
+  **How objects will look like after casting into a string?**
+  The answer was short - good ;)
+  But this is not the clue of this article.
+  The most important question is:
+  **Why objects are cast into string in this way?**
+  Here is what I discover during my research.
 layout: post
 photo: /images/casting-ruby-object-into-string/chain-to_s-vs-to_str
 title: How Ruby casts object into a string?
@@ -10,7 +22,7 @@ lang: en
 imagefeature: casting-ruby-object-into-string/og_image-to_s-vs-to_str.png
 ---
 
-There was a very simple code to implemented. It brings me a lot of fun when I started the research. I had an array of different objects and I wanted to join them into one string in a special way. An important question here was: **How objects will look like after casting into a string?** The answer was short - good ;) But this is not the clue of this article. The most important question is: **Why objects are cast into string in this way?**  Here is what I discover during my research.
+There was a very simple code to implemented. It brings me a lot of fun when I started the research. I had an array of different objects and I wanted to join them into one string in a special way. An important question here was: **How objects will look like after casting into a string?** The answer was short - good ;) But this is not the clue of this article. The most important question is: **Why objects are cast into string in this way?** Here is what I discover during my research.
 
 ## Casting objects into a string
 
