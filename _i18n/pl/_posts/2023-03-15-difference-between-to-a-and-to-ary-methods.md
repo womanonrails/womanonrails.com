@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  Czy zastanawialiście się kiedyś nad metodami `to_a` i `to_ary` w Ruby?
+  Czy to w zasadzie dwie nazwy na tą samą metodę?
+  A może jest między nimi jakaś różnica?
+  Co jeżeli zaimplementujemy te metody w naszej własnej klasie?
+  W tym artykule postaram się odpowiedzieć na te pytania. Zaczynamy!
 layout: post
 photo: /images/ruby-to-ary/ruby-to-ary
 title: Różnice między to_a i to_ary w Ruby
@@ -12,7 +18,7 @@ lang: pl
 
 Czy zastanawialiście się kiedyś nad metodami `to_a` i `to_ary` w Ruby? Czy to w zasadzie dwie nazwy na tą samą metodę? A może jest między nimi jakaś różnica? Co jeżeli zaimplementujemy te metody w naszej własnej klasie? W tym artykule postaram się odpowiedzieć na te pytania. Zaczynamy!
 
-Na początek zacznijmy od definicji metod `to_a` i `to_ary` w klasie `Array`, jakie możemy znaleźć w dokumentacji <a href='https://ruby-doc.org/current/Array.html#method-i-to_a' title='Dokumentacja Ruby' target='_blank' rel='nofollow'>Ruby Doc</a>:
+Na początek zacznijmy od definicji metod `to_a` i `to_ary` w klasie `Array`, jakie możemy znaleźć w dokumentacji [Ruby Doc](https://ruby-doc.org/current/Array.html#method-i-to_a "Dokumentacja Ruby"):
 
 >`to_a` - Kiedy  `self` jest instancją klasy `Array`, zwróć `self`. W przeciwnym wypadku, zwróć nowy obiekt klasy `Array` zawierający elementy z `self`.
 
@@ -81,7 +87,7 @@ Jako następny krok sprawdźmy, co się dzieje gdy użyjemy `each` na kolekcji p
 
 W pierwszym przykładzie nie dzieje się nic szczególnego. Po prostu iterujemy przez kolekcję punktów. Natomiast w drugim przykładzie widzimy, że została wywołana metoda `to_ary`. Stało się tak dlatego, że podobnie jak powyżej i tym razem przypisaliśmy obiekt klasy `Point` do dwóch zmiennych. Warto tu wspomnieć, że w implementacji klasy `Point` koordynaty punktu są prywatne, a dzięki metodzie `to_ary` możemy się do nich w łatwy sposób dostać podczas używania metody `each`.
 
-Jakiś czas temu napisałam artykuł o tym <a href="{{ site.baseurl }}/casting-ruby-object-into-string" title="Różnice między metodami to_s i to_str">jak Ruby rzutuje obiekty na łańcuchy znaków</a>, w którym opisywałam jak zachowuje się metoda `puts` dla obiektów typu `Array`. Zobaczmy co się stanie w przypadku klasy `Point`, która ma się zachowywać podobnie do `Array`.
+Jakiś czas temu napisałam artykuł o tym [jak Ruby rzutuje obiekty na łańcuchy znaków]({{site.baseurl}}/casting-ruby-object-into-string "Różnice między metodami to_s i to_str"), w którym opisywałam jak zachowuje się metoda `puts` dla obiektów typu `Array`. Zobaczmy co się stanie w przypadku klasy `Point`, która ma się zachowywać podobnie do `Array`.
 
 ```ruby
 puts point
@@ -180,6 +186,6 @@ Metoda `flatten` wywoła metodę `to_ary` na każdym elemencie tablicy. Zachęca
 5. Metody `flatten` i `join` będą się zachowywać podobnie jak `puts`. Jeżeli w obiekcie będzie zaimplementowana metoda `to_ary` to z niej skorzystają.
 
 ## Linki
-- <a href="{{ site.baseurl }}/casting-ruby-object-into-string" title="Różnice między metodami to_s i to_str">Jak Ruby rzutuje obiekty na łańcuchy znaków?</a>
-- <a href='https://ruby-doc.org/current/Array.html#method-i-to_a' title='Dokumentacja Ruby dla klasy Array' target='_blank' rel='nofollow'>Array Ruby Doc - EN</a>
-- <a href='https://stackoverflow.com/questions/9467395/whats-the-difference-between-to-a-and-to-ary' title='Wątek na Stack Overflow na temat method to_a i to_ary' target='_blank' rel='nofollow'>What's the difference between to_a and to_ary? - Stack Overflow - EN</a>
+- [Jak Ruby rzutuje obiekty na łańcuchy znaków?]({{site.baseurl}}/casting-ruby-object-into-string "Różnice między metodami to_s i to_str")
+- [Array Ruby Doc - EN](https://ruby-doc.org/current/Array.html#method-i-to_a "Dokumentacja Ruby dla klasy Array")
+- [What's the difference between to_a and to_ary? - Stack Overflow - EN](https://stackoverflow.com/questions/9467395/whats-the-difference-between-to-a-and-to-ary "Wątek na Stack Overflow na temat method to_a i to_ary")
