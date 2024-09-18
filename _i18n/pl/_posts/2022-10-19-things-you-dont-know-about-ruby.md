@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Od czasu do czasu zdarza mi się usłyszeć od innych
+  w trakcje programowania _To naprawdę działa w Ruby?_
+  albo _Nie wiedziałam/nie wiedziałem, że to tak działa_.
+  W końcu zrozumiałam, że to co dla mnie jest czymś normalnym,
+  inne osoby niekoniecznie znają.
+  Dziś chciałabym się podzielić kilkoma takimi smaczkami z języka Ruby,
+  o których nie wszyscy wiedzą. Mam nadzieję, że Ci się spodobają.
 layout: post
 photo: /images/ruby-tricks/ruby-tricks
 title: Rzeczy, których nie wiesz o języku Ruby
@@ -104,7 +112,7 @@ array.tap { |a| a += [4, 5, 6] }
 # => [1, 2, 3]
 ```
 
-Co właściwie się tu stało? By dobrze to zrozumieć zacznijmy od zapoznania się z definicją metody `tap` z <a href="https://ruby-doc.org/core-2.6.1/Object.html#method-i-tap" title="Ruby documentation Object#tap" target='_blank' rel='nofollow'>dokumentacji</a> Rubiego:
+Co właściwie się tu stało? By dobrze to zrozumieć zacznijmy od zapoznania się z definicją metody `tap` z [dokumentacji](https://ruby-doc.org/core-2.6.1/Object.html#method-i-tap "Ruby documentation Object#tap") Rubiego:
 
 > `tap` - Yields `self` to the `block`, and then returns `self`. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
 
@@ -138,7 +146,7 @@ array.object_id
 
 Jak widać metoda `concat` zwraca ten sam obiekt, który był na początku. Podsumowując metoda `concat` **dołącza** do już istniejącego obiektu dodatkowe elementy. Natomiast metoda `+=` **tworzy nowy obiekt** zawierający wszystkie elementy (te początkowe i te dodane późnej).
 
-Na koniec chciałabym dodać, że jeżeli chcemy otrzymać ten sam efekt jaki otrzymujemy przy użyciu `concat` i `tap` dla `+=` możemy użyć innej metody a dokładnie metody `then`. Sprawdzając jej definicję w <a href="https://ruby-doc.org/core-2.6.1/Object.html#method-i-then" title="Ruby documentation Object#then" target='_blank' rel='nofollow'>dokumentacji</a> otrzymujemy:
+Na koniec chciałabym dodać, że jeżeli chcemy otrzymać ten sam efekt jaki otrzymujemy przy użyciu `concat` i `tap` dla `+=` możemy użyć innej metody a dokładnie metody `then`. Sprawdzając jej definicję w [dokumentacji](https://ruby-doc.org/core-2.6.1/Object.html#method-i-then "Ruby documentation Object#then") otrzymujemy:
 
 > `then` - Yields `self` to the `block` and returns the result of the `block`.
 
@@ -231,13 +239,13 @@ it 'calls DeliverCheckInInstructionsForProperty service for properties ' \
 end
 ```
 
-Teraz ważne pytanie: **Dlaczego to działa?** Z tego, co udało mi się ustalić, to funkcjonalność ta jest związana z <a href="https://github.com/ruby/ruby/blob/eab191040e9356a8ed4aaa418a7904d6f94064b9/parse.y#L3889-L3891" title="Kod źródłowy Rubiego: tCHAR" target='_blank' rel='nofollow'>kodem źródłowym języka Ruby</a> dla `parse.y`. Bazując na odpowiedzi z <a href="https://stackoverflow.com/a/23811744" title="Stack Overflow - Why do two strings separated by space concatenate in Ruby?" target='_blank' rel='nofollow'>Stack Overflow</a> mamy:
+Teraz ważne pytanie: **Dlaczego to działa?** Z tego, co udało mi się ustalić, to funkcjonalność ta jest związana z [kodem źródłowym języka Ruby](https://github.com/ruby/ruby/blob/eab191040e9356a8ed4aaa418a7904d6f94064b9/parse.y#L3889-L3891 "Kod źródłowy Rubiego: tCHAR") dla `parse.y`. Bazując na odpowiedzi z [Stack Overflow](https://stackoverflow.com/a/23811744 "Stack Overflow - Why do two strings separated by space concatenate in Ruby?") mamy:
 
 > A Ruby string is either a `tCHAR` (e.g. `?q`), a `string1` (e.g. `"q"`, `'q'`, or `%q{q}`), or a recursive definition of the concatenation of `string1` and `string` itself, which results in string expressions like `"foo" "bar"`, `'foo' "bar"` or `?f "oo" 'bar'` being concatenated.
 
 ## 6. Tworzenie obiektu Hash z domyślnymi wartościami
 
-Na temat obiektu `Hash` napisałam osobny artykuł <a href="{{ site.baseurl }}/ruby-hash-tips" title="Ruby - przegląd metod dla obiektu Hash">Triki dla obiektu Hash w Ruby</a>, gdzie podaję więcej szczegółów. Tutaj chciałabym się skupić na dwóch zastosowaniach domyślnej wartości.
+Na temat obiektu `Hash` napisałam osobny artykuł [Triki dla obiektu Hash w Ruby]({{site.baseurl}}/ruby-hash-tips "Ruby - przegląd metod dla obiektu Hash"), gdzie podaję więcej szczegółów. Tutaj chciałabym się skupić na dwóch zastosowaniach domyślnej wartości.
 
 Po pierwsze, możemy ustawić jedną i tą samą wartość dla wszystkich kluczy. To zastosowanie przydaje się gdy chcemy coś zliczać.
 
@@ -272,7 +280,7 @@ hash[35]
 
 ## 7. Użycie obiektu `proc` w `case`
 
-`proc` to jedna z klas w języku Ruby, która pomaga nam w <a href="{{ site.baseurl }}/functional-programming-ruby" title="Programowanie funkcjyjne w języku Ruby">programowaniu funkcyjnym</a>. Jedno z ciekawych zastosowań obiektu `proc`, to użycie go w warunku `when` dla `case`. Możemy stworzyć `proc` i wstawić go bezpośrednio w `when`. A oto przykład:
+`proc` to jedna z klas w języku Ruby, która pomaga nam w [programowaniu funkcyjnym]({{site.baseurl}}/functional-programming-ruby "Programowanie funkcjyjne w języku Ruby"). Jedno z ciekawych zastosowań obiektu `proc`, to użycie go w warunku `when` dla `case`. Możemy stworzyć `proc` i wstawić go bezpośrednio w `when`. A oto przykład:
 
 ```ruby
 payload_1 = {
@@ -313,7 +321,7 @@ payload_object(payload_3)
 
 ## 8. Wywołanie metody na różne sposoby
 
-Ruby to naprawdę fantastyczny język. Daje nam duże możliwości. Przykładem tego może być możliwość wywołania metody na wiele różnych sposobów. Jeżeli interesuje Cię ile jest takich możliwości, to zachęcam Cię do zapoznania się z artykułem Grzegorza Witka <a href="https://www.notonlycode.org/12-ways-to-call-a-method-in-ruby/" title="12 ways to call a method in Ruby" target='_blank' rel='nofollow'>12 ways to call a method in Ruby</a>. Ja chciałabym podzielić się jeszcze dwoma dodatkowymi sposobami na wywołanie metody. Zastosuje do tego ten sam przykład, który w swoim artykule umieścił Grzegorz.
+Ruby to naprawdę fantastyczny język. Daje nam duże możliwości. Przykładem tego może być możliwość wywołania metody na wiele różnych sposobów. Jeżeli interesuje Cię ile jest takich możliwości, to zachęcam Cię do zapoznania się z artykułem Grzegorza Witka [12 ways to call a method in Ruby](https://www.notonlycode.org/12-ways-to-call-a-method-in-ruby/ "12 ways to call a method in Ruby"). Ja chciałabym podzielić się jeszcze dwoma dodatkowymi sposobami na wywołanie metody. Zastosuje do tego ten sam przykład, który w swoim artykule umieścił Grzegorz.
 
 ```ruby
 class User
@@ -331,7 +339,7 @@ class User
 end
 ```
 
-Pierwszy sposób odkryłam oglądając prezentacje z RailsConf 2022 <a href="https://www.youtube.com/watch?v=VPXHclib7X4" title="RailsConf 2022 - Ruby Archaeology by Nick Schwaderer" target='_blank' rel='nofollow'>Ruby Archaeology by Nick Schwaderer</a>:
+Pierwszy sposób odkryłam oglądając prezentacje z RailsConf 2022 [Ruby Archaeology by Nick Schwaderer](https://www.youtube.com/watch?v=VPXHclib7X4 "RailsConf 2022 - Ruby Archaeology by Nick Schwaderer"):
 
 ```ruby
 user = User.new('Agnieszka')
@@ -351,4 +359,4 @@ user = User.new('Agnieszka')
 # => nil
 ```
 
-Jeżeli chcesz dowiedzieć się więcej na temat obiektu `proc` i metody `===`, to zachęcam Cię do zapoznania się z moim artykułem na temat <a href="{{ site.baseurl }}/functional-programming-ruby" title="Programowanie funkcyjne w języku Ruby">programowania funkcyjnego</a>.
+Jeżeli chcesz dowiedzieć się więcej na temat obiektu `proc` i metody `===`, to zachęcam Cię do zapoznania się z moim artykułem na temat [programowania funkcyjnego]({{site.baseurl}}/functional-programming-ruby "Programowanie funkcyjne w języku Ruby").

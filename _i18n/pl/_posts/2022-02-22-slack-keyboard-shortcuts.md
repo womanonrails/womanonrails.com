@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Często powtarzam słowa: _Przedwczesna optymalizacja to źródło wszelkiego zła_
+  i całkowicie się z nimi zgadzam.
+  Nie zmienia to faktu, że dziś chciałabym poruszyć temat optymalizacji
+  (ale nie przedwczesnej).
+  **Optymalizacja środowiska pracy**,
+  czy mówiąc inaczej **efektywność** jest bardzo ważna.
+  Kto nie chciałby pracować szybciej i mieć więcej wolnego czasu dla siebie?
+  Ja na pewno tak.
+  Z tego właśnie powodu dziś podzielę się z Tobą komendami
+  i skrótami klawiszowymi przyśpieszającymi pracę z narzędziem **Slack**.
 layout: post
 photo: /images/slack-keyboard-shortcuts/slack-keyboard-shortcuts
 title: Slack - narzędzie do komunikacji w zespole
@@ -12,7 +23,7 @@ lang: en
 
 Często powtarzam słowa: _Przedwczesna optymalizacja to źródło wszelkiego zła_ i całkowicie się z nimi zgadzam. Nie zmienia to faktu, że dziś chciałabym poruszyć temat optymalizacji (ale nie przedwczesnej). **Optymalizacja środowiska pracy**, czy mówiąc inaczej **efektywność** jest bardzo ważna. Kto nie chciałby pracować szybciej i mieć więcej wolnego czasu dla siebie? Ja na pewno tak. Z tego właśnie powodu dziś podzielę się z Tobą komendami i skrótami klawiszowymi przyśpieszającymi pracę z narzędziem **Slack**.
 
-W moich poprzednich artykułach mówiłam już o efektywnym korzystaniu z takich narzędzi jak: <a href="{{ site.baseurl }}/guake-terminal" title="Guake - podręczny terminal">Guake</a>, <a href="{{ site.baseurl }}/visual-studio-code" title="Skróty klawiszowe w Visual Studio Code">VS Code<a>, <a href="{{ site.baseurl }}/sublime" title="Skróty klawiszowe w Sublime Text Editor">Sublime Text Editor</a> czy nawet <a href="{{ site.baseurl }}/kategoria/git" title="Git - porady i wskazówki">Git</a>. Teraz nadszedł czas na komunikator **Slack**. Slack jest narzędziem często wykorzystywanym w komunikacji zespołowej. Ponieważ praca zdalna staje się coraz bardziej popularna, to tym większe jest znaczenie sprawnego posługiwania się takim narzędziem jak Slack. Ja skupię się na dwóch rzeczach: przydatnych komendach i skrótach klawiszowych.
+W moich poprzednich artykułach mówiłam już o efektywnym korzystaniu z takich narzędzi jak: [Guake]({{site.baseurl}}/guake-terminal "Guake - podręczny terminal"), [VS Code]({{site.baseurl}}/visual-studio-code "Skróty klawiszowe w Visual Studio Code"), [Sublime Text Editor]({{site.baseurl}}/sublime "Skróty klawiszowe w Sublime Text Editor") czy nawet [Git]({{site.baseurl}}/kategoria/git "Git - porady i wskazówki"). Teraz nadszedł czas na komunikator **Slack**. Slack jest narzędziem często wykorzystywanym w komunikacji zespołowej. Ponieważ praca zdalna staje się coraz bardziej popularna, to tym większe jest znaczenie sprawnego posługiwania się takim narzędziem jak Slack. Ja skupię się na dwóch rzeczach: przydatnych komendach i skrótach klawiszowych.
 
 ## Slack - komendy
 
