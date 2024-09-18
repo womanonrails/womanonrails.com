@@ -24,7 +24,7 @@ imagefeature: dynamic-yaml-configuration/og_image.png
 lang: pl
 ---
 
-Od czasu do czasu programując w języku Ruby, a nawet częściej używając frameworka Ruby on Rails, potrzebuję stworzyć plik konfiguracyjny zawierający na przykład prywatne klucze do API. Oczywiście nie chcę tych danych śledzić w <a href="{{ site.baseurl }}/what-is-git" title="Wstęp do rozproszonego systemu kontroli wersji Git">systemie kontroli wersji</a>. Natomiast na dodanie ich do bazy danych jest jeszcze za wcześnie. W takiej sytuacji mogą pomóc zmienne środowiskowe zapisane w pliku `.env`. W tym przypadku jest jeszcze jeden mały haczyk. Chciałam by wszystkie dane były ustrukturyzowane w jednym pliku. Dlatego też użyłam kombinacji pliku YAML (akronim rekurencyjny od ang. _YAML Ain’t Markup Language_) ze zmiennymi środowiskowymi i ERB (Embedded Ruby). Oto jak wygląda to rozwiązanie.
+Od czasu do czasu programując w języku Ruby, a nawet częściej używając frameworka Ruby on Rails, potrzebuję stworzyć plik konfiguracyjny zawierający na przykład prywatne klucze do API. Oczywiście nie chcę tych danych śledzić w [systemie kontroli wersji]({{site.baseurl}}/what-is-git "Wstęp do rozproszonego systemu kontroli wersji Git"). Natomiast na dodanie ich do bazy danych jest jeszcze za wcześnie. W takiej sytuacji mogą pomóc zmienne środowiskowe zapisane w pliku `.env`. W tym przypadku jest jeszcze jeden mały haczyk. Chciałam by wszystkie dane były ustrukturyzowane w jednym pliku. Dlatego też użyłam kombinacji pliku YAML (akronim rekurencyjny od ang. _YAML Ain’t Markup Language_) ze zmiennymi środowiskowymi i ERB (Embedded Ruby). Oto jak wygląda to rozwiązanie.
 
 Do pliku YAML wpisałam konfigurację potrzebną do obsługi dwóch kont Stripe.
 

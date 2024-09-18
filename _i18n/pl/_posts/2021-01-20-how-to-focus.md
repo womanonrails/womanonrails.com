@@ -56,7 +56,7 @@ Używam Ubuntu w wydaniach LTS (Long Term Support) z nakładką Ambiance, gdzie 
 3. Edytor tekstowy (VS Code)
 4. Komunikator (Slack)
 
-Możesz zapytać: _A gdzie Twoja konsola?_ Jako konsoli używam <a href="{{ site.baseurl }}/guake-terminal" title="Guake Terminal - podstawy użytkowania">terminala Guake</a>. To bardzo przydatne narzędzie. Pokazuje i chowa terminal za pomocą jednego klawisza `F12` na dowolnym pulpicie. Właśnie tam gdzie go w danym momencie potrzebuję. Dodatkowo chciałabym tu jeszcze zaznaczyć, że nie używam dodatkowego ekranu. Korzystam tylko z samego laptopa. Zauważyłam, że dodatkowy monitor bardziej mnie rozprasza niż pomaga się skupić.
+Możesz zapytać: _A gdzie Twoja konsola?_ Jako konsoli używam [terminala Guake]({{site.baseurl}}/guake-terminal "Guake Terminal - podstawy użytkowania"). To bardzo przydatne narzędzie. Pokazuje i chowa terminal za pomocą jednego klawisza `F12` na dowolnym pulpicie. Właśnie tam gdzie go w danym momencie potrzebuję. Dodatkowo chciałabym tu jeszcze zaznaczyć, że nie używam dodatkowego ekranu. Korzystam tylko z samego laptopa. Zauważyłam, że dodatkowy monitor bardziej mnie rozprasza niż pomaga się skupić.
 
 ### 5. Wyzwalacze (trigery) pracy
 
@@ -77,7 +77,7 @@ Wprowadzenie sobie dodatkowego zestawu zasad obowiązujących podczas pracy, te�
 - Dzień pracy zaczynam jak najwcześniej. Optymalna jest dla mnie 7:00 rano.
 - Porządkuję swoje stanowisko w trakcie pracy. Usuwam pojawiające się w ciągu dnia papiery, książki itd. Sprawdzam moją listę TODO i usuwam wszystkie zadania już zrealizowane. Zamykam niepotrzebne zakładki w przeglądarce czy edytorze tekstowym. W większości przypadków w przeglądarce wystarcza mi time tracker, zdalne repozytorium, bug tracker i CI (Continuous Integration). No może jeszcze czasem uruchomiona aplikacja.
 - Dzielę edytor tekstowy na dwie części. W jednej mam kod, a w drugiej testy do tego kodu.
-- Staram się jak najrzadziej przełączać kontekst. Jedno zadanie w jednym momencie. Grupuję zadania do siebie podobne lub jakoś ze sobą połączone. Przełączanie kontekstu dotyczy też używania na zmianę klawiatury i myszki. Tu z pomocą przychodzą <a href="{{ site.baseurl }}/visual-studio-code" title="Przydatne skróty klawiszowe dla edytora VSCode">skróty klawiszowe</a>.
+- Staram się jak najrzadziej przełączać kontekst. Jedno zadanie w jednym momencie. Grupuję zadania do siebie podobne lub jakoś ze sobą połączone. Przełączanie kontekstu dotyczy też używania na zmianę klawiatury i myszki. Tu z pomocą przychodzą [skróty klawiszowe]({{site.baseurl}}/visual-studio-code "Przydatne skróty klawiszowe dla edytora VSCode").
 - Nie sprawdzam wiadomości e-mail przed południem.
 - **Zasada 5 minut** - jeśli coś zajmuje mniej niż 5 minut, warto to zrobić od razu. To może być ustawienie spotkania w kalendarzu, mała przekąska czy ustawienie nowego zadania na jutro.
 - Po zakończeniu pracy tworzę listę zadań na następny dzień z uwzględnieniem priorytetów. To pozwala mi zaoszczędzić dużo czasu z rana, który normalnie poświęciłabym na przypomnienie sobie co robiłam wczoraj i od czego powinnam zacząć nowy dzień. A tak po prostu otwieram moją listę i widzę czym mam się zająć w pierwszej kolejności.

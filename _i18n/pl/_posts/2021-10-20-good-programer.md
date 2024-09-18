@@ -1,4 +1,21 @@
 ---
+excerpt: >
+  Często dostaję pytanie:
+  _Co mam zrobić by stać się programistką/programistą?_
+  Oczekiwana odpowiedź to: przeczytaj tę książkę,
+  naucz się tej technologii, zrób ten kurs.
+  Osoby pytające chciałyby poznać prostą odpowiedź.
+  Jak zrobisz to, to będziesz programistką/programistą.
+  Niestety to nie takie proste.
+  Oczywiście można skończyć studia informatyczne (ja tak zrobiłam),
+  by czuć się w programowaniu pewniej,
+  jednak studia nie są gwarancją bycia dobrą programistką lub programistą.
+  Programowanie to jedna z tych dziedzin,
+  które wymagają od nas ciągłego doskonalenia umiejętności,
+  uczenia się nowych rzeczy i nowego spojrzenia na różne problemy.
+  Myślę jednak, że są pewne uniwersalne umiejętności,
+  które moim zdaniem przydają się przy pracy z kodem.
+  Chciałabym się nimi z Tobą podzielić.
 layout: post
 photo: /images/programmers-skills/programmers-skills
 title: Umiejętności przydatne w programowaniu
@@ -14,7 +31,7 @@ Często dostaję pytanie: _Co mam zrobić by stać się programistką/programist
 
 ## Dokładność
 
-Jak już wpada się w wir pracy, to zawsze jest coś do zrobienia. Wszystko jest ważne, ma wysoki priorytet. To powoduje, że robimy za dużo rzeczy w tym samym czasie. Utrudnia nam to <a href="{{ site.baseurl }}/how-to-focus" title="Jak się skupić?">skupienie</a> i źle wpływa na jakość wykonywanego zadania. Nowe funkcjonalności nie są do końca zrobione lub koncentrujemy się tylko na głównej ścieżce (happy path) nie uwzględniając np. błędów. Warto się tutaj zatrzymać. Kiedy zaczynamy robić jakieś zadanie, to 100% naszego skupienia powinno być właśnie na nim, od początku do końca. To my odpowiadamy za jego dobre wykonanie. Pomocna może się okazać lista TODO, czyli lista rzeczy, które należy sprawdzić, uwzględnić przed zakończeniem zadania. Część z tych rzeczy będzie wspólna dla wielu zadań. Inne będą bardzo specyficzne dla konkretnego problemu. By ułatwić sobie pracę możemy odpowiedzieć na następujące pytania:
+Jak już wpada się w wir pracy, to zawsze jest coś do zrobienia. Wszystko jest ważne, ma wysoki priorytet. To powoduje, że robimy za dużo rzeczy w tym samym czasie. Utrudnia nam to [skupienie]({{site.baseurl}}/how-to-focus "Jak się skupić?") i źle wpływa na jakość wykonywanego zadania. Nowe funkcjonalności nie są do końca zrobione lub koncentrujemy się tylko na głównej ścieżce (happy path) nie uwzględniając np. błędów. Warto się tutaj zatrzymać. Kiedy zaczynamy robić jakieś zadanie, to 100% naszego skupienia powinno być właśnie na nim, od początku do końca. To my odpowiadamy za jego dobre wykonanie. Pomocna może się okazać lista TODO, czyli lista rzeczy, które należy sprawdzić, uwzględnić przed zakończeniem zadania. Część z tych rzeczy będzie wspólna dla wielu zadań. Inne będą bardzo specyficzne dla konkretnego problemu. By ułatwić sobie pracę możemy odpowiedzieć na następujące pytania:
 - Czy ta funkcjonalność robi dokładnie to co powinna?
 - Czy kod jest sprawdzony? (Code review)
 - Czy funkcjonalność jest przetestowana? (testy automatyczne, QA)
@@ -36,7 +53,7 @@ Kiedy pojawia się problem, umiejętność poradzenia sobie z nim samodzielnie t
 
 ## Komunikacja
 
-To duży temat, zwłaszcza w zespołach pracujących zdalnie. Cel to komunikować się pro-aktywnie. Innymi słowy: _Tell, don't ask._ Mów co się dzieje tak by inni nie musieli pytać, by mieli już tą informację. Podsumuj co zrobiłaś danego dnia, opisz jakie były problemy, na co trzeba zwrócić uwagę. Umieść to w jednej dłuższej opisowej wiadomości, zamiast w 10 mniejszych. To znacznie mniej rozprasza innych podczas pracy. W takiej wiadomości, nie musisz się rozdrabniać, ale warto zaznaczyć ogólny wygląd sytuacji. Jednak komunikacja to nie tylko wiadomości, to też sposób w jaki piszemy kod, jaką mamy <a href="{{ site.baseurl }}/names-have-meaning" title="Jak tworzyć lepsze nazwy w kodzie?">konwencję nazewniczą</a>, jak używamy git-a, jak opisujemy Pull Request, zadania, problemy czy błędy. Istotne jest to, by opisywać rzeczy tak, że nawet po kilku miesiącach czy latach wiemy o co chodziło. Czytasz opis i nie potrzebujesz pytać o dodatkowe informacje.
+To duży temat, zwłaszcza w zespołach pracujących zdalnie. Cel to komunikować się pro-aktywnie. Innymi słowy: _Tell, don't ask._ Mów co się dzieje tak by inni nie musieli pytać, by mieli już tą informację. Podsumuj co zrobiłaś danego dnia, opisz jakie były problemy, na co trzeba zwrócić uwagę. Umieść to w jednej dłuższej opisowej wiadomości, zamiast w 10 mniejszych. To znacznie mniej rozprasza innych podczas pracy. W takiej wiadomości, nie musisz się rozdrabniać, ale warto zaznaczyć ogólny wygląd sytuacji. Jednak komunikacja to nie tylko wiadomości, to też sposób w jaki piszemy kod, jaką mamy [konwencję nazewniczą]({{site.baseurl}}/names-have-meaning "Jak tworzyć lepsze nazwy w kodzie?"), jak używamy git-a, jak opisujemy Pull Request, zadania, problemy czy błędy. Istotne jest to, by opisywać rzeczy tak, że nawet po kilku miesiącach czy latach wiemy o co chodziło. Czytasz opis i nie potrzebujesz pytać o dodatkowe informacje.
 
 ## Dociekliwość
 
@@ -49,11 +66,11 @@ Nic w programowaniu nie działa magicznie. Na wszystko jest wytłumaczenie, cho�
 #### Dodatkowe przydatne umiejętności
 
 Na koniec, chciałabym podzielić się jeszcze kilkoma wskazówkami, które mogą pomóc Ci w podszkoleniu programistycznych umiejętności:
-- <a href="{{ site.baseurl }}/what-is-git" title="Czym jest Git?">Nauka narzędzia Git</a> - Git to bardzo przydatne narzędzie, pozwalające przechowywać Ci całą historię zmian Twojego projektu. Umiejętność posługiwania się tym narzędziem może znacznie przyśpieszyć Twoją pracę. Jeżeli chcesz dowiedzieć się więcej o narzędziu Git, polecam moją <a href="{{ site.baseurl }}/kategoria/git" title="Artykuły na temat narzędzia Git">serie artykułów</a> na ten temat.
-- <a href="{{ site.baseurl }}/tdd-basic" title="Test-Driven Development dla początkujących">Nauka testowania</a> - Wiem, są zespoły w których istnieją całe działy zajmujące się testowaniem oprogramowania. To jednak nie zwalnia Ciebie jako programistki/programisty z pisania własnych testów automatycznych przynajmniej do kodu, który sama piszesz. Testy znacznie przyśpieszają możliwość weryfikacji poprawnego działania systemu już od najmniejszych jego elementów. Takie testy początkowo mogą dokładać dodatkową pracę, ale szybko się zwracają gdy system zaczyna się powiększać.
-- Nauka wzorców projektowych - Posiadanie wiedzy o wzorcach projektowych w znacznym stopniu ułatwia porozumiewanie się w zespole. Daje Wam dodatkowy język, dodatkową warstwę abstrakcji dzięki której szybciej możecie ustalić co dokładnie macie na myśli. Nie musicie wszystkiego wyjaśniać, wystarczy powiedzieć _Użyjmy tutaj <a href="{{ site.baseurl }}/mvc-design-pattern" title="Wprowadzenie do wzorca projektowego Model-View-Controller">MVC</a>_ i wszyscy wiedzą co to oznacza. Wszyscy znający ten wzorzec projektowy.
+- [Nauka narzędzia Git]({{site.baseurl}}/what-is-git "Czym jest Git?") - Git to bardzo przydatne narzędzie, pozwalające przechowywać Ci całą historię zmian Twojego projektu. Umiejętność posługiwania się tym narzędziem może znacznie przyśpieszyć Twoją pracę. Jeżeli chcesz dowiedzieć się więcej o narzędziu Git, polecam moją [serie artykułów]({{site.baseurl}}/kategoria/git "Artykuły na temat narzędzia Git") na ten temat.
+- [Nauka testowania]({{site.baseurl}}/tdd-basic "Test-Driven Development dla początkujących") - Wiem, są zespoły w których istnieją całe działy zajmujące się testowaniem oprogramowania. To jednak nie zwalnia Ciebie jako programistki/programisty z pisania własnych testów automatycznych przynajmniej do kodu, który sama piszesz. Testy znacznie przyśpieszają możliwość weryfikacji poprawnego działania systemu już od najmniejszych jego elementów. Takie testy początkowo mogą dokładać dodatkową pracę, ale szybko się zwracają gdy system zaczyna się powiększać.
+- Nauka wzorców projektowych - Posiadanie wiedzy o wzorcach projektowych w znacznym stopniu ułatwia porozumiewanie się w zespole. Daje Wam dodatkowy język, dodatkową warstwę abstrakcji dzięki której szybciej możecie ustalić co dokładnie macie na myśli. Nie musicie wszystkiego wyjaśniać, wystarczy powiedzieć _Użyjmy tutaj [MVC]({{site.baseurl}}/mvc-design-pattern "Wprowadzenie do wzorca projektowego Model-View-Controller")_ i wszyscy wiedzą co to oznacza. Wszyscy znający ten wzorzec projektowy.
 - Używaj **linterów** - Kiedy zaczynasz programować w nowym języku lub w nowym projekcie, reguły dotyczące formatowania kodu mogą być na początku przytłaczające. Trudno je spamiętać. W takiej sytuacji przydają się lintery. Nie tylko sprawdzą czy nasz kod jest zgodny z przyjętym standardem, ale często potrafią też samodzielnie poprawić formatowanie.
-- Używaj skrótów klawiszowych - to znacznie przyśpieszy Twoją pracę. Zamiast przełączać się z myszki na klawiaturę, z klawiatury na myszkę najważniejsze funkcję będą w zasięgu Twoich palców. Wiele narzędzi posiada swoje własne skróty klawiszowe: przeglądarki, <a href="{{ site.baseurl }}/visual-studio-code" title="Visual Studio Code - skróty klawiszowe">edytory tekstu</a> czy <a href="{{ site.baseurl }}/guake-terminal" title="Guake terminal - skróty klawiszowe">terminale</a>.
+- Używaj skrótów klawiszowych - to znacznie przyśpieszy Twoją pracę. Zamiast przełączać się z myszki na klawiaturę, z klawiatury na myszkę najważniejsze funkcję będą w zasięgu Twoich palców. Wiele narzędzi posiada swoje własne skróty klawiszowe: przeglądarki, [edytory tekstu]({{site.baseurl}}/visual-studio-code "Visual Studio Code - skróty klawiszowe") czy [terminale]({{site.baseurl}}/guake-terminal "Guake terminal - skróty klawiszowe").
 - Popraw swoje środowisko pracy - By przyśpieszyć swoją pracę warto zautomatyzować powtarzalne czynności pisząc własne skrypty czy skróty/aliasy, tak by skupić się na pracy kreatywnej, a nie na automatycznych zadaniach.
 - Zadbaj o swój angielski - Język angielski jest bardzo ważny zwłaszcza w komunikacji. Zazwyczaj dokumentacja, fora czy artykuły związane z IT są napisane właśnie w tym języku. Dodatkowo dobrą praktyką jest utrzymywanie dokumentacji projektu w języku angielskim. To ułatwia wprowadzanie nowych osób do projektu, gdy nie mówią w Twoim języku. Angielski to pewien standard w IT.
 

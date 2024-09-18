@@ -6,7 +6,7 @@ excerpt: >
   Ze względu jednak na rozbieżności dotyczące definicji tych terminów,
   w poniższym artykule przedstawię moje ich zrozumienie.
   Oczywiście będę bazować na wybranych źródłach zamieszczonych w
-  [bibliografii](#bibliografia).
+  [bibliografii](/pl/test-doubles#bibliografia).
 layout: post
 photo: /images/test-doubles/test-doubles
 title: Czym różni się stub od mocka?
@@ -18,9 +18,9 @@ imagefeature: test-doubles/og_image-test-doubles.png
 lang: en
 ---
 
-W świecie testów istnieje wiele pojęć takich jak **stub**, **mock** czy **dummy object**. Może to być niejasne i mylące, co czym jest i gdzie tego należy użyć. Chcę usystematyzować te pojęcia w bardziej przystępny sposób. Ze względu jednak na rozbieżności dotyczące definicji tych terminów, w poniższym artykule przedstawię moje ich zrozumienie. Oczywiście będę bazować na wybranych źródłach zamieszczonych w <a href="#bibliografia">bibliografii</a>.
+W świecie testów istnieje wiele pojęć takich jak **stub**, **mock** czy **dummy object**. Może to być niejasne i mylące, co czym jest i gdzie tego należy użyć. Chcę usystematyzować te pojęcia w bardziej przystępny sposób. Ze względu jednak na rozbieżności dotyczące definicji tych terminów, w poniższym artykule przedstawię moje ich zrozumienie. Oczywiście będę bazować na wybranych źródłach zamieszczonych w [bibliografii](#bibliografia).
 
-Zacznijmy od początku. Ogólnym pojęciem jest **test double**. Jest to termin określający dowolny obiekt użyty w celu testowania oprogramowania, który ma zastąpić prawdziwy obiekt. Możemy ten obiekt rozumieć jako dublera, jak w filmach. Test double udaje prawdziwy obiekt w trakcie trwania testów. Ze względu na różne cechy i przeznaczenie możemy wyróżnić następujące typy _fałszywych_ obiektów: <a href="#obiekt-dummy">dummy</a>, <a href="#obiekt-fake">fake</a>, <a href="#obiekt-stub">stub</a>, <a href="#obiekt-spy">spy</a> czy <a href="#obiekt-mock">mock</a>. Przejdźmy teraz do szczegółowego zapoznania się z nimi.
+Zacznijmy od początku. Ogólnym pojęciem jest **test double**. Jest to termin określający dowolny obiekt użyty w celu testowania oprogramowania, który ma zastąpić prawdziwy obiekt. Możemy ten obiekt rozumieć jako dublera, jak w filmach. Test double udaje prawdziwy obiekt w trakcie trwania testów. Ze względu na różne cechy i przeznaczenie możemy wyróżnić następujące typy _fałszywych_ obiektów: [dummy](#obiekt-dummy), [fake](#obiekt-fake), [stub](#obiekt-stub), [spy](#obiekt-spy) czy [mock](#obiekt-mock). Przejdźmy teraz do szczegółowego zapoznania się z nimi.
 
 ## Obiekt dummy
 
@@ -194,7 +194,7 @@ RSpec.describe UserDuplicates do
 end
 ```
 
-Uwaga! Jeżeli z jakiegoś powodu przestaniemy używać klasy `TypeOfUserMatch`, ale założenia testu będą spełnione (np. `match_level = :full`), test nam przejdzie. Nie dowiemy się, że klasa `TypeOfUserMatch` nie jest już używana. Ważne by pamiętać o tym. Wrócę do tego trochę później w sekcji dotyczącej obiektu typu <a href="#obiekt-mock">mock</a>.
+Uwaga! Jeżeli z jakiegoś powodu przestaniemy używać klasy `TypeOfUserMatch`, ale założenia testu będą spełnione (np. `match_level = :full`), test nam przejdzie. Nie dowiemy się, że klasa `TypeOfUserMatch` nie jest już używana. Ważne by pamiętać o tym. Wrócę do tego trochę później w sekcji dotyczącej obiektu typu [mock](#obiekt-mock).
 
 Chciałabym tu jeszcze wspomnieć o jednej rzeczy. Gdyby zrobić tu pewne drobne zmiany w kodzie i wykorzystać dependency injection (wstrzyknięcie zależności). Mogłabym skorzystać z innego mechanizmu oferowanego przez RSpec, z `class_double`. Jest to mechanizm podobny do `instance_double`. Oba są bardzo pożyteczne. Sprawdzają czy nasz _fałszywy_ obiekt jest zgodny z interfejsem klasy czy instancji obiektu. Dzięki temu test nie przejdzie w przypadku zmiany nazwy metody lub jej całkowitego usunięcia. Poniżej zamieszczam przykład zawierający `class_double`.
 
@@ -308,7 +308,7 @@ end
 
 W moim rozumieniu obiektu **spy**, jest on pewnym szczególnym przypadkiem obiektu typu stub. Poza zwracaniem określonej wartości może zapamiętać pewne dodatkowe informacje o tym jak został wywołany. Jest to fragment kodu, który przejmuje pewne wywołania skierowane do prawdziwego obiektu i weryfikuje je bez zastępowania całego oryginalnego obiektu. Może to brzmieć bardzo podobnie do obiektu typu fake, ale dla mnie obiekt typu fake jest bardziej transparentną warstwą służącą do uproszczenia środowiska testowego. Natomiast spy to obiekt służący do weryfikacji pewnych informacji. Powiedziałabym, że **celem obiektu typu spy jest pomoc w sprawdzeniu informacji dotyczących prawdziwego obiektu, które są normalnie trudne do weryfikacji**.
 
-Uwaga! W narzędziu RSpec istnieje coś takiego jak metoda **spy**. Moim zdaniem zachowaniem bliżej jej do obiektu typu <a href="#obiekt-mock">mock</a> omówionego poniżej.
+Uwaga! W narzędziu RSpec istnieje coś takiego jak metoda **spy**. Moim zdaniem zachowaniem bliżej jej do obiektu typu [mock](#obiekt-mock) omówionego poniżej.
 
 Przykładowo, gdy chcemy sprawdzić co dzieje się z wiadomością email. Dzięki obiektowi spy możemy dostać informację na temat wysłania wiadomości, ilości wysłanych wiadomości czy nawet o zawartości tej wiadomości.
 
@@ -420,9 +420,9 @@ W mojej opinii stub to obiekt z zakodowaną odpowiedzią. Reprezentuje określon
 - problem z refaktoringiem - skoro w przypadku obiektów mock jesteśmy ściśle związani z implementacją metody/klasy to ciężko może nam być ją zrefaktoryzować bez popsucia testów.
 
 ## Bibliografia
-- <a href="https://martinfowler.com/articles/mocksArentStubs.html" title="Martin Fowler - Mocks Aren't Stubs" target='_blank' rel='nofollow'>Mocks Aren't Stubs - Martin Fowler</a>
-- <a href="https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html" title="Robert C. Martin - The Little Mocker" target='_blank' rel='nofollow'>The Little Mocker - Robert C. Martin</a>
-- <a href="https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub" title="What's the difference between a mock & stub?" target='_blank' rel='nofollow'>What's the difference between a mock & stub?</a>
-- <a href="https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing" title="What's the difference between faking, mocking, and stubbing?" target='_blank' rel='nofollow'>What's the difference between faking, mocking, and stubbing?</a>
-- <a href="https://relishapp.com/rspec/rspec-mocks/docs" title="RSpec Mocks" target='_blank' rel='nofollow'>RSpec Mocks</a>
-- <a href="https://relishapp.com/rspec/rspec-mocks/docs/verifying-doubles" title="RSpec verifying doubles" target='_blank' rel='nofollow'>RSpec verifying doubles</a>
+- [Mocks Aren't Stubs - Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html "Martin Fowler - Mocks Aren't Stubs")
+- [The Little Mocker - Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html "Robert C. Martin - The Little Mocker")
+- [What's the difference between a mock & stub?](https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub "What's the difference between a mock & stub?")
+- [What's the difference between faking, mocking, and stubbing?](https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing "What's the difference between faking, mocking, and stubbing?")
+- [RSpec Mocks](https://rspec.info/documentation/3.13/rspec-mocks/RSpec/Mocks.html "RSpec Mocks")
+- [RSpec verifying doubles](https://rspec.info/documentation/3.13/rspec-mocks/RSpec/Mocks/ExampleMethods.html#instance_double-instance_method "RSpec verifying doubles")

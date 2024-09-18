@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Na początku roku 2021 kupiłam klawiaturę **Logitech G915 TKL**.
+  Klawiatura ta współpracuje z systemem operacyjnym Windows
+  i oprogramowaniem Logitech G Hub.
+  Ma wiele możliwości personalizacji, co trzeba przyznać sprawia frajdę.
+  Problem pojawia się gdy klawiaturę Logitech G915 TKL chce się użyć z Linuxem.
+  Nie działa tam oprogramowanie G Hub.
+  W tym artykule pokaże jak, przynajmniej częściowo,
+  skonfigurować klawiaturę Logitech G915 TKL używając Linuxa, a dokładnie Ubuntu.
 layout: post
 photo: /images/logitech-g915-tkl/logitech-g915-tkl
 title: Klawiatura Logitech G915 TKL używana z Ubuntu
@@ -156,7 +165,7 @@ $ ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboar
 
 Narzędzie `ratbagctl` umożliwia konfigurację też innych opcji, nie tylko podświetlenia. Dlatego zachęcam do zapoznania się z instrukcją. W moim przypadku można ją znaleźć używając polecenia `ratbagctl "Logitech G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard" --help`. Jest tam możliwość konfiguracji profili czy też makr.
 
-**Tip <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-a</a>**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds (więcej na ten temat poniżej):
+**Tip [@yawor-a](https://github.com/yawor "@yawor GitHub page")**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds (więcej na ten temat poniżej):
 
 > Trzeba uważać przy używaniu ratbag. Kiedy ustawia się LEDy za pomocą ratbagctl, to konfiguracja jest zapisywana na onboard flash. Co powoduje nadpisanie istniejących tam profili użytkownika (można nawet wybrać, który z 3 profili chcemy nadpisać). Ja miałem pewne trudności przy ustawianiu niektórych kolorów. Dodatkowo zauważyłem, że to polecenie namieszało w moich ustawieniach oszczędzania baterii oraz podświetleniu klawiatury (po około 30 sekundach braku aktywności świeciło tylko logo G).
 
@@ -198,7 +207,7 @@ Gdy ustawiamy podświetlenie za pomocą parametrów `-a`, `-g` lub `-k`, zmiany 
 
 Na zakończenie tej sekcji chciałabym dodać jeszcze jedną rzecz. Próbowałam na różne sposoby, ale nie udało mi się zapisać moich ustawień na stałe. Za każdym razem gdy klawiatura przechodziła w stan czuwania, po jej przebudzeniu pojawiały się domyślne ustawienia. Wynika to ze sposobu zapisu ustawień za pomocą g810-led. Nie są one zapisywane w onboard flash. Podobnie zachowuje się narzędzie keyleds opisane poniżej. W obu przypadkach nadpisujemy tylko chwilowo stan bieżących ustawień. A te ustawienia są resetowane za każdym razem po wybudzeniu klawiatury z funkcji oszczędzania baterii. Niestety, żadne z obecnie istniejących rozwiązań nie wspiera detekcji wybudzenia klawiatury, by można było na nowo przypisać wybrane ustawienia. Niemniej jednak miałam dużo frajdy bawiąc się różnymi sposobami podświetlania klawiatury.
 
-**Kolejny tip <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-a</a>**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds:
+**Kolejny tip [@yawor-a](https://github.com/yawor "@yawor GitHub page")**, osoby stojącej za pull requestem dla Logitech G915 w projekcie g810-leds:
 
 > Istnieje pewne obejście tego problemu. Można przełączyć klawiaturę w tryb software, który wyłącza takie ustawienia jak oszczędzanie baterii czy zarządzanie podświetleniem i pozwala na kontrolowanie tego za pomocą oprogramowania. Po ustawieniu tego trybu klawiatura od razu przestaje być podświetlana, ale dalej działa. Teraz można ustawić dowolną kolorystykę podświetlenia używając do tego g810-led. Trzeba jednak pamiętać że tryb oszczędzania baterii jest wyłączony. To oprogramowanie powinno sterować ściemnianiem klawiatury. Niestety nie ma na razie takiego oprogramowania dla Linuksa. Dodatkowo po wyłączeniu i ponownym włączeniu klawiatury przechodzimy z powrotem to trybu board zamiast software.
 
@@ -248,17 +257,17 @@ $ keyledsctl gamemode
 
 ## Podziękowania
 
-Chciałabym podziękować <a href="https://github.com/yawor" title="@yawor GitHub page" target='_blank' rel='nofollow'>@yawor-owi</a> za przeczytanie tego artykułu i podzielenie się swoimi przemyśleniami.
+Chciałabym podziękować [@yawor-owi](https://github.com/yawor "@yawor GitHub page") za przeczytanie tego artykułu i podzielenie się swoimi przemyśleniami.
 
 ## Linki
-- <a href="https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf" title="[EN] Logitech user manual for G915 TKL" target='_blank' rel='nofollow'>Instrukcja obsługi klawiatury Logitech G915 TKL</a>
-- <a href="https://www.reddit.com/r/linuxhardware/comments/k76ruy/remarks_on_the_logitech_g915_with_ubuntu_2004/" title="[EN] Remarks on the Logitech G915 with Ubuntu 20.04" target='_blank' rel='nofollow'>Wątek dotyczący Logitech G915 TKL na stronie Reddit</a>
-- <a href="https://askubuntu.com/questions/1300455/how-to-control-logitech-g915-tkl-keyboard-lightning-in-linux-ubuntu" title="[EN] How to control Logitech G915 TKL keyboard lightning in Linux Ubuntu?" target='_blank' rel='nofollow'>Wątek dotyczący Logitech G915 TKL na stronie Ask Ubuntu</a>
-- <a href="https://github.com/libratbag/libratbag/wiki/ratbagctl" title="[EN] Short manual for Ratbagctl" target='_blank' rel='nofollow'>Instukcja obsługi i informacje o instalacji Ratbagctl</a>
-- <a href="https://github.com/libratbag/libratbag/issues/172" title="[EN] Add support in libratbag for a subset of gaming keyboards" target='_blank' rel='nofollow'>Wątek dotyczący problemów ze wsparciem gamingowych klawiatur wraz z listą dostępnych możliwych rozwiązań</a>
-- <a href="https://github.com/MatMoul/g810-led" title="[EN] G810-led project" target='_blank' rel='nofollow'>Projekt G810-led</a>
-- <a href="https://github.com/MatMoul/g810-led/issues/198" title="[EN] G810-led issue about Logitech G915 keyboard" target='_blank' rel='nofollow'>Github issue w projekcie G810-led na temat klawiatury Logitech G915</a>
-- <a href="https://github.com/MatMoul/g810-led/pull/267" title="[EN] G810-led pull request for Logitech G915 keyboard support" target='_blank' rel='nofollow'>Pull request dla wsparcia kalwiatury Logitech G915 - project G810-led</a>
-- <a href="https://github.com/keyleds/keyleds" title="[EN] Keyleds project" target='_blank' rel='nofollow'>Projekt Keyleds</a>
-- <a href="https://github.com/keyleds/keyleds/wiki/Installing" title="[EN] How to install Keyleds project?" target='_blank' rel='nofollow'>Instalacja projektu Keyleds</a>
-- <a href="https://github.com/yawor/keyleds/tree/g915" title="[EN] G915 fork of Keyleds project" target='_blank' rel='nofollow'>Fork projektu Keyleds dla klawiatury Logitech G915 TKL</a>
+- [Instrukcja obsługi klawiatury Logitech G915 TKL](https://www.logitech.com/assets/65920/g915-g913-tkl-qsg.pdf "[EN] Logitech user manual for G915 TKL")
+- [Wątek dotyczący Logitech G915 TKL na stronie Reddit](https://www.reddit.com/r/linuxhardware/comments/k76ruy/remarks_on_the_logitech_g915_with_ubuntu_2004/ "[EN] Remarks on the Logitech G915 with Ubuntu 20.04")
+- [Wątek dotyczący Logitech G915 TKL na stronie Ask Ubuntu](https://askubuntu.com/questions/1300455/how-to-control-logitech-g915-tkl-keyboard-lightning-in-linux-ubuntu "[EN] How to control Logitech G915 TKL keyboard lightning in Linux Ubuntu?")
+- [Instukcja obsługi i informacje o instalacji Ratbagctl](https://github.com/libratbag/libratbag/wiki/ratbagctl "[EN] Short manual for Ratbagctl")
+- [Wątek dotyczący problemów ze wsparciem gamingowych klawiatur wraz z listą dostępnych możliwych rozwiązań](https://github.com/libratbag/libratbag/issues/172 "[EN] Add support in libratbag for a subset of gaming keyboards")
+- [Projekt G810-led](https://github.com/MatMoul/g810-led "[EN] G810-led project")
+- [Github issue w projekcie G810-led na temat klawiatury Logitech G915](https://github.com/MatMoul/g810-led/issues/198 "[EN] G810-led issue about Logitech G915 keyboard")
+- [Pull request dla wsparcia kalwiatury Logitech G915 - project G810-led](https://github.com/MatMoul/g810-led/pull/267 "[EN] G810-led pull request for Logitech G915 keyboard support")
+- [Projekt Keyleds](https://github.com/keyleds/keyleds "[EN] Keyleds project")
+- [Instalacja projektu Keyleds](https://github.com/keyleds/keyleds/wiki/Installing "[EN] How to install Keyleds project?")
+- [Fork projektu Keyleds dla klawiatury Logitech G915 TKL](https://github.com/yawor/keyleds/tree/g915 "[EN] G915 fork of Keyleds project")
