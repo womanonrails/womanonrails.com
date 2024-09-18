@@ -1,4 +1,20 @@
 ---
+excerpt: >
+  W jednym z poprzednich artykułów pisałam o wyzwaniu,
+  jakie sobie postawiałam na ten rok 2019.
+  Pisałam o chęci zostania prelegentką na konferencjach.
+  Ten cel udało mi się zrealizować dwukrotnie na lokalnych edycjach
+  konferencji 4Developers w Krakowie i Katowicach.
+  To było bardzo ciekawe doświadczenie,
+  zwłaszcza że moje audytorium nie miało styczności z językiem programowania jakim jest Ruby.
+  Dzięki temu miałam możliwość podzielenia się moim doświadczeniem w języku Ruby
+  oraz w używaniu dobrych praktyk podczas pisania kodu.
+  W najbliższym czasie odbędą się jeszcze dwie lokalne edycje festiwalu 4Developers
+  i z tej okazji mam dla Ciebie dwie niespodzianki
+  przygotowane we współpracy z organizatorami tego wydarzenia.
+  Zniżkę na bilety na oba te wydarzenia
+  oraz możliwość wygrania darmowego biletu na poznańską edycję 4Developers.
+  Ale zacznijmy od początku.
 layout: post
 title: Lokalne edycje 4Developers 2019
 photo: /images/4developers/4developers-2019-local-editions-header

@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  There it is!
+  The Rails Girls Warsaw 2019 edition!
+  Rails Girls workshops in Warsaw are one of my favorites in Poland.
+  They are always close to my heart.
+  First time I was a mentor at
+  [Rails Girls Warsaw in 2014](/rails-girls-warsaw).
+  Now I go around Poland to share my programming knowledge.
+  This time in Warsaw.
 layout: post
 photo: /images/rails-girls-warsaw-2019/photo
 title: Rails Girls Warsaw (19 - 20 October 2019)

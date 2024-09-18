@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  W jednym z moich ostatnich artykułów pisałam na temat
+  <a href="/pl/names-have-meaning" title="Jak tworzyć nazwy, które mają znaczenie? 13 sposobów na poprawienie czytelności nazw.">poprawiania czytelności nazw w projekcie</a>.
+  Jednym ze sposobów, o którym pisałam było **powiedz jakiego wzorca używasz**.
+  Jakiś czas później przeczytałam newsletter od Sandi Metz
+  > _"Don't Name Classes After Patterns. Mostly"_.
+  Sandi przedstawia tam inny punkt widzenia na używanie nazw wzorców w nazwach klas, z małym wyjątkiem.
+  Myślę, że to dobry temat by na chwilę się nad tym zastanowić.
+  W programowaniu nie ma jednej złotej zasady, jak tworzyć nazwy.
+  Są wskazówki, jak to robić, ale one maja nam tylko pokazać drogę.
+  Nie są jedynym źródłem prawdy.
+  Każde rozwiązanie ma swoje wady i zalety,
+  dlatego dobrze mieć szerszą perspektywę na problem z jakim się mierzymy.
 layout: post
 photo: /images/pattern-name-in-class-name/pattern-name-in-class-name
 title: Nazwa wzorca w nazwie klasy. Dobra czy zła praktyka?

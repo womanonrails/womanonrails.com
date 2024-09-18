@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Gdy pojawiają się nowości w naszym języku programowania czasami jesteśmy z tego powodu zadowolone, a czasami nie.
+  Dziś chciałabym porozmawiać o zmianach, z których ja osobiście bardzo się cieszę.
+  Mam na myśli **dopasowanie do wzorca**  w języku Ruby, czyli pattern matching.
+  Jakiś czas temu napisałam artykuł na temat
+  <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Podstawy dopasowania do wrorca w języku Ruby">Pattern Matching-u w języku Ruby</a>.
+  Zachęcam do zapoznania się z nim, ponieważ będę odwoływała się do omawianych tam przykładów.
+  A teraz zanurzmy się jeszcze bardziej w świat dopasowania do wzorca w języku Ruby.
+  Zaczynamy!
 layout: post
 photo: /images/pattern-matching/pattern-matching
 title: Drugie spojrzenie na pattern matching w Ruby

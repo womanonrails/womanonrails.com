@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Jestem szaloną miłośniczką warsztatów Rails Girls.
+  Po weekendzie spędzonym na
+  [Rails Girls Warsaw](/pl/rails-girls-warsaw-2016)
+  oto jadę na następne warsztaty.
+  Tym razem byłam mentorem na trzeciej już edycji **Rails Girls Łódź**.
+  Uwielbiam atmosferę tych warsztatów, a dzielenie się wiedzą to dla mnie czysta przyjemność.
+  Najbardziej jednak lubię obserwować pasję z jaką przychodzą na warsztaty uczestniczki.
+  Ich chęć do poznawania nowych rzeczy.
 layout: post
 title: Rails Girls Łódź (16 – 17 Czerwiec 2016)
 video: https://www.youtube.com/watch?v=VmNY-nrOYbM

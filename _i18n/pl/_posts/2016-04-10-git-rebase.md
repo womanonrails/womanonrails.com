@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Gdy dopiero zaczynasz przygodę z programowaniem trudno jest wiedzieć wszystko od samego początku.
+  To całkiem normalne, że rozwijasz swoje programistyczne umiejętności krok po kroku.
+  Dziś chcę Ci pomóc w lepszym zrozumieniu komendy **git rebase**.
+  Jest to bardzo pożyteczne polecenie,
+  gdy chcesz mieć w przejrzysty sposób uporządkowane zmiany w repozytorium.
+
+  Ten artykuł jest trzecim artykułem z serii o narzędziu git.
+  Jeżeli chcesz dowiedzieć się więcej o
+  [podstawowym użyciu git-a](/pl/git-usage)
+  to zapraszam do poprzednich artykułów w cyklu.
 layout: post
 title: Git Rebase
 description: Jak używać git rebase?

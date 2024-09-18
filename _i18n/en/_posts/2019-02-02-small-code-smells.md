@@ -1,4 +1,23 @@
 ---
+excerpt: >
+  I think every programmer, at least at some point, wanted to resolve some big problems,
+  focus on big architecture and be the one, who will fix the entire world.
+  Did you ever feel that way?
+  I did, more than once.
+  It's funny because at that moment
+  I feel that I can change application completely,
+  for the better of course ;]
+  I can do some refactoring here and there.
+  I can do that alone, without any help.
+  I see the solution inside my head.
+  It is almost done.
+  But after this moment of excitement, I know that this is a daily base work.
+  To have good architecture, we need to take care of each small line of code.
+  This will not happen by night.
+  It is hard work and sometimes we forget about it.
+  It is much more fun to think about integration with Google Earth Engine
+  then about naming of one small variable.
+  Don't you think?
 layout: post
 title: Small code smells
 description: We think about big architecture concepts, but we have problems with small code smells.

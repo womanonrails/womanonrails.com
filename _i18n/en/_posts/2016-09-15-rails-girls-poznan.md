@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Summer is almost gone and I'm back on **Rails Girls** journey.
+  This time I went to **Rails Girls Poznań**.
+  Poznań is a very special place for me.
+  Here was my first Rails Girls event and I was a participant back then.
+  I wrote an article about
+  [Rails Girls Rules](/rails-girls-rules)
+  and my first experience with Rails Girls initiative.
 layout: post
 title: Rails Girls Poznań (02 – 03 September 2016)
 video: https://vimeo.com/182355471

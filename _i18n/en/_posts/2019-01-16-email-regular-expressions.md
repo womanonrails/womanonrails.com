@@ -1,4 +1,18 @@
 ---
+excerpt: >
+  Someone said:
+  _If you have a problem, use regular expressions. You will have two problems._
+  That's true.
+  At least in some cases.
+  As a programmer, we should be responsible for our code.
+  We should think twice about all possible usage of our code.
+  And also, do tests for it ;].
+  Today I would like to share an example with using regular expressions,
+  but without enough preparation and testing.
+  I would like to show what was wrong and how I fixed it.
+  This is a case study.
+  I will not introduce the concept of regular expressions,
+  but I will show you, what you need to consider during using them.
 layout: post
 title: Regular expressions - what can go wrong?
 description: Regular expression is just a tool. We, as programmers, need to use it responsible.

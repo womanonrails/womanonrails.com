@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Ruby is an object oriented language.
+  That doesn't mean we cannot do some functional programming in Ruby.
+  When you take a look closer to the history of the Ruby language, you can find out,
+  that Ruby was influenced by other languages like
+  Perl, Smalltalk, Eiffel, Ada, Basic or Lisp.
+  Because of this different inspirations
+  we can find in Ruby not only object oriented concepts,
+  but also a little bit of functional programming.
 layout: post
 title: Functional programming in Ruby
 description: Short introduction to blocks, procs, lambdas and closures.

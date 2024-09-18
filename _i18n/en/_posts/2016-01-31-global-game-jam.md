@@ -1,4 +1,11 @@
 ---
+excerpt: >
+  I really love doing things connecting in technology.
+  This time I was participant in "Global Game Jam" in Cieszyn.
+  This was my third time.
+  **What is Global Game Jam?**
+  This is 48 hours hackathon for people which would like to create games.
+  And each year I'm impressed of ideas, talent and projects realization.
 layout: post
 title: Global Game Jam
 video: https://www.youtube.com/watch?v=-g4BbTNCgck

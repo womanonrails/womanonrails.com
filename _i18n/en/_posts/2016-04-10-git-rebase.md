@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  When you are starting your adventure with git,
+  it's hard to know everything from the beginning.
+  This is normal that you do small steps and discover new features on the way.
+  Today, I have a very nice git feature for you.
+  It will allow you to have a better structure and order of your commits.
+  This is very useful especially when you work in a team.
+  I will show you how to use **git rebase**.
+  This is the third article in the git series,
+  so if you want to know more about
+  [basics of git usage](/git-usage),
+  go to previous articles.
 layout: post
 title: Git Rebase
 description: How can you do git rebase?

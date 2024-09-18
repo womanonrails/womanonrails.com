@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  It took me some time from last post.
+  So many things happened: events, workshops, travel.
+  But I'm back!
+  Today I would like to share my thoughts about **Web Summit**.
+  This is big conference (exhibition for startups).
+  I was on this conference once in
+  [Dublin](/websummit)
+  and now in Lisbon.
+  I decided to come because as a **Woman in Tech** I got free ticket.
+  Maybe because of that I should not talk about what I don't like.
+  On the other hand I think when no one talks about disadvantage,
+  conference can not be better next time.
 layout: post
 title: Web Summit Lisbon 2016
 video: https://vimeo.com/192149166

@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Klasę w Ruby możesz stworzyć na wiele różnych sposobów.
+  Z jednej strony to jest super.
+  Możesz być kreatywna i dostosować kod do swoich potrzeb.
+  Z drugiej strony może to powodować pewne problemy z podjęciem decyzji.
+  Co wybrać?
+  Która opcja jest najlepsza?
+  To pytanie może być frustrujące, zwłaszcza gdy zaczyna się przygodę z programowaniem.
+  Dlatego też chciałabym dziś pokazać Ci szybkie sposoby
+  na polepszenie Twojego kodu już na samym początku drogi.
 layout: post
 title: Dlaczego przestałam używać zmiennych instancji w klasach Ruby?
 description: Wskazówka jak wyeliminować literówki ze swojego kodu.

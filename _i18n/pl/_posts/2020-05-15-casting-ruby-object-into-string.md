@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  Miałam do zrobienia prostą funkcjonalność.
+  Należało przedstawić różne obiekty, znajdujące się w tablicy, w postaci jednego łańcucha znaków.
+  Sam problem jest trywialny, ale podczas jego implementacji zaczęłam się zastanawiać:
+  **Jak obiekty będą wyglądać po rzutowaniu na łańcuchy znaków?**
+  Tu akurat odpowiedź jest krótka - dobrze ;)
+  Ciekawsza jest jednak odpowiedź na pytanie:
+  **Dlaczego po rzutowaniu obiekty wyglądają w określony sposób?**
+  To właśnie tym zagadnieniem zajmiemy dzisiaj się.
+  Poszukiwania odpowiedzi czas zacząć.
+  Aha nie zapominajmy, że to będzie niezła zabawa.
+  Zapraszam!
 layout: post
 photo: /images/casting-ruby-object-into-string/chain-to_s-vs-to_str
 title: Jak Ruby rzutuje obiekty na łańcuchy znaków?

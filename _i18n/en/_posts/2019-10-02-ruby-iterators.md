@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Ruby as other programming languages has many ways to repeat instructions.
+  We can use **loops** for that.
+  Loops like `loop`, `while`, `until` or even `for`.
+  This is very useful, but Ruby has also something like **iterators**.
+  Iterators are even more awesome than loops.
+  In Ruby you have many iterators with some specific destiny.
+  You can use `each`, `map`, `collect`, `select`, `find`, `times` or even more.
+  But wait!
+  When should I choose `each` and when should I choose `map`?
+  This is a good question! And I'm going to answer it.
 layout: post
 title: Iterators in Ruby
 description: What for in Ruby are iterators like each, map, collect, select, find or times?

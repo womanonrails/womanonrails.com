@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  You can create a new class in many ways.
+  From one point of view, this is awesome.
+  You can be creative and adjust your code to your needs.
+  On the other hand, it is hard to choose the best option.
+  It can be even overwhelming, especially when you just started learning programming.
+  That's why I would like to show you some quick tips,
+  how to improve your classes on a very basic level.
 layout: post
 title: Why I do not use instance variables in my Ruby classes anymore?
 description: Short tip how fast eliminate misspell in your code.

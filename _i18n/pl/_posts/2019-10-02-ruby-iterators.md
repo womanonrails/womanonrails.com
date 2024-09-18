@@ -1,4 +1,19 @@
 ---
+excerpt: >
+  Ruby, podobnie jak inne języki programowania,
+  ma wiele sposobów na wykonywanie kodu wielokrotnie.
+  Możemy do tego celu użyć **pętli** takich jak
+  `loop`, `while`, `until` czy `for`.
+  Są one oczywiście bardzo przydatne,
+  ale w języku Ruby występują również **iteratory**.
+  Moim zadaniem są one jeszcze lepsze niż pętle.
+  W języku Ruby mamy wiele różnych iteratorów,
+  z których każdy ma inne zastosowanie.
+  Najczęściej używane iteratory to
+  `each`, `map`, `collect`, `select`, `find`, `times`.
+  Ale moment!
+  Kiedy powinnyśmy użyć iteratora `each`, a kiedy iteratora `map`?
+  To bardzo dobre pytanie i właśnie dziś na nie odpowiemy.
 layout: post
 title: Iteratory w Ruby
 description: Po co w języku Ruby są iteratory each, map, collect, select, find lub times?

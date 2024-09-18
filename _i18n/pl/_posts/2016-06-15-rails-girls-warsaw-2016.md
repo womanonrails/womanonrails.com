@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Sezon Rails Girls 2016 uważam za otwarty!
+  Moje pierwsze warsztaty Rails Girls, w tym roku, odbyły się w Warszawie.
+  Warszawa jest dla mnie bardzo specjalnym miejscem.
+  To tutaj byłam pierwszy raz mentorem.
+  To tu zakochałam się jeszcze bardziej w inicjatywie Rails Girls.
+  Moje pierwsze mentorowanie było w 2014 roku.
+  Byłam wtedy bardzo przejęta i zestresowana.
+  Po całych warsztatach postanowiłam podsumować moje spostrzeżenia.
+  Spisałam je w postaci artykułu
+  [Rails Girls witaj z powrotem!](/pl/rails-girls-warsaw).
 layout: post
 video: https://www.youtube.com/watch?v=W6-Y56N9UvQ
 title: Rails Girls Warszawa (11 - 12 Czerwiec 2016)

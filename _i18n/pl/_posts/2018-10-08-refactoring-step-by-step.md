@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Refaktoring jest jednym z moich ulubionych tematów.
+  Uwielbiam porządki w prawdziwym życiu, ale też w kodzie źródłowym.
+  Pracowałam i nadal pracuję nad aplikacjami internetowymi.
+  I wciąż poszukuje odpowiedzi na następujące pytania:
+  Jak pisać dobry kod?
+  Co powoduje, że po pewnym czasie nasz kod staje się brzydki i nieczytelny?
+  Jak radzić sobie z rosnącą złożonością w projektach?
+  Każdego dnia uczę się jak robić dobry refaktoring.
+  Bazuję na zdobytym przeze mnie, jak i przez innych, doświadczeniu.
+  Dziś chciałabym się podzielić z Tobą przykładem refaktoringu zrobionego krok po kroku.
 layout: post
 title: Refaktoring w Ruby krok po kroku - część 1
 description: Jak zrobić refaktoring? <br> Od kodu proceduralnego do zorientowanego obiektowo.

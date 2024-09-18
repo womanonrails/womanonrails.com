@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Kiedy tworzysz aplikację internetową od czasu do czasu potrzebujesz zapisać aktualny wygląd strony, nad którą właśnie pracujesz.
+  W większości przypadków pewnie korzystasz z klawisza `Print Screen` na klawiaturze.
+  Później, oczywiście jeżeli korzystasz z systemu operacyjnego Linux, wystarczy tylko otworzyć zapisany zrzut ekranu w edytorze graficznym takim jak GIMP i wyciąć interesujący Cię fragment.
+  Możesz też spotkać się z trochę inna sytuacją.
+  Chciałabyś zapisać aktualny stan całej strony, a nie tylko wybranego fragmentu.
+  Wtedy albo robisz kilka zrzutów z ekranu i próbujesz je połączyć w programie graficznym albo korzystasz z dodatku, który zapisze Ci wygląd całej strony.
+  Na szczęście jest też prostsze rozwiązanie.
+  Można skorzystać z wbudowanej w przeglądarkę funkcji robienia zrzutów ekranu.
+  Sprawdźmy jak to działa.
 layout: post
 photo: /images/screenshot-in-the-browser/screenshot-in-the-browser
 title: Zrzut ekranu w przeglądarce

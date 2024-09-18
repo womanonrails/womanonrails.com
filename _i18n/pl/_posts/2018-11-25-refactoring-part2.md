@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Ostatnim razem w artykule
+  [Refactoring w Ruby krok po kroku - część 1](/pl/refactoring-step-by-step)
+  przeszłyśmy od kodu proceduralnego do kodu bardziej zorientowanego obiektowo.
+  Tym razem będziemy kontynuować naszą podróż przez refaktoring.
+  Będziemy mówić o małych obiektach zastępujących duże klasy, o kompozycji
+  i o wstrzykiwaniu konkretnych zachowań do obiektów.
+  Zaczynajmy!
 layout: post
 title: Refaktoring w Ruby krok po kroku - część 2
 description: Jak zrobić refaktoring? <br> Od kodu zorientowanego obiektowo do kompozycji.

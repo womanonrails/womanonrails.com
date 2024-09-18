@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Moim zdaniem pracę zdalną możemy podzielić na dwa typy.
+  **Synchroniczną** i **asynchroniczną**.
+  Synchroniczna praca zdalna jest wtedy, gdy zespół pracuje z różnych miejsc na świecie,
+  ale pracuje w tym samym czasie (tej samej strefie czasowej).
+  Przykładowo, ja pracuję według czasu środkowoeuropejskiego od 9:00 do 17:00.
+  Natomiast, asynchroniczna praca zdalna, to praca nie tylko z różnych miejsc na świecie,
+  ale również w różnych godzinach.
+  W takim przypadku, może okazać się,
+  że w konkretnym momencie tylko Ty pracujesz nad projektem.
 layout: post
 title: Praca zdalna
 photo: /images/remote/remote-work

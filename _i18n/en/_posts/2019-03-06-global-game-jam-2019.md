@@ -1,4 +1,11 @@
 ---
+excerpt: >
+  Global Game Jam is an annual game hackathon.
+  It took a place in many countries at the same time all over the world.
+  People like designers, sound creators, programmers sit together to create games in 48h.
+  The main purpose of this game jam is to innovate, experiment and collaborate.
+  Each year, participants get a new theme for the game.
+  They try to use this theme as inspiration for game story line.
 layout: post
 title: Global Game Jam Cieszyn 2019
 video: https://vimeo.com/313649514

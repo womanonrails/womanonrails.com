@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Since 2013, when I found the
+  [**Rails Girls** event in Poznań](/rails-girls-rules),
+  I have always supported this initiative.
+  In this year I was already on
+  [Rails Girls Warsaw](/rails-girls-warsaw-2016),
+  [Rails Girls Łódź](/rails-girls-lodz)
+  and
+  [Rails Girls Poznań](/rails-girls-poznan)
+  as a mentor.
+  Now it's time for **Rails Girls Cieszyn**!
 layout: post
 title: Rails Girls Cieszyn (15 – 16 October 2016)
 video: https://vimeo.com/189199542

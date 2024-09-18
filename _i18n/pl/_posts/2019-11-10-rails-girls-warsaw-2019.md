@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Oto są!
+  Warsztaty Rails Girls Warszawa 2019!
+  Warszawska edycja warsztatów Rails Girls jest jedną z moich ulubionych.
+  Dodatkowo są to dla mnie zawsze bardzo wyjątkowe warsztaty.
+  To właśnie tu pierwszy raz byłam mentorką na
+  [warsztatach Rails Girls Warsaw w 2014 roku](/pl/rails-girls-warsaw).
+  Teraz jeżdżę po całej Polsce i dzielę się swoją programistyczną wiedzą.
+  I oto wracam do Warszawy.
 layout: post
 photo: /images/rails-girls-warsaw-2019/photo
 title: Rails Girls Warszawa (19 - 20 Październik 2019)

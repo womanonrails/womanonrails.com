@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Last time in the article
+  [Ruby Refactoring step by step - part 1](https://womanonrails.com/refactoring-step-by-step)
+  we went through the very procedural code in one class to a more object oriented approach.
+  This time we will continue our journey through refactoring.
+  We will cover small object instead of one big class
+  and we will use composition to plug behavior into an object.
+  Let's start!
 layout: post
 title: Ruby Refactoring step by step - part 2
 description: How to refactor your code? <br> From object related code to composition.

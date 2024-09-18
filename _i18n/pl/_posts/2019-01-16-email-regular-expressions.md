@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  Ktoś kiedyś powiedział:
+  _Masz problem, użyj wyrażeń regularnych. Będziesz mieć dwa problemy._
+  To po części prawda.
+  Przynajmniej w niektórych przypadkach.
+  Jako programiści powinniśmy być odpowiedzialni za to, co piszemy, za swój kod.
+  Powinniśmy zatrzymać się i pomyśleć dwa razy o wszystkich możliwych przypadkach użycia swojego kodu.
+  I mieć na to wszystko dowody, czyli testy.
+  Dzisiaj chciałaby podzielić się z Tobą pewnym przypadkiem problemów z wyrażeniami regularnymi.
+  Przypadkiem, gdzie brak dobrego przygotowania i sprawdzenia zaowocował błędem w aplikacji.
+  W tym artykule nie będę poruszać podstaw dotyczących wyrażeń regularnych.
+  Chcę pokazać na co warto zwrócić uwagę, korzystając z wyrażeń regularnych.
 layout: post
 title: Wyrażenia regularne - co może pójść nie tak?
 description: Wyrażenia regularne to tylko narzędzie. My, jako programiści, musimy używać ich odpowiedzialnie.

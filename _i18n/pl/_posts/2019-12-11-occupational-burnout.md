@@ -1,4 +1,16 @@
 ---
+excerpt: >
+  Dziś chciałabym poruszyć bardzo ważny temat związany ze zdrowiem.
+  Czy zdarzyło Ci się przez dłuższy czas czuć permanentne zmęczenie,
+  być negatywnie lub cynicznie nastawioną do świata,
+  a zwłaszcza do pracy, czuć brak energii i motywacji?
+  A może masz problemy ze snem, bóle głowy, kłucie w klatce piersiowej,
+  duszności lub ciągle jesteś rozdrażniona a wszystko to pogarsza się w pracy?
+  To mogą być objawy **syndromu wypalenia zawodowego**.
+  Jeżeli czujesz, że coś jest nie tak,
+  lub znasz kogoś o kogo się martwisz, przeczytaj ten artykuł.
+  Zyskaj więcej wiedzy o tym,
+  jak wypalenie zawodowe może wpływać na nasze zdrowie, relacje i życie.
 layout: post
 title: Wypalenie zawodowe
 description: Chroniczny stres związany z pracą

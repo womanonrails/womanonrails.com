@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  I'm really a Rails Girls freak!
+  After a weekend with
+  [Rails Girls Warsaw](/rails-girls-warsaw-2016),
+  I went to the next workshops.
+  This time, I was in Łódź on the third edition of **Rails Girls Łódź**.
+  I loved the atmosphere of this workshop.
+  It is always a pleasure for me to share my knowledge
+  and to see that other women want to try new things.
 layout: post
 title: Rails Girls Łódź (16 – 17 June 2016)
 video: https://www.youtube.com/watch?v=VmNY-nrOYbM

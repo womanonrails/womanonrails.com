@@ -1,4 +1,28 @@
 ---
+excerpt: >
+  Pracuję jako programista od 2011 roku.
+  Zanim to się jednak stało spędziłam 6 lat na poszukiwaniu swojej ścieżki kariery.
+  Gdy zaczynałam, mój cel był zupełnie inny od tego, co teraz robię.
+  Chciałam być nauczycielką matematyki.
+  Podczas tych moich poszukiwań często nie wiedziałam co chcę robić i w jakim kierunku zmierzam.
+  Gdzie powinnam ulokować swój czas i na czym się skupić.
+  Pracowałam ciężko, ale nie wiedziałam, gdzie mnie to może zaprowadzić.
+  Zwłaszcza, gdy moje plany zaczynały się komplikować.
+  Dokładniej moją historię opisałam w sekcji [o mnie](/pl/about).
+  Zapraszam Cię do przeczytania, jeśli jesteś ciekawa jak to wyglądało.
+  Teraz zajmuję się programowaniem, ale również uczeniem ludzi tego,
+  czego sama się nauczyłam przez te wszystkie lata.
+  Dzielę się moją wiedzą na różne sposoby m.in. organizując warsztaty i szkolenia takie jak Rails Girls.
+  Ucząc dzieci programowania na zajęciach CoderDojo.
+  Czy tak jak dzisiaj pisząc na blogu **Woman on Rails**.
+  Spotkałam wiele osób, które chcą zmienić swoje życie.
+  Chcą zostać programistami, testerami lub bardziej płynnie posługiwać się technologią
+  w swojej obecnej pracy lub ciesząc się swoim hobby.
+  Ja pomagam im w realizacji ich marzeń.
+  I jestem dumna z moich uczniów i uczennic.
+  Z ich postępów i samozaparcia.
+  Wiele z tych osób ma pytania _jak zacząć?_
+  Dzisiaj chciałabym odpowiedzieć na te pytania w bardziej ustrukturyzowany sposób.
 layout: post
 title: Jak zostać programistą?
 description: O tym jak zmienić ścieżkę kariery i zacząć przygodę z programowaniem.

@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  I don't like changing my setups when they work fine.
+  This time, I wanted to test some functionality in the project in different time zones.
+  I found a way to do that independently to my existing setups.
+
+  I work in a project where we use some external API to get weather data
+  and display them to the user.
+  There was a problem with missing values in a specific range of time.
+  For example, when you asked about data for October you would get one day less.
+  So you do not get 31th of October.
+  If you asked about September, everything was fine.
 layout: post
 title: How to use custom time in browser to manual tests for app?
 description: Custom time in browser without changing your default setups.

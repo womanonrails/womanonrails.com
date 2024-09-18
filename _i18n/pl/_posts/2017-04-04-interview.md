@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  Od jakiegoś uczestniczę w rozmowach kwalifikacyjnych.
+  Nie jestem osobą od HR-u.
+  Jestem programistką.
+  Moje zadanie, to sprawdzenie technicznych umiejętności kandydatów aplikujących do naszej firmy.
+  Staram się dowiedzieć czy kandydatka lub kandydat pasuje do naszego zespołu technicznie,
+  ale również pod względem osobowości i temperamentu.
+  Podczas takiej rozmowy nie chodzi o bycie doskonałym.
+  Raczej o bycie szczerym, bycie sobą.
+  Celem jest sprawdzenie czy obie strony chcą podjąć współpracę.
+  Zarówno kandydat jak i zespół powinni do siebie pasować.
+  Dzisiaj chciałabym się podzielić z Wami elementami,
+  na które ja zwracam uwagę podczas prowadzenia rozmowy kwalifikacyjnej.
 layout: post
 title: Rozmowa kwalifikacyjna
 description: Jak się dobrze przygotować?

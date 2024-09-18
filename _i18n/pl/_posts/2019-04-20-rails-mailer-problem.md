@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Wysyłanie wiadomości email przez aplikację do jej użytkowników
+  jest czymś bardzo powszechnym.
+  Wysyłamy maile związane z rejestracją, nowymi zmianami w aplikacji,
+  reklamami, ostatnimi aktywnościami czy z zaproszeniem do grona znajomych.
+  Można powiedzieć, że jest to chleb powszedni dzisiejszych aplikacji internetowych.
+  Pomimo tego, że tak często aplikacje posiadają tą funkcjonalność,
+  zdarzają się w niej błędy.
+  Dziś chciałabym się takim błędem z Tobą podzielić.
 layout: post
 title: Dlaczego nie powinnyśmy wysyłać maili z modelu w Railsach?
 description: Co może pójść nie tak gdy korzystasz z workerów do wysyłania maili? - studium przypadku.

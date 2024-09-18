@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Ruby jest językiem obiektowym.
+  Nie znaczy to jednak,
+  że nie możemy przy pomocy Rubiego programować bardziej funkcyjnie.
+  Gdy przyjrzymy się historii języka Ruby zauważymy,
+  że u jego podstaw leży wiele różnych technologi.
+  Twórca Rubiego, Yukihiro Matsumoto, inspirował się takimi językami jak:
+  Perl, Smalltalk, Eiffel, Ada, Basic czy Lisp.
+  Dzięki tym wszystkich inspiracjom
+  w języku Ruby możemy znaleźć nie tylko koncepcje programowania obiektowego,
+  ale również odrobinę programowania funkcyjnego.
 layout: post
 title: Programowanie funkcyjne w Ruby
 description: Krótkie wprowadzenie do bloków, lambd, domknięć i obiektów typu Proc.

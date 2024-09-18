@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Refactoring is one of my favorite topics.
+  I love to clean up things in real life and also in code.
+  I've worked and I'm still working on web application projects.
+  And I look for answers on how to write good code.
+  What are the reasons that after some time our code is messy and not readable?
+  So day by day I learn how to refactor code in a good way based on my experience
+  and the experience of others.
+  Today I would like to share an example of refactoring with you.
 layout: post
 title: Ruby Refactoring step by step - part 1
 description: How refactor your code? <br> From procedural to more object related code.

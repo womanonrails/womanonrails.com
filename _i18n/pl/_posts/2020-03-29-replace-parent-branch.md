@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Kilka dni temu stworzyłam nową gałąź (branch).
+  Na tej gałęzi zatwierdziłam już kilka zmian (czyli dodawałam kilka commit-ów),
+  ale po jakimś czasie zorientowałam się,
+  że gałąź od jakiej wyszłam to nie master tylko zupełnie inna gałąź.
+  No cóż moje przeoczenie, tylko jak teraz poradzić sobie z tym problemem?
+  W tym momencie potrzebowałam scalić (merge) moje bieżące zmiany z gałęzią master.
+  Jednak to nie był dobry czas na dodanie również zmian z tej drugiej gałęzi.
+  Jak to zrobić? W takiej sytuacji z pomocą przychodzi nam git.
 layout: post
 title: Jak podmienić gałąź rodzica w git-cie?
 description: Ustawienie nowej gałęzi rodzica przy pomocy git rebase --onto.

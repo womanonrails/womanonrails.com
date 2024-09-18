@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  I worked in last a few days with `each_with_object` method.
+  Every time when I would like to use some method in Ruby
+  I try read documentation one more time and I look on some example of usage.
+  This time I went through **APIdock**
+  and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method.
+  I tried to add this missing part there, but without success.
+  In meantime when I'm waiting for message from APIdock support
+  I decided to write short note here about this.
 layout: post
 title: Quick overview Ruby each_with_object method
 description: Tips about each_with_object

@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Uwielbiam robić rzeczy związane z technologią.
+  Tym razem uczestniczyłam w "Global Game Jam" w Cieszynie.
+  To był mój trzeci raz.
+  **Co to Global Game Jam?**
+  To hackaton trwający 48 godzin.
+  Gromadzą się tam ludzie, który chcą tworzyć gry komputerowe.
+  Każdego roku jestem pod ogromnym wrażeniem pomysłowości, talentu i realizacji projektów, które tam powstają.
 layout: post
 title: Global Game Jam
 video: https://www.youtube.com/watch?v=-g4BbTNCgck

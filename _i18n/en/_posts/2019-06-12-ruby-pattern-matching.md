@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Some time ago I wrote an article about
+  [Pattern matching in Elixir](/elixir-pattern-matching).
+  I really like this idea.
+  Now from Ruby version 2.7 we have **pattern matching in Ruby**!!!
+  It is not the same like in Elixir, but it is a nice feature to have.
+  Keep in mind that this is still an experimental feature,
+  so it can change in the future versions of Ruby.
+  Let's check out what we can do with pattern matching in Ruby.
 layout: post
 title: Ruby pattern matching
 description: Pattern matching - new feature of Ruby 2.7

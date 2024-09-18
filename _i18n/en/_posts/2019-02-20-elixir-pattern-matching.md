@@ -1,4 +1,9 @@
 ---
+excerpt: >
+  Elixir is a functional language, created by José Valim in 2012,
+  runs on the Erlang virtual machine.
+  It is Rails and Ruby reference here.
+  José is one of the members of Rails Core Team.
 layout: post
 title: Pattern matching in Elixir - basics
 description: What I learned about Elixir so far?

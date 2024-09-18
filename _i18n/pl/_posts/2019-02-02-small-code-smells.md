@@ -1,4 +1,23 @@
 ---
+excerpt: >
+  Myślę, że każdy programista, na pewnym etapie rozwoju,
+  chciałby zająć się rozwiązywaniem dużych problemów.
+  Chciałby tworzyć systemy o złożonej strukturze i być tą osobą,
+  która za pomocą swoich rozwiązań zbawi świat.
+  Czułaś się kiedyś w ten sposób?
+  Ja tak, i to nie jeden raz.
+  To zabawne, ale w chwilach, gdy właśnie tak się czuje,
+  chciałabym zmienić całkowicie architekturę aplikacji, oczywiście na lepsze. ;]
+  Zrobić refaktoring to tu, to tam.
+  Byłabym w stanie zrobić to zupełnie sama, bez żadnej pomocy.
+  Już widzę to wspaniałe rozwiązanie w swojej głowie.
+  Jest prawie gotowe do użycia.
+  W takich chwilach zapominam całkowicie, że takie rzeczy nie dzieją się same.
+  O architekturę aplikacji trzeba dbać każdego dnia, w każdej linijce kodu.
+  To jest ciężka praca.
+  O wiele fajniej jest myśleć o integracji z Google Earth Engine,
+  niż o nazwie jakieś mało istotnej zmiennej.
+  Prawda?
 layout: post
 title: Małe zapachy kodu
 description: Myślimy o wielkich koncepcjach architektonicznych a czasem mamy problem z małymi zapaszkami w kodzie.

@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  W świecie testów istnieje wiele pojęć takich jak **stub**, **mock** czy **dummy object**.
+  Może to być niejasne i mylące, co czym jest i gdzie tego należy użyć.
+  Chcę usystematyzować te pojęcia w bardziej przystępny sposób.
+  Ze względu jednak na rozbieżności dotyczące definicji tych terminów,
+  w poniższym artykule przedstawię moje ich zrozumienie.
+  Oczywiście będę bazować na wybranych źródłach zamieszczonych w
+  [bibliografii](#bibliografia).
 layout: post
 photo: /images/test-doubles/test-doubles
 title: Czym różni się stub od mocka?

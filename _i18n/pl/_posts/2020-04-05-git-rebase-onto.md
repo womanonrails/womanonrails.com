@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  W artykule o [podmianie gałęzi rodzica w git-cie](/pl/replace-parent-branch)
+  pokazałam Ci jedno z zastosowań komendy `git rebase --onto`.
+  Dziś skupimy się na zgłębieniu tematu, bo jest o czym mówić.
+  Im lepiej zrozumiesz to polecenie tym łatwiej będzie Ci go w przyszłości użyć.
+  Zapraszam!
 layout: post
 photo: /images/git-rebase-onto/git-rebase-onto-header
 title: Jak używać git rebase --onto?

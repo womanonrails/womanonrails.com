@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Nie przepadam za zmienianiem ustawień użytkownika, gdy wszystko działa dobrze.
+  Tym razem potrzebowałam przetestować funkcjonalność,
+  która wymagała zrobienia tego w różnych strefach czasowych.
+  Znalazłam sposób by zrobić to bez zmiany moich standardowych ustawień.
+
+  Pracuję w projekcie, gdzie używamy zewnętrznego API dla danych pogodowych,
+  które później wyświetlamy użytkownikowi.
+  Był tam pewien błąd z brakującymi wartościami dla konkretnych przedziałów czasowych.
+  Gdy użytkownik prosił o dane z października, brakowało mu zawsze ostatniego dnia (31.10).
+  Natomiast prosząc o dane z września wszystko działało poprawnie.
 layout: post
 title: Jak ustawić niestandardowy czas w przeglądarce dla testów aplikacji?
 description: Niestandardowy czas i strefa czasowa w przeglądarce bez zmiany ustawień użytkownika.

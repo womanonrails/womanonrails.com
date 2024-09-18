@@ -1,4 +1,13 @@
 ---
+excerpt: >
+  Jakiś czas temu napisałam artykuł o
+  [podstawach pattern matchingu w Elixirze](/pl/elixir-pattern-matching).
+  Bardzo spodobała mi się idea dopasowywania do wzorca.
+  Teraz możemy się nią cieszyć również w najnowszej wersji Ruby 2.7!!!
+  Nie jest to co prawda ten sam pattern matching co w Elixirze, ale jest to ciekawa funkcjonalność.
+  Trzeba też pamiętać, że **pattern matching w Ruby** jest funkcjonalnością eksperymentalną,
+  więc może się zmieniać dynamicznie w następnych wersjach Rubiego.
+  Nie zmienia to faktu, że już teraz możemy ją przetestować.
 layout: post
 title: Pattern matching w Ruby
 description: Dopasowywanie wzorców - nowa funkcjonalność w Ruby 2.7

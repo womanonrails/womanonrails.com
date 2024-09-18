@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  It is time to start the new Rails Girls season!
+  My first Rails Girls event, this year, was in Warsaw.
+  Warsaw is a very special place for me.
+  Here I was a mentor for a first time.
+  Here I fell in love with Rails Girls even more.
+  It was in 2014.
+  At that time, I was very nervous to be a mentor.
+  After workshops I wrote down all my thoughts about that.
+  You can read them in article
+  [Rails Girls welcome back!](/rails-girls-warsaw).
 layout: post
 video: https://www.youtube.com/watch?v=W6-Y56N9UvQ
 title: Rails Girls Warsaw (11 - 12 June 2016)

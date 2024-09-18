@@ -1,4 +1,17 @@
 ---
+excerpt: >
+  Jakiś czas temu napisałam artykuł o [edytorze tekstu Sublime Text](/pl/sublime).
+  O tym jak bardzo lubię to narzędzie i dlaczego.
+  Jednak czas płynął i po kilku latach używania
+  pewne rzeczy przestały działać tak dobrze jak na początku.
+  Zaczęłam szukać innego rozwiązania.
+  Takiego, które da mi to czego zaczęło brakować mi w Sublime Text.
+  Znalazłam takie narzędzie - to **Visual Studio Code**.
+  Darmowe, udostępnione jako Open Source narzędzie do edycji tekstu, ale nie tylko.
+  VS Code to narzędzie, które łączy najczęściej używane
+  przez programistów funkcjonalności/narzędzia w jedno.
+  Jest czymś pomiędzy zwykłym edytorem, a IDE.
+  To właśnie o VS Code chciałabym Ci dziś trochę powiedzieć.
 layout: post
 photo: /images/visual-studio-code/visual-studio-code
 title: Visual Studio Code - edytor tekstowy

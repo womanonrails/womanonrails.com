@@ -1,4 +1,12 @@
 ---
+excerpt: >
+  Global Game Jam to coroczny hakaton związany z grami.
+  W tym samym czasie w wielu krajach na całym świecie graficy, dźwiękowcy
+  i programiści spotykają się wspólnie by tworzyć gry komputerowe.
+  Mają na to 48 godzin.
+  Głównym celem tego hakatonu jest innowacja, eksperymentowanie i współpraca.
+  Każdego roku uczestnicy dostają informację o nowym motywie przewodnim,
+  jaki będzie obowiązywać podczas bieżącego game jamu.
 layout: post
 title: Global Game Jam Cieszyn 2019
 video: https://vimeo.com/313649514

@@ -1,4 +1,15 @@
 ---
+excerpt: >
+  Jakiś czas temu uczestniczyłam w Instagramowym wyzwaniu #30devstories.
+  Podczas tego wyzwania ja i inni twórcy przygotowaliśmy mnóstwo przydatnych materiałów.
+  Dzieliliśmy się swoją wiedzą na przeróżne tematy.
+  Bardziej lub mniej programistyczne.
+  Ponieważ treści te były tworzone w takim dość ulotnym formacie jakim jest Instagram Story,
+  postanowiłam, że podzielę się nimi z Tobą w bardziej trwałej wersji.
+  Rozpoczniemy od **TDD**, czyli **Test Driven Development**.
+  Szczegółowo o tym jak wygląda praca z TDD pisałam w artykule
+  <a href='/pl/tdd-basic' title='Jak wygląda proces TDD na przykładzie?'>TDD - Wprowadzenie</a>.
+  Dziś jednak chciałabym się podzielić krótką notatką o podstawach TDD.
 layout: post
 photo: /images/tdd-30devstories/tdd-30devstories
 title: TDD w pigułce

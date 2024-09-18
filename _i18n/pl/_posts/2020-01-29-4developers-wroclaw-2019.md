@@ -1,4 +1,11 @@
 ---
+excerpt: >
+  W roku 2019 byłam zarówno prelegentką jak i uczestniczką
+  na trzech lokalnych wydarzeniach 4Developers.
+  W Krakowie i w Katowicach mówiłam prezentacje,
+  o których pisałam w artykule [Prelegentka na 4Developers 2019](/pl/4developers-2019).
+  Jedną z tych prezentacji można zobaczyć na YouTube:
+  [Czy jesteś egoistycznym programistą? - Refaktoring krok po kroku](https://www.youtube.com/watch?v=4vqXSUcmBQE)
 layout: post
 title: 4Developers Wrocław - 2019
 photo: /images/4developers-wroclaw-2019/photo

@@ -1,4 +1,14 @@
 ---
+excerpt: >
+  Kolejność działań matematycznych w programowaniu jest bardzo ważna.
+  Jeżeli nie znasz ich dobrze, możesz dostać całkowicie inny wynik, niż się spodziewasz.
+  Twój program może nawet przestać działać.
+  Dlatego warto znać zasady, na jakich jest oparta kolejność działań w programowaniu.
+  W tym przypadku w języku Ruby.
+  Czy powinnyśmy postępować zgodnie z zasadami
+  jakich nauczyłyśmy się w szkole na lekcjach matematyki?
+  A może wystarczy stosować kolejność od lewej do prawej?
+  Sprawdźmy.
 layout: post
 title: Kolejność wykonywania działań w Ruby
 description: Co powinnaś wiedzieć o regułach opuszczania nawiasów w Ruby?

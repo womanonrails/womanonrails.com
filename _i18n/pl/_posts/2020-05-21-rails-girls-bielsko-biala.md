@@ -1,4 +1,10 @@
 ---
+excerpt: >
+  Warsztaty Rails Girls odbywają się w całej Polsce.
+  Te najbardziej znane moim zdaniem to warsztaty w Warszawie, Poznaniu i oczywiście na Śląsku. ;)
+  Kilka miesięcy temu miałam przyjemność być mentorką na warsztatach Rails Girls Bielsko-Biała.
+  Były to pierwsze takie warsztaty organizowane w Bielsku-Białej.
+  Pozwól, że pokażę Ci krótką relację z tych warsztatów.
 layout: post
 photo: /images/rails-girls-bielsko-biala/rails-girls-bielsko-biala
 title: Rails Girls Bielsko-Biała (7 marca 2020)
