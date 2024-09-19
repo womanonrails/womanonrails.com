@@ -492,7 +492,7 @@ To do Lisp lists in Ruby we will use lazy enumerators and recursion. But first, 
  => (2 3 4)
 ```
 
-If you read my article about <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - How to fit into the pattern?">Elixir basics</a> you can compare `car` and `cdr` methods to `head` and `tail` in Elixir. `car` will always return first element of the list and `cdr` will return list without first element. Let's prepare a Ruby array to behave like Lisp lists.
+If you read my article about [Elixir basics]({{site.baseurl}}/elixir-pattern-matching "Elixir - How to fit into the pattern?") you can compare `car` and `cdr` methods to `head` and `tail` in Elixir. `car` will always return first element of the list and `cdr` will return list without first element. Let's prepare a Ruby array to behave like Lisp lists.
 
 ```ruby
 car, cdr = [1,[2,[3]]]
@@ -636,9 +636,7 @@ irb> (1..Float::INFINITY).lazy.select(&:even?).first(5)
 ```
 
 If you want more information about them, check out
-{% include links/external-link.html
-   name='Lazy enumerator documentation'
-   url='https://ruby-doc.org/core/Enumerator/Lazy.html' %}.
+[Lazy enumerator documentation](https://ruby-doc.org/core/Enumerator/Lazy.html).
 
 That's all for today. I hope you like it. If you have any questions put them in the comments below. I will try to answer them. See you next time!
 
@@ -647,12 +645,6 @@ That's all for today. I hope you like it. If you have any questions put them in 
 - {% include links/youtube-link.html
      name='An Introduction video about Procs, Lambdas and Closures in Ruby'
      video_id='VBC-G6hahWA' %}
-- {% include links/external-link.html
-     name='Presentation about functional programming in Ruby'
-     url='https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242' %}
-- {% include links/external-link.html
-     name='Article about closures in Ruby'
-     url='https://innig.net/software/ruby/closures-in-ruby' %}
-- {% include links/external-link.html
-     name='Ruby documentation'
-     url='https://ruby-doc.org/' %}
+- [Presentation about functional programming in Ruby](https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242)
+- [Article about closures in Ruby](https://innig.net/software/ruby/closures-in-ruby)
+- [Ruby documentation](https://ruby-doc.org/)

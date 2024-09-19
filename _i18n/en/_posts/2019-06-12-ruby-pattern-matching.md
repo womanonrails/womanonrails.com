@@ -18,7 +18,7 @@ lang: en
 last_modified_at: 2022-01-19 10:00:00 +0200
 ---
 
-Some time ago I wrote an article about <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - How to fit to the pattern?">Pattern matching in Elixir</a>. I really like this idea. Now from Ruby version 2.7 we have **pattern matching in Ruby**!!! It is not the same like in Elixir, but it is a nice feature to have. Keep in mind that this is still an experimental feature, so it can change in the future versions of Ruby. Let's check out what we can do with pattern matching in Ruby.
+Some time ago I wrote an article about [Pattern matching in Elixir]({{site.baseurl}}/elixir-pattern-matching "Elixir - How to fit to the pattern?"). I really like this idea. Now from Ruby version 2.7 we have **pattern matching in Ruby**!!! It is not the same like in Elixir, but it is a nice feature to have. Keep in mind that this is still an experimental feature, so it can change in the future versions of Ruby. Let's check out what we can do with pattern matching in Ruby.
 
 Before we start, let's remind ourselves **what is pattern matching?** Pattern matching is a way to specify a pattern for our data and if data are matched to the pattern we can deconstruct them according to this pattern. In other words: Pattern matching is choosing specific elements from data, based on defined rules. We can also say that pattern matching is like _regular expressions_ with multiple assignments not only for strings.
 
@@ -171,9 +171,7 @@ irb> c
 ## Pattern matching in Hash
 
 When we talk about pattern matching in Hash, you need to know that right now it will work only for **Hashes where keys are symbols**. It will not work for strings. You can find more about the reasons and problems related with string syntax for hashes in
-{% include links/external-link.html
-   name='Kazuki Tsujimoto presenation'
-   url='https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7' %}
+[Kazuki Tsujimoto presenation](https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7)
 about _Pattern matching in Ruby_.
 
 Let's start with something simple:
@@ -527,7 +525,7 @@ When I play around pattern matching in Ruby, I found some cases which are not a 
 
 I know that some of my ideas could be not possible or hard to do, but this is my wish list. ;]
 
-From Ruby 3.0, we have more pattern matching features available. If you want to know more check out my article: <a href="{{ site.baseurl }}/ruby-pattern-matching-second-look" title="News about pattern matching in Ruby">Second look at pattern matching in Ruby</a>.
+From Ruby 3.0, we have more pattern matching features available. If you want to know more check out my article: [Second look at pattern matching in Ruby]({{site.baseurl}}/ruby-pattern-matching-second-look "News about pattern matching in Ruby").
 
 ## Summary
 

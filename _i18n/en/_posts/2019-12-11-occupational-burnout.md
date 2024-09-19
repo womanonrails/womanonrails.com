@@ -124,7 +124,7 @@ OK, so what we can do about burnout syndrome? How we can help ourselves or our f
 
 2. **Constraints**
 
-    This can help in situations when you feel bored and stuck. If your work looks the same every day and you feel no stress, nor motivation to do something, you can use a little bit of gamification just for yourself. For example, try to not use a mouse per one day. In this case, you can <a href="{{ site.baseurl }}/sublime" title="Sublime Text Editor - shortcuts">learn new shortcuts</a> and appreciate, that normally you have mouse support. You can change your editor. This will show you how much you depend on your setups or your IDE. This can remind you of a structure of your programming language or framework you use. You can also give yourself some constraints in the code. Good inspiration can be <a href="{{ site.baseurl }}/coderetreat" title="Coderetreat workshops in Krakow">Global Day of Coderetreat</a>. No `if` conditions or only functional approach. There are many ways to challenge yourself in the work. Try it. It can be fun!
+    This can help in situations when you feel bored and stuck. If your work looks the same every day and you feel no stress, nor motivation to do something, you can use a little bit of gamification just for yourself. For example, try to not use a mouse per one day. In this case, you can [learn new shortcuts]({{site.baseurl}}/sublime "Sublime Text Editor - shortcuts") and appreciate, that normally you have mouse support. You can change your editor. This will show you how much you depend on your setups or your IDE. This can remind you of a structure of your programming language or framework you use. You can also give yourself some constraints in the code. Good inspiration can be [Global Day of Coderetreat]({{site.baseurl}}/coderetreat "Coderetreat workshops in Krakow"). No `if` conditions or only functional approach. There are many ways to challenge yourself in the work. Try it. It can be fun!
 
 3. **Supportive people around**
 
@@ -162,15 +162,6 @@ Now I would like to ask you: Did you ever had burnout syndrome? How did you deal
 
 #### Bibliography
 
-- {% include links/external-link.html
-     name='World Health Organization about burn-out an "occupational phenomenon"'
-     url='https://www.who.int/mental_health/evidence/burn-out/en/' %}
-- {% include links/external-link.html
-     name='Wikipedia about burnout syndrome'
-     url='https://en.wikipedia.org/wiki/Occupational_burnout' %}
-- {% include links/external-link.html
-     name='Jak Feniks z popiołów czyli syndrom wypalenia zawodowego [PL]'
-     url='http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html' %}
-- {% include links/external-link.html
-     name='Podcast episode about occupation burnout syndrome by Maciej Aniserowicz [PL]'
-     url='https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/' %}
+- [World Health Organization about burn-out an "occupational phenomenon"](https://www.who.int/mental_health/evidence/burn-out/en/)
+- [Wikipedia about burnout syndrome](https://en.wikipedia.org/wiki/Occupational_burnout)
+- [Podcast episode about occupation burnout syndrome by Maciej Aniserowicz [PL]](https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/)

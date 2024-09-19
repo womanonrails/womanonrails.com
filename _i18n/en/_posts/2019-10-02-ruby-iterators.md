@@ -137,7 +137,7 @@ array
 #  => [{:static=>"I don't want to be changed!", :dynamic=>"I can change yours objects!"}, {:static=>"Me too!", :dynamic=>"I can change yours objects!"}]
 ```
 
-You can see that in this case, as a result, we get from `each` different collection, then initial collection was. The second thing is that not only result changed, but we modify `array` object too! This happened always when `item` as an element of the collection is a _complex object_ and we try to change it for example by assignment. I said more about this problem in an article about <a href="{{ site.baseurl }}/ruby-hash-tips" title="Useful methods for Hash in Ruby">Ruby hash tips</a>. This will not happen when you work on simple array with numbers.
+You can see that in this case, as a result, we get from `each` different collection, then initial collection was. The second thing is that not only result changed, but we modify `array` object too! This happened always when `item` as an element of the collection is a _complex object_ and we try to change it for example by assignment. I said more about this problem in an article about [Ruby hash tips]({{site.baseurl}}/ruby-hash-tips "Useful methods for Hash in Ruby"). This will not happen when you work on simple array with numbers.
 
 ```ruby
 array = [1, 2, 3]
@@ -154,8 +154,8 @@ array
 
 You will use `each` iterator each time when the calculations are the most important part of your code. You are not interested in what `each` will return and in most cases you don't want to change an initial object.
 
-At the end of this section I will add one more thing. There are different types of `each`. For example: `each_char`, `each_line`, `each_with_index` or <a href="{{ site.baseurl }}/each-with-object" title="How to use each_with_object method?">`each_with_object`</a>. You can use them in a different context for specific purposes. If you are interested in more details, please check
-{% include links/external-link.html name='Ruby documentation' url='https://ruby-doc.org/' %}.
+At the end of this section I will add one more thing. There are different types of `each`. For example: `each_char`, `each_line`, `each_with_index` or [`each_with_object`]({{site.baseurl}}/each-with-object "How to use each_with_object method?"). You can use them in a different context for specific purposes. If you are interested in more details, please check
+[Ruby documentation](https://ruby-doc.org/).
 
 ### Map / collect
 

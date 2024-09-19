@@ -27,7 +27,7 @@ In one of my last articles I have written about my new challenge. To be a speake
 
 <!--break-->
 
-4Developers is a conference where the main edition took a place in April in Warsaw this year (2019). This is an event which brings over 2,000 participants interested in the IT world to one place. It doesn't matter if you are working in Python, JavaScript, PHP or any other technology. There were 14 paths related to different topics like cloud computing, data science, mobile or even soft skills. After this one big event there are smaller local editions, which have similar structure. Different topics on different paths, but each local event has its own atmosphere. Krakow and Katowice already had their local events. You can find more about them in my previous article about <a href="{{ site.baseurl }}/4developers-2019" title='4Developers 2019'>4Developers</a>. Now we are waiting for Wroclaw 5th of November and Poznan 18th of November. The end of this IT marathon will be in Gdansk on 27th of November where will take a place 4Developers OFFLINE will take a place.
+4Developers is a conference where the main edition took a place in April in Warsaw this year (2019). This is an event which brings over 2,000 participants interested in the IT world to one place. It doesn't matter if you are working in Python, JavaScript, PHP or any other technology. There were 14 paths related to different topics like cloud computing, data science, mobile or even soft skills. After this one big event there are smaller local editions, which have similar structure. Different topics on different paths, but each local event has its own atmosphere. Krakow and Katowice already had their local events. You can find more about them in my previous article about [4Developers]({{site.baseurl}}/4developers-2019 "4Developers 2019"). Now we are waiting for Wroclaw 5th of November and Poznan 18th of November. The end of this IT marathon will be in Gdansk on 27th of November where will take a place 4Developers OFFLINE will take a place.
 
 #### 4Developers discount
 
@@ -40,12 +40,11 @@ As I mention in the beginning I had good news for you. I have a discount for bot
 
 #### How to win a free ticket for 4Developers in Poznan?
 
-Do you want even more good news? You can win a free ticket for the Poznan edition of the 4Developers conference. The conference is on 18th of November in Novotel & ibis Poznan Hotel. You can find more details about the event
-{% include links/external-link.html name='here' url='https://4developers.org.pl/poznan-2019/' %}.
+Do you want even more good news? You can win a free ticket for the Poznan edition of the 4Developers conference. The conference is on 18th of November in Novotel & ibis Poznan Hotel. You can find more details about the event on 4Developers page.
 To take a part in this contest you need to:
 
-1. Like <a href="https://www.facebook.com/107403177317825/" title='Woman on Rails Facebook page' target='_blank' rel='nofollow noopener'>Woman on Rails page on Facebook</a>
-2. Answer the question: **Why do you want to go to 4Developers in Poznan?** in the Polish comments section for <a href="{{ site.baseurl }}/pl/4developers-local-events-2019" title='4Developers - local events'>Lokalne edycje konferencji 4Developers 2019</a> article. With a minimum of 512 characters.
+1. Like [Woman on Rails page on Facebook](https://www.facebook.com/107403177317825/ "Woman on Rails Facebook page")
+2. Answer the question: **Why do you want to go to 4Developers in Poznan?** in the Polish comments section for [Lokalne edycje konferencji 4Developers 2019]({{site.baseurl}}/pl/4developers-local-events-2019 "4Developers - local events") article. With a minimum of 512 characters.
 
 If you want to take a part of this contest, please start your comment with the hashtag **#4Dev2019**.
 
