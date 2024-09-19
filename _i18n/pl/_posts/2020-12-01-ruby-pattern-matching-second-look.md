@@ -4,7 +4,7 @@ excerpt: >
   Dziś chciałabym porozmawiać o zmianach, z których ja osobiście bardzo się cieszę.
   Mam na myśli **dopasowanie do wzorca**  w języku Ruby, czyli pattern matching.
   Jakiś czas temu napisałam artykuł na temat
-  <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Podstawy dopasowania do wrorca w języku Ruby">Pattern Matching-u w języku Ruby</a>.
+  [Pattern Matching-u w języku Ruby](/pl/ruby-pattern-matching "Podstawy dopasowania do wrorca w języku Ruby").
   Zachęcam do zapoznania się z nim, ponieważ będę odwoływała się do omawianych tam przykładów.
   A teraz zanurzmy się jeszcze bardziej w świat dopasowania do wzorca w języku Ruby.
   Zaczynamy!
@@ -20,7 +20,7 @@ lang: pl
 last_modified_at: 2022-01-19 16:00:00 +0200
 ---
 
-Gdy pojawiają się nowości w naszym języku programowania czasami jesteśmy z tego powodu zadowolone, a czasami nie. Dziś chciałabym porozmawiać o zmianach, z których ja osobiście bardzo się cieszę. Mam na myśli **dopasowanie do wzorca**  w języku Ruby, czyli pattern matching. Jakiś czas temu napisałam artykuł na temat <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Podstawy dopasowania do wrorca w języku Ruby">Pattern Matching-u w języku Ruby</a>. Zachęcam do zapoznania się z nim, ponieważ będę odwoływała się do omawianych tam przykładów. A teraz zanurzmy się jeszcze bardziej w świat dopasowania do wzorca w języku Ruby. Zaczynamy!
+Gdy pojawiają się nowości w naszym języku programowania czasami jesteśmy z tego powodu zadowolone, a czasami nie. Dziś chciałabym porozmawiać o zmianach, z których ja osobiście bardzo się cieszę. Mam na myśli **dopasowanie do wzorca**  w języku Ruby, czyli pattern matching. Jakiś czas temu napisałam artykuł na temat [Pattern Matching-u w języku Ruby]({{site.baseurl}}/ruby-pattern-matching "Podstawy dopasowania do wrorca w języku Ruby"). Zachęcam do zapoznania się z nim, ponieważ będę odwoływała się do omawianych tam przykładów. A teraz zanurzmy się jeszcze bardziej w świat dopasowania do wzorca w języku Ruby. Zaczynamy!
 
 ### 1. Jednolinijkowe dopasowanie do wzorca w Ruby
 
@@ -465,7 +465,7 @@ ale za to działa:
 To wszystko co przygotowałam na dzisiaj. Znasz jeszcze więcej ciekawostek dotyczących dopasowania do wzorca w języku Ruby? Podziel się nimi w komentarzach.
 
 ### Bibliografia
-- <a href="{{ site.baseurl }}/ruby-pattern-matching" title="Podstawy dopasowania do wrorca w języku Ruby">Pattern Matching-u w języku Ruby</a>
-- <a href="https://docs.ruby-lang.org/en/2.7.0/NEWS.html#label-Pattern+matching" title="Nowości dla Ruby 2.7.0" target='_blank' rel='nofollow'>Ruby lang docs [EN] - nowości dla Ruby 2.7.0</a>
-- <a href="https://docs.ruby-lang.org/en/master/doc/syntax/pattern_matching_rdoc.html" title="Nowości o Pattern Matching" target='_blank' rel='nofollow'>Ruby lang docs [EN] - nowości o Pattern Matching</a>
-- <a href="https://blog.saeloun.com/2020/08/17/find-pattern-in-pattern-matching" title="Short post by Vamsi Pavan Mahesh" target='_blank' rel='nofollow'>Ruby introduces find pattern in pattern matching [EN]</a>
+- [Pattern Matching-u w języku Ruby]({{site.baseurl}}/ruby-pattern-matching "Podstawy dopasowania do wrorca w języku Ruby")
+- [Ruby lang docs [EN] - nowości dla Ruby 2.7.0](https://docs.ruby-lang.org/en/2.7.0/NEWS.html#label-Pattern+matching "Nowości dla Ruby 2.7.0")
+- [Ruby lang docs [EN] - nowości o Pattern Matching](https://docs.ruby-lang.org/en/master/doc/syntax/pattern_matching_rdoc.html "Nowości o Pattern Matching")
+- [Ruby introduces find pattern in pattern matching [EN]](https://blog.saeloun.com/2020/08/17/find-pattern-in-pattern-matching "Short post by Vamsi Pavan Mahesh")

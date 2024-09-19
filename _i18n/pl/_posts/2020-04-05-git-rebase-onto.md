@@ -16,7 +16,7 @@ lang: pl
 imagefeature: git-rebase-onto/git-rebase-onto.png
 ---
 
-W artykule o <a href="{{ site.baseurl }}/replace-parent-branch" title="Jak podmienić gałąź rodzica w git-cie?">podmianie gałęzi rodzica w git-cie</a> pokazałam Ci jedno z zastosowań komendy `git rebase --onto`. Dziś skupimy się na zgłębieniu tematu, bo jest o czym mówić. Im lepiej zrozumiesz to polecenie tym łatwiej będzie Ci go w przyszłości użyć. Zapraszam!
+W artykule o [podmianie gałęzi rodzica w git-cie]({{site.baseurl}}/replace-parent-branch "Jak podmienić gałąź rodzica w git-cie?") pokazałam Ci jedno z zastosowań komendy `git rebase --onto`. Dziś skupimy się na zgłębieniu tematu, bo jest o czym mówić. Im lepiej zrozumiesz to polecenie tym łatwiej będzie Ci go w przyszłości użyć. Zapraszam!
 
 Istnieją dwa przypadki, w których `git rebase --onto` może się przydać:
 1. Masz gałąź (branch), na której chciałabyś zmienić gałąź rodzica.
@@ -24,7 +24,7 @@ Istnieją dwa przypadki, w których `git rebase --onto` może się przydać:
 
 Oczywiście możesz te dwa powody ze sobą połączyć i podmienić gałąź rodzica w tym samym momencie, gdy usuwasz zmiany. Dojdziemy do tego. Najpierw jednak ważne jest zrozumienie różnicy w wywołaniu `git rebase --onto` z dwoma lub trzeba argumentami.
 
-Zacznijmy jednak od małej powtórki. Omówimy sobie pokrótce czym jest `git rebase`. Jeśli będziesz zainteresowana dodatkowymi informacjami o <a href="{{ site.baseurl }}/git-rebase" title="Jak używać git rebase?">git rebase</a>, to odsyłam Cię do osobnego artykułu na ten temat.
+Zacznijmy jednak od małej powtórki. Omówimy sobie pokrótce czym jest `git rebase`. Jeśli będziesz zainteresowana dodatkowymi informacjami o [git rebase]({{site.baseurl}}/git-rebase "Jak używać git rebase?"), to odsyłam Cię do osobnego artykułu na ten temat.
 
 ## Git rebase
 

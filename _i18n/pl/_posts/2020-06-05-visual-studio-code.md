@@ -23,7 +23,7 @@ imagefeature: visual-studio-code/og_image-visual-studio-code.png
 lang: pl
 ---
 
-Jakiś czas temu napisałam artykuł o <a href="{{ site.baseurl }}/sublime" title="Sublime Text edytor - przydatne funkcjonalności">edytorze tekstu Sublime Text</a>. O tym jak bardzo lubię to narzędzie i dlaczego. Jednak czas płynął i po kilku latach używania pewne rzeczy przestały działać tak dobrze jak na początku. Zaczęłam szukać innego rozwiązania. Takiego, które da mi to czego zaczęło brakować mi w Sublime Text. Znalazłam takie narzędzie - to **Visual Studio Code**. Darmowe, udostępnione jako Open Source narzędzie do edycji tekstu, ale nie tylko. VS Code to narzędzie, które łączy najczęściej używane przez programistów funkcjonalności/narzędzia w jedno. Jest czymś pomiędzy zwykłym edytorem, a IDE. To właśnie o VS Code chciałabym Ci dziś trochę powiedzieć.
+Jakiś czas temu napisałam artykuł o [edytorze tekstu Sublime Text]({{site.baseurl}}/sublime "Sublime Text edytor - przydatne funkcjonalności"). O tym jak bardzo lubię to narzędzie i dlaczego. Jednak czas płynął i po kilku latach używania pewne rzeczy przestały działać tak dobrze jak na początku. Zaczęłam szukać innego rozwiązania. Takiego, które da mi to czego zaczęło brakować mi w Sublime Text. Znalazłam takie narzędzie - to **Visual Studio Code**. Darmowe, udostępnione jako Open Source narzędzie do edycji tekstu, ale nie tylko. VS Code to narzędzie, które łączy najczęściej używane przez programistów funkcjonalności/narzędzia w jedno. Jest czymś pomiędzy zwykłym edytorem, a IDE. To właśnie o VS Code chciałabym Ci dziś trochę powiedzieć.
 
 ## Dlaczego nie używam już Sublime Text edytora?
 
@@ -33,7 +33,7 @@ Jak już wspomniałam na wstępie bardzo lubiłam to narzędzie. Jednak z czasem
 
 Przyznam szczerze, że gdy szukałam nowego edytora tekstu, szukałam czegoś podobnego do edytora Sublime Text. Szukałam narzędzia, które posiada te wszystkie fajne cechy, za które ceniłam Sublime Text. Taki właśnie jest Visual Studio Code. A oto kilka cech, jakie posiada:
 
-1. **Mogę podzielić okno edytora na tyle paneli ile potrzebuję** - bardzo przydatna funkcjonalność. W większości przypadków wystarczają mi dwa panele poziome. W jednym mam otwarty kod, a w drugim pisane przeze mnie testy. Bardzo to ułatwia i przyśpiesza <a href="{{ site.baseurl }}/tdd-basic" title="Jak programować używając TDD?">pisanie kodu sterowanego testami (TDD)</a>.
+1. **Mogę podzielić okno edytora na tyle paneli ile potrzebuję** - bardzo przydatna funkcjonalność. W większości przypadków wystarczają mi dwa panele poziome. W jednym mam otwarty kod, a w drugim pisane przeze mnie testy. Bardzo to ułatwia i przyśpiesza [pisanie kodu sterowanego testami (TDD)]({{site.baseurl}}/tdd-basic "Jak programować używając TDD?").
 
 2. **VS Code w linii poleceń** - VS Code ma swoje własne komendy dla wiersza poleceń (CLI), które ułatwiają dostosowanie edytora do bieżących potrzeb. Dzięki temu można VS Code otworzyć w różnych kontekstach dla wielu projektów/folderów. Wszystkie ustawienia zostają zachowane. Przyśpiesza to znacząco pracę. Nie trzeba kolejny raz otwierać potrzebnych plików czy katalogów, ustawiać języka programowania czy konfiguracji paneli. Wszystko jest tak ustawione w danym projekcie jak zostawiłyśmy to przy ostatnim użytkowaniu. Poniżej przedstawiam najczęściej wykorzystywana przez mnie polecenia:
 

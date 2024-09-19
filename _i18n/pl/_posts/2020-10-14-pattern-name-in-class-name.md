@@ -1,7 +1,7 @@
 ---
 excerpt: >
   W jednym z moich ostatnich artykułów pisałam na temat
-  <a href="/pl/names-have-meaning" title="Jak tworzyć nazwy, które mają znaczenie? 13 sposobów na poprawienie czytelności nazw.">poprawiania czytelności nazw w projekcie</a>.
+  [poprawiania czytelności nazw w projekcie](/pl/names-have-meaning "Jak tworzyć nazwy, które mają znaczenie? 13 sposobów na poprawienie czytelności nazw.").
   Jednym ze sposobów, o którym pisałam było **powiedz jakiego wzorca używasz**.
   Jakiś czas później przeczytałam newsletter od Sandi Metz
   > _"Don't Name Classes After Patterns. Mostly"_.
@@ -23,7 +23,7 @@ imagefeature: pattern-name-in-class-name/og_image-pattern-name-in-class-name.jpg
 lang: pl
 ---
 
-W jednym z moich ostatnich artykułów pisałam na temat <a href="{{ site.baseurl }}/names-have-meaning" title="Jak tworzyć nazwy, które mają znaczenie? 13 sposobów na poprawienie czytelności nazw.">poprawiania czytelności nazw w projekcie</a>. Jednym ze sposobów, o którym pisałam było **powiedz jakiego wzorca używasz**. Jakiś czas później przeczytałam newsletter od Sandi Metz _"Don't Name Classes After Patterns. Mostly."_. Sandi przedstawia tam inny punkt widzenia na używanie nazw wzorców w nazwach klas, z małym wyjątkiem. Myślę, że to dobry temat by na chwilę się nad tym zastanowić. W programowaniu nie ma jednej złotej zasady, jak tworzyć nazwy. Są wskazówki, jak to robić, ale one maja nam tylko pokazać drogę. Nie są jedynym źródłem prawdy. Każde rozwiązanie ma swoje wady i zalety, dlatego dobrze mieć szerszą perspektywę na problem z jakim się mierzymy.
+W jednym z moich ostatnich artykułów pisałam na temat [poprawiania czytelności nazw w projekcie]({{site.baseurl}}/names-have-meaning "Jak tworzyć nazwy, które mają znaczenie? 13 sposobów na poprawienie czytelności nazw."). Jednym ze sposobów, o którym pisałam było **powiedz jakiego wzorca używasz**. Jakiś czas później przeczytałam newsletter od Sandi Metz _"Don't Name Classes After Patterns. Mostly."_. Sandi przedstawia tam inny punkt widzenia na używanie nazw wzorców w nazwach klas, z małym wyjątkiem. Myślę, że to dobry temat by na chwilę się nad tym zastanowić. W programowaniu nie ma jednej złotej zasady, jak tworzyć nazwy. Są wskazówki, jak to robić, ale one maja nam tylko pokazać drogę. Nie są jedynym źródłem prawdy. Każde rozwiązanie ma swoje wady i zalety, dlatego dobrze mieć szerszą perspektywę na problem z jakim się mierzymy.
 
 Zacznijmy od mojej sugestii by _mówić jakiego wzorca się używa_. Dalej uważam, że nazwa wzorca może dać nam dodatkową informacje, która pozwoli lepiej zrozumieć architekturę. Kiedy mamy klasę `User` i stworzymy `UserDecorator` od razu wiemy, co to za wzorzec. Wiemy, że `UserDecorator` to `User` z jakimś dodatkowym lub zmienionym zachowaniem. Ta nazwa pokazuje nam, jaką decyzję architektoniczną podjęłyśmy. Myślę, że jeśli chcemy zwrócić uwagę właśnie na architekturę to taka nazwa jest OK. Nazwy wzorców są po to, by pomóc nam, jako programistom, komunikować się w szybki i precyzyjny sposób. Ponieważ wzorce mają dla nas znaczenie, więc dodajemy je do nazw klas.
 

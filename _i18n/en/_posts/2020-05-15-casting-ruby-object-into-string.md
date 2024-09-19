@@ -170,10 +170,7 @@ Did you mean?  to_set
 
 ## How join method works on the array?
 
-To understand how the `join` method works we need to go to the source. I mean, we need to go to the
-{% include links/external-link.html
-   name='Ruby source code'
-   url='https://github.com/ruby/ruby/blob/ruby_2_7/array.c#L2384' %}.
+To understand how the `join` method works we need to go to the source. I mean, we need to go to the [Ruby source code](https://github.com/ruby/ruby/blob/ruby_2_7/array.c#L2384).
 
 ```ruby
 /*
@@ -292,11 +289,7 @@ puts [1, 2, 3]
  => nil
 ```
 
-So, both methods `join` and `puts` don't call `to_str` and `to_s` methods on whole array but an each element in the array. You can also see this directly in
-{% include links/external-link.html
-   name='Ruby code'
-   url='https://github.com/ruby/ruby/blob/ruby_2_7/io.c#L7720' %}
-for `puts` method:
+So, both methods `join` and `puts` don't call `to_str` and `to_s` methods on whole array but an each element in the array. You can also see this directly in [Ruby code](https://github.com/ruby/ruby/blob/ruby_2_7/io.c#L7720) for `puts` method:
 
 ```ruby
 /*
