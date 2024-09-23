@@ -20,7 +20,7 @@ Last time in the article [Ruby Refactoring step by step - part 1](https://womano
 
 # Step 8 - More descriptive output
 
-This step I started from <a href="https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb" title="Code after 7th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. I mainly focus on meaning of this method:
+This step I started from [here](https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb "Code after 7th step of refactoring"). I mainly focus on meaning of this method:
 
 ```ruby
 def check
@@ -56,7 +56,7 @@ def check
 end
 ```
 
-You can find new version of code <a href="https://github.com/womanonrails/poker/blob/4896498a348db52d5c884a522a132eae5b2c4f60/lib/poker/hand.rb" title="Code after 8th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>
+You can find new version of code [here](https://github.com/womanonrails/poker/blob/4896498a348db52d5c884a522a132eae5b2c4f60/lib/poker/hand.rb "Code after 8th step of refactoring").
 
 ## Stats:
 - **LOC**  - 80
@@ -106,7 +106,7 @@ where `@order_checking` is order of checking hand.
 ]
 ```
 
-All code you can find <a href="https://github.com/womanonrails/poker/blob/4d649a25af020c7f862b3c6ed964f1b2e73a0f60/lib/poker/hand.rb" title="Code after 9th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>
+All code you can find [here](https://github.com/womanonrails/poker/blob/4d649a25af020c7f862b3c6ed964f1b2e73a0f60/lib/poker/hand.rb "Code after 9th step of refactoring").
 
 ## Stats:
 - **LOC**  - 82
@@ -117,7 +117,7 @@ All code you can find <a href="https://github.com/womanonrails/poker/blob/4d649a
 
 # Step 10 - Small object
 
-This step is quite big and also very important. Maybe even the most important one. I started from **SOLID** principles. If you've never heard about them or you would like to refresh your memory to do this in short way you can check <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)" title="SOLID (object-oriented design)" target="_blank" rel="nofollow noopener noreferrer">wiki page</a> or to deeply understand it check out the presentation of <a href="https://www.youtube.com/watch?v=v-2yFMzxqwU" title="Sandy Metz - SOLID Object-Oriented Design" target="_blank" rel="nofollow noopener noreferrer">Sandy Metz - SOLID Object-Oriented Design</a>. I started from **S - Single responsibility principle**. When I look into this code I can say that `Hand` class know and do everything. As I already mentioned before this code is more procedural than object oriented. So I started extracting functionality one by one. These are the steps for each method by `four_of_a_kind` example:
+This step is quite big and also very important. Maybe even the most important one. I started from **SOLID** principles. If you've never heard about them or you would like to refresh your memory to do this in short way you can check [wiki page](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design) "SOLID (object-oriented design)") or to deeply understand it check out the presentation of [Sandy Metz - SOLID Object-Oriented Design](https://www.youtube.com/watch?v=v-2yFMzxqwU "Sandy Metz - SOLID Object-Oriented Design"). I started from **S - Single responsibility principle**. When I look into this code I can say that `Hand` class know and do everything. As I already mentioned before this code is more procedural than object oriented. So I started extracting functionality one by one. These are the steps for each method by `four_of_a_kind` example:
 
 - I moved `four_of_a_kind` logic to separate class. Yes, there are some duplications, but as Sandi says: *duplication is better than a wrong abstraction*.
 
@@ -198,7 +198,7 @@ def initialize(array, order_checking = ORDER_CHECKING)
 end
 ```
 
-The code for this step you can find <a href="https://github.com/womanonrails/poker/tree/0c5d6850d40f899d98ff531e4a2b948d469c3d84/lib/poker" title="Code after 10th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. This step I repeated to all different hands. After each iteration all tests were passing. If you would like to check the pattern which I repeated you can <a href="https://github.com/womanonrails/poker/tree/08631288c747a2a9fda3d986f4046e9e363ea027/lib/poker" title="Pattern for 3 classes created based on the steps above" target="_blank" rel="nofollow noopener noreferrer">check this commit</a>, there already exist 3 classes created based on the steps above.
+The code for this step you can find [here](https://github.com/womanonrails/poker/tree/0c5d6850d40f899d98ff531e4a2b948d469c3d84/lib/poker "Code after 10th step of refactoring"). This step I repeated to all different hands. After each iteration all tests were passing. If you would like to check the pattern which I repeated you can [check this commit](https://github.com/womanonrails/poker/tree/08631288c747a2a9fda3d986f4046e9e363ea027/lib/poker "Pattern for 3 classes created based on the steps above"), there already exist 3 classes created based on the steps above.
 
 ## Stats:
 - **LOC**  - 85
@@ -209,7 +209,7 @@ The code for this step you can find <a href="https://github.com/womanonrails/pok
 
 # Step 11 - Remove duplication
 
-In this step, I noticed that all my new classes have a lot of duplications in code. I only changed two things in each class: class name and one line in method `check`. In this case we need to extract some behavior, maybe method or even class which will take care of sorting cards in hand and will have knowledge about the colors and figures on this card. I decided to create some normalization for the cards. I created class `CardsNormalization`, which is one of representation of `Normalization` class. You can ask me why did I create 2 classes when probably I need only one? Well, I had a feeling that I create simple *interface* which can have many representations. For now is only one, but who knows the future? So I created *interface* `Normalization` with one representation `CardsNormalization`. Another example of normalization can be normalization for dice. There are the same rules like in poker (one pair or four of a kind), but normalization will be different. Code for these two classes you can find <a href="https://github.com/womanonrails/poker/tree/a668a538cb86dd17e946157c5d62373fe2266c0e/lib" title="Code after 11th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. I just moved code which was duplicated in many classes to this `Normalization`:
+In this step, I noticed that all my new classes have a lot of duplications in code. I only changed two things in each class: class name and one line in method `check`. In this case we need to extract some behavior, maybe method or even class which will take care of sorting cards in hand and will have knowledge about the colors and figures on this card. I decided to create some normalization for the cards. I created class `CardsNormalization`, which is one of representation of `Normalization` class. You can ask me why did I create 2 classes when probably I need only one? Well, I had a feeling that I create simple *interface* which can have many representations. For now is only one, but who knows the future? So I created *interface* `Normalization` with one representation `CardsNormalization`. Another example of normalization can be normalization for dice. There are the same rules like in poker (one pair or four of a kind), but normalization will be different. Code for these two classes you can find [here](https://github.com/womanonrails/poker/tree/a668a538cb86dd17e946157c5d62373fe2266c0e/lib "Code after 11th step of refactoring"). I just moved code which was duplicated in many classes to this `Normalization`:
 
 ```ruby
 class Normalization
@@ -291,7 +291,7 @@ def check
 end
 ```
 
-Next, I did the same for rest of existing clases. So I used `CardsNormalization` for class `FourOfAKind` and `ThreeOfAKind`.  You can find code for that <a href="https://github.com/womanonrails/poker/tree/87891306fe875bd415554a6eb5ebc0b46f893c9d/lib/poker" title="Code after 11th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>.
+Next, I did the same for rest of existing clases. So I used `CardsNormalization` for class `FourOfAKind` and `ThreeOfAKind`.  You can find code for that [here](https://github.com/womanonrails/poker/tree/87891306fe875bd415554a6eb5ebc0b46f893c9d/lib/poker "Code after 11th step of refactoring").
 
 ## Stats:
 - **LOC**  - 87
@@ -335,7 +335,7 @@ class ThreeOfAKind
 end
 ```
 
-Whole code is <a href="https://github.com/womanonrails/poker/tree/d66590842ef194a9218dea70ccd083212b5d43b2/lib" title="Code after 12th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. After this changes and writing new tests all new and old tests have passed.
+Whole code is [here](https://github.com/womanonrails/poker/tree/d66590842ef194a9218dea70ccd083212b5d43b2/lib "Code after 12th step of refactoring"). After this changes and writing new tests all new and old tests have passed.
 
 ## Stats:
 - **LOC**  - 87
@@ -384,11 +384,11 @@ module Poker
 end
 ```
 
-Do you see the pattern? Of course I need to make some improvements in my `Hand` class, add more test and check if all of them pass. Full code on this stage available <a href="https://github.com/womanonrails/poker/tree/d18cf1f273c9fdcb97e21067d3411938beefdf36/lib" title="Code after 13th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>.
+Do you see the pattern? Of course I need to make some improvements in my `Hand` class, add more test and check if all of them pass. Full code on this stage available [here](https://github.com/womanonrails/poker/tree/d18cf1f273c9fdcb97e21067d3411938beefdf36/lib "Code after 13th step of refactoring").
 
 # Step 14 - Repeat steps
 
-So now time to repeat some steps. Create new rules like `StraightnessRule`, `FlushnessRule` or `RoyalnessRule`. Create new classes `Straight`, `Flush` or `RoyalFlush`. The code after those changes you will find <a href="https://github.com/womanonrails/poker/tree/0985c071c87de56c8c49307d6d20963aced7ff79/lib" title="Code after 14th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>.
+So now time to repeat some steps. Create new rules like `StraightnessRule`, `FlushnessRule` or `RoyalnessRule`. Create new classes `Straight`, `Flush` or `RoyalFlush`. The code after those changes you will find [here](https://github.com/womanonrails/poker/tree/0985c071c87de56c8c49307d6d20963aced7ff79/lib "Code after 14th step of refactoring").
 
 I would like to mention one magic thing here. When we do small classes with one responsibility defined in a general way, we can use our classes in unexpected ways. Here is an example:
 
@@ -423,7 +423,7 @@ rule.check?
  => true
 ```
 
-When I created this class I never thought about using it on an array of strings. I know that this is partially thanks to `Ruby` as a language and <a href="https://en.wikipedia.org/wiki/Duck_typing" title="Duck typing in Ruby" target="_blank" rel="nofollow noopener noreferrer">**duck typing**</a>, but also because of simplicity of the code.
+When I created this class I never thought about using it on an array of strings. I know that this is partially thanks to `Ruby` as a language and [**duck typing**](https://en.wikipedia.org/wiki/Duck_typing "Duck typing in Ruby"), but also because of simplicity of the code.
 
 ## Stats:
 - **LOC**  - 94
@@ -451,7 +451,7 @@ module Poker
 end
 ```
 
-All code you can check <a href="https://github.com/womanonrails/poker/tree/03a356a42afed39fffd98ceff0b7b1311f7b05ec/lib" title="Code after 15th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a> and tests have passed after this changes.
+All code you can check [here](https://github.com/womanonrails/poker/tree/03a356a42afed39fffd98ceff0b7b1311f7b05ec/lib "Code after 15th step of refactoring") and tests have passed after this changes.
 
 ## Stats:
 - **LOC**  - 55
@@ -482,7 +482,7 @@ module Rules
 end
 ```
 
-This time we select only chosen frequency in `@frequency_array` and then we check how many times it is there. But wait! When we have this combination 2&#9824; 2&#9827; <span class='red-text'>2&#9829; 3&#9829; 3&#9830;</span> we have a full house but also two pairs. So rule which checks if in this hand are two pairs should return `true`. That's why we check `number < @count` and remove them from this array. The code for this class is <a href="https://github.com/womanonrails/poker/blob/6a3af1c900c88477097ac00d405fef59866eb06b/lib/rules/multi_frequency_rule.rb" title="Code for MultiFrequencyRule class" target="_blank" rel="nofollow noopener noreferrer">here</a>.
+This time we select only chosen frequency in `@frequency_array` and then we check how many times it is there. But wait! When we have this combination 2&#9824; 2&#9827; <span class='red-text'>2&#9829; 3&#9829; 3&#9830;</span> we have a full house but also two pairs. So rule which checks if in this hand are two pairs should return `true`. That's why we check `number < @count` and remove them from this array. The code for this class is [here](https://github.com/womanonrails/poker/blob/6a3af1c900c88477097ac00d405fef59866eb06b/lib/rules/multi_frequency_rule.rb "Code for MultiFrequencyRule class").
 
 
 **Alert!** If you take a closer look to this code you will see one more problem. What if we have 2&#9824; 2&#9827; <span class='red-text'>2&#9829; 2&#9830; 3&#9829;</span>. We can say that these are also 2 pairs (of course, this is also four of a kind). So our `check?` method should look like this:
@@ -494,7 +494,7 @@ def check?
 end
 ```
 
-When we have this rule we can check `TwoPair`, we can finally clean up logic in `Hand` class and we can replace class `FrequencyRule` with `MultiFrequencyRule` which is much more general. After that all tests have passed. You can find the code <a href="https://github.com/womanonrails/poker/tree/277d2893ffac1318c2a64fca2704e1c8258856e1/lib" title="Code after 16th step of refactoring" target="_blank" rel="nofollow noopener noreferrer">here</a>. Check out how `Hand` class looks like now:
+When we have this rule we can check `TwoPair`, we can finally clean up logic in `Hand` class and we can replace class `FrequencyRule` with `MultiFrequencyRule` which is much more general. After that all tests have passed. You can find the code [here](https://github.com/womanonrails/poker/tree/277d2893ffac1318c2a64fca2704e1c8258856e1/lib "Code after 16th step of refactoring"). Check out how `Hand` class looks like now:
 
 ```ruby
 module Poker
@@ -531,7 +531,7 @@ module Poker
 end
 ```
 
-I'm pretty proud of this class. If you would like to compare this class with first implementation check this <a href="https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb" title="First version of Poker class" target="_blank" rel="nofollow noopener noreferrer">commit</a>.
+I'm pretty proud of this class. If you would like to compare this class with first implementation check this [commit](https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb "First version of Poker class").
 
 ## Stats:
 - **LOC**  - 37
@@ -597,19 +597,7 @@ That's it. These are some ideas for refactoring which you can use separately. Yo
 - {% include books/en/pragmatic_programmer-andrew_hund_david_thomas.html %}
 
 #### Presentations
-- <a href='https://www.youtube.com/watch?v=8bZh5LMaSmE'
-     rel='nofollow noopener noreferrer'
-     title='All the Little Things by Sandi Metz'
-     target='_blank'>All the Little Things by Sandi Metz</a>
-- <a href='https://www.youtube.com/watch?v=5yX6ADjyqyE'
-     rel='nofollow noopener noreferrer'
-     title='Fat Models with Patterns by Bryan Helmkamp'
-     target='_blank'>LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
-- <a href='https://www.youtube.com/watch?v=OMPfEXIlTVE'
-     rel='nofollow noopener noreferrer'
-     title='Nothing is something by Sandi Metz'
-     target='_blank'>Nothing is something by Sandi Metz</a>
-- <a href='https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks'
-     rel='nofollow noopener noreferrer'
-     title='8 best Ruby on Rails refactoring talks'
-     target='_blank'>Best Ruby on Rails refactoring talks</a>
+- [All the Little Things by Sandi Metz](https://www.youtube.com/watch?v=8bZh5LMaSmE "All the Little Things by Sandi Metz")
+- [LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp](https://www.youtube.com/watch?v=5yX6ADjyqyE "Fat Models with Patterns by Bryan Helmkamp")
+- [Nothing is something by Sandi Metz](https://www.youtube.com/watch?v=OMPfEXIlTVE "Nothing is something by Sandi Metz")
+- [Best Ruby on Rails refactoring talks](https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks "8 best Ruby on Rails refactoring talks")
