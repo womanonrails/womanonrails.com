@@ -20,7 +20,7 @@ tags: [environment, git, version control system]
 lang: en
 ---
 
-When you are starting your adventure with git, it's hard to know everything from the beginning. This is normal that you do small steps and discover new features on the way. Today, I have a very nice git feature for you. It will allow you to have a better structure and order of your commits. This is very useful especially when you work in a team. I will show you how to use **git rebase**. This is the third article in the git series, so if you want to know more about <a href="{{ site.baseurl }}/git-usage" title="How to use git?">basics of git usage</a>, go to my previous articles.
+When you are starting your adventure with git, it's hard to know everything from the beginning. This is normal that you do small steps and discover new features on the way. Today, I have a very nice git feature for you. It will allow you to have a better structure and order of your commits. This is very useful especially when you work in a team. I will show you how to use **git rebase**. This is the third article in the git series, so if you want to know more about [basics of git usage]({{site.baseurl}}/git-usage "How to use git?"), go to my previous articles.
 
 ## Git merge
 
@@ -141,9 +141,9 @@ git rebase --abort
 ```
 
 ### Other articles in this series:
-- <a href="{{ site.baseurl }}/what-is-git" title="Why we use git?">What git tool is?</a>
-- <a href="{{ site.baseurl }}/git-usage" title="How to start using git?">Basic commands in git</a>
-- <a href="{{ site.baseurl }}/replace-parent-branch" title="Setting git parent pointer to a different parent.">How to replace parent branch in git?</a>
-- <a href="{{ site.baseurl }}/git-rebase-onto" title="Git rebase --onto an overview.">How to use git rebase --onto?</a>
+- [What git tool is?]({{site.baseurl}}/what-is-git "Why we use git?")
+- [Basic commands in git]({{site.baseurl}}/git-usage "How to start using git?")
+- [How to replace parent branch in git?]({{site.baseurl}}/replace-parent-branch "Setting git parent pointer to a different parent.")
+- [How to use git rebase --onto?]({{site.baseurl}}/git-rebase-onto "Git rebase --onto an overview.")
 
-If you want more information about the git tool, you can also check out the {% include links/external-link.html name='Git documentation' url='https://git-scm.com/doc' %}.
+If you want more information about the git tool, you can also check out the [Git documentation](https://git-scm.com/doc).

@@ -27,7 +27,7 @@ show_date: true
 <br>
 
 It took me some time from last post. So many things happened: events, workshops, travel. But I'm back! Today I would like to share my thoughts about
-{% include links/external-link.html name='Web Summit' url='https://websummit.net/' %}.
+[Web Summit](https://websummit.net/).
 This is big conference (exhibition for startups). I was on this conference once in [Dublin]({{site.baseurl}}/websummit) and now in Lisbon. I decided to come because as a *Woman in Tech* I got free ticket. Maybe because of that I should not talk about what I don't like. On the other hand I think when no one talks about disadvantage, conference can not be better next time.
 
 1. **Too big for me**
