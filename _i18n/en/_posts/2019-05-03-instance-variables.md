@@ -248,7 +248,7 @@ When I create my classes I try to stick to those rules (and not only them):
 - Use **private method** instead of **instance variables** - give clearer error messages
 - Use functional programming paradigm (if possible) - to not mutate state of your class
 - Use **open/closed principle** - Class (not only class) should be **open for extension, but closed for modification**
-- Use **single responsibility principle** - I didn't mention about those 2 rules here (open/close and single responsibility), but they are very useful. I talked a lot more about them during my article about <a href="{{ site.baseurl }}refactoring-part2" title="Ruby refactoring - step by step">refactoring in Ruby</a>. They are shown by example.
+- Use **single responsibility principle** - I didn't mention about those 2 rules here (open/close and single responsibility), but they are very useful. I talked a lot more about them during my article about [refactoring in Ruby]({{site.baseurl}}/refactoring-part2 "Ruby refactoring - step by step"). They are shown by example.
 
 If you what to know more about a **good patterns in Ruby** (and not only) check out those books:
 

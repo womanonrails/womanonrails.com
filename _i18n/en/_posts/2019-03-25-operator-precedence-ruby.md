@@ -35,9 +35,7 @@ This is not 8. It is 6. You can see here that multiplication is _stronger_ then 
 ```
 
 OK, but how will I know that? There are many different operators. Well, you need to remember the table of operators order, from
-{% include links/external-link.html
-   name='Ruby documentation - operators precedence'
-   url='https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html' %}:
+[Ruby documentation - operators precedence](https://ruby-doc.org/3.3.5/syntax/precedence_rdoc.html):
 
 ```ruby
 !, ~, unary +

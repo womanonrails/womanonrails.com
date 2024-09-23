@@ -45,9 +45,7 @@ The input for this code was just a string. We remove all space between parts of 
   2. **Validation only the last part of string** - When we look closely we will see this problem. When we put as input: `"aaa@excom, bbb@ex.com"` it will be valid. And when we put `"bbb@ex.com, aaa@excom"` it won't.
 
 What is going on? To see that kind of problems, it is good to check how our regular expression behaves for different edge cases in console or in some tool. I use and recommend
-{% include links/external-link.html
-   name='Rubular - Ruby regular expression editor'
-   url='https://rubular.com/' %}.
+[Rubular - Ruby regular expression editor](https://rubular.com/).
 At least for Ruby people. It is simple, but very useful website where you can check your regular expression.
 
 <figure>

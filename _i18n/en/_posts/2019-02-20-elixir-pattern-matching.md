@@ -4,6 +4,7 @@ excerpt: >
   runs on the Erlang virtual machine.
   It is Rails and Ruby reference here.
   José is one of the members of Rails Core Team.
+  Let's check the basic fixtures in Elixir language.
 layout: post
 title: Pattern matching in Elixir - basics
 description: What I learned about Elixir so far?
@@ -14,14 +15,14 @@ lang: en
 ---
 
 Elixir is a functional language, created by José Valim in 2012, runs on the Erlang virtual machine. If you want to know more about Elixir, go to its
-{% include links/external-link.html name='Elixir - official website' url='https://elixir-lang.org/' %}.
+[Elixir - official website](https://elixir-lang.org/).
 I would like to mention one more thing. It is Rails and Ruby reference here. José is one of the members of Rails Core Team.
 
-The first time when I've heard about Elixir, I was on Euruko 2016 in Sofia. José, before his presentation, talked a little bit about Elixir. Then I saw that Ruby community started to be more interested in Elixir. Even in Silesia, people started doing projects in Elixir and Phoenix. And in the end of 2018, I had a possibility to be a participant on first Elixir Girls in Poland. This workshop took a place in Poznan. It was a fantastic experience. I can say - mind opening. But I wouldn't like to talk about the workshops them self. The structure is very similar to <a href="{{ site.baseurl }}/tags/#Rails%20Girls" title="My previous Rails Girls articles">Rails Girls</a>, but you use Elixir and Phoenix instead of Ruby and Rails. I would like to show you what I really like about Eilixir - **pattern matching**. It provides reducing numbers of "if" statements in the code and simplify the code structure.
+The first time when I've heard about Elixir, I was on Euruko 2016 in Sofia. José, before his presentation, talked a little bit about Elixir. Then I saw that Ruby community started to be more interested in Elixir. Even in Silesia, people started doing projects in Elixir and Phoenix. And in the end of 2018, I had a possibility to be a participant on first Elixir Girls in Poland. This workshop took a place in Poznan. It was a fantastic experience. I can say - mind opening. But I wouldn't like to talk about the workshops them self. The structure is very similar to [Rails Girls]({{site.baseurl}}/category/workshops "My previous Rails Girls articles"), but you use Elixir and Phoenix instead of Ruby and Rails. I would like to show you what I really like about Eilixir - **pattern matching**. It provides reducing numbers of "if" statements in the code and simplify the code structure.
 
 ### Basic match operator
 
-Let's start from the beginning. **What is pattern matching?** Pattern matching is checking if the code is matching to the pattern. Yes, it sounds strange. I said the same thing but in different words. Let's imagine that we have some rules - patterns, and you just check if your code/text match to this pattern or not. Like, when you were a child and tried putting a cubic block to square hole. Sounds familiar? Did you ever use regular expressions? I wrote one of my articles about them <a href="{{ site.baseurl }}/email-regular-expressions" title="Regular expressions - what you need to think of using them?">Regular expressions what can go wrong?</a>. Regular expressions are one of an example of pattern matching. OK, when we know more about what pattern matching is, let's start from simple example.
+Let's start from the beginning. **What is pattern matching?** Pattern matching is checking if the code is matching to the pattern. Yes, it sounds strange. I said the same thing but in different words. Let's imagine that we have some rules - patterns, and you just check if your code/text match to this pattern or not. Like, when you were a child and tried putting a cubic block to square hole. Sounds familiar? Did you ever use regular expressions? I wrote one of my articles about them [Regular expressions what can go wrong?]({{site.baseurl}}/email-regular-expressions "Regular expressions - what you need to think of using them?"). Regular expressions are one of an example of pattern matching. OK, when we know more about what pattern matching is, let's start from simple example.
 
 ```elixir
 iex> x = 4
