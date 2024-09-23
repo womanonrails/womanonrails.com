@@ -18,9 +18,7 @@ lang: en
 ---
 
 I worked in last a few days with `each_with_object` method. Every time when I would like to use some method in Ruby I try read documentation one more time and I look on some example of usage. This time I went through
-{% include links/external-link.html
-   name='APIdock'
-   url='https://apidock.com/ruby/Enumerable/each_with_object' %}
+[APIdock](https://apidock.com/ruby/Enumerable/each_with_object)
 and I noticed that in theirs documentation is missing one very nice example of usage `each_with_object` method. I tried to add this missing part there, but without success. In meantime when I'm waiting for message from APIdock support I decided to write short note here about this.
 
 
@@ -112,9 +110,7 @@ or in Rails:
 ```
 
 By the way, what is difference between `reduce` and `inject`? There is no difference. This two methods are
-{% include links/external-link.html
-   name='aliases'
-   url='http://ruby-doc.org/core/Enumerable.html#method-i-inject' %}.
+[aliases](http://ruby-doc.org/core/Enumerable.html#method-i-inject).
 
 In this place we should add one more thing. `inject` method we can use similar to `each_with_object` but order of arguments in block is different and we need always remember to put in last line of block our accumulator value. Look here:
 
