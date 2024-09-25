@@ -250,7 +250,7 @@ Kiedy tworzysz swoje klasy, warto pamiętać o takich prostych zasadach:
 - Używaj **metod prywatnych** zamiast **zmiennych instancji** - dostaniesz jaśniejszy komunikat błędu
 - Używaj paradygmatu programowania funkcyjnego (jeżeli to możliwe) - używaj nie mutowanego stanu w swojej klasie
 - Używaj **zasady open/closed** - Klasa (ale nie tylko) ma być otwarta na rozszerzenia, ale zamknięta na modyfikację
-- Używaj **zasady jednej odpowiedzialności (single responsibility)** - Nie wspominałam o tych dwóch ostatnich zasadach w tym artykule, ale są one jednak bardzo użyteczne. Mówiłam o nich w krótkiej serii artykułów o <a href="{{ site.baseurl }}/refactoring-part2" title="Refaktoring w języku Ruby - krok po kroku">refaktoryzacji na przykładzie logiki do pokera</a>.
+- Używaj **zasady jednej odpowiedzialności (single responsibility)** - Nie wspominałam o tych dwóch ostatnich zasadach w tym artykule, ale są one jednak bardzo użyteczne. Mówiłam o nich w krótkiej serii artykułów o [refaktoryzacji na przykładzie logiki do pokera]({{site.baseurl}}/refactoring-part2 "Refaktoring w języku Ruby - krok po kroku").
 
 Jeżeli jesteś zainteresowana innymi dobrymi praktykami to zachęcam do zerknięcia na poniższe książki:
 

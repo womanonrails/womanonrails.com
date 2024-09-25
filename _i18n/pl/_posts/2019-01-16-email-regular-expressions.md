@@ -43,9 +43,7 @@ Na wejście kod dostawał tekst. Później następowało usunięcie białych zna
   2. **Walidacja tylko ostatniej części naszego tekstu** - Gdy przyjrzymy się bliżej zauważymy, że podając na wejście `"aaa@excom, bbb@ex.com"` dane zostaną potraktowane jako poprawne. Natomiast gdy odwrócimy kolejność `"bbb@ex.com, aaa@excom"` już nie.
 
 Co tu się dzieje? By lepiej zrozumieć problem dobrze jest sprawdzić różne przypadki zachowania danych wejściowych dla wybranego przez nas wyrażenia regularnego. Można to zrobić za pomocą interaktywnej konsoli Rubiego lub używając jakiegoś narzędzia. Ja często używam i również polecam
-{% include links/external-link.html
-   name='Rubular - Ruby regular expression editor'
-   url='https://rubular.com/' %}.
+[Rubular - Ruby regular expression editor](https://rubular.com/).
 Jest to prosta stronka internetowa, gdzie łatwo można sprawdzić działanie swoich wyrażeń regularnych.
 
 <figure>

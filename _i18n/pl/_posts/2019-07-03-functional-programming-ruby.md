@@ -494,7 +494,7 @@ By stworzyć listy podobne do list jakie występują w języku Lisp, będziemy p
  => (2 3 4)
 ```
 
-Jeżeli czytałaś mój artykuł o <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - Dopasowanie do wzorca">podstawach języka Elixir</a> możesz porównać `car` i `cdr` do  `head` i `tail` w Elixirze. `car` zawsze zwróci pierwszy element listy, natomiast `cdr` zwróci listę bez pierwszego elementu. Zacznijmy od przygotowania tablicy w języku Ruby, która będzie się zachowywać jak lista w języku Lisp.
+Jeżeli czytałaś mój artykuł o [podstawach języka Elixir]({{site.baseurl}}/elixir-pattern-matching "Elixir - Dopasowanie do wzorca") możesz porównać `car` i `cdr` do  `head` i `tail` w Elixirze. `car` zawsze zwróci pierwszy element listy, natomiast `cdr` zwróci listę bez pierwszego elementu. Zacznijmy od przygotowania tablicy w języku Ruby, która będzie się zachowywać jak lista w języku Lisp.
 
 ```ruby
 car, cdr = [1,[2,[3]]]
@@ -638,9 +638,7 @@ irb> (1..Float::INFINITY).lazy.select(&:even?).first(5)
 ```
 
 Jeżeli chciałabyś dowiedzieć się o nich czegoś więcej, to odsyłam Cię do
-{% include links/external-link.html
-   name='dokumentacji leniwych enumeratorów'
-   url='https://ruby-doc.org/core/Enumerator/Lazy.html' %}.
+[dokumentacji leniwych enumeratorów](https://ruby-doc.org/core/Enumerator/Lazy.html).
 
 To wszystko na dzisiaj. Mam nadzieję, że Cię to zainteresowało. Jeżeli masz jakieś pytania, to umieść je w komentarzu na dole. Do zobaczenia!
 
@@ -649,12 +647,6 @@ To wszystko na dzisiaj. Mam nadzieję, że Cię to zainteresowało. Jeżeli masz
 - {% include links/youtube-link.html
      name='Wideo o programowaniu funkcyjnym (Proc, Lambda, Closure) w Ruby [EN]'
      video_id='VBC-G6hahWA' %}
-- {% include links/external-link.html
-     name='Prezentacja o programowaniu funkcyjnym w Ruby [EN]'
-     url='https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242' %}
-- {% include links/external-link.html
-     name='Artykuł na temat domknięć w Ruby [EN]'
-     url='https://innig.net/software/ruby/closures-in-ruby' %}
-- {% include links/external-link.html
-     name='Dokumentacja Ruby [EN]'
-     url='https://ruby-doc.org/' %}
+- [Prezentacja o programowaniu funkcyjnym w Ruby [EN]](https://www.slideshare.net/tokland/functional-programming-with-ruby-9975242)
+- [Artykuł na temat domknięć w Ruby [EN]](https://innig.net/software/ruby/closures-in-ruby)
+- [Dokumentacja Ruby [EN]](https://ruby-doc.org/)

@@ -18,7 +18,7 @@ lang: pl
 last_modified_at: 2022-01-19 10:00:00 +0200
 ---
 
-Jakiś czas temu napisałam artykuł o <a href="{{ site.baseurl }}/elixir-pattern-matching" title="Elixir - Dopasowanie do wzorca">podstawach pattern matchingu w Elixirze</a>. Bardzo spodobała mi się idea dopasowywania do wzorca. Teraz możemy się nią cieszyć również w najnowszej wersji Ruby 2.7!!! Nie jest to co prawda ten sam pattern matching co w Elixirze, ale jest to ciekawa funkcjonalność. Trzeba też pamiętać, że **pattern matching w Ruby** jest funkcjonalnością eksperymentalną, więc może się zmieniać dynamicznie w następnych wersjach Rubiego. Nie zmienia to faktu, że już teraz możemy ją przetestować.
+Jakiś czas temu napisałam artykuł o [podstawach pattern matchingu w Elixirze]({{site.baseurl}}/elixir-pattern-matching "Elixir - Dopasowanie do wzorca"). Bardzo spodobała mi się idea dopasowywania do wzorca. Teraz możemy się nią cieszyć również w najnowszej wersji Ruby 2.7!!! Nie jest to co prawda ten sam pattern matching co w Elixirze, ale jest to ciekawa funkcjonalność. Trzeba też pamiętać, że **pattern matching w Ruby** jest funkcjonalnością eksperymentalną, więc może się zmieniać dynamicznie w następnych wersjach Rubiego. Nie zmienia to faktu, że już teraz możemy ją przetestować.
 
 Zanim jednak zaczniemy, przypomnijmy sobie **Co to jest pattern matching?** Pattern matching, czyli inaczej **dopasowanie do wzorca** jest to sposób na przygotowywanie pewnych wzorców dla naszych danych, dzięki którym, jeżeli dane do tych wzorców pasują, możemy _rozebrać_ je na czynniki pierwsze bazując właśnie na podanych wzorcach. Innymi słowy pattern matching służy nam do wyciągania wybranych elementów ze skomplikowanych struktur danych, na podstawie pewnych reguł przez nas zdefiniowanych. Możemy też powiedzieć, że pattern matching jest jak _wyrażenie regularne_ z wielokrotnym przypisaniem wykorzystywane nie tylko dla łańcuchów znaków (string).
 
@@ -171,9 +171,7 @@ irb> c
 ## Pattern matching dla klasy Hash w Ruby
 
 Kiedy mówimy o dopasowaniu do wzorca dla klasy `Hash` musimy pamiętać, że obecnie istnieje tylko wsparcie dla tablic słownikowych o kluczach w postaci symboli. Klucze w postaci łańcuchów znaków lub bardziej skomplikowanych obiektów nie są jeszcze wspierane. Jeżeli chciałabyś wiedzieć więcej na temat problemów dotyczących klasy `Hash` odsyłam Cię do
-{% include links/external-link.html
-   name='prezentacji Kazuki Tsujimoto'
-   url='https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7' %}
+[prezentacji Kazuki Tsujimoto](https://speakerdeck.com/k_tsj/pattern-matching-new-feature-in-ruby-2-dot-7)
 na temat _Pattern matching w Ruby_.
 
 Zacznijmy od prostego przykładu:
@@ -527,7 +525,7 @@ Kiedy testowałam sobie pattern matching w Ruby, przyszły mi do głowy pewne do
 
 Wiem że moje pomysły mogą być trudne do osiągnięcia lub może nawet niemożliwe, ale jest to moja taka mała lista życzeń. ;]
 
-Od Ruby 3.0 mamy dostęp do większej liczby funkcjonalności związanej z dopasowaniem do wzorca. Jeżeli chcesz wiedzieć więcej na ten temat, zapraszam na mój artykuł: <a href="{{ site.baseurl }}/ruby-pattern-matching-second-look" title="Pattern matching w Ruby - nowości">Drugie spojrzenie na pattern matching w Ruby</a>.
+Od Ruby 3.0 mamy dostęp do większej liczby funkcjonalności związanej z dopasowaniem do wzorca. Jeżeli chcesz wiedzieć więcej na ten temat, zapraszam na mój artykuł: [Drugie spojrzenie na pattern matching w Ruby]({{site.baseurl}}/ruby-pattern-matching-second-look "Pattern matching w Ruby - nowości").
 
 ## Podsumowanie
 

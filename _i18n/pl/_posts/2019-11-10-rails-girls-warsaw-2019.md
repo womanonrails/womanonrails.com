@@ -21,7 +21,7 @@ imagefeature: rails-girls-warsaw-2019/og_image.jpg
 show_date: true
 ---
 
-Oto są! Warsztaty Rails Girls Warszawa 2019! Warszawska edycja warsztatów Rails Girls jest jedną z moich ulubionych. Dodatkowo są to dla mnie zawsze bardzo wyjątkowe warsztaty. To właśnie tu pierwszy raz byłam mentorką na <a href="{{ site.baseurl }}/rails-girls-warsaw" title="Rails Girls Warszawa - pierwszy raz jako mentorka">warsztatach Rails Girls Warsaw w 2014 roku</a>. Teraz jeżdżę po całej Polsce i dzielę się swoją programistyczną wiedzą. I oto wracam do Warszawy.
+Oto są! Warsztaty Rails Girls Warszawa 2019! Warszawska edycja warsztatów Rails Girls jest jedną z moich ulubionych. Dodatkowo są to dla mnie zawsze bardzo wyjątkowe warsztaty. To właśnie tu pierwszy raz byłam mentorką na [warsztatach Rails Girls Warsaw w 2014 roku]({{site.baseurl}}/rails-girls-warsaw "Rails Girls Warszawa - pierwszy raz jako mentorka"). Teraz jeżdżę po całej Polsce i dzielę się swoją programistyczną wiedzą. I oto wracam do Warszawy.
 
 <figure class='half'>
   <a href="{{ site.baseurl_root }}/images/rails-girls-warsaw-2019/01-rails-girls-bags.jpg">

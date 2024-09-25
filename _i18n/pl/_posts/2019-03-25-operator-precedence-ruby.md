@@ -36,9 +36,7 @@ To wyrażenie nie jest równe 8. Jest równe 6. W tym przykładzie możesz zauwa
 ```
 
 Dobrze, ale w programowaniu, w szczególności w języku Ruby, mamy więcej możliwych operacji. Skąd będziemy wiedzieć jaka jest ich kolejność? Z pomocą przychodzi nam
-{% include links/external-link.html
-   name='dokumentacja Ruby - kolejność działań'
-   url='https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html' %}:
+[dokumentacja Ruby - kolejność działań](https://ruby-doc.org/3.3.5/syntax/precedence_rdoc.html):
 
 ```ruby
 !, ~, unary +

@@ -129,7 +129,7 @@ Teraz chyba najważniejsze pytanie. Co możemy zrobić by zapobiec lub poradzić
 
 2. **Ograniczenia**
 
-    Możesz się zdziwić, ale ten punkt będzie pomocny, gdy brakuje Ci w pracy wyzwań. Gdy czujesz się znudzona. W sytuacjach, gdy normalny dzień pracy wygląda za każdym razem tak samo. Gdy zaczyna nas dopadać pewnego rodzaju zniechęcenie, brak motywacji. To dobry moment, by wprowadzić do naszego życia odrobinę gamifikacji (grywalizacji). Przykładowo: Masz do wykonania bardzo nudne zadanie, które robiłaś już steki razy. A co gdyby tym razem nie używać przy tym myszki? Czy jesteś wstanie zrobić wszystko za pomocą klawiatury? Na pewno na początku będzie ciężko, ale Twój mózg w końcu zacznie pracować. Wyłączy się autopilot i będziesz mogła <a href="{{ site.baseurl }}/sublime" title="Skróty klawiszowe w edytorze tekstowym Sublime">nauczyć się nowych skrótów klawiszowych</a>. Dodatkowo zrozumiesz, że to małe urządzenie, jakim jest myszka, bardzo się przydaje. Inne sposoby na zerwanie z nudą, to zmiana edytora tekstu lub zmiana IDE. Do czasu, gdy nie zabraknie Ci Twoich wygodnych narzędzi, nie zdajesz sobie sprawy, jak bardzo do nich przywykłaś. Otwiera się wtedy horyzont nowych możliwości. Jesteś w stanie poznać lepsze i gorsze narzędzia, przypomnieć sobie podstawową składnie języka, wcześniej uzupełniało ją za Ciebie IDE. Sama możesz wyznaczać sobie nowe wyzwania. Świetną inspiracją do tego typu eksperymentów może być <a href="{{ site.baseurl }}/coderetreat" title="Warsztaty Coderetreat w Krakowie">Global Day of Coderetreat</a>, który pokazuje różne sposoby na wprowadzenie sobie pewnych ograniczeń podczas pisania kodu. Bo jak napisać program nie używając warunków `if` lub używając tylko podejścia funkcyjnego? Spróbuj! Może się okazać, że to nie tylko ciekawy sposób uczenia, ale również świetna zabawa!
+    Możesz się zdziwić, ale ten punkt będzie pomocny, gdy brakuje Ci w pracy wyzwań. Gdy czujesz się znudzona. W sytuacjach, gdy normalny dzień pracy wygląda za każdym razem tak samo. Gdy zaczyna nas dopadać pewnego rodzaju zniechęcenie, brak motywacji. To dobry moment, by wprowadzić do naszego życia odrobinę gamifikacji (grywalizacji). Przykładowo: Masz do wykonania bardzo nudne zadanie, które robiłaś już steki razy. A co gdyby tym razem nie używać przy tym myszki? Czy jesteś wstanie zrobić wszystko za pomocą klawiatury? Na pewno na początku będzie ciężko, ale Twój mózg w końcu zacznie pracować. Wyłączy się autopilot i będziesz mogła [nauczyć się nowych skrótów klawiszowych]({{site.baseurl}}/sublime "Skróty klawiszowe w edytorze tekstowym Sublime"). Dodatkowo zrozumiesz, że to małe urządzenie, jakim jest myszka, bardzo się przydaje. Inne sposoby na zerwanie z nudą, to zmiana edytora tekstu lub zmiana IDE. Do czasu, gdy nie zabraknie Ci Twoich wygodnych narzędzi, nie zdajesz sobie sprawy, jak bardzo do nich przywykłaś. Otwiera się wtedy horyzont nowych możliwości. Jesteś w stanie poznać lepsze i gorsze narzędzia, przypomnieć sobie podstawową składnie języka, wcześniej uzupełniało ją za Ciebie IDE. Sama możesz wyznaczać sobie nowe wyzwania. Świetną inspiracją do tego typu eksperymentów może być [Global Day of Coderetreat]({{site.baseurl}}/coderetreat "Warsztaty Coderetreat w Krakowie"), który pokazuje różne sposoby na wprowadzenie sobie pewnych ograniczeń podczas pisania kodu. Bo jak napisać program nie używając warunków `if` lub używając tylko podejścia funkcyjnego? Spróbuj! Może się okazać, że to nie tylko ciekawy sposób uczenia, ale również świetna zabawa!
 
 3. **Życzliwi ludzie**
 
@@ -167,15 +167,7 @@ Na koniec chciałabym Ci zadać kilka pytań: Czy kiedykolwiek zmagałaś się z
 
 #### Bibliografia
 
-- {% include links/external-link.html
-     name='World Health Organization about burn-out an "occupational phenomenon" [EN]'
-     url='https://www.who.int/mental_health/evidence/burn-out/en/' %}
-- {% include links/external-link.html
-     name='Wikipedia about burnout syndrome [EN]'
-     url='https://en.wikipedia.org/wiki/Occupational_burnout' %}
-- {% include links/external-link.html
-     name='Jak Feniks z popiołów czyli syndrom wypalenia zawodowego'
-     url='http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html' %}
-- {% include links/external-link.html
-     name='DevTalk #63: O Wypaleniu Zawodowym z Arturem Królem'
-     url='https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/' %}
+- [World Health Organization about burn-out an "occupational phenomenon" [EN]](https://www.who.int/mental_health/evidence/burn-out/en/)
+- [Wikipedia about burnout syndrome [EN]](https://en.wikipedia.org/wiki/Occupational_burnout)
+- [Jak Feniks z popiołów czyli syndrom wypalenia zawodowego](http://www.psychologia.edu.pl/czytelnia/59-niebieska-linia/779-jak-feniks-z-popiolow-czyli-syndrom-wypalenia-zawodowego.html)
+- [DevTalk #63: O Wypaleniu Zawodowym z Arturem Królem](https://devstyle.pl/2017/10/16/devtalk63-o-wypaleniu-zawodowym-z-arturem-krolem/)

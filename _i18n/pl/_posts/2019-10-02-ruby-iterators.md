@@ -141,7 +141,7 @@ array
 #  => [{:static=>"I don't want to be changed!", :dynamic=>"I can change yours objects!"}, {:static=>"Me too!", :dynamic=>"I can change yours objects!"}]
 ```
 
-W tym przypadku kolekcja, jaka została zwrócona po użyciu iteratora jest inna niż kolekcja początkowa. Dodatkowo watro zauważyć, że zmieniła się również początkowa wartość zmiennej `array`! Tak dzieje się w przypadku gdy `item` jako element naszej kolekcji to _złożony obiekt_ i wewnątrz iteratora próbujemy go zmienić używając na przykład przypisania. Więcej na ten temat pisałam w artykule <a href="{{ site.baseurl }}/ruby-hash-tips" title="Użyteczne metody dla klasy Hash w języku Ruby">Triki dla obiektu Hash w Ruby</a>. Taka sytuacja nie zajdzie w przypadku tablicy zwykłych liczb.
+W tym przypadku kolekcja, jaka została zwrócona po użyciu iteratora jest inna niż kolekcja początkowa. Dodatkowo watro zauważyć, że zmieniła się również początkowa wartość zmiennej `array`! Tak dzieje się w przypadku gdy `item` jako element naszej kolekcji to _złożony obiekt_ i wewnątrz iteratora próbujemy go zmienić używając na przykład przypisania. Więcej na ten temat pisałam w artykule [Triki dla obiektu Hash w Ruby]({{site.baseurl}}/ruby-hash-tips "Użyteczne metody dla klasy Hash w języku Ruby"). Taka sytuacja nie zajdzie w przypadku tablicy zwykłych liczb.
 
 ```ruby
 array = [1, 2, 3]
@@ -158,8 +158,8 @@ array
 
 Iteratora `each` będziesz używać za każdym razem, gdy najważniejszą rzeczą w Twoim fragmencie logiki będą same kalkulacje. Nie będzie dla Ciebie istotne, co zostaje zwrócone z `each` i nie chcesz zmieniać początkowego obiektu na jakim iterator `each` został wywołany.
 
-Na koniec tej sekcji chciałabym powiedzieć jeszcze jedną rzecz. W języku Ruby występuje wiele typów iteratora `each` dla różnych obiektów. Przykładowo: `each_char`, `each_line`, `each_with_index` czy <a href="{{ site.baseurl }}/each-with-object" title="Jak używać metody each_with_object?">`each_with_object`</a>. Możesz ich używać w różnych kontekstach. Jeżeli jesteś zainteresowana większą ilością informacji na ich temat, to zachęcam do skorzystania z
-{% include links/external-link.html name='dokumentacji języka Ruby' url='https://ruby-doc.org/' %}.
+Na koniec tej sekcji chciałabym powiedzieć jeszcze jedną rzecz. W języku Ruby występuje wiele typów iteratora `each` dla różnych obiektów. Przykładowo: `each_char`, `each_line`, `each_with_index` czy [`each_with_object`]({{site.baseurl}}/each-with-object "Jak używać metody each_with_object?"). Możesz ich używać w różnych kontekstach. Jeżeli jesteś zainteresowana większą ilością informacji na ich temat, to zachęcam do skorzystania z
+[dokumentacji języka Ruby](https://ruby-doc.org/).
 
 ### Map / collect
 
