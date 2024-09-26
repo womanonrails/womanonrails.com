@@ -19,11 +19,11 @@ tags: [Ruby]
 lang: pl
 ---
 
-Dużo czasu minęło od mojego ostatniego artykułu technicznego. Przez ten czas próbowałam wielu nowych rzeczy. Założyłam blog <a href="https://bemore.womanonrails.com/" title="Be More - moje przemyślenia na temat życia" target="_blank">Be more</a>, który dotyczy moich przemyśleń na temat życia, <a href="https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ" title="Woman on Rails - kanał YouTube" target="_blank" rel="nofollow noopener noreferrer">Kanał Woman on Rails na YouTube</a> i <a href="https://vimeo.com/womanonrails" title="Woman on Rails - kanał Vimeo" target="_blank" rel="nonofollow noopener noreferrer">podróżniczy kanał na Vimeo</a>. To był czas odkrywania, co sprawia mi przyjemność a co nie. Ale wracając do tematu. Do tego artykułu przygotowywałam się naprawdę długo. Może nawet za długo. Pomysł pojawił się już 2015 roku, a teraz możesz zobaczyć jego rezultaty. Zaczynajmy!
+Dużo czasu minęło od mojego ostatniego artykułu technicznego. Przez ten czas próbowałam wielu nowych rzeczy. Założyłam blog [Be more](https://bemore.womanonrails.com/ "Be More - moje przemyślenia na temat życia"), który dotyczy moich przemyśleń na temat życia, [Kanał Woman on Rails na YouTube](https://www.youtube.com/channel/UCudKRFuddrf8saaxUEoo0xQ "Woman on Rails - kanał YouTube") i [podróżniczy kanał na Vimeo](https://vimeo.com/womanonrails "Woman on Rails - kanał Vimeo"). To był czas odkrywania, co sprawia mi przyjemność a co nie. Ale wracając do tematu. Do tego artykułu przygotowywałam się naprawdę długo. Może nawet za długo. Pomysł pojawił się już 2015 roku, a teraz możesz zobaczyć jego rezultaty. Zaczynajmy!
 
 Refaktoring jest jednym z moich ulubionych tematów. Uwielbiam porządki w prawdziwym życiu, ale też w kodzie źródłowym. Pracowałam i nadal pracuję nad aplikacjami internetowymi. I wciąż poszukuje odpowiedzi na następujące pytania: Jak pisać dobry kod? Co powoduje, że po pewnym czasie nasz kod staje się brzydki i nieczytelny? Jak radzić sobie z rosnącą złożonością w projektach? Każdego dnia uczę się jak robić dobry refaktoring. Bazuję na zdobytym przeze mnie, jak i przez innych, doświadczeniu. Dziś chciałabym się podzielić z Tobą przykładem refaktoringu zrobionego krok po kroku.
 
-Do tego celu wykorzystam kod, który został napisany dawno temu przez młodego programistę w <a href="https://fractalsoft.org/pl" title="Fractal Soft - Aplikacje internetowe w Ruby on Rails" target="_blank">mojej firmie</a>. Plan był następujący - ulepszyć ten kod źródłowy. W zasadzie cała logika to jedna klasa, którą możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb" title="Kod przed refaktoringiem" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. W tej klasie znajdują się wszystkie zasady potrzebne do sprawdzenia tego, co mamy w ręce grając w pokera, ale bez użycia jokera. Kod nie jest zły. Kiedy znasz logikę biznesową (w tym przypadku zasady pokera), jesteś wstanie poruszać się po tym kodzie. Ten fragment kodu posiada też testy, co jest jego zaletą. Będzie nam o wiele łatwiej zmienić cokolwiek, gdy mamy testy pilnujące logiki. Jeżeli jednak nie cała logika jest przetestowana, to możemy zepsuć fragment funkcjonalności nie zdając sobie nawet z tego sprawy. Kod ten wygląda bardziej proceduralnie niż obiektowo i będę chciała się tym zająć w odpowiednim czasie. Posiada on też wiele powtórzeń. Czasami taki fragment kodu jest w zupełności wystarczający. Wszystko zależy od projektu i wymagań. Jeżeli kod został napisany raz, działa poprawnie i nikt do niego nie będzie musiał zaglądać, to może zostawienie go w takim stanie jest w jakiś sposób uzasadnione z biznesowego punktu widzenia. Natomiast jeżeli zdarzy się, że zmienią się wymagania, to prawdopodobnie kod źródłowy też ulegnie zmianie. To Ty musisz zdecydować, czy będziesz refaktoryzowała kod teraz czy później. Ja preferuje pierwszą opcję. Dopóki pamiętam logikę i zależności łatwiej jest mi kod zmienić. Po pewnym czasie trzeba najpierw jeszcze raz zrozumieć strukturę, zanim zacznie się coś modyfikować. No to zaczynamy!
+Do tego celu wykorzystam kod, który został napisany dawno temu przez młodego programistę w [mojej firmie](https://fractalsoft.org/pl "Fractal Soft - Aplikacje internetowe w Ruby on Rails"). Plan był następujący - ulepszyć ten kod źródłowy. W zasadzie cała logika to jedna klasa, którą możesz zobaczyć [tutaj](https://github.com/womanonrails/poker/blob/55c9ae0ab921f7aa95bb7e47676d87b970a32033/lib/poker/hand.rb "Kod przed refaktoringiem"). W tej klasie znajdują się wszystkie zasady potrzebne do sprawdzenia tego, co mamy w ręce grając w pokera, ale bez użycia jokera. Kod nie jest zły. Kiedy znasz logikę biznesową (w tym przypadku zasady pokera), jesteś wstanie poruszać się po tym kodzie. Ten fragment kodu posiada też testy, co jest jego zaletą. Będzie nam o wiele łatwiej zmienić cokolwiek, gdy mamy testy pilnujące logiki. Jeżeli jednak nie cała logika jest przetestowana, to możemy zepsuć fragment funkcjonalności nie zdając sobie nawet z tego sprawy. Kod ten wygląda bardziej proceduralnie niż obiektowo i będę chciała się tym zająć w odpowiednim czasie. Posiada on też wiele powtórzeń. Czasami taki fragment kodu jest w zupełności wystarczający. Wszystko zależy od projektu i wymagań. Jeżeli kod został napisany raz, działa poprawnie i nikt do niego nie będzie musiał zaglądać, to może zostawienie go w takim stanie jest w jakiś sposób uzasadnione z biznesowego punktu widzenia. Natomiast jeżeli zdarzy się, że zmienią się wymagania, to prawdopodobnie kod źródłowy też ulegnie zmianie. To Ty musisz zdecydować, czy będziesz refaktoryzowała kod teraz czy później. Ja preferuje pierwszą opcję. Dopóki pamiętam logikę i zależności łatwiej jest mi kod zmienić. Po pewnym czasie trzeba najpierw jeszcze raz zrozumieć strukturę, zanim zacznie się coś modyfikować. No to zaczynamy!
 
 # Krok 1 - Przygotowanie środowiska
 
@@ -60,7 +60,7 @@ def straight_flush?(array)
 end
 ```
 
-Cały kod możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/148429e4591638aef38b5b7abaab5e0198d805c0/lib/poker/hand.rb" title="Drugi krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Te zmiany moim zdaniem poprawiły odrobinę czytelność kodu.
+Cały kod możesz znaleźć [tutaj](https://github.com/womanonrails/poker/blob/148429e4591638aef38b5b7abaab5e0198d805c0/lib/poker/hand.rb "Drugi krok refaktoringu"). Te zmiany moim zdaniem poprawiły odrobinę czytelność kodu.
 
 Po tym kroku, wszystkie testy przechodziły.
 
@@ -108,7 +108,7 @@ Dla każdej metody w tej klasie powtarzałam następujące kroki:
 3. Pisałam nowy kod w prostszy sposób
 4. Sprawdzałam czy wszystkie testy przechodzą
 
-Kod po moich zmianach możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb" title="Trzeci krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Podczas tego kroku usunęłam również zakomentowany kod, komentarze po polsku i dodałam kilka testów jednostkowych, których moim zdaniem brakowało.
+Kod po moich zmianach możesz znaleźć [tutaj](https://github.com/womanonrails/poker/blob/a0bb2f6ab99bf8d977c1b68a53774b2eef7a46ac/lib/poker/hand.rb "Trzeci krok refaktoringu"). Podczas tego kroku usunęłam również zakomentowany kod, komentarze po polsku i dodałam kilka testów jednostkowych, których moim zdaniem brakowało.
 
 ## Statystyki:
 - **LOC** - 73
@@ -206,7 +206,7 @@ Myślę, że to dobry moment aby wytłumaczyć choć odrobinę, jak ten kod dzia
 
 Jeżeli mamy kod `array.map {|item| item / 4}` to tak naprawdę sprawdzamy jaką figurę od 2 do Asa reprezentuje liczba. Natomiast jeżeli mamy `array.map {|item| item % 4}` sprawdzamy jakiego koloru jest dana karta (&spades;, &clubs;, &hearts;, &diams;).
 
-Gdybyś potrzebowała dokładniejszego wytłumaczenia zasad pokera, to sprawdź <a href="https://en.wikipedia.org/wiki/List_of_poker_hands" title="Pokerowe ustawienia ręki" target="_blank" rel="nofollow noopener noreferrer">listę wszystkich pokerowych ustawień ręki na Wikipedii</a>.
+Gdybyś potrzebowała dokładniejszego wytłumaczenia zasad pokera, to sprawdź [listę wszystkich pokerowych ustawień ręki na Wikipedii](https://en.wikipedia.org/wiki/List_of_poker_hands "Pokerowe ustawienia ręki").
 
 Dodajemy inicjalizer:
 
@@ -237,7 +237,7 @@ def three_of_a_kind?
 end
 ```
 
-Usunęłam tutaj powtarzające się fragmenty kodu, używając stanu trzymanego w instancji klasy. Kod po tym kroku możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/83d230e969df4d27ffa5e5e34a2cf1aa43e76d90/lib/poker/hand.rb" title="Czwarty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. Mała uwaga - dodatkowo zrobiłam refaktoring w testach. Postanowiłam przenieść wszystkie możliwe przypadki testowe do tablicy by uniknąć powtórzeń, jakie były widoczne również w testach.
+Usunęłam tutaj powtarzające się fragmenty kodu, używając stanu trzymanego w instancji klasy. Kod po tym kroku możesz znaleźć [tutaj](https://github.com/womanonrails/poker/blob/83d230e969df4d27ffa5e5e34a2cf1aa43e76d90/lib/poker/hand.rb "Czwarty krok refaktoringu"). Mała uwaga - dodatkowo zrobiłam refaktoring w testach. Postanowiłam przenieść wszystkie możliwe przypadki testowe do tablicy by uniknąć powtórzeń, jakie były widoczne również w testach.
 
 ## Statystyki:
 - **LOC** - 76
@@ -248,7 +248,7 @@ Usunęłam tutaj powtarzające się fragmenty kodu, używając stanu trzymanego 
 
 # Krok 5 - Usuwanie powtórzeń (duplikacji)
 
-Bazując na metryce Reek zauważyłam dużo powtórzeń w kodzie. Zdecydowałam, że jeszcze raz wykorzystam stan obiektu, by się ich pozbyć. Wszystkie zmiany związane z tym krokiem możesz znaleźć <a href="https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb" title="Piąty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>. A poniżej zamieszczam skrót tego co zrobiłam:
+Bazując na metryce Reek zauważyłam dużo powtórzeń w kodzie. Zdecydowałam, że jeszcze raz wykorzystam stan obiektu, by się ich pozbyć. Wszystkie zmiany związane z tym krokiem możesz znaleźć [tutaj](https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb "Piąty krok refaktoringu"). A poniżej zamieszczam skrót tego co zrobiłam:
 
 Zmiana w inicjalizerze:
 
@@ -297,7 +297,7 @@ end
 
 # Krok 6 - Mały publiczny interface
 
-Kiedy spojrzysz na kod z <a href="https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb" title="Piąty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">kroku 5</a>, to na pewno zauważysz, że mamy bardzo dużo metod dostępnych publicznie do wykorzystania na obiekcie naszej klasy. **Duży publiczny interface jest ciężki w utrzymaniu.** Jeżeli chciałybyśmy zastąpić naszą klasę `Hand` inną klasą, to będziemy potrzebować dokładnie tyle samo metod publicznych, jak w przypadku klasy `Hand`. Dodatkowo każda publicznie dostępna metoda może zostać wykorzystana przez inny fragment kodu, co może powodować niepotrzebne zależności między obiektami. W naszym przypadku, jak przyjrzymy się bliżej okaże się, że nawet testy nie sprawdzają wszystkich dostępnych metod. Zajmują się tylko sprawdzeniem metody `check`. Zdecydowałam więc, że jedyną publicznie dostępną metodą będzie metoda `check`. Pozostałe metody będą pomocniczymi metodami prywatnymi. Zmiany możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/ef117a56e3cc0fbfae9de4821ac61e5489f704fc/lib/poker/hand.rb" title="Szósty krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>.
+Kiedy spojrzysz na kod z [kroku 5](https://github.com/womanonrails/poker/blob/74c05d7480e7857d1e99d604169f6eed46279758/lib/poker/hand.rb "Piąty krok refaktoringu"), to na pewno zauważysz, że mamy bardzo dużo metod dostępnych publicznie do wykorzystania na obiekcie naszej klasy. **Duży publiczny interface jest ciężki w utrzymaniu.** Jeżeli chciałybyśmy zastąpić naszą klasę `Hand` inną klasą, to będziemy potrzebować dokładnie tyle samo metod publicznych, jak w przypadku klasy `Hand`. Dodatkowo każda publicznie dostępna metoda może zostać wykorzystana przez inny fragment kodu, co może powodować niepotrzebne zależności między obiektami. W naszym przypadku, jak przyjrzymy się bliżej okaże się, że nawet testy nie sprawdzają wszystkich dostępnych metod. Zajmują się tylko sprawdzeniem metody `check`. Zdecydowałam więc, że jedyną publicznie dostępną metodą będzie metoda `check`. Pozostałe metody będą pomocniczymi metodami prywatnymi. Zmiany możesz zobaczyć [tutaj](https://github.com/womanonrails/poker/blob/ef117a56e3cc0fbfae9de4821ac61e5489f704fc/lib/poker/hand.rb "Szósty krok refaktoringu").
 
 ## Statystyki:
 - **LOC** - 77
@@ -326,7 +326,7 @@ def initialize(array)
 end
 ```
 
-W tym kroku postanowiłam zmienić również metodę `cards_frequency`. Zamiast używać `each` używam `each_with_object`. Jeżeli jesteś zainteresowana większą ilością informacji na temat `each_with_object` zachęcam Cię do przeczytania mojego artykułu o <a href="https://womanonrails.com/pl/each-with-object" title="Zastosowanie metody each_with_object w języku Ruby">użyciu metody each\_with\_object w Ruby</a>. Oto jak teraz wygląda kod:
+W tym kroku postanowiłam zmienić również metodę `cards_frequency`. Zamiast używać `each` używam `each_with_object`. Jeżeli jesteś zainteresowana większą ilością informacji na temat `each_with_object` zachęcam Cię do przeczytania mojego artykułu o [użyciu metody each\_with\_object w Ruby](https://womanonrails.com/pl/each-with-object "Zastosowanie metody each_with_object w języku Ruby"). Oto jak teraz wygląda kod:
 
 ```ruby
 def cards_frequency
@@ -353,7 +353,7 @@ def flush?
 end
 ```
 
-Wszystkie zmiany możesz zobaczyć <a href="https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb" title="Siódmy krok refaktoringu" target="_blank" rel="nofollow noopener noreferrer">tutaj</a>.
+Wszystkie zmiany możesz zobaczyć [tutaj](https://github.com/womanonrails/poker/blob/46e12428d0d67cb90d17f417147dc936815a69e7/lib/poker/hand.rb "Siódmy krok refaktoringu").
 
 ## Statystyki:
 - **LOC** - 80
@@ -395,19 +395,7 @@ Trzymaj się! Mój następny artykuł pojawi się już wkrótce! Jeżeli masz ja
 - {% include books/pl/pragmatic_programmer-andrew_hund_david_thomas.html %}
 
 #### Prezentacje angielskojęzyczne
-- <a href='https://www.youtube.com/watch?v=8bZh5LMaSmE'
-     rel='nofollow noopener noreferrer'
-     title='All the Little Things by Sandi Metz'
-     target='_blank'>All the Little Things by Sandi Metz</a>
-- <a href='https://www.youtube.com/watch?v=5yX6ADjyqyE'
-     rel='nofollow noopener noreferrer'
-     title='Fat Models with Patterns by Bryan Helmkamp'
-     target='_blank'>LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp</a>
-- <a href='https://www.youtube.com/watch?v=OMPfEXIlTVE'
-     rel='nofollow noopener noreferrer'
-     title='Nothing is something by Sandi Metz'
-     target='_blank'>Nothing is something by Sandi Metz</a>
-- <a href='https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks'
-     rel='nofollow noopener noreferrer'
-     title='8 best Ruby on Rails refactoring talks'
-     target='_blank'>Best Ruby on Rails refactoring talks</a>
+- [All the Little Things by Sandi Metz](https://www.youtube.com/watch?v=8bZh5LMaSmE "All the Little Things by Sandi Metz")
+- [LA Ruby Conference 2013 Refactoring Fat Models with Patterns by Bryan Helmkamp](https://www.youtube.com/watch?v=5yX6ADjyqyE "Fat Models with Patterns by Bryan Helmkamp")
+- [Nothing is something by Sandi Metz](https://www.youtube.com/watch?v=OMPfEXIlTVE "Nothing is something by Sandi Metz")
+- [Best Ruby on Rails refactoring talks](https://infinum.co/the-capsized-eight/best-ruby-on-rails-refactoring-talks "8 best Ruby on Rails refactoring talks")
