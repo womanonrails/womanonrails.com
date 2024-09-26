@@ -171,9 +171,7 @@ Did you mean?  to_set
 ## Jak metoda join działa na tablicach?
 
 By zrozumieć metodę `join` musimy udać się do źródła, a dokładnie do
-{% include links/external-link.html
-   name='kodu źródłowego języka Ruby'
-   url='https://github.com/ruby/ruby/blob/ruby_2_7/array.c#L2384' %}.
+[kodu źródłowego języka Ruby](https://github.com/ruby/ruby/blob/ruby_2_7/array.c#L2384).
 Zobaczymy tam następujące wyjaśnienie:
 
 ```ruby
@@ -294,9 +292,7 @@ puts [1, 2, 3]
 ```
 
 Zarówno `join` jak i `puts` wywołują metodę `to_str` czy metodę `to_s` na elementach tablicy, a nie na samej tablicy. Podobnie jak w przypadku metody `join`, dla metody `puts` też  możemy to sprawdzić w
-{% include links/external-link.html
-   name='kodzie Rubiego'
-   url='https://github.com/ruby/ruby/blob/ruby_2_7/io.c#L7720' %}.
+[kodzie Rubiego](https://github.com/ruby/ruby/blob/ruby_2_7/io.c#L7720).
 
 ```ruby
 /*
