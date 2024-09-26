@@ -24,7 +24,7 @@ show_date: true
 
 <br>
 
-Warsztaty **Rails Girls** wspieram już od 2013 roku, kiedy to znalazłam pierwsze warsztaty [Rails Girls w Poznaniu]({{ site.baseurl }}/rails-girls-rules "Rails Girls Poznań - Ja jako uczestniczka"). Od tej pory jeżdżę po całej Polsce i pomagam jako mentorka. W tym roku byłam już na [Rails Girls Warsaw]({{ site.baseurl }}/rails-girls-warsaw-2016 "Rails Girls Warsaw - wideo relacja"), [Rails Girls Łódź]({{ site.baseurl }}/rails-girls-lodz "Rails Girls Łódź - wideo relacja") i na [Rails Girls Poznań]({{ site.baseurl }}/rails-girls-poznan "Rails Girls Poznań - wideo relacja"). Teraz przyszedł czas na warsztaty w Cieszynie!
+Warsztaty **Rails Girls** wspieram już od 2013 roku, kiedy to znalazłam pierwsze warsztaty [Rails Girls w Poznaniu]({{site.baseurl}}/rails-girls-rules "Rails Girls Poznań - Ja jako uczestniczka"). Od tej pory jeżdżę po całej Polsce i pomagam jako mentorka. W tym roku byłam już na [Rails Girls Warsaw]({{site.baseurl}}/rails-girls-warsaw-2016 "Rails Girls Warsaw - wideo relacja"), [Rails Girls Łódź]({{site.baseurl}}/rails-girls-lodz "Rails Girls Łódź - wideo relacja") i na [Rails Girls Poznań]({{site.baseurl}}/rails-girls-poznan "Rails Girls Poznań - wideo relacja"). Teraz przyszedł czas na warsztaty w Cieszynie!
 
 Warsztaty **Rails Girls Cieszyn** były dla mnie bardzo wyjątkowe z kilku powodów. Po pierwsze, byłam ich organizatorką, a nie mentorem. Po drugie, nie tylko dla mnie, były to pierwsze międzynarodowe warsztaty Rails Girls na świecie! Po trzecie, warsztaty odbywały się w cieszyńskim zamku.
 

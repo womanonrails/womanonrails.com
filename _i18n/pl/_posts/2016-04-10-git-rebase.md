@@ -21,7 +21,7 @@ lang: pl
 
 Gdy dopiero zaczynasz przygodę z programowaniem trudno jest wiedzieć wszystko od samego początku. To całkiem normalne, że rozwijasz swoje programistyczne umiejętności krok po kroku. Dziś chcę Ci pomóc w lepszym zrozumieniu komendy **git rebase**. Jest to bardzo pożyteczne polecenie, gdy chcesz mieć w przejrzysty sposób uporządkowane zmiany w repozytorium.
 
-Ten artykuł jest trzecim artykułem z serii o narzędziu git. Jeżeli chcesz dowiedzieć się więcej o <a href="{{ site.baseurl }}/git-usage" title="Podstawy używania git-a">podstawowym użyciu git-a</a> to zapraszam do mojego poprzedniego artykułu w tym cyklu.
+Ten artykuł jest trzecim artykułem z serii o narzędziu git. Jeżeli chcesz dowiedzieć się więcej o [podstawowym użyciu git-a]({{site.baseurl}}/git-usage "Podstawy używania git-a") to zapraszam do mojego poprzedniego artykułu w tym cyklu.
 
 ## Git merge
 
@@ -146,9 +146,9 @@ git rebase --abort
 ```
 
 ### Inne artykuły w cyklu:
-- <a href="{{ site.baseurl }}/what-is-git" title="Dlaczego warto używać narzedzia git?">Co to jest git?</a>
-- <a href="{{ site.baseurl }}/git-usage" title="Jak zacząć używać git-a?">Podstawowe komendy narzędzia Git</a>
-- <a href="{{ site.baseurl }}/replace-parent-branch" title="Ustawienie innej gałęźi rodzicielckiej za pomoca git-a.">Jak zmienić gałąź rodzicielską w git-cie?</a>
-- <a href="{{ site.baseurl }}/git-rebase-onto" title="Zrozumienie komendy  git rebase --onto.">Jak użyć komendy git rebase --onto?</a>
+- [Co to jest git?]({{site.baseurl}}/what-is-git "Dlaczego warto używać narzedzia git?")
+- [Podstawowe komendy narzędzia Git]({{site.baseurl}}/git-usage "Jak zacząć używać git-a?")
+- [Jak zmienić gałąź rodzicielską w git-cie?]({{site.baseurl}}/replace-parent-branch "Ustawienie innej gałęźi rodzicielckiej za pomoca git-a.")
+- [Jak użyć komendy git rebase --onto?]({{site.baseurl}}/git-rebase-onto "Zrozumienie komendy  git rebase --onto.")
 
-Jeżeli interesuje Cię więcej informacji na temat narzędzia git, możesz zajrzeć na stronę {% include links/external-link.html name='dokumentacji git-a' url='https://git-scm.com/doc' %}.
+Jeżeli interesuje Cię więcej informacji na temat narzędzia git, możesz zajrzeć na stronę [dokumentacji git-a](https://git-scm.com/doc).
