@@ -20,6 +20,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Warszawa
 lang: pl
 show_date: true
+mentoring: true
 ---
 
 Data: *2014-02-22 – 2014-02-23*<br>

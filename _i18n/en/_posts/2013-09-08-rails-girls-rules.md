@@ -21,6 +21,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Poznan
 lang: en
 show_date: true
+mentoring: true
 ---
 
 Date: *6-7 September 2013*<br>

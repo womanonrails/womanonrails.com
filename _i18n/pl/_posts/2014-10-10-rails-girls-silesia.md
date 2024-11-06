@@ -16,6 +16,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Gliwice
 lang: pl
 show_date: true
+mentoring: true
 ---
 
 <br>

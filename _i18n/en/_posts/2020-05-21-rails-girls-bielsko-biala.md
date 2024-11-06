@@ -17,6 +17,7 @@ place: Bielsko-Biała
 lang: en
 imagefeature: rails-girls-bielsko-biala/og_image-rails-girls-bielsko-biala.png
 show_date: true
+mentoring: true
 ---
 
 We had many Rails Girls workshops around Poland. The most known are in Warsaw, Poznan, and of course in Silesia ;). A few months ago, for the first time, I was a mentor on Rails Girls Bielsko-Biała. This was also the first time when workshops in Bielsko-Biała take a place. Let me show you a short report from these workshops.

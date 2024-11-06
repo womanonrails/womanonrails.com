@@ -20,6 +20,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Cieszyn
 lang: en
 show_date: true
+mentoring: true
 ---
 
 <br>

@@ -66,6 +66,8 @@ Description: Awesome dude, awesome life
           {% include video/autodetect.html url=page.video %}
           {{ content }}
           <br>
+          {% include footer-action.html %}
+          <br>
           {% if page.tags.size > 0 %}
           <div class='entry-tags text-center'>
             {% include icons/icon-svg.html icon='tags' %}

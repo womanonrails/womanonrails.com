@@ -22,6 +22,7 @@ categories: [work, 30devstories]
 tags: [career, health]
 lang: en
 imagefeature: how-to-focus/og_image-how-to-focus.png
+mentoring: true
 ---
 
 In times of full connections and online life, we have a problem staying focused. We need to focus, to **feel the flow**. One of the most important feelings in our work time. Flow is the mental state in which we do some activity fully immersed and engaged in the process of the activity. It's a very positive and energized feeling, which brings us a lot of satisfaction. But how can we have flow in a world full of distractions? Now, since a lot of us work from home, the situation can be even more challenging. This time, I would like to share with you some of my tips, which help me to stay focus and experience more flow.

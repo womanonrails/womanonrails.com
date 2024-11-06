@@ -19,6 +19,7 @@ categories: [workshops]
 tags: [CoderDojo]
 place: Gliwice
 lang: en
+mentoring: true
 ---
 
 <br>

@@ -21,6 +21,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Szczecin
 lang: en
 show_date: true
+mentoring: true
 ---
 
 <br>

@@ -16,6 +16,7 @@ tags: [coderetreat]
 place: Kraków
 lang: pl
 show_date: true
+mentoring: true
 ---
 
 W zeszłą sobotę uczestniczyłam w niesamowitym wydarzeniu –

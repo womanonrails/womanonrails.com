@@ -18,6 +18,7 @@ headline: Premature optimization is the root of all evil.
 categories: [tools, git]
 tags: [environment, git, version control system]
 lang: en
+mentoring: true
 ---
 
 If you are interested in IT or you are already a programmer, you should hear the name **Git** at least a couple of times. Maybe even more. This tool is common to many teams no matter what programming language they use. This is the base and it is good to know git. Today, I would like to start a short series about **Git basics**. On the Internet, you can find many articles and tutorials about how to use git. I would focus more on what is the purpose of using git and how it works. In this article, I will explain to you what git is and why it is important to have that tool in your toolbox. Let's get started!

@@ -18,6 +18,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Łódź
 lang: en
 show_date: true
+mentoring: true
 ---
 
 <br>

@@ -18,6 +18,7 @@ headline: Premature optimization is the root of all evil.
 categories: [work]
 tags: [interview, career]
 lang: en
+mentoring: true
 ---
 
 For some time I do interviews. I'm not an HR person. I'm developer. I do technical interviews for my company. My responsibility is to check how experienced is the person which apply for a job. How this person fit to our team from technical and personal point of view. This process is not about being perfect. It's more about being honest. Finally team and candidate should be able to work together. Today I would like to tell a little bit about what I expect from person to interview. I would like to show my point of view on this kind of conversation.

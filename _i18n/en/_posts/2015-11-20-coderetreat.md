@@ -15,6 +15,7 @@ tags: [coderetreat]
 place: Cracow
 lang: en
 show_date: true
+mentoring: true
 ---
 
 In last Saturday I was on

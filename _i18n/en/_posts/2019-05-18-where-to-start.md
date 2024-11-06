@@ -31,6 +31,7 @@ headline: Premature optimization is the root of all evil.
 categories: [work]
 tags: [career]
 lang: en
+mentoring: true
 ---
 
 I've been working in the programming world since 2011. Before then, I spent about 6 years searching my own life path. When I was starting this adventure, my goal was completely different. I wanted to be a math teacher. During those 6 years, in most cases, I didn't know what I was doing. Where should I spent my time? On what should I focus? I studied hard, but to be honest, I didn't know where all this will end. Especially when some of my plans failed. I put more details about my journey in [about me section]({{site.baseurl}}/about "My way to programming"), check it out if you want to know more about me. Right now I'm programmer and I teach people what I already know. I share my knowledge in many different ways. I do workshops for women like [Rails Girls]({{site.baseurl}}/category/workshops "Rails Girls Workshops"). I teach children on [CoderDojo]({{site.baseurl}}/coderdojo-workshop "Programming classes CoderDojo"). I write **Woman On Rails** blog. I met lots of people who want to change their life. They want to be programmers or testers or even start something which need more programming skills. I'm helping them change their career path. And I'm proud of them, because this change is hard and need some sacrifices. During that process, I get lots of questions about _How to start in programming?_ Today I would like to answer those questions in public.
