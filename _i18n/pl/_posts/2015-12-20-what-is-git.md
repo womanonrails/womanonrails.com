@@ -20,6 +20,7 @@ headline: Premature optimization is the root of all evil.
 categories: [narzędzia, git]
 tags: [środowisko programistyczne, git, system kontroli wersji]
 lang: pl
+mentoring: true
 ---
 
 Jeżeli interesuje Cię programowanie, to prawdopodobnie słyszałaś już nazwę **Git** przynajmniej kilka razy. Może nawet więcej niż kilka razy. Git to narzędzie, którego używają programiści i programistki niezależnie od tego w jakim języku programowania pracują. To jedno z tych podstawowych narzędzi, które naprawdę warto znać. Między innymi dlatego napisałam cykl artykułów na temat narzędzia git. W Internecie możesz znaleźć wiele kursów czy artykułów mówiących o tym jak używać git-a. Ja chciałabym się skupić przede wszystkim na zrozumieniu dlaczego warto go stosować, jak on działa i co można za jego pomocą zrobić. Nie przedłużając, dziś zajmiemy się  zrozumieniem czym jest git i jak może nam pomóc w codziennej, programistycznej pracy. No to zaczynamy!

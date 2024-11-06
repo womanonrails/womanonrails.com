@@ -20,6 +20,7 @@ tags: [Rails Girls, Ruby on Rails]
 place: Warszawa
 lang: pl
 show_date: true
+mentoring: true
 ---
 
 <br>

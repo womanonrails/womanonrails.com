@@ -19,6 +19,7 @@ categories: [work]
 tags: [career, self-awareness]
 imagefeature: programmers-skills/og_image-programmer-skills.png
 lang: en
+mentoring: true
 ---
 
 People often ask me what they should do to be a programmer. In most cases, they expect advice like: read this book, learn this technology or do this course. They want the silver bullet answer, but it's not so simple. Of course, you can graduate and feel more confident in programming. Even then, you can be a bad programmer. Programming is one of these fields, where you always evolving, improving your skills, your mindset, and learning new things. Today, I would like to show you some skills, which are, in my opinion, important for a programmer.

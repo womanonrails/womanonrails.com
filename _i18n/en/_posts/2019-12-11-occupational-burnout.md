@@ -16,6 +16,7 @@ categories: [work]
 tags: [career, health]
 lang: en
 imagefeature: burnout-syndrome/flame.jpg
+mentoring: true
 ---
 
 Today very important, health related topic. Did you ever feel exhaustion, negativity, cynicism, or lack of energy related to your job for a long period of time? Or maybe you have headaches, problems with sleeping, chest pain, a feeling of breathlessness, or anger. All symptoms can be related to **occupational burnout syndrome**. Read this article to get more information about burnout syndrome before it will affect your health, relations, and life.

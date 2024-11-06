@@ -21,6 +21,7 @@ categories: [praca, 30devstories]
 tags: [kariera, zdrowie]
 lang: en
 imagefeature: how-to-focus/og_image-how-to-focus.png
+mentoring: true
 ---
 
 W czasach łatwego dostępu do Internetu i ciągłych powiadomień mamy duży problem z utrzymaniem skupienia. Skupienie jest nam potrzebne by efektywnie wykonywać swoją pracę, ale też by **osiągnąć flow**. Jeden z najistotniejszych stanów, jakich możemy doświadczyć podczas pracy. **Flow to stan umysłu**, w którym jesteśmy w pełni zanurzeni i zaangażowani w bieżącą czynność. To bardzo pozytywne zjawisko, które nie tylko dodaje nam energii, ale też dostarcza satysfakcji z tego co robimy. Jest tylko jeden problem. Jak doświadczyć flow w świecie pełnym wszelkiego rodzaju "rozpraszaczy". Dodatkowo w czasach gdy duża część z nas pracuje z domów. Chciałabym się podzielić z Tobą kilkoma trikami, które pomagają mi się skupić i częściej korzystać z flow.

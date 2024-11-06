@@ -22,6 +22,7 @@ headline: My code is getting worse, please send more chocolate
 categories: [praca]
 tags: [samoświadomość]
 lang: pl
+mentoring: true
 ---
 
 > Bądź sobą, mów co czujesz bo tym, który się liczą nie będzie to przeszkadzać a Ci, którym będzie to przeszkadzać nie są ważni.

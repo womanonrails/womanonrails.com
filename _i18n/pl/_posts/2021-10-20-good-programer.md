@@ -25,6 +25,7 @@ categories: [praca]
 tags: [kariera, samoświadomość]
 imagefeature: programmers-skills/og_image-programmer-skills.png
 lang: pl
+mentoring: true
 ---
 
 Często dostaję pytanie: _Co mam zrobić by stać się programistką/programistą?_ Oczekiwana odpowiedź to: przeczytaj tę książkę, naucz się tej technologii, zrób ten kurs. Osoby pytające chciałyby poznać prostą odpowiedź. Jak zrobisz to, to będziesz programistką/programistą. Niestety to nie takie proste. Oczywiście można skończyć studia informatyczne (ja tak zrobiłam), by czuć się w programowaniu pewniej, jednak studia nie są gwarancją bycia dobrą programistką lub programistą. Programowanie to jedna z tych dziedzin, które wymagają od nas ciągłego doskonalenia umiejętności, uczenia się nowych rzeczy i nowego spojrzenia na różne problemy. Myślę jednak, że są pewne uniwersalne umiejętności, które moim zdaniem przydają się przy pracy z kodem. Chciałabym się nimi z Tobą podzielić.
