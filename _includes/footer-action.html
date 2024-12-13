@@ -1,14 +1,16 @@
+{% assign baseurl = site.baseurl %}
+
 <div class='contact-action'>
   {% if page.mentoring != true %}
   {% if page.lang == 'en' %}
   <h3>Need help?</h3>
-  <p>If you're looking for a <strong>Ruby developer</strong> with over a decade of experience, <strong>don't hesitate to <a href='https://linkedin.com/in/{{ site.owner.linkedin }}' rel='nofollow noopener noreferrer' target='_blank'>contact me</a></strong>.</p>
+  <p>If you're looking for a <strong>Ruby developer</strong> with over a decade of experience, <strong>don't hesitate to <a href="{{ baseurl }}/contact">contact me</a></strong>.</p>
   <p>I have experience in a variety of domains, with a focus on short user feedback loops and teamwork. <strong>I can help you build a great product</strong>.</p>
   {% endif %}
 
   {% if page.lang == 'pl' %}
   <h3>Potrzebujesz pomocy?</h3>
-  <p>Jeśli szukasz <strong>doświadczonej programistki Ruby</strong> z ponad dziesięcioletnim stażem, <strong>śmiało <a href='https://linkedin.com/in/{{ site.owner.linkedin }}' rel='nofollow noopener noreferrer' target='_blank'>skontaktuj się ze mną</a></strong>.</p>
+  <p>Jeśli szukasz <strong>doświadczonej programistki Ruby</strong> z ponad dziesięcioletnim stażem, <strong>śmiało <a href="{{ baseurl }}/contact">skontaktuj się ze mną</a></strong>.</p>
   <p>Mam doświadczenie w różnych domenach, a szczególną wagę przykładam do szybkiej reakcji na opinie użytkowników i pracy zespołowej. <strong>Pomogę Ci stworzyć świetny produkt</strong>.</p>
   {% endif %}
   {% endif %}
@@ -16,13 +18,13 @@
   {% if page.mentoring == true %}
   {% if page.lang == 'en' %}
   <h3>Need help?</h3>
-  <p>If you're looking to <strong>improve your Ruby and Rails programming skills</strong>, don't hesitate to <strong><a href='https://linkedin.com/in/{{ site.owner.linkedin }}' rel='nofollow noopener noreferrer' target='_blank'>contact me</a></strong>.</p>
+  <p>If you're looking to <strong>improve your Ruby and Rails programming skills</strong>, don't hesitate to <strong><a href="{{ baseurl }}/contact">contact me</a></strong>.</p>
   <p>I have years of experience mentoring with <strong>Rails Girls</strong>, <strong>CoderDojo</strong>, and <strong>one-on-one sessions</strong>. I can help keep your learning process smooth and focused.</p>
   {% endif %}
 
   {% if page.lang == 'pl' %}
   <h3>Potrzebujesz pomocy?</h3>
-  <p>Jeśli chcesz <strong>poprawić swoje umiejętności w programowaniu Ruby i Rails</strong>, śmiało <strong><a href='https://linkedin.com/in/{{ site.owner.linkedin }}' rel='nofollow noopener noreferrer' target='_blank'>skontaktuj się ze mną</a></strong>.</p>
+  <p>Jeśli chcesz <strong>poprawić swoje umiejętności w programowaniu Ruby i Rails</strong>, śmiało <strong><a href="{{ baseurl }}/contact">skontaktuj się ze mną</a></strong>.</p>
   <p>Mam wieloletnie doświadczenie w mentoringu w ramach <strong>Rails Girls</strong>, <strong>CoderDojo</strong> oraz podczas <strong>indywidualnych sesji</strong>. <strong>Pomogę Ci uczyć się płynnie i skutecznie</strong>, skupiając się na najważniejszych zagadnieniach.</p>
   {% endif %}
   {% endif %}
