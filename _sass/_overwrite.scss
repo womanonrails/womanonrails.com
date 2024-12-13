@@ -300,3 +300,19 @@ button.menu-button {
   border: $dark-red solid 1px;
   padding: 0 20px;
 }
+
+#owner-img {
+  margin-top: 30px;
+}
+
+.offer {
+  border: $dark-red solid 1px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  a {
+    margin-top: 30px;
+  }
+}

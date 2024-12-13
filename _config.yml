@@ -102,12 +102,14 @@ links:
     url: /
     external: false
     icon: home
-  - title: Programming courses
-    url: /workshops
+  - title: Mentoring
+    url: /mentorship
   - title: Categories
     url: /categories
   - title: Tags
     url: /tags
+  - title: Contact
+    url: /contact
   - title: About
     url: /about
 
@@ -116,12 +118,14 @@ links_pl:
     url: /pl
     external: false
     icon: home
-  - title: Kursy programowania
-    url: /workshops
+  - title: Mentoring
+    url: /pl/mentorship
   - title: Kategorie
     url: /pl/categories
   - title: Tagi
     url: /pl/tags
+  - title: Kontakt
+    url: /pl/contact
   - title: O mnie
     url: /pl/about
 

@@ -3,14 +3,16 @@ links:
     url: /
     external: false
     icon: home
-  - title: Kursy programowania
-    url: /pl/workshops
+  - title: Mentoring - New!
+    url: /pl/mentorship
   - title: Kategorie
     url: /pl/categories
   - title: Tagi
     url: /pl/tags
   - title: O mnie
     url: /pl/about
+  - title: Kontakt
+    url: /pl/contact
   - title: Be more
     url: https://bemore.womanonrails.com/
     external: true
