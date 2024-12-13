@@ -16,7 +16,7 @@
       Jestem z wykształcenia matematyczką i informatyczką, a z pasji – programistką. Od 2011 roku rozwijam swoją karierę w branży IT, nieustannie doskonaląc swoje umiejętności i pomagając innym odkrywać ich potencjał.
     </p>
     <p class='text-justify'>
-      Podczas <a href="pl/kategoria/warsztaty" title='Warsztaty w IT'>warsztatów</a> takich jak <a href="tags/#Rails%20Girls" title='Warsztaty Rails Girls'>Rails Girls</a> czy <a href="/tags/#CoderDojo" title="Zajęcia z programowania CoderDojo">CoderDojo</a> dzielę się swoją miłością do programowania z osobami, które dopiero zaczynają swoją przygodę z kodowaniem. Jestem także autorką bloga technologicznego <a href="/pl/" title="Programowanie z kobiecej perspektywy">Woman on Rails</a>, gdzie w prosty i przystępny sposób tłumaczę zawiłe zagadnienia programistyczne.
+      Podczas <a href="pl/kategoria/warsztaty" title='Warsztaty w IT'>warsztatów</a> takich jak <a href="tags/#Rails%20Girls" title='Warsztaty Rails Girls'>Rails Girls</a> czy <a href="/tags/#CoderDojo" title="Zajęcia z programowania CoderDojo">CoderDojo</a> dzielę się swoją miłością ❤️ do programowania z osobami, które dopiero zaczynają swoją przygodę z kodowaniem. Jestem także autorką bloga technologicznego <a href="/pl/" title="Programowanie z kobiecej perspektywy">Woman on Rails</a>, gdzie w prosty i przystępny sposób tłumaczę zawiłe zagadnienia programistyczne.
     </p>
   </div>
 </div>
@@ -26,7 +26,7 @@
 
 <hr>
 
-## Dla Kogo Jest Ten Mentoring?
+## Dla kogo jest ten mentoring?
 
 <hr>
 

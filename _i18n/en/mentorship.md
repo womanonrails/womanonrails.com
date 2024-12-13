@@ -1,6 +1,6 @@
 {% assign baseurl = site.baseurl %}
 
-# Become a Programmer with a Mentor
+# Become a Programmer with the Mentor
 
 <hr>
 
@@ -13,7 +13,7 @@
   <div class="col-md-6">
     <h4>{{ site.owner.name }}</h4>
     <p class='text-justify'>
-      I'm a mathematician and computer scientist by education, and a passionate programmer at heart. I've been building my career in the IT industry since 2011, constantly honing my skills and helping others unlock their potential.
+      I'm a mathematician and computer scientist by education, and a passionate programmer at heart. ❤️ I've been building my career in the IT industry since 2011, constantly honing my skills and helping others unlock their potential.
     </p>
     <p class='text-justify'>
       During <a href="category/workshops" title='IT workshops'>workshops</a> like <a href="tags/#Rails%20Girls" title='Rails Girls workshops'>Rails Girls</a> and <a href="/tags/#CoderDojo" title="Programming classes CoderDojo">CoderDojo</a>, I share my love for coding with aspiring programmers. I'm also the author of the tech blog <a href="/" title="Programming from woman perspective">Woman on Rails</a>, where I break down complex programming topics into simple, relatable explanations.
@@ -77,7 +77,7 @@ Feeling lost or unsure if  about whether you need help? That's totally okay. Let
         <li>Has a specific programming issue to solve and wants to brainstorm solutions.</li>
         <li>Needs guidance to get back on the right track.</li>
       </ul>
-      <a href="{{ baseurl }}/contact" class='btn btn-danger btn-lg btn-block'>Shedule a meeting</a>
+      <a href="{{ baseurl }}/contact" class='btn btn-danger btn-lg btn-block'>Schedule a meeting</a>
     </div>
   </div>
   <div class="col-md-6">
