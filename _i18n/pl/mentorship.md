@@ -108,4 +108,4 @@ W porządku! Pozostańmy w kontakcie. Dodaj mnie do swoich kontaktów, obserwuj 
 
 ## Woman on Rails Newsletter
 
-{% include newsletter/en/form.html %}
+{% include newsletter/pl/form.html %}
