@@ -1,0 +1,16 @@
+{% assign baseurl = site.baseurl %}
+
+<div class='contact-action'>
+  {% if page.lang == 'en' %}
+  <h3>Woman on Rails Newsletter</h3>
+  <p>Join a community of like-minded readers and receive my <strong>short, insightful emails on self-development, software development, productivity, and team management</strong>. Plus, from time to time, I'll share personal insights and stories from the IT world.</p>
+  {% include newsletter/en/form.html %}
+  {% endif %}
+
+  {% if page.lang == 'pl' %}
+  <h3>Woman on Rails Newsletter</h3>
+  <p>Dołącz do społeczności pasjonatów IT i otrzymuj <strong>krótkie, wartościowe maile na temat rozwoju osobistego, programowania, produktywności i zarządzania zespołem</strong>. A od czasu do czasu również moje osobiste spostrzeżenia i historie ze świata IT.</p>
+  {% include newsletter/pl/form.html %}
+  {% endif %}
+</div>
+
